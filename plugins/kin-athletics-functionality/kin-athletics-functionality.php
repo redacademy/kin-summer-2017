@@ -2,7 +2,7 @@
  /**
  *
  * @package   Kin Athletics Functionality
- * @author    Aleezay Hashmi, Ken CHow, Mark Flores, Matthew Cuthbert
+ * @author    Aleezay Hashmi, Ken Chow, Mark Flores, Matthew Cuthbert
  * @license   GPL-2.0+
  * @copyright 2017 
  *
@@ -10,7 +10,7 @@
  * Plugin Name: Kin Athletics Functionality
  * Description: This very important plugin contains all of the core functionality for this website so that it remains theme-independent.
  * Version:     1.0.0
- * Author:      Aleezay Hashmi, Ken CHow, Mark Flores, Matthew Cuthbert
+ * Author:      Aleezay Hashmi, Ken Chow, Mark Flores, Matthew Cuthbert
  * License:     GPL-2.0+
  * License URI: http://www.gnu.org/licenses/gpl-2.0.txt
  */
