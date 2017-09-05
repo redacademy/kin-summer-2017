@@ -2,7 +2,7 @@
 /**
  * The template for displaying archive pages.
  *
- * @package RED_Starter_Theme
+ * @package Kin_Athletics_Theme
  */
 
 get_header(); ?>
