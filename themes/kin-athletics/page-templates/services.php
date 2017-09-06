@@ -58,8 +58,8 @@ get_header(); ?>
         <h3> featured trainer <span>allan</span> </h3>
           <div class='white container'>
             <p>more feels on our services</p>
-            <p class='social'>facebook</p>
-            <p class='social'>instagram</p>
+            <a class='social'>facebook</a>
+            <a class='social'>instagram</a>
           </div>
         </section>
 
