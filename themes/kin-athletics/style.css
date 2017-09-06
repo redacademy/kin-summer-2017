@@ -712,6 +712,19 @@ object {
     margin: 0 auto;
     margin-bottom: 16px; }
 
+/* Landing Page */
+.landing-page-container {
+  width: 100vw; }
+  .landing-page-container .landing-project-td, .landing-page-container .landing-who-we-are, .landing-page-container .landing-what-we-do {
+    height: 300px;
+    background-size: cover; }
+  .landing-page-container .landing-project-td {
+    background-image: url(../../asset/images/serv1.jpg); }
+  .landing-page-container .landing-who-we-are {
+    background-image: url(../../asset/images/serv2.jpg); }
+  .landing-page-container .landing-what-we-do {
+    background-image: url(../../asset/images/serv3.jpg); }
+
 .site-footer {
   background-color: #A10000;
   height: 330px;
