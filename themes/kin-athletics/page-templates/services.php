@@ -12,15 +12,35 @@ get_header(); ?>
 
   <article id='post-<?php the_ID(); ?>' <?php post_class(); ?>>
     <header class='entry-header custom-hero'>
-      <div class='container'>
-        <?php the_title( '<h1 class="entry-title">', '</h1>'); ?>
-      </div>
     </header>
 
     <div class='container'>
       <div class='entry-content'>
-        <div class="main-carousel">
 
+        <section class='services-taxonomy'>                <!-- get template part after circles are done-->
+          <h3> at kin athletics, we try our hardest to serve your needs</h3>
+
+          <div class='circles'>
+            <svg height="180" width="180">
+              <circle cx="80" cy="80" r="80" fill="red" />
+            </svg>
+
+            <svg height="180" width="180">
+              <circle cx="80" cy="80" r="80" fill="red" />
+            </svg>
+
+            <svg height="180" width="180">
+              <circle cx="80" cy="80" r="80" fill="red" />
+            </svg>
+
+            <svg height="180" width="180">
+              <circle cx="80" cy="80" r="80" fill="red" />
+            </svg>
+          </div>
+        </section>
+
+
+        <div class="main-carousel">
           <div class="carousel-cell">
             <h2>Personal training</h2>
             <p><?php echo CFS()->get( 'services_personal_training'); ?></p>
@@ -35,12 +55,11 @@ get_header(); ?>
             <h2>Community projects</h2>
             <p><?php echo CFS()->get('services_community_projects');?></p>
           </div>
-   
-        </div>
-      </div>
-    </div>
-  </article>
+        </div>    <!-- end of carousel -->
 
+      </div>  <!-- end of entry content-->
+    </div>  <!-- end of container-->
+  </article>
   </main>
 </div>
 
