@@ -1,10 +1,10 @@
-.site-footer {
-  background-color: #A10000;
+.site-footer{
+  background-color: $color__brand-red;
   height: 330px;
   padding-top: 35px;
 
-  a, p {
-    color: white;
+  a, p{
+    color: $color__brand-white;
     text-transform: uppercase;
     text-align: center;
     font-weight: lighter;    
