@@ -1,6 +1,6 @@
 <?php
 /**
- * The template for displaying the find us page.
+ * Template Name: Find Us page.
  *
  * @package Kin_Athletics_Theme
  */
