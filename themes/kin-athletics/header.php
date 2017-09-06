@@ -27,11 +27,9 @@
 				</div><!-- .kin-athletic-logo -->
 
 				<nav id="site-navigation" class="main-navigation" role="navigation">
-					
-					<div id="popout">
+					<div>
 						<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'nav-menu' ) ); ?>
 					</div>
-
 				</nav><!-- #site-navigation -->
 			</header><!-- #masthead -->
 
