@@ -1,17 +1,9 @@
 /*!
-<<<<<<< HEAD
-Theme Name: RED Starter Theme
-Theme URI: http://underscores.me/
-Author: RED Academy
-Author URI: http://www.redacademy.com
-Description: A WordPress starter theme for RED Academy students.
-=======
 Theme Name: Kin Athletics Theme
 Theme URI: http://kin.cp.academy.red
 Author: Aleezay Hashmi, Ken Chow, Mark Flores, Matthew Cuthbert
 Author URI: http://kin.cp.academy.red
 Description: A WordPress Kin Athletics theme.
->>>>>>> 833f4c89aa58a5efee72f5b8a2b8b5b8dbd53729
 Version: 1.0.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -238,7 +230,6 @@ button,
 input,
 select,
 textarea {
-  color: #404040;
   font-family: sans-serif;
   font-size: 16px;
   font-size: 1rem;
@@ -303,7 +294,7 @@ html {
   box-sizing: inherit; }
 
 body {
-  background: #fff;
+  background: #ffffff;
   /* Fallback for when there is no custom background color defined. */ }
 
 blockquote, q {
@@ -679,8 +670,6 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
-<<<<<<< HEAD
-/* Landing Page */
 .landing-page-container {
   width: 100vw; }
   .landing-page-container .landing1-container .landing-td-image {
@@ -689,51 +678,48 @@ object {
     background-image: url(https://unsplash.it/g/200/300); }
   .landing-page-container .landing3-container .what-we-do-image {
     background-image: url(https://unsplash.it/g/200/300); }
-=======
-.services-taxonomy {
-  height: 100vh;
-  background-image: url("../asset/images/serv1.jpg");
-  background-color: pink;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-align: center;
-      align-items: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap; }
-  .services-taxonomy .circles {
-    margin: 0 auto; }
-
-.carousel-cell {
-  height: 100vh; }
-
-.services-featured {
-  height: 100vh;
-  background-color: darkgray;
-  position: relative;
-  text-align: left;
-  font-size: 60px;
-  text-transform: uppercase; }
-  .services-featured .white-social-block {
-    position: absolute;
+  .landing-page-container .services-taxonomy {
+    height: 100vh;
+    background-image: url("../asset/images/serv1.jpg");
     background-color: pink;
-    text-align: center;
-    height: 35%;
-    width: 100%;
-    bottom: 0;
-    font-size: 24px; }
-  .services-featured .social {
-    border: solid 3px #A10000;
-    height: 50px;
-    width: 60%;
-    margin: 0 auto;
-    margin-bottom: 16px; }
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+        align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+    .landing-page-container .services-taxonomy .circles {
+      margin: 0 auto; }
+  .landing-page-container .carousel-cell {
+    height: 100vh; }
+  .landing-page-container .services-featured {
+    height: 100vh;
+    background-color: darkgray;
+    position: relative;
+    text-align: left;
+    font-size: 60px;
+    text-transform: uppercase; }
+    .landing-page-container .services-featured .white-social-block {
+      position: absolute;
+      background-color: pink;
+      text-align: center;
+      height: 35%;
+      width: 100%;
+      bottom: 0;
+      font-size: 24px; }
+    .landing-page-container .services-featured .social {
+      border: solid 2px #A10000;
+      height: 2.82%;
+      width: 54.37%;
+      margin: 0 auto;
+      margin-bottom: 16px; }
 
 .site-footer {
   background-color: #A10000;
   height: 330px;
   padding-top: 35px; }
   .site-footer a, .site-footer p {
-    color: white;
+    color: #FFFFFF;
     text-transform: uppercase;
     text-align: center;
     font-weight: lighter; }
@@ -752,4 +738,3 @@ object {
       margin-bottom: 35px; }
   .site-footer p {
     font-size: 12px; }
->>>>>>> 833f4c89aa58a5efee72f5b8a2b8b5b8dbd53729
