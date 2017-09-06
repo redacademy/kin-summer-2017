@@ -85,6 +85,8 @@ add_filter( 'stylesheet_uri', 'kin_athletics_minified_css', 10, 2 );
 function kin_athletics_scripts() {
 	wp_enqueue_style( 'red-starter-style', get_stylesheet_uri() );
 
+	wp_enqueue_script( 'wpb_slidepanel', get_template_directory_uri() . '/js/slidepanel.js', array('jquery'), '20160909', true );
+
 	wp_enqueue_script( 'red-starter-skip-link-focus-fix', get_template_directory_uri() . '/build/js/skip-link-focus-fix.min.js', array(), '20130115', true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
@@ -102,3 +104,4 @@ require get_template_directory() . '/inc/template-tags.php';
  * Custom functions that act independently of the theme templates.
  */
 require get_template_directory() . '/inc/extras.php';
+
