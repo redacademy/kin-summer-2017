@@ -22,17 +22,17 @@ get_header(); ?>
 
       <div class="black container">
         <h3 class="white-title">Ready to Sweat?></h3>
-        <div class="red-btn">
+        <div class="red-button">
           <href="<?php echo get_post_permalink()?>">Free Consultation</a>
         </div><!-- .red-btn -->
       </div><!-- .black .container -->
 
       <div class="white container">
         <h3 class="black-title">Connect To Our Online Community></h3>
-        <div class="social-btn">
+        <div class="social-button">
           <href="<?php echo get_post_permalink()?>">Facebook</a>
         </div><!-- .social-btn -->
-        <div class="social-btn">
+        <div class="social-button">
           <href="<?php echo get_post_permalink()?>">Instagram</a>
         </div><!-- .social-btn -->
       </div><!-- .black .container -->
