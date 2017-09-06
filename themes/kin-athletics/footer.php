@@ -15,8 +15,8 @@
 					<a>project td</a>
 					<a>find us</a>
 					<div class='footer-social-logo'>
-						<a></a>
-						<a></a>
+						<a><i class="fa fa-facebook" aria-hidden="true"></i></a>
+						<a><i class="fa fa-instagram" aria-hidden="true"></i></a>
 					</div>				
 				</div>
 				<p>	&copy; 2017 red go team </p>
