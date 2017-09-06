@@ -674,13 +674,16 @@ object {
   display: block; }
 
 /* Buttons */
-.social-button {
+.social-button, .services-featured .social {
   background: #FFFFFF;
   border: solid 2px #A10000;
   height: 2.82%;
   width: 54.37%;
   margin: 0 auto;
   margin-bottom: 16px; }
+  .social-button a, .services-featured .social a {
+    color: #000000;
+    text-align: center; }
 
 /*--------------------------------------------------------------
 # Page Templates
@@ -717,13 +720,6 @@ object {
     width: 100%;
     bottom: 0;
     font-size: 24px; }
-  .services-featured .social {
-    background: #FFFFFF;
-    border: solid 2px #A10000;
-    height: 2.82%;
-    width: 54.37%;
-    margin: 0 auto;
-    margin-bottom: 16px; }
 
 .site-footer {
   background-color: #A10000;
