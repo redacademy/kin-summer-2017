@@ -29,12 +29,12 @@ get_header(); ?>
 
       <div class="white container">
         <h3 class="black-title">Connect To Our Online Community></h3>
-        <div class="white-btn">
+        <div class="social-btn">
           <href="<?php echo get_post_permalink()?>">Facebook</a>
-        </div><!-- .white-btn -->
-        <div class="white-btn">
+        </div><!-- .social-btn -->
+        <div class="social-btn">
           <href="<?php echo get_post_permalink()?>">Instagram</a>
-        </div><!-- .white-btn -->
+        </div><!-- .social-btn -->
       </div><!-- .black .container -->
 
 		</main><!-- #main -->

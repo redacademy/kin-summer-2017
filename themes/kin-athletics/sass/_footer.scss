@@ -1,0 +1,33 @@
+.site-footer{
+  background-color: #A10000;
+  height: 330px;
+  padding-top: 35px;
+
+  a, p{
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: lighter;    
+  }
+
+  a{
+    display: block;
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  .footer-social-logo{
+    display: flex;
+    justify-content: center;
+
+    a{
+      font-size: 35px;
+      padding: 0 8px;
+      margin-bottom: 35px;
+    }
+  }
+
+  p{
+    font-size: 12px;
+  }
+}

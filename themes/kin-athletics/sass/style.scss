@@ -1,9 +1,9 @@
 /*!
-Theme Name: RED Starter Theme
-Theme URI: http://underscores.me/
-Author: RED Academy
-Author URI: http://www.redacademy.com
-Description: A WordPress starter theme for RED Academy students.
+Theme Name: Kin Athletics Theme
+Theme URI: http://kin.cp.academy.red
+Author: Aleezay Hashmi, Ken Chow, Mark Flores, Matthew Cuthbert
+Author URI: http://kin.cp.academy.red
+Description: A WordPress Kin Athletics theme.
 Version: 1.0.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -57,9 +57,11 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 @import "typography";
 @import "elements";
 @import "forms";
+@import "header";
 @import "navigation";
 @import "modules";
 @import "widgets";
 @import "content";
 @import "media";
 @import "page-templates";
+@import "footer";
