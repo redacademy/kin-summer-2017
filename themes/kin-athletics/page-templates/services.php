@@ -11,9 +11,6 @@ get_header(); ?>
   <main id="main" class='site-main' role='main'>
 
   <article id='post-<?php the_ID(); ?>' <?php post_class(); ?>>
-    <header class='entry-header custom-hero'>
-    </header>
-
     <div class='container'>
       <div class='entry-content'>
 
@@ -56,6 +53,15 @@ get_header(); ?>
             <p><?php echo CFS()->get('services_community_projects');?></p>
           </div>
         </div>    <!-- end of carousel -->
+
+        <section class='services-featured'>
+        <h3> featured trainer <span>allan</span> </h3>
+          <div class='white-social-block'>
+            <p>more feels on our services</p>
+            <p class='social'>facebook</p>
+            <p class='social'>instagram</p>
+          </div>
+        </section>
 
       </div>  <!-- end of entry content-->
     </div>  <!-- end of container-->

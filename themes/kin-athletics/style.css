@@ -673,3 +673,38 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
+.services-taxonomy {
+  height: 100vh;
+  background-image: url("../asset/images/serv1.jpg");
+  background-color: pink;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+  .services-taxonomy .circles {
+    margin: 0 auto; }
+
+.carousel-cell {
+  height: 100vh; }
+
+.services-featured {
+  height: 100vh;
+  background-color: darkgray;
+  position: relative;
+  text-align: left;
+  font-size: 60px;
+  text-transform: uppercase; }
+  .services-featured .white-social-block {
+    position: absolute;
+    background-color: white;
+    text-align: center;
+    height: 30%;
+    width: 100%;
+    bottom: 0;
+    font-size: 24px; }
+  .services-featured .social {
+    border: solid 2px red;
+    width: 70%;
+    margin: auto auto; }
