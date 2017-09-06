@@ -239,6 +239,10 @@ textarea {
 h1, h2, h3, h4, h5, h6 {
   clear: both; }
 
+h1 {
+  font-size: 74px;
+  color: white; }
+
 /* Copy */
 p {
   margin-bottom: 1.5rem; }
@@ -670,49 +674,43 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
-.landing-page-container {
-  width: 100vw; }
-  .landing-page-container .landing1-container .landing-td-image {
-    background-image: url(https://unsplash.it/g/200/300); }
-  .landing-page-container .landing2-container .who-we-are-image {
-    background-image: url(https://unsplash.it/g/200/300); }
-  .landing-page-container .landing3-container .what-we-do-image {
-    background-image: url(https://unsplash.it/g/200/300); }
-  .landing-page-container .services-taxonomy {
-    height: 100vh;
-    background-image: url("../asset/images/serv1.jpg");
+.services-taxonomy {
+  height: 100vh;
+  background-image: url("../asset/images/serv1.jpg");
+  background-color: pink;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+  .services-taxonomy .circles {
+    margin: 0 auto; }
+
+.carousel-cell {
+  height: 100vh; }
+
+.services-featured {
+  height: 100vh;
+  background-color: darkgray;
+  position: relative;
+  text-align: left;
+  font-size: 60px;
+  text-transform: uppercase; }
+  .services-featured .white-social-block {
+    position: absolute;
     background-color: pink;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-align: center;
-        align-items: center;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap; }
-    .landing-page-container .services-taxonomy .circles {
-      margin: 0 auto; }
-  .landing-page-container .carousel-cell {
-    height: 100vh; }
-  .landing-page-container .services-featured {
-    height: 100vh;
-    background-color: darkgray;
-    position: relative;
-    text-align: left;
-    font-size: 60px;
-    text-transform: uppercase; }
-    .landing-page-container .services-featured .white-social-block {
-      position: absolute;
-      background-color: pink;
-      text-align: center;
-      height: 35%;
-      width: 100%;
-      bottom: 0;
-      font-size: 24px; }
-    .landing-page-container .services-featured .social {
-      border: solid 2px #A10000;
-      height: 2.82%;
-      width: 54.37%;
-      margin: 0 auto;
-      margin-bottom: 16px; }
+    text-align: center;
+    height: 35%;
+    width: 100%;
+    bottom: 0;
+    font-size: 24px; }
+  .services-featured .social {
+    border: solid 2px #A10000;
+    height: 2.82%;
+    width: 54.37%;
+    margin: 0 auto;
+    margin-bottom: 16px; }
 
 .site-footer {
   background-color: #A10000;
