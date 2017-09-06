@@ -10,12 +10,19 @@
 			</div><!-- #content -->
 
 			<footer id="colophon" class="site-footer" role="contentinfo">
-				<div class="site-info">
-					<a href="<?php echo esc_url( 'https://wordpress.org/' ); ?>"><?php printf( esc_html( 'Proudly powered by %s' ), 'WordPress' ); ?></a>
-				</div><!-- .site-info -->
+				<div class='footer-social-container'>
+					<a>free consultation</a>
+					<a>project td</a>
+					<a>find us</a>
+					<div class='footer-social-logo'>
+						<a></a>
+						<a></a>
+					</div>				
+				</div>
+				<p>	&copy; 2017 red go team </p>
 			</footer><!-- #colophon -->
-		</div><!-- #page -->
 
+		</div><!-- #page -->
 		<?php wp_footer(); ?>
 	</body> 
 </html>

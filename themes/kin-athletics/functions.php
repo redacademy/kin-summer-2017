@@ -84,6 +84,8 @@ add_filter( 'stylesheet_uri', 'kin_athletics_minified_css', 10, 2 );
  */
 function kin_athletics_scripts() {
 	wp_enqueue_style( 'red-starter-style', get_stylesheet_uri() );
+	
+	wp_enqueue_style( 'font-awesome', 'https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css', array(), '4.6.3');
 
 	wp_enqueue_script('jquery');	
 
