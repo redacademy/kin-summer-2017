@@ -1,16 +1,16 @@
-.site-footer{
+.site-footer {
   background-color: #A10000;
   height: 330px;
   padding-top: 35px;
 
-  a, p{
+  a, p {
     color: white;
     text-transform: uppercase;
     text-align: center;
     font-weight: lighter;    
   }
 
-  a{
+  a {
     display: block;
     font-size: 20px;
     margin-bottom: 10px;
@@ -20,14 +20,14 @@
     display: flex;
     justify-content: center;
 
-    a{
+    a {
       font-size: 35px;
       padding: 0 8px;
       margin-bottom: 35px;
     }
   }
 
-  p{
+  p {
     font-size: 12px;
   }
 }
