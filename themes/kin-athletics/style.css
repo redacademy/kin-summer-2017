@@ -406,7 +406,14 @@ textarea {
 .site-header {
   height: 60px;
   width: 100%;
+  position: fixed;
+  top: 0;
   background-color: #A10000; }
+  .site-header .main-navigation {
+    text-align: right;
+    padding-right: 10px; }
+    .site-header .main-navigation img {
+      height: 60px; }
 
 /*--------------------------------------------------------------
 # Navigation

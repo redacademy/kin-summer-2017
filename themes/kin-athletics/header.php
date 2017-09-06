@@ -25,6 +25,7 @@
 				</div><!-- .kin-athletic-logo -->
 
 				<nav id="site-navigation" class="main-navigation" role="navigation">
+					<img src="<?php echo get_template_directory_uri();?>/asset/logos/menu.svg" alt="Menu"/>
 				</nav><!-- #site-navigation -->
 			</header><!-- #masthead -->
 
