@@ -56,7 +56,7 @@ get_header(); ?>
 
         <section class='services-featured'>
         <h3> featured trainer <span>allan</span> </h3>
-          <div class='white-social-block'>
+          <div class='white container'>
             <p>more feels on our services</p>
             <p class='social'>facebook</p>
             <p class='social'>instagram</p>
