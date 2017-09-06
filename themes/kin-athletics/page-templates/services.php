@@ -19,15 +19,23 @@ get_header(); ?>
 
     <div class='container'>
       <div class='entry-content'>
-      <div>
-        <h2>Personal training</h2>
-        <p><?php echo CFS()->get( 'services_personal_training'); ?></p>
+        <div class="main-carousel">
 
-        <h2>Group training</h2>
-        <p><?php echo CFS()->get('services_group_training');?></p>
+          <div class="carousel-cell">
+            <h2>Personal training</h2>
+            <p><?php echo CFS()->get( 'services_personal_training'); ?></p>
+          </div>
 
-        <h2>Community projects</h2>
-        <p><?php echo CFS()->get('services_community_projects');?></p>
+          <div class="carousel-cell">
+            <h2>Group training</h2>
+            <p><?php echo CFS()->get('services_group_training');?></p>
+          </div>
+
+          <div class="carousel-cell">
+            <h2>Community projects</h2>
+            <p><?php echo CFS()->get('services_community_projects');?></p>
+          </div>
+   
         </div>
       </div>
     </div>
