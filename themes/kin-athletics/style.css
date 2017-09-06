@@ -410,7 +410,8 @@ textarea {
   width: 100%;
   position: fixed;
   top: 0;
-  background-color: #A10000; }
+  background-color: #A10000;
+  z-index: 99999; }
   .site-header .main-navigation {
     text-align: right;
     padding-right: 10px; }
