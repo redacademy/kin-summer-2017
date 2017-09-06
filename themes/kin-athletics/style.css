@@ -230,7 +230,6 @@ button,
 input,
 select,
 textarea {
-  font-family: sans-serif;
   font-size: 16px;
   font-size: 1rem;
   line-height: 1.5; }
@@ -241,7 +240,7 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
   font-size: 74px;
-  color: white; }
+  color: #000000; }
 
 /* Copy */
 p {
@@ -296,6 +295,10 @@ html {
 *:after {
   /* Inherit box-sizing to make it easier to change the property for components that leverage other behavior; see http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
   box-sizing: inherit; }
+
+* {
+  box-sizing: border-box;
+  outline: none; }
 
 body {
   background: #ffffff;
@@ -670,6 +673,18 @@ object {
 .gallery-caption {
   display: block; }
 
+/* Buttons */
+.social-button, .services-featured .social {
+  background: #FFFFFF;
+  border: solid 2px #A10000;
+  height: 2.82%;
+  width: 54.37%;
+  margin: 0 auto;
+  margin-bottom: 16px; }
+  .social-button a, .services-featured .social a {
+    color: #000000;
+    text-align: center; }
+
 /*--------------------------------------------------------------
 # Page Templates
 --------------------------------------------------------------*/
@@ -705,12 +720,6 @@ object {
     width: 100%;
     bottom: 0;
     font-size: 24px; }
-  .services-featured .social {
-    border: solid 2px #A10000;
-    height: 2.82%;
-    width: 54.37%;
-    margin: 0 auto;
-    margin-bottom: 16px; }
 
 /* Landing Page */
 .landing-page-container {

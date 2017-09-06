@@ -37,7 +37,7 @@ get_header(); ?>
         </section>
 
 
-        <div class="main-carousel">
+        <div class="main-carousel" id='test'>
           <div class="carousel-cell">
             <h2>Personal training</h2>
             <p><?php echo CFS()->get( 'services_personal_training'); ?></p>
@@ -58,8 +58,8 @@ get_header(); ?>
         <h3> featured trainer <span>allan</span> </h3>
           <div class='white container'>
             <p>more feels on our services</p>
-            <p class='social'>facebook</p>
-            <p class='social'>instagram</p>
+            <a class='social'>facebook</a>
+            <a class='social'>instagram</a>
           </div>
         </section>
 

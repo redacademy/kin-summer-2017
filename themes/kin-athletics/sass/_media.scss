@@ -86,3 +86,18 @@ object {
 .gallery-caption {
 	display: block;
 }
+
+/* Buttons */ 
+
+.social-button{
+	background: $color__brand-white;
+	border: solid 2px $color__brand-red;
+	height: 2.82%;
+	width: 54.37%;
+	margin: 0 auto;
+	margin-bottom: 16px;
+		a {
+				color: $color__brand-black;
+				text-align: center;
+		}
+}

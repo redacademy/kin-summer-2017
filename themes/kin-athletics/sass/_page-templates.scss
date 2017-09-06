@@ -42,6 +42,6 @@
   }
 
   .social{
-    @include social-button;
+    @extend .social-button;
   }
 }
