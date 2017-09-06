@@ -669,6 +669,15 @@ object {
 .gallery-caption {
   display: block; }
 
+/* Buttons */
+.social-button {
+  background: #FFFFFF;
+  border: solid 2px #A10000;
+  height: 2.82%;
+  width: 54.37%;
+  margin: 0 auto;
+  margin-bottom: 16px; }
+
 /*--------------------------------------------------------------
 # Page Templates
 --------------------------------------------------------------*/
@@ -705,6 +714,7 @@ object {
     bottom: 0;
     font-size: 24px; }
   .services-featured .social {
+    background: #FFFFFF;
     border: solid 2px #A10000;
     height: 2.82%;
     width: 54.37%;
