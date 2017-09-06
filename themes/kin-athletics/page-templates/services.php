@@ -19,6 +19,7 @@ get_header(); ?>
 
     <div class='container'>
       <div class='entry-content'>
+      <div>
         <h2>Personal training</h2>
         <p><?php echo CFS()->get( 'services_personal_training'); ?></p>
 
@@ -27,6 +28,7 @@ get_header(); ?>
 
         <h2>Community projects</h2>
         <p><?php echo CFS()->get('services_community_projects');?></p>
+        </div>
       </div>
     </div>
   </article>
