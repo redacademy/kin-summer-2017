@@ -698,13 +698,15 @@ object {
   text-transform: uppercase; }
   .services-featured .white-social-block {
     position: absolute;
-    background-color: white;
+    background-color: pink;
     text-align: center;
-    height: 30%;
+    height: 35%;
     width: 100%;
     bottom: 0;
     font-size: 24px; }
   .services-featured .social {
-    border: solid 2px red;
-    width: 70%;
-    margin: auto auto; }
+    border: solid 3px #A10000;
+    height: 50px;
+    width: 60%;
+    margin: 0 auto;
+    margin-bottom: 16px; }

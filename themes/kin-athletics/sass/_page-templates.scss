@@ -33,17 +33,15 @@
 
   .white-social-block{
     position: absolute;
-    background-color: white;
+    background-color: pink;
     text-align: center;    
-    height: 30%;
+    height: 35%;
     width: 100%;
     bottom: 0;
     font-size: 24px;
   }
 
   .social{
-    border: solid 2px red;
-    width: 70%;
-    margin: auto auto;
+    @include social-block;
   }
 }
