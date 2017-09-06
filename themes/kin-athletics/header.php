@@ -28,8 +28,6 @@
 
 				<nav id="site-navigation" class="main-navigation" role="navigation">
 					
-					<div id="toggle">
-						<img src="<?php echo get_template_directory_uri();?>/asset/logos/menu.svg" alt='Menu'/></div>
 					<div id="popout">
 						<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'nav-menu' ) ); ?>
 					</div>
