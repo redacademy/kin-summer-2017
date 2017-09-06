@@ -1,0 +1,21 @@
+.site-header{
+  height: 60px;
+  width: 100%;
+  position: fixed;
+  top: 0;  
+  background-color: #A10000;
+  z-index: 99999;
+
+  .main-navigation{
+    text-align: right;
+    padding-right: 10px;
+
+    img{
+      height: 60px;
+    }
+  }
+}
+
+#responsive-menu-button{
+  box-shadow: none;
+}
