@@ -1,9 +1,9 @@
 /*!
-Theme Name: Kin Athletics
+Theme Name: RED Starter Theme
 Theme URI: http://underscores.me/
-Author: Aleezay Kashmi, Ken Chow, Mark Flores, Matthew Cuthbert
-Author URI: http://kin.cp.academy.red
-Description: A WordPress theme for Kin Athletics.
+Author: RED Academy
+Author URI: http://www.redacademy.com
+Description: A WordPress starter theme for RED Academy students.
 Version: 1.0.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -12,7 +12,7 @@ Tags:
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 
-Kin Athletics is based on Underscores http://underscores.me/, (C) 2012-2015 Automattic, Inc.
+RED Starter Theme is based on Underscores http://underscores.me/, (C) 2012-2015 Automattic, Inc.
 Underscores is distributed under the terms of the GNU GPL v2 or later.
 
 Normalizing styles have been helped along thanks to the fine work of
@@ -656,3 +656,12 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
+/* Landing Page */
+.landing-page-container {
+  width: 100vw; }
+  .landing-page-container .landing1-container .landing-td-image {
+    background-image: url(https://unsplash.it/g/200/300); }
+  .landing-page-container .landing2-container .who-we-are-image {
+    background-image: url(https://unsplash.it/g/200/300); }
+  .landing-page-container .landing3-container .what-we-do-image {
+    background-image: url(https://unsplash.it/g/200/300); }
