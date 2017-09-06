@@ -19,11 +19,14 @@ get_header(); ?>
 
     <div class='container'>
       <div class='entry-content'>
-        <h2>Our Story</h2>
-        <p><?php echo CFS()->get( 'about_our_story'); ?></p>
+        <h2>Personal training</h2>
+        <p><?php echo CFS()->get( 'services_personal_training'); ?></p>
 
-        <h2>Our Team</h2>
-        <p><?php echo CFS()->get('about_our_team');?></p>
+        <h2>Group training</h2>
+        <p><?php echo CFS()->get('services_group_training');?></p>
+
+        <h2>Community projects</h2>
+        <p><?php echo CFS()->get('services_community_projects');?></p>
       </div>
     </div>
   </article>
