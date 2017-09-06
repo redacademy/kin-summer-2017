@@ -710,3 +710,28 @@ object {
     width: 60%;
     margin: 0 auto;
     margin-bottom: 16px; }
+
+.site-footer {
+  background-color: #A10000;
+  height: 330px;
+  padding-top: 35px; }
+  .site-footer a, .site-footer p {
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: lighter; }
+  .site-footer a {
+    display: block;
+    font-size: 20px;
+    margin-bottom: 10px; }
+  .site-footer .footer-social-logo {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+        justify-content: center; }
+    .site-footer .footer-social-logo a {
+      font-size: 35px;
+      padding: 0 8px;
+      margin-bottom: 35px; }
+  .site-footer p {
+    font-size: 12px; }
