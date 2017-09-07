@@ -40,18 +40,40 @@ get_header(); ?>
         <div class="main-carousel">
           <div class="carousel-cell personal-training">
             <h2>Personal training</h2>
-            <p><?php echo CFS()->get( 'services_personal_training'); ?></p>
-          </div>
+            <?php echo CFS()->get( 'services_personal_training'); ?>
+            <h3>Basic pricing</h3>
+
+            <div class='price-box-container'>
+              <div class='single-price-box'> 
+                <p>single session</p>
+                <span>$50</span>
+              </div>
+
+              <div class='single-price-box'>
+                <p>ten sessions</p>
+                <span>$470</span>
+              </div>
+              
+              <div class='single-price-box'>
+                <p>thirty sessions</p>
+                <span>$1400</span>
+              </div>
+            </div>  <!-- end of price box container-->  
+            <p>**Rates are subject to change for program customizations.</p>       
+          </div>  <!-- end of carousel cell personal training -->
+
 
           <div class="carousel-cell group-training">
             <h2>Group training</h2>
-            <p><?php echo CFS()->get('services_group_training');?></p>
-          </div>
+            <?php echo CFS()->get('services_group_training');?>
+            <p>**Rates are subject to change for program customizations.</p>
+          </div>  <!-- end of carousel cell group training -->
+
 
           <div class="carousel-cell community-projects">
             <h2>Community projects</h2>
-            <p><?php echo CFS()->get('services_community_projects');?></p>
-          </div>
+            <?php echo CFS()->get('services_community_projects');?>
+          </div>  <!-- end of carousel cell community projects -->
         </div>    <!-- end of carousel -->
 
         <section class='services-featured'>
