@@ -1,6 +1,12 @@
 // // Structure
 
 $base__space-unit: 1.5rem;
+$base__width-mobile: 400px;
+$base__content-width-mobile: 370px;
+
+$base__content-width-desktop: 1000px;
+$base__width-desktop: 1120px;
+
 
 // // Colors
 $color__text-main: #FFFFFF;
@@ -23,10 +29,21 @@ $color__link: royalblue;
 $color__link-visited: purple;
 $color__link-hover: midnightblue;
 
-// // Typography
+// Typography
 
-$font__main: sans-serif;
-$font__code: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
-$font__pre: "Courier 10 Pitch", Courier, monospace;
+$font__main: 'Open Sans Condensed', sans-serif;
+// $font__code: 'Open Sans Condensed', 'Oswald', sans-serif;
+$font__accent: 'Oswald', sans-serif;
 $font__line-height-body: 1.5;
 $font__line-height-pre: 1.6;
+$font__h1-header: 'Oswald';
+
+$font__body-size: 20px;
+$font__header-size: 58px;
+
+// Headers
+$header__height-full: 100vh;
+$header__title-border-bottom: 5px solid white;
+
+// Content
+$content__base-margin: 1.5rem;

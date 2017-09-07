@@ -9,24 +9,42 @@ select,
 textarea {
 	@include font-size(1);
 	line-height: $font__line-height-body;
+	// font-family: $font__code;
 }
 
 /* Headings */
 
 h1, h2, h3, h4, h5, h6 {
 	clear: both;
+	font-family: $font__h1-header;
+	margin: 0;
 }
 
 h1{
-	font-size:74px;
-	color: $color__h1-black;
-	
+	font-size:55px;
+	color: $color__text-main;
+}
+h2{
+	font-size: 39px;
+	font-family: $font__h1-header;
+}
+
+/* -------.ENTRY-HEADER STYLES ------- */
+.entry-header {
+
+	h1.entry-title {
+		font-size: 4.5rem;
+		color: #000000;
+	}
+
 }
 
 /* Copy */
 
 p {
+	font-size:18px;
 	margin-bottom: $base__space-unit;
+	font-family: $font__main;
 }
 
 dfn, cite, em, i {
@@ -43,7 +61,6 @@ address {
 
 pre {
 	background: $color__background-pre;
-	font-family: $font__pre;
 	@include font-size(0.9375);
 	line-height: $font__line-height-pre;
 	margin-bottom: 1.6rem;
@@ -53,7 +70,7 @@ pre {
 }
 
 code, kbd, tt, var {
-	font-family: $font__code;
+	// font-family: $font__code;
 	@include font-size(0.9375);
 }
 

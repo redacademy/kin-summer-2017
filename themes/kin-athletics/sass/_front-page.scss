@@ -1,32 +1,62 @@
 /* Landing Page */
 
-.landing-page-container{
-  width:100vw;
+.landing-page-container {
+  max-width:400px;
+    width: 100vw;
+    color:white;
+    margin-top:60px;
+   
+    .landing-project-td, .landing-who-we-are, .landing-what-we-do {
+      background-size: cover;
+      h1, h2{
+        text-transform: uppercase;
+      }
+    }
 
-  .landing1-container{
-    .landing-td-image{
-       background-image: url(../asset/images/serv1.jpg);
-       height:300px;
-}
-// h2
-// h1
-// .scroll-section
-// p
-}
-  .landing2-container {}
-    .who-we-are-image {
-      background-image: url(../asset/images/serv2.jpg);
-      height:300px;
-}
-// h1
-// p
-}
-  .landing3-container{
-    .what-we-do-image{
-      background-image: url(../asset/images/serv3.jpg);
-      height:300px;
-}
-// h1
-// p
+    .landing-project-td {
+      background-image: url(../../asset/images/serv1.jpg);
+      // background-color: black;
+      height: 420px;
 
+      .landing-text-project-td {
+        padding: 1.2rem;
+        padding-left:1.5rem;
+          .kin-athletics-presents {
+            text-align: left;
+            font-size:34px;
+            font-family: $font__main;
+          }
+          h1{
+            font-size:55px;
+          }
+          // .kin-athletics-presents{}
+      }
+    }
+
+    .landing-who-we-are{
+      background-image: url(../../asset/images/serv2.jpg);
+      height: 506px;
+      // .landing-text-who-we-are {
+      // }
+    }
+
+    .landing-what-we-do {
+      background-image: url(../../asset/images/serv3.jpg);
+      height: 506px;
+      // .landing-text-what-we-do{
+      // }
+    }
+}
+    .landing-scroll-section{
+      height:85px;
+      background-color: white;
+      p{
+        color:$color__brand-red;
+        text-transform:uppercase;
+        text-align: center;
+        font-family:$font__accent;
+        font-size: 18px;	
+        font-weight: 500;	
+        line-height: 24px;
+  }
 }

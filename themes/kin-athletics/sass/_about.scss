@@ -1,0 +1,135 @@
+/*--------------------------------------------------------------
+# About
+--------------------------------------------------------------*/
+
+/* buttons */
+.consultation-button {
+    @extend .red-button;
+
+}
+
+/* ------- Single Trainer ------- */
+body.single-trainer {
+
+    .entry-title {
+        font-size: 5.5em;
+        text-align: center;
+        margin: 0;
+        position: absolute;
+        z-index: 2;
+        bottom: 0;
+        line-height: 0.85;
+        text-transform: uppercase;  
+    }
+
+    .site-content {
+        max-width: $base__width-mobile;
+        width: 100%;
+        margin: 0 auto;
+        background: grey;
+
+        p.trainer-sub-titles {
+            font-family: $font__h1-header;
+            margin: 0.5em;
+        }
+    }
+
+    .default-header {
+        display: flex;
+        position: relative;
+        height: $header__height-full;
+        margin: 0;
+        justify-content: center;
+        border-bottom: $header__title-border-bottom;
+
+        .trainer-profile-picture {
+            width: 100%;
+            background: url("../../asset/profiles/super_male.png") no-repeat bottom;
+            height: 100%;
+            background-size: cover;
+            position: absolute;
+            z-index: 0;
+            bottom: 0;
+
+            &:after {
+                position: absolute;
+                background: rgba(0,0,0,0.65);
+                background-size: cover;
+                content: "";
+                height: 100%;
+                width: 100%;
+                z-index: 2;
+            }
+        }
+    }
+
+    .default-content {
+        width: 100%;
+
+        .trainer-description, 
+        .trainer-personalities,
+        .trainer-availability,
+        .other-trainers {
+            padding: 1.5em;
+        }
+
+        p {
+
+            &.trainer-sub-titles {
+                font-size: $font__body-size;
+                text-transform: uppercase;
+                font-weight: 500;
+            }
+        }
+
+        .trainer-description,
+        .other-trainers {
+            color: white;
+            background: black;
+        }
+
+        .trainer-description {
+            p {
+                margin: 0;
+            }
+        }
+        .trainer-personalities {
+            @extend .trainer-description;
+            padding-top: 0;
+
+            p.trainer-sub-titles {
+                margin-bottom: 0.5em;
+                margin-top: 0;
+            }
+
+            ul {
+                display: flex;
+                flex-flow: row wrap;
+
+                li {
+                    line-height: 1;
+                    text-transform: uppercase;
+                    font-family: $font__main;
+                    font-weight: 300;
+                }
+            }
+        }
+
+        .trainer-availability {
+            background: white;
+            text-align: center;
+            padding-top: 5px;
+        }
+        
+        .trainer-consultation {
+
+            a.consultation-button {
+                font-size: 20px;
+                font-weight: 500;
+                font-family: $font__h1-header;
+                margin-top: 2em;
+                padding: 0 1em;
+            }
+        }
+    }
+}
