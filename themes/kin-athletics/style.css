@@ -684,6 +684,7 @@ object {
   .social-button a, .services-featured .social a {
     color: #000000;
     text-align: center; }
+<<<<<<< HEAD
 
 .red-button, .consultation-button {
   background: #A10000;
@@ -699,6 +700,8 @@ object {
     font-weight: bold;
     line-height: 29px;
     text-align: center; }
+=======
+>>>>>>> 747b34d5f92b0d619c5c1b714067b112cff727ae
 
 /*--------------------------------------------------------------
 # Page Templates
@@ -735,6 +738,22 @@ object {
     width: 100%;
     bottom: 0;
     font-size: 24px; }
+<<<<<<< HEAD
+=======
+
+/* Landing Page */
+.landing-page-container {
+  width: 100vw; }
+  .landing-page-container .landing-project-td, .landing-page-container .landing-who-we-are, .landing-page-container .landing-what-we-do {
+    height: 300px;
+    background-size: cover; }
+  .landing-page-container .landing-project-td {
+    background-image: url(../../asset/images/serv1.jpg); }
+  .landing-page-container .landing-who-we-are {
+    background-image: url(../../asset/images/serv2.jpg); }
+  .landing-page-container .landing-what-we-do {
+    background-image: url(../../asset/images/serv3.jpg); }
+>>>>>>> 747b34d5f92b0d619c5c1b714067b112cff727ae
 
 /*--------------------------------------------------------------
 # About

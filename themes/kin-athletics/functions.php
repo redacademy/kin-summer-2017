@@ -89,10 +89,6 @@ function kin_athletics_scripts() {
 
 	wp_enqueue_script('jquery');	
 
-	wp_enqueue_script( 'scripts', get_template_directory_uri() . '/js/flickity.js', array(), '20170905', true );		
-
-	wp_enqueue_script( 'scripts', get_template_directory_uri() . '/js/scripts.js', array(), '20170905', true );	
-
 	wp_enqueue_script( 'red-starter-skip-link-focus-fix', get_template_directory_uri() . '/build/js/skip-link-focus-fix.min.js', array(), '20130115', true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
