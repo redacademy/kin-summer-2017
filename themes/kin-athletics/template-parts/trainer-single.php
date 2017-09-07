@@ -8,23 +8,25 @@
 ?>
 
 <div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<header class="entry-header">
+	<header class="default-header">
 		<?php if ( has_post_thumbnail() ) : ?>
 			<?php the_post_thumbnail( 'large' ); ?>
 		<?php endif; ?>
 
-		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+        <?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+        
+        <div class="trainer-profile-picture"></div>
 	</header><!-- .entry-header -->
 
-	<div class="entry-content">
-    <!-- Description -->
+	<div class="default-content">
+        <!-- Description -->
         <?php echo CFS()->get( 'trainer_description' ); ?>  
-    <!-- Personalities  -->
+        <!-- Personalities  -->
         <div class="trainer-personalities">
             <p>Personality # Tags</p>
             <?php echo CFS()->get( 'trainer_personalities' ); ?>
         </div>
-    <!-- Availability  -->
+         <!-- Availability  -->
         <div class="trainer-availability">
             <div class="my-availability">
                 <p>My Availability</p>

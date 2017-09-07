@@ -747,14 +747,46 @@ object {
 /* buttons */
 /* ------- Single Trainer ------- */
 body.single-trainer .entry-title {
-  background: silver;
-  text-align: center; }
+  font-size: 7rem;
+  text-align: center;
+  margin: 0;
+  position: absolute;
+  z-index: 2;
+  bottom: 0;
+  line-height: 0.6;
+  text-transform: uppercase; }
 
 body.single-trainer .site-content {
   max-width: 400px;
   width: 100%;
   margin: 0 auto;
   background: grey; }
+
+body.single-trainer .default-header {
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  height: 100vh;
+  margin: 0;
+  -ms-flex-pack: center;
+      justify-content: center;
+  border-bottom: 5px solid white; }
+  body.single-trainer .default-header .trainer-profile-picture {
+    width: 100%;
+    background: url("../../asset/profiles/super_male.png") no-repeat bottom;
+    height: 100%;
+    background-size: cover;
+    position: absolute;
+    z-index: 0;
+    bottom: 0; }
+    body.single-trainer .default-header .trainer-profile-picture:after {
+      position: absolute;
+      background: rgba(0, 0, 0, 0.65);
+      background-size: cover;
+      content: "";
+      height: 100%;
+      width: 100%;
+      z-index: 2; }
 
 /* Landing Page */
 .landing-page-container {
