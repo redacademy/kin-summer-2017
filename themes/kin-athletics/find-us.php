@@ -17,6 +17,7 @@ get_header(); ?>
         </div><!-- .container -->
       </header><!-- .entry-header -->
 
+      <iframe frameborder="0" height="264" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2919.8004139206323!2d-81.21609598475176!3d42.96141020490528!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882ef250c35fa395%3A0x8d9892ec93161844!2s962+Leathorne+St%2C+London%2C+ON+N5Z+3M5!5e0!3m2!1sen!2sca!4v1504740716400" width="600"></iframe>
       <div class="white container">
       </div><!-- .white .container -->
 
