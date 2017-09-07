@@ -38,17 +38,17 @@ get_header(); ?>
 
 
         <div class="main-carousel">
-          <div class="carousel-cell">
+          <div class="carousel-cell personal-training">
             <h2>Personal training</h2>
             <p><?php echo CFS()->get( 'services_personal_training'); ?></p>
           </div>
 
-          <div class="carousel-cell">
+          <div class="carousel-cell group-training">
             <h2>Group training</h2>
             <p><?php echo CFS()->get('services_group_training');?></p>
           </div>
 
-          <div class="carousel-cell">
+          <div class="carousel-cell community-projects">
             <h2>Community projects</h2>
             <p><?php echo CFS()->get('services_community_projects');?></p>
           </div>
