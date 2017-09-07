@@ -101,3 +101,21 @@ object {
 				text-align: center;
 		}
 }
+
+.red-button {
+	background: $color__brand-red;
+	text-transform: uppercase;
+	height: 38px;	
+	width: 234px;
+	border: 2px solid $color__brand-red;
+	box-shadow: 0 0.5px 1px 0 rgba(0,0,0,0.5);
+	color: $color__text-main;
+
+	a {
+		color: $color__text-main;
+		font-size: 24px;	
+		font-weight: bold;	
+		line-height: 29px;	
+		text-align: center;
+	}
+}

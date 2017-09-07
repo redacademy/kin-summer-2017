@@ -674,13 +674,31 @@ object {
   display: block; }
 
 /* Buttons */
-.social-button {
+.social-button, .services-featured .social {
   background: #FFFFFF;
   border: solid 2px #A10000;
   height: 2.82%;
   width: 54.37%;
   margin: 0 auto;
   margin-bottom: 16px; }
+  .social-button a, .services-featured .social a {
+    color: #000000;
+    text-align: center; }
+
+.red-button, .consultation-button {
+  background: #A10000;
+  text-transform: uppercase;
+  height: 38px;
+  width: 234px;
+  border: 2px solid #A10000;
+  box-shadow: 0 0.5px 1px 0 rgba(0, 0, 0, 0.5);
+  color: #FFFFFF; }
+  .red-button a, .consultation-button a {
+    color: #FFFFFF;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 29px;
+    text-align: center; }
 
 /*--------------------------------------------------------------
 # Page Templates
@@ -717,14 +735,11 @@ object {
     width: 100%;
     bottom: 0;
     font-size: 24px; }
-  .services-featured .social {
-    background: #FFFFFF;
-    border: solid 2px #A10000;
-    height: 2.82%;
-    width: 54.37%;
-    margin: 0 auto;
-    margin-bottom: 16px; }
 
+/*--------------------------------------------------------------
+# About
+--------------------------------------------------------------*/
+/* buttons */
 .site-footer {
   background-color: #A10000;
   height: 330px;
