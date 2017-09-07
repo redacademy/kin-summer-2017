@@ -1,34 +1,10 @@
 <?php
 /** 
 * Template Name: Landing Page
-*@package Kin_Athletics_Theme
+*@package Kin_Athetics_Theme
 **/
 get_header(); ?>
 
-  <div id="primary" class="content-area">
-    <main id="main" class="site-main" role="main">
-      <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-        <header class="custom-bg custom-hero">
-          <div class="landing-page-container">
-              <?php the_title( '<h1 class="about-entry-title">', '</h1>');?>
-          </div>
-        </header>
-
-        <div class="front-section-container">
-          <div class="entry-content">
-            <h2>Our Story</h2>
-            <?php echo CFS()->get( 'about_our_story' ); ?>
-        
-            <h2>Our Team</h2>
-            <?php echo CFS()->get( 'about_our_team' ); ?>
-          </div>
-        </div>
-      </article>
-
-    </main><!--#main-->
-  </div><!--#primary
-
-<!
 <div class="landing-page-container">
  
   <div class="landing-project-td">
@@ -56,5 +32,5 @@ get_header(); ?>
     </div>
   </div>
 
-</div><!end of landing-page-container-->
+</div><!--end of landing-page-container-->
 
