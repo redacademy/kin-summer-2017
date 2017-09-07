@@ -37,7 +37,8 @@ body.single-trainer {
     .default-header {
         display: flex;
         position: relative;
-        height: 45vh;
+        max-height: 50vh;
+        height: 50vh;
         margin: 0;
         justify-content: center;
         border-bottom: $header__title-border-bottom;
@@ -130,6 +131,11 @@ body.single-trainer {
                 margin-top: 2em;
                 padding: 0 1em;
             }
+        }
+
+        .trainer-meta {
+            max-height: 50vh;
+            width: 100%;
         }
     }
 }

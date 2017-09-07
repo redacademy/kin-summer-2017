@@ -825,7 +825,8 @@ body.single-trainer .default-header {
   display: -ms-flexbox;
   display: flex;
   position: relative;
-  height: 45vh;
+  max-height: 50vh;
+  height: 50vh;
   margin: 0;
   -ms-flex-pack: center;
       justify-content: center;
@@ -889,6 +890,9 @@ body.single-trainer .default-content {
     font-family: "Oswald";
     margin-top: 2em;
     padding: 0 1em; }
+  body.single-trainer .default-content .trainer-meta {
+    max-height: 50vh;
+    width: 100%; }
 
 /* Landing Page */
 .landing-page-container {

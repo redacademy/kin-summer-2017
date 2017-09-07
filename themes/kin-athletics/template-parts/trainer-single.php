@@ -21,14 +21,17 @@
 	</header><!-- .entry-header -->
 
 	<div class="default-content">
+        <!-- Trainer Meta Information -->
+        <div class="trainer-meta">
         <!-- Description -->
-        <div class="trainer-description">
-            <?php echo CFS()->get( 'trainer_description' ); ?>  
-        </div>
-        <!-- Personalities  -->
-        <div class="trainer-personalities">
-            <p class="trainer-sub-titles">Personality # Tags</p>
-            <?php echo CFS()->get( 'trainer_personalities' ); ?>
+            <div class="trainer-description">
+                <?php echo CFS()->get( 'trainer_description' ); ?>  
+            </div>
+            <!-- Personalities  -->
+            <div class="trainer-personalities">
+                <p class="trainer-sub-titles">Personality # Tags</p>
+                <?php echo CFS()->get( 'trainer_personalities' ); ?>
+            </div>
         </div>
          <!-- Availability  -->
         <div class="trainer-availability">
