@@ -233,11 +233,13 @@ select,
 textarea {
   font-size: 16px;
   font-size: 1rem;
-  line-height: 1.5; }
+  line-height: 1.5;
+  font-family: "Open Sans Condensed", "Oswald", sans-serif; }
 
 /* Headings */
 h1, h2, h3, h4, h5, h6 {
-  clear: both; }
+  clear: both;
+  font-family: "Oswald"; }
 
 h1 {
   font-size: 74px;

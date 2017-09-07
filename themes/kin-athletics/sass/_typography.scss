@@ -9,12 +9,14 @@ select,
 textarea {
 	@include font-size(1);
 	line-height: $font__line-height-body;
+	font-family: $font__code;
 }
 
 /* Headings */
 
 h1, h2, h3, h4, h5, h6 {
 	clear: both;
+	font-family: $font__h1-header;
 }
 
 h1{
