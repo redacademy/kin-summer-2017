@@ -253,8 +253,7 @@ textarea {
 /* Headings */
 h1, h2, h3, h4, h5, h6 {
   clear: both;
-  font-family: "Oswald";
-  margin: 0; }
+  font-family: "Oswald"; }
 
 h1 {
   font-size: 55px;
@@ -790,8 +789,6 @@ object {
 
 .personal-training {
   background-image: url(../../asset/images/serv1.jpg); }
-  .personal-training h3 {
-    font-size: 40px; }
 
 /*--------------------------------------------------------------
 # About
