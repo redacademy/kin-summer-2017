@@ -5,6 +5,56 @@
 /* buttons */
 .consultation-button {
     @extend .red-button;
-    
+
 }
 
+/* ------- Single Trainer ------- */
+body.single-trainer {
+
+    .entry-title {
+        font-size: 7rem;
+        text-align: center;
+        margin: 0;
+        position: absolute;
+        z-index: 2;
+        bottom: 0;
+        line-height: 0.6;
+        text-transform: uppercase;  
+    }
+
+    .site-content {
+        max-width: $base__width-mobile;
+        width: 100%;
+        margin: 0 auto;
+        background: grey;
+    }
+
+    .default-header {
+        display: flex;
+        position: relative;
+        height: $header__height-full;
+        margin: 0;
+        justify-content: center;
+        border-bottom: $header__title-border-bottom;
+
+        .trainer-profile-picture {
+            width: 100%;
+            background: url("../../asset/profiles/super_male.png") no-repeat bottom;
+            height: 100%;
+            background-size: cover;
+            position: absolute;
+            z-index: 0;
+            bottom: 0;
+
+            &:after {
+                position: absolute;
+                background: rgba(0,0,0,0.65);
+                background-size: cover;
+                content: "";
+                height: 100%;
+                width: 100%;
+                z-index: 2;
+            }
+        }
+    }
+}
