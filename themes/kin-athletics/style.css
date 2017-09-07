@@ -754,7 +754,8 @@ object {
     font-size: 24px;
     font-weight: bold;
     line-height: 29px;
-    text-align: center; }
+    text-align: center;
+    text-decoration: none; }
 
 /*--------------------------------------------------------------
 # Page Templates
@@ -849,27 +850,27 @@ body.single-trainer .default-header {
   display: -ms-flexbox;
   display: flex;
   position: relative;
-  height: 100vh;
+  max-height: 50vh;
+  height: 50vh;
   margin: 0;
   -ms-flex-pack: center;
       justify-content: center;
-  border-bottom: 5px solid white; }
-  body.single-trainer .default-header .trainer-profile-picture {
-    width: 100%;
-    background: url("../../asset/profiles/super_male.png") no-repeat bottom;
-    height: 100%;
-    background-size: cover;
-    position: absolute;
-    z-index: 0;
-    bottom: 0; }
-    body.single-trainer .default-header .trainer-profile-picture:after {
-      position: absolute;
-      background: rgba(0, 0, 0, 0.65);
+  border-bottom: 5px solid white;
+  overflow: hidden; }
+  body.single-trainer .default-header .trainer-profile-wrapper {
+    position: relative; }
+    body.single-trainer .default-header .trainer-profile-wrapper .trainer-profile-picture {
+      background: url("../../asset/profiles/super_male.png") no-repeat bottom;
       background-size: cover;
-      content: "";
+      position: absolute;
+      transform: translate(-50%, -50%);
+      left: 50%;
+      top: 50%;
+      z-index: 0;
+      max-width: none;
+      z-index: 0;
       height: 100%;
-      width: 100%;
-      z-index: 2; }
+      filter: grayscale(100%); }
 
 body.single-trainer .default-content {
   width: 100%; }
@@ -902,7 +903,8 @@ body.single-trainer .default-content {
         line-height: 1;
         text-transform: uppercase;
         font-family: "Open Sans Condensed", sans-serif;
-        font-weight: 300; }
+        font-weight: 300;
+        font-size: 20px; }
   body.single-trainer .default-content .trainer-availability {
     background: white;
     text-align: center;
@@ -913,6 +915,9 @@ body.single-trainer .default-content {
     font-family: "Oswald";
     margin-top: 2em;
     padding: 0 1em; }
+  body.single-trainer .default-content .trainer-meta {
+    max-height: 50vh;
+    width: 100%; }
 
 /* Landing Page */
 .landing-page-container {

@@ -15,18 +15,23 @@
 
         <?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
         
-        <div class="trainer-profile-picture"></div>
+        <div class="trainer-profile-wrapper">
+            <img class="trainer-profile-picture" src="https://scontent-sea1-1.xx.fbcdn.net/v/t31.0-8/13340329_10153641573310950_332847360037413919_o.jpg?oh=bf1375ead9f2edb8ce2dc69b48950570&oe=5A54BC60">
+        </div>
 	</header><!-- .entry-header -->
 
 	<div class="default-content">
+        <!-- Trainer Meta Information -->
+        <div class="trainer-meta">
         <!-- Description -->
-        <div class="trainer-description">
-            <?php echo CFS()->get( 'trainer_description' ); ?>  
-        </div>
-        <!-- Personalities  -->
-        <div class="trainer-personalities">
-            <p class="trainer-sub-titles">Personality # Tags</p>
-            <?php echo CFS()->get( 'trainer_personalities' ); ?>
+            <div class="trainer-description">
+                <?php echo CFS()->get( 'trainer_description' ); ?>  
+            </div>
+            <!-- Personalities  -->
+            <div class="trainer-personalities">
+                <p class="trainer-sub-titles">Personality # Tags</p>
+                <?php echo CFS()->get( 'trainer_personalities' ); ?>
+            </div>
         </div>
          <!-- Availability  -->
         <div class="trainer-availability">
