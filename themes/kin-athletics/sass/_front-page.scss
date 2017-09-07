@@ -14,7 +14,7 @@
     }
 
     .landing-project-td {
-      background-image: url(../../asset/images/serv1.jpg);
+      // background-image: url(../../asset/images/serv1.jpg);
       // background-color: black;
       height: 420px;
 
@@ -33,15 +33,20 @@
       }
     }
 
-    .landing-who-we-are{
+    .who-we-are-cont{
       background-image: url(../../asset/images/serv2.jpg);
       height: 506px;
-      // .landing-text-who-we-are {
-      // }
+      .who-we-are-image{width:20rem;
+      height:20rem;}
+      .who-we-are-text {
+        color:black;
+        font-size: 2rem;
+
+      }
     }
 
     .landing-what-we-do {
-      background-image: url(../../asset/images/serv3.jpg);
+      // background-image: url(../../asset/images/serv3.jpg);
       height: 506px;
       // .landing-text-what-we-do{
       // }

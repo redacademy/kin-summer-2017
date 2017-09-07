@@ -1,14 +1,14 @@
 <?php
 /** 
 * Template Name: Landing Page
-*@package Kin_Athetics_Theme
+*@package Kin_Athletics_Theme
 **/
 get_header(); ?>
 
-<div class="landing-page-container">
+<div class="front-page-container">
  
-  <div class="landing-project-td">
-    <div class="landing-text-project-td">
+  <div class="project-td-cont">
+    <div class="project-td-text">
       <h2 class="kin-athletics-presents">Kin Athletics Presents</h2>
       <h1>Project TD</h1>
     </div>
@@ -18,19 +18,20 @@ get_header(); ?>
     <p>Jump In</p>
   </div>
 
-  <div class="landing-who-we-are">
-    <div class="landing-text-who-we-are">
+  <div class="who-we-are-cont">
+    <div class="who-we-are-image" style="background:url(<?php echo CFS()->get('who_we_are_image'); ?>);">
+    <div class="who-we-are-text">
       <h2>Who We Are</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
     </div>
+  </div>
   </div>
 
   <div class="landing-what-we-do">
     <div class="landing-text-what-we-do">
       <h2>What We Do</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+      <p></p>
     </div>
   </div>
 
 </div><!--end of landing-page-container-->
-
+<?php get_footer(); ?>

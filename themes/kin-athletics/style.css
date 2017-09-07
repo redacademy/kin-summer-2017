@@ -923,7 +923,33 @@ body.single-trainer .default-content {
     max-height: 50vh;
     width: 100%; }
   body.single-trainer .default-content .other-trainers .next-trainer.trainer-sub-titles {
-    margin: 0; }
+    margin: 0;
+    text-align: center;
+    margin-bottom: 0.5em; }
+  body.single-trainer .default-content .other-trainers-grid {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-flow: row wrap;
+        flex-flow: row wrap;
+    width: 100%;
+    -ms-flex-pack: justify;
+        justify-content: space-between; }
+    body.single-trainer .default-content .other-trainers-grid .trainer-item-container {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+      -ms-flex-align: center;
+          align-items: center; }
+      body.single-trainer .default-content .other-trainers-grid .trainer-item-container .trainer-thumbnail-wrapper {
+        width: 53px;
+        height: 53px;
+        background: grey;
+        border-radius: 25px;
+        border: 1.5px solid #A10000; }
+      body.single-trainer .default-content .other-trainers-grid .trainer-item-container .next-trainer-wrapper a {
+        text-decoration: none;
+        font-size: 16px; }
 
 /* Landing Page */
 .landing-page-container {
@@ -936,7 +962,6 @@ body.single-trainer .default-content {
     .landing-page-container .landing-project-td h1, .landing-page-container .landing-project-td h2, .landing-page-container .landing-who-we-are h1, .landing-page-container .landing-who-we-are h2, .landing-page-container .landing-what-we-do h1, .landing-page-container .landing-what-we-do h2 {
       text-transform: uppercase; }
   .landing-page-container .landing-project-td {
-    background-image: url(../../asset/images/serv1.jpg);
     height: 420px; }
     .landing-page-container .landing-project-td .landing-text-project-td {
       padding: 1.2rem;
@@ -947,11 +972,16 @@ body.single-trainer .default-content {
         font-family: "Open Sans Condensed", sans-serif; }
       .landing-page-container .landing-project-td .landing-text-project-td h1 {
         font-size: 55px; }
-  .landing-page-container .landing-who-we-are {
+  .landing-page-container .who-we-are-cont {
     background-image: url(../../asset/images/serv2.jpg);
     height: 506px; }
+    .landing-page-container .who-we-are-cont .who-we-are-image {
+      width: 20rem;
+      height: 20rem; }
+    .landing-page-container .who-we-are-cont .who-we-are-text {
+      color: black;
+      font-size: 2rem; }
   .landing-page-container .landing-what-we-do {
-    background-image: url(../../asset/images/serv3.jpg);
     height: 506px; }
 
 .landing-scroll-section {
