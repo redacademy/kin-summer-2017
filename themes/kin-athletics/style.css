@@ -811,8 +811,8 @@ body.single-trainer .default-content {
     margin: 0; }
     body.single-trainer .default-content p.trainer-sub-titles {
       font-size: 20px;
-      margin-bottom: 1em;
-      text-transform: uppercase; }
+      text-transform: uppercase;
+      font-weight: 500; }
   body.single-trainer .default-content .trainer-description, body.single-trainer .default-content .trainer-personalities,
   body.single-trainer .default-content .other-trainers {
     color: white;
@@ -827,9 +827,18 @@ body.single-trainer .default-content {
       body.single-trainer .default-content .trainer-personalities ul li {
         line-height: 0.85;
         text-transform: uppercase; }
-  body.single-trainer .default-content .trainer-availability,
-  body.single-trainer .default-content .trainer-consultation {
-    background: white; }
+  body.single-trainer .default-content .trainer-availability {
+    background: white;
+    text-align: center;
+    padding-top: 5px; }
+    body.single-trainer .default-content .trainer-availability p {
+      margin: 0.5em 0; }
+  body.single-trainer .default-content .trainer-consultation a.consultation-button {
+    font-size: 20px;
+    font-weight: 500;
+    font-family: "Oswald";
+    margin-top: 2em;
+    padding: 0 1em; }
 
 /* Landing Page */
 .landing-page-container {

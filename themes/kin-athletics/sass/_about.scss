@@ -77,8 +77,8 @@ body.single-trainer {
 
             &.trainer-sub-titles {
                 font-size: $font__body-size;
-                margin-bottom: 1em;
                 text-transform: uppercase;
+                font-weight: 500;
             }
         }
 
@@ -103,9 +103,24 @@ body.single-trainer {
             }
         }
 
-        .trainer-availability,
-        .trainer-consultation {
+        .trainer-availability {
             background: white;
+            text-align: center;
+            padding-top: 5px;
+            p {
+                margin: 0.5em 0;
+            }
+        }
+        
+        .trainer-consultation {
+
+            a.consultation-button {
+                font-size: 20px;
+                font-weight: 500;
+                font-family: $font__h1-header;
+                margin-top: 2em;
+                padding: 0 1em;
+            }
         }
     }
 }
