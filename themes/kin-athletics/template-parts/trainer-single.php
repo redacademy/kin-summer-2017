@@ -37,7 +37,7 @@
             </div>
             <div class="trainer-consultation">
                 <p>Let's Pump It!</p>
-                <a class="">Free Consultation</a>
+                <a class="consultation-button">Free Consultation</a>
             </div>
         </div>
     <!-- Other Trainers -->

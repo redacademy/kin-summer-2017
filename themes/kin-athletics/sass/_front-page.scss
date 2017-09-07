@@ -1,32 +1,20 @@
 /* Landing Page */
 
-.landing-page-container{
-  width:100vw;
+.landing-page-container {
+    width: 100vw;
+    
+    .landing-project-td, .landing-who-we-are, .landing-what-we-do{
+      height: 300px;
+      background-size: cover;
+    }
 
-  .landing1-container{
-    .landing-td-image{
-       background-image: url(../asset/images/serv1.jpg);
-       height:300px;
-}
-// h2
-// h1
-// .scroll-section
-// p
-}
-  .landing2-container {}
-    .who-we-are-image {
-      background-image: url(../asset/images/serv2.jpg);
-      height:300px;
-}
-// h1
-// p
-}
-  .landing3-container{
-    .what-we-do-image{
-      background-image: url(../asset/images/serv3.jpg);
-      height:300px;
-}
-// h1
-// p
-
+    .landing-project-td {
+      background-image: url(../../asset/images/serv1.jpg);
+    }
+    .landing-who-we-are{
+      background-image: url(../../asset/images/serv2.jpg);
+    }
+    .landing-what-we-do {
+      background-image: url(../../asset/images/serv3.jpg);
+    }
 }
