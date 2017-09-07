@@ -30,7 +30,6 @@ body.single-trainer {
 
         p.trainer-sub-titles {
             font-family: $font__h1-header;
-            margin: 0.5em;
         }
     }
 
@@ -120,6 +119,10 @@ body.single-trainer {
             background: white;
             text-align: center;
             padding-top: 5px;
+
+            p {
+                margin-bottom: 0.5em;
+            }
         }
         
         .trainer-consultation {
@@ -136,6 +139,13 @@ body.single-trainer {
         .trainer-meta {
             max-height: 50vh;
             width: 100%;
+        }
+
+        .other-trainers {
+
+            .next-trainer.trainer-sub-titles {
+                margin: 0;
+            }
         }
     }
 }
