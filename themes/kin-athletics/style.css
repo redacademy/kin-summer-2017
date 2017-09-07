@@ -43,6 +43,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 # Page Templates
 	## Front page
 --------------------------------------------------------------*/
+@import url("https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Oswald");
 html {
   font-family: sans-serif;
   -webkit-text-size-adjust: 100%;
@@ -247,11 +248,13 @@ select,
 textarea {
   font-size: 16px;
   font-size: 1rem;
-  line-height: 1.5; }
+  line-height: 1.5;
+  font-family: "Open Sans Condensed", "Oswald", sans-serif; }
 
 /* Headings */
 h1, h2, h3, h4, h5, h6 {
   clear: both;
+<<<<<<< HEAD
   text-transform: uppercase;
   font-family: "Oswald", sans-serif; }
 
@@ -261,6 +264,18 @@ h1 {
 
 h2 {
   font-size: 39px; }
+=======
+  font-family: "Oswald"; }
+
+h1 {
+  font-size: 74px;
+  color: white; }
+
+/* -------.ENTRY-HEADER STYLES ------- */
+.entry-header h1.entry-title {
+  font-size: 4.5rem;
+  color: #000000; }
+>>>>>>> 890312c6be0e2b47bd27017dfbc9d556dff347e9
 
 /* Copy */
 p {
@@ -289,7 +304,7 @@ pre {
   padding: 1.6rem; }
 
 code, kbd, tt, var {
-  font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+  font-family: "Open Sans Condensed", "Oswald", sans-serif;
   font-size: 15px;
   font-size: 0.9375rem; }
 
@@ -436,7 +451,6 @@ textarea {
 .site-header {
   height: 60px;
   width: 100%;
-  position: fixed;
   top: 0;
   background-color: #A10000;
   z-index: 99999; }
@@ -707,6 +721,21 @@ object {
     color: #000000;
     text-align: center; }
 
+.red-button, .consultation-button {
+  background: #A10000;
+  text-transform: uppercase;
+  height: 38px;
+  width: 234px;
+  border: 2px solid #A10000;
+  box-shadow: 0 0.5px 1px 0 rgba(0, 0, 0, 0.5);
+  color: #FFFFFF; }
+  .red-button a, .consultation-button a {
+    color: #FFFFFF;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 29px;
+    text-align: center; }
+
 /*--------------------------------------------------------------
 # Page Templates
 --------------------------------------------------------------*/
@@ -742,6 +771,74 @@ object {
     width: 100%;
     bottom: 0;
     font-size: 24px; }
+
+.main-carousel {
+  height: 90vh; }
+
+.carousel-cell {
+  display: block;
+  height: 100vh;
+  width: 100%; }
+
+/*--------------------------------------------------------------
+# About
+--------------------------------------------------------------*/
+/* buttons */
+/* ------- Single Trainer ------- */
+body.single-trainer .entry-title {
+  font-size: 7rem;
+  text-align: center;
+  margin: 0;
+  position: absolute;
+  z-index: 2;
+  bottom: 0;
+  line-height: 0.6;
+  text-transform: uppercase; }
+
+body.single-trainer .site-content {
+  max-width: 400px;
+  width: 100%;
+  margin: 0 auto;
+  background: grey; }
+
+body.single-trainer .default-header {
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  height: 100vh;
+  margin: 0;
+  -ms-flex-pack: center;
+      justify-content: center;
+  border-bottom: 5px solid white; }
+  body.single-trainer .default-header .trainer-profile-picture {
+    width: 100%;
+    background: url("../../asset/profiles/super_male.png") no-repeat bottom;
+    height: 100%;
+    background-size: cover;
+    position: absolute;
+    z-index: 0;
+    bottom: 0; }
+    body.single-trainer .default-header .trainer-profile-picture:after {
+      position: absolute;
+      background: rgba(0, 0, 0, 0.65);
+      background-size: cover;
+      content: "";
+      height: 100%;
+      width: 100%;
+      z-index: 2; }
+
+body.single-trainer .default-content p {
+  margin: 0; }
+
+body.single-trainer .default-content .trainer-description, body.single-trainer .default-content .trainer-personalities {
+  color: white;
+  background: black;
+  padding: 1.5rem;
+  padding-bottom: 0.75rem; }
+
+body.single-trainer .default-content .trainer-personalities {
+  padding-top: 0;
+  padding-bottom: 1.5rem; }
 
 /* Landing Page */
 .landing-page-container {

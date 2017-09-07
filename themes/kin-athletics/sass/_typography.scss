@@ -9,6 +9,7 @@ select,
 textarea {
 	@include font-size(1);
 	line-height: $font__line-height-body;
+	font-family: $font__code;
 }
 
 /* Headings */
@@ -25,6 +26,17 @@ h1{
 }
 h2{
 	font-size: 39px;
+	font-family: $font__h1-header;
+}
+
+/* -------.ENTRY-HEADER STYLES ------- */
+.entry-header {
+
+	h1.entry-title {
+		font-size: 4.5rem;
+		color: #000000;
+	}
+
 }
 
 /* Copy */
