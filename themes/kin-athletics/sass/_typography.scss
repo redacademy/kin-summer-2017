@@ -15,22 +15,24 @@ textarea {
 
 h1, h2, h3, h4, h5, h6 {
 	clear: both;
+	text-transform:uppercase;
+	font-family: $font__accent;
 }
 
 h1{
-	font-size:74px;
-<<<<<<< HEAD
-	color:white;
-=======
-	color: $color__h1-black;
-	
->>>>>>> 335114a115fea1e10ef54ae700bf88f4fe63a8d3
+	font-size:55px;
+	color: $color__text-main;
+}
+h2{
+	font-size: 39px;
 }
 
 /* Copy */
 
 p {
+	font-size:18px;
 	margin-bottom: $base__space-unit;
+	font-family: $font__main;
 }
 
 dfn, cite, em, i {
