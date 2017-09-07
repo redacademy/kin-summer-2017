@@ -43,6 +43,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 # Page Templates
 	## Front page
 --------------------------------------------------------------*/
+@import url("https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Oswald");
 html {
   font-family: sans-serif;
   -webkit-text-size-adjust: 100%;
@@ -272,7 +273,7 @@ pre {
   padding: 1.6rem; }
 
 code, kbd, tt, var {
-  font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+  font-family: "Open Sans Condensed", "Oswald", sans-serif;
   font-size: 15px;
   font-size: 0.9375rem; }
 
@@ -787,6 +788,19 @@ body.single-trainer .default-header {
       height: 100%;
       width: 100%;
       z-index: 2; }
+
+body.single-trainer .default-content p {
+  margin: 0; }
+
+body.single-trainer .default-content .trainer-description, body.single-trainer .default-content .trainer-personalities {
+  color: white;
+  background: black;
+  padding: 1.5rem;
+  padding-bottom: 0.75rem; }
+
+body.single-trainer .default-content .trainer-personalities {
+  padding-top: 0;
+  padding-bottom: 1.5rem; }
 
 /* Landing Page */
 .landing-page-container {

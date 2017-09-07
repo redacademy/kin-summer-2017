@@ -20,7 +20,9 @@
 
 	<div class="default-content">
         <!-- Description -->
-        <?php echo CFS()->get( 'trainer_description' ); ?>  
+        <div class="trainer-description">
+            <?php echo CFS()->get( 'trainer_description' ); ?>  
+        </div>
         <!-- Personalities  -->
         <div class="trainer-personalities">
             <p>Personality # Tags</p>

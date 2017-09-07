@@ -57,4 +57,24 @@ body.single-trainer {
             }
         }
     }
+
+    .default-content {
+
+        p {
+            margin: 0;
+        }
+
+        .trainer-description {
+            color: white;
+            background: black;
+            padding: $content__base-margin;
+            padding-bottom: $content__base-margin / 2;
+        }
+
+        .trainer-personalities {
+            @extend .trainer-description;
+            padding-top: 0;
+            padding-bottom: $content__base-margin;
+        }
+    }
 }
