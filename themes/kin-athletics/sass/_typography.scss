@@ -16,12 +16,17 @@ textarea {
 
 h1, h2, h3, h4, h5, h6 {
 	clear: both;
-	font-family: $font__h1-header;
+	text-transform:uppercase;
+	font-family: $font__accent;
 }
 
 h1{
-	font-size:74px;
-	color: white;
+	font-size:55px;
+	color: $color__text-main;
+}
+h2{
+	font-size: 39px;
+	font-family: $font__h1-header;
 }
 
 /* -------.ENTRY-HEADER STYLES ------- */
@@ -31,12 +36,15 @@ h1{
 		font-size: 4.5rem;
 		color: #000000;
 	}
+
 }
 
 /* Copy */
 
 p {
+	font-size:18px;
 	margin-bottom: $base__space-unit;
+	font-family: $font__main;
 }
 
 dfn, cite, em, i {
