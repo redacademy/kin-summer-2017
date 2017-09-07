@@ -921,6 +921,11 @@ body.single-trainer .default-content {
     width: 100%; }
   body.single-trainer .default-content .other-trainers .next-trainer.trainer-sub-titles {
     margin: 0; }
+  body.single-trainer .default-content .other-trainers-grid {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-flow: row wrap;
+        flex-flow: row wrap; }
 
 /* Landing Page */
 .landing-page-container {

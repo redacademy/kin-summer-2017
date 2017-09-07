@@ -146,6 +146,11 @@ body.single-trainer {
             .next-trainer.trainer-sub-titles {
                 margin: 0;
             }
+
+            &-grid {
+                display: flex;
+                flex-flow: row wrap;
+            }
         }
     }
 }
