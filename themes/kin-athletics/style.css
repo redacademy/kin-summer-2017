@@ -786,13 +786,13 @@ object {
 /* buttons */
 /* ------- Single Trainer ------- */
 body.single-trainer .entry-title {
-  font-size: 7rem;
+  font-size: 5.5em;
   text-align: center;
   margin: 0;
   position: absolute;
   z-index: 2;
   bottom: 0;
-  line-height: 0.6;
+  line-height: 0.85;
   text-transform: uppercase; }
 
 body.single-trainer .site-content {
@@ -800,6 +800,8 @@ body.single-trainer .site-content {
   width: 100%;
   margin: 0 auto;
   background: grey; }
+  body.single-trainer .site-content p.trainer-sub-titles {
+    font-family: "Oswald"; }
 
 body.single-trainer .default-header {
   display: -ms-flexbox;
@@ -827,18 +829,36 @@ body.single-trainer .default-header {
       width: 100%;
       z-index: 2; }
 
-body.single-trainer .default-content p {
-  margin: 0; }
-
-body.single-trainer .default-content .trainer-description, body.single-trainer .default-content .trainer-personalities {
-  color: white;
-  background: black;
-  padding: 1.5rem;
-  padding-bottom: 0.75rem; }
-
-body.single-trainer .default-content .trainer-personalities {
-  padding-top: 0;
-  padding-bottom: 1.5rem; }
+body.single-trainer .default-content {
+  width: 100%; }
+  body.single-trainer .default-content .trainer-description, body.single-trainer .default-content .trainer-personalities,
+  body.single-trainer .default-content .trainer-personalities,
+  body.single-trainer .default-content .trainer-availability,
+  body.single-trainer .default-content .other-trainers {
+    padding: 1.5em; }
+  body.single-trainer .default-content p {
+    margin: 0; }
+    body.single-trainer .default-content p.trainer-sub-titles {
+      font-size: 20px;
+      margin-bottom: 1em;
+      text-transform: uppercase; }
+  body.single-trainer .default-content .trainer-description, body.single-trainer .default-content .trainer-personalities,
+  body.single-trainer .default-content .other-trainers {
+    color: white;
+    background: black; }
+  body.single-trainer .default-content .trainer-personalities {
+    padding-top: 0; }
+    body.single-trainer .default-content .trainer-personalities ul {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap; }
+      body.single-trainer .default-content .trainer-personalities ul li {
+        line-height: 0.85;
+        text-transform: uppercase; }
+  body.single-trainer .default-content .trainer-availability,
+  body.single-trainer .default-content .trainer-consultation {
+    background: white; }
 
 /* Landing Page */
 .landing-page-container {
