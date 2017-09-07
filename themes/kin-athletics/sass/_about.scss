@@ -12,13 +12,13 @@
 body.single-trainer {
 
     .entry-title {
-        font-size: 7rem;
+        font-size: 5.5em;
         text-align: center;
         margin: 0;
         position: absolute;
         z-index: 2;
         bottom: 0;
-        line-height: 0.6;
+        line-height: 0.85;
         text-transform: uppercase;  
     }
 
@@ -27,6 +27,11 @@ body.single-trainer {
         width: 100%;
         margin: 0 auto;
         background: grey;
+
+        p.trainer-sub-titles {
+            font-family: $font__h1-header;
+            margin: 0.5em;
+        }
     }
 
     .default-header {
@@ -59,22 +64,72 @@ body.single-trainer {
     }
 
     .default-content {
+        width: 100%;
+
+        .trainer-description, 
+        .trainer-personalities,
+        .trainer-availability,
+        .other-trainers {
+            padding: 1.5em;
+        }
 
         p {
-            margin: 0;
+
+            &.trainer-sub-titles {
+                font-size: $font__body-size;
+                text-transform: uppercase;
+                font-weight: 500;
+            }
+        }
+
+        .trainer-description,
+        .other-trainers {
+            color: white;
+            background: black;
         }
 
         .trainer-description {
-            color: white;
-            background: black;
-            padding: $content__base-margin;
-            padding-bottom: $content__base-margin / 2;
+            p {
+                margin: 0;
+            }
         }
-
         .trainer-personalities {
             @extend .trainer-description;
             padding-top: 0;
-            padding-bottom: $content__base-margin;
+
+            p.trainer-sub-titles {
+                margin-bottom: 0.5em;
+                margin-top: 0;
+            }
+
+            ul {
+                display: flex;
+                flex-flow: row wrap;
+
+                li {
+                    line-height: 1;
+                    text-transform: uppercase;
+                    font-family: $font__main;
+                    font-weight: 300;
+                }
+            }
+        }
+
+        .trainer-availability {
+            background: white;
+            text-align: center;
+            padding-top: 5px;
+        }
+        
+        .trainer-consultation {
+
+            a.consultation-button {
+                font-size: 20px;
+                font-weight: 500;
+                font-family: $font__h1-header;
+                margin-top: 2em;
+                padding: 0 1em;
+            }
         }
     }
 }

@@ -31,12 +31,15 @@ $color__link-hover: midnightblue;
 
 // Typography
 
-$font__main: 'Open Sans Condensed';
-$font__code: 'Open Sans Condensed', 'Oswald', sans-serif;
-$font__pre: "Courier 10 Pitch", Courier, monospace;
+$font__main: 'Open Sans Condensed', sans-serif;
+// $font__code: 'Open Sans Condensed', 'Oswald', sans-serif;
+$font__accent: 'Oswald', sans-serif;
 $font__line-height-body: 1.5;
 $font__line-height-pre: 1.6;
 $font__h1-header: 'Oswald';
+
+$font__body-size: 20px;
+$font__header-size: 58px;
 
 // Headers
 $header__height-full: 100vh;
