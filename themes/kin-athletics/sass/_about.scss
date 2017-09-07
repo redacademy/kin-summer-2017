@@ -30,6 +30,7 @@ body.single-trainer {
 
         p.trainer-sub-titles {
             font-family: $font__h1-header;
+            margin: 0.5em;
         }
     }
 
@@ -73,7 +74,6 @@ body.single-trainer {
         }
 
         p {
-            margin: 0;
 
             &.trainer-sub-titles {
                 font-size: $font__body-size;
@@ -88,17 +88,29 @@ body.single-trainer {
             background: black;
         }
 
+        .trainer-description {
+            p {
+                margin: 0;
+            }
+        }
         .trainer-personalities {
             @extend .trainer-description;
             padding-top: 0;
+
+            p.trainer-sub-titles {
+                margin-bottom: 0.5em;
+                margin-top: 0;
+            }
 
             ul {
                 display: flex;
                 flex-flow: row wrap;
 
                 li {
-                    line-height: 0.85;
+                    line-height: 1;
                     text-transform: uppercase;
+                    font-family: $font__main;
+                    font-weight: 300;
                 }
             }
         }
@@ -107,9 +119,6 @@ body.single-trainer {
             background: white;
             text-align: center;
             padding-top: 5px;
-            p {
-                margin: 0.5em 0;
-            }
         }
         
         .trainer-consultation {

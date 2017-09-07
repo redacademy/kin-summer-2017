@@ -40,7 +40,7 @@
                 ?>
             </div>
             <div class="trainer-consultation">
-                <p class="trainer-sub-titles">Let's Pump It!</p>
+                <p class="pump-it trainer-sub-titles">Let's Pump It!</p>
                 <a class="consultation-button">Free Consultation</a>
             </div>
         </div>

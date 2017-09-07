@@ -248,13 +248,11 @@ select,
 textarea {
   font-size: 16px;
   font-size: 1rem;
-  line-height: 1.5;
-  font-family: "Open Sans Condensed", "Oswald", sans-serif; }
+  line-height: 1.5; }
 
 /* Headings */
 h1, h2, h3, h4, h5, h6 {
   clear: both;
-<<<<<<< HEAD
   text-transform: uppercase;
   font-family: "Oswald", sans-serif; }
 
@@ -263,19 +261,13 @@ h1 {
   color: #FFFFFF; }
 
 h2 {
-  font-size: 39px; }
-=======
+  font-size: 39px;
   font-family: "Oswald"; }
-
-h1 {
-  font-size: 74px;
-  color: white; }
 
 /* -------.ENTRY-HEADER STYLES ------- */
 .entry-header h1.entry-title {
   font-size: 4.5rem;
   color: #000000; }
->>>>>>> 890312c6be0e2b47bd27017dfbc9d556dff347e9
 
 /* Copy */
 p {
@@ -294,7 +286,6 @@ address {
 
 pre {
   background: #eee;
-  font-family: "Courier 10 Pitch", Courier, monospace;
   font-size: 15px;
   font-size: 0.9375rem;
   line-height: 1.6;
@@ -304,7 +295,6 @@ pre {
   padding: 1.6rem; }
 
 code, kbd, tt, var {
-  font-family: "Open Sans Condensed", "Oswald", sans-serif;
   font-size: 15px;
   font-size: 0.9375rem; }
 
@@ -801,7 +791,8 @@ body.single-trainer .site-content {
   margin: 0 auto;
   background: grey; }
   body.single-trainer .site-content p.trainer-sub-titles {
-    font-family: "Oswald"; }
+    font-family: "Oswald";
+    margin: 0.5em; }
 
 body.single-trainer .default-header {
   display: -ms-flexbox;
@@ -836,32 +827,35 @@ body.single-trainer .default-content {
   body.single-trainer .default-content .trainer-availability,
   body.single-trainer .default-content .other-trainers {
     padding: 1.5em; }
-  body.single-trainer .default-content p {
-    margin: 0; }
-    body.single-trainer .default-content p.trainer-sub-titles {
-      font-size: 20px;
-      text-transform: uppercase;
-      font-weight: 500; }
+  body.single-trainer .default-content p.trainer-sub-titles {
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 500; }
   body.single-trainer .default-content .trainer-description, body.single-trainer .default-content .trainer-personalities,
   body.single-trainer .default-content .other-trainers {
     color: white;
     background: black; }
+  body.single-trainer .default-content .trainer-description p, body.single-trainer .default-content .trainer-personalities p {
+    margin: 0; }
   body.single-trainer .default-content .trainer-personalities {
     padding-top: 0; }
+    body.single-trainer .default-content .trainer-personalities p.trainer-sub-titles {
+      margin-bottom: 0.5em;
+      margin-top: 0; }
     body.single-trainer .default-content .trainer-personalities ul {
       display: -ms-flexbox;
       display: flex;
       -ms-flex-flow: row wrap;
           flex-flow: row wrap; }
       body.single-trainer .default-content .trainer-personalities ul li {
-        line-height: 0.85;
-        text-transform: uppercase; }
+        line-height: 1;
+        text-transform: uppercase;
+        font-family: "Open Sans Condensed", sans-serif;
+        font-weight: 300; }
   body.single-trainer .default-content .trainer-availability {
     background: white;
     text-align: center;
     padding-top: 5px; }
-    body.single-trainer .default-content .trainer-availability p {
-      margin: 0.5em 0; }
   body.single-trainer .default-content .trainer-consultation a.consultation-button {
     font-size: 20px;
     font-weight: 500;
