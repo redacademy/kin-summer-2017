@@ -37,7 +37,7 @@ get_header(); ?>
         </section>
 
 
-        <div class="main-carousel" id='test'>
+        <div class="main-carousel">
           <div class="carousel-cell">
             <h2>Personal training</h2>
             <p><?php echo CFS()->get( 'services_personal_training'); ?></p>
