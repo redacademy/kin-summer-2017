@@ -50,14 +50,14 @@
             <p class="next-trainer trainer-sub-titles">Who's Next?</p>
             <div class="other-trainers-grid">
                 <?php
-                    $args = array( 'post_type' => 'trainer', 'order' => 'DESC', 'posts_per_page' => 6, 'orderby' => 'date', 'exclude' => array(get_the_id()) );
+                    $args = array( 'post_type' => 'trainer', 'order' => 'ASC', 'posts_per_page' => 6, 'orderby' => 'date', 'exclude' => array(get_the_id()) );
                     $trainer = get_posts( $args ); // returns an array of posts
                     foreach ( $trainer as $post ) : setup_postdata( $post );
                 ?>
 
                 <div class="trainer-item-container">
                     <div class="trainer-thumbnail-wrapper">
-                        <!-- IMAGE PROFILES GO HERE -->
+                        <img class="trainer-thumbnail" src="<?php echo CFS()->get( 'trainer_profile_picture' ); ?>">
                     </div><!-- .trainer-thumbnail-wrapper -->
                     <div class="next-trainer-wrapper">
                         <a class="trainer-name" href="<?php echo get_post_permalink() ?>"><?php the_title(); ?></a>

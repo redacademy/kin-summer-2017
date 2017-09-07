@@ -145,11 +145,36 @@ body.single-trainer {
 
             .next-trainer.trainer-sub-titles {
                 margin: 0;
+                text-align: center;
+                margin-bottom: 0.5em;
             }
 
             &-grid {
                 display: flex;
                 flex-flow: row wrap;
+                width: 100%;
+                justify-content: space-between;
+                
+                .trainer-item-container {
+                    display: flex;
+                    flex-flow: column nowrap;
+                    align-items: center;
+
+                    .trainer-thumbnail-wrapper {
+                        width: 53px;
+                        height: 53px;
+                        background: grey;
+                        border-radius: 25px;
+                        border: 1.5px solid #A10000;
+                    }
+
+                    .next-trainer-wrapper {
+                        a {
+                            text-decoration: none;
+                            font-size: 16px;
+                        }
+                    }
+                }
             }
         }
     }

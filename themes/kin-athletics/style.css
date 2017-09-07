@@ -923,12 +923,33 @@ body.single-trainer .default-content {
     max-height: 50vh;
     width: 100%; }
   body.single-trainer .default-content .other-trainers .next-trainer.trainer-sub-titles {
-    margin: 0; }
+    margin: 0;
+    text-align: center;
+    margin-bottom: 0.5em; }
   body.single-trainer .default-content .other-trainers-grid {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-flow: row wrap;
-        flex-flow: row wrap; }
+        flex-flow: row wrap;
+    width: 100%;
+    -ms-flex-pack: justify;
+        justify-content: space-between; }
+    body.single-trainer .default-content .other-trainers-grid .trainer-item-container {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+      -ms-flex-align: center;
+          align-items: center; }
+      body.single-trainer .default-content .other-trainers-grid .trainer-item-container .trainer-thumbnail-wrapper {
+        width: 53px;
+        height: 53px;
+        background: grey;
+        border-radius: 25px;
+        border: 1.5px solid #A10000; }
+      body.single-trainer .default-content .other-trainers-grid .trainer-item-container .next-trainer-wrapper a {
+        text-decoration: none;
+        font-size: 16px; }
 
 /* Landing Page */
 .landing-page-container {
