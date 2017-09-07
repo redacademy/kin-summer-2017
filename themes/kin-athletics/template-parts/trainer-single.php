@@ -25,13 +25,13 @@
         </div>
         <!-- Personalities  -->
         <div class="trainer-personalities">
-            <p>Personality # Tags</p>
+            <p class="trainer-sub-titles">Personality # Tags</p>
             <?php echo CFS()->get( 'trainer_personalities' ); ?>
         </div>
          <!-- Availability  -->
         <div class="trainer-availability">
             <div class="my-availability">
-                <p>My Availability</p>
+                <p class="trainer-sub-titles">My Availability</p>
                 <?php 
                     foreach (CFS()->get( 'trainer_availability' ) as $date)
                     echo $date;
@@ -40,13 +40,13 @@
                 ?>
             </div>
             <div class="trainer-consultation">
-                <p>Let's Pump It!</p>
+                <p class="trainer-sub-titles">Let's Pump It!</p>
                 <a class="consultation-button">Free Consultation</a>
             </div>
         </div>
     <!-- Other Trainers -->
         <div class="other-trainers">
-            <p>Who's Next?</p>
+            <p class="trainer-sub-titles">Who's Next?</p>
             <?php
                 $args = array( 'post_type' => 'trainer', 'order' => 'DESC', 'posts_per_page' => 6, 'orderby' => 'date' );
                 $trainer = get_posts( $args ); // returns an array of posts
@@ -59,8 +59,8 @@
                     <?php endif; ?><!-- has_post_thumbnail -->         
                 </div><!-- .trainer-thumbnail-wrapper -->
 
-                <div class="title-wrapper">
-                    <a class="trainer-title" href="<?php echo get_post_permalink() ?>"><?php the_title(); ?></a>
+                <div class="next-trainer-wrapper">
+                    <a class="trainer-name" href="<?php echo get_post_permalink() ?>"><?php the_title(); ?></a>
                 </div><!-- .entry-wrapper -->
             </div>
             <?php endforeach; wp_reset_postdata(); ?>
