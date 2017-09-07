@@ -23,7 +23,7 @@ body.single-trainer {
     }
 
     .site-content {
-        max-width: 400px;
+        max-width: $base__width-mobile;
         width: 100%;
         margin: 0 auto;
         background: grey;
@@ -32,10 +32,10 @@ body.single-trainer {
     .default-header {
         display: flex;
         position: relative;
-        height: 100vh;
+        height: $header__height-full;
         margin: 0;
         justify-content: center;
-        border-bottom: 5px solid white;
+        border-bottom: $header__title-border-bottom;
 
         .trainer-profile-picture {
             width: 100%;
