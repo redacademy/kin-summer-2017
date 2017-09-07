@@ -252,23 +252,25 @@ textarea {
 
 /* Headings */
 h1, h2, h3, h4, h5, h6 {
+  font-family: "Oswald";
   clear: both;
-  font-family: "Oswald"; }
+  text-transform: uppercase; }
 
 h1 {
-  color: #FFFFFF;
-  font-size: 2.4375rem;
-  font-weight: 500;
-  line-height: 3.625rem; }
+  color: #FFFFFF; }
 
 h2 {
-  font-size: 39px;
-  font-family: "Oswald"; }
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.5rem; }
 
 /* -------.ENTRY-HEADER STYLES ------- */
-.entry-header h1.entry-title {
-  font-size: 4.5rem;
-  color: #000000; }
+.entry-header .entry-title {
+  color: #FFFFFF;
+  font-family: "Oswald";
+  font-size: 1.95rem;
+  font-weight: 500;
+  line-height: 2.9rem; }
 
 /* Copy */
 p {
@@ -309,6 +311,29 @@ mark, ins {
 
 big {
   font-size: 125%; }
+
+/* Find Us Page */
+.page-template-find-us {
+  text-align: center; }
+
+.white-title {
+  color: #FFFFFF;
+  font-family: oswald;
+  font-size: .9rem;
+  font-weight: 100;
+  line-height: 1.3rem;
+  text-align: center; }
+
+.black-title {
+  color: #000000;
+  font-family: Open Sans Condensed;
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.35rem;
+  text-align: center; }
+
+.red-button a, .consultation-button a {
+  font-size: 1.2rem; }
 
 /*--------------------------------------------------------------
 # Elements
@@ -459,11 +484,11 @@ textarea {
 --------------------------------------------------------------*/
 /* Links */
 a {
-  color: royalblue; }
+  color: #FFFFFF; }
   a:visited {
-    color: purple; }
+    color: #FFFFFF; }
   a:hover, a:focus, a:active {
-    color: midnightblue; }
+    color: #FFFFFF; }
   a:focus {
     outline: thin dotted; }
   a:hover, a:active {
@@ -711,10 +736,13 @@ object {
   margin-bottom: 16px; }
   .social-button a, .services-featured .social a {
     color: #000000;
-    line-height: 29px;
+    font-family: Oswald;
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 36px;
+    text-align: center;
     text-decoration: none;
-    font-size: 24px;
-    font-weight: bold; }
+    text-transform: uppercase; }
 
 .red-button, .consultation-button {
   background: #A10000;
@@ -723,13 +751,14 @@ object {
   width: 234px;
   border: 2px solid #A10000;
   box-shadow: 0 0.5px 1px 0 rgba(0, 0, 0, 0.5);
-  color: #FFFFFF; }
+  color: #FFFFFF;
+  cursor: pointer; }
   .red-button a, .consultation-button a {
-    color: #FFFFFF;
     font-size: 24px;
     font-weight: bold;
     line-height: 29px;
-    text-align: center; }
+    text-align: center;
+    text-decoration: none; }
 
 /*--------------------------------------------------------------
 # Page Templates
@@ -817,34 +846,33 @@ body.single-trainer .site-content {
   margin: 0 auto;
   background: grey; }
   body.single-trainer .site-content p.trainer-sub-titles {
-    font-family: "Oswald";
-    margin: 0.5em; }
+    font-family: "Oswald"; }
 
 body.single-trainer .default-header {
   display: -ms-flexbox;
   display: flex;
   position: relative;
-  height: 100vh;
+  max-height: 50vh;
+  height: 50vh;
   margin: 0;
   -ms-flex-pack: center;
       justify-content: center;
-  border-bottom: 5px solid white; }
-  body.single-trainer .default-header .trainer-profile-picture {
-    width: 100%;
-    background: url("../../asset/profiles/super_male.png") no-repeat bottom;
-    height: 100%;
-    background-size: cover;
-    position: absolute;
-    z-index: 0;
-    bottom: 0; }
-    body.single-trainer .default-header .trainer-profile-picture:after {
-      position: absolute;
-      background: rgba(0, 0, 0, 0.65);
+  border-bottom: 5px solid white;
+  overflow: hidden; }
+  body.single-trainer .default-header .trainer-profile-wrapper {
+    position: relative; }
+    body.single-trainer .default-header .trainer-profile-wrapper .trainer-profile-picture {
+      background: url("../../asset/profiles/super_male.png") no-repeat bottom;
       background-size: cover;
-      content: "";
+      position: absolute;
+      transform: translate(-50%, -50%);
+      left: 50%;
+      top: 50%;
+      z-index: 0;
+      max-width: none;
+      z-index: 0;
       height: 100%;
-      width: 100%;
-      z-index: 2; }
+      filter: grayscale(100%); }
 
 body.single-trainer .default-content {
   width: 100%; }
@@ -877,17 +905,30 @@ body.single-trainer .default-content {
         line-height: 1;
         text-transform: uppercase;
         font-family: "Open Sans Condensed", sans-serif;
-        font-weight: 300; }
+        font-weight: 300;
+        font-size: 20px; }
   body.single-trainer .default-content .trainer-availability {
     background: white;
     text-align: center;
     padding-top: 5px; }
+    body.single-trainer .default-content .trainer-availability p {
+      margin-bottom: 0.5em; }
   body.single-trainer .default-content .trainer-consultation a.consultation-button {
     font-size: 20px;
     font-weight: 500;
     font-family: "Oswald";
     margin-top: 2em;
     padding: 0 1em; }
+  body.single-trainer .default-content .trainer-meta {
+    max-height: 50vh;
+    width: 100%; }
+  body.single-trainer .default-content .other-trainers .next-trainer.trainer-sub-titles {
+    margin: 0; }
+  body.single-trainer .default-content .other-trainers-grid {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-flow: row wrap;
+        flex-flow: row wrap; }
 
 /* Landing Page */
 .landing-page-container {
@@ -933,6 +974,17 @@ body.single-trainer .default-content {
     font-size: 18px;
     font-weight: 500;
     line-height: 24px; }
+
+.page-template-find-us .black.container {
+  background: #000000;
+  height: 8.01%;
+  padding: 5px 0 15px 0; }
+
+.page-template-find-us .red-button, .page-template-find-us .consultation-button {
+  margin: 0 auto;
+  border: none;
+  height: 2.67%;
+  width: 70%; }
 
 .site-footer {
   background-color: #A10000;

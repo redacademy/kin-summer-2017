@@ -15,28 +15,31 @@ textarea {
 /* Headings */
 
 h1, h2, h3, h4, h5, h6 {
-	clear: both;
 	font-family: $font__h1-header;
+	clear: both;
+	text-transform: uppercase;
 	// margin: 0;
 }
 
 h1{
 	color: $color__brand-white;
-	font-size: 2.4375rem;
-	font-weight: 500;
-	line-height: 3.625rem;
+
 }
 h2{
-	font-size: 39px;
-	font-family: $font__h1-header;
+	font-size: 	1rem;	
+	font-weight: 500;	
+	line-height: 1.5rem;
 }
 
 /* -------.ENTRY-HEADER STYLES ------- */
 .entry-header {
 
-	h1.entry-title {
-		font-size: 4.5rem;
-		color: #000000;
+	.entry-title {
+		color: $color__brand-white;
+		font-family: $font__h1-header;
+		font-size: 1.95rem;
+		font-weight: 500;
+		line-height: 2.9rem;
 	}
 
 }
@@ -89,3 +92,33 @@ mark, ins {
 big {
 	font-size: 125%;
 }
+
+/* Find Us Page */
+
+.page-template-find-us  {
+		text-align: center;
+}
+	.white-title {
+		color: $color__brand-white;
+		font-family: oswald;
+		font-size: .9rem;
+		font-weight: 100;
+		line-height: 1.3rem;
+		text-align: center
+}
+
+	.black-title {
+		color: $color__brand-black;
+		font-family: Open Sans Condensed;
+		font-size: 1rem;
+		font-weight: 300;
+		line-height: 1.35rem;
+		text-align: center
+}
+
+	.red-button {
+
+		a {
+			font-size: 1.2rem;
+		}
+	}

@@ -98,11 +98,14 @@ object {
 	margin: 0 auto;
 	margin-bottom: 16px;
 		a {
-				color: $color__brand-black;
-				line-height: 29px;
-				text-decoration: none;
-				font-size: 24px;
-				font-weight: bold;
+			color: $color__brand-black;
+			font-family: Oswald;
+			font-size: 1.2rem;
+			font-weight: 500;
+			line-height: 36px;
+			text-align: center;
+			text-decoration: none;
+			text-transform: uppercase;
 		}
 }
 
@@ -114,12 +117,13 @@ object {
 	border: 2px solid $color__brand-red;
 	box-shadow: 0 0.5px 1px 0 rgba(0,0,0,0.5);
 	color: $color__text-main;
+	cursor: pointer;
 
 	a {
-		color: $color__text-main;
 		font-size: 24px;	
-		font-weight: bold;	
+		font-weight: bold;
 		line-height: 29px;	
 		text-align: center;
+		text-decoration: none;
 	}
 }

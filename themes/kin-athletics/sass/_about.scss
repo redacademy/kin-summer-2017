@@ -30,35 +30,34 @@ body.single-trainer {
 
         p.trainer-sub-titles {
             font-family: $font__h1-header;
-            margin: 0.5em;
         }
     }
 
     .default-header {
         display: flex;
         position: relative;
-        height: $header__height-full;
+        max-height: 50vh;
+        height: 50vh;
         margin: 0;
         justify-content: center;
         border-bottom: $header__title-border-bottom;
+        overflow: hidden;
 
-        .trainer-profile-picture {
-            width: 100%;
-            background: url("../../asset/profiles/super_male.png") no-repeat bottom;
-            height: 100%;
-            background-size: cover;
-            position: absolute;
-            z-index: 0;
-            bottom: 0;
+        .trainer-profile-wrapper {
+            position: relative;
 
-            &:after {
-                position: absolute;
-                background: rgba(0,0,0,0.65);
+            .trainer-profile-picture {
+                background: url("../../asset/profiles/super_male.png") no-repeat bottom;
                 background-size: cover;
-                content: "";
+                position: absolute;
+                transform: translate(-50%, -50%);
+                left: 50%;
+                top: 50%;
+                z-index: 0;
+                max-width: none;
+                z-index: 0; 
                 height: 100%;
-                width: 100%;
-                z-index: 2;
+                filter: grayscale(100%);
             }
         }
     }
@@ -111,6 +110,7 @@ body.single-trainer {
                     text-transform: uppercase;
                     font-family: $font__main;
                     font-weight: 300;
+                    font-size: 20px;
                 }
             }
         }
@@ -119,6 +119,10 @@ body.single-trainer {
             background: white;
             text-align: center;
             padding-top: 5px;
+
+            p {
+                margin-bottom: 0.5em;
+            }
         }
         
         .trainer-consultation {
@@ -129,6 +133,23 @@ body.single-trainer {
                 font-family: $font__h1-header;
                 margin-top: 2em;
                 padding: 0 1em;
+            }
+        }
+
+        .trainer-meta {
+            max-height: 50vh;
+            width: 100%;
+        }
+
+        .other-trainers {
+
+            .next-trainer.trainer-sub-titles {
+                margin: 0;
+            }
+
+            &-grid {
+                display: flex;
+                flex-flow: row wrap;
             }
         }
     }
