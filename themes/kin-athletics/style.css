@@ -459,11 +459,11 @@ textarea {
 --------------------------------------------------------------*/
 /* Links */
 a {
-  color: royalblue; }
+  color: #FFFFFF; }
   a:visited {
-    color: purple; }
+    color: #FFFFFF; }
   a:hover, a:focus, a:active {
-    color: midnightblue; }
+    color: #FFFFFF; }
   a:focus {
     outline: thin dotted; }
   a:hover, a:active {
@@ -723,9 +723,9 @@ object {
   width: 234px;
   border: 2px solid #A10000;
   box-shadow: 0 0.5px 1px 0 rgba(0, 0, 0, 0.5);
-  color: #FFFFFF; }
+  color: #FFFFFF;
+  cursor: pointer; }
   .red-button a, .consultation-button a {
-    color: #FFFFFF;
     font-size: 24px;
     font-weight: bold;
     line-height: 29px;
@@ -818,8 +818,7 @@ body.single-trainer .site-content {
   margin: 0 auto;
   background: grey; }
   body.single-trainer .site-content p.trainer-sub-titles {
-    font-family: "Oswald";
-    margin: 0.5em; }
+    font-family: "Oswald"; }
 
 body.single-trainer .default-header {
   display: -ms-flexbox;
@@ -884,6 +883,8 @@ body.single-trainer .default-content {
     background: white;
     text-align: center;
     padding-top: 5px; }
+    body.single-trainer .default-content .trainer-availability p {
+      margin-bottom: 0.5em; }
   body.single-trainer .default-content .trainer-consultation a.consultation-button {
     font-size: 20px;
     font-weight: 500;
@@ -893,6 +894,8 @@ body.single-trainer .default-content {
   body.single-trainer .default-content .trainer-meta {
     max-height: 50vh;
     width: 100%; }
+  body.single-trainer .default-content .other-trainers .next-trainer.trainer-sub-titles {
+    margin: 0; }
 
 /* Landing Page */
 .landing-page-container {

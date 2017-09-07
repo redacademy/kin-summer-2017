@@ -9,14 +9,10 @@
 
 <div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="default-header">
-		<?php if ( has_post_thumbnail() ) : ?>
-			<?php the_post_thumbnail( 'large' ); ?>
-		<?php endif; ?>
-
         <?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
         
         <div class="trainer-profile-wrapper">
-            <img class="trainer-profile-picture" src="https://scontent-sea1-1.xx.fbcdn.net/v/t31.0-8/13340329_10153641573310950_332847360037413919_o.jpg?oh=bf1375ead9f2edb8ce2dc69b48950570&oe=5A54BC60">
+            <img class="trainer-profile-picture" src="<?php echo CFS()->get( 'trainer_profile_picture' ); ?>">
         </div>
 	</header><!-- .entry-header -->
 
@@ -32,7 +28,7 @@
                 <p class="trainer-sub-titles">Personality # Tags</p>
                 <?php echo CFS()->get( 'trainer_personalities' ); ?>
             </div>
-        </div>
+        </div> <!-- EOF TRAINER META -->
          <!-- Availability  -->
         <div class="trainer-availability">
             <div class="my-availability">
@@ -51,7 +47,7 @@
         </div>
     <!-- Other Trainers -->
         <div class="other-trainers">
-            <p class="trainer-sub-titles">Who's Next?</p>
+            <p class="next-trainer trainer-sub-titles">Who's Next?</p>
             <?php
                 $args = array( 'post_type' => 'trainer', 'order' => 'DESC', 'posts_per_page' => 6, 'orderby' => 'date' );
                 $trainer = get_posts( $args ); // returns an array of posts
