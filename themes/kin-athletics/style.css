@@ -962,7 +962,6 @@ body.single-trainer .default-content {
     .landing-page-container .landing-project-td h1, .landing-page-container .landing-project-td h2, .landing-page-container .landing-who-we-are h1, .landing-page-container .landing-who-we-are h2, .landing-page-container .landing-what-we-do h1, .landing-page-container .landing-what-we-do h2 {
       text-transform: uppercase; }
   .landing-page-container .landing-project-td {
-    background-image: url(../../asset/images/serv1.jpg);
     height: 420px; }
     .landing-page-container .landing-project-td .landing-text-project-td {
       padding: 1.2rem;
@@ -973,11 +972,16 @@ body.single-trainer .default-content {
         font-family: "Open Sans Condensed", sans-serif; }
       .landing-page-container .landing-project-td .landing-text-project-td h1 {
         font-size: 55px; }
-  .landing-page-container .landing-who-we-are {
+  .landing-page-container .who-we-are-cont {
     background-image: url(../../asset/images/serv2.jpg);
     height: 506px; }
+    .landing-page-container .who-we-are-cont .who-we-are-image {
+      width: 20rem;
+      height: 20rem; }
+    .landing-page-container .who-we-are-cont .who-we-are-text {
+      color: black;
+      font-size: 2rem; }
   .landing-page-container .landing-what-we-do {
-    background-image: url(../../asset/images/serv3.jpg);
     height: 506px; }
 
 .landing-scroll-section {
