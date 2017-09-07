@@ -22,14 +22,14 @@ get_header(); ?>
       </div><!-- .white .container -->
 
       <div class="black container">
-        <h3 class="white-title">Ready to Sweat?</h3>
+        <h3 class="find-us white-title">Ready to Sweat?</h3>
         <div class="red-button">
-          <href="<?php echo get_post_permalink()?>">Free Consultation</a>
+          <a href="<?php echo get_post_permalink()?>">Free Consultation</a>
         </div><!-- .red-button -->
       </div><!-- .black .container -->
 
       <div class="white container">
-        <h3 class="black-title">Connect To Our Online Community</h3>
+        <h3 class="find-us black-title">Connect To Our Online Community</h3>
         <div class="social-button">
           <a href="<?php echo get_post_permalink()?>">Facebook</a>
         </div><!-- .social-button -->
