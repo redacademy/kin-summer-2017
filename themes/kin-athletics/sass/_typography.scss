@@ -19,12 +19,16 @@ h1, h2, h3, h4, h5, h6 {
 
 h1{
 	font-size:74px;
-<<<<<<< HEAD
-	color:white;
-=======
-	color: $color__h1-black;
-	
->>>>>>> 335114a115fea1e10ef54ae700bf88f4fe63a8d3
+	color: white;
+}
+
+/* -------.ENTRY-HEADER STYLES ------- */
+.entry-header {
+
+	h1.entry-title {
+		font-size: 4.5rem;
+		color: #000000;
+	}
 }
 
 /* Copy */

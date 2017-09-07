@@ -5,6 +5,21 @@
 /* buttons */
 .consultation-button {
     @extend .red-button;
-    
+
 }
 
+/* ------- Single Trainer ------- */
+body.single-trainer {
+
+    .entry-title {
+        background: silver;
+        text-align: center;
+    }
+
+    .site-content {
+        max-width: 400px;
+        width: 100%;
+        margin: 0 auto;
+        background: grey;
+    }
+}

@@ -240,6 +240,11 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
   font-size: 74px;
+  color: white; }
+
+/* -------.ENTRY-HEADER STYLES ------- */
+.entry-header h1.entry-title {
+  font-size: 4.5rem;
   color: #000000; }
 
 /* Copy */
@@ -684,7 +689,6 @@ object {
   .social-button a, .services-featured .social a {
     color: #000000;
     text-align: center; }
-<<<<<<< HEAD
 
 .red-button, .consultation-button {
   background: #A10000;
@@ -700,8 +704,6 @@ object {
     font-weight: bold;
     line-height: 29px;
     text-align: center; }
-=======
->>>>>>> 747b34d5f92b0d619c5c1b714067b112cff727ae
 
 /*--------------------------------------------------------------
 # Page Templates
@@ -738,8 +740,21 @@ object {
     width: 100%;
     bottom: 0;
     font-size: 24px; }
-<<<<<<< HEAD
-=======
+
+/*--------------------------------------------------------------
+# About
+--------------------------------------------------------------*/
+/* buttons */
+/* ------- Single Trainer ------- */
+body.single-trainer .entry-title {
+  background: silver;
+  text-align: center; }
+
+body.single-trainer .site-content {
+  max-width: 400px;
+  width: 100%;
+  margin: 0 auto;
+  background: grey; }
 
 /* Landing Page */
 .landing-page-container {
@@ -753,12 +768,7 @@ object {
     background-image: url(../../asset/images/serv2.jpg); }
   .landing-page-container .landing-what-we-do {
     background-image: url(../../asset/images/serv3.jpg); }
->>>>>>> 747b34d5f92b0d619c5c1b714067b112cff727ae
 
-/*--------------------------------------------------------------
-# About
---------------------------------------------------------------*/
-/* buttons */
 .site-footer {
   background-color: #A10000;
   height: 330px;
