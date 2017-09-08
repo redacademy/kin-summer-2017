@@ -728,7 +728,7 @@ object {
 
 /* Buttons */
 .social-button, .services-featured .social {
-  background: #FFFFFF;
+  background: transparent;
   border: solid 2px #A10000;
   height: 2.82%;
   text-align: center;
@@ -737,7 +737,7 @@ object {
   margin-bottom: 16px; }
   .social-button a, .services-featured .social a {
     color: #000000;
-    font-family: Oswald;
+    font-family: oswald;
     font-size: 1.2rem;
     font-weight: 500;
     line-height: 36px;
@@ -1034,6 +1034,9 @@ body.single-trainer .default-content {
   border: none;
   height: 2.67%;
   width: 70%; }
+
+.page-template-find-us iframe {
+  text-align: left; }
 
 .site-footer {
   background-color: #A10000;
