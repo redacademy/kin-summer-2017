@@ -9,25 +9,26 @@
 
 <div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="default-header">
-		<?php if ( has_post_thumbnail() ) : ?>
-			<?php the_post_thumbnail( 'large' ); ?>
-		<?php endif; ?>
-
-        <?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+        <?php the_title( '<h1 id="trainer-name" class="entry-title">', '</h1>' ); ?>
         
-        <div class="trainer-profile-picture"></div>
+        <div class="trainer-profile-wrapper">
+            <img class="trainer-profile-picture" src="<?php echo CFS()->get( 'trainer_profile_picture' ); ?>">
+        </div>
 	</header><!-- .entry-header -->
 
 	<div class="default-content">
+        <!-- Trainer Meta Information -->
+        <div class="trainer-meta">
         <!-- Description -->
-        <div class="trainer-description">
-            <?php echo CFS()->get( 'trainer_description' ); ?>  
-        </div>
-        <!-- Personalities  -->
-        <div class="trainer-personalities">
-            <p class="trainer-sub-titles">Personality # Tags</p>
-            <?php echo CFS()->get( 'trainer_personalities' ); ?>
-        </div>
+            <div class="trainer-description">
+                <?php echo CFS()->get( 'trainer_description' ); ?>  
+            </div>
+            <!-- Personalities  -->
+            <div class="trainer-personalities">
+                <p class="trainer-sub-titles">Personality # Tags</p>
+                <?php echo CFS()->get( 'trainer_personalities' ); ?>
+            </div>
+        </div> <!-- EOF TRAINER META -->
          <!-- Availability  -->
         <div class="trainer-availability">
             <div class="my-availability">
@@ -46,24 +47,37 @@
         </div>
     <!-- Other Trainers -->
         <div class="other-trainers">
-            <p class="trainer-sub-titles">Who's Next?</p>
-            <?php
-                $args = array( 'post_type' => 'trainer', 'order' => 'DESC', 'posts_per_page' => 6, 'orderby' => 'date' );
-                $trainer = get_posts( $args ); // returns an array of posts
-                foreach ( $trainer as $post ) : setup_postdata( $post );
-            ?>
-            <div class="trainer-item-container">
-                <div class="trainer-thumbnail-wrapper">
-                    <?php if ( has_post_thumbnail() ) : ?>
-                        <?php the_post_thumbnail( 'large' ); ?>
-                    <?php endif; ?><!-- has_post_thumbnail -->         
-                </div><!-- .trainer-thumbnail-wrapper -->
+            <p class="next-trainer trainer-sub-titles">Who's Next?</p>
+            <div class="other-trainers-grid">
+                <?php
+                    $args = array( 'post_type' => 'trainer', 'order' => 'ASC', 'posts_per_page' => 6, 'orderby' => 'date', 'exclude' => array(get_the_id()) );
+                    $trainer = get_posts( $args ); // returns an array of posts
+                    foreach ( $trainer as $post ) : setup_postdata( $post );
+                ?>
 
-                <div class="next-trainer-wrapper">
-                    <a class="trainer-name" href="<?php echo get_post_permalink() ?>"><?php the_title(); ?></a>
-                </div><!-- .entry-wrapper -->
+                <div class="trainer-item-container">
+                    <div class="trainer-thumbnail-wrapper">
+                        <img class="trainer-thumbnail" src="<?php echo CFS()->get( 'trainer_profile_picture' ); ?>">
+                    </div><!-- .trainer-thumbnail-wrapper -->
+                    <div class="next-trainer-wrapper">
+                        <a class="trainer-name" href="<?php echo get_post_permalink() ?>"><?php the_title(); ?></a>
+                    </div><!-- .next-trainer-wrapper -->
+                </div>
+
+                <?php endforeach; wp_reset_postdata(); ?>
             </div>
-            <?php endforeach; wp_reset_postdata(); ?>
+        </div> <!-- EOF OTHER TRAINERS -->
+    <!-- OTHER LINKS -->
+        <div class="other-links">
+            <div class="about-our-origin">
+                <a src="#" class="origin-link">Our Origin</a>
+            </div>
+            <div class="about-our-community">
+                <a src="#" class="community-link">Our Community</a>
+            </div>
+            <div class="about-our-place">
+                <a src="#" class="place-link">Our Place</a>
+            </div>
         </div>
-    </div><!-- .entry-content -->
+    </div><!-- .default-content -->
 </div><!-- #post-## -->

@@ -26,14 +26,14 @@ $color__background-pre: #eee;
 $color__background-ins: #fff9c0;
 $color__border-abbr: #666;
 
-$color__link: royalblue;
-$color__link-visited: purple;
-$color__link-hover: midnightblue;
+$color__link: #FFFFFF;
+$color__link-visited: #FFFFFF;
+$color__link-hover: #FFFFFF;
 
 // Typography
 
 $font__main: 'Open Sans Condensed', sans-serif;
-// $font__code: 'Open Sans Condensed', 'Oswald', sans-serif;
+$font__code: 'Open Sans Condensed', 'Oswald', sans-serif;
 $font__accent: 'Oswald', sans-serif;
 $font__line-height-body: 1.5;
 $font__line-height-pre: 1.6;
