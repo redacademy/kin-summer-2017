@@ -66,6 +66,18 @@
 
                 <?php endforeach; wp_reset_postdata(); ?>
             </div>
+        </div> <!-- EOF OTHER TRAINERS -->
+    <!-- OTHER LINKS -->
+        <div class="other-links">
+            <div class="about-our-origin">
+                <a src="#" class="origin-link">Our Origin</a>
+            </div>
+            <div class="about-our-community">
+                <a src="#" class="community-link">Our Community</a>
+            </div>
+            <div class="about-our-place">
+                <a src="#" class="place-link">Our Place</a>
+            </div>
         </div>
     </div><!-- .default-content -->
 </div><!-- #post-## -->

@@ -248,7 +248,8 @@ select,
 textarea {
   font-size: 16px;
   font-size: 1rem;
-  line-height: 1.5; }
+  line-height: 1.5;
+  font-family: "Open Sans Condensed", "Oswald", sans-serif; }
 
 /* Headings */
 h1, h2, h3, h4, h5, h6 {
@@ -835,7 +836,7 @@ body.single-trainer .entry-title {
   text-align: center;
   margin: 0;
   position: absolute;
-  z-index: 2;
+  z-index: 3;
   bottom: 0;
   line-height: 0.85;
   text-transform: uppercase; }
@@ -843,8 +844,7 @@ body.single-trainer .entry-title {
 body.single-trainer .site-content {
   max-width: 400px;
   width: 100%;
-  margin: 0 auto;
-  background: grey; }
+  margin: 0 auto; }
   body.single-trainer .site-content p.trainer-sub-titles {
     font-family: "Oswald"; }
 
@@ -861,6 +861,16 @@ body.single-trainer .default-header {
   overflow: hidden; }
   body.single-trainer .default-header .trainer-profile-wrapper {
     position: relative; }
+    body.single-trainer .default-header .trainer-profile-wrapper:after {
+      content: "";
+      transform: translate(-50%, -50%);
+      left: 50%;
+      top: 50%;
+      background: rgba(0, 0, 0, 0.45);
+      height: 100vh;
+      width: 100vw;
+      position: absolute;
+      z-index: 2; }
     body.single-trainer .default-header .trainer-profile-wrapper .trainer-profile-picture {
       background: url("../../asset/profiles/super_male.png") no-repeat bottom;
       background-size: cover;
@@ -950,6 +960,24 @@ body.single-trainer .default-content {
       body.single-trainer .default-content .other-trainers-grid .trainer-item-container .next-trainer-wrapper a {
         text-decoration: none;
         font-size: 16px; }
+  body.single-trainer .default-content .other-links {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-flow: column nowrap;
+        flex-flow: column nowrap;
+    text-align: center; }
+    body.single-trainer .default-content .other-links a {
+      color: black;
+      text-transform: uppercase;
+      font-weight: 500;
+      font-family: "Oswald";
+      font-size: 24px; }
+    body.single-trainer .default-content .other-links .about-our-origin,
+    body.single-trainer .default-content .other-links .about-our-community {
+      padding: 0.5em 0;
+      border-bottom: 1.5px solid #A10000; }
+    body.single-trainer .default-content .other-links .about-our-place {
+      padding: 0.5em 0; }
 
 /* Landing Page */
 .landing-page-container {
