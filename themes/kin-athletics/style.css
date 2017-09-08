@@ -1042,10 +1042,12 @@ body.single-trainer .default-content {
       font-size: 24px; }
     body.single-trainer .default-content .other-links .about-our-origin,
     body.single-trainer .default-content .other-links .about-our-community {
-      padding: 0.5em 0;
       border-bottom: 1.5px solid #A10000; }
+    body.single-trainer .default-content .other-links .about-our-origin,
+    body.single-trainer .default-content .other-links .about-our-community,
     body.single-trainer .default-content .other-links .about-our-place {
-      padding: 0.5em 0; }
+      padding: 0.5em 0;
+      cursor: pointer; }
 
 /* Landing Page */
 .landing-page-container {
