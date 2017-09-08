@@ -138,5 +138,25 @@
 // carousel cell #3 - community projects
 
 .community-projects{
-  background-image: url(../../asset/images/serv3.jpg);    
+  background-image: url(../../asset/images/serv3.jpg);
+  
+  .red-button, .social-button{
+    margin: 0;
+    margin-left: 40px;
+    width: 60%;
+    padding: 0;
+
+    a{
+      display: block;
+      padding: 0;
+      text-align: center;
+      color: white;
+      font-weight: lighter;
+    }
+  }
+
+  .social-button{
+    margin-top: 10px;
+    height: 38px;   
+  }
 }

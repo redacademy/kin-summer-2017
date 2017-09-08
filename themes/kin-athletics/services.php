@@ -94,6 +94,9 @@ get_header(); ?>
             <h2>Community projects</h2>
             <?php echo CFS()->get('services_community_projects');?>
             <h3>on now - project td</h3>
+            <div class='red-button'><a href='#'>buy tickets</a></div>
+            <div class='social-button'><a href='#'>tell me more</a></div>
+            <div class='social-button'><a href='#'>past events</a></div>
           </div>  <!-- end of carousel cell community projects -->
         </div>  <!-- end of carousel -->
 

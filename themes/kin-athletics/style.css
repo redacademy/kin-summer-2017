@@ -893,6 +893,20 @@ object {
 
 .community-projects {
   background-image: url(../../asset/images/serv3.jpg); }
+  .community-projects .red-button, .community-projects .consultation-button, .community-projects .social-button, .community-projects .services-featured .social, .services-featured .community-projects .social {
+    margin: 0;
+    margin-left: 40px;
+    width: 60%;
+    padding: 0; }
+    .community-projects .red-button a, .community-projects .consultation-button a, .community-projects .social-button a, .community-projects .services-featured .social a, .services-featured .community-projects .social a {
+      display: block;
+      padding: 0;
+      text-align: center;
+      color: white;
+      font-weight: lighter; }
+  .community-projects .social-button, .community-projects .services-featured .social, .services-featured .community-projects .social {
+    margin-top: 10px;
+    height: 38px; }
 
 /*--------------------------------------------------------------
 # About
