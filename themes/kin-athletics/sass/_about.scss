@@ -203,12 +203,13 @@ body.single-trainer {
             
             .about-our-origin,
             .about-our-community {
-                padding: 0.5em 0;
                 border-bottom: 1.5px solid #A10000;
             }
-
+            .about-our-origin,
+            .about-our-community,
             .about-our-place {
                 padding: 0.5em 0;
+                cursor: pointer;
             }
         }
     }

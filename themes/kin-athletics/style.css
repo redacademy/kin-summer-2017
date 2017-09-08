@@ -1056,10 +1056,12 @@ body.single-trainer .default-content {
       font-size: 24px; }
     body.single-trainer .default-content .other-links .about-our-origin,
     body.single-trainer .default-content .other-links .about-our-community {
-      padding: 0.5em 0;
       border-bottom: 1.5px solid #A10000; }
+    body.single-trainer .default-content .other-links .about-our-origin,
+    body.single-trainer .default-content .other-links .about-our-community,
     body.single-trainer .default-content .other-links .about-our-place {
-      padding: 0.5em 0; }
+      padding: 0.5em 0;
+      cursor: pointer; }
 
 /* Landing Page */
 .landing-page-container {
@@ -1083,7 +1085,6 @@ body.single-trainer .default-content {
       .landing-page-container .landing-project-td .landing-text-project-td h1 {
         font-size: 55px; }
   .landing-page-container .who-we-are-cont {
-    background-image: url(../../asset/images/serv2.jpg);
     height: 506px; }
     .landing-page-container .who-we-are-cont .who-we-are-image {
       width: 20rem;
