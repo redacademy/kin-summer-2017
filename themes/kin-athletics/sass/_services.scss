@@ -1,0 +1,39 @@
+.services-taxonomy{
+  height: 100vh;
+  background-image: url('../asset/images/serv1.jpg');
+  background-color: pink;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap; 
+
+  .circles{
+    margin: 0 auto;
+  }
+}
+
+.carousel-cell{
+  height: 100vh;
+}
+
+.services-featured{
+  height: 100vh;
+  background-color: darkgray;
+  position: relative;
+  text-align: left;
+  font-size: 60px;
+  text-transform: uppercase;
+
+  .white-social-block{
+    position: absolute;
+    background-color: pink;
+    text-align: center;    
+    height: 35%;
+    width: 100%;
+    bottom: 0;
+    font-size: 24px;
+  }
+
+  .social{
+    @extend .social-button;
+  }
+}

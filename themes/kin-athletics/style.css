@@ -765,38 +765,6 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
-.services-taxonomy {
-  height: 100vh;
-  background-image: url("../asset/images/serv1.jpg");
-  background-color: pink;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-align: center;
-      align-items: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap; }
-  .services-taxonomy .circles {
-    margin: 0 auto; }
-
-.carousel-cell {
-  height: 100vh; }
-
-.services-featured {
-  height: 100vh;
-  background-color: darkgray;
-  position: relative;
-  text-align: left;
-  font-size: 60px;
-  text-transform: uppercase; }
-  .services-featured .white-social-block {
-    position: absolute;
-    background-color: pink;
-    text-align: center;
-    height: 35%;
-    width: 100%;
-    bottom: 0;
-    font-size: 24px; }
-
 .main-carousel {
   height: 100vh;
   color: white;
@@ -907,6 +875,38 @@ object {
   .community-projects .social-button, .community-projects .services-featured .social, .services-featured .community-projects .social {
     margin-top: 10px;
     height: 38px; }
+
+.services-taxonomy {
+  height: 100vh;
+  background-image: url("../asset/images/serv1.jpg");
+  background-color: pink;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+  .services-taxonomy .circles {
+    margin: 0 auto; }
+
+.carousel-cell {
+  height: 100vh; }
+
+.services-featured {
+  height: 100vh;
+  background-color: darkgray;
+  position: relative;
+  text-align: left;
+  font-size: 60px;
+  text-transform: uppercase; }
+  .services-featured .white-social-block {
+    position: absolute;
+    background-color: pink;
+    text-align: center;
+    height: 35%;
+    width: 100%;
+    bottom: 0;
+    font-size: 24px; }
 
 /*--------------------------------------------------------------
 # About
