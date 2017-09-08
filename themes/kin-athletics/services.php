@@ -49,7 +49,7 @@ get_header(); ?>
                 <span>$50</span>
               </div>
 
-              <div class='single-price-box'>
+              <div class='single-price-box price-box-border'>
                 <p>ten sessions</p>
                 <span>$470</span>
               </div>
@@ -59,22 +59,43 @@ get_header(); ?>
                 <span>$1400</span>
               </div>
             </div>  <!-- end of price box container-->  
-            <p>**Rates are subject to change for program customizations.</p>       
+            <p class='training-rates'>**Rates are subject to change for program customizations.</p>       
           </div>  <!-- end of carousel cell personal training -->
+
 
 
           <div class="carousel-cell group-training">
             <h2>Group training</h2>
             <?php echo CFS()->get('services_group_training');?>
-            <p>**Rates are subject to change for program customizations.</p>
+            <h3>Basic pricing</h3>
+
+            <div class='price-box-container'>
+              <div class='single-price-box'> 
+                <p>single session</p>
+                <span>$25</span>
+              </div>
+
+              <div class='single-price-box price-box-border'>
+                <p>ten sessions</p>
+                <span>$235</span>
+              </div>
+              
+              <div class='single-price-box'>
+                <p>thirty sessions</p>
+                <span>$700</span>
+              </div>
+            </div>  <!-- end of price box container-->  
+            <p class='training-rates'>**Rates are subject to change for program customizations.</p>
           </div>  <!-- end of carousel cell group training -->
+
 
 
           <div class="carousel-cell community-projects">
             <h2>Community projects</h2>
             <?php echo CFS()->get('services_community_projects');?>
+            <h3>on now - project td</h3>
           </div>  <!-- end of carousel cell community projects -->
-        </div>    <!-- end of carousel -->
+        </div>  <!-- end of carousel -->
 
         <section class='services-featured'>
         <h3> featured trainer <span>allan</span> </h3>

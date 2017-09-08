@@ -90,7 +90,7 @@ object {
 /* Buttons */ 
 
 .social-button{
-	background: $color__brand-white;
+	background: transparent;
 	border: solid 2px $color__brand-red;
 	height: 2.82%;
 	text-align: center;
@@ -99,7 +99,7 @@ object {
 	margin-bottom: 16px;
 		a {
 			color: $color__brand-black;
-			font-family: Oswald;
+			font-family: oswald;
 			font-size: 1.2rem;
 			font-weight: 500;
 			line-height: 36px;

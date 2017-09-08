@@ -5,7 +5,6 @@
 /* buttons */
 .consultation-button {
     @extend .red-button;
-
 }
 
 /* ------- Single Trainer ------- */
@@ -16,7 +15,7 @@ body.single-trainer {
         text-align: center;
         margin: 0;
         position: absolute;
-        z-index: 2;
+        z-index: 3;
         bottom: 0;
         line-height: 0.85;
         text-transform: uppercase;  
@@ -26,7 +25,6 @@ body.single-trainer {
         max-width: $base__width-mobile;
         width: 100%;
         margin: 0 auto;
-        background: grey;
 
         p.trainer-sub-titles {
             font-family: $font__h1-header;
@@ -45,6 +43,18 @@ body.single-trainer {
 
         .trainer-profile-wrapper {
             position: relative;
+
+            &:after {
+                content: "";
+                transform: translate(-50%, -50%);
+                left: 50%;
+                top: 50%;
+                background: rgba(0,0,0,0.45);
+                height: 100vh;
+                width: 100vw;
+                position: absolute;
+                z-index: 2;
+            }
 
             .trainer-profile-picture {
                 background: url("../../asset/profiles/super_male.png") no-repeat bottom;
@@ -145,11 +155,60 @@ body.single-trainer {
 
             .next-trainer.trainer-sub-titles {
                 margin: 0;
+                text-align: center;
+                margin-bottom: 0.5em;
             }
 
             &-grid {
                 display: flex;
                 flex-flow: row wrap;
+                width: 100%;
+                justify-content: space-between;
+                
+                .trainer-item-container {
+                    display: flex;
+                    flex-flow: column nowrap;
+                    align-items: center;
+
+                    .trainer-thumbnail-wrapper {
+                        width: 53px;
+                        height: 53px;
+                        background: grey;
+                        border-radius: 25px;
+                        border: 1.5px solid #A10000;
+                    }
+
+                    .next-trainer-wrapper {
+                        a {
+                            text-decoration: none;
+                            font-size: 16px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .other-links {
+            display: flex;
+            flex-flow: column nowrap;
+            text-align: center;
+
+            a {
+                color: black;
+                text-transform: uppercase;
+                font-weight: 500;
+                font-family: $font__h1-header;
+                font-size: 24px;
+            }
+            
+            .about-our-origin,
+            .about-our-community {
+                padding: 0.5em 0;
+                border-bottom: 1.5px solid #A10000;
+            }
+
+            .about-our-place {
+                padding: 0.5em 0;
             }
         }
     }

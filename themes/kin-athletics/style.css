@@ -248,7 +248,8 @@ select,
 textarea {
   font-size: 16px;
   font-size: 1rem;
-  line-height: 1.5; }
+  line-height: 1.5;
+  font-family: "Open Sans Condensed", "Oswald", sans-serif; }
 
 /* Headings */
 h1, h2, h3, h4, h5, h6 {
@@ -727,7 +728,7 @@ object {
 
 /* Buttons */
 .social-button, .services-featured .social {
-  background: #FFFFFF;
+  background: transparent;
   border: solid 2px #A10000;
   height: 2.82%;
   text-align: center;
@@ -736,7 +737,7 @@ object {
   margin-bottom: 16px; }
   .social-button a, .services-featured .social a {
     color: #000000;
-    font-family: Oswald;
+    font-family: oswald;
     font-size: 1.2rem;
     font-weight: 500;
     line-height: 36px;
@@ -797,8 +798,35 @@ object {
     font-size: 24px; }
 
 .main-carousel {
-  height: 90vh;
-  color: white; }
+  height: 100vh;
+  color: white;
+  overflow: hidden; }
+
+.flickity-prev-next-button {
+  top: 550px;
+  width: 100px;
+  height: 100px;
+  background-color: #A10000;
+  box-shadow: none; }
+  .flickity-prev-next-button:disabled {
+    opacity: 1; }
+  .flickity-prev-next-button:hover {
+    background-color: #850000;
+    box-shadow: none; }
+  .flickity-prev-next-button svg {
+    transform: translate(-60%, -50%);
+    top: 50%;
+    padding: 20px 20px; }
+  .flickity-prev-next-button .arrow {
+    fill: white; }
+
+.flickity-prev-next-button.next {
+  right: -70px; }
+
+.flickity-prev-next-button.previous {
+  left: -70px; }
+  .flickity-prev-next-button.previous svg {
+    margin-left: 70px; }
 
 .carousel-cell {
   display: block;
@@ -807,7 +835,7 @@ object {
   background-size: cover;
   text-transform: uppercase; }
   .carousel-cell :not(.carousel-cell-info) {
-    padding-left: 20px; }
+    padding-left: 40px; }
   .carousel-cell h2 {
     height: 116px;
     width: 49.69%;
@@ -817,13 +845,54 @@ object {
     font-size: 55px; }
   .carousel-cell .carousel-cell-info {
     width: 100%;
-    background-color: darkgray;
+    background: rgba(0, 0, 0, 0.7);
     height: 260px;
     line-height: 27px;
-    padding: 0 20px 0 20px; }
+    font-size: 20px;
+    padding: 10px 40px;
+    margin: 0; }
+
+.personal-training h3, .group-training h3 {
+  font-size: 25px;
+  margin: 10px 0; }
+
+.personal-training .price-box-container, .group-training .price-box-container {
+  width: 80%;
+  height: 120px;
+  border: 2px solid white;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  margin: 0 auto;
+  padding: 0; }
+  .personal-training .price-box-container .single-price-box, .group-training .price-box-container .single-price-box {
+    padding: 0 10px;
+    width: 100%;
+    text-align: center; }
+    .personal-training .price-box-container .single-price-box p, .personal-training .price-box-container .single-price-box span, .group-training .price-box-container .single-price-box p, .group-training .price-box-container .single-price-box span {
+      padding: 0;
+      margin: 10px 0; }
+    .personal-training .price-box-container .single-price-box span, .group-training .price-box-container .single-price-box span {
+      font-weight: bold;
+      font-size: 20px; }
+
+.personal-training .price-box-border, .group-training .price-box-border {
+  border-left: 2px white solid;
+  border-right: 2px white solid; }
+
+.training-rates {
+  font-size: 14px;
+  text-transform: none; }
 
 .personal-training {
   background-image: url(../../asset/images/serv1.jpg); }
+
+.group-training {
+  background-image: url(../../asset/images/serv2.jpg); }
+
+.community-projects {
+  background-image: url(../../asset/images/serv3.jpg); }
 
 /*--------------------------------------------------------------
 # About
@@ -835,7 +904,7 @@ body.single-trainer .entry-title {
   text-align: center;
   margin: 0;
   position: absolute;
-  z-index: 2;
+  z-index: 3;
   bottom: 0;
   line-height: 0.85;
   text-transform: uppercase; }
@@ -843,8 +912,7 @@ body.single-trainer .entry-title {
 body.single-trainer .site-content {
   max-width: 400px;
   width: 100%;
-  margin: 0 auto;
-  background: grey; }
+  margin: 0 auto; }
   body.single-trainer .site-content p.trainer-sub-titles {
     font-family: "Oswald"; }
 
@@ -861,6 +929,16 @@ body.single-trainer .default-header {
   overflow: hidden; }
   body.single-trainer .default-header .trainer-profile-wrapper {
     position: relative; }
+    body.single-trainer .default-header .trainer-profile-wrapper:after {
+      content: "";
+      transform: translate(-50%, -50%);
+      left: 50%;
+      top: 50%;
+      background: rgba(0, 0, 0, 0.45);
+      height: 100vh;
+      width: 100vw;
+      position: absolute;
+      z-index: 2; }
     body.single-trainer .default-header .trainer-profile-wrapper .trainer-profile-picture {
       background: url("../../asset/profiles/super_male.png") no-repeat bottom;
       background-size: cover;
@@ -923,12 +1001,51 @@ body.single-trainer .default-content {
     max-height: 50vh;
     width: 100%; }
   body.single-trainer .default-content .other-trainers .next-trainer.trainer-sub-titles {
-    margin: 0; }
+    margin: 0;
+    text-align: center;
+    margin-bottom: 0.5em; }
   body.single-trainer .default-content .other-trainers-grid {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-flow: row wrap;
-        flex-flow: row wrap; }
+        flex-flow: row wrap;
+    width: 100%;
+    -ms-flex-pack: justify;
+        justify-content: space-between; }
+    body.single-trainer .default-content .other-trainers-grid .trainer-item-container {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+      -ms-flex-align: center;
+          align-items: center; }
+      body.single-trainer .default-content .other-trainers-grid .trainer-item-container .trainer-thumbnail-wrapper {
+        width: 53px;
+        height: 53px;
+        background: grey;
+        border-radius: 25px;
+        border: 1.5px solid #A10000; }
+      body.single-trainer .default-content .other-trainers-grid .trainer-item-container .next-trainer-wrapper a {
+        text-decoration: none;
+        font-size: 16px; }
+  body.single-trainer .default-content .other-links {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-flow: column nowrap;
+        flex-flow: column nowrap;
+    text-align: center; }
+    body.single-trainer .default-content .other-links a {
+      color: black;
+      text-transform: uppercase;
+      font-weight: 500;
+      font-family: "Oswald";
+      font-size: 24px; }
+    body.single-trainer .default-content .other-links .about-our-origin,
+    body.single-trainer .default-content .other-links .about-our-community {
+      padding: 0.5em 0;
+      border-bottom: 1.5px solid #A10000; }
+    body.single-trainer .default-content .other-links .about-our-place {
+      padding: 0.5em 0; }
 
 /* Landing Page */
 .landing-page-container {
@@ -984,6 +1101,9 @@ body.single-trainer .default-content {
   border: none;
   height: 2.67%;
   width: 70%; }
+
+.page-template-find-us iframe {
+  text-align: left; }
 
 .site-footer {
   background-color: #A10000;
