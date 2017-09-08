@@ -1179,6 +1179,120 @@ body.single-trainer .default-content {
 .page-template-find-us iframe {
   text-align: left; }
 
+.page-template-events .entry-content {
+  margin: 0; }
+
+.page-template-events .flickity-prev-next-button {
+  display: none; }
+
+.page-template-events .flickity-page-dots {
+  bottom: 10px; }
+
+.page-template-events .flickity-page-dots .dot {
+  width: 12px;
+  height: 12px;
+  opacity: 1;
+  background: transparent;
+  border: 2px solid white; }
+
+.page-template-events .flickity-page-dots .dot.is-selected {
+  background: white; }
+
+.events-taxonomy {
+  height: 100vh;
+  background-image: url("../../asset/images/lion1.jpg");
+  background-size: cover;
+  margin-bottom: 3px; }
+  .events-taxonomy h1 {
+    margin: 0;
+    padding: 100px 0 10px 0;
+    text-align: center;
+    font-size: 25px; }
+  .events-taxonomy .circles {
+    text-align: center; }
+    .events-taxonomy .circles p {
+      margin: 0;
+      padding-bottom: 20px;
+      color: white;
+      text-transform: uppercase;
+      font-weight: bold;
+      font-size: 22px; }
+
+.relative-carousel-container {
+  position: relative; }
+  .relative-carousel-container .events-carousel-info {
+    position: absolute;
+    top: 0; }
+    .relative-carousel-container .events-carousel-info :not(.carousel-cell-info):not(h3) {
+      padding-left: 40px; }
+    .relative-carousel-container .events-carousel-info h1 {
+      padding: 60px 0 0 40px;
+      font-size: 60px; }
+    .relative-carousel-container .events-carousel-info P {
+      width: 100%;
+      color: white;
+      background: rgba(0, 0, 0, 0.7);
+      height: 260px;
+      line-height: 27px;
+      font-size: 20px;
+      padding: 10px 40px; }
+    .relative-carousel-container .events-carousel-info .event-date {
+      padding-left: 40px; }
+    .relative-carousel-container .events-carousel-info h3 {
+      display: inline;
+      color: white;
+      font-size: 18px; }
+    .relative-carousel-container .events-carousel-info .red-button, .relative-carousel-container .events-carousel-info .consultation-button {
+      margin: 20px 0 0 40px;
+      height: 40px;
+      position: relative; }
+      .relative-carousel-container .events-carousel-info .red-button a, .relative-carousel-container .events-carousel-info .consultation-button a {
+        padding: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%); }
+
+.events-cell-image1 {
+  background-image: url("../../asset/images/serv1.jpg"); }
+
+.events-cell-image2 {
+  background-image: url("../../asset/images/serv2.jpg"); }
+
+.events-cell-image3 {
+  background-image: url("../../asset/images/serv3.jpg"); }
+
+.events-black-container, .events-white-container {
+  text-align: center;
+  padding: 20px 0; }
+  .events-black-container p, .events-white-container p {
+    font-size: 28px;
+    margin: 0;
+    font-weight: bold;
+    margin-bottom: 10px; }
+
+.events-black-container {
+  background-color: black;
+  color: white; }
+  .events-black-container .red-button, .events-black-container .consultation-button {
+    margin: 0 auto;
+    position: relative; }
+    .events-black-container .red-button a, .events-black-container .consultation-button a {
+      padding: 0;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 100%;
+      transform: translate(-50%, -50%);
+      font-size: 30px; }
+
+.events-white-container {
+  border-top: 3px black solid; }
+  .events-white-container .social-button {
+    width: 60%; }
+    .events-white-container .social-button a {
+      font-size: 30px; }
+
 .site-footer {
   background-color: #A10000;
   height: 330px;
