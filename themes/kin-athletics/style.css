@@ -1034,7 +1034,7 @@ body.single-trainer .default-content {
   body.single-trainer .default-content .trainer-personalities {
     padding-top: 0; }
     body.single-trainer .default-content .trainer-personalities p.trainer-sub-titles {
-      margin-bottom: 0.5em;
+      margin-bottom: 0.75em;
       margin-top: 0; }
     body.single-trainer .default-content .trainer-personalities ul {
       display: -ms-flexbox;
@@ -1042,11 +1042,12 @@ body.single-trainer .default-content {
       -ms-flex-flow: row wrap;
           flex-flow: row wrap; }
       body.single-trainer .default-content .trainer-personalities ul li {
-        line-height: 1;
         text-transform: uppercase;
         font-family: "Open Sans Condensed", sans-serif;
         font-weight: 300;
-        font-size: 20px; }
+        font-size: 20px;
+        margin-right: 0.5em;
+        line-height: 0.75; }
   body.single-trainer .default-content .trainer-availability {
     background: white;
     text-align: center;
@@ -1084,9 +1085,18 @@ body.single-trainer .default-content {
       body.single-trainer .default-content .other-trainers-grid .trainer-item-container .trainer-thumbnail-wrapper {
         width: 53px;
         height: 53px;
-        background: grey;
+        background: #C6CDDF;
         border-radius: 25px;
-        border: 1.5px solid #A10000; }
+        border: 1.5px solid #A10000;
+        overflow: hidden;
+        position: relative; }
+        body.single-trainer .default-content .other-trainers-grid .trainer-item-container .trainer-thumbnail-wrapper .trainer-thumbnail {
+          max-width: none;
+          max-height: 100%;
+          top: 50%;
+          left: 50%;
+          position: absolute;
+          transform: translate(-50%, -50%); }
       body.single-trainer .default-content .other-trainers-grid .trainer-item-container .next-trainer-wrapper a {
         text-decoration: none;
         font-size: 16px; }
