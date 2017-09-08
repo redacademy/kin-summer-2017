@@ -727,7 +727,7 @@ object {
   display: block; }
 
 /* Buttons */
-.social-button, .services-featured .social {
+.social-button {
   background: transparent;
   border: solid 2px #A10000;
   height: 2.82%;
@@ -735,7 +735,7 @@ object {
   width: 54.37%;
   margin: 0 auto;
   margin-bottom: 16px; }
-  .social-button a, .services-featured .social a {
+  .social-button a {
     color: #000000;
     font-family: oswald;
     font-size: 1.2rem;
@@ -768,7 +768,8 @@ object {
 .main-carousel {
   height: 100vh;
   color: white;
-  overflow: hidden; }
+  overflow: hidden;
+  margin-bottom: 3px; }
 
 .flickity-prev-next-button {
   top: 550px;
@@ -861,52 +862,99 @@ object {
 
 .community-projects {
   background-image: url(../../asset/images/serv3.jpg); }
-  .community-projects .red-button, .community-projects .consultation-button, .community-projects .social-button, .community-projects .services-featured .social, .services-featured .community-projects .social {
+  .community-projects .red-button, .community-projects .consultation-button, .community-projects .social-button {
     margin: 0;
     margin-left: 40px;
     width: 60%;
     padding: 0; }
-    .community-projects .red-button a, .community-projects .consultation-button a, .community-projects .social-button a, .community-projects .services-featured .social a, .services-featured .community-projects .social a {
+    .community-projects .red-button a, .community-projects .consultation-button a, .community-projects .social-button a {
       display: block;
       padding: 0;
       text-align: center;
       color: white;
       font-weight: lighter; }
-  .community-projects .social-button, .community-projects .services-featured .social, .services-featured .community-projects .social {
+  .community-projects .social-button {
     margin-top: 10px;
     height: 38px; }
 
+.page-template-services .entry-content {
+  margin: 0; }
+
 .services-taxonomy {
   height: 100vh;
-  background-image: url("../asset/images/serv1.jpg");
-  background-color: pink;
+  background-image: url("../../asset/images/pushup.jpg");
+  background-size: contain;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-align: center;
       align-items: center;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap; }
+      flex-wrap: wrap;
+  margin-bottom: 3px; }
+  .services-taxonomy h1 {
+    text-align: center;
+    padding: 0 10px;
+    margin-top: 50px; }
   .services-taxonomy .circles {
     margin: 0 auto; }
 
-.carousel-cell {
-  height: 100vh; }
-
 .services-featured {
+  display: block;
   height: 100vh;
-  background-color: darkgray;
-  position: relative;
-  text-align: left;
-  font-size: 60px;
-  text-transform: uppercase; }
-  .services-featured .white-social-block {
-    position: absolute;
-    background-color: pink;
+  background-image: url("../../asset/images/lion2.jpg");
+  background-size: cover;
+  color: white;
+  position: relative; }
+  .services-featured h4 {
+    margin: 0;
+    position: relative;
+    text-align: left;
+    font-size: 60px;
+    text-transform: uppercase;
+    padding: 30px 30px 20px 20px;
+    line-height: 73px; }
+  .services-featured span {
+    font-size: 70px;
+    font-weight: lighter; }
+  .services-featured p {
+    text-align: right;
+    padding-right: 20px;
+    margin: 15px 0;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase; }
+  .services-featured .red-button, .services-featured .consultation-button, .services-featured .social-button {
+    margin: 0;
+    margin-left: 25%;
+    width: 70%;
+    height: 50px; }
+    .services-featured .red-button a, .services-featured .consultation-button a, .services-featured .social-button a {
+      display: block;
+      text-align: center;
+      color: white;
+      padding-top: 3%; }
+  .services-featured .social-button {
+    margin-top: 15px; }
+
+.page-template-services .white {
+  position: absolute;
+  background-color: white;
+  color: black;
+  height: 35%;
+  width: 100%;
+  bottom: 0;
+  font-size: 24px; }
+  .page-template-services .white p {
     text-align: center;
-    height: 35%;
-    width: 100%;
-    bottom: 0;
-    font-size: 24px; }
+    padding: 0;
+    margin-top: 30px; }
+  .page-template-services .white .red-button, .page-template-services .white .consultation-button, .page-template-services .white .social-button {
+    text-align: center;
+    width: 50%;
+    border-width: 3px; }
+    .page-template-services .white .red-button a, .page-template-services .white .consultation-button a, .page-template-services .white .social-button a {
+      color: black;
+      font-size: 30px; }
 
 /*--------------------------------------------------------------
 # About

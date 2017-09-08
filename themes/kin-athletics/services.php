@@ -15,7 +15,7 @@ get_header(); ?>
       <div class='entry-content'>
 
         <section class='services-taxonomy'>                <!-- get template part after circles are done-->
-          <h3> at kin athletics, we try our hardest to serve your needs</h3>
+          <h1> at kin athletics, we try our hardest to serve your needs</h1>
 
           <div class='circles'>
             <svg height="180" width="180">
@@ -101,11 +101,15 @@ get_header(); ?>
         </div>  <!-- end of carousel -->
 
         <section class='services-featured'>
-        <h3> featured trainer <span>allan</span> </h3>
+        <h4> featured trainer <span>allan</span> </h4>
+        <p>ready to sweat?</p>
+        <div class='red-button'><a href='#'>free consultation</a></div>
+        <div class='social-button'><a href='#'>about me</a></div>
+
           <div class='white container'>
             <p>more feels on our services</p>
-            <a class='social'>facebook</a>
-            <a class='social'>instagram</a>
+            <div class='social-button'><a href='#'>facebook</a></div>
+            <div class='social-button'><a href='#'>instagram</a></div>
           </div>
         </section>
 
