@@ -1,4 +1,23 @@
 .page-template-find-us {
+
+  .find-us-picture-wrapper {
+    position: relative;
+
+    .find-us-picture {
+      background: url("../../asset/profiles/find-us.jpg") no-repeat bottom;
+      background-size: cover;
+      position: absolute;
+      transform: translate(-50%, -50%);
+      left: 50%;
+      top: 50%;
+      z-index: 0;
+      max-width: none;
+      z-index: 0; 
+      height: 100%;
+      filter: grayscale(100%);
+  }
+}
+
   .black.container {
     background: $color__brand-black;
     height: 8.01%;
