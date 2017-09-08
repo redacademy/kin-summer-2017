@@ -9,7 +9,7 @@ select,
 textarea {
 	@include font-size(1);
 	line-height: $font__line-height-body;
-	// font-family: $font__code;
+	font-family: $font__code;
 }
 
 /* Headings */

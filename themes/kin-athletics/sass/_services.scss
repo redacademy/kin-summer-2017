@@ -1,0 +1,105 @@
+.page-template-services{
+  .entry-content{
+    margin: 0;
+  }
+}
+
+.services-taxonomy{
+  height: 100vh;
+  background-image: url('../../asset/images/pushup.jpg');
+  background-size: contain;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap; 
+  margin-bottom: 3px;
+
+  h1{
+    text-align: center;
+    padding: 0 10px;
+    margin-top: 50px;
+  }
+
+  .circles{
+    margin: 0 auto;
+  }
+}
+
+.services-featured{
+  display: block;
+  height: 100vh;
+  background-image: url('../../asset/images/lion2.jpg');
+  background-size: cover;
+  color: white;
+  position: relative;
+
+  h4{
+    margin: 0;
+    position: relative;
+    text-align: left;
+    font-size: 60px;
+    text-transform: uppercase;
+    padding: 30px 30px 20px 20px;
+    line-height: 73px;
+  }
+
+  span{
+    font-size: 70px;
+    font-weight: lighter;
+  }
+
+  p{
+    text-align: right;
+    padding-right: 20px;
+    margin: 15px 0;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  .red-button, .social-button{
+    margin: 0;
+    margin-left: 25%;
+    width: 70%;
+    height: 50px;
+
+    a{
+      display: block;
+      text-align: center;
+      color: white;
+      padding-top: 3%;
+    }
+  }
+
+  .social-button{
+    margin-top: 15px;
+  }
+}
+
+.page-template-services{
+  .white {
+    position: absolute;
+    background-color: white;
+    color: black;
+    height: 35%;
+    width: 100%;
+    bottom: 0;
+    font-size: 24px;
+
+    p{
+      text-align: center;
+      padding: 0;
+      margin-top: 30px;
+    }
+
+    .red-button, .social-button{
+      text-align: center;
+      width: 50%;
+      border-width: 3px;
+
+      a{
+        color: black;
+        font-size: 30px;
+      }
+    }
+  }
+}

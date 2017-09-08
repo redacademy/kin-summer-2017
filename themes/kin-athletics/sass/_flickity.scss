@@ -1,6 +1,47 @@
 .main-carousel{
-  height: 90vh;
+  height: 100vh;
   color: white;  
+  overflow: hidden;
+  margin-bottom: 3px;
+}
+
+.flickity-prev-next-button {
+  top: 550px;
+  width: 100px;
+  height: 100px;
+  background-color: $color__brand-red;
+  box-shadow: none;  
+
+  &:disabled{
+    opacity: 1;
+  }
+
+  &:hover{
+    background-color: $color__hover-buttons;
+    box-shadow: none;
+  }
+
+  svg{
+    transform: translate(-60%, -50%);
+    top: 50%;
+    padding: 20px 20px;  
+  }
+
+  .arrow{
+    fill: white;
+  }
+}
+
+.flickity-prev-next-button.next{
+  right: -70px;
+}
+
+.flickity-prev-next-button.previous{
+  left: -70px;
+
+  svg{
+    margin-left: 70px;
+  }
 }
 
 .carousel-cell {
@@ -8,10 +49,10 @@
   height: 100vh; 
   width: 100%;
   background-size: cover;
-  text-transform: uppercase;
+  text-transform: uppercase;  
 
   :not(.carousel-cell-info){
-    padding-left: 20px;
+    padding-left: 40px;
   }
 
   h2{
@@ -25,21 +66,98 @@
 
   .carousel-cell-info{
     width: 100%;
-    background-color: darkgray;
+    background: rgba(0, 0, 0, 0.7);
     height: 260px;
     line-height: 27px;
-    padding: 0 20px 0 20px;
+    font-size: 20px;
+    padding: 10px 40px;
+    margin: 0;    
   }
+}
+
+
+// pricing grid styles for personal training and group training
+
+.personal-training, .group-training{
+  h3{
+    font-size: 25px;
+    margin: 10px 0;
+  }
+
+  .price-box-container{
+    width: 80%;
+    height: 120px;
+    border: 2px solid white;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 0;
+
+    .single-price-box{
+      padding: 0 10px;
+      width: 100%;
+      text-align: center;
+
+      p, span{
+        padding: 0;
+        margin: 10px 0;
+      }
+
+      span{
+        font-weight: bold;
+        font-size: 20px;
+      }
+    }
+  }
+
+  .price-box-border{
+    border-left: 2px white solid;
+    border-right: 2px white solid;    
+  }
+}
+
+.training-rates{
+  font-size: 14px;
+  text-transform: none;
 }
 
 
 // carousel cell #1 - personal training
 
-
 .personal-training{
   background-image: url(../../asset/images/serv1.jpg);
+}
 
-  h3{
-    // font-size: 40px;
+// carousel cell #2 - group training
+
+
+.group-training{
+  background-image: url(../../asset/images/serv2.jpg);
+}
+
+
+// carousel cell #3 - community projects
+
+.community-projects{
+  background-image: url(../../asset/images/serv3.jpg);
+  
+  .red-button, .social-button{
+    margin: 0;
+    margin-left: 40px;
+    width: 60%;
+    padding: 0;
+
+    a{
+      display: block;
+      padding: 0;
+      text-align: center;
+      color: white;
+      font-weight: lighter;
+    }
+  }
+
+  .social-button{
+    margin-top: 10px;
+    height: 38px;   
   }
 }

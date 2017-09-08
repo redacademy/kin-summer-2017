@@ -5,7 +5,6 @@
 /* buttons */
 .consultation-button {
     @extend .red-button;
-
 }
 
 /* ------- Single Trainer ------- */
@@ -16,7 +15,7 @@ body.single-trainer {
         text-align: center;
         margin: 0;
         position: absolute;
-        z-index: 2;
+        z-index: 3;
         bottom: 0;
         line-height: 0.85;
         text-transform: uppercase;  
@@ -26,7 +25,6 @@ body.single-trainer {
         max-width: $base__width-mobile;
         width: 100%;
         margin: 0 auto;
-        background: grey;
 
         p.trainer-sub-titles {
             font-family: $font__h1-header;
@@ -45,6 +43,18 @@ body.single-trainer {
 
         .trainer-profile-wrapper {
             position: relative;
+
+            &:after {
+                content: "";
+                transform: translate(-50%, -50%);
+                left: 50%;
+                top: 50%;
+                background: rgba(0,0,0,0.45);
+                height: 100vh;
+                width: 100vw;
+                position: absolute;
+                z-index: 2;
+            }
 
             .trainer-profile-picture {
                 background: url("../../asset/profiles/super_male.png") no-repeat bottom;
@@ -97,7 +107,7 @@ body.single-trainer {
             padding-top: 0;
 
             p.trainer-sub-titles {
-                margin-bottom: 0.5em;
+                margin-bottom: 0.75em;
                 margin-top: 0;
             }
 
@@ -106,11 +116,12 @@ body.single-trainer {
                 flex-flow: row wrap;
 
                 li {
-                    line-height: 1;
                     text-transform: uppercase;
                     font-family: $font__main;
                     font-weight: 300;
                     font-size: 20px;
+                    margin-right: 0.5em;
+                    line-height: 0.75;
                 }
             }
         }
@@ -163,9 +174,20 @@ body.single-trainer {
                     .trainer-thumbnail-wrapper {
                         width: 53px;
                         height: 53px;
-                        background: grey;
+                        background: #C6CDDF;
                         border-radius: 25px;
                         border: 1.5px solid #A10000;
+                        overflow: hidden;
+                        position: relative;
+
+                        .trainer-thumbnail {
+                            max-width: none;
+                            max-height: 100%;
+                            top: 50%;
+                            left: 50%;
+                            position: absolute;
+                            transform: translate(-50%, -50%);
+                        }
                     }
 
                     .next-trainer-wrapper {
@@ -175,6 +197,31 @@ body.single-trainer {
                         }
                     }
                 }
+            }
+        }
+
+        .other-links {
+            display: flex;
+            flex-flow: column nowrap;
+            text-align: center;
+
+            a {
+                color: black;
+                text-transform: uppercase;
+                font-weight: 500;
+                font-family: $font__h1-header;
+                font-size: 24px;
+            }
+            
+            .about-our-origin,
+            .about-our-community {
+                border-bottom: 1.5px solid #A10000;
+            }
+            .about-our-origin,
+            .about-our-community,
+            .about-our-place {
+                padding: 0.5em 0;
+                cursor: pointer;
             }
         }
     }
