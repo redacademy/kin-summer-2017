@@ -1,0 +1,161 @@
+.page-template-events{
+  .entry-content{
+    margin: 0;
+  }
+
+  .flickity-prev-next-button{
+    display: none;
+  }
+
+  .flickity-page-dots {
+    bottom: 10px;
+  }
+
+  .flickity-page-dots .dot {
+    width: 12px;
+    height: 12px;
+    opacity: 1;
+    background: transparent;
+    border: 2px solid white;
+  }
+
+  .flickity-page-dots .dot.is-selected {
+    background: white;
+  }
+}
+
+.events-taxonomy{
+  height: 100vh;
+  background-image: url('../../asset/images/lion1.jpg');
+  background-size: cover;
+  margin-bottom: 3px;
+
+  h1{
+    margin: 0;
+    padding: 100px 0 10px 0;
+    text-align: center;
+    font-size: 25px
+  }
+
+  .circles{
+    text-align: center;
+
+    p{
+      margin: 0;
+      padding-bottom: 20px;
+      color: white;
+      text-transform: uppercase;
+      font-weight: bold;
+      font-size: 22px;
+    }
+  }
+}
+
+.relative-carousel-container{
+  position: relative;
+
+  .events-carousel-info{
+    position: absolute;
+    top: 0;
+
+    :not(.carousel-cell-info):not(h3){
+      padding-left: 40px;
+    }
+
+    h1{
+      padding: 60px 0 0 40px;
+      font-size: 60px;
+    }
+
+    P{
+      width: 100%;
+      color: white;
+      background: rgba(0, 0, 0, 0.7);
+      height: 260px;
+      line-height: 27px;
+      font-size: 20px;
+      padding: 10px 40px;
+    }
+
+    .event-date{
+      padding-left: 40px;
+    }
+
+    h3{ 
+      display: inline;
+      color: white;
+      font-size: 18px;
+    }
+
+    .red-button{
+      margin: 20px 0 0 40px;
+      height: 40px;
+      position: relative;
+
+      a{
+        padding: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+  }
+}
+
+.events-cell-image1{
+  background-image: url('../../asset/images/serv1.jpg');
+}
+
+.events-cell-image2{
+  background-image: url('../../asset/images/serv2.jpg');
+}
+
+.events-cell-image3{
+  background-image: url('../../asset/images/serv3.jpg');
+}
+
+.events-black-container, .events-white-container{
+  text-align: center;
+  padding: 20px 0;
+
+  p{
+    font-size: 28px;
+    margin: 0;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+}
+
+.events-black-container{
+  background-color: black;
+  color: white;
+
+  .red-button{
+    margin: 0 auto;
+    position: relative;
+
+    a{
+      padding: 0;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 100%;
+      transform: translate(-50%, -50%);
+      font-size: 30px;
+    }
+  }
+}
+
+
+.events-white-container{
+  border-top: 3px black solid;
+
+  .social-button{
+    width: 60%;
+
+    a{
+      font-size: 30px;
+    }
+  }
+}
