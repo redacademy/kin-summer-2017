@@ -50,7 +50,7 @@
             <p class="next-trainer trainer-sub-titles">Who's Next?</p>
             <div class="other-trainers-grid">
                 <?php
-                    $args = array( 'post_type' => 'trainer', 'order' => 'ASC', 'posts_per_page' => 6, 'orderby' => 'date', 'exclude' => array(get_the_id()) );
+                    $args = array( 'post_type' => 'trainer', 'order' => 'DESC', 'posts_per_page' => 5, 'orderby' => 'date', 'exclude' => array(get_the_id()) );
                     $trainer = get_posts( $args ); // returns an array of posts
                   
                     $trainers_count = count($trainer);
