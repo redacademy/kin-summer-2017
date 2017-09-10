@@ -1138,8 +1138,14 @@ body.post-type-archive-trainer .entry-content {
 
 .services-icons {
   height: 100vh;
-  background: url("../../asset/images/pushup.jpg") no-repeat center;
-  background-size: cover; }
+  background: url("../../asset/images/aboutpage_heroshot.png") no-repeat center;
+  background-size: cover;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: column nowrap;
+      flex-flow: column nowrap;
+  -ms-flex-pack: space-evenly;
+      justify-content: space-evenly; }
   .services-icons .header-container {
     display: -ms-flexbox;
     display: flex;
@@ -1150,16 +1156,30 @@ body.post-type-archive-trainer .entry-content {
   .services-icons #origin-icon {
     margin-right: 50px; }
   .services-icons .circles-container {
-    height: 75%; }
-    .services-icons .circles-container .circles {
-      margin: auto;
+    height: 50%;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-flow: row wrap;
+        flex-flow: row wrap; }
+    .services-icons .circles-container .icon-container {
+      width: 50%;
+      height: 123px;
       display: -ms-flexbox;
       display: flex;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap; }
-      .services-icons .circles-container .circles svg {
-        width: 50%;
-        height: 123px; }
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+      -ms-flex-pack: center;
+          justify-content: center;
+      -ms-flex-align: center;
+          align-items: center; }
+      .services-icons .circles-container .icon-container a, .services-icons .circles-container .icon-container img {
+        height: 100%; }
+      .services-icons .circles-container .icon-container p {
+        margin: 0;
+        color: white;
+        text-transform: uppercase;
+        font-weight: 500;
+        font-family: "Oswald"; }
 
 .services-featured {
   display: block;
