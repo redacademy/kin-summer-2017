@@ -14,27 +14,108 @@ get_header(); ?>
     <div class='container'>
       <div class='entry-content'>
 
-        <section class='services-taxonomy'>                <!-- get template part after circles are done-->
-          <h1> at kin athletics, we try our hardest to serve your needs</h1>
-
-          <div class='circles'>
-            <svg height="180" width="180">
-              <circle cx="80" cy="80" r="80" fill="red" />
-            </svg>
-
-            <svg height="180" width="180">
-              <circle cx="80" cy="80" r="80" fill="red" />
-            </svg>
-
-            <svg height="180" width="180">
-              <circle cx="80" cy="80" r="80" fill="red" />
-            </svg>
-
-            <svg height="180" width="180">
-              <circle cx="80" cy="80" r="80" fill="red" />
-            </svg>
-          </div>
+        <section class='services-icons'>
+            <div class="header-container">
+                <h1> At Kin Athletics, <br>we believe in</h1>
+            </div>
+          
+            <div class="circles-container">
+                <div class='circles'>
+                    <svg viewBox="0 0 280 280" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <defs>
+                            <circle id="path-1" cx="136" cy="136" r="136"></circle>
+                            <filter x="-2.7%" y="-1.7%" width="105.3%" height="105.3%" filterUnits="objectBoundingBox" id="filter-2">
+                                <feOffset dx="0" dy="2.5" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+                                <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+                                <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+                            </filter>
+                        </defs>
+                        <g id="Desktop-HD" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                            <g id="About-(Example)" transform="translate(-110.000000, -406.000000)">
+                                <g id="Section-1" transform="translate(0.000000, 63.000000)">
+                                    <g id="About-Options" transform="translate(114.000000, 344.000000)">
+                                        <g id="Our-Origin-icon">
+                                            <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                                            <use fill="#A10000" fill-rule="evenodd" xlink:href="#path-1"></use>
+                                        </g>
+                                        <path d="M192.048799,200.377035 L213,200.338076 L133.439705,54 L55,200.631879 L76.0161356,200.592799 L134.560295,92.9104478 L192.048799,200.377035 Z" id="Combined-Shape" fill="#000000"></path>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </svg>
+                    <svg viewBox="0 0 280 280" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <defs>
+                            <circle id="path-1" cx="136" cy="136" r="136"></circle>
+                            <filter x="-2.7%" y="-1.7%" width="105.3%" height="105.3%" filterUnits="objectBoundingBox" id="filter-2">
+                                <feOffset dx="0" dy="2.5" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+                                <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+                                <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+                            </filter>
+                        </defs>
+                        <g id="Desktop-HD" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                            <g id="About-(Example)" transform="translate(-110.000000, -406.000000)">
+                                <g id="Section-1" transform="translate(0.000000, 63.000000)">
+                                    <g id="About-Options" transform="translate(114.000000, 344.000000)">
+                                        <g id="Our-Origin-icon">
+                                            <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                                            <use fill="#A10000" fill-rule="evenodd" xlink:href="#path-1"></use>
+                                        </g>
+                                        <path d="M192.048799,200.377035 L213,200.338076 L133.439705,54 L55,200.631879 L76.0161356,200.592799 L134.560295,92.9104478 L192.048799,200.377035 Z" id="Combined-Shape" fill="#000000"></path>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </svg>
+                    <svg viewBox="0 0 280 280" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <defs>
+                            <circle id="path-1" cx="136" cy="136" r="136"></circle>
+                            <filter x="-2.7%" y="-1.7%" width="105.3%" height="105.3%" filterUnits="objectBoundingBox" id="filter-2">
+                                <feOffset dx="0" dy="2.5" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+                                <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+                                <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+                            </filter>
+                        </defs>
+                        <g id="Desktop-HD" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                            <g id="About-(Example)" transform="translate(-110.000000, -406.000000)">
+                                <g id="Section-1" transform="translate(0.000000, 63.000000)">
+                                    <g id="About-Options" transform="translate(114.000000, 344.000000)">
+                                        <g id="Our-Origin-icon">
+                                            <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                                            <use fill="#A10000" fill-rule="evenodd" xlink:href="#path-1"></use>
+                                        </g>
+                                        <path d="M192.048799,200.377035 L213,200.338076 L133.439705,54 L55,200.631879 L76.0161356,200.592799 L134.560295,92.9104478 L192.048799,200.377035 Z" id="Combined-Shape" fill="#000000"></path>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </svg>
+                    <svg viewBox="0 0 280 280" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <defs>
+                            <circle id="path-1" cx="136" cy="136" r="136"></circle>
+                            <filter x="-2.7%" y="-1.7%" width="105.3%" height="105.3%" filterUnits="objectBoundingBox" id="filter-2">
+                                <feOffset dx="0" dy="2.5" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+                                <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+                                <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+                            </filter>
+                        </defs>
+                        <g id="Desktop-HD" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                            <g id="About-(Example)" transform="translate(-110.000000, -406.000000)">
+                                <g id="Section-1" transform="translate(0.000000, 63.000000)">
+                                    <g id="About-Options" transform="translate(114.000000, 344.000000)">
+                                        <g id="Our-Origin-icon">
+                                            <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                                            <use fill="#A10000" fill-rule="evenodd" xlink:href="#path-1"></use>
+                                        </g>
+                                        <path d="M192.048799,200.377035 L213,200.338076 L133.439705,54 L55,200.631879 L76.0161356,200.592799 L134.560295,92.9104478 L192.048799,200.377035 Z" id="Combined-Shape" fill="#000000"></path>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </svg>
+                </div>
         </section>
+
 
 
         <div class="main-carousel">
@@ -44,8 +125,8 @@ get_header(); ?>
                 $trainer = get_posts( $args ); // returns an array of posts
                 $trainers_count = count($trainer);
                 $number_of_posts = 6;
-                $number_of_pages = $trainers_count / 6; 
-
+                $number_of_pages = $trainers_count / $number_of_posts;
+                
                 foreach ( $trainer as $post ) : setup_postdata( $post );
             ?>
 

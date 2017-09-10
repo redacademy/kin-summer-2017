@@ -1047,7 +1047,7 @@ body.single-trainer .default-content {
         font-weight: 300;
         font-size: 20px;
         margin-right: 0.5em;
-        line-height: 1.5; }
+        line-height: 0.75em; }
   body.single-trainer .default-content .trainer-availability {
     background: white;
     text-align: center;
@@ -1075,14 +1075,14 @@ body.single-trainer .default-content {
     width: 100%;
     -ms-flex-pack: justify;
         justify-content: space-between; }
-    body.single-trainer .default-content .other-trainers-grid .trainer-item-container {
+    body.single-trainer .default-content .other-trainers-grid .next-trainer-item-container {
       display: -ms-flexbox;
       display: flex;
       -ms-flex-flow: column nowrap;
           flex-flow: column nowrap;
       -ms-flex-align: center;
           align-items: center; }
-      body.single-trainer .default-content .other-trainers-grid .trainer-item-container .trainer-thumbnail-wrapper {
+      body.single-trainer .default-content .other-trainers-grid .next-trainer-item-container .trainer-thumbnail-wrapper {
         width: 53px;
         height: 53px;
         background: #C6CDDF;
@@ -1090,14 +1090,14 @@ body.single-trainer .default-content {
         border: 1.5px solid #A10000;
         overflow: hidden;
         position: relative; }
-        body.single-trainer .default-content .other-trainers-grid .trainer-item-container .trainer-thumbnail-wrapper .trainer-thumbnail {
+        body.single-trainer .default-content .other-trainers-grid .next-trainer-item-container .trainer-thumbnail-wrapper .trainer-thumbnail {
           max-width: none;
           max-height: 100%;
           top: 50%;
           left: 50%;
           position: absolute;
           transform: translate(-50%, -50%); }
-      body.single-trainer .default-content .other-trainers-grid .trainer-item-container .next-trainer-wrapper a {
+      body.single-trainer .default-content .other-trainers-grid .next-trainer-item-container .next-trainer-wrapper a {
         text-decoration: none;
         font-size: 16px; }
   body.single-trainer .default-content .other-links {
@@ -1136,22 +1136,30 @@ body.post-type-archive-trainer .entry-content {
     height: 100px;
     width: 100px; }
 
-.services-taxonomy {
+.services-icons {
   height: 100vh;
   background: url("../../asset/images/pushup.jpg") no-repeat center;
-  background-size: cover;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-align: center;
-      align-items: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  margin-bottom: 3px; }
-  .services-taxonomy h1 {
-    text-align: center;
-    margin-top: 50px; }
-  .services-taxonomy .circles {
-    margin: 0 auto; }
+  background-size: cover; }
+  .services-icons .header-container {
+    display: -ms-flexbox;
+    display: flex;
+    height: 25%; }
+    .services-icons .header-container h1 {
+      margin: auto;
+      text-align: center; }
+  .services-icons #origin-icon {
+    margin-right: 50px; }
+  .services-icons .circles-container {
+    height: 75%; }
+    .services-icons .circles-container .circles {
+      margin: auto;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap; }
+      .services-icons .circles-container .circles svg {
+        width: 50%;
+        height: 123px; }
 
 .services-featured {
   display: block;

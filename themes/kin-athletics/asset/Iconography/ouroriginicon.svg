@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="508px" height="508px" viewBox="0 0 508 508" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
+    <title>ouroriginicon</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <circle id="path-1" cx="250" cy="250" r="250"></circle>
+        <filter x="-1.5%" y="-1.0%" width="102.9%" height="102.9%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="2.5" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-33.000000, -21.000000)">
+            <g id="ouroriginicon" transform="translate(37.000000, 22.000000)">
+                <g id="Our-Origin-icon">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                    <use fill="#A10000" fill-rule="evenodd" xlink:href="#path-1"></use>
+                </g>
+                <path d="M360.707351,370.884255 L399.220588,370.812639 L252.970045,101.808824 L108.779412,371.352719 L147.412014,371.280881 L255.029955,173.335382 L360.707351,370.884255 Z" id="Combined-Shape" fill="#000000"></path>
+            </g>
+        </g>
+    </g>
+</svg>

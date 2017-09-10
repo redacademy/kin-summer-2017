@@ -19,26 +19,44 @@ body.post-type-archive-trainer {
   }
 
 
-  .services-taxonomy{
+  .services-icons{
     height: 100vh;
     background: url('../../asset/images/pushup.jpg') no-repeat center;
     background-size: cover;
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap; 
-    margin-bottom: 3px;
-  
-    h1{
-      text-align: center;
-      margin-top: 50px;
+
+    .header-container {
+      display: flex;
+      height: 25%;
+
+      h1 {
+        margin: auto;
+        text-align: center;
+      }
     }
+    
+    #origin-icon {
+      margin-right: 50px;
+    }
+    
+    
+    .circles-container {
+      height: 75%;
+
+      .circles {
+        margin: auto;
+        display: flex;
+        flex-flow: row wrap;
   
-    .circles{
-      margin: 0 auto;
+        svg {
+          width: 50%;
+          height: $icon__base-size;
+        }
+      }
+
     }
   }
   
-  .services-featured{
+  .services-featured {
     display: block;
     height: 100vh;
     background-image: url('../../asset/images/lion2.jpg');

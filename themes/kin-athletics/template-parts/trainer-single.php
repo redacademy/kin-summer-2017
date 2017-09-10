@@ -58,7 +58,7 @@
                     foreach ( $trainer as $post ) : setup_postdata( $post );
                 ?>
 
-                <div class="trainer-item-container">
+                <div class="next-trainer-item-container">
                     <div class="trainer-thumbnail-wrapper">
                         <img class="trainer-thumbnail" src="<?php echo CFS()->get( 'trainer_profile_picture' ); ?>">
                     </div><!-- .trainer-thumbnail-wrapper -->
