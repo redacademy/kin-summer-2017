@@ -1308,6 +1308,13 @@ body.single-trainer .default-content {
     .events-white-container .social-button a {
       font-size: 30px; }
 
+label > input {
+  /* HIDE RADIO */
+  visibility: hidden;
+  /* Makes input not-clickable */
+  position: absolute;
+  /* Remove input from document flow */ }
+
 .site-footer {
   background-color: #A10000;
   height: 330px;
