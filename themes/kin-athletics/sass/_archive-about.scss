@@ -1,17 +1,21 @@
-body.post-type-archive-trainer {
-    .entry-content {
-      margin: 0;
-
-      .header-container {
-        display: flex;
-        height: 25%;
+body.page-template-archive-trainer {
+  #page {
+    min-width: 400px;
+  }
     
-        h1 {
-          margin: auto;
-          text-align: center;
-        }
+  .entry-content {
+    margin: 0 auto;
+
+    .header-container {
+      display: flex;
+      height: 25%;
+  
+      h1 {
+        margin: auto;
+        text-align: center;
       }
     }
+  }
 
   .carousel-cell.trainers {
     display: flex;
@@ -67,87 +71,105 @@ body.post-type-archive-trainer {
         }
       }
     }
+
+  h2.header-title {
+    color: white;
+    font-size: 40px;
+    margin: 0 0.5em;
+    line-height: 58px;
+  }
+  
+  .description-container {
+    p {
+      background-color: rgba(0,0,0,0.6);
+      margin: 0;
+      color: white;
+      padding: 1% 1em;
+      font-size: 20px;
+      font-weight: 300;
+    }
+  }
+
+  .red-button, .social-button{
+    margin: 0;
+    margin-left: 25%;
+    width: 175px;
+    height: 50px;
+
+    a {
+      display: block;
+      text-align: center;
+      color: white;
+      padding-top: 3%;
+      font-family: 'Oswald';
+      font-weight: 24px;
+      font-weight: 500;
+      letter-spacing: 0.75px;
+    }
+  }
+
   .our-origin {
     @extend .services-icons;
     background: url('../../asset/images/aboutpage_ourorigin.png') no-repeat left;
     background-size: cover;
+    text-align: right;
+
+    .header-container {
+        display: flex;
+        justify-content: flex-end;
+    }
   }
-    
-  
-  .services-featured {
-    display: block;
-    height: 100vh;
-    background-image: url('../../asset/images/lion2.jpg');
+
+  .our-community {
+    @extend .services-icons;
+    background: url('../../asset/images/aboutpage_ourcommunity.png') no-repeat center;
     background-size: cover;
-    color: white;
+    border-top: 1px solid white;
     position: relative;
-  
-    h4 { 
-      margin: 0;
+
+    .red-button {
+      margin-left: 2em;
+      align-self: flex-start;
       position: relative;
-      text-align: left;
-      font-size: 60px;
-      text-transform: uppercase;
-      padding: 30px 30px 20px 20px;
-      line-height: 73px;
+      bottom: 120px;
     }
-  
-    span {
-      font-size: 70px;
-      font-weight: lighter;
-    }
-  
+  }
+
+  .our-place {
+    @extend .services-icons;
+    background: url('../../asset/images/aboutpage_ourplace.png') no-repeat 70% 70%;
+    background-size: cover;
+    border-top: 1px solid white;
+  }
+
+
+  .social-button{
+    margin-top: 15px;
+  }
+
+  .white {
+    position: absolute;
+    background-color: white;
+    color: black;
+    height: 35%;
+    width: 100%;
+    bottom: 0;
+    font-size: 24px;
+
     p {
-      text-align: right;
-      padding-right: 20px;
-      margin: 15px 0;
-      font-size: 24px;
-      font-weight: bold;
-      text-transform: uppercase;
-    }
-  
-    .red-button, .social-button{
-      margin: 0;
-      margin-left: 25%;
-      width: 70%;
-      height: 50px;
-  
-      a {
-        display: block;
-        text-align: center;
-        color: white;
-        padding-top: 3%;
-      }
-    }
-  
-    .social-button{
-      margin-top: 15px;
+      text-align: center;
+      padding: 0;
+      margin-top: 30px;
     }
 
-    .white {
-      position: absolute;
-      background-color: white;
-      color: black;
-      height: 35%;
-      width: 100%;
-      bottom: 0;
-      font-size: 24px;
-  
-      p {
-        text-align: center;
-        padding: 0;
-        margin-top: 30px;
-      }
-  
-      .red-button, .social-button{
-        text-align: center;
-        width: 50%;
-        border-width: 3px;
-  
-        a {
-          color: black;
-          font-size: 30px;
-        }
+    .red-button, .social-button{
+      text-align: center;
+      width: 50%;
+      border-width: 3px;
+
+      a {
+        color: black;
+        font-size: 30px;
       }
     }
   }

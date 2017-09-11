@@ -48,13 +48,8 @@ get_header(); ?>
         </section>
 
         <section class='our-origin'>
-            <div class="header-container">
-            <h2>Our Origin</h2>
-            <?php echo CFS()->get( 'services_personal_training'); ?>
-            </div>
+            <?php get_template_part( 'template-parts/about', 'origin' ); ?>
         </section>
-
-
 
         <div class="main-carousel">
           <div class="carousel-cell trainers">
@@ -90,17 +85,15 @@ get_header(); ?>
           </div>  <!-- end of carousel cell group training -->
         </div>  <!-- end of carousel -->
 
-        <section class='services-featured'>
-            <h4> featured trainer <span>allan</span> </h4>
-            <p>ready to sweat?</p>
-            <div class='red-button'><a href='#'>free consultation</a></div>
-            <div class='social-button'><a href='#'>about me</a></div>
-
-            <div class='white container'>
-                <p>more feels on our services</p>
-                <div class='social-button'><a href='#'>facebook</a></div>
-                <div class='social-button'><a href='#'>instagram</a></div>
+        <section class='our-community'>
+            <?php get_template_part( 'template-parts/about', 'community' ); ?>
+            <div class="red-button">
+                <a src="#">Projects</a>
             </div>
+        </section>
+
+        <section class='our-place'>
+            <?php get_template_part( 'template-parts/about', 'place' ); ?>
         </section>
 
       </div>  <!-- end of entry content-->
