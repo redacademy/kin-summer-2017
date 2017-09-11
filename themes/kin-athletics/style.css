@@ -1452,12 +1452,8 @@ body.page-template-archive-trainer .white {
     .events-white-container .social-button a {
       font-size: 30px; }
 
-label > input {
-  /* HIDE RADIO */
-  visibility: hidden;
-  /* Makes input not-clickable */
-  position: absolute;
-  /* Remove input from document flow */ }
+.radio-inline {
+  background-color: pink; }
 
 .site-footer {
   background-color: #A10000;
