@@ -1,6 +1,6 @@
 <?php
 /**
-* Template Name: Services Page
+* Template Name: About Page
 *
 * @package Kin_Athletics_Theme
 */
@@ -44,6 +44,13 @@ get_header(); ?>
                     </a>
                     <p>Our Consultation</p>
                 </div>
+            </div>
+        </section>
+
+        <section class='our-origin'>
+            <div class="header-container">
+            <h2>Our Origin</h2>
+            <?php echo CFS()->get( 'services_personal_training'); ?>
             </div>
         </section>
 
