@@ -48,59 +48,61 @@ get_header(); ?>
         </section>
 
         <section class='our-origin'>
-            <div class="header-container">
-            <h2>Our Origin</h2>
-            <?php echo CFS()->get( 'services_personal_training'); ?>
+            <?php get_template_part( 'template-parts/about', 'origin' ); ?>
+        </section>
+
+        <section class="trainers-grid">
+            <div class="main-carousel">
+                <?php 
+                    $args = array( 'post_type' => 'trainer', 'order' => 'DESC', 'posts_per_page' => -1, 'orderby' => 'date' );
+                    $trainer = get_posts( $args ); // returns an array of posts
+                    $trainers_count = count($trainer);
+                    $number_of_posts = 6;
+                    $number_of_pages = $trainers_count / $number_of_posts;
+                    $trainer_total = $trainers_count;
+                    
+                    for ($i = 0; $i < $number_of_pages; $i++) : ?>
+
+                    <div class='carousel-cell trainers'> 
+                        <div class="header-container">
+                            <h2 class="header-title--black">The Trainers</h2>
+                        </div>
+                        <div class="trainer-grid-wrapper">
+                            <?php        
+                                $j = 0;
+                                while( $j < $number_of_posts && $trainer_total > 0 ) : 
+                            ?>
+                    
+                            <div class='trainer-item-container'>
+                                <div class='trainer-thumbnail-wrapper'>
+                                    <img class='trainer-thumbnail' src="<?php echo CFS()->get( 'trainer_profile_picture', $trainer[$j]->ID ); ?>"/>
+                                </div>
+                                <div class='next-trainer-wrapper'>
+                                    <a class='trainer-name' href='<?php echo $trainer[$j]->guid ?>'><?php echo $trainer[$j]->post_title; ?></a>
+                                </div>
+                            </div> 
+
+                            <?php   
+                                $trainer_total--;
+                                $j++;
+                                endwhile;
+                                array_splice($trainer, 0, $number_of_posts);
+                            ?>
+                        </div>
+                    </div>
+                <?php endfor; ?>
+            </div>  <!-- end of carousel -->
+        </section>
+
+        <section class='our-community'>
+            <?php get_template_part( 'template-parts/about', 'community' ); ?>
+            <div class="red-button">
+                <a src="#">Projects</a>
             </div>
         </section>
 
-
-
-        <div class="main-carousel">
-          <div class="carousel-cell trainers">
-            <?php
-                $args = array( 'post_type' => 'trainer', 'order' => 'DESC', 'posts_per_page' => -1, 'orderby' => 'date' );
-                $trainer = get_posts( $args ); // returns an array of posts
-                $trainers_count = count($trainer);
-                $number_of_posts = 6;
-                $number_of_pages = $trainers_count / $number_of_posts;
-                
-                foreach ( $trainer as $post ) : setup_postdata( $post );
-            ?>
-
-                <div class="trainer-item-container">
-                    <div class="trainer-thumbnail-wrapper">
-                        <img class="trainer-thumbnail" src="<?php echo CFS()->get( 'trainer_profile_picture' ); ?>">
-                    </div><!-- .trainer-thumbnail-wrapper -->
-                    <div class="next-trainer-wrapper">
-                        <a class="trainer-name" href="<?php echo get_post_permalink() ?>"><?php the_title(); ?></a>
-                    </div><!-- .next-trainer-wrapper -->
-                </div>
-            <?php endforeach; wp_reset_postdata(); ?>    
-          </div>  <!-- end of carousel cell personal training -->
-
-
-
-          <div class="carousel-cell group-training">
-          <?php 
-                for($i = 0 ; $i < $number_of_pages ; $i++) {
-                    echo $i.' ';
-                }
-            ?>
-          </div>  <!-- end of carousel cell group training -->
-        </div>  <!-- end of carousel -->
-
-        <section class='services-featured'>
-            <h4> featured trainer <span>allan</span> </h4>
-            <p>ready to sweat?</p>
-            <div class='red-button'><a href='#'>free consultation</a></div>
-            <div class='social-button'><a href='#'>about me</a></div>
-
-            <div class='white container'>
-                <p>more feels on our services</p>
-                <div class='social-button'><a href='#'>facebook</a></div>
-                <div class='social-button'><a href='#'>instagram</a></div>
-            </div>
+        <section class='our-place'>
+            <?php get_template_part( 'template-parts/about', 'place' ); ?>
         </section>
 
       </div>  <!-- end of entry content-->
