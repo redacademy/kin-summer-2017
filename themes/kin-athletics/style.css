@@ -1325,36 +1325,21 @@ body.page-template-archive-trainer .white {
       font-size: 30px; }
 
 /* Landing Page */
-.landing-page-container {
-  max-width: 400px;
-  width: 100vw;
+.front-page-container {
   color: white;
-  margin-top: 60px; }
-  .landing-page-container .landing-project-td, .landing-page-container .landing-who-we-are, .landing-page-container .landing-what-we-do {
-    background-size: cover; }
-    .landing-page-container .landing-project-td h1, .landing-page-container .landing-project-td h2, .landing-page-container .landing-who-we-are h1, .landing-page-container .landing-who-we-are h2, .landing-page-container .landing-what-we-do h1, .landing-page-container .landing-what-we-do h2 {
-      text-transform: uppercase; }
-  .landing-page-container .landing-project-td {
-    height: 420px; }
-    .landing-page-container .landing-project-td .landing-text-project-td {
-      padding: 1.2rem;
-      padding-left: 1.5rem; }
-      .landing-page-container .landing-project-td .landing-text-project-td .kin-athletics-presents {
-        text-align: left;
-        font-size: 34px;
-        font-family: "Open Sans Condensed", sans-serif; }
-      .landing-page-container .landing-project-td .landing-text-project-td h1 {
-        font-size: 55px; }
-  .landing-page-container .who-we-are-cont {
-    height: 506px; }
-    .landing-page-container .who-we-are-cont .who-we-are-image {
-      width: 20rem;
-      height: 20rem; }
-    .landing-page-container .who-we-are-cont .who-we-are-text {
-      color: black;
-      font-size: 2rem; }
-  .landing-page-container .landing-what-we-do {
-    height: 506px; }
+  width: 100vw; }
+
+.project-td-cont, .who-we-are-cont, .what-we-do-cont {
+  height: 100vh; }
+
+.project-td-image-wrapper, .front-img-wrapper {
+  position: relative; }
+  .project-td-image-wrapper .project-td-image, .project-td-image-wrapper .who-we-are-image, .project-td-image-wrapper .what-we-do-image, .front-img-wrapper .project-td-image, .front-img-wrapper .who-we-are-image, .front-img-wrapper .what-we-do-image {
+    position: absolute; }
+
+.project-td-text, .who-we-are-text, .what-we-do-text {
+  position: absolute;
+  margin: 1rem; }
 
 .landing-scroll-section {
   height: 85px;
