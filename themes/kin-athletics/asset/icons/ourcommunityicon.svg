@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="508px" height="508px" viewBox="0 0 508 508" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
+    <title>Page 1</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <circle id="path-1" cx="250" cy="250" r="250"></circle>
+        <filter x="-1.4%" y="-1.0%" width="102.9%" height="102.9%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="2.5" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-24.000000, -24.000000)">
+            <g id="Page-1" transform="translate(28.000000, 25.000000)">
+                <g id="Our-Place-icon">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                    <use fill="#A10000" fill-rule="evenodd" xlink:href="#path-1"></use>
+                </g>
+                <path d="M178.308824,157.168514 C178.308824,182.042042 158.968429,202.205882 135.11086,202.205882 C111.252159,202.205882 91.9117647,182.042042 91.9117647,157.168514 C91.9117647,132.296193 111.252159,112.132353 135.11086,112.132353 C158.968429,112.132353 178.308824,132.296193 178.308824,157.168514 Z" id="Stroke-1" fill="#000000"></path>
+                <path d="M316.176471,121.323529 C316.176471,158.886707 287.371224,189.338235 251.83767,189.338235 C216.306377,189.338235 187.5,158.886707 187.5,121.323529 C187.5,83.7603518 216.306377,53.3088235 251.83767,53.3088235 C287.371224,53.3088235 316.176471,83.7603518 316.176471,121.323529 Z" id="Stroke-3" fill="#000000"></path>
+                <polygon id="Stroke-5" fill="#000000" points="295.260213 439.58138 376.838235 213.749963 134.191176 213.235294 214.84202 436.809538 194.66876 254.268538 254.756313 465.073529 317.098517 254.268538 295.649104 438.754107"></polygon>
+                <path d="M411.764706,157.168514 C411.764706,182.042042 392.424312,202.205882 368.566743,202.205882 C344.708041,202.205882 325.367647,182.042042 325.367647,157.168514 C325.367647,132.296193 344.708041,112.132353 368.566743,112.132353 C392.424312,112.132353 411.764706,132.296193 411.764706,157.168514 Z" id="Stroke-7" fill="#000000"></path>
+            </g>
+        </g>
+    </g>
+</svg>

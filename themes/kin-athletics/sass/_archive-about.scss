@@ -1,0 +1,244 @@
+body.page-template-archive-trainer {
+  #page {
+    width: 400px;
+    margin: 0 auto;
+  }
+    
+  .entry-content {
+    margin: 0 auto;
+
+    .header-container {
+      display: flex;
+      height: 25%;
+  
+      h1 {
+        margin: auto;
+        text-align: center;
+      }
+    }
+  }
+
+  .flickity-prev-next-button {
+    top: 50%;
+  }
+
+  .main-carousel {
+    height: 100%;
+  }
+
+  .carousel-cell :not(.carousel-cell-info) {
+    padding: 0;
+  }
+
+  .carousel-cell.trainers {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+  }
+
+  .trainers-grid {
+
+    .header-container {
+      width: 100%;
+      height: auto;
+
+      h2.header-title--black {
+        width: 100%;
+      }
+    }
+
+    .trainer-grid-wrapper {
+      width: 100%;
+      display: flex;
+      flex-flow: row wrap;
+      height: 75%;
+      justify-content: center;
+
+      .trainer-item-container {
+        width: 40%;
+        max-height: 200px;
+
+        .trainer-thumbnail-wrapper {
+          display: flex;
+          flex-flow: column nowrap;
+          align-items: center;
+          overflow: hidden;
+          border: 2px solid #a10000;
+          border-radius: 50%;
+          margin: auto;
+          width: 90%;
+          height: 70%;
+          background: #C6CDDF;
+    
+          img {
+            height: 100%;
+            max-width: none;
+          }
+        }
+    
+        .next-trainer-wrapper {
+          display: flex;
+          justify-content: center;
+          height: 25%;
+    
+          a {
+            color: black;
+            text-decoration: none;
+            margin: auto;
+          }
+        }
+    }
+  }    
+}
+
+  .services-icons {
+    height: 100vh;
+    background: url('../../asset/images/aboutpage_heroshot.png') no-repeat center;
+    background-size: cover;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+
+    }
+    
+    #origin-icon {
+      margin-right: 50px;
+    }
+    
+    .circles-container {
+      height: 50%;
+      display: flex;
+      flex-flow: row wrap;
+  
+      .icon-container {
+        width: 50%;
+        height: $icon__base-size;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+
+        a, img {
+          height: 100%;
+        }
+
+        p {
+          margin: 0;
+          color: white;
+          text-transform: uppercase;
+          font-weight: 500;
+          font-family: $font__h1-header;
+        }
+      }
+    }
+
+  h2.header-title {
+    color: white;
+    font-size: 40px;
+    margin: 0 0.5em;
+    line-height: 58px;
+
+    &--black {
+      @extend h2.header-title;
+      color: #000;
+      text-align: center;
+    }
+  }
+  
+  .description-container {
+    p {
+      background-color: rgba(0,0,0,0.6);
+      margin: 0;
+      color: white;
+      padding: 1% 1em;
+      font-size: 20px;
+      font-weight: 300;
+    }
+  }
+
+  .red-button, .social-button{
+    margin: 0;
+    margin-left: 25%;
+    width: 175px;
+    height: 50px;
+
+    a {
+      display: block;
+      text-align: center;
+      color: white;
+      padding-top: 3%;
+      font-family: 'Oswald';
+      font-weight: 24px;
+      font-weight: 500;
+      letter-spacing: 0.75px;
+    }
+  }
+
+  .our-origin {
+    @extend .services-icons;
+    background: url('../../asset/images/aboutpage_ourorigin.png') no-repeat left;
+    background-size: cover;
+    text-align: right;
+
+    .header-container {
+        display: flex;
+        justify-content: flex-end;
+    }
+  }
+
+  .our-community {
+    @extend .services-icons;
+    background: url('../../asset/images/aboutpage_ourcommunity.png') no-repeat center;
+    background-size: cover;
+    border-top: 1px solid white;
+    position: relative;
+
+    .red-button {
+      margin-left: 2em;
+      align-self: flex-start;
+      position: relative;
+      bottom: 120px;
+    }
+  }
+
+  .our-place {
+    @extend .services-icons;
+    background: url('../../asset/images/aboutpage_ourplace.png') no-repeat 70% 70%;
+    background-size: cover;
+    border-top: 1px solid white;
+  }
+
+
+  .social-button{
+    margin-top: 15px;
+  }
+
+  .white {
+    position: absolute;
+    background-color: white;
+    color: black;
+    height: 35%;
+    width: 100%;
+    bottom: 0;
+    font-size: 24px;
+
+    p {
+      text-align: center;
+      padding: 0;
+      margin-top: 30px;
+    }
+
+    .red-button, .social-button{
+      text-align: center;
+      width: 50%;
+      border-width: 3px;
+
+      a {
+        color: black;
+        font-size: 30px;
+      }
+    }
+  }
+}

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="508px" height="508px" viewBox="0 0 508 508" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
+    <title>Page 1</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <circle id="path-1" cx="250" cy="250" r="250"></circle>
+        <filter x="-1.4%" y="-0.9%" width="102.9%" height="102.9%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="2.5" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-24.000000, -24.000000)">
+            <g id="Page-1" transform="translate(28.000000, 25.000000)">
+                <g id="PT-icon">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                    <use fill="#A10000" fill-rule="evenodd" xlink:href="#path-1"></use>
+                </g>
+                <path d="M314.196242,210.85595 C314.196242,244.292654 287.090898,271.398747 253.652962,271.398747 C220.216957,271.398747 193.110647,244.292654 193.110647,210.85595 C193.110647,177.419246 220.216957,150.313152 253.652962,150.313152 C287.090898,150.313152 314.196242,177.419246 314.196242,210.85595 Z" id="Stroke-1" fill="#000000"></path>
+                <path d="M353.503072,463.030149 L389.352818,462.963587 L253.21664,212.943633 L118.997912,463.465553 L154.958769,463.398785 L255.134091,279.422492 L353.503072,463.030149 Z" id="Combined-Shape" fill="#000000" transform="translate(254.175365, 338.204593) scale(1, -1) translate(-254.175365, -338.204593) "></path>
+                <polygon id="Triangle-2" fill="#000000" transform="translate(252.087683, 379.958246) scale(1, -1) translate(-252.087683, -379.958246) " points="252.087683 325.678497 300.626305 434.237996 203.549061 434.237996"></polygon>
+                <polygon id="Stroke-7" fill="#000000" fill-rule="nonzero" points="156.5762 113.778706 351.77453 113.778706 351.77453 102.296451 156.5762 102.296451"></polygon>
+                <polygon id="Stroke-9" fill="#000000" fill-rule="nonzero" points="148.008351 69.9373695 148.008351 152.400835 158.663883 152.400835 158.663883 69.9373695"></polygon>
+                <polygon id="Stroke-11" fill="#000000" fill-rule="nonzero" points="348.643006 69.9373695 348.643006 152.400835 359.298539 152.400835 359.298539 69.9373695"></polygon>
+                <polygon id="Stroke-13" fill="#000000" fill-rule="nonzero" points="365.344468 91.8580376 365.344468 130.480167 376 130.480167 376 91.8580376"></polygon>
+                <polygon id="Stroke-16" fill="#000000" fill-rule="nonzero" points="131.306889 91.8580376 131.306889 130.480167 141.962422 130.480167 141.962422 91.8580376"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

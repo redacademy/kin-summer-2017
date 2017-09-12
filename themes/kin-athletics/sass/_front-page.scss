@@ -1,57 +1,139 @@
 /* Landing Page */
 
-.landing-page-container {
-  max-width:400px;
-    width: 100vw;
-    color:white;
-    margin-top:60px;
-   
-    .landing-project-td, .landing-who-we-are, .landing-what-we-do {
-      background-size: cover;
-      h1, h2{
-        text-transform: uppercase;
-      }
-    }
-
-    .landing-project-td {
-      // background-image: url(../../asset/images/serv1.jpg);
-      // background-color: black;
-      height: 420px;
-
-      .landing-text-project-td {
-        padding: 1.2rem;
-        padding-left:1.5rem;
-          .kin-athletics-presents {
-            text-align: left;
-            font-size:34px;
-            font-family: $font__main;
-          }
-          h1{
-            font-size:55px;
-          }
-          // .kin-athletics-presents{}
-      }
-    }
-
-    .who-we-are-cont{
-      // background-image: url(../../asset/images/serv2.jpg);
-      height: 506px;
-      .who-we-are-image{width:20rem;
-      height:20rem;}
-      .who-we-are-text {
-        color:black;
-        font-size: 2rem;
-
-      }
-    }
-
-    .landing-what-we-do {
-      // background-image: url(../../asset/images/serv3.jpg);
-      height: 506px;
-      // .landing-text-what-we-do{
-      // }
-    }
+.front-page-container {
+  color:white;
+  width: 100vw;
+  // height:100vh;
 }
+
+.landing-scroll-section {
+  // position:absolute;
+}
+.project-td-cont, .who-we-are-cont, .what-we-do-cont {
+  height:100vh;
+  // .front-button-cont{
+  //   @include front-red-button;
+  // }
+}
+  .project-td-image-wrapper, .front-img-wrapper {
+    .project-td-image, .who-we-are-image, .what-we-do-image{
+      position:absolute;
+      
+    }
+  }
+
+.project-td-text, .who-we-are-text, .what-we-do-text {
+  position: absolute;
+}
+
+.project-td-text{
+  // width:
+  h2{
+    font-family:$font__main;
+    font-size: 1.5rem;
+    width:7rem;
+    line-height: 2rem;
+  }
+  .front_heading{
+    font-size: 2rem;
+  }
+}
+
+.who-we-are-text, .what-we-do-text {
+  h2{
+    font-family: $font__h1-header;
+		font-size: 1.95rem;
+		font-weight: 500;
+		line-height: 2.9rem;
+  }
+  .front-lorem{
+    width: 100%;
+    background: rgba(0,0,0,.7);
+
+  }
+}
+
+// .project-td-image, .who-we-are-image, .what-we-do-image {
+//   background-size: cover;
+//   // width:none;
+//   // height:100%;
+//   // position:absolute;
+//   // // background-position: 50% 50%;
+//   // transform: translate(50%, 50%);
+//   // overflow: hidden; 
+  
+// }
+
+// h1, h2 {
+//   text-transform: uppercase;
+//   // position:absolute;
+// }
+
+// .project-td-cont {
+//   height: 100vh;
+//   position:relative;
+//   .project-td-image-wrapper {
+    
+//     .project-td-image{
+//       position:absolute;
+//       // background-position: 50% 50%;
+//       // transform: -50% -50%;
+//       // overflow: hidden;
+//       // top: 50%;
+//       width:100%;
+//           }
+//           .project-td-text {
+//             // display:flex;
+//             .front-heading{
+//               position:absolute;
+//             }
+//             }
+//   }
+//   }
+
+
+//   .who-we-are-cont {
+//     height: 100vh;
+//     background-size: cover;
+//     display: flex;
+//     align-items: center;
+//     flex-wrap: wrap; 
+//     margin-bottom: 3px;
+  
+//     .who-we-are-image-wrapper {
+//       position:relative;
+     
+//       .who-we-are-image{
+//         transform: -50% -50%;
+//         overflow: hidden;
+//         top: 50%;
+//         width:100%;
+//         position:absolute;
+//       }
+//     }
+//     .who-we-are-text {
+//       position:relative;
+//     }
+//   }
+//     .what-we-do-cont {
+//       height: 100vh;
+//       position:relative;
+//       .what-we-do-image-wrapper {
+//         // position:relative;
+       
+//         .what-we-do-image {
+//           transform: -50% -50%;
+//           overflow: hidden;
+//           top: 50%;
+//           width:100%;
+//           position:absolute;
+//         }
+//       }
+//       .what_we_do-text {
+        
+//       }
+//     }
+      
     .landing-scroll-section{
       height:85px;
       background-color: white;

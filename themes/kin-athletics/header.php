@@ -2,7 +2,7 @@
 /**
  * The header for our theme.
  *
- * @package Kin_Athletics_Theme
+ * @package Kin-_Athletics_Theme
  */
 
 ?><!DOCTYPE html>

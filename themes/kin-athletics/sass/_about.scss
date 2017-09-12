@@ -12,13 +12,13 @@ body.single-trainer {
 
     .entry-title {
         font-size: 5.5em;
-        text-align: center;
         margin: 0;
         position: absolute;
         z-index: 3;
         bottom: 0;
         line-height: 0.85;
-        text-transform: uppercase;  
+        text-transform: uppercase; 
+        text-align: center; 
     }
 
     .site-content {
@@ -121,7 +121,7 @@ body.single-trainer {
                     font-weight: 300;
                     font-size: 20px;
                     margin-right: 0.5em;
-                    line-height: 0.75;
+                    line-height: 0.75em;
                 }
             }
         }
@@ -166,7 +166,7 @@ body.single-trainer {
                 width: 100%;
                 justify-content: space-between;
                 
-                .trainer-item-container {
+                .next-trainer-item-container {
                     display: flex;
                     flex-flow: column nowrap;
                     align-items: center;
