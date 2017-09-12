@@ -40,7 +40,7 @@
   .circles{
     text-align: center;
 
-    p{
+    p {
       margin: 0;
       padding-bottom: 20px;
       color: white;
@@ -56,25 +56,24 @@
 
   .events-carousel-info{
     position: absolute;
-    top: 0;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    width: 100%;
 
-    :not(.carousel-cell-info):not(h3){
-      padding-left: 40px;
+    h1 {
+      font-size: 40px;
+      padding-left: 2.5rem;
     }
 
-    h1{
-      padding: 60px 0 0 40px;
-      font-size: 60px;
-    }
-
-    P{
+    p {
       width: 100%;
       color: white;
       background: rgba(0, 0, 0, 0.7);
-      height: 260px;
       line-height: 27px;
       font-size: 20px;
       padding: 10px 40px;
+
     }
 
     .event-date{
@@ -85,14 +84,24 @@
       display: inline;
       color: white;
       font-size: 18px;
+      display: flex;
+
+      p {
+        background: none;
+        height: auto;
+        padding: 0;
+        margin: 0 0 0 0.5em;
+      }
     }
 
     .red-button{
       margin: 20px 0 0 40px;
       height: 40px;
       position: relative;
+      width: 200px;
+      padding-left: 0;
 
-      a{
+      a {
         padding: 0;
         position: absolute;
         top: 50%;
