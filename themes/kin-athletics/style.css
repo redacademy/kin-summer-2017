@@ -1185,6 +1185,7 @@ body.page-template-archive-trainer .trainers-grid .trainer-grid-wrapper {
       border: 2px solid #a10000;
       border-radius: 50%;
       margin: auto;
+      width: 90%;
       height: 75%;
       background: #C6CDDF; }
       body.page-template-archive-trainer .trainers-grid .trainer-grid-wrapper .trainer-item-container .trainer-thumbnail-wrapper img {
