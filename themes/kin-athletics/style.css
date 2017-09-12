@@ -1168,9 +1168,11 @@ body.page-template-archive-trainer .trainers-grid .trainer-grid-wrapper {
   display: flex;
   -ms-flex-flow: row wrap;
       flex-flow: row wrap;
-  height: 75%; }
+  height: 75%;
+  -ms-flex-pack: center;
+      justify-content: center; }
   body.page-template-archive-trainer .trainers-grid .trainer-grid-wrapper .trainer-item-container {
-    width: 49%;
+    width: 40%;
     max-height: 200px; }
     body.page-template-archive-trainer .trainers-grid .trainer-grid-wrapper .trainer-item-container .trainer-thumbnail-wrapper {
       display: -ms-flexbox;
@@ -1182,7 +1184,6 @@ body.page-template-archive-trainer .trainers-grid .trainer-grid-wrapper {
       overflow: hidden;
       border: 2px solid #a10000;
       border-radius: 50%;
-      width: 90%;
       margin: auto;
       height: 75%;
       background: #C6CDDF; }
