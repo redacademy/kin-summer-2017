@@ -1138,7 +1138,8 @@ body.page-template-archive-trainer .carousel-cell.trainers {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-flow: column wrap;
-      flex-flow: column wrap; }
+      flex-flow: column wrap;
+  color: black; }
 
 body.page-template-archive-trainer .trainer-item-container {
   height: 100px; }
