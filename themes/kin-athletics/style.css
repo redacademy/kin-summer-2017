@@ -622,7 +622,6 @@ a {
 # Widgets
 --------------------------------------------------------------*/
 .widget {
-  margin: 0 0 1.5rem;
   /* Make sure select elements fit in widgets. */ }
   .widget select {
     max-width: 100%; }
@@ -1369,23 +1368,79 @@ body.page-template-archive-trainer .white {
     font-weight: 500;
     line-height: 24px; }
 
+.page-template-find-us p {
+  margin: .50%; }
+
+.page-template-find-us .entry-title {
+  position: absolute;
+  z-index: 1; }
+
+.page-template-find-us p .contact {
+  font-weight: bold;
+  color: red; }
+
 .page-template-find-us .find-us-picture-wrapper {
   position: relative; }
   .page-template-find-us .find-us-picture-wrapper .find-us-picture {
-    background: url("../../asset/profiles/find-us.jpg") no-repeat bottom;
     background-size: cover;
-    position: absolute;
-    transform: translate(-50%, -50%);
-    left: 50%;
-    top: 50%;
     z-index: 0;
-    max-width: none;
-    z-index: 0;
-    height: 100%;
     filter: grayscale(100%); }
+
+.page-template-find-us .page-template-find-us .widget-title {
+  height: 30px;
+  width: 73px;
+  font-family: Oswald;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+  text-align: center; }
+
+.page-template-find-us .kin-athletics-info {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  text-align: center;
+  width: 100%; }
+
+.page-template-find-us .page-template-find-us iframe {
+  -ms-flex-order: 1;
+      order: 1;
+  border-left: 0;
+  border-right: 0;
+  -ms-flex: 2 0 100%;
+      flex: 2 0 100%;
+  max-width: 100%;
+  position: relative; }
+
+.page-template-find-us .widget-area {
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%; }
+
+.page-template-find-us .kin-athletics-info-class {
+  -ms-flex-order: 2;
+      order: 2;
+  -ms-flex: 0 0 50%;
+      flex: 0 0 50%;
+  width: 50%;
+  position: relative;
+  text-align: right;
+  padding-right: 2.5%; }
+
+.page-template-find-us .kin-athletics-hours-class {
+  -ms-flex-order: 3;
+      order: 3;
+  -ms-flex: 0 0 50%;
+      flex: 0 0 50%;
+  width: 50%;
+  position: relative;
+  text-align: left;
+  padding-left: 2.5%; }
 
 .page-template-find-us .black.container {
   background: #000000;
+  display: block;
   height: 8.01%;
   padding: 5px 0 15px 0; }
 
@@ -1394,9 +1449,6 @@ body.page-template-archive-trainer .white {
   border: none;
   height: 2.67%;
   width: 70%; }
-
-.page-template-find-us iframe {
-  text-align: left; }
 
 .page-template-events .entry-content {
   margin: 0; }
