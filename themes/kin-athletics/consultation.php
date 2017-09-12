@@ -15,7 +15,11 @@ get_header(); ?>
         <div class='entry-content'>
 
 
+        sjhkfgdgdf top
+
         <?php echo do_shortcode('[gravityform id="1" title="true" description="true"]'); ?>
+
+        sjfhksgjdkf bottom
 
 
         </div>  <!-- end of entry content-->
@@ -23,5 +27,3 @@ get_header(); ?>
     </article>
   </main>
 </div>
-
-<?php get_footer(); ?>
