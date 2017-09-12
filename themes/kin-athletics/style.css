@@ -1332,14 +1332,30 @@ body.page-template-archive-trainer .white {
 .project-td-cont, .who-we-are-cont, .what-we-do-cont {
   height: 100vh; }
 
-.project-td-image-wrapper, .front-img-wrapper {
-  position: relative; }
-  .project-td-image-wrapper .project-td-image, .project-td-image-wrapper .who-we-are-image, .project-td-image-wrapper .what-we-do-image, .front-img-wrapper .project-td-image, .front-img-wrapper .who-we-are-image, .front-img-wrapper .what-we-do-image {
-    position: absolute; }
+.project-td-image-wrapper .project-td-image, .project-td-image-wrapper .who-we-are-image, .project-td-image-wrapper .what-we-do-image, .front-img-wrapper .project-td-image, .front-img-wrapper .who-we-are-image, .front-img-wrapper .what-we-do-image {
+  position: absolute; }
 
 .project-td-text, .who-we-are-text, .what-we-do-text {
-  position: absolute;
-  margin: 1rem; }
+  position: absolute; }
+
+.project-td-text h2 {
+  font-family: "Open Sans Condensed", sans-serif;
+  font-size: 1.5rem;
+  width: 7rem;
+  line-height: 2rem; }
+
+.project-td-text .front_heading {
+  font-size: 2rem; }
+
+.who-we-are-text h2, .what-we-do-text h2 {
+  font-family: "Oswald";
+  font-size: 1.95rem;
+  font-weight: 500;
+  line-height: 2.9rem; }
+
+.who-we-are-text .front-lorem, .what-we-do-text .front-lorem {
+  width: 100%;
+  background: rgba(0, 0, 0, 0.7); }
 
 .landing-scroll-section {
   height: 85px;
