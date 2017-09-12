@@ -1,6 +1,7 @@
 body.page-template-archive-trainer {
   #page {
-    min-width: 400px;
+    width: 400px;
+    margin: 0 auto;
   }
     
   .entry-content {
@@ -17,20 +18,79 @@ body.page-template-archive-trainer {
     }
   }
 
+  .flickity-prev-next-button {
+    top: 50%;
+  }
+
+  .main-carousel {
+    height: 100%;
+  }
+
+  .carousel-cell :not(.carousel-cell-info) {
+    padding: 0;
+  }
+
   .carousel-cell.trainers {
     display: flex;
-    flex-flow: column wrap;
-    color: black;
+    flex-flow: row wrap;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
   }
-    
-  .trainer-item-container {
-    height: 100px;
 
-    img {
-      height: 100px;
-      width: 100px;
+  .trainers-grid {
+
+    .header-container {
+      width: 100%;
+      height: auto;
+
+      h2.header-title--black {
+        width: 100%;
+      }
     }
-  }
+
+    .trainer-grid-wrapper {
+      width: 100%;
+      display: flex;
+      flex-flow: row wrap;
+      height: 75%;
+
+      .trainer-item-container {
+        width: 49%;
+        max-height: 200px;
+
+        .trainer-thumbnail-wrapper {
+          display: flex;
+          flex-flow: column nowrap;
+          align-items: center;
+          overflow: hidden;
+          border: 2px solid #a10000;
+          border-radius: 50%;
+          width: 90%;
+          margin: auto;
+          height: 75%;
+          background: #C6CDDF;
+    
+          img {
+            height: 100%;
+            max-width: none;
+          }
+        }
+    
+        .next-trainer-wrapper {
+          display: flex;
+          justify-content: center;
+          height: 25%;
+    
+          a {
+            color: black;
+            text-decoration: none;
+            margin: auto;
+          }
+        }
+    }
+  }    
+}
 
   .services-icons {
     height: 100vh;
@@ -78,6 +138,12 @@ body.page-template-archive-trainer {
     font-size: 40px;
     margin: 0 0.5em;
     line-height: 58px;
+
+    &--black {
+      @extend h2.header-title;
+      color: #000;
+      text-align: center;
+    }
   }
   
   .description-container {
