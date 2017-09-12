@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="508px" height="508px" viewBox="0 0 508 508" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
+    <title>Page 1</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <circle id="path-1" cx="250" cy="250" r="250"></circle>
+        <filter x="-1.4%" y="-0.9%" width="102.9%" height="102.9%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="2.5" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-24.000000, -24.000000)">
+            <g id="Page-1" transform="translate(28.000000, 25.000000)">
+                <g id="PT-icon">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                    <use fill="#A10000" fill-rule="evenodd" xlink:href="#path-1"></use>
+                </g>
+                <polygon id="Stroke-7" fill="#000000" fill-rule="nonzero" points="156.5762 113.778706 351.77453 113.778706 351.77453 102.296451 156.5762 102.296451"></polygon>
+                <polygon id="Stroke-9" fill="#000000" fill-rule="nonzero" points="148.008351 69.9373695 148.008351 152.400835 158.663883 152.400835 158.663883 69.9373695"></polygon>
+                <polygon id="Stroke-11" fill="#000000" fill-rule="nonzero" points="348.643006 69.9373695 348.643006 152.400835 359.298539 152.400835 359.298539 69.9373695"></polygon>
+                <polygon id="Stroke-13" fill="#000000" fill-rule="nonzero" points="365.344468 91.8580376 365.344468 130.480167 376 130.480167 376 91.8580376"></polygon>
+                <polygon id="Stroke-16" fill="#000000" fill-rule="nonzero" points="131.306889 91.8580376 131.306889 130.480167 141.962422 130.480167 141.962422 91.8580376"></polygon>
+                <g transform="translate(130.000000, 154.000000)" fill="#000000">
+                    <path d="M66.8114286,79.4509685 C66.8114286,98.3993814 51.8553713,113.76 33.4061521,113.76 C14.9560573,113.76 0,98.3993814 0,79.4509685 C0,60.5034757 14.9560573,45.1428571 33.4061521,45.1428571 C51.8553713,45.1428571 66.8114286,60.5034757 66.8114286,79.4509685 Z" id="Stroke-1"></path>
+                    <path d="M173.348571,52.3657143 C173.348571,81.2862632 151.116282,104.731429 123.690992,104.731429 C96.2674472,104.731429 74.0342857,81.2862632 74.0342857,52.3657143 C74.0342857,23.4451654 96.2674472,0 123.690992,0 C151.116282,0 173.348571,23.4451654 173.348571,52.3657143 Z" id="Stroke-3"></path>
+                    <polygon id="Stroke-5" points="155.962009 296.442308 218.491429 123.183428 32.5028571 122.788571 94.321596 294.315739 78.8588254 154.269461 124.915836 316 172.701033 154.269461 156.260093 295.80762"></polygon>
+                    <path d="M245.577143,79.4509685 C245.577143,98.3993814 230.621086,113.76 212.171866,113.76 C193.721772,113.76 178.765714,98.3993814 178.765714,79.4509685 C178.765714,60.5034757 193.721772,45.1428571 212.171866,45.1428571 C230.621086,45.1428571 245.577143,60.5034757 245.577143,79.4509685 Z" id="Stroke-7"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

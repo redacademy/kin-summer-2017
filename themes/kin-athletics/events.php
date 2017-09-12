@@ -13,27 +13,31 @@ get_header(); ?>
   <article id='post-<?php the_ID(); ?>' <?php post_class(); ?>>
     <div class='container'>
       <div class='entry-content'>
-
-        <section class='events-taxonomy'>                <!-- get template part after circles are done-->
-          <h1> make history with us </h1>
-
-          <div class='circles'>
-            <svg height="130" width="130">
-              <circle cx="65" cy="65" r="65" fill="red" />
-            </svg>
-            <p> past events </p>
-
-            <svg height="130" width="130">
-              <circle cx="65" cy="65" r="65" fill="red" />
-            </svg>
-            <p> on noe - project td </p>            
-
-            <svg height="130" width="130">
-              <circle cx="65" cy="65" r="65" fill="red" />
-            </svg>
-            <p> buy tickets </p>            
-            
-          </div>
+        <section class='services-icons'>
+            <div class="header-container">
+                <h1> Make history with us</h1>
+            </div>
+          
+            <div class="circles-container">
+                <div class="icon-container">
+                    <a src="#">
+                        <img src="<?php echo get_template_directory_uri(); ?>/asset/icons/ouroriginicon.svg"/>
+                        <p>Past Events</p>
+                    </a>
+                </div>
+                <div class="icon-container">
+                    <a src="#">
+                        <img src="<?php echo get_template_directory_uri(); ?>/asset/icons/ourtrainericon.svg"/>
+                        <p>On Now - Project TD</p>
+                    </a>
+                </div>
+                <div class="icon-container">
+                    <a src="#">
+                        <img src="<?php echo get_template_directory_uri(); ?>/asset/icons/ourcommunityicon.svg"/>
+                        <p>Buy Tickets</p>
+                    </a>
+                </div>
+            </div>
         </section>
 
         <div class='relative-carousel-container'>       
