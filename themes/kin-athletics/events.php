@@ -47,7 +47,7 @@ get_header(); ?>
           </div>
 
           <div class='events-carousel-info'>
-            <?php echo CFS()->get('current_event'); ?>            
+            <h1 class="header-title"><?php echo CFS()->get('current_event'); ?></h1>
             <?php echo CFS()->get('current_event_info'); ?>
             <h3 class='event-date'>happens: <?php echo CFS()->get('current_event_date'); ?></h3>
             <div class='red-button'><a href='#'>buy tickets</a></div>

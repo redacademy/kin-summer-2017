@@ -1440,17 +1440,17 @@ body.page-template-archive-trainer .white {
   position: relative; }
   .relative-carousel-container .events-carousel-info {
     position: absolute;
-    top: 0; }
-    .relative-carousel-container .events-carousel-info :not(.carousel-cell-info):not(h3) {
-      padding-left: 40px; }
+    top: 50%;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    width: 100%; }
     .relative-carousel-container .events-carousel-info h1 {
-      padding: 60px 0 0 40px;
-      font-size: 60px; }
-    .relative-carousel-container .events-carousel-info P {
+      font-size: 40px;
+      padding-left: 2.5rem; }
+    .relative-carousel-container .events-carousel-info p {
       width: 100%;
       color: white;
       background: rgba(0, 0, 0, 0.7);
-      height: 260px;
       line-height: 27px;
       font-size: 20px;
       padding: 10px 40px; }
@@ -1459,11 +1459,20 @@ body.page-template-archive-trainer .white {
     .relative-carousel-container .events-carousel-info h3 {
       display: inline;
       color: white;
-      font-size: 18px; }
+      font-size: 18px;
+      display: -ms-flexbox;
+      display: flex; }
+      .relative-carousel-container .events-carousel-info h3 p {
+        background: none;
+        height: auto;
+        padding: 0;
+        margin: 0 0 0 0.5em; }
     .relative-carousel-container .events-carousel-info .red-button, .relative-carousel-container .events-carousel-info .consultation-button {
       margin: 20px 0 0 40px;
       height: 40px;
-      position: relative; }
+      position: relative;
+      width: 200px;
+      padding-left: 0; }
       .relative-carousel-container .events-carousel-info .red-button a, .relative-carousel-container .events-carousel-info .consultation-button a {
         padding: 0;
         position: absolute;

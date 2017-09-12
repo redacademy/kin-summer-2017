@@ -47,11 +47,11 @@ get_header(); ?>
             </div>
         </section>
 
-        <section class='our-origin'>
+        <section id="origin" class='our-origin'>
             <?php get_template_part( 'template-parts/about', 'origin' ); ?>
         </section>
 
-        <section class="trainers-grid">
+        <section id="trainers" class="trainers-grid">
             <div class="main-carousel">
                 <?php 
                     $args = array( 'post_type' => 'trainer', 'order' => 'DESC', 'posts_per_page' => -1, 'orderby' => 'date' );
@@ -94,14 +94,14 @@ get_header(); ?>
             </div>  <!-- end of carousel -->
         </section>
 
-        <section class='our-community'>
+        <section id="community" class='our-community'>
             <?php get_template_part( 'template-parts/about', 'community' ); ?>
             <div class="red-button">
                 <a src="#">Projects</a>
             </div>
         </section>
 
-        <section class='our-place'>
+        <section id="place" class='our-place'>
             <?php get_template_part( 'template-parts/about', 'place' ); ?>
         </section>
 
