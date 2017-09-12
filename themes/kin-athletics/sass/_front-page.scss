@@ -11,6 +11,9 @@
 }
 .project-td-cont, .who-we-are-cont, .what-we-do-cont {
   height:100vh;
+  // .front-button-cont{
+  //   @include front-red-button;
+  // }
 }
   .project-td-image-wrapper, .front-img-wrapper {
     .project-td-image, .who-we-are-image, .what-we-do-image{

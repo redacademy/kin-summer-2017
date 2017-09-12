@@ -15,6 +15,7 @@ get_header(); ?>
     <h2>Kin Athletics Presents</h2>
      <?php echo CFS()->get('front_heading');?>
     </div>
+    <div class="front-button-cont"></div>
 
   <div class="landing-scroll-section">
     <p>Jump In</p>

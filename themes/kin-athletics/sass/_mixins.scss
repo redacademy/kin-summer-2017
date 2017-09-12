@@ -10,3 +10,23 @@
 	margin-left: auto;
 	margin-right: auto;
 }
+@mixin front-red-button {
+    color: white;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 0;
+	background-color: $color__brand-red;
+	box-shadow: 0 0.5px 1px 0 rgba(0,0,0,0.5);
+    padding: .75rem;
+	font-family: $font__accent;
+    &:hover {
+		background-color: $color__hover-buttons;
+	}
+	a {
+		font-size: 24px;	
+		font-weight: bold;
+		line-height: 29px;	
+		text-align: center;
+		text-decoration: none;
+	}
+}
