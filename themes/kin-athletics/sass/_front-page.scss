@@ -28,6 +28,10 @@ img{
   height:100vh;
   max-width: none;
 }
+.project-td-image img{
+  height: 80vh;
+}
+
 .project-td-text, .who-we-are-text, .what-we-do-text {
   position: absolute;
 }
