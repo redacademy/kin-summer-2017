@@ -13,7 +13,6 @@
   height:100vh;
 }
   .project-td-image-wrapper, .front-img-wrapper {
-    position:relative;
     .project-td-image, .who-we-are-image, .what-we-do-image{
       position:absolute;
       
@@ -22,13 +21,34 @@
 
 .project-td-text, .who-we-are-text, .what-we-do-text {
   position: absolute;
-  margin:1rem;
 }
 
+.project-td-text{
+  // width:
+  h2{
+    font-family:$font__main;
+    font-size: 1.5rem;
+    width:7rem;
+    line-height: 2rem;
+  }
+  .front_heading{
+    font-size: 2rem;
+  }
+}
 
+.who-we-are-text, .what-we-do-text {
+  h2{
+    font-family: $font__h1-header;
+		font-size: 1.95rem;
+		font-weight: 500;
+		line-height: 2.9rem;
+  }
+  .front-lorem{
+    width: 100%;
+    background: rgba(0,0,0,.7);
 
-
-
+  }
+}
 
 // .project-td-image, .who-we-are-image, .what-we-do-image {
 //   background-size: cover;
