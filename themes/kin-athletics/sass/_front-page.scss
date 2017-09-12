@@ -3,7 +3,6 @@
 .front-page-container {
   color:white;
   width: 100vw;
-  // height:100vh;
 }
 
 .landing-scroll-section {
@@ -21,10 +20,9 @@
     position:absolute;
     overflow: hidden;
     transform: translate(-35%, 2%);
-    
   }
 }
-img{
+img {
   height:100vh;
   max-width: none;
 }
@@ -64,88 +62,6 @@ img{
 
   }
 }
-
-// .project-td-image, .who-we-are-image, .what-we-do-image {
-//   background-size: cover;
-//   // width:none;
-//   // height:100%;
-//   // position:absolute;
-//   // // background-position: 50% 50%;
-//   // transform: translate(50%, 50%);
-//   // overflow: hidden; 
-  
-// }
-
-// h1, h2 {
-//   text-transform: uppercase;
-//   // position:absolute;
-// }
-
-// .project-td-cont {
-//   height: 100vh;
-//   position:relative;
-//   .project-td-image-wrapper {
-    
-//     .project-td-image{
-//       position:absolute;
-//       // background-position: 50% 50%;
-//       // transform: -50% -50%;
-//       // overflow: hidden;
-//       // top: 50%;
-//       width:100%;
-//           }
-//           .project-td-text {
-//             // display:flex;
-//             .front-heading{
-//               position:absolute;
-//             }
-//             }
-//   }
-//   }
-
-
-//   .who-we-are-cont {
-//     height: 100vh;
-//     background-size: cover;
-//     display: flex;
-//     align-items: center;
-//     flex-wrap: wrap; 
-//     margin-bottom: 3px;
-  
-//     .who-we-are-image-wrapper {
-//       position:relative;
-     
-//       .who-we-are-image{
-//         transform: -50% -50%;
-//         overflow: hidden;
-//         top: 50%;
-//         width:100%;
-//         position:absolute;
-//       }
-//     }
-//     .who-we-are-text {
-//       position:relative;
-//     }
-//   }
-//     .what-we-do-cont {
-//       height: 100vh;
-//       position:relative;
-//       .what-we-do-image-wrapper {
-//         // position:relative;
-       
-//         .what-we-do-image {
-//           transform: -50% -50%;
-//           overflow: hidden;
-//           top: 50%;
-//           width:100%;
-//           position:absolute;
-//         }
-//       }
-//       .what_we_do-text {
-        
-//       }
-//     }
-      
     .landing-scroll-section{
       height:85px;
       background-color: white;
