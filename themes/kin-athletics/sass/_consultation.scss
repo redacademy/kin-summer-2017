@@ -128,9 +128,9 @@
 
 
 
-.consultation_action_form{
-  background-color: green;
-}
+// .consultation_action_form{
+//   background-color: blue;
+// }
 
 #input_1_14 li{
   input[type=radio]{
@@ -138,13 +138,15 @@
   }
 
   input[type=radio]:checked + label {
-    color: #f00;
-    background-color: red;
+    background-color: $color__brand-red;
   } 
 
   label{
     text-align: center;
-    color: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
     font-weight: bold;
     text-transform: uppercase;
     border: 2px solid $color__brand-red;
