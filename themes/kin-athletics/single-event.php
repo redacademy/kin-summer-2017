@@ -12,7 +12,8 @@ get_header(); ?>
 
 		<?php while ( have_posts() ) : the_post(); ?>
 
-			<?php get_template_part( 'template-parts/trainer', 'single' ); ?>
+            <?php echo the_title(); ?>
+            <?php echo the_content(); ?>
 
 		<?php endwhile; // End of the loop. ?>
 
