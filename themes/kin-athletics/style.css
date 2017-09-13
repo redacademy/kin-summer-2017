@@ -622,7 +622,6 @@ a {
 # Widgets
 --------------------------------------------------------------*/
 .widget {
-  margin: 0 0 1.5rem;
   /* Make sure select elements fit in widgets. */ }
   .widget select {
     max-width: 100%; }
@@ -1325,36 +1324,105 @@ body.page-template-archive-trainer .white {
       font-size: 30px; }
 
 /* Landing Page */
-.landing-page-container {
-  max-width: 400px;
-  width: 100vw;
+.front-page-container {
   color: white;
-  margin-top: 60px; }
-  .landing-page-container .landing-project-td, .landing-page-container .landing-who-we-are, .landing-page-container .landing-what-we-do {
-    background-size: cover; }
-    .landing-page-container .landing-project-td h1, .landing-page-container .landing-project-td h2, .landing-page-container .landing-who-we-are h1, .landing-page-container .landing-who-we-are h2, .landing-page-container .landing-what-we-do h1, .landing-page-container .landing-what-we-do h2 {
-      text-transform: uppercase; }
-  .landing-page-container .landing-project-td {
-    height: 420px; }
-    .landing-page-container .landing-project-td .landing-text-project-td {
-      padding: 1.2rem;
-      padding-left: 1.5rem; }
-      .landing-page-container .landing-project-td .landing-text-project-td .kin-athletics-presents {
-        text-align: left;
-        font-size: 34px;
-        font-family: "Open Sans Condensed", sans-serif; }
-      .landing-page-container .landing-project-td .landing-text-project-td h1 {
-        font-size: 55px; }
-  .landing-page-container .who-we-are-cont {
-    height: 506px; }
-    .landing-page-container .who-we-are-cont .who-we-are-image {
-      width: 20rem;
-      height: 20rem; }
-    .landing-page-container .who-we-are-cont .who-we-are-text {
-      color: black;
-      font-size: 2rem; }
-  .landing-page-container .landing-what-we-do {
-    height: 506px; }
+  width: 100vw; }
+
+.project-td-cont, .who-we-are-cont, .what-we-do-cont {
+  height: 100vh; }
+
+.project-td-image-wrapper .project-td-image, .project-td-image-wrapper .who-we-are-image, .project-td-image-wrapper .what-we-do-image, .project-td-image-wrapper .project-td-image, .project-td-image-wrapper .who-we-are-image, .project-td-image-wrapper .what-we-do-image, .front-img-wrapper .project-td-image, .front-img-wrapper .who-we-are-image, .front-img-wrapper .what-we-do-image {
+  position: absolute;
+  overflow: hidden;
+  transform: translate(-36%, 2%); }
+
+img {
+  height: 100vh;
+  max-width: none; }
+
+.project-td-text, .who-we-are-text, .what-we-do-text {
+  position: absolute; }
+
+.project-td-text {
+  margin-top: 65%;
+  margin-left: 9.5%; }
+  .project-td-text h2 {
+    font-family: "Open Sans Condensed", sans-serif;
+    font-size: 2rem;
+    width: 12rem;
+    line-height: 2.8rem;
+    font-weight: 300;
+    letter-spacing: .5px;
+    margin: 0; }
+  .project-td-text .front-heading {
+    font-size: 3rem;
+    font-weight: 500;
+    margin: 0; }
+
+.who-we-are-text, .what-we-do-text {
+  margin-top: 55%; }
+  .who-we-are-text h2, .what-we-do-text h2 {
+    font-family: "Oswald";
+    font-size: 2.8rem;
+    font-weight: 500;
+    line-height: 2.9rem;
+    margin: 0 2rem; }
+  .who-we-are-text .front-lorem, .what-we-do-text .front-lorem {
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    padding: .5rem 2rem;
+    margin-top: .3rem; }
+
+p {
+  margin-bottom: .75rem; }
+
+.who-we-are-text {
+  text-align: right; }
+  .who-we-are-text .who-button-cont {
+    color: white;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 0;
+    background-color: #A10000;
+    box-shadow: 0 0.5px 1px 0 rgba(0, 0, 0, 0.5);
+    padding: 1% 5%;
+    font-family: "Oswald", sans-serif;
+    position: absolute;
+    margin-left: 50%; }
+    .who-we-are-text .who-button-cont:hover {
+      background-color: #850000; }
+    .who-we-are-text .who-button-cont a {
+      font-family: "Oswald", sans-serif;
+      font-size: 1.5rem;
+      font-weight: 300;
+      letter-spacing: .5px;
+      text-align: center;
+      text-decoration: none;
+      line-height: 1.2; }
+
+.what-we-do-text {
+  text-align: left; }
+  .what-we-do-text .what-button-cont {
+    color: white;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 0;
+    background-color: #A10000;
+    box-shadow: 0 0.5px 1px 0 rgba(0, 0, 0, 0.5);
+    padding: 1% 5%;
+    font-family: "Oswald", sans-serif;
+    position: absolute;
+    margin-left: 8%; }
+    .what-we-do-text .what-button-cont:hover {
+      background-color: #850000; }
+    .what-we-do-text .what-button-cont a {
+      font-family: "Oswald", sans-serif;
+      font-size: 1.5rem;
+      font-weight: 300;
+      letter-spacing: .5px;
+      text-align: center;
+      text-decoration: none;
+      line-height: 1.2; }
 
 .landing-scroll-section {
   height: 85px;
@@ -1368,23 +1436,79 @@ body.page-template-archive-trainer .white {
     font-weight: 500;
     line-height: 24px; }
 
+.page-template-find-us p {
+  margin: .50%; }
+
+.page-template-find-us .entry-title {
+  position: absolute;
+  z-index: 1; }
+
+.page-template-find-us p .contact {
+  font-weight: bold;
+  color: red; }
+
 .page-template-find-us .find-us-picture-wrapper {
   position: relative; }
   .page-template-find-us .find-us-picture-wrapper .find-us-picture {
-    background: url("../../asset/profiles/find-us.jpg") no-repeat bottom;
     background-size: cover;
-    position: absolute;
-    transform: translate(-50%, -50%);
-    left: 50%;
-    top: 50%;
     z-index: 0;
-    max-width: none;
-    z-index: 0;
-    height: 100%;
     filter: grayscale(100%); }
+
+.page-template-find-us .page-template-find-us .widget-title {
+  height: 30px;
+  width: 73px;
+  font-family: Oswald;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+  text-align: center; }
+
+.page-template-find-us .kin-athletics-info {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  text-align: center;
+  width: 100%; }
+
+.page-template-find-us .page-template-find-us iframe {
+  -ms-flex-order: 1;
+      order: 1;
+  border-left: 0;
+  border-right: 0;
+  -ms-flex: 2 0 100%;
+      flex: 2 0 100%;
+  max-width: 100%;
+  position: relative; }
+
+.page-template-find-us .widget-area {
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%; }
+
+.page-template-find-us .kin-athletics-info-class {
+  -ms-flex-order: 2;
+      order: 2;
+  -ms-flex: 0 0 50%;
+      flex: 0 0 50%;
+  width: 50%;
+  position: relative;
+  text-align: right;
+  padding-right: 2.5%; }
+
+.page-template-find-us .kin-athletics-hours-class {
+  -ms-flex-order: 3;
+      order: 3;
+  -ms-flex: 0 0 50%;
+      flex: 0 0 50%;
+  width: 50%;
+  position: relative;
+  text-align: left;
+  padding-left: 2.5%; }
 
 .page-template-find-us .black.container {
   background: #000000;
+  display: block;
   height: 8.01%;
   padding: 5px 0 15px 0; }
 
@@ -1394,108 +1518,149 @@ body.page-template-archive-trainer .white {
   height: 2.67%;
   width: 70%; }
 
-.page-template-find-us iframe {
-  text-align: left; }
-
 .page-template-events .entry-content {
   margin: 0; }
+  .page-template-events .entry-content .header-container {
+    display: -ms-flexbox;
+    display: flex; }
+    .page-template-events .entry-content .header-container h1 {
+      margin: auto;
+      text-align: center; }
+  .page-template-events .entry-content .flickity-prev-next-button {
+    display: none; }
+  .page-template-events .entry-content .flickity-page-dots {
+    bottom: 10px; }
+  .page-template-events .entry-content .flickity-page-dots .dot {
+    width: 12px;
+    height: 12px;
+    opacity: 1;
+    background: transparent;
+    border: 2px solid white; }
+  .page-template-events .entry-content .flickity-page-dots .dot.is-selected {
+    background: white; }
 
-.page-template-events .flickity-prev-next-button {
-  display: none; }
-
-.page-template-events .flickity-page-dots {
-  bottom: 10px; }
-
-.page-template-events .flickity-page-dots .dot {
-  width: 12px;
-  height: 12px;
-  opacity: 1;
-  background: transparent;
-  border: 2px solid white; }
-
-.page-template-events .flickity-page-dots .dot.is-selected {
-  background: white; }
-
-.events-taxonomy {
+.page-template-events .services-icons, .page-template-events body.page-template-archive-trainer .our-origin, body.page-template-archive-trainer .page-template-events .our-origin, .page-template-events body.page-template-archive-trainer .our-community, body.page-template-archive-trainer .page-template-events .our-community, .page-template-events body.page-template-archive-trainer .our-place, body.page-template-archive-trainer .page-template-events .our-place {
   height: 100vh;
-  background-image: url("../../asset/images/lion1.jpg");
+  background-image: url("../../asset/images/eventspage_heroshot.png");
   background-size: cover;
-  margin-bottom: 3px; }
-  .events-taxonomy h1 {
-    margin: 0;
-    padding: 100px 0 10px 0;
-    text-align: center;
-    font-size: 25px; }
-  .events-taxonomy .circles {
-    text-align: center; }
-    .events-taxonomy .circles p {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: column nowrap;
+      flex-flow: column nowrap;
+  -ms-flex-pack: center;
+      justify-content: center; }
+
+.page-template-events #origin-icon {
+  margin-right: 50px; }
+
+.page-template-events .circles-container {
+  height: 75%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: column nowrap;
+      flex-flow: column nowrap;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: space-evenly;
+      justify-content: space-evenly; }
+  .page-template-events .circles-container .icon-container {
+    width: 50%;
+    height: 123px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-flow: column nowrap;
+        flex-flow: column nowrap;
+    -ms-flex-pack: center;
+        justify-content: center;
+    -ms-flex-align: center;
+        align-items: center; }
+    .page-template-events .circles-container .icon-container a, .page-template-events .circles-container .icon-container img {
+      height: 100%;
+      height: 100%;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+      -ms-flex-align: center;
+          align-items: center; }
+    .page-template-events .circles-container .icon-container p {
       margin: 0;
-      padding-bottom: 20px;
       color: white;
       text-transform: uppercase;
-      font-weight: bold;
-      font-size: 22px; }
+      font-weight: 500;
+      font-family: "Oswald"; }
 
-.relative-carousel-container {
+.page-template-events .relative-carousel-container {
   position: relative; }
-  .relative-carousel-container .events-carousel-info {
+  .page-template-events .relative-carousel-container .events-carousel-info {
     position: absolute;
-    top: 0; }
-    .relative-carousel-container .events-carousel-info :not(.carousel-cell-info):not(h3) {
-      padding-left: 40px; }
-    .relative-carousel-container .events-carousel-info h1 {
-      padding: 60px 0 0 40px;
-      font-size: 60px; }
-    .relative-carousel-container .events-carousel-info P {
+    top: 50%;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    width: 100%; }
+    .page-template-events .relative-carousel-container .events-carousel-info h1 {
+      font-size: 40px;
+      padding-left: 2.5rem; }
+    .page-template-events .relative-carousel-container .events-carousel-info p {
       width: 100%;
       color: white;
       background: rgba(0, 0, 0, 0.7);
-      height: 260px;
       line-height: 27px;
       font-size: 20px;
       padding: 10px 40px; }
-    .relative-carousel-container .events-carousel-info .event-date {
+    .page-template-events .relative-carousel-container .events-carousel-info .event-date {
       padding-left: 40px; }
-    .relative-carousel-container .events-carousel-info h3 {
+    .page-template-events .relative-carousel-container .events-carousel-info h3 {
       display: inline;
       color: white;
-      font-size: 18px; }
-    .relative-carousel-container .events-carousel-info .red-button, .relative-carousel-container .events-carousel-info .consultation-button {
+      font-size: 18px;
+      display: -ms-flexbox;
+      display: flex; }
+      .page-template-events .relative-carousel-container .events-carousel-info h3 p {
+        background: none;
+        height: auto;
+        padding: 0;
+        margin: 0 0 0 0.5em; }
+    .page-template-events .relative-carousel-container .events-carousel-info .red-button, .page-template-events .relative-carousel-container .events-carousel-info .consultation-button {
       margin: 20px 0 0 40px;
       height: 40px;
-      position: relative; }
-      .relative-carousel-container .events-carousel-info .red-button a, .relative-carousel-container .events-carousel-info .consultation-button a {
+      position: relative;
+      width: 200px;
+      padding-left: 0; }
+      .page-template-events .relative-carousel-container .events-carousel-info .red-button a, .page-template-events .relative-carousel-container .events-carousel-info .consultation-button a {
         padding: 0;
         position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%); }
 
-.events-cell-image1 {
-  background-image: url("../../asset/images/serv1.jpg"); }
+.page-template-events .events-cell-image1 {
+  background-image: url("../../asset/images/eventspage_projecttd.png"); }
 
-.events-cell-image2 {
-  background-image: url("../../asset/images/serv2.jpg"); }
+.page-template-events .events-cell-image2 {
+  background-image: url("../../asset/images/eventspage_projecttd2.png"); }
 
-.events-cell-image3 {
-  background-image: url("../../asset/images/serv3.jpg"); }
+.page-template-events .events-cell-image3 {
+  background-image: url("../../asset/images/eventspage_projecttd3.png"); }
 
-.events-black-container, .events-white-container {
+.page-template-events .events-black-container, .page-template-events .events-white-container {
   text-align: center;
   padding: 20px 0; }
-  .events-black-container p, .events-white-container p {
+  .page-template-events .events-black-container p, .page-template-events .events-white-container p {
     font-size: 28px;
     margin: 0;
     font-weight: bold;
     margin-bottom: 10px; }
 
-.events-black-container {
+.page-template-events .events-black-container {
   background-color: black;
   color: white; }
-  .events-black-container .red-button, .events-black-container .consultation-button {
+  .page-template-events .events-black-container p {
+    text-transform: uppercase; }
+  .page-template-events .events-black-container .red-button, .page-template-events .events-black-container .consultation-button {
     margin: 0 auto;
     position: relative; }
-    .events-black-container .red-button a, .events-black-container .consultation-button a {
+    .page-template-events .events-black-container .red-button a, .page-template-events .events-black-container .consultation-button a {
       padding: 0;
       position: absolute;
       top: 50%;
@@ -1504,11 +1669,13 @@ body.page-template-archive-trainer .white {
       transform: translate(-50%, -50%);
       font-size: 30px; }
 
-.events-white-container {
-  border-top: 3px black solid; }
-  .events-white-container .social-button {
+.page-template-events .events-white-container {
+  border-top: 2px black solid; }
+  .page-template-events .events-white-container p {
+    text-transform: uppercase; }
+  .page-template-events .events-white-container .social-button {
     width: 60%; }
-    .events-white-container .social-button a {
+    .page-template-events .events-white-container .social-button a {
       font-size: 30px; }
 
 .page-template-consultations {

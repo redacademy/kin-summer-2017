@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="512px" height="507px" viewBox="0 0 512 507" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
+    <title>Page 1</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <ellipse id="path-1" cx="251.851852" cy="249.287169" rx="251.851852" ry="249.287169"></ellipse>
+        <filter x="-1.4%" y="-1.0%" width="102.9%" height="102.9%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="2.5" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-22.000000, -23.000000)">
+            <g id="Page-1" transform="translate(26.000000, 25.000000)">
+                <g id="PT-icon">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                    <use fill="#A10000" fill-rule="evenodd" xlink:href="#path-1"></use>
+                </g>
+                <polygon id="Stroke-1" stroke="#000000" fill="#000000" points="170.37037 188.888889 124.608988 275.925926 77.7777778 189.65048"></polygon>
+                <polygon id="Line" fill="#000000" fill-rule="nonzero" points="239.814815 188.194444 239.814815 276.62037 247.222222 276.62037 247.222222 188.194444"></polygon>
+                <polygon id="Line" fill="#000000" fill-rule="nonzero" points="238.888889 278.703704 300 278.703704 300 271.296296 238.888889 271.296296"></polygon>
+                <path d="M136.035484,203.793797 C138.119449,199.979771 140.485369,196.057645 143.733826,191.355503 C148.4901,184.470794 153.98707,177.689284 160.258435,171.27879 C176.967445,154.199093 196.790326,142.070402 219.935169,136.96733 C247.913139,130.798984 279.63453,135.268078 306.596271,149.325258 C335.072935,164.172282 355.890766,188.277563 364.802023,218.648302 C381.487316,275.522824 351.50982,338.714046 297.575824,362.98635 C251.876865,383.55243 196.535431,372.331684 159.429593,334.520284 L136.960171,356.570426 C183.182026,403.671182 252.605447,417.747121 310.49556,391.694608 C378.622954,361.034747 416.1655,281.896738 395.010189,209.785435 C383.60549,170.916717 356.986303,140.093959 321.150546,121.410088 C287.709791,103.974911 248.448157,98.443503 213.156989,106.224201 C183.523248,112.757973 158.474685,128.084013 137.754803,149.263563 C124.401534,162.913072 115.298504,176.089712 108.40896,188.698802 L136.035484,203.793797 Z" id="Stroke-3" fill="#000000" fill-rule="nonzero"></path>
+            </g>
+        </g>
+    </g>
+</svg>

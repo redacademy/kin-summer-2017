@@ -70,7 +70,7 @@ add_action( 'widgets_init', 'kin_athletics_widgets_init' );
 
 function kin_athletics_widgets_init2() {
 	register_sidebar( array(
-		'name'          => esc_html( 'Hours Sidebar' ),
+		'name'          => esc_html( 'Kin Athletics' ),
 		'id'            => 'sidebar-2',
 		'description'   => '',
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
@@ -107,6 +107,8 @@ function kin_athletics_scripts() {
 	wp_enqueue_script( 'Flickity PACKAGED', 'https://unpkg.com/flickity@2/dist/flickity.pkgd.js', array(), '2.0.9');
 
 	wp_enqueue_script( 'Flickity', get_template_directory_uri() . '/build/js/flickity.js', array(), '20130115', true );	
+
+	wp_enqueue_script( 'smooth-scroll', get_template_directory_uri() . '/build/js/smooth-scroll.js', array(), '09/12/17', true );	
 
 	wp_enqueue_script( 'red-starter-skip-link-focus-fix', get_template_directory_uri() . '/build/js/skip-link-focus-fix.min.js', array(), '20130115', true );
 

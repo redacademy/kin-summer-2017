@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="508px" height="508px" viewBox="0 0 508 508" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <circle id="path-1" cx="250" cy="250" r="250"></circle>
+        <filter x="-1.4%" y="-1.0%" width="102.9%" height="102.9%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="2.5" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-24.000000, -24.000000)">
+            <g id="Group" transform="translate(28.000000, 25.000000)">
+                <g id="FTC-icon">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                    <use fill="#A10000" fill-rule="evenodd" xlink:href="#path-1"></use>
+                </g>
+                <circle id="Oval" fill="#000000" cx="147.977941" cy="271.139706" r="52.3897059"></circle>
+                <circle id="Oval" fill="#000000" cx="289.522059" cy="153.492647" r="52.3897059"></circle>
+                <circle id="Oval" fill="#000000" cx="304.227941" cy="364.889706" r="52.3897059"></circle>
+                <polygon id="Line-2" fill="#000000" fill-rule="nonzero" points="165.759682 259.489611 286.972257 153.973197 279.093259 144.922154 157.880684 250.438567"></polygon>
+                <polygon id="Line-2" fill="#000000" fill-rule="nonzero" points="168.089142 273.38221 299.117504 368.675564 306.175564 358.970731 175.147202 263.677377"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>
