@@ -468,6 +468,7 @@ textarea {
 .site-header {
   height: 60px;
   width: 100%;
+  position: fixed;
   top: 0;
   background-color: #A10000;
   z-index: 99999; }
@@ -1129,10 +1130,6 @@ body.single-trainer .default-content {
     body.single-trainer .default-content .other-links .about-our-place {
       padding: 0.5em 0;
       cursor: pointer; }
-
-body.page-template-archive-trainer #page {
-  width: 400px;
-  margin: 0 auto; }
 
 body.page-template-archive-trainer .entry-content {
   margin: 0 auto; }
