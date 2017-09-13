@@ -7,12 +7,10 @@
 
 get_header(); ?>
 
-
-<div id='primary' class='content-area'>
-  <main id="main" class='site-main' role='main'>
-
-  
-  </main>
+<div class="landing-container">
+<h1 class="kin">kin</h1>
+<h1 class="ath">ath</h1>
+<h1 class="let">let</h1>
+<h1 class="ics">ics</h1>
 </div>
 
-<?php get_footer(); ?>

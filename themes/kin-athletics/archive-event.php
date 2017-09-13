@@ -54,12 +54,12 @@ get_header(); ?>
         <section id="trainers" class="trainers-grid">
             <div class="main-carousel">
                 <?php 
-                    $args = array( 'post_type' => 'trainer', 'order' => 'DESC', 'posts_per_page' => -1, 'orderby' => 'date' );
-                    $trainer = get_posts( $args ); // returns an array of posts
-                    $trainers_count = count($trainer);
+                    $args = array( 'post_type' => 'event', 'order' => 'DESC', 'posts_per_page' => -1, 'orderby' => 'date' );
+                    $event = get_posts( $args ); // returns an array of posts
+                    $events_count = count($event);
                     $number_of_posts = 6;
-                    $number_of_pages = $trainers_count / $number_of_posts;
-                    $trainer_total = $trainers_count;
+                    $number_of_pages = $events_count / $number_of_posts;
+                    $event_total = $events_count;
                     
                     for ($i = 0; $i < $number_of_pages; $i++) : ?>
 
@@ -70,23 +70,23 @@ get_header(); ?>
                         <div class="trainer-grid-wrapper">
                             <?php        
                                 $j = 0;
-                                while( $j < $number_of_posts && $trainer_total > 0 ) : 
+                                while( $j < $number_of_posts && $event_total > 0 ) : 
                             ?>
                     
                             <div class='trainer-item-container'>
                                 <div class='trainer-thumbnail-wrapper'>
-                                    <img class='trainer-thumbnail' src="<?php echo CFS()->get( 'trainer_profile_picture', $trainer[$j]->ID ); ?>"/>
+                                    <img class='trainer-thumbnail' src="<?php echo CFS()->get( 'trainer_profile_picture', $event[$j]->ID ); ?>"/>
                                 </div>
                                 <div class='next-trainer-wrapper'>
-                                    <a class='trainer-name' href='<?php echo $trainer[$j]->guid ?>'><?php echo $trainer[$j]->post_title; ?></a>
+                                    <a class='trainer-name' href='<?php echo $event[$j]->guid ?>'><?php echo $event[$j]->post_title; ?></a>
                                 </div>
                             </div> 
 
                             <?php   
-                                $trainer_total--;
+                                $events_count--;
                                 $j++;
                                 endwhile;
-                                array_splice($trainer, 0, $number_of_posts);
+                                array_splice($event, 0, $number_of_posts);
                             ?>
                         </div>
                     </div>
