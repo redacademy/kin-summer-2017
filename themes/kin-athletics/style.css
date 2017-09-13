@@ -1340,10 +1340,13 @@ body.page-template-archive-trainer .white {
 
 .project-td-cont {
   height: 100vh;
-  position: relative; }
+  position: relative;
+  overflow: hidden; }
 
 .who-we-are-cont, .what-we-do-cont {
-  height: 100vh; }
+  height: 100vh;
+  overflow: hidden;
+  position: relative; }
 
 .project-td-image-wrapper .project-td-image, .project-td-image-wrapper .who-we-are-image, .project-td-image-wrapper .what-we-do-image, .project-td-image-wrapper .project-td-image, .project-td-image-wrapper .who-we-are-image, .project-td-image-wrapper .what-we-do-image, .front-img-wrapper .project-td-image, .front-img-wrapper .who-we-are-image, .front-img-wrapper .what-we-do-image {
   position: absolute;

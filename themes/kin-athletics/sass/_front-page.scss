@@ -8,9 +8,12 @@
 .project-td-cont {
   height: 100vh;
   position:relative;
+  overflow:hidden;
 }
 .who-we-are-cont, .what-we-do-cont {
   height: 100vh;
+  overflow: hidden;
+  position: relative;
 }
   .project-td-image-wrapper, .project-td-image-wrapper, .front-img-wrapper {
   .project-td-image, .who-we-are-image, .what-we-do-image {
