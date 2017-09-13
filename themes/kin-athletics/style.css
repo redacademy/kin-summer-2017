@@ -1388,13 +1388,19 @@ img {
   z-index: 1; }
 
 .page-template-find-us p .contact {
-  font-weight: bold;
-  color: red; }
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.5rem;
+  font-family: Oswald;
+  clear: both;
+  text-transform: uppercase; }
 
 .page-template-find-us .find-us-picture-wrapper {
   position: relative; }
   .page-template-find-us .find-us-picture-wrapper .find-us-picture {
-    background-size: cover;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     z-index: 0;
     filter: grayscale(100%); }
 
@@ -1439,6 +1445,9 @@ img {
   position: relative;
   text-align: right;
   padding-right: 2.5%; }
+
+.page-template-find-us .widget-block {
+  margin-bottom: 1rem; }
 
 .page-template-find-us .kin-athletics-hours-class {
   -ms-flex-order: 3;
