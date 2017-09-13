@@ -881,7 +881,7 @@ object {
 
 .services-taxonomy {
   height: 100vh;
-  background-image: url("../../asset/images/pushup.jpg");
+  background-image: url("../../asset/images/serv2.jpg");
   background-size: cover;
   display: -ms-flexbox;
   display: flex;
@@ -900,7 +900,7 @@ object {
 .services-featured {
   display: block;
   height: 100vh;
-  background-image: url("../../asset/images/lion2.jpg");
+  background-image: url(../../asset/images/serv1.jpg);
   background-size: cover;
   color: white;
   position: relative; }
