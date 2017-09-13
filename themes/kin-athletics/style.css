@@ -1511,8 +1511,117 @@ body.page-template-archive-trainer .white {
     .events-white-container .social-button a {
       font-size: 30px; }
 
-.radio-inline {
+.page-template-consultations {
+  background-image: url("../../asset/images/pushup.jpg"); }
+  .page-template-consultations .entry-content {
+    margin: 0;
+    height: 100vh; }
+  .page-template-consultations .gf_page_steps {
+    text-align: center; }
+  .page-template-consultations .gform_wrapper .gf_step {
+    background-color: transparent;
+    border: 3px black solid;
+    display: inline-block;
+    margin: 0 12px;
+    width: 50px;
+    height: 25px;
+    color: black;
+    position: relative;
+    opacity: 1; }
+    .page-template-consultations .gform_wrapper .gf_step .gf_step_number {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%); }
+    .page-template-consultations .gform_wrapper .gf_step .gf_step_label {
+      display: none; }
+
+.gform_wrapper .gf_step.gf_step_active {
+  background-color: black;
+  color: white; }
+
+.consultation-forms {
   background-color: pink; }
+  .consultation-forms .gform_heading {
+    display: none; }
+
+#input_1_1_3, #input_1_2 {
+  border-radius: 0px;
+  border: 2px solid #A10000; }
+
+#gform_page_1_1 .top_label .gfield_label {
+  display: none; }
+
+#input_1_1_3_container label {
+  display: none; }
+
+.gform_wrapper .gform_next_button {
+  top: 165px;
+  right: 0;
+  position: absolute;
+  color: #A10000;
+  font-size: 20px;
+  text-shadow: none;
+  text-transform: uppercase;
+  background-color: transparent;
+  box-shadow: none;
+  border: none; }
+  .gform_wrapper .gform_next_button:hover {
+    outline: none; }
+
+#gform_next_button_1_8 {
+  top: 165px;
+  right: 0;
+  width: auto;
+  font-size: 20px;
+  box-shadow: none; }
+
+.consultation_email_form {
+  background-color: yellow; }
+
+#field_1_2 .gfield_label {
+  display: none; }
+
+#gform_previous_button_1_10, #gform_previous_button_1_13,
+#gform_previous_button_1_12, #gform_previous_button_1 {
+  display: none; }
+
+#gform_next_button_1_10 {
+  top: 165px;
+  right: 0;
+  width: auto;
+  font-size: 20px;
+  box-shadow: none; }
+
+.consultation_action_form {
+  background-color: green; }
+
+#input_1_14 li input[type=radio] {
+  display: none; }
+
+#input_1_14 li input[type=radio]:checked + label {
+  color: #f00;
+  background-color: red; }
+
+#input_1_14 li label {
+  text-align: center;
+  color: blue;
+  font-weight: bold;
+  text-transform: uppercase;
+  border: 2px solid #A10000;
+  height: 50px; }
+
+#label_1_14_0, #label_1_14_1 {
+  width: 50%; }
+
+.consultation_comment_form {
+  background-color: blue; }
+
+.test-paging {
+  background-color: black; }
+
+#gform_confirmation_message_1 font a {
+  color: black; }
 
 .site-footer {
   background-color: #A10000;
