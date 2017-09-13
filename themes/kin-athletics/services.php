@@ -14,27 +14,38 @@ get_header(); ?>
     <div class='container'>
       <div class='entry-content'>
 
-        <section class='services-taxonomy'>                <!-- get template part after circles are done-->
-          <h1> at kin athletics, we try our hardest to serve your needs</h1>
-
-          <div class='circles'>
-            <svg height="180" width="180">
-              <circle cx="80" cy="80" r="80" fill="red" />
-            </svg>
-
-            <svg height="180" width="180">
-              <circle cx="80" cy="80" r="80" fill="red" />
-            </svg>
-
-            <svg height="180" width="180">
-              <circle cx="80" cy="80" r="80" fill="red" />
-            </svg>
-
-            <svg height="180" width="180">
-              <circle cx="80" cy="80" r="80" fill="red" />
-            </svg>
+      <section class='services-icons'>
+      <div class="header-container">
+          <h1> At Kin Athletics, <br>we believe in</h1>
+      </div>
+    
+      <div class="circles-container">
+          <div class="icon-container">
+              <a src="#">
+                  <img src="<?php echo get_template_directory_uri(); ?>/asset/icons/personaltrainingicon.svg"/>
+              </a>
+              <p>Personal Training</p>
           </div>
-        </section>
+          <div class="icon-container">
+              <a src="#">
+                  <img src="<?php echo get_template_directory_uri(); ?>/asset/icons/grouptrainingicon.svg"/>
+              </a>
+              <p>Group Training</p>
+          </div>
+          <div class="icon-container">
+              <a src="#">
+                  <img src="<?php echo get_template_directory_uri(); ?>/asset/icons/communityprojecticon.svg"/>
+              </a>
+              <p>Community Projects</p>
+          </div>
+          <div class="icon-container">
+              <a src="#">
+                  <img src="<?php echo get_template_directory_uri(); ?>/asset/icons/freeconsultationicon.svg"/>
+              </a>
+              <p>Free Consultation</p>
+          </div>
+      </div>
+  </section>
 
 
         <div class="main-carousel">

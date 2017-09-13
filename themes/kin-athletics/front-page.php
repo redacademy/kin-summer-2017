@@ -1,8 +1,10 @@
 <?php
-/** 
-* Template Name: Landing Page
-*@package Kin_Athletics_Theme
-**/
+/**
+ * Template Name: Front Page
+ *
+ * @package Kin_Athletics_Theme
+ */
+
 get_header(); ?>
 
 <div class="front-page-container">
