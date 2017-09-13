@@ -99,7 +99,7 @@ function kin_cpt_events() {
             'label'                 => 'Event',
             'description'           => 'Add an event page.',
             'labels'                => $labels,
-            'supports'              => array( 'title', 'editor', 'revisions', ),
+            'supports'              => array( 'title', 'editor', 'thumbnail', 'revisions',),
             'hierarchical'          => true,
             'public'                => true,
             'show_ui'               => true,

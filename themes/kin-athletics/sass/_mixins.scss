@@ -17,16 +17,18 @@
     border-radius: 0;
 	background-color: $color__brand-red;
 	box-shadow: 0 0.5px 1px 0 rgba(0,0,0,0.5);
-    padding: .75rem;
+    padding: 2% 7%;
 	font-family: $font__accent;
     &:hover {
 		background-color: $color__hover-buttons;
 	}
 	a {
-		font-size: 24px;	
-		font-weight: bold;
-		line-height: 29px;	
+		font-family: $font__accent;
+		font-size: 1.5rem;	
+		font-weight: 300;
+		letter-spacing: .5px;	
 		text-align: center;
 		text-decoration: none;
+		line-height: 1.2;
 	}
 }
