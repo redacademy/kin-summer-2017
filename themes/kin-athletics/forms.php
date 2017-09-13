@@ -1,5 +1,4 @@
 <?php
-
 /**
 * Controls gravity forms
 */  
@@ -13,13 +12,6 @@ function pupulate_posts ( $form ) {
           continue;
         }
         
-        // $args = array(
-        //   'post_per_page' => -1,
-        //   // 'post_type' => 'trainer'
-        //   // 'order' => 'DESC',
-        //   // 'orderby' => 'date',
-        //   // 'exclude' => array(get_the_id())
-        // );
         $posts = get_posts( array(
           'post_type' => 'trainer',
           'post_per_page' => 7
@@ -29,23 +21,12 @@ function pupulate_posts ( $form ) {
     
         foreach ( $posts as $post ) : 
             $choices[] = array(
-        
-                // 'text' => $post->post_title,
-                // 'value' => $post->post_title,
-                // 'isSelected' => false
 
-                'text' => $post->post_title . "<img src='" . CFS()->get ('trainer_profile_picture', $post->ID) . "'/>",
+                'text' => "<img src='" . CFS()->get ('trainer_profile_picture', $post->ID) . "'/>" . "<h1>" . $post->post_title . "</h1>",
                 'value' => $post->post_title,
-                // 'type' => "<img src='" . CFS()->get ('trainer_profile_picture', $post->ID) . "'/>",
                 'isSelected' => false
 
-
-                // echo $post->post_title;
-                // echo CFS()->get ('trainer_profile_picture', $post->ID);
               );
-
-
-
 
             endforeach; wp_reset_postdata();
     
@@ -56,16 +37,3 @@ function pupulate_posts ( $form ) {
     return $form;
 
 }
-
-
-
-
-
-// $args = array( 'post_type' => 'trainer', 'order' => 'DESC', 'posts_per_page' => 5, 'orderby' => 'date', 'exclude' => array(get_the_id()) );
-// $trainer = get_posts( $args ); // returns an array of posts
-
-// $trainers_count = count($trainer);
-
-// foreach ( $trainer as $post ) : setup_postdata( $post );
-
-// echo get_post_permalink();

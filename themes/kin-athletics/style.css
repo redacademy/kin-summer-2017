@@ -1843,6 +1843,18 @@ p {
   font-size: 20px;
   box-shadow: none; }
 
+#input_1_5 li {
+  display: inline; }
+  #input_1_5 li label {
+    display: inline;
+    width: 50%; }
+    #input_1_5 li label h1 {
+      width: 50%;
+      margin: 0; }
+
+#input_1_5 img {
+  height: 60px; }
+
 #input_1_14 li input[type=radio] {
   display: none; }
 
