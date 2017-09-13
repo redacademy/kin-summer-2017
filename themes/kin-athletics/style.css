@@ -1385,7 +1385,7 @@ p {
     border-radius: 0;
     background-color: #A10000;
     box-shadow: 0 0.5px 1px 0 rgba(0, 0, 0, 0.5);
-    padding: 1% 5%;
+    padding: 2% 7%;
     font-family: "Oswald", sans-serif;
     position: absolute;
     margin-left: 50%; }
@@ -1409,7 +1409,7 @@ p {
     border-radius: 0;
     background-color: #A10000;
     box-shadow: 0 0.5px 1px 0 rgba(0, 0, 0, 0.5);
-    padding: 1% 5%;
+    padding: 2% 7%;
     font-family: "Oswald", sans-serif;
     position: absolute;
     margin-left: 8%; }
@@ -1424,9 +1424,38 @@ p {
       text-decoration: none;
       line-height: 1.2; }
 
+.project-td-text .td-button-cont {
+  color: white;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 0;
+  background-color: #A10000;
+  box-shadow: 0 0.5px 1px 0 rgba(0, 0, 0, 0.5);
+  padding: 2% 7%;
+  font-family: "Oswald", sans-serif;
+  position: absolute;
+  margin-left: 25%;
+  margin-top: .75rem; }
+  .project-td-text .td-button-cont:hover {
+    background-color: #850000; }
+  .project-td-text .td-button-cont a {
+    font-family: "Oswald", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 300;
+    letter-spacing: .5px;
+    text-align: center;
+    text-decoration: none;
+    line-height: 1.2; }
+
 .landing-scroll-section {
   height: 85px;
-  background-color: white; }
+  background-color: white;
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  margin: 0; }
   .landing-scroll-section p {
     color: #A10000;
     text-transform: uppercase;
@@ -1434,7 +1463,8 @@ p {
     font-family: "Oswald", sans-serif;
     font-size: 18px;
     font-weight: 500;
-    line-height: 24px; }
+    line-height: 24px;
+    padding: 1rem; }
 
 .page-template-find-us p {
   margin: .50%; }
