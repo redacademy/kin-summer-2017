@@ -12,14 +12,14 @@ get_header(); ?>
       <img class="project-td-image" src="<?php echo CFS()->get( 'front_image' ); ?>">
     </div>
     <div class="project-td-text">
-    <h2>Kin Athletics Presents</h2>
-     <?php echo CFS()->get('front_heading');?>
+      <h2>Kin Athletics Presents</h2>
+      <?php echo CFS()->get('front_heading');?>
     </div>
-    <div class="front-button-cont"></div>
-
-  <div class="landing-scroll-section">
-    <p>Jump In</p>
-</div>
+    <div class="td-button-cont"><a href='#'>Tell Me More</a></div>
+    
+    <div class="landing-scroll-section">
+      <p>Jump In</p>
+    </div>
   </section>
 
   <section class="who-we-are-cont">
@@ -29,7 +29,11 @@ get_header(); ?>
     <div class="who-we-are-text">
       <h2>Who We Are</h2>
       <?php echo CFS()->get('who_we_are_text');?>
+      <div class="who-button-cont">
+        <a href='#'>Tell Me More</a>
+      </div>
     </div>
+    
   </section>
 
   <section class="what-we-do-cont">
@@ -39,7 +43,9 @@ get_header(); ?>
     <div class="what-we-do-text">
       <h2>What We Do</h2>
       <?php echo CFS()->get('what_we_do_text');?>
+      <div class="what-button-cont"><a href='#'>Tell Me More</a></div></div>
     </div>
+   
   </section>
 
 </div><!--end of landing-page-container-->
