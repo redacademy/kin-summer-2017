@@ -21,6 +21,7 @@ img {
   max-width: none;
 }
 
+
 .project-td-text, .who-we-are-text, .what-we-do-text {
   position: absolute;
 }
@@ -82,10 +83,21 @@ p {
     margin-left:8%; 
   }
 }
-
+.project-td-text {
+  .td-button-cont {
+    @include front-red-button;
+    position: absolute;
+    margin-left:25%; 
+    margin-top:.75rem;
+  }
+}
     .landing-scroll-section {
       height: 85px;
       background-color: white;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      margin:0;
       p {
         color: $color__brand-red;
         text-transform: uppercase;
@@ -94,5 +106,6 @@ p {
         font-size: 18px;	
         font-weight: 500;	
         line-height: 24px;
+        padding:1rem;
   }
 }

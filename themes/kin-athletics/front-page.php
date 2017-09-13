@@ -14,8 +14,8 @@ get_header(); ?>
     <div class="project-td-text">
       <h2>Kin Athletics Presents</h2>
       <?php echo CFS()->get('front_heading');?>
+      <div class="td-button-cont"><a href='#'>Tell Me More</a></div>
     </div>
-    <div class="td-button-cont"><a href='#'>Tell Me More</a></div>
     
     <div class="landing-scroll-section">
       <p>Jump In</p>
@@ -29,9 +29,7 @@ get_header(); ?>
     <div class="who-we-are-text">
       <h2>Who We Are</h2>
       <?php echo CFS()->get('who_we_are_text');?>
-      <div class="who-button-cont">
-        <a href='#'>Tell Me More</a>
-      </div>
+      <div class="who-button-cont"><a href='#'>Tell Me More</a></div>
     </div>
     
   </section>
