@@ -103,18 +103,19 @@ get_header(); ?>
 
         <section id="place" class='our-place'>
             <?php get_template_part( 'template-parts/about', 'place' ); ?>
+
+            <?php
+
+            if ( ! is_active_sidebar( 'sidebar-2' ) ) {
+            return;
+            }
+            ?>
+
+            <div id="secondary" class="widget-area" role="complementary">
+            <?php dynamic_sidebar( 'sidebar-2' ); ?>
+            </div><!-- .secondary -->
         </section>
 
-        <?php
-
-        if ( ! is_active_sidebar( 'sidebar-2' ) ) {
-          return;
-        }
-        ?>
-
-        <div id="secondary" class="widget-area" role="complementary">
-          <?php dynamic_sidebar( 'sidebar-2' ); ?>
-        </div><!-- .secondary -->
 
       </div>  <!-- end of entry content-->
     </div>  <!-- end of container-->
