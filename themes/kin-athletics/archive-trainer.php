@@ -104,7 +104,6 @@ get_header(); ?>
         <section id="place" class='our-place'>
             <?php get_template_part( 'template-parts/about', 'place' ); ?>
         </section>
-
       </div>  <!-- end of entry content-->
     </div>  <!-- end of container-->
   </article>
