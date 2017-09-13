@@ -760,6 +760,16 @@ object {
     text-align: center;
     text-decoration: none; }
 
+.landing-container {
+  position: relative; }
+
+.kin, .ath, .let, .ics {
+  font-size: 10rem;
+  font-family: "Open Sans Condensed", sans-serif;
+  color: turquoise;
+  text-transform: Uppercase;
+  position: absolute; }
+
 /*--------------------------------------------------------------
 # Page Templates
 --------------------------------------------------------------*/
@@ -1328,13 +1338,17 @@ body.page-template-archive-trainer .white {
   color: white;
   width: 100vw; }
 
-.project-td-cont, .who-we-are-cont, .what-we-do-cont {
+.project-td-cont {
+  height: 100vh;
+  position: relative; }
+
+.who-we-are-cont, .what-we-do-cont {
   height: 100vh; }
 
 .project-td-image-wrapper .project-td-image, .project-td-image-wrapper .who-we-are-image, .project-td-image-wrapper .what-we-do-image, .project-td-image-wrapper .project-td-image, .project-td-image-wrapper .who-we-are-image, .project-td-image-wrapper .what-we-do-image, .front-img-wrapper .project-td-image, .front-img-wrapper .who-we-are-image, .front-img-wrapper .what-we-do-image {
   position: absolute;
   overflow: hidden;
-  transform: translate(-36%, 2%); }
+  transform: translate(-36%, 0.1%); }
 
 img {
   height: 100vh;
@@ -1344,7 +1358,7 @@ img {
   position: absolute; }
 
 .project-td-text {
-  margin-top: 65%;
+  margin-top: 55%;
   margin-left: 9.5%; }
   .project-td-text h2 {
     font-family: "Open Sans Condensed", sans-serif;
@@ -1455,7 +1469,10 @@ p {
   display: flex;
   -ms-flex-pack: center;
       justify-content: center;
-  margin: 0; }
+  margin: 0;
+  position: absolute;
+  bottom: 0;
+  width: 100%; }
   .landing-scroll-section p {
     color: #A10000;
     text-transform: uppercase;
