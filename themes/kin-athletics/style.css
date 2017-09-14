@@ -1830,7 +1830,9 @@ p {
       font-size: 30px; }
 
 .page-template-consultations {
-  background-image: url("../../asset/images/pushup.jpg"); }
+  background-image: url("../../asset/images/freeconsultation_bg.png");
+  background-position: right;
+  background-size: cover; }
   .page-template-consultations .entry-content {
     margin: 0;
     height: 100vh; }
@@ -1845,7 +1847,8 @@ p {
     height: 25px;
     color: black;
     position: relative;
-    opacity: 1; }
+    opacity: 1;
+    margin-top: 50px; }
     .page-template-consultations .gform_wrapper .gf_step .gf_step_number {
       position: absolute;
       top: 50%;
@@ -1853,22 +1856,41 @@ p {
       transform: translate(-50%, -50%); }
     .page-template-consultations .gform_wrapper .gf_step .gf_step_label {
       display: none; }
+  .page-template-consultations .gform_wrapper .gform_page_footer,
+  .page-template-consultations .gform_wrapper .gf_page_steps {
+    border: none; }
+
+.gform_wrapper .gform_page_footer {
+  border-top: none; }
 
 .gform_wrapper .gf_step.gf_step_active {
   background-color: black;
   color: white; }
 
-.consultation-forms {
-  background-color: pink; }
-  .consultation-forms .gform_heading {
-    display: none; }
+.consultation-forms .gform_heading {
+  display: none; }
 
 #input_1_1_3, #input_1_2 {
   border-radius: 0px;
   border: 2px solid #A10000; }
 
-#gform_page_1_1 .top_label .gfield_label {
-  display: none; }
+#field_1_1, #field_1_2, #field_1_5, #field_1_14, #field_1_11 {
+  position: relative;
+  background: white;
+  padding: 30px; }
+
+#field_1_1:after, #field_1_2:after, #field_1_5:after, #field_1_14:after, #field_1_11:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 5%;
+  width: 0;
+  height: 0;
+  border: 29px solid transparent;
+  border-top-color: white;
+  border-bottom: 0;
+  border-right: 0;
+  margin-bottom: -29px; }
 
 #input_1_1_3_container label {
   display: none; }
@@ -1894,11 +1916,32 @@ p {
   font-size: 20px;
   box-shadow: none; }
 
-.consultation_email_form {
-  background-color: yellow; }
+.nameform-box1, .nameform-box2,
+.emailform-box1, .trainerform-box1,
+.actionform-box1, .commentform-box1 {
+  position: relative;
+  background: black;
+  color: white;
+  padding: 10px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content; }
 
-#field_1_2 .gfield_label {
-  display: none; }
+.nameform-box1:after, .nameform-box2:after,
+.emailform-box1:after, .trainerform-box1:after,
+.actionform-box1:after, .commentform-box1:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 30%;
+  width: 0;
+  height: 0;
+  border: 20px solid transparent;
+  border-top-color: black;
+  border-bottom: 0;
+  border-left: 0;
+  margin-left: -39px;
+  margin-bottom: -20px; }
 
 #gform_previous_button_1_10, #gform_previous_button_1_13,
 #gform_previous_button_1_12, #gform_previous_button_1 {
@@ -1911,8 +1954,10 @@ p {
   font-size: 20px;
   box-shadow: none; }
 
+#field_1_5 .gfield_description {
+  display: none; }
+
 #input_1_5 {
-  background-color: red;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
@@ -1922,18 +1967,33 @@ p {
   text-align: center;
   overflow-y: scroll;
   max-height: 400px; }
+  #input_1_5 input[type=radio]:checked + label h1 {
+    color: #A10000; }
+  #input_1_5 input[type=radio]:checked + label img {
+    border-color: #A10000;
+    border-width: 3px; }
   #input_1_5 input[type=radio] {
     display: none; }
   #input_1_5 li {
     width: 50%;
-    margin-top: 20px; }
+    margin: 20px 0 5px 0; }
     #input_1_5 li label h1 {
       margin: 0;
+      color: black;
       font-size: 20px; }
   #input_1_5 img {
+    border: 2px gray solid;
     width: 70px;
     height: 70px;
     border-radius: 100%; }
+
+#gform_next_button_1_13.gform_next_button.button,
+#gform_next_button_1_12.gform_next_button.button {
+  background-color: blue;
+  width: auto;
+  left: 50%;
+  outline: none;
+  box-shadow: none; }
 
 #input_1_14 li input[type=radio] {
   display: none; }
@@ -1958,11 +2018,14 @@ p {
 #label_1_14_0, #label_1_14_1 {
   width: 50%; }
 
-.consultation_comment_form {
-  background-color: blue; }
+#field_1_11 .gfield_label {
+  display: none; }
 
-.test-paging {
-  background-color: black; }
+#input_1_11 {
+  border-color: #A10000; }
+
+#gform_confirmation_wrapper_1 {
+  margin-top: 60px; }
 
 #gform_confirmation_message_1 font a {
   color: black; }
