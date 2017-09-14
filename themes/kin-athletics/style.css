@@ -1559,8 +1559,21 @@ body.page-template-archive-trainer .white {
       color: black;
       font-size: 30px; }
 
+<<<<<<< HEAD
 .page-template-video-page .site-header {
   display: none; }
+=======
+.post-type-archive-event .entry-content {
+  margin: 0; }
+  .post-type-archive-event .entry-content .latest-history {
+    height: 100vh;
+    background: lightblue; }
+
+/* Landing Page */
+.front-page-container {
+  color: white;
+  width: 100vw; }
+>>>>>>> 71ad56e735b773652d812eae6423b4a33bdaf649
 
 .landing-container {
   position: relative;
@@ -1896,6 +1909,8 @@ body.page-template-archive-trainer .white {
   .page-template-consultations .gform_wrapper .gform_page_footer,
   .page-template-consultations .gform_wrapper .gf_page_steps {
     border: none; }
+  .page-template-consultations .gform_body {
+    padding: 0 20px; }
 
 .gform_wrapper .gform_page_footer {
   border-top: none; }
@@ -1907,11 +1922,16 @@ body.page-template-archive-trainer .white {
 .consultation-forms .gform_heading {
   display: none; }
 
+#gform_fields_1 li, #gform_fields_1_2 li,
+#gform_fields_1_3 li, #gform_fields_1_4 li,
+#gform_fields_1_5 li {
+  margin-bottom: 40px; }
+
 #input_1_1_3, #input_1_2 {
   border-radius: 0px;
   border: 2px solid #A10000; }
 
-#field_1_1, #field_1_2, #field_1_5, #field_1_14, #field_1_11 {
+#field_1_1, #field_1_2, #field_1_14, #field_1_11 {
   position: relative;
   background: white;
   padding: 30px; }
@@ -1933,11 +1953,8 @@ body.page-template-archive-trainer .white {
   display: none; }
 
 .gform_wrapper .gform_next_button {
-  top: 165px;
-  right: 0;
   position: absolute;
   color: #A10000;
-  font-size: 20px;
   text-shadow: none;
   text-transform: uppercase;
   background-color: transparent;
@@ -1947,10 +1964,11 @@ body.page-template-archive-trainer .white {
     outline: none; }
 
 #gform_next_button_1_8 {
-  top: 165px;
-  right: 0;
+  top: 463px;
+  right: 12%;
   width: auto;
   font-size: 20px;
+  font-weight: bold;
   box-shadow: none; }
 
 .nameform-box1, .nameform-box2,
@@ -1959,7 +1977,7 @@ body.page-template-archive-trainer .white {
   position: relative;
   background: black;
   color: white;
-  padding: 10px;
+  padding: 20px;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content; }
@@ -1980,19 +1998,24 @@ body.page-template-archive-trainer .white {
   margin-left: -39px;
   margin-bottom: -20px; }
 
-#gform_previous_button_1_10, #gform_previous_button_1_13,
-#gform_previous_button_1_12, #gform_previous_button_1 {
-  display: none; }
-
 #gform_next_button_1_10 {
-  top: 165px;
-  right: 0;
+  top: 323px;
+  right: 12%;
   width: auto;
   font-size: 20px;
   box-shadow: none; }
 
+#gform_previous_button_1_10, #gform_previous_button_1_13,
+#gform_previous_button_1_12, #gform_previous_button_1 {
+  display: none; }
+
 #field_1_5 .gfield_description {
   display: none; }
+
+#field_1_5 {
+  background-color: white;
+  position: relative;
+  padding: 10px 30px 50px 30px; }
 
 #input_1_5 {
   display: -ms-flexbox;
@@ -2003,7 +2026,7 @@ body.page-template-archive-trainer .white {
       align-items: center;
   text-align: center;
   overflow-y: scroll;
-  max-height: 400px; }
+  max-height: 370px; }
   #input_1_5 input[type=radio]:checked + label h1 {
     color: #A10000; }
   #input_1_5 input[type=radio]:checked + label img {
@@ -2013,7 +2036,7 @@ body.page-template-archive-trainer .white {
     display: none; }
   #input_1_5 li {
     width: 50%;
-    margin: 20px 0 5px 0; }
+    margin-bottom: 20px; }
     #input_1_5 li label h1 {
       margin: 0;
       color: black;
@@ -2026,34 +2049,48 @@ body.page-template-archive-trainer .white {
 
 #gform_next_button_1_13.gform_next_button.button,
 #gform_next_button_1_12.gform_next_button.button {
-  background-color: blue;
+  background-color: #A10000;
+  border-radius: 0;
+  color: white;
   width: auto;
-  left: 50%;
   outline: none;
   box-shadow: none; }
 
-#input_1_14 li input[type=radio] {
-  display: none; }
+#gform_next_button_1_13 {
+  transform: translate(-50%, -50%);
+  left: 50%;
+  right: 50%;
+  bottom: -6%; }
 
-#input_1_14 li input[type=radio]:checked + label {
-  background-color: #A10000; }
-
-#input_1_14 li label {
-  text-align: center;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: center;
-      justify-content: center;
-  -ms-flex-align: center;
-      align-items: center;
-  color: black;
-  font-weight: bold;
-  text-transform: uppercase;
-  border: 2px solid #A10000;
-  height: 50px; }
+#input_1_14 {
+  padding-bottom: 20px; }
+  #input_1_14 li {
+    margin-bottom: 10px; }
+    #input_1_14 li input[type=radio] {
+      display: none; }
+    #input_1_14 li input[type=radio]:checked + label {
+      background-color: #A10000; }
+    #input_1_14 li label {
+      text-align: center;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-pack: center;
+          justify-content: center;
+      -ms-flex-align: center;
+          align-items: center;
+      color: black;
+      font-weight: bold;
+      text-transform: uppercase;
+      border: 2px solid #A10000;
+      height: 50px; }
 
 #label_1_14_0, #label_1_14_1 {
-  width: 50%; }
+  width: 60%; }
+
+#gform_next_button_1_12 {
+  left: 50%;
+  bottom: 120px;
+  transform: translate(-50%, -50%); }
 
 #field_1_11 .gfield_label {
   display: none; }
