@@ -1400,6 +1400,12 @@ body.page-template-archive-trainer .white {
       color: black;
       font-size: 30px; }
 
+.post-type-archive-event .entry-content {
+  margin: 0; }
+  .post-type-archive-event .entry-content .latest-history {
+    height: 100vh;
+    background: lightblue; }
+
 /* Landing Page */
 .front-page-container {
   color: white;
@@ -1574,9 +1580,6 @@ p {
 .carousel-project-td.is-selected, .carousel-front-girl.is-selected .carousel-front-lion.is-selected {
   height: 100%;
   z-index: 9998; }
-
-.flickity-prev-next-button.next, .flickity-prev-next-button.previous {
-  display: none; }
 
 .page-template-find-us p {
   margin: .50%; }
