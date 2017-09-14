@@ -761,15 +761,179 @@ object {
     text-align: center;
     text-decoration: none; }
 
-.landing-container {
+/* Landing Page */
+.front-page-container {
+  color: white;
+  width: 100vw; }
+
+.project-td-cont {
+  height: 100vh;
+  position: relative;
+  overflow: hidden; }
+
+.who-we-are-cont, .what-we-do-cont {
+  height: 100vh;
+  overflow: hidden;
   position: relative; }
 
-.kin, .ath, .let, .ics {
-  font-size: 10rem;
-  font-family: "Open Sans Condensed", sans-serif;
-  color: black;
-  text-transform: Uppercase;
-  position: absolute; }
+.project-td-image-wrapper .project-td-image, .project-td-image-wrapper .who-we-are-image, .project-td-image-wrapper .what-we-do-image, .project-td-image-wrapper .project-td-image, .project-td-image-wrapper .who-we-are-image, .project-td-image-wrapper .what-we-do-image, .front-img-wrapper .project-td-image, .front-img-wrapper .who-we-are-image, .front-img-wrapper .what-we-do-image {
+  position: absolute;
+  overflow: hidden;
+  transform: translate(-36%, 0.1%); }
+
+img {
+  height: 100vh;
+  max-width: none; }
+
+.project-td-text, .who-we-are-text, .what-we-do-text {
+  position: absolute;
+  z-index: 999; }
+
+.project-td-text {
+  margin-top: 55%;
+  margin-left: 9.5%; }
+  .project-td-text h2 {
+    font-family: "Open Sans Condensed", sans-serif;
+    font-size: 2rem;
+    width: 12rem;
+    line-height: 2.8rem;
+    font-weight: 300;
+    letter-spacing: .5px;
+    margin: 0; }
+  .project-td-text .front-heading {
+    font-size: 3rem;
+    font-weight: 500;
+    margin: 0; }
+
+.who-we-are-text, .what-we-do-text {
+  margin-top: 55%; }
+  .who-we-are-text h2, .what-we-do-text h2 {
+    font-family: "Oswald";
+    font-size: 2.8rem;
+    font-weight: 500;
+    line-height: 2.9rem;
+    margin: 0 2rem; }
+  .who-we-are-text .front-lorem, .what-we-do-text .front-lorem {
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    padding: .5rem 2rem;
+    margin-top: .3rem; }
+
+p {
+  margin-bottom: .75rem; }
+
+.who-we-are-text {
+  text-align: right; }
+  .who-we-are-text .who-button-cont {
+    color: white;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 0;
+    background-color: #A10000;
+    box-shadow: 0 0.5px 1px 0 rgba(0, 0, 0, 0.5);
+    padding: 2% 7%;
+    font-family: "Oswald", sans-serif;
+    position: absolute;
+    margin-left: 50%; }
+    .who-we-are-text .who-button-cont:hover {
+      background-color: #850000; }
+    .who-we-are-text .who-button-cont a {
+      font-family: "Oswald", sans-serif;
+      font-size: 1.5rem;
+      font-weight: 300;
+      letter-spacing: .5px;
+      text-align: center;
+      text-decoration: none;
+      line-height: 1.2; }
+
+.what-we-do-text {
+  text-align: left; }
+  .what-we-do-text .what-button-cont {
+    color: white;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 0;
+    background-color: #A10000;
+    box-shadow: 0 0.5px 1px 0 rgba(0, 0, 0, 0.5);
+    padding: 2% 7%;
+    font-family: "Oswald", sans-serif;
+    position: absolute;
+    margin-left: 8%; }
+    .what-we-do-text .what-button-cont:hover {
+      background-color: #850000; }
+    .what-we-do-text .what-button-cont a {
+      font-family: "Oswald", sans-serif;
+      font-size: 1.5rem;
+      font-weight: 300;
+      letter-spacing: .5px;
+      text-align: center;
+      text-decoration: none;
+      line-height: 1.2; }
+
+.project-td-text .td-button-cont {
+  color: white;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 0;
+  background-color: #A10000;
+  box-shadow: 0 0.5px 1px 0 rgba(0, 0, 0, 0.5);
+  padding: 2% 7%;
+  font-family: "Oswald", sans-serif;
+  position: absolute;
+  margin-left: 25%;
+  margin-top: .75rem; }
+  .project-td-text .td-button-cont:hover {
+    background-color: #850000; }
+  .project-td-text .td-button-cont a {
+    font-family: "Oswald", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 300;
+    letter-spacing: .5px;
+    text-align: center;
+    text-decoration: none;
+    line-height: 1.2; }
+
+.landing-scroll-section {
+  height: 85px;
+  background-color: white;
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  margin: 0;
+  position: absolute;
+  bottom: 0;
+  width: 100%; }
+  .landing-scroll-section p {
+    color: #A10000;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: "Oswald", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24px;
+    padding: 1rem; }
+
+.front-carousel {
+  height: 100vh; }
+
+.carousel-front-lion {
+  background-image: url(../../asset/images/landingpage_whatwedo.png);
+  width: 100%;
+  height: 100%; }
+
+.carousel-front-girl {
+  background-image: url(../../asset/images/landingpage_whoweare.png);
+  width: 100%;
+  height: 100%; }
+
+.flickity-viewport {
+  height: 100%; }
+
+.carousel-project-td.is-selected, .carousel-front-girl.is-selected .carousel-front-lion.is-selected {
+  height: 100%;
+  z-index: 9998; }
 
 /*--------------------------------------------------------------
 # Page Templates
@@ -1395,6 +1559,10 @@ body.page-template-archive-trainer .white {
       color: black;
       font-size: 30px; }
 
+<<<<<<< HEAD
+.page-template-video-page .site-header {
+  display: none; }
+=======
 .post-type-archive-event .entry-content {
   margin: 0; }
   .post-type-archive-event .entry-content .latest-history {
@@ -1405,112 +1573,40 @@ body.page-template-archive-trainer .white {
 .front-page-container {
   color: white;
   width: 100vw; }
+>>>>>>> 71ad56e735b773652d812eae6423b4a33bdaf649
 
-.project-td-cont {
-  height: 100vh;
+.landing-container {
   position: relative;
-  overflow: hidden; }
+  background-color: darkgray; }
 
-.who-we-are-cont, .what-we-do-cont {
-  height: 100vh;
-  overflow: hidden;
-  position: relative; }
-
-.project-td-image-wrapper .project-td-image, .project-td-image-wrapper .who-we-are-image, .project-td-image-wrapper .what-we-do-image, .project-td-image-wrapper .project-td-image, .project-td-image-wrapper .who-we-are-image, .project-td-image-wrapper .what-we-do-image, .front-img-wrapper .project-td-image, .front-img-wrapper .who-we-are-image, .front-img-wrapper .what-we-do-image {
+.kin, .ath, .let, .ics {
+  font-size: 7.5rem;
+  font-family: "Oswald", sans-serif;
+  background-color: transparent;
+  color: black;
+  text-transform: Uppercase;
   position: absolute;
-  overflow: hidden;
-  transform: translate(-36%, 0.1%); }
+  line-height: 111px;
+  margin: 0;
+  letter-spacing: 10px; }
 
-img {
-  height: 100vh;
-  max-width: none; }
+.kin {
+  margin-top: 0;
+  margin-left: 0; }
 
-.project-td-text, .who-we-are-text, .what-we-do-text {
-  position: absolute;
-  z-index: 999; }
+.ath {
+  margin-top: 25%;
+  margin-left: 12%; }
 
-.project-td-text {
-  margin-top: 55%;
-  margin-left: 9.5%; }
-  .project-td-text h2 {
-    font-family: "Open Sans Condensed", sans-serif;
-    font-size: 2rem;
-    width: 12rem;
-    line-height: 2.8rem;
-    font-weight: 300;
-    letter-spacing: .5px;
-    margin: 0; }
-  .project-td-text .front-heading {
-    font-size: 3rem;
-    font-weight: 500;
-    margin: 0; }
+.let {
+  margin-top: 50%;
+  margin-left: 35%; }
 
-.who-we-are-text, .what-we-do-text {
-  margin-top: 55%; }
-  .who-we-are-text h2, .what-we-do-text h2 {
-    font-family: "Oswald";
-    font-size: 2.8rem;
-    font-weight: 500;
-    line-height: 2.9rem;
-    margin: 0 2rem; }
-  .who-we-are-text .front-lorem, .what-we-do-text .front-lorem {
-    width: 100%;
-    background: rgba(0, 0, 0, 0.7);
-    padding: .5rem 2rem;
-    margin-top: .3rem; }
+.ics {
+  margin-top: 75.37%;
+  margin-left: 55%; }
 
-p {
-  margin-bottom: .75rem; }
-
-.who-we-are-text {
-  text-align: right; }
-  .who-we-are-text .who-button-cont {
-    color: white;
-    text-transform: uppercase;
-    border: none;
-    border-radius: 0;
-    background-color: #A10000;
-    box-shadow: 0 0.5px 1px 0 rgba(0, 0, 0, 0.5);
-    padding: 2% 7%;
-    font-family: "Oswald", sans-serif;
-    position: absolute;
-    margin-left: 50%; }
-    .who-we-are-text .who-button-cont:hover {
-      background-color: #850000; }
-    .who-we-are-text .who-button-cont a {
-      font-family: "Oswald", sans-serif;
-      font-size: 1.5rem;
-      font-weight: 300;
-      letter-spacing: .5px;
-      text-align: center;
-      text-decoration: none;
-      line-height: 1.2; }
-
-.what-we-do-text {
-  text-align: left; }
-  .what-we-do-text .what-button-cont {
-    color: white;
-    text-transform: uppercase;
-    border: none;
-    border-radius: 0;
-    background-color: #A10000;
-    box-shadow: 0 0.5px 1px 0 rgba(0, 0, 0, 0.5);
-    padding: 2% 7%;
-    font-family: "Oswald", sans-serif;
-    position: absolute;
-    margin-left: 8%; }
-    .what-we-do-text .what-button-cont:hover {
-      background-color: #850000; }
-    .what-we-do-text .what-button-cont a {
-      font-family: "Oswald", sans-serif;
-      font-size: 1.5rem;
-      font-weight: 300;
-      letter-spacing: .5px;
-      text-align: center;
-      text-decoration: none;
-      line-height: 1.2; }
-
-.project-td-text .td-button-cont {
+.video-button-cont {
   color: white;
   text-transform: uppercase;
   border: none;
@@ -1520,11 +1616,10 @@ p {
   padding: 2% 7%;
   font-family: "Oswald", sans-serif;
   position: absolute;
-  margin-left: 25%;
-  margin-top: .75rem; }
-  .project-td-text .td-button-cont:hover {
+  bottom: 10px; }
+  .video-button-cont:hover {
     background-color: #850000; }
-  .project-td-text .td-button-cont a {
+  .video-button-cont a {
     font-family: "Oswald", sans-serif;
     font-size: 1.5rem;
     font-weight: 300;
@@ -1532,49 +1627,6 @@ p {
     text-align: center;
     text-decoration: none;
     line-height: 1.2; }
-
-.landing-scroll-section {
-  height: 85px;
-  background-color: white;
-  position: relative;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: center;
-      justify-content: center;
-  margin: 0;
-  position: absolute;
-  bottom: 0;
-  width: 100%; }
-  .landing-scroll-section p {
-    color: #A10000;
-    text-transform: uppercase;
-    text-align: center;
-    font-family: "Oswald", sans-serif;
-    font-size: 18px;
-    font-weight: 500;
-    line-height: 24px;
-    padding: 1rem; }
-
-.front-carousel {
-  height: 100vh;
-  background-color: red; }
-
-.carousel-front-lion {
-  background-image: url(../../asset/images/landingpage_whatwedo.png);
-  width: 100%;
-  height: 100%; }
-
-.carousel-front-girl {
-  background-image: url(../../asset/images/landingpage_whoweare.png);
-  width: 100%;
-  height: 100%; }
-
-.flickity-viewport {
-  height: 100%; }
-
-.carousel-project-td.is-selected, .carousel-front-girl.is-selected .carousel-front-lion.is-selected {
-  height: 100%;
-  z-index: 9998; }
 
 .page-template-find-us p {
   margin: .50%; }
@@ -1857,6 +1909,8 @@ p {
   .page-template-consultations .gform_wrapper .gform_page_footer,
   .page-template-consultations .gform_wrapper .gf_page_steps {
     border: none; }
+  .page-template-consultations .gform_body {
+    padding: 0 20px; }
 
 .gform_wrapper .gform_page_footer {
   border-top: none; }
@@ -1868,11 +1922,16 @@ p {
 .consultation-forms .gform_heading {
   display: none; }
 
+#gform_fields_1 li, #gform_fields_1_2 li,
+#gform_fields_1_3 li, #gform_fields_1_4 li,
+#gform_fields_1_5 li {
+  margin-bottom: 40px; }
+
 #input_1_1_3, #input_1_2 {
   border-radius: 0px;
   border: 2px solid #A10000; }
 
-#field_1_1, #field_1_2, #field_1_5, #field_1_14, #field_1_11 {
+#field_1_1, #field_1_2, #field_1_14, #field_1_11 {
   position: relative;
   background: white;
   padding: 30px; }
@@ -1894,11 +1953,8 @@ p {
   display: none; }
 
 .gform_wrapper .gform_next_button {
-  top: 165px;
-  right: 0;
   position: absolute;
   color: #A10000;
-  font-size: 20px;
   text-shadow: none;
   text-transform: uppercase;
   background-color: transparent;
@@ -1908,10 +1964,11 @@ p {
     outline: none; }
 
 #gform_next_button_1_8 {
-  top: 165px;
-  right: 0;
+  top: 463px;
+  right: 12%;
   width: auto;
   font-size: 20px;
+  font-weight: bold;
   box-shadow: none; }
 
 .nameform-box1, .nameform-box2,
@@ -1920,7 +1977,7 @@ p {
   position: relative;
   background: black;
   color: white;
-  padding: 10px;
+  padding: 20px;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content; }
@@ -1941,19 +1998,24 @@ p {
   margin-left: -39px;
   margin-bottom: -20px; }
 
-#gform_previous_button_1_10, #gform_previous_button_1_13,
-#gform_previous_button_1_12, #gform_previous_button_1 {
-  display: none; }
-
 #gform_next_button_1_10 {
-  top: 165px;
-  right: 0;
+  top: 323px;
+  right: 12%;
   width: auto;
   font-size: 20px;
   box-shadow: none; }
 
+#gform_previous_button_1_10, #gform_previous_button_1_13,
+#gform_previous_button_1_12, #gform_previous_button_1 {
+  display: none; }
+
 #field_1_5 .gfield_description {
   display: none; }
+
+#field_1_5 {
+  background-color: white;
+  position: relative;
+  padding: 10px 30px 50px 30px; }
 
 #input_1_5 {
   display: -ms-flexbox;
@@ -1964,7 +2026,7 @@ p {
       align-items: center;
   text-align: center;
   overflow-y: scroll;
-  max-height: 400px; }
+  max-height: 370px; }
   #input_1_5 input[type=radio]:checked + label h1 {
     color: #A10000; }
   #input_1_5 input[type=radio]:checked + label img {
@@ -1974,7 +2036,7 @@ p {
     display: none; }
   #input_1_5 li {
     width: 50%;
-    margin: 20px 0 5px 0; }
+    margin-bottom: 20px; }
     #input_1_5 li label h1 {
       margin: 0;
       color: black;
@@ -1987,34 +2049,48 @@ p {
 
 #gform_next_button_1_13.gform_next_button.button,
 #gform_next_button_1_12.gform_next_button.button {
-  background-color: blue;
+  background-color: #A10000;
+  border-radius: 0;
+  color: white;
   width: auto;
-  left: 50%;
   outline: none;
   box-shadow: none; }
 
-#input_1_14 li input[type=radio] {
-  display: none; }
+#gform_next_button_1_13 {
+  transform: translate(-50%, -50%);
+  left: 50%;
+  right: 50%;
+  bottom: -6%; }
 
-#input_1_14 li input[type=radio]:checked + label {
-  background-color: #A10000; }
-
-#input_1_14 li label {
-  text-align: center;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: center;
-      justify-content: center;
-  -ms-flex-align: center;
-      align-items: center;
-  color: black;
-  font-weight: bold;
-  text-transform: uppercase;
-  border: 2px solid #A10000;
-  height: 50px; }
+#input_1_14 {
+  padding-bottom: 20px; }
+  #input_1_14 li {
+    margin-bottom: 10px; }
+    #input_1_14 li input[type=radio] {
+      display: none; }
+    #input_1_14 li input[type=radio]:checked + label {
+      background-color: #A10000; }
+    #input_1_14 li label {
+      text-align: center;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-pack: center;
+          justify-content: center;
+      -ms-flex-align: center;
+          align-items: center;
+      color: black;
+      font-weight: bold;
+      text-transform: uppercase;
+      border: 2px solid #A10000;
+      height: 50px; }
 
 #label_1_14_0, #label_1_14_1 {
-  width: 50%; }
+  width: 60%; }
+
+#gform_next_button_1_12 {
+  left: 50%;
+  bottom: 120px;
+  transform: translate(-50%, -50%); }
 
 #field_1_11 .gfield_label {
   display: none; }
