@@ -2,27 +2,53 @@
   .entry-content{
     margin: 0;
   }
+
+  h1 {
+    margin: auto;
+    text-align: center;
+  }
 }
 
-.services-taxonomy{
+.services-icons {
   height: 100vh;
-  background-image: url('../../asset/images/serv2.jpg');
+  background: url('../../asset/images/aboutpage_heroshot.png') no-repeat center;
   background-size: cover;
   display: flex;
-  align-items: center;
-  flex-wrap: wrap; 
-  margin-bottom: 3px;
+  flex-flow: column nowrap;
+  justify-content: space-evenly;
 
-  h1{
-    text-align: center;
-    padding: 0 10px;
-    margin-top: 50px;
   }
+  
+  #origin-icon {
+    margin-right: 50px;
+  }
+  
+  .circles-container {
+    height: 50%;
+    display: flex;
+    flex-flow: row wrap;
 
-  .circles{
-    margin: 0 auto;
+    .icon-container {
+      width: 50%;
+      height: $icon__base-size;
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: center;
+      align-items: center;
+
+      a, img {
+        height: 100%;
+      }
+
+      p {
+        margin: 0;
+        color: white;
+        text-transform: uppercase;
+        font-weight: 500;
+        font-family: $font__h1-header;
+      }
+    }
   }
-}
 
 .services-featured{
   display: block;

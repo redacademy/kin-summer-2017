@@ -1,5 +1,4 @@
 <?php
-
 /**
 * Controls gravity forms
 */  
@@ -13,29 +12,23 @@ function pupulate_posts ( $form ) {
           continue;
         }
         
-        // $args = array(
-        //   'post_per_page' => -1,
-        //   // 'post_type' => 'trainer'
-        //   // 'order' => 'DESC',
-        //   // 'orderby' => 'date',
-        //   // 'exclude' => array(get_the_id())
-        // );
         $posts = get_posts( array(
-          'post_per_page' => -1,
-          'post_type' => 'trainer'
+          'post_type' => 'trainer',
+          'post_per_page' => 7
         ));
 
         $choices = array();
     
-        foreach ( $posts as $post ){
-          $choices[] = array(
-            // setup_postdata( $post ),
-    
-            'text' => $post->post_title,
-            'value' => $post->post_title,
-            'isSelected' => false
-          );
-        }
+        foreach ( $posts as $post ) : 
+            $choices[] = array(
+
+                'text' => "<img src='" . CFS()->get ('trainer_profile_picture', $post->ID) . "'/>" . "<h1>" . $post->post_title . "</h1>",
+                'value' => $post->post_title,
+                'isSelected' => false
+
+              );
+
+            endforeach; wp_reset_postdata();
     
         $field->choices = $choices;
     
@@ -44,16 +37,3 @@ function pupulate_posts ( $form ) {
     return $form;
 
 }
-
-
-
-
-
-// $args = array( 'post_type' => 'trainer', 'order' => 'DESC', 'posts_per_page' => 5, 'orderby' => 'date', 'exclude' => array(get_the_id()) );
-// $trainer = get_posts( $args ); // returns an array of posts
-
-// $trainers_count = count($trainer);
-
-// foreach ( $trainer as $post ) : setup_postdata( $post );
-
-// echo get_post_permalink();
