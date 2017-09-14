@@ -42,7 +42,7 @@ function kin_cpt_about() {
             'label'                 => 'Trainer',
             'description'           => 'Add a trainer to the about page.',
             'labels'                => $labels,
-            'supports'              => array( 'title', 'editor', 'thumbnail', 'revisions', ),
+            'supports'              => array( 'editor', 'revisions', ),
             'hierarchical'          => true,
             'public'                => true,
             'show_ui'               => true,
