@@ -1358,7 +1358,8 @@ img {
   max-width: none; }
 
 .project-td-text, .who-we-are-text, .what-we-do-text {
-  position: absolute; }
+  position: absolute;
+  z-index: 999; }
 
 .project-td-text {
   margin-top: 55%;
@@ -1485,6 +1486,30 @@ p {
     font-weight: 500;
     line-height: 24px;
     padding: 1rem; }
+
+.front-carousel {
+  height: 100vh;
+  background-color: red; }
+
+.carousel-front-lion {
+  background-image: url(../../asset/images/landingpage_whatwedo.png);
+  width: 100%;
+  height: 100%; }
+
+.carousel-front-girl {
+  background-image: url(../../asset/images/landingpage_whoweare.png);
+  width: 100%;
+  height: 100%; }
+
+.flickity-viewport {
+  height: 100%; }
+
+.carousel-project-td.is-selected, .carousel-front-girl.is-selected .carousel-front-lion.is-selected {
+  height: 100%;
+  z-index: 9998; }
+
+.flickity-prev-next-button.next, .flickity-prev-next-button.previous {
+  display: none; }
 
 .page-template-find-us p {
   margin: .50%; }
