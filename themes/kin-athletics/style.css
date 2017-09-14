@@ -1840,17 +1840,29 @@ p {
   font-size: 20px;
   box-shadow: none; }
 
-#input_1_5 li {
-  display: inline; }
-  #input_1_5 li label {
-    display: inline;
-    width: 50%; }
+#input_1_5 {
+  background-color: red;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-align: center;
+      align-items: center;
+  text-align: center;
+  overflow-y: scroll;
+  max-height: 400px; }
+  #input_1_5 input[type=radio] {
+    display: none; }
+  #input_1_5 li {
+    width: 50%;
+    margin-top: 20px; }
     #input_1_5 li label h1 {
-      width: 50%;
-      margin: 0; }
-
-#input_1_5 img {
-  height: 60px; }
+      margin: 0;
+      font-size: 20px; }
+  #input_1_5 img {
+    width: 70px;
+    height: 70px;
+    border-radius: 100%; }
 
 #input_1_14 li input[type=radio] {
   display: none; }
