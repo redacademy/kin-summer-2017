@@ -45,6 +45,10 @@
   .gform_wrapper .gf_page_steps{
     border: none;
   }
+
+  .gform_body{
+    padding: 0 20px;
+  }
 }
 
 .gform_wrapper .gform_page_footer{
@@ -62,6 +66,14 @@
   }
 }
 
+#gform_fields_1, #gform_fields_1_2, 
+#gform_fields_1_3, #gform_fields_1_4,
+#gform_fields_1_5{
+  li{
+    margin-bottom: 40px;   // chatbox spacing
+  }
+}
+
 //   end of form pagination
 
 
@@ -70,7 +82,7 @@
   border: 2px solid $color__brand-red;
 }
 
-#field_1_1, #field_1_2, #field_1_5
+#field_1_1, #field_1_2
 ,#field_1_14, #field_1_11 {
 	position: relative;
 	background: white;
@@ -96,11 +108,8 @@
 }
 
 .gform_wrapper .gform_next_button{
-  top: 165px;
-  right: 0;
   position: absolute;
   color: $color__brand-red;
-  font-size: 20px;
   text-shadow: none;
   text-transform: uppercase;
   background-color: transparent;
@@ -111,12 +120,13 @@
   }
 }
 
-#gform_next_button_1_8{
-  top: 165px;
-  right: 0;
+#gform_next_button_1_8{   // next button for name form
+  top: 463px;
+  right: 12%;
   width: auto;
   font-size: 20px;
-  box-shadow: none;  
+  font-weight: bold;
+  box-shadow: none;
 }
 
 .nameform-box1, .nameform-box2,
@@ -125,7 +135,7 @@
 	position: relative;
   background: black;
   color: white;
-  padding: 10px;
+  padding: 20px;
   width: fit-content;
 }
 
@@ -152,20 +162,23 @@
 //     see line 63 for chatbox
 //     see line 112 for black chatbox
 
+#gform_next_button_1_10{   // next button for email form
+  top: 323px;
+  right: 12%;
+  width: auto;
+  font-size: 20px;
+  box-shadow: none; 
+}
 
 //    end of email form
+
+//   see line 63 for chat box
+//   see line 112 for black chatbox
+
 
 #gform_previous_button_1_10, #gform_previous_button_1_13, 
 #gform_previous_button_1_12, #gform_previous_button_1{
   display: none;    // previous button
-}
-
-#gform_next_button_1_10{
-  top: 165px;
-  right: 0;
-  width: auto;
-  font-size: 20px;
-  box-shadow: none; 
 }
 
 #field_1_5{
@@ -174,15 +187,18 @@
   }
 }
 
-//   ref. line 63 for chat box
-
+#field_1_5{
+  background-color: white;
+  position: relative;  
+  padding: 10px 30px 50px 30px;
+}
 #input_1_5{
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   text-align: center;
   overflow-y: scroll;
-  max-height: 400px;
+  max-height: 370px;
 
   input[type=radio]:checked + label {
     h1{
@@ -201,10 +217,9 @@
 
   li{
     width: 50%;
-    margin: 20px 0 5px 0;
+    margin-bottom: 20px;
 
     label{
-
       h1{
         margin: 0;
         color: black;
@@ -223,11 +238,19 @@
 
 #gform_next_button_1_13.gform_next_button.button,
 #gform_next_button_1_12.gform_next_button.button{
-  background-color: blue;
+  background-color: $color__brand-red;
+  border-radius: 0;
+  color: white;
   width: auto;
-  left: 50%;
   outline: none;
   box-shadow: none;
+}
+
+#gform_next_button_1_13{
+  transform: translate(-50%, -50%);
+  left: 50%;
+  right: 50%;
+  bottom: -6%;
 }
 
 //       end of trainer grid selection
@@ -236,32 +259,43 @@
 // see line 63 for chatbox
 // see line 112 for black chatbox
 
-#input_1_14 li{
-  input[type=radio]{
-    display: none;   // hiding the circle radio buttons
-  }
+#input_1_14{
+  padding-bottom: 20px;
 
-  input[type=radio]:checked + label {
-    background-color: $color__brand-red;
-  } 
+  li{
+    margin-bottom: 10px;
 
-  label{
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: black;
-    font-weight: bold;
-    text-transform: uppercase;
-    border: 2px solid $color__brand-red;
-    height: 50px;
+    input[type=radio]{
+      display: none;   // hiding the circle radio buttons
+    }
+
+    input[type=radio]:checked + label {
+      background-color: $color__brand-red;
+    } 
+
+    label{
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: black;
+      font-weight: bold;
+      text-transform: uppercase;
+      border: 2px solid $color__brand-red;
+      height: 50px;
+    }
   }
 }
 
 #label_1_14_0, #label_1_14_1{
-  width: 50%;
+  width: 60%;
 }
 
+#gform_next_button_1_12{
+  left: 50%;
+  bottom: 120px;
+  transform: translate(-50%, -50%);
+}
 // end of actions form
 
 
