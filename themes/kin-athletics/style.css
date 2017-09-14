@@ -922,7 +922,8 @@ object {
     -ms-flex-pack: center;
         justify-content: center;
     -ms-flex-align: center;
-        align-items: center; }
+        align-items: center;
+    text-align: center; }
     .circles-container .icon-container a, .circles-container .icon-container img {
       height: 100%; }
     .circles-container .icon-container p {
@@ -989,6 +990,11 @@ object {
     .page-template-services .white .red-button a, .page-template-services .white .consultation-button a, .page-template-services .white .social-button a {
       color: black;
       font-size: 30px; }
+
+@media only screen and (min-width: 600px) {
+  .circles-container {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap; } }
 
 /*--------------------------------------------------------------
 # About
@@ -1186,7 +1192,7 @@ body.single-trainer .default-content {
     width: 50%;
     position: relative; }
   .about-sidebar .widget-block {
-    margin-bottom: 1rem; }
+    margin-bottom: 1.5rem; }
   .about-sidebar .kin-athletics-hours-class {
     -ms-flex-order: 1;
         order: 1;
@@ -1591,9 +1597,6 @@ p {
 .page-template-find-us .find-us-picture-wrapper {
   position: relative; }
   .page-template-find-us .find-us-picture-wrapper .find-us-picture {
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     z-index: 0;
     filter: grayscale(100%); }
 
@@ -1640,7 +1643,7 @@ p {
   padding-right: 2.5%; }
 
 .page-template-find-us .widget-block {
-  margin-bottom: 1rem; }
+  margin-bottom: 1.3rem; }
 
 .page-template-find-us .kin-athletics-hours-class {
   -ms-flex-order: 3;

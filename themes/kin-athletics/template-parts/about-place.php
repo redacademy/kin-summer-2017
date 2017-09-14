@@ -17,4 +17,7 @@
             <?php dynamic_sidebar( 'sidebar-2' ); ?>
         </div><!-- .secondary -->
     </div><!-- .about-sidebar -->
+    <div class="red-button">
+          <a href="<?php echo get_post_permalink()?>">Find Us</a>
+        </div><!-- .social-button -->
 </section>
