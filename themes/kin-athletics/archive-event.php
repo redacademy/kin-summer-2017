@@ -13,24 +13,33 @@ get_header(); ?>
     <article id='post-<?php the_ID(); ?>' <?php post_class(); ?>>
         <div class='container'>
         <div class='entry-content'>
-            <section id="trainers" class="latest-history-container">
+            <section id="latest-history" class="latest-history">
                 <div class="header-container">
-                    <h2 class="header-title">Latest History</h2>
+                    <h2 class="header-title">Latest History:</h2>
+                    <?php 
+                        $args = array( 'post_type' => 'event', 'order' => 'DESC', 'posts_per_page' => 1, 'orderby' => 'date' );
+                        $events = get_posts ( $args );
+                    ?>
+
+                    <h2 class="header-title"><?php echo CFS()->get('current_event', $events[0]->ID);?></h2>
+                    <p class="latest-history-description"><?php echo CFS()->get('current_event_info', $events[0]->ID); ?></p>
+                    <h3 class='event-date'>happens: <?php echo CFS()->get('current_event_date', $events[0]->ID); ?></h3>
+                    <div class='red-button'><a href='#'>buy tickets</a></div>
                 </div>
                 <div class="latest-history-carousel">
-                    <div class='carousel-cell events-cell-image1'>
+                    <div class='carousel-cell cell-image1'>
                     </div>
-                    <div class='carousel-cell events-cell-image2'>
+                    <div class='carousel-cell cell-image2'>
                     </div>
-                    <div class='carousel-cell events-cell-image3'>
+                    <div class='carousel-cell cell-image3'>
                     </div>       
                 </div>  <!-- end of carousel -->
             </section>
 
-            <section id="trainers2" class="trainers-grid">
+            <section id="historical-moments" class="historical-moments">
                 <div class="past-events-carousel">
                     <?php 
-                        $args = array( 'post_type' => 'trainer', 'order' => 'DESC', 'posts_per_page' => -1, 'orderby' => 'date' );
+                        $args = array( 'post_type' => 'event', 'order' => 'DESC', 'posts_per_page' => -1, 'orderby' => 'date' );
                         $event = get_posts( $args ); // returns an array of posts
                         $events_count = count($event);
                         $number_of_posts = 6;
@@ -41,7 +50,7 @@ get_header(); ?>
 
                         <div class='carousel-cell trainers'> 
                             <div class="header-container">
-                                <h2 class="header-title--black">The Trainers</h2>
+                                <h2 class="header-title--black">More Historical Moments</h2>
                             </div>
                             <div class="trainer-grid-wrapper">
                                 <?php        
