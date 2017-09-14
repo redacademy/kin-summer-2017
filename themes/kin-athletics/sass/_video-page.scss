@@ -1,0 +1,48 @@
+.page-template-video-page{
+    .site-header{
+        display: none;
+    }
+}
+
+.landing-container {
+    position:relative;
+    background-color: darkgray;
+}
+
+.kin, .ath, .let, .ics {
+    font-size: 7.5rem;
+    font-family: $font__accent; 
+    background-color: transparent;
+    color: black;
+    text-transform:Uppercase;
+    position:absolute;
+    line-height: 111px;
+    margin:0;
+    letter-spacing: 10px;
+}
+
+.kin {
+    margin-top:0;
+    margin-left: 0;
+
+}
+.ath {
+    margin-top: 25%;
+    margin-left: 12%;
+}
+.let {
+    margin-top: 50%;
+    margin-left: 35%;
+}
+.ics {
+    margin-top: 75.37%;
+    margin-left: 55%;
+}
+
+.video-button-cont {
+    @include front-red-button;
+    position: absolute;
+    bottom:10px;
+   
+ 
+}
