@@ -1155,6 +1155,52 @@ body.single-trainer .default-content {
       padding: 0.5em 0;
       cursor: pointer; }
 
+.about-sidebar {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%; }
+  .about-sidebar .widget-title {
+    color: white;
+    height: 30px;
+    font-family: Oswald;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px; }
+  .about-sidebar p {
+    color: white;
+    margin: .50%; }
+  .about-sidebar p .contact {
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.5rem;
+    font-family: Oswald;
+    clear: both;
+    text-transform: uppercase; }
+  .about-sidebar .kin-athletics-info-class {
+    -ms-flex-order: 1;
+        order: 1;
+    -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+    width: 50%;
+    position: relative;
+    text-align: right;
+    padding-right: 2.5%; }
+    .about-sidebar .kin-athletics-info-class .widget-title {
+      text-align: right; }
+  .about-sidebar .widget-block {
+    margin-bottom: 1rem; }
+  .about-sidebar .kin-athletics-hours-class {
+    -ms-flex-order: 2;
+        order: 2;
+    -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+    width: 50%;
+    position: relative;
+    text-align: left;
+    padding-left: 2.5%; }
+
 body.page-template-archive-trainer .entry-content {
   margin: 0 auto; }
   body.page-template-archive-trainer .entry-content .header-container {

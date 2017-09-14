@@ -6,13 +6,15 @@
         <p class="item-description"><?php echo CFS()->get( 'about_our_place'); ?></p>
     </div>
 
-    <?php
-        if ( ! is_active_sidebar( 'sidebar-2' ) ) {
-            return;
-        }
-    ?>
+    <div class="about-sidebar"
+        <?php
+            if ( ! is_active_sidebar( 'sidebar-2' ) ) {
+                return;
+            }
+        ?>
 
-    <div id="secondary" class="widget-area" role="complementary">
-        <?php dynamic_sidebar( 'sidebar-2' ); ?>
-    </div><!-- .secondary -->
+        <div id="secondary" class="widget-area" role="complementary">
+            <?php dynamic_sidebar( 'sidebar-2' ); ?>
+        </div><!-- .secondary -->
+    </div><!-- .about-sidebar -->
 </section>
