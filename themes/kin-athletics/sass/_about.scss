@@ -226,3 +226,62 @@ body.single-trainer {
         }
     }
 }
+
+// Sidebar-2
+
+.about-sidebar {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+
+    .widget-title {
+        color: white;
+        height: 30px;
+        font-family: Oswald;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 30px;
+    }
+
+    p {
+        color: white;
+        margin: .50%;
+    }
+
+    p .contact { // to match H2
+        font-size: 1rem;
+        font-weight: 500;
+        line-height: 1.5rem;
+        font-family: Oswald;
+        clear: both;
+        text-transform: uppercase;
+    
+    }
+
+    .kin-athletics-info-class {
+        order:  1;
+        flex: 0 0 50%;
+        width: 50%;
+        position: relative;
+        text-align: right;
+        padding-right: 2.5%;
+
+        .widget-title {
+            text-align: right;
+        }
+      }
+
+    .widget-block {
+        margin-bottom: 1rem;
+      }
+
+    .kin-athletics-hours-class {
+        order:  2;
+        flex: 0 0 50%;
+        width: 50%;
+        position: relative;
+        text-align: left;
+        padding-left: 2.5%;
+      }
+}
+

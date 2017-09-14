@@ -1155,6 +1155,52 @@ body.single-trainer .default-content {
       padding: 0.5em 0;
       cursor: pointer; }
 
+.about-sidebar {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%; }
+  .about-sidebar .widget-title {
+    color: white;
+    height: 30px;
+    font-family: Oswald;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px; }
+  .about-sidebar p {
+    color: white;
+    margin: .50%; }
+  .about-sidebar p .contact {
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.5rem;
+    font-family: Oswald;
+    clear: both;
+    text-transform: uppercase; }
+  .about-sidebar .kin-athletics-info-class {
+    -ms-flex-order: 1;
+        order: 1;
+    -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+    width: 50%;
+    position: relative;
+    text-align: right;
+    padding-right: 2.5%; }
+    .about-sidebar .kin-athletics-info-class .widget-title {
+      text-align: right; }
+  .about-sidebar .widget-block {
+    margin-bottom: 1rem; }
+  .about-sidebar .kin-athletics-hours-class {
+    -ms-flex-order: 2;
+        order: 2;
+    -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+    width: 50%;
+    position: relative;
+    text-align: left;
+    padding-left: 2.5%; }
+
 body.page-template-archive-trainer .entry-content {
   margin: 0 auto; }
   body.page-template-archive-trainer .entry-content .header-container {
@@ -1379,7 +1425,8 @@ img {
   max-width: none; }
 
 .project-td-text, .who-we-are-text, .what-we-do-text {
-  position: absolute; }
+  position: absolute;
+  z-index: 999; }
 
 .project-td-text {
   margin-top: 55%;
@@ -1506,6 +1553,30 @@ p {
     font-weight: 500;
     line-height: 24px;
     padding: 1rem; }
+
+.front-carousel {
+  height: 100vh;
+  background-color: red; }
+
+.carousel-front-lion {
+  background-image: url(../../asset/images/landingpage_whatwedo.png);
+  width: 100%;
+  height: 100%; }
+
+.carousel-front-girl {
+  background-image: url(../../asset/images/landingpage_whoweare.png);
+  width: 100%;
+  height: 100%; }
+
+.flickity-viewport {
+  height: 100%; }
+
+.carousel-project-td.is-selected, .carousel-front-girl.is-selected .carousel-front-lion.is-selected {
+  height: 100%;
+  z-index: 9998; }
+
+.flickity-prev-next-button.next, .flickity-prev-next-button.previous {
+  display: none; }
 
 .page-template-find-us p {
   margin: .50%; }
