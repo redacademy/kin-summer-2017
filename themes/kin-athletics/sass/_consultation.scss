@@ -120,23 +120,35 @@
 }
 
 #input_1_5{
+  background-color: red;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  text-align: center;
+  overflow-y: scroll;
+  max-height: 400px;
+
+  input[type=radio]{
+    display: none;
+  }
 
   li{
-    display: inline;
+    width: 50%;
+    margin-top: 20px;
 
     label{
-      display: inline;
-      width: 50%;
 
       h1{
-        width: 50%;
         margin: 0;
+        font-size: 20px;
       }
     }
   }
 
   img{
-    height: 60px;
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
   }
 }
 

@@ -10,18 +10,30 @@ get_header(); ?>
 <div class="front-page-container">
  
   <section class="project-td-cont">
-    <div class="project-td-image-wrapper">
-      <img class="project-td-image" src="<?php echo CFS()->get( 'front_image' ); ?>">
-    </div>
+
     <div class="project-td-text">
       <h2>Kin Athletics Presents</h2>
       <?php echo CFS()->get('front_heading');?>
       <div class="td-button-cont"><a href='#'>Tell Me More</a></div>
     </div>
-    
-    <div class="landing-scroll-section">
-      <p>Jump In</p>
-    </div>
+
+    <div class="main-carousel">
+      <div class="carousel-project-td"> <!-- first cell-->
+        <div class="project-td-image-wrapper">
+          <img class="project-td-image" src="<?php echo CFS()->get( 'front_image' ); ?>">     
+        </div>
+      </div>  <!-- end of first cell-->
+
+      <div class="carousel-front-lion">CELL 2</div>
+      <div class="carousel-front-girl">CELL 3</div>
+      </div><!--carousel-->
+
+
+      <div class="landing-scroll-section">
+        <p>Jump In</p>
+      </div>
+      
+   
   </section>
 
   <section class="who-we-are-cont">
