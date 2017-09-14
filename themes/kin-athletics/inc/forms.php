@@ -14,7 +14,7 @@ function pupulate_posts ( $form ) {
         
         $posts = get_posts( array(
           'post_type' => 'trainer',
-          'post_per_page' => 7
+          'posts_per_page' => -1
         ));
 
         $choices = array();
@@ -22,7 +22,8 @@ function pupulate_posts ( $form ) {
         foreach ( $posts as $post ) : 
             $choices[] = array(
 
-                'text' => "<img src='" . CFS()->get ('trainer_profile_picture', $post->ID) . "'/>" . "<h1>" . $post->post_title . "</h1>",
+                'text' => "<img src='" . CFS()->get ('trainer_profile_picture', $post->ID) .
+                          "'/>" . "<h1>" . $post->post_title . "</h1>",
                 'value' => $post->post_title,
                 'isSelected' => false
 
