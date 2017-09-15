@@ -1,11 +1,152 @@
-.landing-container {
-    position:relative;
+/* Landing Page */
+
+.front-page-container {
+  color:white;
+  width: 100vw;
 }
 
-.kin, .ath, .let, .ics {
-    font-size: 10rem;
-    font-family: $font__main; 
-    color: black;
-    text-transform:Uppercase;
-    position:absolute;
+.project-td-cont {
+  height: 100vh;
+  position:relative;
+  overflow:hidden;
 }
+.who-we-are-cont, .what-we-do-cont {
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+  .project-td-image-wrapper, .project-td-image-wrapper, .front-img-wrapper {
+  .project-td-image, .who-we-are-image, .what-we-do-image {
+    position: absolute;
+    overflow: hidden;
+    transform: translate(-36%, .1%);
+  }
+}
+
+img {
+  height: 100vh;
+  max-width: none;
+}
+
+
+.project-td-text, .who-we-are-text, .what-we-do-text {
+  position: absolute;
+  z-index: 999;
+}
+
+.project-td-text {
+  margin-top: 55%;
+  margin-left: 9.5%;
+  h2 {
+    font-family: $font__main;
+    font-size: 2rem;
+    width: 12rem;
+    line-height: 2.8rem;
+    font-weight: 300;
+    letter-spacing: .5px;
+    margin: 0;
+  }
+  .front-heading {
+    font-size: 3rem;
+    font-weight: 500;
+    margin: 0;
+  }
+}
+
+.who-we-are-text, .what-we-do-text {
+  margin-top: 55%;
+  h2 {
+    font-family: $font__h1-header;
+		font-size: 2.8rem;
+		font-weight: 500;
+    line-height: 2.9rem;
+    margin: 0 2rem;
+  }
+  .front-lorem {
+    width: 100%;
+    background: rgba(0,0,0,.7);
+    padding: .5rem 2rem;
+    margin-top: .3rem;
+  }
+}
+
+p {
+  margin-bottom: .75rem;
+}
+
+.who-we-are-text {
+  text-align: right;
+  .who-button-cont {
+  @include front-red-button;
+  position:absolute;
+  margin-left:50%; 
+  }
+}
+
+.what-we-do-text {
+  text-align: left;
+  .what-button-cont {
+    @include front-red-button;
+    position: absolute;
+    margin-left:8%; 
+  }
+}
+.project-td-text {
+  .td-button-cont {
+    @include front-red-button;
+    position: absolute;
+    margin-left:25%; 
+    margin-top:.75rem;
+  }
+}
+    .landing-scroll-section {
+      height: 85px;
+      background-color: white;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      margin:0;
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      p {
+        color: $color__brand-red;
+        text-transform: uppercase;
+        text-align: center;
+        font-family: $font__accent;
+        font-size: 18px;	
+        font-weight: 500;	
+        line-height: 24px;
+        padding:1rem;
+  }
+}
+
+.front-carousel{
+  height: 100vh;
+}
+.carousel-front-lion {
+  background-image: url(../../asset/images/landingpage_whatwedo.png);
+  width: 100%;
+  height:100%;
+}
+.carousel-front-girl {
+  background-image: url(../../asset/images/landingpage_whoweare.png);
+  width:100%;
+  height:100%;
+}
+.flickity-viewport {
+  height: 100%;
+}
+.carousel-project-td.is-selected, .carousel-front-girl.is-selected .carousel-front-lion.is-selected {
+  height: 100%;
+  z-index: 9998;
+}
+.flickity-prev-next-button.next, .flickity-prev-next-button.previous {
+  // display:none;
+}
+// .flickity-page-dots {
+
+// }
+// .main-carousel {
+//   height:80vh;
+// }
