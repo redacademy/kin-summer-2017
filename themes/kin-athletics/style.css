@@ -1558,16 +1558,14 @@ body.page-template-archive-trainer .white {
       color: black;
       font-size: 30px; }
 
-<<<<<<< HEAD
-body .page-template-video-page {
-  margin: 0; }
-=======
 .post-type-archive-event .entry-content {
   margin: 0; }
   .post-type-archive-event .entry-content .latest-history {
     height: 100vh;
     background: lightblue; }
->>>>>>> e743b4f3291f4150321eec9eae180b287e1034d3
+
+body .page-template-video-page {
+  margin: 0; }
 
 .page-template-video-page .site-header {
   display: none; }

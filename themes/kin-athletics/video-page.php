@@ -18,7 +18,7 @@ get_header(); ?>
       <h1 class="ath">ath</h1>
       <h1 class="let">let</h1>
       <h1 class="ics">ics</h1>
-      <div class="video-button-cont"><a href='#'>Explore</a></div>
+      <div class="video-button-cont"><a href='<?php echo esc_url( home_url( '/landing-page/') )?>'>Explore</a></div>
     </div>
   </div>
 </div>
