@@ -51,10 +51,28 @@ get_header(); ?>
           </div>
 
           <div class='events-carousel-info'>
-            <h1 class="header-title"><?php echo CFS()->get('current_event'); ?></h1>
-            <?php echo CFS()->get('current_event_info'); ?>
-            <h3 class='event-date'>happens: <?php echo CFS()->get('current_event_date'); ?></h3>
-            <div class='red-button'><a href='#'>buy tickets</a></div>
+            <?php 
+                $args = array( 'post_type' => 'event', 'order' => 'DESC', 'posts_per_page' => -1, 'orderby' => 'date' );
+                $event = get_posts( $args ); // returns an array of posts
+                $events_total = count($event);
+                global $post;
+            ?>
+            <h1 class="header-title">
+              <?php 
+                echo the_title();
+              ?>
+            </h1>
+            <?php
+              for( $i = 0 ; $i < $events_total ; $i++ ) : 
+                if ($event[$i]->post_name === $post->post_name) :
+            ?>
+              <div class="events-description>">
+              <?php echo CFS()->get('current_event_info', $event[$i]->ID); ?>
+              <h3 class='event-date'>happens: <?php echo CFS()->get('current_event_date', $event[$i]->ID); ?></h3>
+              <div class='red-button'><a href='#'>buy tickets</a></div>
+                <?php endif ?>
+              <?php endfor ?>
+            </div>
           </div>
         </div> <!-- end of relative carousel container -->
 
