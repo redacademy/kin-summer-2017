@@ -1,26 +1,39 @@
-.page-template-video-page{
-    .site-header{
+.page-template-video-page {
+    .site-header {
         display: none;
     }
 }
-
-.landing-container {
-    position:relative;
-    background-color: darkgray;
+.video-container {
+    width: 100%; 
+    height: 100%;
+    position: relative;
 }
 
+.video {
+    width: 100%; 
+    height: 100%;  
+    display: flex;  
+    justify-content: center; 
+    align-items: center;
+}
+.landing-video-text-container{
+    height: 100vh;
+    z-index: 999;
+    margin-top:0;
+    position: absolute;
 .kin, .ath, .let, .ics {
     font-size: 7.5rem;
     font-family: $font__accent; 
     background-color: transparent;
     color: black;
     text-transform:Uppercase;
-    position:absolute;
+    // position:absolute;
     line-height: 111px;
     margin:0;
     letter-spacing: 10px;
+    // z-index: 999;
 }
-
+}
 .kin {
     margin-top:0;
     margin-left: 0;
@@ -43,6 +56,4 @@
     @include front-red-button;
     position: absolute;
     bottom:10px;
-   
- 
 }
