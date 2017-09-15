@@ -72,19 +72,22 @@ get_header(); ?>
                                     </div>
                                 </div>
                         <?php endfor; ?> 
-                    <?php //endif; ?>
                 </div>  <!-- end of carousel -->
             </section>
             
-            <section id="community" class='our-community'>
-                <?php get_template_part( 'template-parts/about', 'community' ); ?>
-                <div class="red-button">
-                    <a src="#">Projects</a>
+            <section id="on-now-and-services" class='on-now-and-services'>
+                <div class='events-black-container'>
+                    <p>On Now - "dynamically generated title"</p>
+                    <div class='red-button'><a href='#'>Buy Tickets</a></div>
+                    <div class='red-button clear-bg'><a href='#'>Tell Me More</a></div>
+                    <img src="<?php get_template_directory_uri(); ?>/kin-athletics/wp-content/themes/kin-athletics/asset/images/pastevents_onnow.png"/>
                 </div>
-            </section>
-
-            <section id="place" class='our-place'>
-                <?php get_template_part( 'template-parts/about', 'place' ); ?>
+                        
+                <div class='events-white-container'>
+                    <p>More Feels On Our Services</p>
+                    <div class='social-button'><a href='#'>Facebook</a></div>
+                    <div class='social-button'><a href='#'>Instagram</a></div>
+                </div>
             </section>
 
         </div>  <!-- end of entry content-->
