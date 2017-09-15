@@ -1559,36 +1559,38 @@ body.page-template-archive-trainer .white {
       color: black;
       font-size: 30px; }
 
-<<<<<<< HEAD
 .page-template-video-page .site-header {
   display: none; }
-=======
-.post-type-archive-event .entry-content {
-  margin: 0; }
-  .post-type-archive-event .entry-content .latest-history {
-    height: 100vh;
-    background: lightblue; }
 
-/* Landing Page */
-.front-page-container {
-  color: white;
-  width: 100vw; }
->>>>>>> 71ad56e735b773652d812eae6423b4a33bdaf649
+.video-container {
+  width: 100%;
+  height: 100%;
+  position: relative; }
 
-.landing-container {
-  position: relative;
-  background-color: darkgray; }
+.video {
+  width: 100%;
+  height: 100%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center; }
 
-.kin, .ath, .let, .ics {
-  font-size: 7.5rem;
-  font-family: "Oswald", sans-serif;
-  background-color: transparent;
-  color: black;
-  text-transform: Uppercase;
-  position: absolute;
-  line-height: 111px;
-  margin: 0;
-  letter-spacing: 10px; }
+.landing-video-text-container {
+  height: 100vh;
+  z-index: 999;
+  margin-top: 0;
+  position: absolute; }
+  .landing-video-text-container .kin, .landing-video-text-container .ath, .landing-video-text-container .let, .landing-video-text-container .ics {
+    font-size: 7.5rem;
+    font-family: "Oswald", sans-serif;
+    background-color: transparent;
+    color: black;
+    text-transform: Uppercase;
+    line-height: 111px;
+    margin: 0;
+    letter-spacing: 10px; }
 
 .kin {
   margin-top: 0;
