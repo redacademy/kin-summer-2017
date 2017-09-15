@@ -9,8 +9,8 @@ get_header(); ?>
 
 <div class="video-container">
   <div class="video">
-    <video preload="preload" muted id="video" autoplay="autoplay" loop="loop">
-      <!-- <source src="./wp-content/themes/kin-athletics/asset/video/kin-vid.webm" type="video/webm"></source> -->
+    <video preload="preload" video height=100% controls muted id="video" autoplay="autoplay" loop="loop">
+      <source src="./wp-content/themes/kin-athletics/asset/video/kin-vid.webm" type="video/webm"></source>
       <source src="./wp-content/themes/kin-athletics/asset/video/kin-vid.mp4" type="video/mp4"></source>
     </video> 
     <div class="landing-video-text-container">
