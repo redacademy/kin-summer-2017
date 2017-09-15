@@ -28,14 +28,17 @@ get_header(); ?>
                 </div>
                 <div class="latest-history-carousel">
                     <div class='carousel-cell cell-image1'>
+                        <img src="<?php get_template_directory_uri(); ?>/kin-athletics/wp-content/themes/kin-athletics/asset/images/pastevents_bootcamp.png"/>
                     </div>
                     <div class='carousel-cell cell-image2'>
+                        <img src="<?php get_template_directory_uri(); ?>/kin-athletics/wp-content/themes/kin-athletics/asset/images/pastevents_bootcamp2.png"/>
                     </div>
                     <div class='carousel-cell cell-image3'>
+                        <img src="<?php get_template_directory_uri(); ?>/kin-athletics/wp-content/themes/kin-athletics/asset/images/pastevents_bootcamp3.png"/>
                     </div>       
                 </div>  <!-- end of carousel -->
             </section>
-
+            
             <section id="historical-moments" class="historical-moments">
                 <div class="past-events-carousel">
                     <?php 
@@ -44,38 +47,32 @@ get_header(); ?>
                         $events_count = count($event);
                         $number_of_posts = 6;
                         $number_of_pages = $events_count / $number_of_posts;
-                        $event_total = $events_count;
                         
+                       
                         for ($i = 0; $i < $number_of_pages; $i++) : ?>
-
-                        <div class='carousel-cell trainers'> 
-                            <div class="header-container">
-                                <h2 class="header-title--black">More Historical Moments</h2>
-                            </div>
-                            <div class="trainer-grid-wrapper">
-                                <?php        
-                                    $j = 0;
-                                    while( $j < $number_of_posts && $event_total > 0 ) : 
-                                ?>
-                        
-                                <div class='trainer-item-container'>
-                                    <div class='trainer-thumbnail-wrapper'>
-                                        <img class='trainer-thumbnail' src="<?php echo CFS()->get( 'trainer_profile_picture', $event[$j]->ID ); ?>"/>
+                                <div class='carousel-cell trainers'> 
+                                    <div class="header-container">
+                                        <h2 class="header-title--black">More Historical Moments</h2>
                                     </div>
-                                    <div class='next-trainer-wrapper'>
-                                        <a class='trainer-name' href='<?php echo $event[$j]->guid ?>'><?php echo $event[$j]->post_title; ?></a>
+                                    <div class="trainer-grid-wrapper">
+                                        <?php        
+                                            $j = 0;
+                                            while( $j < $number_of_posts && $event[$j] !== null ) :
+                                        ?>
+                                            <div class='trainer-item-container'>
+                                                <?php echo $event[$j]->post_title; ?>
+                                                <?php echo get_the_date('M/j g:i a', $event[$j]->ID); ?>
+                                                <?php echo get_the_date('Y', $event[$j]->ID); ?>
+                                            </div> 
+                                        <?php   
+                                            $j++;
+                                            endwhile;
+                                            array_splice($event, 0, $number_of_posts);
+                                        ?>
                                     </div>
-                                </div> 
-
-                                <?php   
-                                    $events_count--;
-                                    $j++;
-                                    endwhile;
-                                    array_splice($event, 0, $number_of_posts);
-                                ?>
-                            </div>
-                        </div>
-                    <?php endfor; ?>
+                                </div>
+                        <?php endfor; ?> 
+                    <?php //endif; ?>
                 </div>  <!-- end of carousel -->
             </section>
             

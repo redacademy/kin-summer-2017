@@ -938,7 +938,6 @@ p {
 /*--------------------------------------------------------------
 # Page Templates
 --------------------------------------------------------------*/
-/* Front page */
 .main-carousel {
   height: 100vh;
   color: white;
@@ -1561,15 +1560,53 @@ body.page-template-archive-trainer .white {
 
 .post-type-archive-event .entry-content {
   margin: 0; }
+  .post-type-archive-event .entry-content .carousel-cell :not(.carousel-cell-info) {
+    padding: 0; }
   .post-type-archive-event .entry-content .latest-history {
     height: 100vh;
+<<<<<<< HEAD
+    position: relative;
+    overflow: hidden; }
+    .post-type-archive-event .entry-content .latest-history .header-container {
+      position: absolute;
+      z-index: 2; }
+    .post-type-archive-event .entry-content .latest-history .latest-history-carousel img {
+      height: 100%;
+      max-width: none; }
+    .post-type-archive-event .entry-content .latest-history .flickity-page-dots {
+      bottom: 5%; }
+      .post-type-archive-event .entry-content .latest-history .flickity-page-dots .dot {
+        background: transparent;
+        height: 15px;
+        width: 15px;
+        border: 3px solid white;
+        opacity: 1; }
+        .post-type-archive-event .entry-content .latest-history .flickity-page-dots .dot.is-selected {
+          background: #fff; }
+  .post-type-archive-event .entry-content .historical-moments {
+    background: lightblue;
+    overflow: hidden; }
+    .post-type-archive-event .entry-content .historical-moments .header-container h2 {
+      margin: 0;
+      width: 100%; }
+    .post-type-archive-event .entry-content .historical-moments .past-events-carousel .flickity-prev-next-button {
+      top: 50%;
+      background: black; }
+=======
     background: lightblue; }
+
+body .page-template-video-page {
+  margin: 0; }
 
 .page-template-video-page .site-header {
   display: none; }
 
+.page-template-video-page .site-content {
+  overflow: hidden;
+  height: auto; }
+
 .video-container {
-  width: 100%;
+  width: 100vh;
   height: 100%;
   position: relative; }
 
@@ -1578,43 +1615,38 @@ body.page-template-archive-trainer .white {
   height: 100%;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: center;
-      justify-content: center;
   -ms-flex-align: center;
-      align-items: center; }
+      align-items: center;
+  overflow: hidden; }
 
 .landing-video-text-container {
-  height: 100vh;
   z-index: 999;
   margin-top: 0;
-  position: absolute; }
+  position: absolute;
+  width: 100vw; }
   .landing-video-text-container .kin, .landing-video-text-container .ath, .landing-video-text-container .let, .landing-video-text-container .ics {
     font-size: 7.5rem;
     font-family: "Oswald", sans-serif;
     background-color: transparent;
-    color: black;
+    color: white;
     text-transform: Uppercase;
-    line-height: 111px;
+    line-height: 101.5px;
     margin: 0;
-    letter-spacing: 10px; }
+    letter-spacing: 5px; }
 
-.kin {
-  margin-top: 0;
+.landing-video-text-container .kin {
   margin-left: 0; }
 
-.ath {
-  margin-top: 25%;
+.landing-video-text-container .ath {
   margin-left: 12%; }
 
-.let {
-  margin-top: 50%;
+.landing-video-text-container .let {
   margin-left: 35%; }
 
-.ics {
-  margin-top: 75.37%;
-  margin-left: 55%; }
+.landing-video-text-container .ics {
+  margin-left: 58%; }
 
-.video-button-cont {
+.landing-video-text-container .video-button-cont {
   color: white;
   text-transform: uppercase;
   border: none;
@@ -1624,10 +1656,14 @@ body.page-template-archive-trainer .white {
   padding: 2% 7%;
   font-family: "Oswald", sans-serif;
   position: absolute;
-  bottom: 10px; }
-  .video-button-cont:hover {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  margin-left: 33%; }
+  .landing-video-text-container .video-button-cont:hover {
     background-color: #850000; }
-  .video-button-cont a {
+  .landing-video-text-container .video-button-cont a {
     font-family: "Oswald", sans-serif;
     font-size: 1.5rem;
     font-weight: 300;
@@ -1635,6 +1671,7 @@ body.page-template-archive-trainer .white {
     text-align: center;
     text-decoration: none;
     line-height: 1.2; }
+>>>>>>> 10b451891f71b6c7d12a64f16d327752d6e9a38d
 
 .page-template-find-us p {
   margin: .50%; }
