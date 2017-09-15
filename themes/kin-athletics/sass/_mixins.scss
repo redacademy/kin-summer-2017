@@ -32,3 +32,9 @@
 		line-height: 1.2;
 	}
 }
+
+@mixin Desktop {
+	@media (min-width: 600px) {
+	  @content;
+	}
+  }

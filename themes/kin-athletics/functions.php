@@ -132,4 +132,6 @@ remove_action( 'shutdown', 'wp_ob_end_flush_all', 1 );
 
 include_once( get_stylesheet_directory() . '/inc/forms.php');
 
+include_once( get_stylesheet_directory() . '/inc/gforms-confirmation.php');
+
 add_filter('widget_text', 'do_shortcode');

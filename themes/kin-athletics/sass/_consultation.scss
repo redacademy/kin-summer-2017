@@ -27,7 +27,7 @@
     color: black;
     position: relative;
     opacity: 1;
-    margin-top: 50px;
+    margin-top: 70px;
 
     .gf_step_number{
       position: absolute;
@@ -49,6 +49,10 @@
   .gform_body{
     padding: 0 20px;
   }
+}
+
+#gf_page_steps_1 #gf_step_1_6{
+  display: none;
 }
 
 .gform_wrapper .gform_page_footer{
@@ -108,7 +112,7 @@
 }
 
 .gform_wrapper .gform_next_button,
-#gform_submit_button_1{
+#gform_submit_button_1, #gform_next_button_1_23{
   position: absolute;
   color: $color__brand-red;
   text-shadow: none;
@@ -122,7 +126,7 @@
 }
 
 #gform_next_button_1_8{   // next button for name form
-  top: 463px;
+  top: 483px;
   right: 12%;
   width: auto;
   font-size: 20px;
@@ -164,7 +168,7 @@
 //     see line 112 for black chatbox
 
 #gform_next_button_1_10{   // next button for email form
-  top: 323px;
+  top: 343px;
   right: 12%;
   width: auto;
   font-size: 20px;
@@ -178,7 +182,8 @@
 
 
 #gform_previous_button_1_10, #gform_previous_button_1_13, 
-#gform_previous_button_1_12, #gform_previous_button_1{
+#gform_previous_button_1_12, #gform_previous_button_1,
+#gform_previous_button_1_23{
   display: none;    // previous button
 }
 
@@ -247,11 +252,11 @@
   box-shadow: none;
 }
 
-#gform_next_button_1_13{
+#gform_next_button_1_13{                   //  next button
   transform: translate(-50%, -50%);
   left: 50%;
   right: 50%;
-  bottom: -6%;
+  bottom: -8%;
 }
 
 //       end of trainer grid selection
@@ -292,9 +297,9 @@
   width: 60%;
 }
 
-#gform_next_button_1_12{
+#gform_next_button_1_12{          // next button
   left: 50%;
-  bottom: 120px;
+  bottom: 105px;
   transform: translate(-50%, -50%);
 }
 // end of actions form
@@ -315,11 +320,13 @@
   padding-bottom: 40px;
 }
 
-#gform_submit_button_1{
-  right: 50%;
-  left: 50%;
-  bottom: 225px;
-  transform: translate(-50%, -50%);
+#gform_next_button_1_23{   // next button for name form
+  top: 440px;
+  right: 7%;
+  width: auto;
+  font-size: 20px;
+  font-weight: bold;
+  box-shadow: none;
 }
 
 // end of comment box
@@ -329,28 +336,21 @@
   margin-top: 60px;
 }
 
-#gform_confirmation_message_1 font a{
-  color: black;
-}
+#field_1_22{
+  padding: 20px 20px 0 20px;
 
-#gform_confirmation_message_1{
-  padding: 50px 20px 0 20px;
-
-  a{
-    display: block;
-    color: white;
-    max-width: 300px;
-    background-color: $color__brand-red;
-    padding: 10px;
-    font-size: 30px;
-    text-decoration: none;
+  .ready-submit{
+    padding: 0;
+    background-color: transparent;
     text-align: center;
-    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 0;
   }
-
+  
   p{
     color: white;
     padding: 30px;
+    margin: 15px 0;
     background-color: black;
   }
 
@@ -361,4 +361,18 @@
   br{
     display: none;
   }
+}
+
+#gform_submit_button_1{
+  right: 50%;
+  left: 50%;
+  top: 190px;
+  font-size: 30px;
+  background-color: $color__brand-red;
+  color: white;
+  max-width: 120px;
+  text-align: center;
+  padding: 0;
+  margin-top: 10px;
+  transform: translate(-50%, -50%);
 }

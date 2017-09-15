@@ -1558,8 +1558,16 @@ body.page-template-archive-trainer .white {
       color: black;
       font-size: 30px; }
 
+<<<<<<< HEAD
 body .page-template-video-page {
   margin: 0; }
+=======
+.post-type-archive-event .entry-content {
+  margin: 0; }
+  .post-type-archive-event .entry-content .latest-history {
+    height: 100vh;
+    background: lightblue; }
+>>>>>>> e743b4f3291f4150321eec9eae180b287e1034d3
 
 .page-template-video-page .site-header {
   display: none; }
@@ -1905,7 +1913,7 @@ body .page-template-video-page {
     color: black;
     position: relative;
     opacity: 1;
-    margin-top: 50px; }
+    margin-top: 70px; }
     .page-template-consultations .gform_wrapper .gf_step .gf_step_number {
       position: absolute;
       top: 50%;
@@ -1918,6 +1926,9 @@ body .page-template-video-page {
     border: none; }
   .page-template-consultations .gform_body {
     padding: 0 20px; }
+
+#gf_page_steps_1 #gf_step_1_6 {
+  display: none; }
 
 .gform_wrapper .gform_page_footer {
   border-top: none; }
@@ -1960,7 +1971,7 @@ body .page-template-video-page {
   display: none; }
 
 .gform_wrapper .gform_next_button,
-#gform_submit_button_1 {
+#gform_submit_button_1, #gform_next_button_1_23 {
   position: absolute;
   color: #A10000;
   text-shadow: none;
@@ -1969,11 +1980,11 @@ body .page-template-video-page {
   box-shadow: none;
   border: none; }
   .gform_wrapper .gform_next_button:hover,
-  #gform_submit_button_1:hover {
+  #gform_submit_button_1:hover, #gform_next_button_1_23:hover {
     outline: none; }
 
 #gform_next_button_1_8 {
-  top: 463px;
+  top: 483px;
   right: 12%;
   width: auto;
   font-size: 20px;
@@ -2008,14 +2019,15 @@ body .page-template-video-page {
   margin-bottom: -20px; }
 
 #gform_next_button_1_10 {
-  top: 323px;
+  top: 343px;
   right: 12%;
   width: auto;
   font-size: 20px;
   box-shadow: none; }
 
 #gform_previous_button_1_10, #gform_previous_button_1_13,
-#gform_previous_button_1_12, #gform_previous_button_1 {
+#gform_previous_button_1_12, #gform_previous_button_1,
+#gform_previous_button_1_23 {
   display: none; }
 
 #field_1_5 .gfield_description {
@@ -2069,7 +2081,7 @@ body .page-template-video-page {
   transform: translate(-50%, -50%);
   left: 50%;
   right: 50%;
-  bottom: -6%; }
+  bottom: -8%; }
 
 #input_1_14 {
   padding-bottom: 20px; }
@@ -2098,7 +2110,7 @@ body .page-template-video-page {
 
 #gform_next_button_1_12 {
   left: 50%;
-  bottom: 120px;
+  bottom: 105px;
   transform: translate(-50%, -50%); }
 
 #field_1_11 .gfield_label {
@@ -2110,38 +2122,47 @@ body .page-template-video-page {
 #gform_fields_1_5 #field_1_11 {
   padding-bottom: 40px; }
 
-#gform_submit_button_1 {
-  right: 50%;
-  left: 50%;
-  bottom: 225px;
-  transform: translate(-50%, -50%); }
+#gform_next_button_1_23 {
+  top: 440px;
+  right: 7%;
+  width: auto;
+  font-size: 20px;
+  font-weight: bold;
+  box-shadow: none; }
 
 #gform_confirmation_wrapper_1 {
   margin-top: 60px; }
 
-#gform_confirmation_message_1 font a {
-  color: black; }
-
-#gform_confirmation_message_1 {
-  padding: 50px 20px 0 20px; }
-  #gform_confirmation_message_1 a {
-    display: block;
-    color: white;
-    max-width: 300px;
-    background-color: #A10000;
-    padding: 10px;
-    font-size: 30px;
-    text-decoration: none;
+#field_1_22 {
+  padding: 20px 20px 0 20px; }
+  #field_1_22 .ready-submit {
+    padding: 0;
+    background-color: transparent;
     text-align: center;
-    margin: 0 auto; }
-  #gform_confirmation_message_1 p {
+    margin-top: 50px;
+    margin-bottom: 0; }
+  #field_1_22 p {
     color: white;
     padding: 30px;
+    margin: 15px 0;
     background-color: black; }
-  #gform_confirmation_message_1 span {
+  #field_1_22 span {
     color: #A10000; }
-  #gform_confirmation_message_1 br {
+  #field_1_22 br {
     display: none; }
+
+#gform_submit_button_1 {
+  right: 50%;
+  left: 50%;
+  top: 190px;
+  font-size: 30px;
+  background-color: #A10000;
+  color: white;
+  max-width: 120px;
+  text-align: center;
+  padding: 0;
+  margin-top: 10px;
+  transform: translate(-50%, -50%); }
 
 .site-footer {
   background-color: #A10000;
