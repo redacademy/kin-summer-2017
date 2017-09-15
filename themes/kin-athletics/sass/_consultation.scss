@@ -107,7 +107,8 @@
   display: none;  // the label below name form
 }
 
-.gform_wrapper .gform_next_button{
+.gform_wrapper .gform_next_button,
+#gform_submit_button_1{
   position: absolute;
   color: $color__brand-red;
   text-shadow: none;
@@ -310,6 +311,17 @@
   border-color: $color__brand-red;
 }
 
+#gform_fields_1_5 #field_1_11{
+  padding-bottom: 40px;
+}
+
+#gform_submit_button_1{
+  right: 50%;
+  left: 50%;
+  bottom: 225px;
+  transform: translate(-50%, -50%);
+}
+
 // end of comment box
 
 
@@ -321,3 +333,32 @@
   color: black;
 }
 
+#gform_confirmation_message_1{
+  padding: 50px 20px 0 20px;
+
+  a{
+    display: block;
+    color: white;
+    max-width: 300px;
+    background-color: $color__brand-red;
+    padding: 10px;
+    font-size: 30px;
+    text-decoration: none;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  p{
+    color: white;
+    padding: 30px;
+    background-color: black;
+  }
+
+  span{
+    color: $color__brand-red;
+  }
+
+  br{
+    display: none;
+  }
+}
