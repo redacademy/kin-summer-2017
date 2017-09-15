@@ -938,7 +938,6 @@ p {
 /*--------------------------------------------------------------
 # Page Templates
 --------------------------------------------------------------*/
-/* Front page */
 .main-carousel {
   height: 100vh;
   color: white;
@@ -1565,6 +1564,7 @@ body.page-template-archive-trainer .white {
     padding: 0; }
   .post-type-archive-event .entry-content .latest-history {
     height: 100vh;
+<<<<<<< HEAD
     position: relative;
     overflow: hidden; }
     .post-type-archive-event .entry-content .latest-history .header-container {
@@ -1592,6 +1592,86 @@ body.page-template-archive-trainer .white {
     .post-type-archive-event .entry-content .historical-moments .past-events-carousel .flickity-prev-next-button {
       top: 50%;
       background: black; }
+=======
+    background: lightblue; }
+
+body .page-template-video-page {
+  margin: 0; }
+
+.page-template-video-page .site-header {
+  display: none; }
+
+.page-template-video-page .site-content {
+  overflow: hidden;
+  height: auto; }
+
+.video-container {
+  width: 100vh;
+  height: 100%;
+  position: relative; }
+
+.video {
+  width: 100%;
+  height: 100%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  overflow: hidden; }
+
+.landing-video-text-container {
+  z-index: 999;
+  margin-top: 0;
+  position: absolute;
+  width: 100vw; }
+  .landing-video-text-container .kin, .landing-video-text-container .ath, .landing-video-text-container .let, .landing-video-text-container .ics {
+    font-size: 7.5rem;
+    font-family: "Oswald", sans-serif;
+    background-color: transparent;
+    color: white;
+    text-transform: Uppercase;
+    line-height: 101.5px;
+    margin: 0;
+    letter-spacing: 5px; }
+
+.landing-video-text-container .kin {
+  margin-left: 0; }
+
+.landing-video-text-container .ath {
+  margin-left: 12%; }
+
+.landing-video-text-container .let {
+  margin-left: 35%; }
+
+.landing-video-text-container .ics {
+  margin-left: 58%; }
+
+.landing-video-text-container .video-button-cont {
+  color: white;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 0;
+  background-color: #A10000;
+  box-shadow: 0 0.5px 1px 0 rgba(0, 0, 0, 0.5);
+  padding: 2% 7%;
+  font-family: "Oswald", sans-serif;
+  position: absolute;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  margin-left: 33%; }
+  .landing-video-text-container .video-button-cont:hover {
+    background-color: #850000; }
+  .landing-video-text-container .video-button-cont a {
+    font-family: "Oswald", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 300;
+    letter-spacing: .5px;
+    text-align: center;
+    text-decoration: none;
+    line-height: 1.2; }
+>>>>>>> 10b451891f71b6c7d12a64f16d327752d6e9a38d
 
 .page-template-find-us p {
   margin: .50%; }
@@ -1863,7 +1943,7 @@ body.page-template-archive-trainer .white {
     color: black;
     position: relative;
     opacity: 1;
-    margin-top: 50px; }
+    margin-top: 70px; }
     .page-template-consultations .gform_wrapper .gf_step .gf_step_number {
       position: absolute;
       top: 50%;
@@ -1876,6 +1956,9 @@ body.page-template-archive-trainer .white {
     border: none; }
   .page-template-consultations .gform_body {
     padding: 0 20px; }
+
+#gf_page_steps_1 #gf_step_1_6 {
+  display: none; }
 
 .gform_wrapper .gform_page_footer {
   border-top: none; }
@@ -1917,7 +2000,8 @@ body.page-template-archive-trainer .white {
 #input_1_1_3_container label {
   display: none; }
 
-.gform_wrapper .gform_next_button {
+.gform_wrapper .gform_next_button,
+#gform_submit_button_1, #gform_next_button_1_23 {
   position: absolute;
   color: #A10000;
   text-shadow: none;
@@ -1925,11 +2009,12 @@ body.page-template-archive-trainer .white {
   background-color: transparent;
   box-shadow: none;
   border: none; }
-  .gform_wrapper .gform_next_button:hover {
+  .gform_wrapper .gform_next_button:hover,
+  #gform_submit_button_1:hover, #gform_next_button_1_23:hover {
     outline: none; }
 
 #gform_next_button_1_8 {
-  top: 463px;
+  top: 483px;
   right: 12%;
   width: auto;
   font-size: 20px;
@@ -1964,14 +2049,15 @@ body.page-template-archive-trainer .white {
   margin-bottom: -20px; }
 
 #gform_next_button_1_10 {
-  top: 323px;
+  top: 343px;
   right: 12%;
   width: auto;
   font-size: 20px;
   box-shadow: none; }
 
 #gform_previous_button_1_10, #gform_previous_button_1_13,
-#gform_previous_button_1_12, #gform_previous_button_1 {
+#gform_previous_button_1_12, #gform_previous_button_1,
+#gform_previous_button_1_23 {
   display: none; }
 
 #field_1_5 .gfield_description {
@@ -2025,7 +2111,7 @@ body.page-template-archive-trainer .white {
   transform: translate(-50%, -50%);
   left: 50%;
   right: 50%;
-  bottom: -6%; }
+  bottom: -8%; }
 
 #input_1_14 {
   padding-bottom: 20px; }
@@ -2054,7 +2140,7 @@ body.page-template-archive-trainer .white {
 
 #gform_next_button_1_12 {
   left: 50%;
-  bottom: 120px;
+  bottom: 105px;
   transform: translate(-50%, -50%); }
 
 #field_1_11 .gfield_label {
@@ -2063,11 +2149,50 @@ body.page-template-archive-trainer .white {
 #input_1_11 {
   border-color: #A10000; }
 
+#gform_fields_1_5 #field_1_11 {
+  padding-bottom: 40px; }
+
+#gform_next_button_1_23 {
+  top: 440px;
+  right: 7%;
+  width: auto;
+  font-size: 20px;
+  font-weight: bold;
+  box-shadow: none; }
+
 #gform_confirmation_wrapper_1 {
   margin-top: 60px; }
 
-#gform_confirmation_message_1 font a {
-  color: black; }
+#field_1_22 {
+  padding: 20px 20px 0 20px; }
+  #field_1_22 .ready-submit {
+    padding: 0;
+    background-color: transparent;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 0; }
+  #field_1_22 p {
+    color: white;
+    padding: 30px;
+    margin: 15px 0;
+    background-color: black; }
+  #field_1_22 span {
+    color: #A10000; }
+  #field_1_22 br {
+    display: none; }
+
+#gform_submit_button_1 {
+  right: 50%;
+  left: 50%;
+  top: 190px;
+  font-size: 30px;
+  background-color: #A10000;
+  color: white;
+  max-width: 120px;
+  text-align: center;
+  padding: 0;
+  margin-top: 10px;
+  transform: translate(-50%, -50%); }
 
 .site-footer {
   background-color: #A10000;

@@ -14,7 +14,7 @@ get_header(); ?>
     <div class="project-td-text">
       <h2>Kin Athletics Presents</h2>
       <?php echo CFS()->get('front_heading');?>
-      <div class="td-button-cont"><a href='#'>Tell Me More</a></div>
+      <div class="td-button-cont"><a href='<?php echo esc_url( home_url( '/events/') )?>'>Tell Me More</a></div>
     </div>
 
     <div class="main-carousel">
@@ -43,7 +43,7 @@ get_header(); ?>
     <div class="who-we-are-text">
       <h2>Who We Are</h2>
       <?php echo CFS()->get('who_we_are_text');?>
-      <div class="who-button-cont"><a href='#'>Tell Me More</a></div>
+      <div class="who-button-cont"><a href='<?php echo esc_url( home_url( '/about/') )?>'>Tell Me More</a></div>
     </div>
     
   </section>
@@ -55,7 +55,7 @@ get_header(); ?>
     <div class="what-we-do-text">
       <h2>What We Do</h2>
       <?php echo CFS()->get('what_we_do_text');?>
-      <div class="what-button-cont"><a href='#'>Tell Me More</a></div></div>
+      <div class="what-button-cont"><a href='<?php echo esc_url( home_url( '/services/') )?>'>Tell Me More</a></div></div>
     </div>
    
   </section>
