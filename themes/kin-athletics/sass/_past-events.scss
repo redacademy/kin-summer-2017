@@ -1,24 +1,62 @@
 .post-type-archive-event {
-
     .entry-content {
         margin: 0;
 
+        .carousel-cell :not(.carousel-cell-info) {
+            padding: 0;
+        }
+
         .latest-history {
             height: 100vh;
-            background: lightblue;
+            position: relative;
+            overflow: hidden;
             
-            h2 {
+            .header-container {
+                position: absolute;
+                z-index: 2;
+            }
+            
+            .latest-history-carousel {
 
+                img {
+                    height: 100%;
+                    max-width: none;
+                }
+            }
+
+            .flickity-page-dots {
+                bottom: 5%;
+
+                .dot {
+                    background: rgba(0,0,0,0);
+                    height: 15px;
+                    width: 15px;
+                    border: 3px solid rgb(255,255,255);
+                    opacity: 1;
+
+                    &.is-selected {
+                        background: #fff;
+                    }
+                }
             }
         }
 
         .historical-moments {
+            background: lightblue;
+            overflow: hidden;
 
-            .carousel-cell.trainers {
-                .header-container {
-                    h2 {
-                        padding: 0;
-                    }
+            .header-container {
+
+                h2 {
+                    margin: 0;
+                    width: 100%;
+                }
+            }
+
+            .past-events-carousel {
+                .flickity-prev-next-button {
+                    top: 50%;
+                    background: rgb(0,0,0);
                 }
             }
         }
