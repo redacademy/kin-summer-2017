@@ -835,7 +835,7 @@ object {
 
 .personal-training .price-box-container, .group-training .price-box-container {
   width: 80%;
-  height: 16%;
+  height: 20%;
   border: 2px solid white;
   display: -ms-flexbox;
   display: flex;
@@ -890,7 +890,9 @@ object {
 
 .page-template-services h1 {
   margin: auto;
-  text-align: center; }
+  text-align: center;
+  font-size: 1.2rem;
+  max-width: 80%; }
 
 .services-icons, body.page-template-archive-trainer .our-origin, body.page-template-archive-trainer .our-community, body.page-template-archive-trainer .our-place {
   height: 100vh;
@@ -911,7 +913,8 @@ object {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-flow: row wrap;
-      flex-flow: row wrap; }
+      flex-flow: row wrap;
+  margin: 0; }
   .circles-container .icon-container {
     width: 50%;
     height: 123px;
@@ -931,7 +934,8 @@ object {
       color: white;
       text-transform: uppercase;
       font-weight: 500;
-      font-family: "Oswald"; }
+      font-family: "Oswald";
+      padding-top: 5px; }
 
 .services-featured {
   display: block;
@@ -948,6 +952,15 @@ object {
     text-transform: uppercase;
     padding: 30px 30px 20px 20px;
     line-height: 73px; }
+  .services-featured p {
+    font-family: Oswald; }
+  .services-featured .services-button-flex {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+  .services-featured .trainer-name {
+    font-weight: lighter; }
   .services-featured span {
     font-size: 70px;
     font-weight: lighter; }
@@ -966,8 +979,8 @@ object {
     .services-featured .red-button a, .services-featured .consultation-button a, .services-featured .social-button a {
       display: block;
       text-align: center;
-      color: white;
-      padding-top: 3%; }
+      color: #FFFFFF;
+      padding-top: 5px; }
   .services-featured .social-button {
     margin-top: 15px; }
 
@@ -986,15 +999,62 @@ object {
   .page-template-services .white .red-button, .page-template-services .white .consultation-button, .page-template-services .white .social-button {
     text-align: center;
     width: 50%;
-    border-width: 3px; }
+    border-width: 3px;
+    box-shadow: 0 2.5px 4px 0 rgba(0, 0, 0, 0.5); }
     .page-template-services .white .red-button a, .page-template-services .white .consultation-button a, .page-template-services .white .social-button a {
       color: black;
       font-size: 30px; }
 
 @media only screen and (min-width: 600px) {
+  .page-template-services h1 {
+    font-size: 2.9rem; }
   .circles-container {
     -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap; } }
+        flex-wrap: nowrap; }
+    .circles-container .icon-container {
+      height: 250px; }
+      .circles-container .icon-container p {
+        font-size: 1.5rem;
+        padding-top: 15px; }
+  h2 {
+    text-align: left;
+    font-size: 5.5rem; }
+  .personal-training .price-box-container {
+    margin: 0;
+    margin-left: 40px;
+    max-width: 400px;
+    height: 16%; }
+  .services-featured h4 {
+    text-align: right;
+    font-size: 5.5rem; }
+  .services-featured p {
+    font-size: 2.5rem;
+    padding-top: 130px;
+    font-family: Oswald;
+    font-weight: normal; }
+  .services-featured .services-button-flex {
+    padding-top: 10px;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -ms-flex-pack: end;
+        justify-content: flex-end; }
+  .services-featured .red-button, .services-featured .consultation-button {
+    max-width: 400px;
+    margin: 0;
+    font-size: 2rem; }
+  .services-featured .social-button {
+    max-width: 400px;
+    margin: 0;
+    margin-left: 30px; }
+  .social-buttons-flex {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap; }
+  .page-template-services .white p {
+    font-size: 1.7rem;
+    font-weight: lighter;
+    font-family: Open Sans Condensed; } }
 
 /*--------------------------------------------------------------
 # About

@@ -24,25 +24,25 @@ get_header(); ?>
                     <a src="#">
                         <img src="<?php echo get_template_directory_uri(); ?>/asset/icons/ouroriginicon.svg"/>
                     </a>
-                    <p>Our Origin</p>
+                    <p>Our<br>Origin</p>
                 </div>
                 <div class="icon-container">
                     <a src="#">
                         <img src="<?php echo get_template_directory_uri(); ?>/asset/icons/ourtrainericon.svg"/>
                     </a>
-                    <p>Our Trainer</p>
+                    <p>Our<br>Trainer</p>
                 </div>
                 <div class="icon-container">
                     <a src="#">
                         <img src="<?php echo get_template_directory_uri(); ?>/asset/icons/ourcommunityicon.svg"/>
                     </a>
-                    <p>Our Community</p>
+                    <p>Our<br>Community</p>
                 </div>
                 <div class="icon-container">
                     <a src="#">
                         <img src="<?php echo get_template_directory_uri(); ?>/asset/icons/freeconsultationicon.svg"/>
                     </a>
-                    <p>Our Consultation</p>
+                    <p>Free<br>Consultation</p>
                 </div>
             </div>
         </section>
