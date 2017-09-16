@@ -1,15 +1,138 @@
 .post-type-archive-event {
-
     .entry-content {
         margin: 0;
 
+        .carousel-cell :not(.carousel-cell-info) {
+            padding: 0;
+        }
+
         .latest-history {
             height: 100vh;
-            background: lightblue;
+            position: relative;
+            overflow: hidden;
             
-            h2 {
-
+            .header-container {
+                position: absolute;
+                z-index: 2;
             }
+            
+            .latest-history-carousel {
+
+                img {
+                    height: 100%;
+                    max-width: none;
+                }
+            }
+
+            .flickity-page-dots {
+                bottom: 5%;
+
+                .dot {
+                    background: rgba(0,0,0,0);
+                    height: 15px;
+                    width: 15px;
+                    border: 3px solid rgb(255,255,255);
+                    opacity: 1;
+
+                    &.is-selected {
+                        background: #fff;
+                    }
+                }
+            }
+        }
+
+        .historical-moments {
+            background: lightblue;
+            overflow: hidden;
+
+            .header-container {
+
+                h2 {
+                    margin: 0;
+                    width: 100%;
+                }
+            }
+
+            .past-events-carousel {
+                .flickity-prev-next-button {
+                    top: 50%;
+                    background: rgb(0,0,0);
+                }
+            }
+        }
+    }
+
+    .events-black-container, .events-white-container {
+        text-align: center;
+        padding: 20px 0;
+      
+        p {
+          font-size: 28px;
+          margin: 0;
+          font-weight: bold;
+          margin-bottom: 10px;
+        }
+    }
+      
+    .events-black-container{
+        background-color: black;
+        color: white;
+        display: flex;
+        flex-flow: column nowrap;
+        position: relative;
+        overflow: hidden;
+    
+        p {
+            text-transform: uppercase;
+            position: relative;
+            z-index: 1;
+        }
+
+        img {
+            position: absolute;
+            z-index: 0;
+            transform: translate(-50%, -50%);
+            top: 50%;
+            left: 25%;
+            height: 100%;
+        }
+    
+        .red-button{
+            position: relative;
+            align-self: flex-end;
+            margin: 0 1rem 1rem 0;
+            z-index: 1;
+    
+            a {
+                padding: 0;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                width: 100%;
+                transform: translate(-50%, -50%);
+                font-size: 30px;
+            }
+
+            &.clear-bg {
+                background: rgba(0,0,0,0);
+            }
+        }
+    }
+      
+      
+    .events-white-container{
+        border-top: 2px black solid;
+      
+        p {
+          text-transform: uppercase;
+        }
+      
+        .social-button{
+          width: 60%;
+      
+          a{
+            font-size: 30px;
+          }
         }
     }
 }
