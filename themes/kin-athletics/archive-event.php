@@ -15,14 +15,14 @@ get_header(); ?>
         <div class='entry-content'>
             <section id="latest-history" class="latest-history">
                 <div class="header-container">
-                    <h2 class="header-title">Latest History:</h2>
+                    <h2 class="header-title un-bold">Latest History:</h2>
                     <?php 
                         $args = array( 'post_type' => 'event', 'order' => 'DESC', 'posts_per_page' => 1, 'orderby' => 'date' );
                         $events = get_posts ( $args );
                     ?>
 
-                    <h2 class="header-title"><?php echo CFS()->get('current_event', $events[0]->ID);?></h2>
-                    <p class="latest-history-description"><?php echo CFS()->get('current_event_info', $events[0]->ID); ?></p>
+                    <h2 class="header-title"><?php echo esc_html( get_the_title($events[0]->ID) ) ;?></h2>
+                    <?php echo CFS()->get('current_event_info', $events[0]->ID); ?>
                     <h3 class='event-date'>happens: <?php echo CFS()->get('current_event_date', $events[0]->ID); ?></h3>
                     <div class='red-button'><a href='#'>buy tickets</a></div>
                 </div>
@@ -48,22 +48,26 @@ get_header(); ?>
                         $number_of_posts = 6;
                         $number_of_pages = $events_count / $number_of_posts;
                         
-                       
+                        
                         for ($i = 0; $i < $number_of_pages; $i++) : ?>
-                                <div class='carousel-cell trainers'> 
+                                <div class='carousel-cell past-events'> 
                                     <div class="header-container">
                                         <h2 class="header-title--black">More Historical Moments</h2>
                                     </div>
-                                    <div class="trainer-grid-wrapper">
+                                    <div class="past-events-grid-wrapper">
                                         <?php        
                                             $j = 0;
                                             while( $j < $number_of_posts && $event[$j] !== null ) :
                                         ?>
-                                            <div class='trainer-item-container'>
-                                                <?php echo $event[$j]->post_title; ?>
-                                                <?php echo get_the_date('M/j g:i a', $event[$j]->ID); ?>
-                                                <?php echo get_the_date('Y', $event[$j]->ID); ?>
-                                            </div> 
+                                        <div class='past-events-item-container'>
+                                            <div class="past-events-info">
+                                                <a href="<?php echo $event[$j]->guid ?>">
+                                                    <p class="past-event-title"><?php echo $event[$j]->post_title; ?></p>
+                                                    <p class="past-event-date"><?php echo get_the_date('M/j Y', $event[$j]->ID); ?></p>
+                                                </a>
+                                            </div>
+                                            <img src="<?php get_template_directory_uri(); ?>/kin-athletics/wp-content/themes/kin-athletics/asset/icons/plainicon.svg"/>
+                                        </div> 
                                         <?php   
                                             $j++;
                                             endwhile;

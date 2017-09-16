@@ -6,14 +6,53 @@
             padding: 0;
         }
 
+        .header-title {
+            font-size: 35px;
+            margin: 1.5rem;
+            line-height: 35px;
+            font-family: $font__main;
+            font-weight: bold;
+        }
+
         .latest-history {
             height: 100vh;
             position: relative;
             overflow: hidden;
+            color: white;
             
             .header-container {
                 position: absolute;
                 z-index: 2;
+                transform: translate(-50%, -50%);
+                top: 50%;
+                left: 50%;
+                width: 100%;
+                font-family: $font__main;
+
+                h2.un-bold {
+                    font-weight: 300;
+                }
+
+                .red-button {
+                    text-align: center;
+                    margin-left: 1rem;
+                }
+
+                p {
+                    background: rgba(0,0,0,0.65);
+                    padding: 1rem;
+                }
+
+                h3 {
+                    display: flex;
+                    margin: 1rem;
+
+                    p {
+                        background: none;
+                        margin: 0 0 0 0.5rem;
+                        padding: 0;
+                    }
+                }
             }
             
             .latest-history-carousel {
@@ -42,7 +81,6 @@
         }
 
         .historical-moments {
-            background: lightblue;
             overflow: hidden;
 
             .header-container {
@@ -51,6 +89,77 @@
                     margin: 0;
                     width: 100%;
                 }
+            }
+
+            .carousel-cell.past-events {
+                display: flex;
+                flex-flow: row wrap;
+                align-items: center;
+                align-content: center;
+              }
+            
+              .past-events-carousel {
+            
+                .header-container {
+                  width: 100%;
+                  height: auto;
+                  text-align: center;
+            
+                  h2.header-title--black {
+                    width: 100%;
+                    font-size: 20px;
+                  }
+                }
+            
+                .past-events-grid-wrapper {
+                  width: 100%;
+                  display: flex;
+                  flex-flow: row wrap;
+                  height: 75%;
+                  justify-content: center;
+                  text-align: center;
+            
+                  .past-events-item-container {
+                    width: 40%;
+                    max-height: 200px;
+                    margin: 0.5rem;
+                    position: relative;
+
+                    img {
+                        height: 100%;
+                    }
+
+                    p {
+                        margin: 0;
+                        color: white;
+                        font-family: $font__accent;
+                        font-size: 20px;
+                        width: 100%;
+                    }
+
+                    .past-events-info, img {
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        width: 100%;
+                    }
+
+                    .past-events-info {
+                        padding: 1rem;
+                        z-index: 999;
+
+                        a {
+                            text-decoration: none;
+                        }
+
+                        .past-event-date {
+                            font-size: 14px;
+                            font-weight: 300;
+                        }
+                    }
+                }
+              }    
             }
 
             .past-events-carousel {
