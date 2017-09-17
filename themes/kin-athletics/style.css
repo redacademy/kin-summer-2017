@@ -1593,16 +1593,16 @@ body.page-template-archive-trainer .white {
       .page-template-archive-event .entry-content .latest-history .header-container .red-button,
       .page-template-archive-event .entry-content .latest-history .header-container .consultation-button {
         text-align: center;
-        margin-left: 1rem; }
+        margin-left: 1.5rem; }
       .post-type-archive-event .entry-content .latest-history .header-container p,
       .page-template-archive-event .entry-content .latest-history .header-container p {
         background: rgba(0, 0, 0, 0.65);
-        padding: 1rem; }
+        padding: 1.5rem; }
       .post-type-archive-event .entry-content .latest-history .header-container h3,
       .page-template-archive-event .entry-content .latest-history .header-container h3 {
         display: -ms-flexbox;
         display: flex;
-        margin: 1rem; }
+        margin: 1.5rem; }
         .post-type-archive-event .entry-content .latest-history .header-container h3 p,
         .page-template-archive-event .entry-content .latest-history .header-container h3 p {
           background: none;
