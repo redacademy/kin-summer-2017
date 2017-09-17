@@ -18,11 +18,12 @@ body.single-trainer {
         bottom: 0;
         line-height: 0.85;
         text-transform: uppercase; 
-        text-align: center; 
+        text-align: center;
+        right: 0;
+        left: 0; 
     }
 
     .site-content {
-        max-width: $base__width-mobile;
         width: 100%;
         margin: 0 auto;
 
@@ -148,8 +149,9 @@ body.single-trainer {
         }
 
         .trainer-meta {
-            max-height: 50vh;
+            min-height: 50vh;
             width: 100%;
+            background: #000;
         }
 
         .other-trainers {

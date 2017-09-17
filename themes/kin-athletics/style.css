@@ -1166,10 +1166,11 @@ body.single-trainer .entry-title {
   bottom: 0;
   line-height: 0.85;
   text-transform: uppercase;
-  text-align: center; }
+  text-align: center;
+  right: 0;
+  left: 0; }
 
 body.single-trainer .site-content {
-  max-width: 400px;
   width: 100%;
   margin: 0 auto; }
   body.single-trainer .site-content p.trainer-sub-titles {
@@ -1258,8 +1259,9 @@ body.single-trainer .default-content {
     margin-top: 2em;
     padding: 0 1em; }
   body.single-trainer .default-content .trainer-meta {
-    max-height: 50vh;
-    width: 100%; }
+    min-height: 50vh;
+    width: 100%;
+    background: #000; }
   body.single-trainer .default-content .other-trainers .next-trainer.trainer-sub-titles {
     margin: 0;
     text-align: center;
@@ -1363,8 +1365,7 @@ body.page-template-archive-trainer .entry-content {
   margin: 0 auto; }
   body.page-template-archive-trainer .entry-content .header-container {
     display: -ms-flexbox;
-    display: flex;
-    height: 25%; }
+    display: flex; }
     body.page-template-archive-trainer .entry-content .header-container h1 {
       margin: auto;
       text-align: center; }
@@ -1390,11 +1391,9 @@ body.page-template-archive-trainer .carousel-cell.trainers {
   -ms-flex-pack: center;
       justify-content: center; }
 
-body.page-template-archive-trainer .trainers-grid .header-container {
-  width: 100%;
-  height: auto; }
-  body.page-template-archive-trainer .trainers-grid .header-container h2.header-title--black {
-    width: 100%; }
+body.page-template-archive-trainer .trainers-grid .header-container h2.header-title--black {
+  margin: 0 0 1rem;
+  width: 100%; }
 
 body.page-template-archive-trainer .trainers-grid .trainer-grid-wrapper {
   width: 100%;
@@ -1407,7 +1406,9 @@ body.page-template-archive-trainer .trainers-grid .trainer-grid-wrapper {
       justify-content: center; }
   body.page-template-archive-trainer .trainers-grid .trainer-grid-wrapper .trainer-item-container {
     width: 40%;
-    max-height: 200px; }
+    max-height: 200px;
+    position: relative;
+    height: 30%; }
     body.page-template-archive-trainer .trainers-grid .trainer-grid-wrapper .trainer-item-container .trainer-thumbnail-wrapper {
       display: -ms-flexbox;
       display: flex;
@@ -1419,7 +1420,7 @@ body.page-template-archive-trainer .trainers-grid .trainer-grid-wrapper {
       border: 2px solid #a10000;
       border-radius: 50%;
       margin: auto;
-      width: 90%;
+      width: 70%;
       height: 70%;
       background: #C6CDDF; }
       body.page-template-archive-trainer .trainers-grid .trainer-grid-wrapper .trainer-item-container .trainer-thumbnail-wrapper img {
@@ -1451,14 +1452,18 @@ body.page-template-archive-trainer #origin-icon {
   margin-right: 50px; }
 
 body.page-template-archive-trainer .circles-container {
-  height: 50%;
+  height: 75%;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-flow: row wrap;
-      flex-flow: row wrap; }
+      flex-flow: row wrap;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: space-evenly;
+      justify-content: space-evenly; }
   body.page-template-archive-trainer .circles-container .icon-container {
     width: 50%;
-    height: 123px;
+    height: 50%;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-flow: column nowrap;
@@ -1467,8 +1472,18 @@ body.page-template-archive-trainer .circles-container {
         justify-content: center;
     -ms-flex-align: center;
         align-items: center; }
-    body.page-template-archive-trainer .circles-container .icon-container a, body.page-template-archive-trainer .circles-container .icon-container img {
-      height: 100%; }
+    body.page-template-archive-trainer .circles-container .icon-container a {
+      height: 100%;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+      -ms-flex-align: center;
+          align-items: center;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly; }
+    body.page-template-archive-trainer .circles-container .icon-container img {
+      height: 75%; }
     body.page-template-archive-trainer .circles-container .icon-container p {
       margin: 0;
       color: white;
