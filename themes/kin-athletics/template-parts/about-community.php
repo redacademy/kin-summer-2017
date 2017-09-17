@@ -5,4 +5,7 @@
     <div class="description-container">
         <p class="item-description"><?php echo CFS()->get( 'about_our_community'); ?></p>
     </div>
+    <div class="red-button">
+        <a src="#">Projects</a>
+    </div>
 </section>

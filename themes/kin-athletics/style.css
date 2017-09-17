@@ -1504,7 +1504,7 @@ body.page-template-archive-trainer .description-container p {
   background-color: rgba(0, 0, 0, 0.6);
   margin: 0;
   color: white;
-  padding: 1% 1em;
+  padding: 1% 1.5rem;
   font-size: 20px;
   font-weight: 300; }
 
@@ -1539,11 +1539,8 @@ body.page-template-archive-trainer .our-community {
   border-top: 1px solid white;
   position: relative; }
   body.page-template-archive-trainer .our-community .red-button, body.page-template-archive-trainer .our-community .consultation-button {
-    margin-left: 2em;
-    -ms-flex-item-align: start;
-        align-self: flex-start;
-    position: relative;
-    bottom: 120px; }
+    margin-top: 1.5rem;
+    margin-left: 1.5rem; }
 
 body.page-template-archive-trainer .our-place {
   background: url("../../asset/images/aboutpage_ourplace.png") no-repeat 70% 70%;

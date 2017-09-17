@@ -94,9 +94,6 @@ get_header(); ?>
 
         <section id="community" class='our-community'>
             <?php get_template_part( 'template-parts/about', 'community' ); ?>
-            <div class="red-button">
-                <a src="#">Projects</a>
-            </div>
         </section>
 
         <section id="place" class='our-place'>
