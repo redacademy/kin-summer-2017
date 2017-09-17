@@ -75,7 +75,7 @@ get_header(); ?>
                                             <p class="past-event-date"><?php echo get_the_date('M/j Y', $past_events[$j]->ID); ?></p>
                                         </a>
                                     </div>
-                                    <img src="<?php get_template_directory_uri(); ?>/kin-athletics/wp-content/themes/kin-athletics/asset/icons/plainicon.svg"/>
+                                    <img src="<?php echo get_template_directory_uri(); ?>/asset/icons/plainicon.svg"/>
                                 </div> 
                                 <?php   
                                     $j++;
@@ -95,7 +95,7 @@ get_header(); ?>
                         <a href='<?php echo $event_ticket_url; ?>'>Buy Tickets</a>
                     </div>
                     <div class='red-button clear-bg'><a href='<?php echo $event_page_url; ?>'>Tell Me More</a></div>
-                    <img src="<?php get_template_directory_uri(); ?>/kin-athletics/wp-content/themes/kin-athletics/asset/images/pastevents_onnow.png"/>
+                    <img src="<?php echo get_template_directory_uri(); ?>/asset/images/pastevents_onnow.png"/>
                 </div>
                         
                 <div class='events-white-container'>
