@@ -2116,7 +2116,7 @@ body .page-template-video-page {
 
 .event-template-default iframe {
   margin-top: 15px;
-  height: 100%; }
+  height: 100vh; }
 
 .page-template-consultations {
   background-image: url("../../asset/images/freeconsultation_bg.png");
