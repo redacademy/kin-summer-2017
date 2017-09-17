@@ -42,13 +42,13 @@ get_header(); ?>
                 </div>
                 <div class="latest-history-carousel">
                     <div class='carousel-cell cell-image1'>
-                        <img src="<?php get_template_directory_uri(); ?>/kin-athletics/wp-content/themes/kin-athletics/asset/images/pastevents_bootcamp.png"/>
+                        <img src="<?php get_template_directory_uri(); ?>/wp-content/themes/kin-athletics/asset/images/pastevents_bootcamp.png"/>
                     </div>
                     <div class='carousel-cell cell-image2'>
-                        <img src="<?php get_template_directory_uri(); ?>/kin-athletics/wp-content/themes/kin-athletics/asset/images/pastevents_bootcamp2.png"/>
+                        <img src="<?php get_template_directory_uri(); ?>/wp-content/themes/kin-athletics/asset/images/pastevents_bootcamp2.png"/>
                     </div>
                     <div class='carousel-cell cell-image3'>
-                        <img src="<?php get_template_directory_uri(); ?>/kin-athletics/wp-content/themes/kin-athletics/asset/images/pastevents_bootcamp3.png"/>
+                        <img src="<?php get_template_directory_uri(); ?>/wp-content/themes/kin-athletics/asset/images/pastevents_bootcamp3.png"/>
                     </div>       
                 </div>  <!-- end of carousel -->
             </section>
