@@ -75,7 +75,7 @@ get_header(); ?>
                                             <p class="past-event-date"><?php echo get_the_date('M/j Y', $past_events[$j]->ID); ?></p>
                                         </a>
                                     </div>
-                                    <img src="<?php get_template_directory_uri(); ?>/kin-athletics/wp-content/themes/kin-athletics/asset/icons/plainicon.svg"/>
+                                    <img src="<?php get_template_directory_uri(); ?>/wp-content/themes/kin-athletics/asset/icons/plainicon.svg"/>
                                 </div> 
                                 <?php   
                                     $j++;
