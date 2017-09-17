@@ -115,8 +115,8 @@ get_header(); ?>
         <h4> featured trainer <span class="trainer-name">allan</span> </h4>
         <p>ready to sweat?</p>
           <div class="services-button-flex">
-            <div class='red-button'><a href='#'>free consultation</a></div>
             <div class='social-button'><a href='#'>about me</a></div>
+            <div class='red-button'><a href='#'>free consultation</a></div>
           </div>
 
           <div class='white container'>

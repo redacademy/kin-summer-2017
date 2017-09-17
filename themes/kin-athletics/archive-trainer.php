@@ -5,6 +5,12 @@
 * @package Kin_Athletics_Theme
 */
 
+$args = array( 'post_type' => 'trainer', 'order' => 'DESC', 'posts_per_page' => -1, 'orderby' => 'date' );
+$trainer = get_posts( $args ); // returns an array of posts
+$trainers_count = count($trainer);
+$number_of_posts = 6;
+$number_of_pages = $trainers_count / $number_of_posts;
+
 get_header(); ?>
 
 <div id='primary' class='content-area'>
@@ -42,7 +48,7 @@ get_header(); ?>
                     <a src="#">
                         <img src="<?php echo get_template_directory_uri(); ?>/asset/icons/freeconsultationicon.svg"/>
                     </a>
-                    <p>Free<br>Consultation</p>
+                    <p>Free Consultation</p>
                 </div>
             </div>
         </section>
@@ -54,13 +60,6 @@ get_header(); ?>
         <section id="trainers" class="trainers-grid">
             <div class="main-carousel">
                 <?php 
-                    $args = array( 'post_type' => 'trainer', 'order' => 'DESC', 'posts_per_page' => -1, 'orderby' => 'date' );
-                    $trainer = get_posts( $args ); // returns an array of posts
-                    $trainers_count = count($trainer);
-                    $number_of_posts = 6;
-                    $number_of_pages = $trainers_count / $number_of_posts;
-                    $trainer_total = $trainers_count;
-                    
                     for ($i = 0; $i < $number_of_pages; $i++) : ?>
 
                     <div class='carousel-cell trainers'> 
@@ -70,7 +69,7 @@ get_header(); ?>
                         <div class="trainer-grid-wrapper">
                             <?php        
                                 $j = 0;
-                                while( $j < $number_of_posts && $trainer_total > 0 ) : 
+                                while( $j < $number_of_posts && $trainer[$j] !== null ) : 
                             ?>
                     
                             <div class='trainer-item-container'>
@@ -83,7 +82,6 @@ get_header(); ?>
                             </div> 
 
                             <?php   
-                                $trainer_total--;
                                 $j++;
                                 endwhile;
                                 array_splice($trainer, 0, $number_of_posts);
@@ -96,9 +94,6 @@ get_header(); ?>
 
         <section id="community" class='our-community'>
             <?php get_template_part( 'template-parts/about', 'community' ); ?>
-            <div class="red-button">
-                <a src="#">Projects</a>
-            </div>
         </section>
 
         <section id="place" class='our-place'>

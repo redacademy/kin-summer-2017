@@ -4,7 +4,18 @@
 *
 * @package Kin_Athletics_Theme
 */
+$args = array( 'post_type' => 'event', 'order' => 'DESC', 'posts_per_page' => -1, 'orderby' => 'date' );
+$event = get_posts( $args ); // returns an array of posts
+$events_total = count($event);
+global $post;
 
+for ($i = 0 ; $i < $events_count ; $i++) {
+  if ($event[$i]->post_title === CFS()->get('past_events_featured')) {
+      $event_ticket_url = site_url()."/event/".$event[$i]->post_name;
+      $event_page_url = site_url()."/".$event[$i]->post_name;
+      break;
+  }
+}
 get_header(); ?>
 
 <div id='primary' class='content-area'>
@@ -20,7 +31,7 @@ get_header(); ?>
           
             <div class="circles-container">
                 <div class="icon-container">
-                    <a src="#">
+                    <a href="<?php echo site_url().'/events'; ?>">
                         <img src="<?php echo get_template_directory_uri(); ?>/asset/icons/ouroriginicon.svg"/>
                         <p>Past Events</p>
                     </a>
@@ -28,7 +39,7 @@ get_header(); ?>
                 <div class="icon-container">
                     <a src="#">
                         <img src="<?php echo get_template_directory_uri(); ?>/asset/icons/ourtrainericon.svg"/>
-                        <p>On Now - Project TD</p>
+                        <p>On Now - <?php echo CFS()->get('past_events_featured', 162); ?></p>
                     </a>
                 </div>
                 <div class="icon-container">
@@ -51,12 +62,6 @@ get_header(); ?>
           </div>
 
           <div class='events-carousel-info'>
-            <?php 
-                $args = array( 'post_type' => 'event', 'order' => 'DESC', 'posts_per_page' => -1, 'orderby' => 'date' );
-                $event = get_posts( $args ); // returns an array of posts
-                $events_total = count($event);
-                global $post;
-            ?>
             <h1 class="header-title">
               <?php 
                 echo the_title();
