@@ -20,7 +20,7 @@ get_header(); ?>
           
             <div class="circles-container">
                 <div class="icon-container">
-                    <a href="<?php echo site_url().'/past-events'; ?>">
+                    <a href="<?php echo site_url().'/events'; ?>">
                         <img src="<?php echo get_template_directory_uri(); ?>/asset/icons/ouroriginicon.svg"/>
                         <p>Past Events</p>
                     </a>
