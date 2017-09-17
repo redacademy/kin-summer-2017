@@ -4,6 +4,10 @@
 *
 * @package Kin_Athletics_Theme
 */
+$args = array( 'post_type' => 'event', 'order' => 'DESC', 'posts_per_page' => -1, 'orderby' => 'date' );
+$event = get_posts( $args ); // returns an array of posts
+$events_total = count($event);
+global $post;
 
 get_header(); ?>
 
@@ -51,12 +55,6 @@ get_header(); ?>
           </div>
 
           <div class='events-carousel-info'>
-            <?php 
-                $args = array( 'post_type' => 'event', 'order' => 'DESC', 'posts_per_page' => -1, 'orderby' => 'date' );
-                $event = get_posts( $args ); // returns an array of posts
-                $events_total = count($event);
-                global $post;
-            ?>
             <h1 class="header-title">
               <?php 
                 echo the_title();
