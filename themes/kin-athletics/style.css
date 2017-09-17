@@ -1445,8 +1445,10 @@ body.page-template-archive-trainer .services-icons, body.page-template-archive-t
   display: flex;
   -ms-flex-flow: column nowrap;
       flex-flow: column nowrap;
-  -ms-flex-pack: space-evenly;
-      justify-content: space-evenly; }
+  -ms-flex-pack: normal;
+      justify-content: normal; }
+  body.page-template-archive-trainer .services-icons .header-container, body.page-template-archive-trainer .our-origin .header-container, body.page-template-archive-trainer .our-community .header-container, body.page-template-archive-trainer .our-place .header-container {
+    margin-top: 60px; }
 
 body.page-template-archive-trainer #origin-icon {
   margin-right: 50px; }
@@ -1460,10 +1462,12 @@ body.page-template-archive-trainer .circles-container {
   -ms-flex-align: center;
       align-items: center;
   -ms-flex-pack: space-evenly;
-      justify-content: space-evenly; }
+      justify-content: space-evenly;
+  -ms-flex-line-pack: center;
+      align-content: center; }
   body.page-template-archive-trainer .circles-container .icon-container {
     width: 50%;
-    height: 50%;
+    height: 40%;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-flow: column nowrap;
