@@ -2108,6 +2108,16 @@ body .page-template-video-page {
     .page-template-events .events-white-container .social-button a {
       font-size: 30px; }
 
+/*--------------------------------------------------------------
+# Single Event Styles
+--------------------------------------------------------------*/
+.event-template-default .site-main {
+  height: 100vh; }
+
+.event-template-default iframe {
+  margin-top: 15px;
+  height: 100%; }
+
 .page-template-consultations {
   background-image: url("../../asset/images/freeconsultation_bg.png");
   background-position: right;
