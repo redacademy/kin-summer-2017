@@ -26,49 +26,83 @@ body.single-trainer {
     .site-content {
         width: 100%;
         margin: 0 auto;
-
-        p.trainer-sub-titles {
-            font-family: $font__h1-header;
-        }
+        padding-top: 0.75rem;
     }
 
     .default-header {
         display: flex;
         position: relative;
-        max-height: 50vh;
-        height: 50vh;
+        max-height: 100vh;
+        height: 100%;
         margin: 0;
         justify-content: center;
-        border-bottom: $header__title-border-bottom;
-        overflow: hidden;
-
-        .trainer-profile-wrapper {
+        flex-flow: column nowrap;
+        
+        .trainer-profile-container {
+            height: 50vh;
+            overflow: hidden;
             position: relative;
-
-            &:after {
-                content: "";
-                transform: translate(-50%, -50%);
-                left: 50%;
-                top: 50%;
-                background: rgba(0,0,0,0.45);
-                height: 100vh;
-                width: 100vw;
-                position: absolute;
-                z-index: 2;
-            }
-
-            .trainer-profile-picture {
-                background: url("../../asset/profiles/super_male.png") no-repeat bottom;
-                background-size: cover;
-                position: absolute;
-                transform: translate(-50%, -50%);
-                left: 50%;
-                top: 50%;
-                z-index: 0;
-                max-width: none;
-                z-index: 0; 
+            border-bottom: $header__title-border-bottom;
+            
+            .trainer-profile-wrapper {
+                position: relative;
+                max-height: 50vh;
                 height: 100%;
-                filter: grayscale(100%);
+
+                .trainer-profile-picture {
+                    background: url("../../asset/profiles/super_male.png") no-repeat bottom;
+                    background-size: cover;
+                    filter: grayscale(100%);
+                    transform: translate(-50%, -50%);
+                    top: 50%;
+                    left: 50%;
+                    position: absolute;
+                    max-width: none;
+                    max-height: 100%;
+                }
+            }
+        }
+
+        .trainer-meta {
+            min-height: 50vh;
+            width: 100%;
+            background: #000;
+        }
+
+        .trainer-description {
+            p {
+                margin: 1.5rem;
+                color: white;
+            }
+        }
+
+        .trainer-personalities {
+            @extend .trainer-description;
+            padding-top: 0;
+    
+            p.trainer-sub-titles {
+                margin-bottom: 0.75em;
+                margin-top: 0;
+                color: white;
+                font-family: $font__h1-header;
+                margin: 1.5rem;
+            }
+    
+            ul {
+                display: flex;
+                flex-flow: row wrap;
+                color: white;
+                margin: 1.5rem;
+    
+                li {
+                    text-transform: uppercase;
+                    font-family: $font__main;
+                    font-weight: 300;
+                    font-size: 20px;
+                    margin: 0 1rem 1rem 0;
+                    line-height: 0.75em;
+                    color: white;
+                }
             }
         }
     }
@@ -76,7 +110,6 @@ body.single-trainer {
     .default-content {
         width: 100%;
 
-        .trainer-description, 
         .trainer-personalities,
         .trainer-availability,
         .other-trainers {
@@ -92,40 +125,11 @@ body.single-trainer {
             }
         }
 
-        .trainer-description,
         .other-trainers {
             color: white;
             background: black;
         }
 
-        .trainer-description {
-            p {
-                margin: 0;
-            }
-        }
-        .trainer-personalities {
-            @extend .trainer-description;
-            padding-top: 0;
-
-            p.trainer-sub-titles {
-                margin-bottom: 0.75em;
-                margin-top: 0;
-            }
-
-            ul {
-                display: flex;
-                flex-flow: row wrap;
-
-                li {
-                    text-transform: uppercase;
-                    font-family: $font__main;
-                    font-weight: 300;
-                    font-size: 20px;
-                    margin-right: 0.5em;
-                    line-height: 0.75em;
-                }
-            }
-        }
 
         .trainer-availability {
             background: white;
@@ -133,7 +137,52 @@ body.single-trainer {
             padding-top: 5px;
 
             p {
-                margin-bottom: 0.5em;
+                margin: 0;
+
+                &.trainer-sub-titles {
+                    margin: 1rem;
+                    font-family: $font__h1-header;
+                }
+            }
+
+            .days-of-week {
+                display: flex;
+                justify-content: center;
+                height: 50px;
+
+                li {
+                    border: 3px solid black;
+                    border-left: none;
+                    width: 50px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    &:first-child {
+                        border-left: 3px solid black;
+                    }
+                }
+
+                p {
+                    font-family: $font__h1-header;
+                    text-transform: uppercase;
+                }
+                .active-day {
+                    color: white;
+                    
+                    &-circle {
+                        height: 95%;
+                        width: 95%;
+                        background: #000;
+                        border-radius: 60%;
+                        display: flex;
+
+
+                        p {
+                            margin: auto;
+                        }
+                    }
+                }
             }
         }
         
@@ -148,25 +197,20 @@ body.single-trainer {
             }
         }
 
-        .trainer-meta {
-            min-height: 50vh;
-            width: 100%;
-            background: #000;
-        }
 
         .other-trainers {
 
             .next-trainer.trainer-sub-titles {
                 margin: 0;
                 text-align: center;
-                margin-bottom: 0.5em;
+                margin-bottom: 1rem;
             }
 
             &-grid {
                 display: flex;
                 flex-flow: row wrap;
                 width: 100%;
-                justify-content: space-between;
+                justify-content: space-around;
                 
                 .next-trainer-item-container {
                     display: flex;
