@@ -53,4 +53,8 @@ $content__base-margin: 1.5rem;
 
 // Media Query 
 
-$desktop: "(min-width: 600px)";
+@mixin desktop {
+  @media only screen and (min-width:600px) {
+    @content;
+  }
+}
