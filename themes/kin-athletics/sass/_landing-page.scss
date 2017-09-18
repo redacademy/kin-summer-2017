@@ -18,14 +18,20 @@
   .project-td-image-wrapper, .project-td-image-wrapper, .front-img-wrapper {
   .project-td-image, .who-we-are-image, .what-we-do-image {
     position: absolute;
+    @media only screen and (max-width: 600px) {
     overflow: hidden;
     transform: translate(-36%, .1%);
+    }
   }
 }
 
 img {
   height: 100vh;
   max-width: none;
+  @media only screen and (min-width: 600px) {
+    width:100vw;
+    height:100vh;
+  }
 }
 
 
@@ -37,6 +43,10 @@ img {
 .project-td-text {
   margin-top: 55%;
   margin-left: 9.5%;
+  @media only screen and (min-width: 600px) {
+    margin-top: 15%;
+    margin-left: 4%;
+  }
   h2 {
     font-family: $font__main;
     font-size: 2rem;
@@ -45,28 +55,35 @@ img {
     font-weight: 300;
     letter-spacing: .5px;
     margin: 0;
+    @media only screen and (min-width: 600px) {
+      font-size: 3.8rem;
+      line-height: 5rem;
+      width: 20rem
+    }
   }
   .front-heading {
     font-size: 3rem;
     font-weight: 500;
     margin: 0;
+    @media only screen and (min-width: 600px) {
+      font-size: 8rem;
+    }
   }
 }
 
-.who-we-are-text, .what-we-do-text {
-  margin-top: 55%;
-  h2 {
-    font-family: $font__h1-header;
-		font-size: 2.8rem;
-		font-weight: 500;
-    line-height: 2.9rem;
-    margin: 0 2rem;
-  }
-  .front-lorem {
-    width: 100%;
-    background: rgba(0,0,0,.7);
-    padding: .5rem 2rem;
-    margin-top: .3rem;
+.who-we-are-text{
+  @media only screen and (min-width: 600px) {
+    top:40%;
+    h2 {
+      font-size: 6rem;
+      line-height: 8rem;
+      margin-left: 40rem;
+    }
+    .front-lorem {
+      padding: .5rem 2rem;
+      padding-left: 35%;
+      margin-top: .3rem;
+    }
   }
 }
 
@@ -79,10 +96,24 @@ p {
   .who-button-cont {
   @include front-red-button;
   position:absolute;
-  margin-left:50%; 
+  left:60%; 
   }
 }
-
+.what-we-do-text{
+  @media only screen and (min-width: 600px) {
+    margin-top:10%;
+    h2 {
+      font-size: 6rem;
+      line-height: 8rem;
+      margin-left: 40rem;
+    }
+    .front-lorem {
+      padding: .5rem 2rem;
+      padding-left: 35%;
+      margin-top: .3rem;
+    }
+  }
+}
 .what-we-do-text {
   text-align: left;
   .what-button-cont {
@@ -91,14 +122,25 @@ p {
     margin-left:8%; 
   }
 }
-.project-td-text {
+// .project-td-text {
   .td-button-cont {
+    position: absolute;
+    z-index: 999;
+    display:flex;
     @include front-red-button;
     position: absolute;
-    margin-left:25%; 
-    margin-top:.75rem;
+    margin-left:17%; 
+    margin-top:90%;
+    @media only screen and (min-width: 600px) {
+      margin-left:60%; 
+      margin-top:0;
+      bottom:120px;
+        // a{
+        //   font-size:
+        // }
+    }
   }
-}
+// }
     .landing-scroll-section {
       height: 85px;
       background-color: white;
@@ -109,6 +151,9 @@ p {
       position: absolute;
       bottom: 0;
       width: 100%;
+      @media only screen and (min-width: 600px) {
+        margin-top:10rem;
+      }
       p {
         color: $color__brand-red;
         text-transform: uppercase;
