@@ -1575,13 +1575,12 @@ body .page-template-video-page {
   height: auto; }
 
 .video-container {
-  width: 100vh;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   position: relative; }
 
 .video {
   width: 100%;
-  height: 100%;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-align: center;
@@ -1593,6 +1592,10 @@ body .page-template-video-page {
   margin-top: 0;
   position: absolute;
   width: 100vw; }
+  @media only screen and (min-width: 600px) {
+    .landing-video-text-container:not(.kin) {
+      display: -ms-flexbox;
+      display: flex; } }
   .landing-video-text-container .kin, .landing-video-text-container .ath, .landing-video-text-container .let, .landing-video-text-container .ics {
     font-size: 7.5rem;
     font-family: "Oswald", sans-serif;
@@ -1602,20 +1605,38 @@ body .page-template-video-page {
     line-height: 101.5px;
     margin: 0;
     letter-spacing: 5px; }
+    @media only screen and (min-width: 600px) {
+      .landing-video-text-container .kin, .landing-video-text-container .ath, .landing-video-text-container .let, .landing-video-text-container .ics {
+        font-size: 10rem; } }
 
 .landing-video-text-container .kin {
   margin-left: 0; }
+  @media only screen and (min-width: 600px) {
+    .landing-video-text-container .kin {
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+      top: 0;
+      width: 100%; } }
 
 .landing-video-text-container .ath {
   margin-left: 12%; }
+  @media only screen and (min-width: 600px) {
+    .landing-video-text-container .ath {
+      margin-left: 0; } }
 
 .landing-video-text-container .let {
   margin-left: 35%; }
+  @media only screen and (min-width: 600px) {
+    .landing-video-text-container .let {
+      margin-left: 0; } }
 
 .landing-video-text-container .ics {
   margin-left: 58%; }
+  @media only screen and (min-width: 600px) {
+    .landing-video-text-container .ics {
+      margin-left: 0; } }
 
-.landing-video-text-container .video-button-cont {
+.video-button-cont {
   color: white;
   text-transform: uppercase;
   border: none;
@@ -1629,10 +1650,12 @@ body .page-template-video-page {
   display: flex;
   -ms-flex-pack: center;
       justify-content: center;
-  margin-left: 33%; }
-  .landing-video-text-container .video-button-cont:hover {
+  margin-left: 34%;
+  margin-top: 6%;
+  bottom: 18px; }
+  .video-button-cont:hover {
     background-color: #850000; }
-  .landing-video-text-container .video-button-cont a {
+  .video-button-cont a {
     font-family: "Oswald", sans-serif;
     font-size: 1.5rem;
     font-weight: 300;
@@ -1640,6 +1663,10 @@ body .page-template-video-page {
     text-align: center;
     text-decoration: none;
     line-height: 1.2; }
+  @media only screen and (min-width: 600px) {
+    .video-button-cont {
+      -ms-flex-pack: end;
+          justify-content: flex-end; } }
 
 .page-template-find-us p {
   margin: .50%; }
