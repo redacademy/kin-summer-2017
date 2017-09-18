@@ -6,7 +6,7 @@
         <p class="item-description"><?php echo CFS()->get( 'about_our_place'); ?></p>
     </div>
 
-    <div class="about-sidebar"
+    <div class="about-sidebar">
         <?php
             if ( ! is_active_sidebar( 'sidebar-2' ) ) {
                 return;
@@ -19,5 +19,5 @@
     </div><!-- .about-sidebar -->
     <div class="red-button">
           <a href="<?php echo get_post_permalink()?>">Find Us</a>
-        </div><!-- .social-button -->
+    </div><!-- .social-button -->
 </section>
