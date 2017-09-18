@@ -576,6 +576,28 @@ a {
   text-align: right;
   width: 50%; }
 
+#responsive-menu {
+  text-align: right; }
+  #responsive-menu .responsive-menu-subarrow {
+    display: none !important; }
+
+#responsive-menu a {
+  font-weight: bold;
+  text-transform: uppercase;
+  border-top: 2px solid #A10000 !important;
+  border-bottom: 2px solid #A10000 !important;
+  margin-top: 20px; }
+
+#responsive-menu-item-120 a {
+  border-top: none !important; }
+
+#responsive-menu li li a {
+  font-size: 20px !important;
+  text-transform: capitalize;
+  font-weight: normal;
+  border: none !important;
+  margin-top: 0; }
+
 /*--------------------------------------------------------------
 # Accessibility
 --------------------------------------------------------------*/
@@ -1174,6 +1196,7 @@ p {
 
 .services-featured {
   display: block;
+  padding-top: 20px;
   height: 100vh;
   background-image: url(../../asset/images/serv1.jpg);
   background-size: cover;
@@ -1185,7 +1208,7 @@ p {
     text-align: left;
     font-size: 60px;
     text-transform: uppercase;
-    padding: 30px 30px 20px 20px;
+    padding: 20px 30px 10px 20px;
     line-height: 73px; }
   .services-featured p {
     font-family: Oswald; }
@@ -1322,49 +1345,72 @@ body.single-trainer .entry-title {
 
 body.single-trainer .site-content {
   width: 100%;
-  margin: 0 auto; }
-  body.single-trainer .site-content p.trainer-sub-titles {
-    font-family: "Oswald"; }
+  margin: 0 auto;
+  padding-top: 0.75rem; }
 
 body.single-trainer .default-header {
   display: -ms-flexbox;
   display: flex;
   position: relative;
-  max-height: 50vh;
-  height: 50vh;
+  max-height: 100vh;
+  height: 100%;
   margin: 0;
   -ms-flex-pack: center;
       justify-content: center;
-  border-bottom: 5px solid white;
-  overflow: hidden; }
-  body.single-trainer .default-header .trainer-profile-wrapper {
-    position: relative; }
-    body.single-trainer .default-header .trainer-profile-wrapper:after {
-      content: "";
-      transform: translate(-50%, -50%);
-      left: 50%;
-      top: 50%;
-      background: rgba(0, 0, 0, 0.45);
-      height: 100vh;
-      width: 100vw;
-      position: absolute;
-      z-index: 2; }
-    body.single-trainer .default-header .trainer-profile-wrapper .trainer-profile-picture {
-      background: url("../../asset/profiles/super_male.png") no-repeat bottom;
-      background-size: cover;
-      position: absolute;
-      transform: translate(-50%, -50%);
-      left: 50%;
-      top: 50%;
-      z-index: 0;
-      max-width: none;
-      z-index: 0;
-      height: 100%;
-      filter: grayscale(100%); }
+  -ms-flex-flow: column nowrap;
+      flex-flow: column nowrap; }
+  body.single-trainer .default-header .trainer-profile-container {
+    height: 50vh;
+    overflow: hidden;
+    position: relative;
+    border-bottom: 5px solid white; }
+    body.single-trainer .default-header .trainer-profile-container .trainer-profile-wrapper {
+      position: relative;
+      max-height: 50vh;
+      height: 100%; }
+      body.single-trainer .default-header .trainer-profile-container .trainer-profile-wrapper .trainer-profile-picture {
+        background: url("../../asset/profiles/super_male.png") no-repeat bottom;
+        background-size: cover;
+        filter: grayscale(100%);
+        transform: translate(-50%, -50%);
+        top: 50%;
+        left: 50%;
+        position: absolute;
+        max-width: none;
+        max-height: 100%; }
+  body.single-trainer .default-header .trainer-meta {
+    min-height: 50vh;
+    width: 100%;
+    background: #000; }
+  body.single-trainer .default-header .trainer-description p, body.single-trainer .default-header .trainer-personalities p {
+    margin: 1.5rem;
+    color: white; }
+  body.single-trainer .default-header .trainer-personalities {
+    padding-top: 0; }
+    body.single-trainer .default-header .trainer-personalities p.trainer-sub-titles {
+      margin-bottom: 0.75em;
+      margin-top: 0;
+      color: white;
+      font-family: "Oswald";
+      margin: 1.5rem; }
+    body.single-trainer .default-header .trainer-personalities ul {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+      color: white;
+      margin: 1.5rem; }
+      body.single-trainer .default-header .trainer-personalities ul li {
+        text-transform: uppercase;
+        font-family: "Open Sans Condensed", sans-serif;
+        font-weight: 300;
+        font-size: 20px;
+        margin: 0 1rem 1rem 0;
+        line-height: 0.75em;
+        color: white; }
 
 body.single-trainer .default-content {
   width: 100%; }
-  body.single-trainer .default-content .trainer-description, body.single-trainer .default-content .trainer-personalities,
   body.single-trainer .default-content .trainer-personalities,
   body.single-trainer .default-content .trainer-availability,
   body.single-trainer .default-content .other-trainers {
@@ -1373,57 +1419,68 @@ body.single-trainer .default-content {
     font-size: 20px;
     text-transform: uppercase;
     font-weight: 500; }
-  body.single-trainer .default-content .trainer-description, body.single-trainer .default-content .trainer-personalities,
   body.single-trainer .default-content .other-trainers {
     color: white;
     background: black; }
-  body.single-trainer .default-content .trainer-description p, body.single-trainer .default-content .trainer-personalities p {
-    margin: 0; }
-  body.single-trainer .default-content .trainer-personalities {
-    padding-top: 0; }
-    body.single-trainer .default-content .trainer-personalities p.trainer-sub-titles {
-      margin-bottom: 0.75em;
-      margin-top: 0; }
-    body.single-trainer .default-content .trainer-personalities ul {
-      display: -ms-flexbox;
-      display: flex;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap; }
-      body.single-trainer .default-content .trainer-personalities ul li {
-        text-transform: uppercase;
-        font-family: "Open Sans Condensed", sans-serif;
-        font-weight: 300;
-        font-size: 20px;
-        margin-right: 0.5em;
-        line-height: 0.75em; }
   body.single-trainer .default-content .trainer-availability {
     background: white;
     text-align: center;
     padding-top: 5px; }
     body.single-trainer .default-content .trainer-availability p {
-      margin-bottom: 0.5em; }
+      margin: 0; }
+      body.single-trainer .default-content .trainer-availability p.trainer-sub-titles {
+        margin: 1rem;
+        font-family: "Oswald"; }
+    body.single-trainer .default-content .trainer-availability .days-of-week {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-pack: center;
+          justify-content: center;
+      height: 50px; }
+      body.single-trainer .default-content .trainer-availability .days-of-week li {
+        border: 3px solid black;
+        border-left: none;
+        width: 50px;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-pack: center;
+            justify-content: center;
+        -ms-flex-align: center;
+            align-items: center; }
+        body.single-trainer .default-content .trainer-availability .days-of-week li:first-child {
+          border-left: 3px solid black; }
+      body.single-trainer .default-content .trainer-availability .days-of-week p {
+        font-family: "Oswald";
+        text-transform: uppercase; }
+      body.single-trainer .default-content .trainer-availability .days-of-week .active-day {
+        color: white; }
+        body.single-trainer .default-content .trainer-availability .days-of-week .active-day-circle {
+          height: 95%;
+          width: 95%;
+          background: #000;
+          border-radius: 60%;
+          display: -ms-flexbox;
+          display: flex; }
+          body.single-trainer .default-content .trainer-availability .days-of-week .active-day-circle p {
+            margin: auto; }
   body.single-trainer .default-content .trainer-consultation a.consultation-button {
     font-size: 20px;
     font-weight: 500;
     font-family: "Oswald";
     margin-top: 2em;
     padding: 0 1em; }
-  body.single-trainer .default-content .trainer-meta {
-    min-height: 50vh;
-    width: 100%;
-    background: #000; }
   body.single-trainer .default-content .other-trainers .next-trainer.trainer-sub-titles {
     margin: 0;
     text-align: center;
-    margin-bottom: 0.5em; }
+    margin-bottom: 1rem; }
   body.single-trainer .default-content .other-trainers-grid {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-flow: row wrap;
         flex-flow: row wrap;
     width: 100%;
-    -ms-flex-pack: justify;
-        justify-content: space-between; }
+    -ms-flex-pack: distribute;
+        justify-content: space-around; }
     body.single-trainer .default-content .other-trainers-grid .next-trainer-item-container {
       display: -ms-flexbox;
       display: flex;
@@ -1663,8 +1720,7 @@ body.page-template-archive-trainer .description-container p {
   font-weight: 300; }
 
 body.page-template-archive-trainer .red-button, body.page-template-archive-trainer .consultation-button, body.page-template-archive-trainer .social-button {
-  margin: 0;
-  margin-left: 25%;
+  margin: 1.5rem;
   width: 175px;
   height: 50px; }
   body.page-template-archive-trainer .red-button a, body.page-template-archive-trainer .consultation-button a, body.page-template-archive-trainer .social-button a {
@@ -1700,6 +1756,10 @@ body.page-template-archive-trainer .our-place {
   background: url("../../asset/images/aboutpage_ourplace.png") no-repeat 70% 70%;
   background-size: cover;
   border-top: 1px solid white; }
+  body.page-template-archive-trainer .our-place .widget-area {
+    width: 100%;
+    display: -ms-flexbox;
+    display: flex; }
 
 body.page-template-archive-trainer .social-button {
   margin-top: 15px; }
@@ -2494,7 +2554,7 @@ body .page-template-video-page {
     outline: none; }
 
 #gform_next_button_1_8 {
-  top: 438px;
+  top: 483px;
   right: 50px;
   width: auto;
   font-size: 20px;
@@ -2537,7 +2597,7 @@ body .page-template-video-page {
   margin-bottom: -20px; }
 
 #gform_next_button_1_10 {
-  top: 297px;
+  top: 342px;
   right: 12%;
   width: auto;
   font-size: 20px;
@@ -2612,7 +2672,7 @@ body .page-template-video-page {
   transform: translate(-50%, -50%);
   left: 50%;
   right: 50%;
-  bottom: -20px; }
+  bottom: -65px; }
 
 @media (min-width: 600px) {
   #gform_page_1_3 {
@@ -2649,7 +2709,7 @@ body .page-template-video-page {
 
 #gform_next_button_1_12 {
   left: 50%;
-  bottom: 150px;
+  bottom: 100px;
   transform: translate(-50%, -50%); }
 
 @media (min-width: 600px) {
@@ -2670,7 +2730,7 @@ body .page-template-video-page {
   padding-bottom: 40px; }
 
 #gform_next_button_1_23 {
-  top: 350px;
+  top: 400px;
   right: 45px;
   width: auto;
   font-size: 20px;
@@ -2709,7 +2769,7 @@ body .page-template-video-page {
 #gform_submit_button_1 {
   right: 50%;
   left: 50%;
-  top: 180px;
+  top: 200px;
   font-size: 30px;
   background-color: #A10000;
   color: white;

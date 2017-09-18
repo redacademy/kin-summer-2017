@@ -49,7 +49,7 @@ get_header(); ?>
 
 
         <div class="main-carousel">
-          <div class="carousel-cell personal-training">
+          <div class="carousel-cell personal-training" id='personal-training'>
             <h2>Personal training</h2>
             <?php echo CFS()->get( 'services_personal_training'); ?>
             <h3>Basic pricing</h3>
@@ -75,7 +75,7 @@ get_header(); ?>
 
 
 
-          <div class="carousel-cell group-training">
+          <div class="carousel-cell group-training" id='group-training'>
             <h2>Group training</h2>
             <?php echo CFS()->get('services_group_training');?>
             <h3>Basic pricing</h3>
@@ -101,7 +101,7 @@ get_header(); ?>
 
 
 
-          <div class="carousel-cell community-projects">
+          <div class="carousel-cell community-projects" id='community-projects'>
             <h2>Community projects</h2>
             <?php echo CFS()->get('services_community_projects');?>
             <h3>on now - project td</h3>
@@ -111,7 +111,7 @@ get_header(); ?>
           </div>  <!-- end of carousel cell community projects -->
         </div>  <!-- end of carousel -->
 
-        <section class="services-featured">
+        <section class="services-featured" id='free-consultation'>
         <h4> featured trainer <span class="trainer-name">allan</span> </h4>
         <p>ready to sweat?</p>
           <div class="services-button-flex">

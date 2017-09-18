@@ -170,8 +170,7 @@ body.page-template-archive-trainer {
   }
 
   .red-button, .social-button{
-    margin: 0;
-    margin-left: 25%;
+    margin: 1.5rem;
     width: 175px;
     height: 50px;
 
@@ -217,6 +216,11 @@ body.page-template-archive-trainer {
     background: url('../../asset/images/aboutpage_ourplace.png') no-repeat 70% 70%;
     background-size: cover;
     border-top: 1px solid white;
+
+    .widget-area {
+      width: 100%;
+      display: flex;
+    }
   }
 
 
