@@ -1,9 +1,14 @@
 .page-template-events{
   .entry-content{
     margin: 0;
+
+    a {
+      text-decoration: none;
+    }
     
     .header-container {
       display: flex;
+      margin-top: 60px;
   
       h1 {
         margin: auto;
@@ -40,7 +45,7 @@
   background-size: cover;
   display: flex;
   flex-flow: column nowrap;
-  justify-content: center;
+  justify-content: space-evenly;
 
   }
   
@@ -57,18 +62,22 @@
 
     .icon-container {
       width: 50%;
-      height: $icon__base-size;
+      height: 100%;
       display: flex;
       flex-flow: column nowrap;
       justify-content: center;
       align-items: center;
 
-      a, img {
-        height: 100%;
+      a {
         height: 100%;
         display: flex;
         flex-flow: column nowrap;
         align-items: center;
+        justify-content: space-evenly;
+      }
+
+      img {
+        height: 75%;
       }
 
       p {

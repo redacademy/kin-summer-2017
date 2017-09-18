@@ -5,6 +5,20 @@
 * @package Kin_Athletics_Theme
 */
 
+$args = array( 'post_type' => 'event', 'order' => 'DESC', 'posts_per_page' => -1, 'orderby' => 'date' );
+$event = get_posts( $args ); // returns an array of posts
+$events_count = count($event);
+$number_of_posts = 6;
+$number_of_pages = $events_count / $number_of_posts;
+
+for ($i = 0 ; $i < $events_count ; $i++) {
+    if ($event[$i]->post_title === CFS()->get('past_events_featured')) {
+        $event_ticket_url = site_url()."/event/".$event[$i]->post_name;
+        $event_page_url = site_url()."/".$event[$i]->post_name;
+        break;
+    }
+}
+
 get_header(); ?>
 
 <div id='primary' class='content-area'>
@@ -15,79 +29,80 @@ get_header(); ?>
         <div class='entry-content'>
             <section id="latest-history" class="latest-history">
                 <div class="header-container">
-                    <h2 class="header-title">Latest History:</h2>
+                    <h2 class="header-title un-bold">Latest History:</h2>
                     <?php 
-                        $args = array( 'post_type' => 'event', 'order' => 'DESC', 'posts_per_page' => 1, 'orderby' => 'date' );
-                        $events = get_posts ( $args );
+                        $current_args = array( 'post_type' => 'event', 'order' => 'DESC', 'posts_per_page' => 1, 'orderby' => 'date' );
+                        $latest_event = get_posts ( $current_args );
                     ?>
 
-                    <h2 class="header-title"><?php echo CFS()->get('current_event', $events[0]->ID);?></h2>
-                    <p class="latest-history-description"><?php echo CFS()->get('current_event_info', $events[0]->ID); ?></p>
-                    <h3 class='event-date'>happens: <?php echo CFS()->get('current_event_date', $events[0]->ID); ?></h3>
-                    <div class='red-button'><a href='#'>buy tickets</a></div>
+                    <h2 class="header-title"><?php echo esc_html( get_the_title($latest_event[0]->ID) ) ;?></h2>
+                    <?php echo CFS()->get('current_event_info', $latest_event[0]->ID); ?>
+                    <h3 class='event-date'>happens: <?php echo CFS()->get('current_event_date', $latest_event[0]->ID); ?></h3>
+                    <div class='red-button'><a href='<?php echo site_url()."/event/".$latest_event[0]->post_name ?>'>buy tickets</a></div>
                 </div>
                 <div class="latest-history-carousel">
                     <div class='carousel-cell cell-image1'>
+                        <img src="<?php echo get_template_directory_uri(); ?>/asset/images/pastevents_bootcamp.png"/>
                     </div>
                     <div class='carousel-cell cell-image2'>
+                        <img src="<?php echo get_template_directory_uri(); ?>/asset/images/pastevents_bootcamp2.png"/>
                     </div>
                     <div class='carousel-cell cell-image3'>
+                        <img src="<?php echo get_template_directory_uri(); ?>/asset/images/pastevents_bootcamp3.png"/>
                     </div>       
                 </div>  <!-- end of carousel -->
             </section>
-
+            
             <section id="historical-moments" class="historical-moments">
                 <div class="past-events-carousel">
-                    <?php 
-                        $args = array( 'post_type' => 'event', 'order' => 'DESC', 'posts_per_page' => -1, 'orderby' => 'date' );
-                        $event = get_posts( $args ); // returns an array of posts
-                        $events_count = count($event);
-                        $number_of_posts = 6;
-                        $number_of_pages = $events_count / $number_of_posts;
-                        $event_total = $events_count;
-                        
-                        for ($i = 0; $i < $number_of_pages; $i++) : ?>
-
-                        <div class='carousel-cell trainers'> 
+                    <?php
+                        $past_events = $event; 
+                        for ($i = 0; $i < $number_of_pages; $i++) : 
+                    ?>
+                        <div class='carousel-cell past-events'> 
                             <div class="header-container">
                                 <h2 class="header-title--black">More Historical Moments</h2>
                             </div>
-                            <div class="trainer-grid-wrapper">
+                            <div class="past-events-grid-wrapper">
                                 <?php        
                                     $j = 0;
-                                    while( $j < $number_of_posts && $event_total > 0 ) : 
+                                    while( $j < $number_of_posts && $past_events[$j] !== null ) :
                                 ?>
-                        
-                                <div class='trainer-item-container'>
-                                    <div class='trainer-thumbnail-wrapper'>
-                                        <img class='trainer-thumbnail' src="<?php echo CFS()->get( 'trainer_profile_picture', $event[$j]->ID ); ?>"/>
+                                <div class='past-events-item-container'>
+                                    <div class="past-events-info">
+                                        <a href="<?php echo site_url().'/'.$past_events[$j]->post_name; ?>">
+                                            <p class="past-event-title"><?php echo $past_events[$j]->post_title; ?></p>
+                                            <p class="past-event-date"><?php echo get_the_date('M/j Y', $past_events[$j]->ID); ?></p>
+                                        </a>
                                     </div>
-                                    <div class='next-trainer-wrapper'>
-                                        <a class='trainer-name' href='<?php echo $event[$j]->guid ?>'><?php echo $event[$j]->post_title; ?></a>
-                                    </div>
+                                    <img src="<?php echo get_template_directory_uri(); ?>/asset/icons/plainicon.svg"/>
                                 </div> 
-
                                 <?php   
-                                    $events_count--;
                                     $j++;
                                     endwhile;
-                                    array_splice($event, 0, $number_of_posts);
+                                    array_splice($past_events, 0, $number_of_posts);
                                 ?>
                             </div>
                         </div>
-                    <?php endfor; ?>
+                    <?php endfor; ?> 
                 </div>  <!-- end of carousel -->
             </section>
             
-            <section id="community" class='our-community'>
-                <?php get_template_part( 'template-parts/about', 'community' ); ?>
-                <div class="red-button">
-                    <a src="#">Projects</a>
+            <section id="on-now-and-services" class='on-now-and-services'>
+                <div class='events-black-container'>
+                    <p>On Now - <?php echo CFS()->get('past_events_featured'); ?></p>
+                    <div class='red-button'>
+                        <a href='<?php echo $event_ticket_url; ?>'>Buy Tickets</a>
+                    </div>
+                    <div class='red-button clear-bg'><a href='<?php echo $event_page_url; ?>'>Tell Me More</a></div>
+                    <img src="<?php echo get_template_directory_uri(); ?>/asset/images/pastevents_onnow.png"/>
                 </div>
-            </section>
-
-            <section id="place" class='our-place'>
-                <?php get_template_part( 'template-parts/about', 'place' ); ?>
+                        
+                <div class='events-white-container'>
+                    <p>More Feels On Our Services</p>
+                    <div class='social-button'><a href='#'>Facebook</a></div>
+                    <div class='social-button'><a href='#'>Instagram</a></div>
+                </div>
             </section>
 
         </div>  <!-- end of entry content-->

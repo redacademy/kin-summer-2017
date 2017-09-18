@@ -16,7 +16,7 @@ get_header(); ?>
 
       <section class='services-icons'>
       <div class="header-container">
-          <h1> At Kin Athletics, <br>we believe in</h1>
+          <h1> At Kin Athletics, we try our hardest<br>to serve your needs</h1>
       </div>
     
       <div class="circles-container">
@@ -24,25 +24,25 @@ get_header(); ?>
               <a src="#">
                   <img src="<?php echo get_template_directory_uri(); ?>/asset/icons/personaltrainingicon.svg"/>
               </a>
-              <p>Personal Training</p>
+              <p>Personal<br>Training</p>
           </div>
           <div class="icon-container">
               <a src="#">
                   <img src="<?php echo get_template_directory_uri(); ?>/asset/icons/grouptrainingicon.svg"/>
               </a>
-              <p>Group Training</p>
+              <p>Group<br>Training</p>
           </div>
           <div class="icon-container">
               <a src="#">
                   <img src="<?php echo get_template_directory_uri(); ?>/asset/icons/communityprojecticon.svg"/>
               </a>
-              <p>Community Projects</p>
+              <p>Community<br>Projects</p>
           </div>
           <div class="icon-container">
               <a src="#">
                   <img src="<?php echo get_template_directory_uri(); ?>/asset/icons/freeconsultationicon.svg"/>
               </a>
-              <p>Free Consultation</p>
+              <p>Free<br>Consultation</p>
           </div>
       </div>
   </section>
@@ -111,16 +111,20 @@ get_header(); ?>
           </div>  <!-- end of carousel cell community projects -->
         </div>  <!-- end of carousel -->
 
-        <section class='services-featured'>
-        <h4> featured trainer <span>allan</span> </h4>
+        <section class="services-featured">
+        <h4> featured trainer <span class="trainer-name">allan</span> </h4>
         <p>ready to sweat?</p>
-        <div class='red-button'><a href='#'>free consultation</a></div>
-        <div class='social-button'><a href='#'>about me</a></div>
+          <div class="services-button-flex">
+            <div class='social-button'><a href='#'>about me</a></div>
+            <div class='red-button'><a href='#'>free consultation</a></div>
+          </div>
 
           <div class='white container'>
             <p>more feels on our services</p>
-            <div class='social-button'><a href='#'>facebook</a></div>
-            <div class='social-button'><a href='#'>instagram</a></div>
+              <div class="social-buttons-flex">
+                <div class='social-button'><a href='#'>facebook</a></div>
+                <div class='social-button'><a href='#'>instagram</a></div>
+            </div>
           </div>
         </section>
 
