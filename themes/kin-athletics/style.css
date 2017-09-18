@@ -1250,9 +1250,8 @@ body.single-trainer .entry-title {
 
 body.single-trainer .site-content {
   width: 100%;
-  margin: 0 auto; }
-  body.single-trainer .site-content p.trainer-sub-titles {
-    font-family: "Oswald"; }
+  margin: 0 auto;
+  padding-top: 0.75rem; }
 
 body.single-trainer .default-header {
   display: -ms-flexbox;
@@ -1296,7 +1295,9 @@ body.single-trainer .default-header {
     body.single-trainer .default-header .trainer-personalities p.trainer-sub-titles {
       margin-bottom: 0.75em;
       margin-top: 0;
-      color: white; }
+      color: white;
+      font-family: "Oswald";
+      margin: 1.5rem; }
     body.single-trainer .default-header .trainer-personalities ul {
       display: -ms-flexbox;
       display: flex;
@@ -1309,7 +1310,7 @@ body.single-trainer .default-header {
         font-family: "Open Sans Condensed", sans-serif;
         font-weight: 300;
         font-size: 20px;
-        margin-right: 0.5em;
+        margin: 0 1rem 1rem 0;
         line-height: 0.75em;
         color: white; }
 
@@ -1331,7 +1332,42 @@ body.single-trainer .default-content {
     text-align: center;
     padding-top: 5px; }
     body.single-trainer .default-content .trainer-availability p {
-      margin-bottom: 0.5em; }
+      margin: 0; }
+      body.single-trainer .default-content .trainer-availability p.trainer-sub-titles {
+        margin: 1rem;
+        font-family: "Oswald"; }
+    body.single-trainer .default-content .trainer-availability .days-of-week {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-pack: center;
+          justify-content: center;
+      height: 50px; }
+      body.single-trainer .default-content .trainer-availability .days-of-week li {
+        border: 3px solid black;
+        border-left: none;
+        width: 50px;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-pack: center;
+            justify-content: center;
+        -ms-flex-align: center;
+            align-items: center; }
+        body.single-trainer .default-content .trainer-availability .days-of-week li:first-child {
+          border-left: 3px solid black; }
+      body.single-trainer .default-content .trainer-availability .days-of-week p {
+        font-family: "Oswald";
+        text-transform: uppercase; }
+      body.single-trainer .default-content .trainer-availability .days-of-week .active-day {
+        color: white; }
+        body.single-trainer .default-content .trainer-availability .days-of-week .active-day-circle {
+          height: 95%;
+          width: 95%;
+          background: #000;
+          border-radius: 60%;
+          display: -ms-flexbox;
+          display: flex; }
+          body.single-trainer .default-content .trainer-availability .days-of-week .active-day-circle p {
+            margin: auto; }
   body.single-trainer .default-content .trainer-consultation a.consultation-button {
     font-size: 20px;
     font-weight: 500;
@@ -1341,15 +1377,15 @@ body.single-trainer .default-content {
   body.single-trainer .default-content .other-trainers .next-trainer.trainer-sub-titles {
     margin: 0;
     text-align: center;
-    margin-bottom: 0.5em; }
+    margin-bottom: 1rem; }
   body.single-trainer .default-content .other-trainers-grid {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-flow: row wrap;
         flex-flow: row wrap;
     width: 100%;
-    -ms-flex-pack: justify;
-        justify-content: space-between; }
+    -ms-flex-pack: distribute;
+        justify-content: space-around; }
     body.single-trainer .default-content .other-trainers-grid .next-trainer-item-container {
       display: -ms-flexbox;
       display: flex;
