@@ -9,14 +9,14 @@
 
 <div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="default-header">
-        <?php the_title( '<h1 id="trainer-name" class="entry-title">', '</h1>' ); ?>
-        
-        <div class="trainer-profile-wrapper">
-            <img class="trainer-profile-picture" src="<?php echo CFS()->get( 'trainer_profile_picture' ); ?>">
+        <div class="trainer-profile-container">
+            <?php the_title( '<h1 id="trainer-name" class="entry-title">', '</h1>' ); ?>
+            
+            <div class="trainer-profile-wrapper">
+                <img class="trainer-profile-picture" src="<?php echo CFS()->get( 'trainer_profile_picture' ); ?>">
+            </div>
         </div>
-	</header><!-- .entry-header -->
 
-	<div class="default-content">
         <!-- Trainer Meta Information -->
         <div class="trainer-meta">
         <!-- Description -->
@@ -29,6 +29,9 @@
                 <?php echo CFS()->get( 'trainer_personalities' ); ?>
             </div>
         </div> <!-- EOF TRAINER META -->
+	</header><!-- .entry-header -->
+
+	<div class="default-content">
          <!-- Availability  -->
         <div class="trainer-availability">
             <div class="my-availability">
