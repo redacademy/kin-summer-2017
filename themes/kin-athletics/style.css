@@ -562,6 +562,28 @@ a {
   text-align: right;
   width: 50%; }
 
+#responsive-menu {
+  text-align: right; }
+  #responsive-menu .responsive-menu-subarrow {
+    display: none !important; }
+
+#responsive-menu a {
+  font-weight: bold;
+  text-transform: uppercase;
+  border-top: 2px solid #A10000 !important;
+  border-bottom: 2px solid #A10000 !important;
+  margin-top: 20px; }
+
+#responsive-menu-item-120 a {
+  border-top: none !important; }
+
+#responsive-menu li li a {
+  font-size: 20px !important;
+  text-transform: capitalize;
+  font-weight: normal;
+  border: none !important;
+  margin-top: 0; }
+
 /*--------------------------------------------------------------
 # Accessibility
 --------------------------------------------------------------*/
