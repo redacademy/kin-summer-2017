@@ -217,6 +217,13 @@ a {
 		align-items: center;
 		margin-left: 10px;
 
+		@include Desktop{
+			justify-content: flex-start;
+			align-self: flex-start;
+			text-align: left;
+			margin: 0;
+		}
+
 		img{
 			height: 35px;
 		}
@@ -226,7 +233,11 @@ a {
 		display: none;
 	
 		@include Desktop{
-			display: block;
+			display: inline;
+
+			img{
+				height: 30px;
+			}
 		}
 	}
 }
