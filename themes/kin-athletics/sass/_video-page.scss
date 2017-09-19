@@ -39,6 +39,7 @@ body .page-template-video-page {
   height:100vh;
   @media only screen and (min-width: 600px) {
   position:absolute;
+  top: 10%;
   }
 }
 .athletics-line-break {
@@ -69,7 +70,9 @@ body .page-template-video-page {
     .kin {
         margin-left: 0;
         @media only screen and (min-width: 600px) {
-        margin-left: 35%;
+        // margin-left: 35%;
+        
+        text-align: center;
         justify-content: flex-start;
         top:0;
         }

@@ -81,6 +81,11 @@ body.post-type-archive-trainer {
         position: relative;
         height: 30%;
 
+        @include desktop {
+          width: 30%;
+          height: auto;
+        }
+
         .trainer-thumbnail-wrapper {
           display: flex;
           flex-flow: column nowrap;
@@ -92,10 +97,19 @@ body.post-type-archive-trainer {
           width: 70%;
           height: 70%;
           background: #C6CDDF;
+
+          @include desktop {
+            width: 50%;
+            height: 75%;
+          }
     
           img {
             height: 100%;
             max-width: none;
+
+            @include desktop {
+              width: auto;
+            }
           }
         }
     
