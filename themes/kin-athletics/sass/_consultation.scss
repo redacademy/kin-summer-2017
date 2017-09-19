@@ -405,7 +405,7 @@
 }
 
 #gform_next_button_1_23, #edit-comment{   // next button for comment form
-  bottom: 80px;
+  bottom: 85px;
   right: 40px;
   width: auto;
   font-size: 20px;
@@ -413,8 +413,8 @@
   box-shadow: none;
 
   @include Desktop{
-    top: 265px;
     right: 25px;
+    bottom: 110px;
   }
 }
 
@@ -474,7 +474,7 @@
 #gform_submit_button_1{          // submit button
   right: 50%;
   left: 50%;
-  bottom: 650px;
+  bottom: 705px;
   font-size: 30px;
   background-color: $color__brand-red;
   color: white;
@@ -485,7 +485,7 @@
   transform: translate(-50%, -50%);
 
   @include Desktop{
-    bottom: 700px;
+    bottom: 715px;
   }
 }
 
@@ -536,7 +536,7 @@
   bottom: 325px;
   right: 50px;
   @include Desktop{
-    bottom: 100px;
+    bottom: 110px;
     right: 40px;
   }
 }

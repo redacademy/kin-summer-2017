@@ -14,9 +14,9 @@ get_header(); ?>
     <div class="project-td-text">
       <h2>Kin Athletics Presents</h2>
       <?php echo CFS()->get('front_heading');?>
-      
+      <div class="td-button-cont"><a href='<?php echo esc_url( home_url( '/events/') )?>'>Tell Me More</a></div>
     </div>
-    <div class="td-button-cont"><a href='<?php echo esc_url( home_url( '/events/') )?>'>Tell Me More</a></div>
+   
 
     <div class="main-carousel">
       <div class="carousel-project-td"> <!-- first cell-->
