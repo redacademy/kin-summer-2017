@@ -203,6 +203,10 @@
     margin: 0 auto;
     position: relative;
 
+    @include desktop {
+      width: 25%;
+    }
+
     a{
       padding: 0;
       position: absolute;
@@ -214,8 +218,6 @@
     }
   }
 }
-
-
 .events-white-container{
   border-top: 2px black solid;
 
@@ -231,4 +233,41 @@
     }
   }
 }
+}
+
+.project-td-flex-button {
+  display: flex;
+  flex-direction: column;
+  padding-right: 10px;
+  
+  @include desktop {
+    flex-direction: row;
+    justify-content: flex-end;
+
+    .red-button {
+      @include desktop {
+        order: 1;
+      }
+
+      .social-button.clr-bg {
+        @include desktop {
+          order: 2;
+        }
+      }
+    }
+  }
+}
+
+.on-now-and-services {
+  .events-black-container p {
+    font-family: oswald;
+    padding-bottom: 10px;
+
+    @include desktop {
+      font-size: 60px;
+      text-align: right;
+      padding-right: 3%;
+      padding-bottom: 20px;
+    }
+  }
 }
