@@ -3156,6 +3156,10 @@ body.post-type-archive-trainer .page-template-events .our-place {
 #gform_fields_1_5 li {
   margin-bottom: 40px; }
 
+#gform_page_1_1 .gform_page_footer, #gform_page_1_2 .gform_page_footer, #gform_page_1_3 .gform_page_footer,
+#gform_page_1_4 .gform_page_footer, #gform_page_1_5 .gform_page_footer, #gform_page_1_6 .gform_page_footer {
+  position: relative; }
+
 #input_1_1_3, #input_1_2 {
   border-radius: 0px;
   border: 2px solid #A10000; }
@@ -3206,8 +3210,8 @@ body.post-type-archive-trainer .page-template-events .our-place {
     outline: none; }
 
 #gform_next_button_1_8, #edit-name {
-  top: 483px;
-  right: 50px;
+  bottom: 74px;
+  right: 28px;
   width: auto;
   font-size: 20px;
   font-weight: bold;
@@ -3218,7 +3222,7 @@ body.post-type-archive-trainer .page-template-events .our-place {
     position: relative; }
     #gform_page_1_1 #gform_next_button_1_8, #gform_page_1_1 #edit-name {
       top: auto;
-      bottom: 90px;
+      bottom: 88px;
       right: 20px; } }
 
 .nameform-box1, .nameform-box2,
@@ -3249,8 +3253,8 @@ body.post-type-archive-trainer .page-template-events .our-place {
   margin-bottom: -20px; }
 
 #gform_next_button_1_10, #edit-email {
-  top: 342px;
-  right: 12%;
+  bottom: 66px;
+  right: 30px;
   width: auto;
   font-size: 20px;
   box-shadow: none; }
@@ -3265,7 +3269,7 @@ body.post-type-archive-trainer .page-template-events .our-place {
 
 @media only screen and (min-width: 600px) {
   #gform_next_button_1_10, #edit-email {
-    top: 170px;
+    bottom: 88px;
     right: 20px; } }
 
 #gform_previous_button_1_10, #gform_previous_button_1_13,
@@ -3324,7 +3328,7 @@ body.post-type-archive-trainer .page-template-events .our-place {
   transform: translate(-50%, -50%);
   left: 50%;
   right: 50%;
-  bottom: -65px; }
+  bottom: 20px; }
 
 @media only screen and (min-width: 600px) {
   #gform_page_1_3 {
@@ -3361,7 +3365,7 @@ body.post-type-archive-trainer .page-template-events .our-place {
 
 #gform_next_button_1_12, #edit-action {
   left: 50%;
-  bottom: 100px;
+  bottom: 25px;
   transform: translate(-50%, -50%); }
 
 @media only screen and (min-width: 600px) {
@@ -3370,7 +3374,7 @@ body.post-type-archive-trainer .page-template-events .our-place {
 
 @media only screen and (min-width: 600px) {
   #gform_page_1_4 #gform_next_button_1_12, #gform_page_1_4 #edit-action {
-    bottom: 50px; } }
+    bottom: 60px; } }
 
 #field_1_11 .gfield_label {
   display: none; }
@@ -3382,8 +3386,8 @@ body.post-type-archive-trainer .page-template-events .our-place {
   padding-bottom: 40px; }
 
 #gform_next_button_1_23, #edit-comment {
-  top: 400px;
-  right: 57px;
+  bottom: 80px;
+  right: 40px;
   width: auto;
   font-size: 20px;
   font-weight: bold;
@@ -3429,7 +3433,7 @@ body.post-type-archive-trainer .page-template-events .our-place {
 #gform_submit_button_1 {
   right: 50%;
   left: 50%;
-  top: 200px;
+  bottom: 650px;
   font-size: 30px;
   background-color: #A10000;
   color: white;
@@ -3438,6 +3442,9 @@ body.post-type-archive-trainer .page-template-events .our-place {
   padding: 0;
   margin-top: 10px;
   transform: translate(-50%, -50%); }
+  @media only screen and (min-width: 600px) {
+    #gform_submit_button_1 {
+      bottom: 700px; } }
 
 #edit-name, #edit-email, #edit-trainer, #edit-action, #edit-comment {
   display: none; }
@@ -3446,29 +3453,41 @@ body.post-type-archive-trainer .page-template-events .our-place {
   display: block !important;
   z-index: 9999; }
 
-@media only screen and (min-width: 600px) {
-  #gform_page_1_1 #edit-name {
-    bottom: 87px; } }
+#gform_page_1_1 #edit-name {
+  bottom: 238px;
+  right: 44px; }
+  @media only screen and (min-width: 600px) {
+    #gform_page_1_1 #edit-name {
+      bottom: 85px;
+      right: 28px; } }
 
-@media only screen and (min-width: 600px) {
-  #gform_page_1_2 #edit-email {
-    top: 169px; } }
+#gform_page_1_2 #edit-email {
+  bottom: 378px;
+  right: 44px; }
+  @media only screen and (min-width: 600px) {
+    #gform_page_1_2 #edit-email {
+      bottom: 84px;
+      right: 29px; } }
 
 #gform_page_1_3 #edit-trainer {
-  bottom: -45px; }
+  bottom: 0; }
   @media only screen and (min-width: 600px) {
     #gform_page_1_3 #edit-trainer {
       bottom: 50px; } }
 
 #gform_page_1_4 #edit-action {
-  bottom: 120px; }
+  bottom: 167px; }
   @media only screen and (min-width: 600px) {
     #gform_page_1_4 #edit-action {
       bottom: 50px; } }
 
-@media only screen and (min-width: 600px) {
-  #gform_page_1_5 #edit-comment {
-    top: 264px; } }
+#gform_page_1_5 #edit-comment {
+  bottom: 325px;
+  right: 50px; }
+  @media only screen and (min-width: 600px) {
+    #gform_page_1_5 #edit-comment {
+      bottom: 100px;
+      right: 40px; } }
 
 .social-buttons-flex {
   display: -ms-flexbox;
