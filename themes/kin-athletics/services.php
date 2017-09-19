@@ -104,8 +104,8 @@ get_header(); ?>
           <div class="carousel-cell community-projects" id='community-projects'>
             <h2>Community projects</h2>
             <?php echo CFS()->get('services_community_projects');?>
-            <h3>on now - <?php echo CFS()->get('past_events_featured', 34); ?></h3>
-            <div class='red-button'><a href='<?php echo esc_url(str_replace(' ', '-', home_url('/event/'.CFS()->get('past_events_featured')))); ?>'>buy tickets</a></div>
+            <h3>on now - <?php echo CFS()->get('services_featured_event'); ?></h3>
+            <div class='red-button'><a href='<?php echo esc_url(str_replace(' ', '-', home_url('/event/'.CFS()->get('services_featured_event')))); ?>'>buy tickets</a></div>
             <div class='social-button'><a href='#'>tell me more</a></div>
             <div class='social-button'><a href='#'>past events</a></div>
           </div>  <!-- end of carousel cell community projects -->

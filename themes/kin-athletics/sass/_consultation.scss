@@ -84,6 +84,11 @@
 
 //   end of form pagination
 
+#gform_page_1_1 .gform_page_footer, #gform_page_1_2 .gform_page_footer, #gform_page_1_3 .gform_page_footer, 
+#gform_page_1_4 .gform_page_footer, #gform_page_1_5 .gform_page_footer, #gform_page_1_6 .gform_page_footer{
+  position: relative;
+}
+
 
 #input_1_1_3, #input_1_2{
   border-radius: 0px;
@@ -145,8 +150,8 @@
 }
 
 #gform_next_button_1_8, #edit-name{   // next button for name form
-  top: 483px;
-  right: 50px;
+  bottom: 74px;
+  right: 28px;
   width: auto;
   font-size: 20px;
   font-weight: bold;
@@ -159,7 +164,7 @@
 
     #gform_next_button_1_8, #edit-name{ 
       top: auto;
-      bottom: 90px;
+      bottom: 88px;
       right: 20px;
     }
   }
@@ -201,8 +206,8 @@
 //     see line 112 for black chatbox
 
 #gform_next_button_1_10, #edit-email{   // next button for email form
-  top: 342px;
-  right: 12%;
+  bottom: 66px;
+  right: 30px;
   width: auto;
   font-size: 20px;
   box-shadow: none; 
@@ -222,7 +227,7 @@
 
 #gform_next_button_1_10, #edit-email{
   @include Desktop{
-    top: 170px;
+    bottom: 88px;
     right: 20px;
   }
 }
@@ -310,7 +315,7 @@
   transform: translate(-50%, -50%);
   left: 50%;
   right: 50%;
-  bottom: -65px;
+  bottom: 20px;
 }
 
 #gform_page_1_3{
@@ -365,7 +370,7 @@
 
 #gform_next_button_1_12, #edit-action{          // next button for actions
   left: 50%;
-  bottom: 100px;
+  bottom: 25px;
   transform: translate(-50%, -50%);
 }
 
@@ -376,7 +381,7 @@
 
   #gform_next_button_1_12, #edit-action{
     @include Desktop{
-     bottom: 50px;
+     bottom: 60px;
     }
   }
 }
@@ -400,8 +405,8 @@
 }
 
 #gform_next_button_1_23, #edit-comment{   // next button for comment form
-  top: 400px;
-  right: 57px;
+  bottom: 80px;
+  right: 40px;
   width: auto;
   font-size: 20px;
   font-weight: bold;
@@ -469,7 +474,7 @@
 #gform_submit_button_1{          // submit button
   right: 50%;
   left: 50%;
-  top: 200px;
+  bottom: 650px;
   font-size: 30px;
   background-color: $color__brand-red;
   color: white;
@@ -478,6 +483,10 @@
   padding: 0;
   margin-top: 10px;
   transform: translate(-50%, -50%);
+
+  @include Desktop{
+    bottom: 700px;
+  }
 }
 
 #edit-name, #edit-email, #edit-trainer, #edit-action, #edit-comment{
@@ -490,19 +499,25 @@
 }
 
 #gform_page_1_1 #edit-name{
+  bottom: 238px;
+  right: 44px;
   @include Desktop{
-    bottom: 87px;
+    bottom: 85px;
+    right: 28px;
   }
 }
 
 #gform_page_1_2 #edit-email{
+  bottom: 378px;
+  right: 44px;
   @include Desktop{
-    top: 169px;
+    bottom: 84px;
+    right: 29px;
   }
 }
 
 #gform_page_1_3 #edit-trainer{
-  bottom: -45px;
+  bottom: 0;
 
   @include Desktop{
     bottom: 50px;
@@ -510,7 +525,7 @@
 }
 
 #gform_page_1_4 #edit-action{
-  bottom: 120px;
+  bottom: 167px;
 
   @include Desktop{
     bottom: 50px;
@@ -518,7 +533,10 @@
 }
 
 #gform_page_1_5 #edit-comment{
+  bottom: 325px;
+  right: 50px;
   @include Desktop{
-    top: 264px;
+    bottom: 100px;
+    right: 40px;
   }
 }
