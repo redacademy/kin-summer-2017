@@ -91,6 +91,17 @@ p .contact { // to match H2
   margin: 0 auto;
   border: none;
   height: 2.67%;
-  width: 70%
+  width: 70%;
+
+  @include desktop {
+    max-width: 50%;
+  }
+  .red-button a
+  }
+}
+
+@include desktop {
+  .page-template-find-us h3 {
+    font-size: 4rem;
   }
 }

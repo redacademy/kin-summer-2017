@@ -1584,4 +1584,218 @@ bash-3.2$ ig[K[Kgit pull
 error: You have not concluded your merge (MERGE_HEAD exists).
 hint: Please, commit your changes before merging.
 fatal: Exiting because of unfinished merge.
-bash-3.2$ 
+bash-3.2$ git pullcommit -m "started styling on about page"[C[C[C[C[C[C[C[C[C[C[C[C[C[Cadd -A[Kstatus
+On branch master
+Your branch and 'origin/master' have diverged,
+and have 3 and 4 different commits each, respectively.
+  (use "git pull" to merge the remote branch into yours)
+
+All conflicts fixed but you are still merging.
+  (use "git commit" to conclude merge)
+
+Changes to be committed:
+
+	[32mmodified:   landing-page.php[m
+	[32mmodified:   sass/_landing-page.scss[m
+	[32mmodified:   sass/_mixins.scss[m
+	[32mmodified:   sass/_navigation.scss[m
+	[32mmodified:   sass/_typography.scss[m
+	[32mmodified:   style.css[m
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	[31mmodified:   typescript[m
+
+bash-3.2$ git status[2Ppullcommit -m "started styling on about page"[C[C[C[C[C[C[C[C[C[C[C[C[C[Cadd -A[K
+bash-3.2$ git add -Astatus[2Ppullcommit -m "started styling on about page"[C[C[C[C[C[C[C[C[C[C[C[C[C[Cadd -A[Kcommit -m "started styling on about page"
+[master 55d18e8] started styling on about page
+bash-3.2$ git oull[K[K[K[Kpull
+Already up-to-date.
+bash-3.2$ git push
+Counting objects: 35, done.
+Delta compression using up to 8 threads.
+Compressing objects:   3% (1/29)   Compressing objects:   6% (2/29)   Compressing objects:  10% (3/29)   Compressing objects:  13% (4/29)   Compressing objects:  17% (5/29)   Compressing objects:  20% (6/29)   Compressing objects:  24% (7/29)   Compressing objects:  27% (8/29)   Compressing objects:  31% (9/29)   Compressing objects:  34% (10/29)   Compressing objects:  37% (11/29)   Compressing objects:  41% (12/29)   Compressing objects:  44% (13/29)   Compressing objects:  48% (14/29)   Compressing objects:  51% (15/29)   Compressing objects:  55% (16/29)   Compressing objects:  58% (17/29)   Compressing objects:  62% (18/29)   Compressing objects:  65% (19/29)   Compressing objects:  68% (20/29)   Compressing objects:  72% (21/29)   Compressing objects:  75% (22/29)   Compressing objects:  79% (23/29)   Compressing objects:  82% (24/29)   Compressing objects:  86% (25/29)   Compressing objects:  89% (26/29)   Compressing objects:  93% (27/29)   Compressing objects:  96% (28/29)   Compressing objects: 100% (29/29)   Compressing objects: 100% (29/29), done.
+Writing objects:   2% (1/35)   Writing objects:   5% (2/35)   Writing objects:   8% (3/35)   Writing objects:  11% (4/35)   Writing objects:  14% (5/35)   Writing objects:  17% (6/35)   Writing objects:  20% (7/35)   Writing objects:  22% (8/35)   Writing objects:  25% (9/35)   Writing objects:  28% (10/35)   Writing objects:  31% (11/35)   Writing objects:  34% (12/35)   Writing objects:  37% (13/35)   Writing objects:  40% (14/35)   Writing objects:  42% (15/35)   Writing objects:  45% (16/35)   Writing objects:  48% (17/35)   Writing objects:  51% (18/35)   Writing objects:  54% (19/35)   Writing objects:  57% (20/35)   Writing objects:  60% (21/35)   Writing objects:  62% (22/35)   Writing objects:  65% (23/35)   Writing objects:  68% (24/35)   Writing objects:  71% (25/35)   Writing objects:  74% (26/35)   Writing objects:  77% (27/35)   Writing objects:  80% (28/35)   Writing objects:  82% (29/35)   Writing objects:  85% (30/35)   Writing objects:  88% (31/35)   Writing objects:  91% (32/35)   Writing objects:  94% (33/35)   Writing objects:  97% (34/35)   Writing objects: 100% (35/35)   Writing objects: 100% (35/35), 11.87 KiB | 3.96 MiB/s, done.
+Total 35 (delta 24), reused 0 (delta 0)
+remote: Resolving deltas:   0% (0/24)   [Kremote: Resolving deltas:   4% (1/24)   [Kremote: Resolving deltas:  20% (5/24)   [Kremote: Resolving deltas:  33% (8/24)   [Kremote: Resolving deltas:  45% (11/24)   [Kremote: Resolving deltas:  58% (14/24)   [Kremote: Resolving deltas:  62% (15/24)   [Kremote: Resolving deltas:  66% (16/24)   [Kremote: Resolving deltas:  75% (18/24)   [Kremote: Resolving deltas:  91% (22/24)   [Kremote: Resolving deltas:  95% (23/24)   [Kremote: Resolving deltas: 100% (24/24)   [Kremote: Resolving deltas: 100% (24/24), completed with 10 local objects.[K
+To https://github.com/redacademy/kin-summer-2017.git
+   366c76e..55d18e8  master -> master
+bash-3.2$ gulp
+[[90m20:18:48[39m] Using gulpfile [35m/Applications/MAMP/htdocs/kin-athletics/wp-content/themes/kin-athletics/gulpfile.js[39m
+[[90m20:18:48[39m] Starting '[36mwatch[39m'...
+[[90m20:18:48[39m] Finished '[36mwatch[39m' after [35m23 ms[39m
+[[90m20:18:48[39m] Starting '[36mbrowser-sync[39m'...
+[[90m20:18:50[39m] Finished '[36mbrowser-sync[39m' after [35m1.61 s[39m
+[[90m20:18:50[39m] Starting '[36mdefault[39m'...
+[[90m20:18:50[39m] Finished '[36mdefault[39m' after [35m45 μs[39m
+[[34mBrowsersync[39m] Proxying: [36mhttp://localhost:8888[39m
+[[34mBrowsersync[39m] [1mAccess URLs:[22m
+[90m ---------------------------------------------------[39m
+       Local: [35mhttp://localhost:3000/kin-athletics[39m
+    External: [35mhttp://192.168.1.70:3000/kin-athletics[39m
+[90m ---------------------------------------------------[39m
+          UI: [35mhttp://localhost:3001[39m
+ UI External: [35mhttp://192.168.1.70:3001[39m
+[90m ---------------------------------------------------[39m
+[[34mBrowsersync[39m] Watching files...
+[[90m20:21:36[39m] Starting '[36msass[39m'...
+[[90m20:21:36[39m] Finished '[36msass[39m' after [35m24 ms[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mFile event [change] : [39m[35mbuild/css/style.min.css[39m
+[[90m20:21:44[39m] Starting '[36msass[39m'...
+[[90m20:21:44[39m] Finished '[36msass[39m' after [35m3.08 ms[39m
+[[90m20:21:44[39m] [36mgulp-notify[39m: [[34mGulp[39m] [31mError: sass/_find-us.scss
+Error: Invalid CSS after ".pa": expected "{", was ""
+        on line 98 of sass/_find-us.scss
+>> .pa
+   ^
+[39m
+[[90m20:21:44[39m] [36mgulp-notify[39m: [[34mError running notifier[39m] [31mCould not send message: spawn EACCES[39m
+[[90m20:21:45[39m] Starting '[36msass[39m'...
+[[90m20:21:45[39m] Finished '[36msass[39m' after [35m2.36 ms[39m
+[[90m20:21:45[39m] [36mgulp-notify[39m: [[34mGulp[39m] [31mError: sass/_find-us.scss
+Error: Invalid CSS after "}": expected 1 selector or at-rule, was "."
+        on line 96 of sass/_find-us.scss
+>> }
+   -^
+[39m
+[[90m20:21:45[39m] [36mgulp-notify[39m: [[34mError running notifier[39m] [31mCould not send message: spawn EACCES[39m
+[[90m20:21:47[39m] Starting '[36msass[39m'...
+[[90m20:21:47[39m] Finished '[36msass[39m' after [35m2.07 ms[39m
+[[90m20:21:47[39m] [36mgulp-notify[39m: [[34mGulp[39m] [31mError: sass/_find-us.scss
+Error: Invalid CSS after "}": expected 1 selector or at-rule, was "@"
+        on line 96 of sass/_find-us.scss
+>> }
+   -^
+[39m
+[[90m20:21:47[39m] [36mgulp-notify[39m: [[34mError running notifier[39m] [31mCould not send message: spawn EACCES[39m
+[[90m20:21:52[39m] Starting '[36msass[39m'...
+[[90m20:21:52[39m] Finished '[36msass[39m' after [35m1.68 ms[39m
+[[34mBrowsersync[39m] [36mFile event [change] : [39m[35mbuild/css/style.min.css[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[90m20:21:54[39m] Starting '[36msass[39m'...
+[[90m20:21:54[39m] Finished '[36msass[39m' after [35m4.12 ms[39m
+[[34mBrowsersync[39m] [36mFile event [change] : [39m[35mbuild/css/style.min.css[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[90m20:21:59[39m] Starting '[36msass[39m'...
+[[90m20:21:59[39m] Finished '[36msass[39m' after [35m2.93 ms[39m
+[[90m20:21:59[39m] [36mgulp-notify[39m: [[34mGulp[39m] [31mError: sass/_find-us.scss
+Error: Invalid CSS after "...clude desktop {": expected "}", was ".page-template-find"
+        on line 98 of sass/_find-us.scss
+>> @include desktop {
+   ------------------^
+[39m
+[[90m20:21:59[39m] [36mgulp-notify[39m: [[34mError running notifier[39m] [31mCould not send message: spawn EACCES[39m
+[[90m20:22:02[39m] Starting '[36msass[39m'...
+[[90m20:22:02[39m] Finished '[36msass[39m' after [35m2.24 ms[39m
+[[90m20:22:02[39m] [36mgulp-notify[39m: [[34mGulp[39m] [31mError: sass/_find-us.scss
+Error: property "fon" must be followed by a ':'
+        on line 100 of sass/_find-us.scss
+>>     fon
+   ----^
+[39m
+[[90m20:22:02[39m] [36mgulp-notify[39m: [[34mError running notifier[39m] [31mCould not send message: spawn EACCES[39m
+[[90m20:22:05[39m] Starting '[36msass[39m'...
+[[90m20:22:05[39m] Finished '[36msass[39m' after [35m1.76 ms[39m
+[[90m20:22:05[39m] [36mgulp-notify[39m: [[34mGulp[39m] [31mError: sass/_find-us.scss
+Error: Invalid CSS after "    font-size:": expected expression (e.g. 1px, bold), was "}"
+        on line 100 of sass/_find-us.scss
+>>     font-size: 
+   --------------^
+[39m
+[[90m20:22:05[39m] [36mgulp-notify[39m: [[34mError running notifier[39m] [31mCould not send message: spawn EACCES[39m
+[[90m20:22:07[39m] Starting '[36msass[39m'...
+[[90m20:22:07[39m] Finished '[36msass[39m' after [35m1.43 ms[39m
+[[34mBrowsersync[39m] [36mFile event [change] : [39m[35mbuild/css/style.min.css[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[90m20:22:32[39m] Starting '[36msass[39m'...
+[[90m20:22:32[39m] Finished '[36msass[39m' after [35m3.07 ms[39m
+[[90m20:22:32[39m] [36mgulp-notify[39m: [[34mGulp[39m] [31mError: sass/_find-us.scss
+Error: Invalid CSS after "  width: 70%": expected expression (e.g. 1px, bold), was "@"
+        on line 94 of sass/_find-us.scss
+>>   width: 70%
+   ------------^
+[39m
+[[90m20:22:32[39m] [36mgulp-notify[39m: [[34mError running notifier[39m] [31mCould not send message: spawn EACCES[39m
+[[90m20:22:34[39m] Starting '[36msass[39m'...
+[[90m20:22:34[39m] Finished '[36msass[39m' after [35m2.16 ms[39m
+[[90m20:22:34[39m] [36mgulp-notify[39m: [[34mGulp[39m] [31mError: sass/_find-us.scss
+Error: Invalid CSS after "  width: 70%": expected expression (e.g. 1px, bold), was "@in"
+        on line 94 of sass/_find-us.scss
+>>   width: 70%
+   ------------^
+[39m
+[[90m20:22:34[39m] [36mgulp-notify[39m: [[34mError running notifier[39m] [31mCould not send message: spawn EACCES[39m
+[[90m20:22:45[39m] Starting '[36msass[39m'...
+[[90m20:22:45[39m] Finished '[36msass[39m' after [35m1.5 ms[39m
+[[90m20:22:45[39m] [36mgulp-notify[39m: [[34mGulp[39m] [31mError: sass/_find-us.scss
+Error: Invalid CSS after "  width: 70%": expected expression (e.g. 1px, bold), was "@inc"
+        on line 94 of sass/_find-us.scss
+>>   width: 70%
+   ------------^
+[39m
+[[90m20:22:45[39m] [36mgulp-notify[39m: [[34mError running notifier[39m] [31mCould not send message: spawn EACCES[39m
+[[90m20:22:48[39m] Starting '[36msass[39m'...
+[[90m20:22:48[39m] Finished '[36msass[39m' after [35m1.45 ms[39m
+[[90m20:22:48[39m] [36mgulp-notify[39m: [[34mGulp[39m] [31mError: sass/_find-us.scss
+Error: Invalid CSS after "  width: 70%": expected expression (e.g. 1px, bold), was "@include desktop "
+        on line 94 of sass/_find-us.scss
+>>   width: 70%
+   ------------^
+[39m
+[[90m20:22:48[39m] [36mgulp-notify[39m: [[34mError running notifier[39m] [31mCould not send message: spawn EACCES[39m
+[[90m20:22:51[39m] Starting '[36msass[39m'...
+[[90m20:22:51[39m] Finished '[36msass[39m' after [35m1.75 ms[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mFile event [change] : [39m[35mbuild/css/style.min.css[39m
+[[90m20:22:55[39m] Starting '[36msass[39m'...
+[[90m20:22:55[39m] Finished '[36msass[39m' after [35m1.83 ms[39m
+[[34mBrowsersync[39m] [36mFile event [change] : [39m[35mbuild/css/style.min.css[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[90m20:23:01[39m] Starting '[36msass[39m'...
+[[90m20:23:01[39m] Finished '[36msass[39m' after [35m1.69 ms[39m
+[[90m20:23:01[39m] [36mgulp-notify[39m: [[34mGulp[39m] [31mError: sass/_find-us.scss
+Error: property "max" must be followed by a ':'
+        on line 97 of sass/_find-us.scss
+>>     max
+   ----^
+[39m
+[[90m20:23:01[39m] [36mgulp-notify[39m: [[34mError running notifier[39m] [31mCould not send message: spawn EACCES[39m
+[[90m20:23:03[39m] Starting '[36msass[39m'...
+[[90m20:23:03[39m] Finished '[36msass[39m' after [35m1.56 ms[39m
+[[90m20:23:03[39m] [36mgulp-notify[39m: [[34mGulp[39m] [31mError: sass/_find-us.scss
+Error: Invalid CSS after "    max-width:": expected expression (e.g. 1px, bold), was "}"
+        on line 97 of sass/_find-us.scss
+>>     max-width: 
+   --------------^
+[39m
+[[90m20:23:03[39m] [36mgulp-notify[39m: [[34mError running notifier[39m] [31mCould not send message: spawn EACCES[39m
+[[90m20:23:13[39m] Starting '[36msass[39m'...
+[[90m20:23:13[39m] Finished '[36msass[39m' after [35m1.79 ms[39m
+[[34mBrowsersync[39m] [36mFile event [change] : [39m[35mbuild/css/style.min.css[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[90m20:23:33[39m] Starting '[36msass[39m'...
+[[90m20:23:33[39m] Finished '[36msass[39m' after [35m2.81 ms[39m
+[[34mBrowsersync[39m] [36mFile event [change] : [39m[35mbuild/css/style.min.css[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[90m20:23:36[39m] Starting '[36msass[39m'...
+[[90m20:23:36[39m] Finished '[36msass[39m' after [35m1.67 ms[39m
+[[90m20:23:36[39m] [36mgulp-notify[39m: [[34mGulp[39m] [31mError: sass/_find-us.scss
+Error: Invalid CSS after "  }": expected "}", was ".re"
+        on line 98 of sass/_find-us.scss
+>>   }
+   ---^
+[39m
+[[90m20:23:36[39m] [36mgulp-notify[39m: [[34mError running notifier[39m] [31mCould not send message: spawn EACCES[39m
+[[90m20:23:38[39m] Starting '[36msass[39m'...
+[[90m20:23:38[39m] Finished '[36msass[39m' after [35m4.09 ms[39m
+[[90m20:23:38[39m] [36mgulp-notify[39m: [[34mGulp[39m] [31mError: sass/_find-us.scss
+Error: Invalid CSS after "  }": expected "}", was ".red-button a"
+        on line 98 of sass/_find-us.scss
+>>   }
+   ---^
+[39m
+[[90m20:23:38[39m] [36mgulp-notify[39m: [[34mError running notifier[39m] [31mCould not send message: spawn EACCES[39m
+git p

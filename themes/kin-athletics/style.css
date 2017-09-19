@@ -2295,6 +2295,13 @@ body .page-template-video-page {
   border: none;
   height: 2.67%;
   width: 70%; }
+  @media only screen and (min-width: 600px) {
+    .page-template-find-us .red-button, .page-template-find-us .consultation-button {
+      max-width: 50%; } }
+
+@media only screen and (min-width: 600px) {
+  .page-template-find-us h3 {
+    font-size: 4rem; } }
 
 .page-template-events .entry-content {
   margin: 0; }
