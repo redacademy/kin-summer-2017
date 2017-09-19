@@ -15,9 +15,9 @@
 
         <div id="secondary" class="widget-area" role="complementary">
             <?php dynamic_sidebar( 'sidebar-2' ); ?>
+            <div class="red-button">
+                  <a href="<?php echo esc_url(home_url('/find-us/'));?>">Find Us</a>
+            </div><!-- .social-button -->
         </div><!-- .secondary -->
     </div><!-- .about-sidebar -->
-    <div class="red-button">
-          <a href="<?php echo esc_url(home_url('/find-us/'));?>">Find Us</a>
-    </div><!-- .social-button -->
 </section>
