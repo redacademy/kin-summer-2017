@@ -37,7 +37,7 @@ get_header(); ?>
 
                     <h2 class="header-title"><?php echo esc_html( get_the_title($latest_event[0]->ID) ) ;?></h2>
                     <?php echo CFS()->get('current_event_info', $latest_event[0]->ID); ?>
-                    <h3 class='event-date'>happens: <?php echo CFS()->get('current_event_date', $latest_event[0]->ID); ?></h3>
+                    <h3 class='event-date'>happened: <?php echo CFS()->get('current_event_date', $latest_event[0]->ID); ?></h3>
                     <div class='red-button'><a href='<?php echo site_url()."/event/".$latest_event[0]->post_name ?>'>buy tickets</a></div>
                 </div>
                 <div class="latest-history-carousel">
