@@ -11,9 +11,9 @@
 
 			<footer id="colophon" class="site-footer" role="contentinfo">
 				<div class='footer-social-container'>
-					<a>free consultation</a>
-					<a>project td</a>
-					<a>find us</a>
+					<a href='<?php echo esc_url( home_url( '/consultation/') )?>'>free consultation</a>
+					<a href='<?php echo esc_url( home_url( '/#/') )?>'>project td</a>
+					<a href='<?php echo esc_url( home_url( '/find-us/') )?>'>find us</a>
 					<div class='footer-social-logo'>
 						<a><i class="fa fa-facebook" aria-hidden="true"></i></a>
 						<a><i class="fa fa-instagram" aria-hidden="true"></i></a>
