@@ -336,6 +336,20 @@ big {
 .red-button a, .consultation-button a {
   font-size: 1.2rem; }
 
+/*Front Page*/
+.who-we-are-text h2, .what-we-do-text h2 {
+  font-family: "Oswald";
+  font-size: 2.8rem;
+  font-weight: 500;
+  line-height: 2.9rem;
+  margin: 0 2rem; }
+
+.who-we-are-text .front-lorem, .what-we-do-text .front-lorem {
+  width: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  padding: .5rem 2rem;
+  margin-top: .3rem; }
+
 /*--------------------------------------------------------------
 # Elements
 --------------------------------------------------------------*/
@@ -827,13 +841,19 @@ object {
   position: relative; }
 
 .project-td-image-wrapper .project-td-image, .project-td-image-wrapper .who-we-are-image, .project-td-image-wrapper .what-we-do-image, .project-td-image-wrapper .project-td-image, .project-td-image-wrapper .who-we-are-image, .project-td-image-wrapper .what-we-do-image, .front-img-wrapper .project-td-image, .front-img-wrapper .who-we-are-image, .front-img-wrapper .what-we-do-image {
-  position: absolute;
-  overflow: hidden;
-  transform: translate(-36%, 0.1%); }
+  position: absolute; }
+  @media only screen and (max-width: 600px) {
+    .project-td-image-wrapper .project-td-image, .project-td-image-wrapper .who-we-are-image, .project-td-image-wrapper .what-we-do-image, .project-td-image-wrapper .project-td-image, .project-td-image-wrapper .who-we-are-image, .project-td-image-wrapper .what-we-do-image, .front-img-wrapper .project-td-image, .front-img-wrapper .who-we-are-image, .front-img-wrapper .what-we-do-image {
+      overflow: hidden;
+      transform: translate(-36%, 0.1%); } }
 
 img {
   height: 100vh;
   max-width: none; }
+  @media only screen and (min-width: 600px) {
+    img {
+      width: 100vw;
+      height: 100vh; } }
 
 .project-td-text, .who-we-are-text, .what-we-do-text {
   position: absolute;
@@ -842,6 +862,10 @@ img {
 .project-td-text {
   margin-top: 55%;
   margin-left: 9.5%; }
+  @media only screen and (min-width: 600px) {
+    .project-td-text {
+      margin-top: 15%;
+      margin-left: 4%; } }
   .project-td-text h2 {
     font-family: "Open Sans Condensed", sans-serif;
     font-size: 2rem;
@@ -850,24 +874,30 @@ img {
     font-weight: 300;
     letter-spacing: .5px;
     margin: 0; }
+    @media only screen and (min-width: 600px) {
+      .project-td-text h2 {
+        font-size: 3.8rem;
+        line-height: 5rem;
+        width: 20rem; } }
   .project-td-text .front-heading {
     font-size: 3rem;
     font-weight: 500;
     margin: 0; }
+    @media only screen and (min-width: 600px) {
+      .project-td-text .front-heading {
+        font-size: 8rem; } }
 
-.who-we-are-text, .what-we-do-text {
-  margin-top: 55%; }
-  .who-we-are-text h2, .what-we-do-text h2 {
-    font-family: "Oswald";
-    font-size: 2.8rem;
-    font-weight: 500;
-    line-height: 2.9rem;
-    margin: 0 2rem; }
-  .who-we-are-text .front-lorem, .what-we-do-text .front-lorem {
-    width: 100%;
-    background: rgba(0, 0, 0, 0.7);
-    padding: .5rem 2rem;
-    margin-top: .3rem; }
+@media only screen and (min-width: 600px) {
+  .who-we-are-text {
+    top: 40%; }
+    .who-we-are-text h2 {
+      font-size: 6rem;
+      line-height: 8rem;
+      margin-left: 40rem; }
+    .who-we-are-text .front-lorem {
+      padding: .5rem 2rem;
+      padding-left: 35%;
+      margin-top: .3rem; } }
 
 p {
   margin-bottom: .75rem; }
@@ -884,7 +914,10 @@ p {
     padding: 2% 7%;
     font-family: "Oswald", sans-serif;
     position: absolute;
-    margin-left: 50%; }
+    left: 60%; }
+    @media only screen and (min-width: 600px) {
+      .who-we-are-text .who-button-cont {
+        padding: .75% 4%; } }
     .who-we-are-text .who-button-cont:hover {
       background-color: #850000; }
     .who-we-are-text .who-button-cont a {
@@ -895,6 +928,21 @@ p {
       text-align: center;
       text-decoration: none;
       line-height: 1.2; }
+      @media only screen and (min-width: 600px) {
+        .who-we-are-text .who-button-cont a {
+          font-size: 2.8rem; } }
+
+@media only screen and (min-width: 600px) {
+  .what-we-do-text {
+    margin-top: 10%; }
+    .what-we-do-text h2 {
+      font-size: 6rem;
+      line-height: 8rem;
+      margin-left: 40rem; }
+    .what-we-do-text .front-lorem {
+      padding: .5rem 2rem;
+      padding-left: 35%;
+      margin-top: .3rem; } }
 
 .what-we-do-text {
   text-align: left; }
@@ -909,6 +957,9 @@ p {
     font-family: "Oswald", sans-serif;
     position: absolute;
     margin-left: 8%; }
+    @media only screen and (min-width: 600px) {
+      .what-we-do-text .what-button-cont {
+        padding: .75% 4%; } }
     .what-we-do-text .what-button-cont:hover {
       background-color: #850000; }
     .what-we-do-text .what-button-cont a {
@@ -919,8 +970,15 @@ p {
       text-align: center;
       text-decoration: none;
       line-height: 1.2; }
+      @media only screen and (min-width: 600px) {
+        .what-we-do-text .what-button-cont a {
+          font-size: 2.8rem; } }
 
-.project-td-text .td-button-cont {
+.td-button-cont {
+  position: absolute;
+  z-index: 999;
+  display: -ms-flexbox;
+  display: flex;
   color: white;
   text-transform: uppercase;
   border: none;
@@ -930,11 +988,14 @@ p {
   padding: 2% 7%;
   font-family: "Oswald", sans-serif;
   position: absolute;
-  margin-left: 25%;
-  margin-top: .75rem; }
-  .project-td-text .td-button-cont:hover {
+  margin-left: 17%;
+  margin-top: 90%; }
+  @media only screen and (min-width: 600px) {
+    .td-button-cont {
+      padding: .75% 4%; } }
+  .td-button-cont:hover {
     background-color: #850000; }
-  .project-td-text .td-button-cont a {
+  .td-button-cont a {
     font-family: "Oswald", sans-serif;
     font-size: 1.5rem;
     font-weight: 300;
@@ -942,6 +1003,14 @@ p {
     text-align: center;
     text-decoration: none;
     line-height: 1.2; }
+    @media only screen and (min-width: 600px) {
+      .td-button-cont a {
+        font-size: 2.8rem; } }
+  @media only screen and (min-width: 600px) {
+    .td-button-cont {
+      margin-left: 60%;
+      margin-top: 0;
+      bottom: 120px; } }
 
 .landing-scroll-section {
   height: 85px;
@@ -955,6 +1024,9 @@ p {
   position: absolute;
   bottom: 0;
   width: 100%; }
+  @media only screen and (min-width: 600px) {
+    .landing-scroll-section {
+      margin-top: 10rem; } }
   .landing-scroll-section p {
     color: #A10000;
     text-transform: uppercase;
@@ -1240,7 +1312,9 @@ p {
     margin: 0;
     margin-left: 40px;
     max-width: 450px;
-    height: 10%; }
+    height: 14%; }
+    .personal-training .price-box-container span p {
+      font-weight: bold; }
   .services-featured h4 {
     text-align: right;
     font-size: 5.5rem; }
@@ -1532,6 +1606,10 @@ body.page-template-archive-trainer .entry-content {
     body.page-template-archive-trainer .entry-content .header-container h1 {
       margin: auto;
       text-align: center; }
+    @media only screen and (min-width: 600px) {
+      body.page-template-archive-trainer .entry-content .header-container h1 {
+        font-size: 3.5rem;
+        max-width: 100%; } }
 
 body.page-template-archive-trainer .flickity-prev-next-button {
   top: 50%; }
@@ -1557,6 +1635,9 @@ body.page-template-archive-trainer .carousel-cell.trainers {
 body.page-template-archive-trainer .trainers-grid .header-container h2.header-title--black {
   margin: 0 0 1rem;
   width: 100%; }
+  @media only screen and (min-width: 600px) {
+    body.page-template-archive-trainer .trainers-grid .header-container h2.header-title--black {
+      font-size: 8rem; } }
 
 body.page-template-archive-trainer .trainers-grid .trainer-grid-wrapper {
   width: 100%;
@@ -1628,6 +1709,10 @@ body.page-template-archive-trainer .circles-container {
       justify-content: space-evenly;
   -ms-flex-line-pack: center;
       align-content: center; }
+  @media only screen and (min-width: 600px) {
+    body.page-template-archive-trainer .circles-container {
+      -ms-flex-flow: nowrap;
+          flex-flow: nowrap; } }
   body.page-template-archive-trainer .circles-container .icon-container {
     width: 50%;
     height: 40%;
@@ -1639,6 +1724,9 @@ body.page-template-archive-trainer .circles-container {
         justify-content: center;
     -ms-flex-align: center;
         align-items: center; }
+    @media only screen and (min-width: 600px) {
+      body.page-template-archive-trainer .circles-container .icon-container {
+        height: 250px; } }
     body.page-template-archive-trainer .circles-container .icon-container a {
       height: 100%;
       display: -ms-flexbox;
@@ -1651,6 +1739,9 @@ body.page-template-archive-trainer .circles-container {
           justify-content: space-evenly; }
     body.page-template-archive-trainer .circles-container .icon-container img {
       height: 75%; }
+      @media only screen and (min-width: 600px) {
+        body.page-template-archive-trainer .circles-container .icon-container img {
+          height: 100%; } }
     body.page-template-archive-trainer .circles-container .icon-container p {
       margin: 0;
       color: white;
@@ -1663,6 +1754,9 @@ body.page-template-archive-trainer h2.header-title, body.page-template-archive-t
   font-size: 40px;
   margin: 0 0.5em;
   line-height: 58px; }
+  @media only screen and (min-width: 600px) {
+    body.page-template-archive-trainer h2.header-title, body.page-template-archive-trainer h2.header-title--black {
+      font-size: 8rem; } }
   body.page-template-archive-trainer h2.header-title--black {
     color: #000;
     text-align: center; }
@@ -2121,6 +2215,9 @@ body .page-template-video-page {
   margin-left: 34%;
   margin-top: 6%;
   bottom: 18px; }
+  @media only screen and (min-width: 600px) {
+    .video-button-cont {
+      padding: .75% 4%; } }
   .video-button-cont:hover {
     background-color: #850000; }
   .video-button-cont a {
@@ -2131,6 +2228,9 @@ body .page-template-video-page {
     text-align: center;
     text-decoration: none;
     line-height: 1.2; }
+    @media only screen and (min-width: 600px) {
+      .video-button-cont a {
+        font-size: 2.8rem; } }
   @media only screen and (min-width: 600px) {
     .video-button-cont {
       -ms-flex-pack: end;
@@ -2235,6 +2335,10 @@ body .page-template-video-page {
     .page-template-events .entry-content .header-container h1 {
       margin: auto;
       text-align: center; }
+    @media only screen and (min-width: 600px) {
+      .page-template-events .entry-content .header-container h1 {
+        font-size: 3rem;
+        font-weight: lighter; } }
   .page-template-events .entry-content .flickity-prev-next-button {
     display: none; }
   .page-template-events .entry-content .flickity-page-dots {
@@ -2301,6 +2405,13 @@ body .page-template-video-page {
       text-transform: uppercase;
       font-weight: 500;
       font-family: "Oswald"; }
+    @media only screen and (min-width: 600px) {
+      .page-template-events .circles-container .icon-container .circles-container {
+        display: block;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: nowrap;
+            flex-wrap: nowrap; } }
 
 .page-template-events .relative-carousel-container {
   position: relative; }
