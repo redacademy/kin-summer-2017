@@ -1,0 +1,24 @@
+.social-buttons-flex{
+  display: flex;
+  flex-direction: column;
+
+    @include desktop {
+      flex-direction: row;
+      justify-content: center;
+    }
+
+    .social-button {
+      @include desktop {
+        width: 30%;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        margin: 0 20px;
+        margin-bottom: 50px;
+      }
+      a {
+        @include desktop {
+        font-size: 30px;
+        }
+      }
+    }
+  }

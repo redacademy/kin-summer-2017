@@ -121,12 +121,11 @@ get_header(); ?>
               <div class='social-button'><a href='<?php echo esc_url( home_url( '/trainer/' . strtolower(CFS()->get('services_featured_trainer')) ) )?>'>about me</a></div>
             </div>
           </div>
-
           <div class='white container'>
-            <p>more feels on our services</p>
+            <h3 class="black-title">More feels on our services</h3>
               <div class="social-buttons-flex">
-                <div class='social-button'><a href='#'>facebook</a></div>
-                <div class='social-button'><a href='#'>instagram</a></div>
+                <div class='social-button'><a href='https://www.facebook.com/kinathletics/' target="_blank">facebook</a></div>
+                <div class='social-button'><a href='https://www.instagram.com/kinathletics/' target="_blank">instagram</a></div>
             </div>
           </div>
         </section>

@@ -332,6 +332,10 @@ big {
   font-weight: 300;
   line-height: 1.35rem;
   text-align: center; }
+  @media only screen and (min-width: 600px) {
+    .black-title {
+      padding-top: 20px;
+      font-size: 1.8rem; } }
 
 .red-button a, .consultation-button a {
   font-size: 1.2rem; }
@@ -1282,17 +1286,15 @@ body.post-type-archive-trainer .our-place {
   margin-right: 50px; }
 
 .circles-container {
-  height: auto;
+  height: 75%;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-flow: row wrap;
       flex-flow: row wrap;
-  margin: 0;
-  -ms-flex-pack: space-evenly;
-      justify-content: space-evenly; }
+  margin: 0; }
   .circles-container .icon-container {
-    width: 40%;
-    height: auto;
+    width: 50%;
+    height: 123px;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-flow: column nowrap;
@@ -1301,11 +1303,10 @@ body.post-type-archive-trainer .our-place {
         justify-content: center;
     -ms-flex-align: center;
         align-items: center;
-    text-align: center;
-    margin-bottom: 1.5rem; }
+    text-align: center; }
     .circles-container .icon-container a, .circles-container .icon-container img {
-      width: 100%;
-      height: auto; }
+      height: 100%;
+      width: auto; }
     .circles-container .icon-container p {
       margin: 0;
       color: white;
@@ -1375,19 +1376,6 @@ body.post-type-archive-trainer .our-place {
     font-size: 24px;
     font-weight: bold;
     text-transform: uppercase; }
-  .services-featured .red-button, .services-featured .consultation-button, .services-featured .social-button {
-    margin: 0;
-    margin-left: 25%;
-    width: 70%;
-    height: 50px;
-    box-shadow: 0 2.5px 4px 0 rgba(0, 0, 0, 0.5); }
-    .services-featured .red-button a, .services-featured .consultation-button a, .services-featured .social-button a {
-      display: block;
-      text-align: center;
-      color: #FFFFFF;
-      padding-top: 5px; }
-  .services-featured .social-button {
-    margin-top: 15px; }
 
 .page-template-services .white {
   position: absolute;
@@ -1404,14 +1392,6 @@ body.post-type-archive-trainer .our-place {
     padding: 0;
     margin: 0;
     font-family: "Open Sans Condensed", "Oswald", sans-serif; }
-  .page-template-services .white .red-button, .page-template-services .white .consultation-button, .page-template-services .white .social-button {
-    text-align: center;
-    width: 50%;
-    border-width: 3px;
-    box-shadow: 0 2.5px 4px 0 rgba(0, 0, 0, 0.5); }
-    .page-template-services .white .red-button a, .page-template-services .white .consultation-button a, .page-template-services .white .social-button a {
-      color: black;
-      font-size: 30px; }
 
 @media only screen and (min-width: 600px) {
   .page-template-services h1 {
@@ -1452,30 +1432,10 @@ body.post-type-archive-trainer .our-place {
     max-width: 450px;
     margin: 0;
     margin-left: 30px; }
-  .services-featured .social-button {
-    max-width: 450px;
-    margin: 0;
-    font-size: 2rem; }
-  .social-buttons-flex {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
-    -ms-flex-pack: center;
-        justify-content: center; }
-    .social-buttons-flex .social-button {
-      margin: 20px;
-      max-width: 25%;
-      padding-bottom: 5px;
-      padding-top: 5px; }
-      .social-buttons-flex .social-button a {
-        font-size: 1.7rem; }
   .page-template-services .white p {
     font-size: 1.7rem;
     font-weight: lighter;
     font-family: Open Sans Condensed; }
-  .page-template-services h3 {
-    font-size: 2.2rem; }
   .page-template-services h2 {
     font-size: 5.3rem; } }
 
@@ -1492,9 +1452,7 @@ body.post-type-archive-trainer .our-place {
   .services-featured .services-content a {
     padding-top: 0;
     font-size: 20px;
-    line-height: 30px; }
-  .services-featured .services-content .red-button, .services-featured .services-content .consultation-button, .services-featured .services-content .social-button {
-    height: auto; } }
+    line-height: 30px; } }
 
 /*--------------------------------------------------------------
 # About
@@ -1690,7 +1648,8 @@ body.single-trainer .default-content {
       font-size: 24px; }
     body.single-trainer .default-content .other-links .about-our-origin,
     body.single-trainer .default-content .other-links .about-our-community {
-      border-bottom: 1.5px solid #A10000; }
+      border-bottom: 1.5px solid #A10000;
+      margin-top: 200px; }
     body.single-trainer .default-content .other-links .about-our-origin,
     body.single-trainer .default-content .other-links .about-our-community,
     body.single-trainer .default-content .other-links .about-our-place {
@@ -2593,9 +2552,6 @@ body .page-template-video-page {
   height: 8.01%;
   padding: 5px 0 30px 0; }
 
-.page-template-find-us .white.container {
-  padding: 5px 0 40px 0; }
-
 .page-template-find-us .red-button, .page-template-find-us .consultation-button {
   margin: 0 auto;
   border: none;
@@ -2801,10 +2757,6 @@ body.post-type-archive-trainer .page-template-events .our-place {
   border-top: 2px black solid; }
   .page-template-events .events-white-container p {
     text-transform: uppercase; }
-  .page-template-events .events-white-container .social-button {
-    width: 60%; }
-    .page-template-events .events-white-container .social-button a {
-      font-size: 30px; }
 
 .project-td-flex-button {
   display: -ms-flexbox;
@@ -2818,14 +2770,6 @@ body.post-type-archive-trainer .page-template-events .our-place {
           flex-direction: row;
       -ms-flex-pack: end;
           justify-content: flex-end; } }
-  @media only screen and (min-width: 600px) and (min-width: 600px) {
-    .project-td-flex-button .red-button, .project-td-flex-button .consultation-button {
-      -ms-flex-order: 1;
-          order: 1; } }
-  @media only screen and (min-width: 600px) and (min-width: 600px) {
-    .project-td-flex-button .red-button .social-button.clr-bg, .project-td-flex-button .consultation-button .social-button.clr-bg {
-      -ms-flex-order: 2;
-          order: 2; } }
 
 .on-now-and-services .events-black-container p {
   font-family: oswald;
@@ -3175,6 +3119,28 @@ body.post-type-archive-trainer .page-template-events .our-place {
   padding: 0;
   margin-top: 10px;
   transform: translate(-50%, -50%); }
+
+.social-buttons-flex {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column; }
+  @media only screen and (min-width: 600px) {
+    .social-buttons-flex {
+      -ms-flex-direction: row;
+          flex-direction: row;
+      -ms-flex-pack: center;
+          justify-content: center; } }
+  @media only screen and (min-width: 600px) {
+    .social-buttons-flex .social-button {
+      width: 30%;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      margin: 0 20px;
+      margin-bottom: 50px; } }
+  @media only screen and (min-width: 600px) {
+    .social-buttons-flex .social-button a {
+      font-size: 30px; } }
 
 .site-footer {
   background-color: #A10000;
