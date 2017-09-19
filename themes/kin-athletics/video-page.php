@@ -9,7 +9,7 @@ get_header(); ?>
 
 <div class="video-container">
   <div class="video">
-    <video preload="preload"video height=100% muted id="video" autoplay="autoplay" loop="loop">
+    <video class="video-width" preload="preload"video height=100% muted id="video" autoplay="autoplay" loop="loop">
       <source src="./wp-content/themes/kin-athletics/asset/video/kin-vid.webm" type="video/webm"></source>
       <source src="./wp-content/themes/kin-athletics/asset/video/kin-vid.mp4" type="video/mp4"></source>
     </video> 
@@ -24,8 +24,4 @@ get_header(); ?>
   </div>
 </div>
 
-<!-- <footer class="video-footer">
-
-</footer>
-     -->
-
+<?php wp_footer(); ?>

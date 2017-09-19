@@ -415,6 +415,9 @@ table {
   margin: 0 0 1.5rem;
   width: 100%; }
 
+a {
+  text-decoration: none; }
+
 /*--------------------------------------------------------------
 # Forms
 --------------------------------------------------------------*/
@@ -626,6 +629,23 @@ a {
       text-transform: uppercase;
       font-weight: bold; }
 
+.kin-athletic-logo {
+  height: 100%; }
+  .kin-athletic-logo .kin-logo1 {
+    height: 100%;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+        align-items: center;
+    margin-left: 10px; }
+    .kin-athletic-logo .kin-logo1 img {
+      height: 35px; }
+  .kin-athletic-logo .kin-logo2 {
+    display: none; }
+    @media (min-width: 600px) {
+      .kin-athletic-logo .kin-logo2 {
+        display: block; } }
+
 /*--------------------------------------------------------------
 # Accessibility
 --------------------------------------------------------------*/
@@ -835,12 +855,14 @@ object {
 .project-td-cont {
   height: 100vh;
   position: relative;
-  overflow: hidden; }
+  overflow: hidden;
+  width: 600px; }
 
 .who-we-are-cont, .what-we-do-cont {
   height: 100vh;
   overflow: hidden;
-  position: relative; }
+  position: relative;
+  width: 600px; }
 
 .project-td-image-wrapper .project-td-image, .project-td-image-wrapper .who-we-are-image, .project-td-image-wrapper .what-we-do-image, .project-td-image-wrapper .project-td-image, .project-td-image-wrapper .who-we-are-image, .project-td-image-wrapper .what-we-do-image, .front-img-wrapper .project-td-image, .front-img-wrapper .who-we-are-image, .front-img-wrapper .what-we-do-image {
   position: absolute; }
@@ -1108,6 +1130,8 @@ p {
     line-height: 65px;
     margin: 60px 0 20px 0;
     font-size: 45px; }
+  .carousel-cell h3 {
+    margin-left: 1.5rem; }
   .carousel-cell .carousel-cell-info {
     width: 100%;
     background: rgba(0, 0, 0, 0.7);
@@ -1118,7 +1142,7 @@ p {
     margin: 0; }
 
 .personal-training h3, .group-training h3 {
-  margin: 10px 0; }
+  margin: 10px 0 10px 1.5rem; }
 
 .personal-training .price-box-container, .group-training .price-box-container {
   width: 80%;
@@ -1147,7 +1171,8 @@ p {
 
 .training-rates {
   font-size: 14px;
-  text-transform: none; }
+  text-transform: none;
+  margin-left: 1.5rem; }
 
 .personal-training {
   background-image: url(../../asset/images/serv1.jpg); }
@@ -1174,6 +1199,13 @@ p {
 
 .page-template-services .entry-content {
   margin: 0; }
+  .page-template-services .entry-content .carousel-cell :not(.carousel-cell-info) {
+    padding: 0; }
+  .page-template-services .entry-content .carousel-cell h2 {
+    margin: 1.5rem; }
+  .page-template-services .entry-content .carousel-cell .service-description {
+    background: rgba(0, 0, 0, 0.65);
+    padding: 1.5rem; }
 
 .page-template-services h1 {
   margin: auto;
@@ -1606,6 +1638,14 @@ body.single-trainer .default-content {
 
 body.page-template-archive-trainer .entry-content {
   margin: 0 auto; }
+  @media only screen and (min-width: 600px) {
+    body.page-template-archive-trainer .entry-content .our-origin {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-pack: end;
+          justify-content: flex-end; }
+      body.page-template-archive-trainer .entry-content .our-origin .page-section {
+        margin-bottom: 10%; } }
   body.page-template-archive-trainer .entry-content .header-container {
     display: -ms-flexbox;
     display: flex; }
@@ -1762,7 +1802,8 @@ body.page-template-archive-trainer h2.header-title, body.page-template-archive-t
   line-height: 58px; }
   @media only screen and (min-width: 600px) {
     body.page-template-archive-trainer h2.header-title, body.page-template-archive-trainer h2.header-title--black {
-      font-size: 8rem; } }
+      font-size: 8rem;
+      line-height: inherit; } }
   body.page-template-archive-trainer h2.header-title--black {
     color: #000;
     text-align: center; }
@@ -2143,9 +2184,13 @@ body .page-template-video-page {
   height: auto; }
 
 .video-container {
-  width: 100vw;
   height: 100vh;
   position: relative; }
+  @media only screen and (max-width: 600px) {
+    .video-container {
+      background: url(../../asset/video/kin-vid-screenshot.png);
+      position: relative;
+      height: 100vh; } }
 
 .video {
   width: 100%;
@@ -2155,11 +2200,19 @@ body .page-template-video-page {
       align-items: center;
   overflow: hidden; }
 
+.video-width {
+  width: 100%; }
+  @media only screen and (max-width: 600px) {
+    .video-width {
+      display: none; } }
+
 .landing-video-text-container {
   z-index: 999;
   margin-top: 0;
-  position: absolute;
   width: 100vw; }
+  @media only screen and (min-width: 600px) {
+    .landing-video-text-container {
+      position: absolute; } }
   @media only screen and (min-width: 600px) {
     .landing-video-text-container:not(.kin) {
       display: -ms-flexbox;

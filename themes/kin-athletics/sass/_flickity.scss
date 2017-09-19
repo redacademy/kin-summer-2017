@@ -63,6 +63,10 @@
     font-size: 45px;
   }
 
+  h3 {
+    margin-left: 1.5rem;
+  }
+
   .carousel-cell-info{
     width: 100%;
     background: rgba(0, 0, 0, 0.7);
@@ -79,7 +83,7 @@
 
 .personal-training, .group-training{
   h3{
-    margin: 10px 0;
+    margin: 10px 0 10px 1.5rem;
   }
 
   .price-box-container{
@@ -117,6 +121,7 @@
 .training-rates{
   font-size: 14px;
   text-transform: none;
+  margin-left: 1.5rem;
 }
 
 
