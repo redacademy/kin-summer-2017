@@ -673,7 +673,7 @@ a {
           width: 100px; } }
   .kin-athletic-logo .kin-logo2 {
     display: none; }
-    @media only screen and (min-width: 600px) {
+    @media screen and (min-width: 1130px) {
       .kin-athletic-logo .kin-logo2 {
         display: inline;
         margin-left: 20px; }
