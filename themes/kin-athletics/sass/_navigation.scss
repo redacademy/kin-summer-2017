@@ -204,3 +204,29 @@ a {
 		}
 	}
 }
+
+//                           KIN LOGOS
+ 
+
+.kin-athletic-logo{
+	height: 100%;
+
+	.kin-logo1{
+		height: 100%;
+		display: flex;
+		align-items: center;
+		margin-left: 10px;
+
+		img{
+			height: 35px;
+		}
+	}
+	
+	.kin-logo2{
+		display: none;
+	
+		@include Desktop{
+			display: block;
+		}
+	}
+}

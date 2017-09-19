@@ -629,6 +629,23 @@ a {
       text-transform: uppercase;
       font-weight: bold; }
 
+.kin-athletic-logo {
+  height: 100%; }
+  .kin-athletic-logo .kin-logo1 {
+    height: 100%;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+        align-items: center;
+    margin-left: 10px; }
+    .kin-athletic-logo .kin-logo1 img {
+      height: 35px; }
+  .kin-athletic-logo .kin-logo2 {
+    display: none; }
+    @media (min-width: 600px) {
+      .kin-athletic-logo .kin-logo2 {
+        display: block; } }
+
 /*--------------------------------------------------------------
 # Accessibility
 --------------------------------------------------------------*/
