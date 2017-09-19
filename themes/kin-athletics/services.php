@@ -126,9 +126,9 @@ get_header(); ?>
               <div class="social-buttons-flex">
                 <div class='social-button'><a href='https://www.facebook.com/kinathletics/' target="_blank">facebook</a></div>
                 <div class='social-button'><a href='https://www.instagram.com/kinathletics/' target="_blank">instagram</a></div>
+              </div>
             </div>
-          </div>
-        </section>
+          </section>
 
       </div>  <!-- end of entry content-->
     </div>  <!-- end of container-->
