@@ -190,7 +190,7 @@
     }
   }
 
-  h2 {
+  .page-template-services h2 {
     text-align: left;
     font-size: 5.5rem;
 
@@ -250,7 +250,13 @@
 
     .social-button {
       margin: 20px;
-      max-width: 450px;
+      max-width: 25%;
+      padding-bottom: 5px;
+      padding-top: 5px;
+
+      a {
+        font-size: 1.7rem;
+      }
     }
   }
 
