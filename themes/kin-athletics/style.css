@@ -634,7 +634,7 @@ a {
 
 #menu-menu .sub-menu {
   background-color: black;
-  top: 48px;
+  top: 27px;
   right: -60px;
   width: 240px; }
   #menu-menu .sub-menu li {
@@ -3274,40 +3274,6 @@ body.post-type-archive-trainer .page-template-events .our-place {
       bottom: 110px;
       right: 40px; } }
 
-<<<<<<< HEAD
-#edit-name, #edit-email, #edit-trainer, #edit-action, #edit-comment {
-  display: none; }
-
-.unhide-edit {
-  display: block !important;
-  z-index: 9999; }
-
-@media only screen and (min-width: 600px) {
-  #gform_page_1_1 #edit-name {
-    bottom: 87px; } }
-
-@media only screen and (min-width: 600px) {
-  #gform_page_1_2 #edit-email {
-    top: 169px; } }
-
-#gform_page_1_3 #edit-trainer {
-  bottom: -45px; }
-  @media only screen and (min-width: 600px) {
-    #gform_page_1_3 #edit-trainer {
-      bottom: 50px; } }
-
-#gform_page_1_4 #edit-action {
-  bottom: 120px; }
-  @media only screen and (min-width: 600px) {
-    #gform_page_1_4 #edit-action {
-      bottom: 50px; } }
-
-@media only screen and (min-width: 600px) {
-  #gform_page_1_5 #edit-comment {
-    top: 264px; } }
-
-=======
->>>>>>> bee4872025b2109cec6b8582b5236aa5dc64961f
 .social-buttons-flex {
   display: -ms-flexbox;
   display: flex;

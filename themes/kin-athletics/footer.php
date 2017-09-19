@@ -13,7 +13,7 @@
 				<div class='footer-social-container'>
 					<div class='footer-text-container'>
 							<a href='<?php echo esc_url( home_url( '/consultation/') )?>'>free consultation</a>
-							<a href='<?php echo esc_url( home_url( '/#/') )?>'>project td</a>
+							<a href='<?php echo esc_url( home_url( '/events/#on-now-and-services') )?>'><?php echo CFS()->get('past_events_featured', 34); ?></a>
 							<a href='<?php echo esc_url( home_url( '/find-us/') )?>'>find us</a>
 					</div><!-- .footer-text-container -->
 					<div class='footer-social-logo'>
