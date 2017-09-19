@@ -1226,13 +1226,13 @@ p {
   margin-left: 1.5rem; }
 
 .personal-training {
-  background-image: url(../../asset/images/serv1.jpg); }
+  background-image: url(../../asset/images/servicespage_personaltraining.png); }
 
 .group-training {
-  background-image: url(../../asset/images/serv2.jpg); }
+  background-image: url(../../asset/images/servicespage_grouptraining.png); }
 
 .community-projects {
-  background-image: url(../../asset/images/serv3.jpg); }
+  background-image: url(../../asset/images/servicespage_communityproject.png); }
   .community-projects .red-button, .community-projects .consultation-button, .community-projects .social-button {
     margin: 0;
     margin-left: 40px;
@@ -1269,7 +1269,7 @@ body.post-type-archive-trainer .our-origin, body.page-template-archive-trainer .
 body.post-type-archive-trainer .our-community, body.page-template-archive-trainer .our-place,
 body.post-type-archive-trainer .our-place {
   height: 100vh;
-  background: url("../../asset/images/aboutpage_heroshot.png") no-repeat center;
+  background: url("../../asset/images/servicespage_heroshot.png") no-repeat center;
   background-size: cover;
   display: -ms-flexbox;
   display: flex;
@@ -1320,7 +1320,7 @@ body.post-type-archive-trainer .our-place {
 .services-featured {
   display: block;
   height: 100vh;
-  background-image: url(../../asset/images/serv1.jpg);
+  background-image: url(../../asset/images/servicespage_featuredtrainer.png);
   background-size: cover;
   color: white;
   position: relative; }
