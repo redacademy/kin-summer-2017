@@ -1941,7 +1941,8 @@ body.post-type-archive-trainer h2.header-title, body.post-type-archive-trainer h
   color: white;
   font-size: 40px;
   margin: 0 0.5em;
-  line-height: 58px; }
+  line-height: 58px;
+  font-family: oswald; }
   @media only screen and (min-width: 600px) {
     body.page-template-archive-trainer h2.header-title, body.page-template-archive-trainer h2.header-title--black,
     body.post-type-archive-trainer h2.header-title, body.post-type-archive-trainer h2.header-title--black {
@@ -2059,8 +2060,12 @@ body.post-type-archive-trainer .white {
     font-size: 35px;
     margin: 1.5rem;
     line-height: 35px;
-    font-family: "Open Sans Condensed", sans-serif;
+    font-family: oswald;
     font-weight: bold; }
+    @media only screen and (min-width: 600px) {
+      .post-type-archive-event .entry-content .header-title,
+      .page-template-archive-event .entry-content .header-title {
+        font-size: 5rem; } }
   .post-type-archive-event .entry-content .latest-history,
   .page-template-archive-event .entry-content .latest-history {
     height: 100vh;
@@ -2078,7 +2083,12 @@ body.post-type-archive-trainer .white {
       font-family: "Open Sans Condensed", sans-serif; }
       .post-type-archive-event .entry-content .latest-history .header-container h2.un-bold,
       .page-template-archive-event .entry-content .latest-history .header-container h2.un-bold {
-        font-weight: 300; }
+        font-weight: 300;
+        font-family: Open Sans Condensed; }
+        @media only screen and (min-width: 600px) {
+          .post-type-archive-event .entry-content .latest-history .header-container h2.un-bold,
+          .page-template-archive-event .entry-content .latest-history .header-container h2.un-bold {
+            font-size: 4rem; } }
       .post-type-archive-event .entry-content .latest-history .header-container .red-button, .post-type-archive-event .entry-content .latest-history .header-container .consultation-button,
       .page-template-archive-event .entry-content .latest-history .header-container .red-button,
       .page-template-archive-event .entry-content .latest-history .header-container .consultation-button {
@@ -2088,13 +2098,18 @@ body.post-type-archive-trainer .white {
       .page-template-archive-event .entry-content .latest-history .header-container p {
         background: rgba(0, 0, 0, 0.65);
         padding: 1.5rem; }
-      .post-type-archive-event .entry-content .latest-history .header-container h3,
-      .page-template-archive-event .entry-content .latest-history .header-container h3 {
+      .post-type-archive-event .entry-content .latest-history .header-container h3.event-date,
+      .page-template-archive-event .entry-content .latest-history .header-container h3.event-date {
         display: -ms-flexbox;
         display: flex;
         margin: 1.5rem; }
-        .post-type-archive-event .entry-content .latest-history .header-container h3 p,
-        .page-template-archive-event .entry-content .latest-history .header-container h3 p {
+        @media only screen and (min-width: 600px) {
+          .post-type-archive-event .entry-content .latest-history .header-container h3.event-date,
+          .page-template-archive-event .entry-content .latest-history .header-container h3.event-date {
+            font-size: 2rem;
+            vertical-align: bottom; } }
+        .post-type-archive-event .entry-content .latest-history .header-container h3.event-date p,
+        .page-template-archive-event .entry-content .latest-history .header-container h3.event-date p {
           background: none;
           margin: 0 0 0 0.5rem;
           padding: 0; }
@@ -2501,8 +2516,7 @@ body .page-template-video-page {
   .page-template-find-us .find-us-picture-wrapper .find-us-picture {
     z-index: 0;
     filter: grayscale(100%);
-    height: 45vh;
-    max-width: 100%; }
+    height: 45vh; }
 
 @media only screen and (min-width: 600px) {
   .page-template-find-us .page-template-find-us h1.entry-title {
@@ -2777,6 +2791,9 @@ body.post-type-archive-trainer .page-template-events .our-place {
   .page-template-events .events-black-container .red-button, .page-template-events .events-black-container .consultation-button {
     margin: 0 auto;
     position: relative; }
+    @media only screen and (min-width: 600px) {
+      .page-template-events .events-black-container .red-button, .page-template-events .events-black-container .consultation-button {
+        width: 25%; } }
     .page-template-events .events-black-container .red-button a, .page-template-events .events-black-container .consultation-button a {
       padding: 0;
       position: absolute;
@@ -2794,6 +2811,37 @@ body.post-type-archive-trainer .page-template-events .our-place {
     width: 60%; }
     .page-template-events .events-white-container .social-button a {
       font-size: 30px; }
+
+.project-td-flex-button {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  padding-right: 10px; }
+  @media only screen and (min-width: 600px) {
+    .project-td-flex-button {
+      -ms-flex-direction: row;
+          flex-direction: row;
+      -ms-flex-pack: end;
+          justify-content: flex-end; } }
+  @media only screen and (min-width: 600px) and (min-width: 600px) {
+    .project-td-flex-button .red-button, .project-td-flex-button .consultation-button {
+      -ms-flex-order: 1;
+          order: 1; } }
+  @media only screen and (min-width: 600px) and (min-width: 600px) {
+    .project-td-flex-button .red-button .social-button.clr-bg, .project-td-flex-button .consultation-button .social-button.clr-bg {
+      -ms-flex-order: 2;
+          order: 2; } }
+
+.on-now-and-services .events-black-container p {
+  font-family: oswald;
+  padding-bottom: 10px; }
+  @media only screen and (min-width: 600px) {
+    .on-now-and-services .events-black-container p {
+      font-size: 60px;
+      text-align: right;
+      padding-right: 3%;
+      padding-bottom: 20px; } }
 
 /*--------------------------------------------------------------
 # Single Event Styles

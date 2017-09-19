@@ -11,8 +11,12 @@
             font-size: 35px;
             margin: 1.5rem;
             line-height: 35px;
-            font-family: $font__main;
+            font-family: oswald;
             font-weight: bold;
+
+            @include desktop {
+                font-size: 5rem;
+            }
         }
 
         .latest-history {
@@ -32,6 +36,11 @@
 
                 h2.un-bold {
                     font-weight: 300;
+                    font-family: Open Sans Condensed;
+
+                    @include desktop {
+                        font-size: 4rem;
+                    }
                 }
 
                 .red-button {
@@ -44,9 +53,14 @@
                     padding: 1.5rem;
                 }
 
-                h3 {
+                h3.event-date {
                     display: flex;
                     margin: 1.5rem;
+
+                    @include desktop {
+                        font-size: 2rem;
+                        vertical-align: bottom;
+                    }
 
                     p {
                         background: none;

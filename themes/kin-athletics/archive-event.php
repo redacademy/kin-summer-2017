@@ -90,18 +90,21 @@ get_header(); ?>
             <section id="on-now-and-services" class='on-now-and-services'>
                 <div class='events-black-container'>
                     <p>On Now - <?php echo CFS()->get('past_events_featured'); ?></p>
-                    <div class='red-button'>
-                        <a href='<?php echo esc_url(str_replace(' ', '-', home_url('/event/'.CFS()->get('past_events_featured')))); ?>'>Buy Tickets</a>
-                    </div>
-                    <div class='red-button clear-bg'><a href='<?php echo esc_url(str_replace(' ', '-', home_url('/'.CFS()->get('past_events_featured')))); ?>'>Tell Me More</a></div>
+                        <div class="project-td-flex-button">
+                            <div class='red-button'>
+                                <a href='<?php echo esc_url(str_replace(' ', '-', home_url('/event/'.CFS()->get('past_events_featured')))); ?>'>Buy Tickets</a>
+                            </div>
+                            <div class='red-button clear-bg'><a href='<?php echo esc_url(str_replace(' ', '-', home_url('/'.CFS()->get('past_events_featured')))); ?>'>Tell Me More</a></div>
+                        </div><!-- .project-td-flex-button -->
                     <img src="<?php echo esc_html(get_template_directory_uri()); ?>/asset/images/pastevents_onnow.png"/>
                 </div>
                         
-                <div class='events-white-container'>
-                    <p>More Feels On Our Services</p>
-                    <div class='social-button'><a href='https://www.facebook.com/kinathletics/' target="_blank">Facebook</a></div>
-                    <div class='social-button'><a href='https://www.instagram.com/kinathletics/' target="_blank">Instagram</a></div>
-                </div>
+                <div class='white container'>
+            <h3 class="find-us black-title">More feels on our events</h3>
+              <div class="social-buttons-flex">
+                <div class='social-button'><a href='https://www.facebook.com/kinathletics/' target="_blank">facebook</a></div>
+                <div class='social-button'><a href='https://www.instagram.com/kinathletics/' target="_blank">instagram</a></div>
+            </div>
             </section>
 
         </div>  <!-- end of entry content-->
