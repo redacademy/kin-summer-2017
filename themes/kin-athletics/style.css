@@ -1545,6 +1545,10 @@ body.post-type-archive-trainer .our-place {
     .circles-container .icon-container a, .circles-container .icon-container img {
       height: 100%;
       width: auto; }
+      @media only screen and (min-width: 600px) {
+        .circles-container .icon-container a, .circles-container .icon-container img {
+          height: auto;
+          width: 100%; } }
     .circles-container .icon-container p {
       margin: 0;
       color: white;
