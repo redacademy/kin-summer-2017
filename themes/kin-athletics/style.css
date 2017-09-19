@@ -2161,6 +2161,7 @@ body .page-template-video-page {
   height: auto; }
 
 .video-container {
+  height: 100vh;
   position: relative; }
   @media only screen and (max-width: 600px) {
     .video-container {
@@ -2177,8 +2178,7 @@ body .page-template-video-page {
   overflow: hidden; }
 
 .video-width {
-  width: 100%;
-  height: 100%; }
+  width: 100%; }
   @media only screen and (max-width: 600px) {
     .video-width {
       display: none; } }
