@@ -97,6 +97,7 @@ object {
 	width: 54.37%;
 	margin: 0 auto;
 	margin-bottom: 16px;
+	box-shadow: 0 2.5px 4px 0 rgba(0,0,0,0.5);
 		a {
 			color: $color__brand-black;
 			font-family: oswald;
@@ -117,6 +118,7 @@ object {
 	border: 2px solid $color__brand-red;
 	box-shadow: 0 0.5px 1px 0 rgba(0,0,0,0.5);
 	color: $color__text-main;
+	box-shadow: 0 2.5px 4px 0 rgba(0,0,0,0.5);
 	cursor: pointer;
 
 	a {

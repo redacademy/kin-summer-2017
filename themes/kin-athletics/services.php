@@ -21,28 +21,28 @@ get_header(); ?>
     
       <div class="circles-container">
           <div class="icon-container">
-              <a src="#">
+              <a src="<?php echo esc_url(home_url('/services#personal-training')); ?>">
                   <img src="<?php echo get_template_directory_uri(); ?>/asset/icons/personaltrainingicon.svg"/>
               </a>
-              <p>Personal<br>Training</p>
+              <p><span class="span-block">Personal</span> Training</p>
           </div>
           <div class="icon-container">
-              <a src="#">
+              <a src="<?php echo esc_url(home_url('/services#group-training')); ?>">
                   <img src="<?php echo get_template_directory_uri(); ?>/asset/icons/grouptrainingicon.svg"/>
               </a>
-              <p>Group<br>Training</p>
+              <p><span class="span-block">Group</span> Training</p>
           </div>
           <div class="icon-container">
-              <a src="#">
+              <a src="<?php echo esc_url(home_url('/services#community-projects')); ?>">
                   <img src="<?php echo get_template_directory_uri(); ?>/asset/icons/communityprojecticon.svg"/>
               </a>
-              <p>Community<br>Projects</p>
+              <p><span class="span-block">Community</span> Projects</p>
           </div>
           <div class="icon-container">
-              <a src="#">
+              <a src='<?php echo esc_url( home_url( '/consultation/') )?>'>
                   <img src="<?php echo get_template_directory_uri(); ?>/asset/icons/freeconsultationicon.svg"/>
               </a>
-              <p>Free<br>Consultation</p>
+              <p><span class="span-block">Free</span> Consultation</p>
           </div>
       </div>
   </section>
@@ -112,11 +112,14 @@ get_header(); ?>
         </div>  <!-- end of carousel -->
 
         <section class="services-featured" id='free-consultation'>
-        <h4> featured trainer <span class="trainer-name"><?php echo CFS()->get('services_featured_trainer');?></span> </h4>
-        <p>ready to sweat?</p>
-          <div class="services-button-flex">
-            <div class='social-button'><a href='<?php echo esc_url( home_url( '/trainer/' . strtolower(CFS()->get('services_featured_trainer')) ) )?>'>about me</a></div>
-            <div class='red-button'><a href='#'>free consultation</a></div>
+          <div class="services-content">
+            <h4><span class='span-block'>featured</span> trainer <span class="trainer-name"><?php echo CFS()->get('services_featured_trainer');?></span> </h4>
+            <p>ready to sweat?</p>
+            
+            <div class="services-button-flex">
+              <div class='red-button'><a href='#'>free consultation</a></div>
+              <div class='social-button'><a href='<?php echo esc_url( home_url( '/trainer/' . strtolower(CFS()->get('services_featured_trainer')) ) )?>'>about me</a></div>
+            </div>
           </div>
 
           <div class='white container'>

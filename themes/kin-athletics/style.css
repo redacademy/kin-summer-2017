@@ -528,7 +528,6 @@ a {
       box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
       float: left;
       position: absolute;
-      top: 1.5rem;
       left: -999rem;
       z-index: 99999; }
       .main-navigation ul ul ul {
@@ -603,7 +602,7 @@ a {
 
 #site-navigation {
   display: none; }
-  @media (min-width: 600px) {
+  @media only screen and (min-width: 600px) {
     #site-navigation {
       display: block; } }
 
@@ -628,6 +627,94 @@ a {
       font-size: 24px;
       text-transform: uppercase;
       font-weight: bold; }
+
+#menu-menu .sub-menu {
+  background-color: black;
+  top: 48px;
+  right: -60px;
+  width: 240px; }
+  #menu-menu .sub-menu li {
+    margin-right: 0; }
+    #menu-menu .sub-menu li a {
+      width: 240px;
+      padding: 0 30px;
+      border-bottom: 2px solid white; }
+
+@media only screen and (min-width: 600px) {
+  .site-header {
+    display: -ms-flexbox;
+    display: flex; } }
+
+.kin-athletic-logo {
+  height: 100%; }
+  @media only screen and (min-width: 600px) {
+    .kin-athletic-logo {
+      width: 50%; } }
+  .kin-athletic-logo .kin-logo1 {
+    height: 100%;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+        align-items: center;
+    margin-left: 10px; }
+    @media only screen and (min-width: 600px) {
+      .kin-athletic-logo .kin-logo1 {
+        display: inline;
+        margin-left: 50px; } }
+    .kin-athletic-logo .kin-logo1 img {
+      height: 35px; }
+      @media only screen and (min-width: 600px) {
+        .kin-athletic-logo .kin-logo1 img {
+          height: 100%;
+          width: 100px; } }
+  .kin-athletic-logo .kin-logo2 {
+    display: none; }
+    @media only screen and (min-width: 600px) {
+      .kin-athletic-logo .kin-logo2 {
+        display: inline;
+        margin-left: 20px; }
+        .kin-athletic-logo .kin-logo2 img {
+          width: 200px;
+          height: 100%; } }
+
+/*--------------------------------------------------------------
+# Content
+--------------------------------------------------------------*/
+/* Posts and pages */
+.sticky {
+  display: block; }
+
+.updated:not(.published) {
+  display: none; }
+
+.single .byline,
+.group-blog .byline {
+  display: inline; }
+
+.page-content,
+.entry-content,
+.entry-summary {
+  margin: 1.5rem 0 0; }
+
+.page-links {
+  clear: both;
+  margin: 0 0 1.5rem; }
+
+/* Asides */
+.blog .format-aside .entry-title,
+.archive .format-aside .entry-title {
+  display: none; }
+
+/* Comments */
+.comment-content a {
+  word-wrap: break-word; }
+
+.bypostauthor {
+  display: block; }
+
+/* Reusables */
+.display-block {
+  display: block; }
 
 /*--------------------------------------------------------------
 # Accessibility
@@ -699,41 +786,6 @@ a {
   display: none; }
 
 /*--------------------------------------------------------------
-# Content
---------------------------------------------------------------*/
-/* Posts and pages */
-.sticky {
-  display: block; }
-
-.updated:not(.published) {
-  display: none; }
-
-.single .byline,
-.group-blog .byline {
-  display: inline; }
-
-.page-content,
-.entry-content,
-.entry-summary {
-  margin: 1.5rem 0 0; }
-
-.page-links {
-  clear: both;
-  margin: 0 0 1.5rem; }
-
-/* Asides */
-.blog .format-aside .entry-title,
-.archive .format-aside .entry-title {
-  display: none; }
-
-/* Comments */
-.comment-content a {
-  word-wrap: break-word; }
-
-.bypostauthor {
-  display: block; }
-
-/*--------------------------------------------------------------
 # Media
 --------------------------------------------------------------*/
 .page-content .wp-smiley,
@@ -801,7 +853,8 @@ object {
   text-align: center;
   width: 54.37%;
   margin: 0 auto;
-  margin-bottom: 16px; }
+  margin-bottom: 16px;
+  box-shadow: 0 2.5px 4px 0 rgba(0, 0, 0, 0.5); }
   .social-button a {
     color: #000000;
     font-family: oswald;
@@ -820,6 +873,7 @@ object {
   border: 2px solid #A10000;
   box-shadow: 0 0.5px 1px 0 rgba(0, 0, 0, 0.5);
   color: #FFFFFF;
+  box-shadow: 0 2.5px 4px 0 rgba(0, 0, 0, 0.5);
   cursor: pointer; }
   .red-button a, .consultation-button a {
     font-size: 24px;
@@ -1072,7 +1126,7 @@ p {
   margin-bottom: 3px; }
 
 .flickity-prev-next-button {
-  top: 550px;
+  top: 75%;
   width: 100px;
   height: 100px;
   background-color: #A10000;
@@ -1209,7 +1263,7 @@ p {
   margin-right: 50px; }
 
 .circles-container {
-  height: 50%;
+  height: 75%;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-flow: row wrap;
@@ -1228,7 +1282,8 @@ p {
         align-items: center;
     text-align: center; }
     .circles-container .icon-container a, .circles-container .icon-container img {
-      height: 100%; }
+      height: 100%;
+      width: auto; }
     .circles-container .icon-container p {
       margin: 0;
       color: white;
@@ -1236,32 +1291,58 @@ p {
       font-weight: 500;
       font-family: "Oswald";
       padding-top: 5px; }
+      @media only screen and (min-width: 600px) {
+        .circles-container .icon-container p .span-block {
+          display: block; } }
 
 .services-featured {
   display: block;
-  padding-top: 20px;
   height: 100vh;
   background-image: url(../../asset/images/serv1.jpg);
   background-size: cover;
   color: white;
   position: relative; }
+  .services-featured .services-content {
+    overflow: hidden;
+    height: 75%; }
+    .services-featured .services-content:after {
+      height: 75%;
+      width: 100%;
+      content: " ";
+      background: rgba(0, 0, 0, 0.5);
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0; }
   .services-featured h4 {
     margin: 0;
     position: relative;
     text-align: left;
-    font-size: 60px;
+    font-size: 40px;
     text-transform: uppercase;
     padding: 20px 30px 10px 20px;
-    line-height: 73px; }
+    z-index: 1; }
+    .services-featured h4 .span-block {
+      display: block;
+      text-align: left;
+      font-size: 40px;
+      text-transform: uppercase; }
   .services-featured p {
-    font-family: Oswald; }
+    font-family: Oswald;
+    position: relative;
+    z-index: 1; }
   .services-featured .services-button-flex {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
-        flex-wrap: wrap; }
+        flex-wrap: wrap;
+    z-index: 1;
+    position: relative; }
   .services-featured .trainer-name {
-    font-weight: lighter; }
+    font-weight: lighter;
+    font-size: 40px;
+    display: block; }
   .services-featured span {
     font-size: 70px;
     font-weight: lighter; }
@@ -1292,14 +1373,15 @@ p {
       align-content: center;
   background-color: white;
   color: black;
-  height: 35%;
   width: 100%;
   bottom: 0;
-  font-size: 24px; }
+  font-size: 24px;
+  padding: 1.5rem; }
   .page-template-services .white p {
     text-align: center;
     padding: 0;
-    margin-top: 30px; }
+    margin: 0;
+    font-family: "Open Sans Condensed", "Oswald", sans-serif; }
   .page-template-services .white .red-button, .page-template-services .white .consultation-button, .page-template-services .white .social-button {
     text-align: center;
     width: 50%;
@@ -1320,7 +1402,7 @@ p {
       .circles-container .icon-container p {
         font-size: 1.5rem;
         padding-top: 15px; }
-  h2 {
+  .page-template-services h2 {
     text-align: left;
     font-size: 5.5rem; }
   .personal-training .price-box-container {
@@ -1361,7 +1443,11 @@ p {
         justify-content: center; }
     .social-buttons-flex .social-button {
       margin: 20px;
-      max-width: 450px; }
+      max-width: 25%;
+      padding-bottom: 5px;
+      padding-top: 5px; }
+      .social-buttons-flex .social-button a {
+        font-size: 1.7rem; }
   .page-template-services .white p {
     font-size: 1.7rem;
     font-weight: lighter;
@@ -1370,6 +1456,18 @@ p {
     font-size: 2.2rem; }
   .page-template-services h2 {
     font-size: 5.3rem; } }
+
+@media only screen and (max-height: 600px) {
+  .services-featured .services-content h4, .services-featured .services-content span {
+    font-size: 35px; }
+  .services-featured .services-content p {
+    font-size: 20px; }
+  .services-featured .services-content a {
+    padding-top: 0;
+    font-size: 20px;
+    line-height: 30px; }
+  .services-featured .services-content .red-button, .services-featured .services-content .consultation-button, .services-featured .services-content .social-button {
+    height: auto; } }
 
 /*--------------------------------------------------------------
 # About
@@ -1699,7 +1797,7 @@ body.page-template-archive-trainer .trainers-grid .trainer-grid-wrapper {
       -ms-flex-pack: center;
           justify-content: center;
       height: 25%; }
-      body.page-template-archive-trainer .trainers-grid .trainer-grid-wrapper .trainer-item-container .next-trainer-wrapper a {
+      body.page-template-archive-trainer .trainers-grid .trainer-grid-wrapper .trainer-item-container .next-trainer-wrapper p {
         color: black;
         text-decoration: none;
         margin: auto; }
@@ -1771,6 +1869,9 @@ body.page-template-archive-trainer .circles-container {
       text-transform: uppercase;
       font-weight: 500;
       font-family: "Oswald"; }
+      @media only screen and (min-width: 600px) {
+        body.page-template-archive-trainer .circles-container .icon-container p .span-block {
+          display: block; } }
 
 body.page-template-archive-trainer h2.header-title, body.page-template-archive-trainer h2.header-title--black {
   color: white;
@@ -2285,9 +2386,15 @@ body .page-template-video-page {
 .page-template-find-us p {
   margin: .50%; }
 
+.page-template-find-us .entry-header {
+  position: relative; }
+
 .page-template-find-us .entry-title {
   position: absolute;
-  z-index: 1; }
+  z-index: 1;
+  bottom: 0;
+  left: 0;
+  right: 0; }
 
 .page-template-find-us p .contact {
   font-size: 1rem;
@@ -2298,12 +2405,37 @@ body .page-template-video-page {
   text-transform: uppercase; }
 
 .page-template-find-us .find-us-picture-wrapper {
-  position: relative; }
+  position: relative;
+  height: 50vh;
+  overflow: hidden; }
   .page-template-find-us .find-us-picture-wrapper .find-us-picture {
     z-index: 0;
-    filter: grayscale(100%); }
+    filter: grayscale(100%);
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    height: 100%;
+    position: absolute; }
+    @media only screen and (min-width: 600px) {
+      .page-template-find-us .find-us-picture-wrapper .find-us-picture {
+        top: 0;
+        height: 100vh; } }
+  .page-template-find-us .find-us-picture-wrapper:after {
+    height: 100%;
+    width: 100%;
+    content: " ";
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0; }
 
-.page-template-find-us .page-template-find-us .widget-title {
+@media only screen and (min-width: 600px) {
+  .page-template-find-us .page-template-find-us h1.entry-title {
+    font-size: 4rem; } }
+
+.page-template-find-us .page-template-find-us h2.widget-title {
   height: 30px;
   width: 73px;
   font-family: Oswald;
@@ -2312,6 +2444,10 @@ body .page-template-video-page {
   line-height: 30px;
   text-align: center; }
 
+@media only screen and (min-width: 600px) {
+  .page-template-find-us .page-template-find-us h2 {
+    font-size: 2rem; } }
+
 .page-template-find-us .kin-athletics-info {
   display: -ms-flexbox;
   display: flex;
@@ -2319,6 +2455,12 @@ body .page-template-video-page {
       flex-wrap: wrap;
   text-align: center;
   width: 100%; }
+  @media only screen and (min-width: 600px) {
+    .page-template-find-us .kin-athletics-info {
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap; }
+      .page-template-find-us .kin-athletics-info iframe {
+        min-height: 400px; } }
 
 .page-template-find-us .page-template-find-us iframe {
   -ms-flex-order: 1;
@@ -2329,11 +2471,17 @@ body .page-template-video-page {
       flex: 2 0 100%;
   max-width: 100%;
   position: relative; }
+  @media only screen and (min-width: 600px) {
+    .page-template-find-us .page-template-find-us iframe {
+      height: 400px; } }
 
 .page-template-find-us .widget-area {
   display: -ms-flexbox;
   display: flex;
   width: 100%; }
+  @media only screen and (min-width: 600px) {
+    .page-template-find-us .widget-area {
+      padding-top: 40px; } }
 
 .page-template-find-us .kin-athletics-info-class {
   -ms-flex-order: 2;
@@ -2362,13 +2510,38 @@ body .page-template-video-page {
   background: #000000;
   display: block;
   height: 8.01%;
-  padding: 5px 0 15px 0; }
+  padding: 5px 0 40px 0; }
+
+.page-template-find-us .white.container {
+  padding: 5px 0 40px 0; }
 
 .page-template-find-us .red-button, .page-template-find-us .consultation-button {
   margin: 0 auto;
   border: none;
   height: 2.67%;
   width: 70%; }
+  @media only screen and (min-width: 600px) {
+    .page-template-find-us .red-button, .page-template-find-us .consultation-button {
+      max-width: 25%;
+      height: 5%;
+      padding-bottom: 10px;
+      padding-top: 10px; } }
+  @media only screen and (min-width: 600px) {
+    .page-template-find-us .red-button a, .page-template-find-us .consultation-button a {
+      font-size: 2rem;
+      vertical-align: center; } }
+
+@media only screen and (min-width: 600px) {
+  h3.find-us.white-title {
+    font-size: 4.5rem; }
+  h3.find-us.black-title {
+    font-size: 1.7rem;
+    padding-top: 20px;
+    padding-bottom: 20px; } }
+
+@media only screen and (min-width: 600px) {
+  .page-template-find-us element.style {
+    min-height: 400px; } }
 
 .page-template-events .entry-content {
   margin: 0; }
@@ -2589,7 +2762,7 @@ body .page-template-video-page {
     border: none; }
   .page-template-consultations .gform_body {
     padding: 0 20px; }
-    @media (min-width: 600px) {
+    @media only screen and (min-width: 600px) {
       .page-template-consultations .gform_body {
         padding: 0 30%; } }
 
@@ -2620,7 +2793,7 @@ body .page-template-video-page {
   background: white;
   padding: 30px; }
 
-@media (min-width: 600px) {
+@media only screen and (min-width: 600px) {
   #field_1_1 {
     display: -ms-flexbox;
     display: flex;
@@ -2668,7 +2841,7 @@ body .page-template-video-page {
   font-weight: bold;
   box-shadow: none; }
 
-@media (min-width: 600px) {
+@media only screen and (min-width: 600px) {
   #gform_page_1_1 {
     position: relative; }
     #gform_page_1_1 #gform_next_button_1_8 {
@@ -2710,15 +2883,15 @@ body .page-template-video-page {
   font-size: 20px;
   box-shadow: none; }
 
-@media (min-width: 600px) {
+@media only screen and (min-width: 600px) {
   #input_1_2 {
     width: 100%; } }
 
-@media (min-width: 600px) {
+@media only screen and (min-width: 600px) {
   #gform_page_1_2 {
     position: relative; } }
 
-@media (min-width: 600px) {
+@media only screen and (min-width: 600px) {
   #gform_next_button_1_10 {
     top: 170px;
     right: 20px; } }
@@ -2781,11 +2954,11 @@ body .page-template-video-page {
   right: 50%;
   bottom: -65px; }
 
-@media (min-width: 600px) {
+@media only screen and (min-width: 600px) {
   #gform_page_1_3 {
     position: relative; } }
 
-@media (min-width: 600px) {
+@media only screen and (min-width: 600px) {
   #gform_page_1_3 #gform_next_button_1_13 {
     bottom: 50px; } }
 
@@ -2819,11 +2992,11 @@ body .page-template-video-page {
   bottom: 100px;
   transform: translate(-50%, -50%); }
 
-@media (min-width: 600px) {
+@media only screen and (min-width: 600px) {
   #gform_page_1_4 {
     position: relative; } }
 
-@media (min-width: 600px) {
+@media only screen and (min-width: 600px) {
   #gform_page_1_4 #gform_next_button_1_12 {
     bottom: 50px; } }
 
@@ -2843,12 +3016,12 @@ body .page-template-video-page {
   font-size: 20px;
   font-weight: bold;
   box-shadow: none; }
-  @media (min-width: 600px) {
+  @media only screen and (min-width: 600px) {
     #gform_next_button_1_23 {
       top: 265px;
       right: 15px; } }
 
-@media (min-width: 600px) {
+@media only screen and (min-width: 600px) {
   #gform_page_1_5 {
     position: relative; } }
 

@@ -27,28 +27,28 @@ get_header(); ?>
           
             <div class="circles-container">
                 <div class="icon-container">
-                    <a src="#">
-                        <img src="<?php echo get_template_directory_uri(); ?>/asset/icons/ouroriginicon.svg"/>
+                    <a href="<?php echo esc_url(home_url('/about#origin')); ?>">
+                        <img src="<?php echo esc_url(get_template_directory_uri()); ?>/asset/icons/ouroriginicon.svg"/>
                     </a>
-                    <p>Our<br>Origin</p>
+                    <p><span class="span-block">Our</span> Origin</p>
                 </div>
                 <div class="icon-container">
-                    <a src="#">
-                        <img src="<?php echo get_template_directory_uri(); ?>/asset/icons/ourtrainericon.svg"/>
+                    <a href="<?php echo esc_url(home_url('/about#trainers')); ?>">
+                        <img src="<?php echo esc_url(get_template_directory_uri()); ?>/asset/icons/ourtrainericon.svg"/>
                     </a>
-                    <p>Our<br>Trainer</p>
+                    <p><span class="span-block">Our</span> Trainers</p>
                 </div>
                 <div class="icon-container">
-                    <a src="#">
-                        <img src="<?php echo get_template_directory_uri(); ?>/asset/icons/ourcommunityicon.svg"/>
+                    <a href="<?php echo esc_url(home_url('/about#community'));?>">
+                        <img src="<?php echo esc_url(get_template_directory_uri()); ?>/asset/icons/ourcommunityicon.svg"/>
                     </a>
-                    <p>Our<br>Community</p>
+                    <p><span class="span-block">Our</span> Community</p>
                 </div>
                 <div class="icon-container">
-                    <a src="#">
-                        <img src="<?php echo get_template_directory_uri(); ?>/asset/icons/freeconsultationicon.svg"/>
+                    <a href="<?php echo esc_url(home_url('/about#place')); ?>">
+                        <img src="<?php echo esc_url(get_template_directory_uri()); ?>/asset/icons/ourplaceicon.svg"/>
                     </a>
-                    <p>Free Consultation</p>
+                    <p><span class="span-block">Our</span> Place</p>
                 </div>
             </div>
         </section>
@@ -73,11 +73,14 @@ get_header(); ?>
                             ?>
                     
                             <div class='trainer-item-container'>
-                                <div class='trainer-thumbnail-wrapper'>
-                                    <img class='trainer-thumbnail' src="<?php echo CFS()->get( 'trainer_profile_picture', $trainer[$j]->ID ); ?>"/>
-                                </div>
+                                
+                                <a class='trainer-name' href='<?php echo $trainer[$j]->guid ?>'>    
+                                    <div class='trainer-thumbnail-wrapper'>
+                                        <img class='trainer-thumbnail' src="<?php echo CFS()->get( 'trainer_profile_picture', $trainer[$j]->ID ); ?>"/>
+                                    </div>
+                                </a>
                                 <div class='next-trainer-wrapper'>
-                                    <a class='trainer-name' href='<?php echo $trainer[$j]->guid ?>'><?php echo $trainer[$j]->post_title; ?></a>
+                                    <p><?php echo $trainer[$j]->post_name; ?></p>
                                 </div>
                             </div> 
 

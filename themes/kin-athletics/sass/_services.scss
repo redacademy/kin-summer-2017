@@ -42,7 +42,7 @@
   }
   
   .circles-container {
-    height: 50%;
+    height: 75%;
     display: flex;
     flex-flow: row wrap;
     margin: 0;
@@ -58,6 +58,7 @@
 
       a, img {
         height: 100%;
+        width: auto;
       }
 
       p {
@@ -67,40 +68,78 @@
         font-weight: 500;
         font-family: $font__h1-header;
         padding-top: 5px;
+
+        .span-block {
+          @include desktop {
+            display: block;
+          }
+        }
       }
     }
   }
 
 .services-featured{
   display: block;
-  padding-top: 20px;
+  // padding-top: 20px;
   height: 100vh;
   background-image: url(../../asset/images/serv1.jpg);
   background-size: cover;
   color: white;
   position: relative;
 
+  .services-content {
+    overflow: hidden;
+    height: 75%;
+    
+    &:after {
+      height: 75%;
+      width: 100%;
+      content: " ";
+      background: rgba(0,0,0,0.5);
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+    }
+  } 
+
   h4{
     margin: 0;
     position: relative;
     text-align: left;
-    font-size: 60px;
+    font-size: 40px;
     text-transform: uppercase;
     padding: 20px 30px 10px 20px;
-    line-height: 73px;
+    z-index: 1;
+
+    .span-block {
+      display: block;
+      text-align: left;
+      font-size: 40px;
+      text-transform: uppercase;
+      
+
+    }
   }
 
   p {
     font-family: Oswald;
+    position: relative;
+    z-index: 1;
   }
 
   .services-button-flex {
     display: flex;
     flex-wrap: wrap;
+    z-index: 1;
+    position: relative;
   }
 
   .trainer-name {
     font-weight: lighter;
+    font-size: 40px;
+    display: block;
 
   }
 
@@ -144,15 +183,16 @@
     align-content: center;
     background-color: white;
     color: black;
-    height: 35%;
     width: 100%;
     bottom: 0;
     font-size: 24px;
+    padding: 1.5rem;
 
     p{
       text-align: center;
       padding: 0;
-      margin-top: 30px;
+      margin: 0;
+      font-family: $font__code;
     }
 
     .red-button, .social-button{
@@ -190,7 +230,7 @@
     }
   }
 
-  h2 {
+  .page-template-services h2 {
     text-align: left;
     font-size: 5.5rem;
 
@@ -211,7 +251,7 @@
     }
 
   .services-featured {
-    
+
     h4 {
       text-align: right;
       font-size: 5.5rem;
@@ -250,7 +290,13 @@
 
     .social-button {
       margin: 20px;
-      max-width: 450px;
+      max-width: 25%;
+      padding-bottom: 5px;
+      padding-top: 5px;
+
+      a {
+        font-size: 1.7rem;
+      }
     }
   }
 
@@ -267,5 +313,34 @@
 
   .page-template-services h2 {
     font-size: 5.3rem;
+  }
+}
+
+// Mobiles with small heights
+@media only screen and (max-height: 600px) {
+
+  .services-featured {
+
+    .services-content {
+      h4, span {
+        font-size: 35px;
+      }
+
+      p {
+        font-size: 20px;
+      }
+
+      a {
+        padding-top: 0;
+        font-size: 20px;
+        line-height: 30px;
+      }
+
+      .red-button, .social-button {
+        height: auto;
+      }
+
+
+    }
   }
 }

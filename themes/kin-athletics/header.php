@@ -23,6 +23,8 @@
 
 			<header id="masthead" class="site-header" role="banner">
 				<div class="kin-athletic-logo">
+					<div class='kin-logo1'><a href='<?php echo esc_url( home_url( '/front-page/') )?>'><img src="<?php echo esc_url(get_template_directory_uri()); ?>/asset/logos/logo1.svg"/></a></div>
+					<div class='kin-logo2'><a href='<?php echo esc_url( home_url( '/front-page/') )?>'><img src="<?php echo esc_url(get_template_directory_uri()); ?>/asset/logos/logo2.svg"/></a></div>					
 				</div><!-- .kin-athletic-logo -->
 
 				<nav id="site-navigation" class="main-navigation" role="navigation">
