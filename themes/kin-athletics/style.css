@@ -1157,8 +1157,6 @@ p {
   width: 100%;
   background-size: cover;
   text-transform: uppercase; }
-  .carousel-cell :not(.carousel-cell-info) {
-    padding-left: 40px; }
   .carousel-cell h2 {
     width: 49.69%;
     font-weight: bold;
@@ -1181,7 +1179,7 @@ p {
 
 .personal-training .price-box-container, .group-training .price-box-container {
   width: 80%;
-  height: 20%;
+  max-height: 120px;
   border: 2px solid white;
   display: -ms-flexbox;
   display: flex;
@@ -1190,15 +1188,21 @@ p {
   margin: 0 auto;
   padding: 0; }
   .personal-training .price-box-container .single-price-box, .group-training .price-box-container .single-price-box {
-    padding: 0 10px;
     width: 100%;
     text-align: center; }
-    .personal-training .price-box-container .single-price-box p, .personal-training .price-box-container .single-price-box span, .group-training .price-box-container .single-price-box p, .group-training .price-box-container .single-price-box span {
+    .personal-training .price-box-container .single-price-box p, .group-training .price-box-container .single-price-box p {
       padding: 0;
-      margin: 10px 0; }
+      margin: 0; }
     .personal-training .price-box-container .single-price-box span, .group-training .price-box-container .single-price-box span {
-      font-weight: bold;
+      font-weight: 900;
       font-size: 20px; }
+      .personal-training .price-box-container .single-price-box span:first-child, .group-training .price-box-container .single-price-box span:first-child {
+        font-size: 10px; }
+      .personal-training .price-box-container .single-price-box span:last-child, .group-training .price-box-container .single-price-box span:last-child {
+        font-family: "Oswald"; }
+  .personal-training .price-box-container .span-block, .group-training .price-box-container .span-block {
+    display: block;
+    margin: 0; }
 
 .personal-training .price-box-border, .group-training .price-box-border {
   border-left: 2px white solid;
@@ -1233,14 +1237,14 @@ p {
     height: 38px; }
 
 .page-template-services .entry-content {
-  margin: 0; }
-  .page-template-services .entry-content .carousel-cell :not(.carousel-cell-info) {
-    padding: 0; }
+  margin: 0;
+  padding-top: 0.75rem; }
   .page-template-services .entry-content .carousel-cell h2 {
     margin: 1.5rem; }
   .page-template-services .entry-content .carousel-cell .service-description {
     background: rgba(0, 0, 0, 0.65);
-    padding: 1.5rem; }
+    padding: 1.5rem;
+    text-transform: none; }
 
 .page-template-services h1 {
   margin: auto;
@@ -1248,7 +1252,10 @@ p {
   font-size: 1.2rem;
   max-width: 80%; }
 
-.services-icons, body.page-template-archive-trainer .our-origin, body.page-template-archive-trainer .our-community, body.page-template-archive-trainer .our-place {
+.services-icons, body.page-template-archive-trainer .our-origin,
+body.post-type-archive-trainer .our-origin, body.page-template-archive-trainer .our-community,
+body.post-type-archive-trainer .our-community, body.page-template-archive-trainer .our-place,
+body.post-type-archive-trainer .our-place {
   height: 100vh;
   background: url("../../asset/images/aboutpage_heroshot.png") no-repeat center;
   background-size: cover;
@@ -1711,37 +1718,47 @@ body.single-trainer .default-content {
     position: relative;
     padding-left: 1.3rem; }
 
-body.page-template-archive-trainer .entry-content {
+body.page-template-archive-trainer .entry-content,
+body.post-type-archive-trainer .entry-content {
   margin: 0 auto; }
   @media only screen and (min-width: 600px) {
-    body.page-template-archive-trainer .entry-content .our-origin {
+    body.page-template-archive-trainer .entry-content .our-origin,
+    body.post-type-archive-trainer .entry-content .our-origin {
       display: -ms-flexbox;
       display: flex;
       -ms-flex-pack: end;
           justify-content: flex-end; }
-      body.page-template-archive-trainer .entry-content .our-origin .page-section {
+      body.page-template-archive-trainer .entry-content .our-origin .page-section,
+      body.post-type-archive-trainer .entry-content .our-origin .page-section {
         margin-bottom: 10%; } }
-  body.page-template-archive-trainer .entry-content .header-container {
+  body.page-template-archive-trainer .entry-content .header-container,
+  body.post-type-archive-trainer .entry-content .header-container {
     display: -ms-flexbox;
     display: flex; }
-    body.page-template-archive-trainer .entry-content .header-container h1 {
+    body.page-template-archive-trainer .entry-content .header-container h1,
+    body.post-type-archive-trainer .entry-content .header-container h1 {
       margin: auto;
       text-align: center; }
     @media only screen and (min-width: 600px) {
-      body.page-template-archive-trainer .entry-content .header-container h1 {
+      body.page-template-archive-trainer .entry-content .header-container h1,
+      body.post-type-archive-trainer .entry-content .header-container h1 {
         font-size: 3.5rem;
         max-width: 100%; } }
 
-body.page-template-archive-trainer .flickity-prev-next-button {
+body.page-template-archive-trainer .flickity-prev-next-button,
+body.post-type-archive-trainer .flickity-prev-next-button {
   top: 50%; }
 
-body.page-template-archive-trainer .main-carousel {
+body.page-template-archive-trainer .main-carousel,
+body.post-type-archive-trainer .main-carousel {
   height: 100%; }
 
-body.page-template-archive-trainer .carousel-cell :not(.carousel-cell-info) {
+body.page-template-archive-trainer .carousel-cell :not(.carousel-cell-info),
+body.post-type-archive-trainer .carousel-cell :not(.carousel-cell-info) {
   padding: 0; }
 
-body.page-template-archive-trainer .carousel-cell.trainers {
+body.page-template-archive-trainer .carousel-cell.trainers,
+body.post-type-archive-trainer .carousel-cell.trainers {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-flow: row wrap;
@@ -1753,14 +1770,17 @@ body.page-template-archive-trainer .carousel-cell.trainers {
   -ms-flex-pack: center;
       justify-content: center; }
 
-body.page-template-archive-trainer .trainers-grid .header-container h2.header-title--black {
+body.page-template-archive-trainer .trainers-grid .header-container h2.header-title--black,
+body.post-type-archive-trainer .trainers-grid .header-container h2.header-title--black {
   margin: 0 0 1rem;
   width: 100%; }
   @media only screen and (min-width: 600px) {
-    body.page-template-archive-trainer .trainers-grid .header-container h2.header-title--black {
+    body.page-template-archive-trainer .trainers-grid .header-container h2.header-title--black,
+    body.post-type-archive-trainer .trainers-grid .header-container h2.header-title--black {
       font-size: 8rem; } }
 
-body.page-template-archive-trainer .trainers-grid .trainer-grid-wrapper {
+body.page-template-archive-trainer .trainers-grid .trainer-grid-wrapper,
+body.post-type-archive-trainer .trainers-grid .trainer-grid-wrapper {
   width: 100%;
   display: -ms-flexbox;
   display: flex;
@@ -1769,12 +1789,14 @@ body.page-template-archive-trainer .trainers-grid .trainer-grid-wrapper {
   height: 75%;
   -ms-flex-pack: center;
       justify-content: center; }
-  body.page-template-archive-trainer .trainers-grid .trainer-grid-wrapper .trainer-item-container {
+  body.page-template-archive-trainer .trainers-grid .trainer-grid-wrapper .trainer-item-container,
+  body.post-type-archive-trainer .trainers-grid .trainer-grid-wrapper .trainer-item-container {
     width: 40%;
     max-height: 200px;
     position: relative;
     height: 30%; }
-    body.page-template-archive-trainer .trainers-grid .trainer-grid-wrapper .trainer-item-container .trainer-thumbnail-wrapper {
+    body.page-template-archive-trainer .trainers-grid .trainer-grid-wrapper .trainer-item-container .trainer-thumbnail-wrapper,
+    body.post-type-archive-trainer .trainers-grid .trainer-grid-wrapper .trainer-item-container .trainer-thumbnail-wrapper {
       display: -ms-flexbox;
       display: flex;
       -ms-flex-flow: column nowrap;
@@ -1788,21 +1810,25 @@ body.page-template-archive-trainer .trainers-grid .trainer-grid-wrapper {
       width: 70%;
       height: 70%;
       background: #C6CDDF; }
-      body.page-template-archive-trainer .trainers-grid .trainer-grid-wrapper .trainer-item-container .trainer-thumbnail-wrapper img {
+      body.page-template-archive-trainer .trainers-grid .trainer-grid-wrapper .trainer-item-container .trainer-thumbnail-wrapper img,
+      body.post-type-archive-trainer .trainers-grid .trainer-grid-wrapper .trainer-item-container .trainer-thumbnail-wrapper img {
         height: 100%;
         max-width: none; }
-    body.page-template-archive-trainer .trainers-grid .trainer-grid-wrapper .trainer-item-container .next-trainer-wrapper {
+    body.page-template-archive-trainer .trainers-grid .trainer-grid-wrapper .trainer-item-container .next-trainer-wrapper,
+    body.post-type-archive-trainer .trainers-grid .trainer-grid-wrapper .trainer-item-container .next-trainer-wrapper {
       display: -ms-flexbox;
       display: flex;
       -ms-flex-pack: center;
           justify-content: center;
       height: 25%; }
-      body.page-template-archive-trainer .trainers-grid .trainer-grid-wrapper .trainer-item-container .next-trainer-wrapper p {
+      body.page-template-archive-trainer .trainers-grid .trainer-grid-wrapper .trainer-item-container .next-trainer-wrapper p,
+      body.post-type-archive-trainer .trainers-grid .trainer-grid-wrapper .trainer-item-container .next-trainer-wrapper p {
         color: black;
         text-decoration: none;
         margin: auto; }
 
-body.page-template-archive-trainer .services-icons, body.page-template-archive-trainer .our-origin, body.page-template-archive-trainer .our-community, body.page-template-archive-trainer .our-place {
+body.page-template-archive-trainer .services-icons, body.page-template-archive-trainer .our-origin, body.page-template-archive-trainer .our-community, body.page-template-archive-trainer .our-place,
+body.post-type-archive-trainer .services-icons, body.post-type-archive-trainer .our-origin, body.post-type-archive-trainer .our-community, body.post-type-archive-trainer .our-place {
   height: 100vh;
   background: url("../../asset/images/aboutpage_heroshot.png") no-repeat center;
   background-size: cover;
@@ -1812,13 +1838,16 @@ body.page-template-archive-trainer .services-icons, body.page-template-archive-t
       flex-flow: column nowrap;
   -ms-flex-pack: normal;
       justify-content: normal; }
-  body.page-template-archive-trainer .services-icons .header-container, body.page-template-archive-trainer .our-origin .header-container, body.page-template-archive-trainer .our-community .header-container, body.page-template-archive-trainer .our-place .header-container {
+  body.page-template-archive-trainer .services-icons .header-container, body.page-template-archive-trainer .our-origin .header-container, body.page-template-archive-trainer .our-community .header-container, body.page-template-archive-trainer .our-place .header-container,
+  body.post-type-archive-trainer .services-icons .header-container, body.post-type-archive-trainer .our-origin .header-container, body.post-type-archive-trainer .our-community .header-container, body.post-type-archive-trainer .our-place .header-container {
     margin-top: 60px; }
 
-body.page-template-archive-trainer #origin-icon {
+body.page-template-archive-trainer #origin-icon,
+body.post-type-archive-trainer #origin-icon {
   margin-right: 50px; }
 
-body.page-template-archive-trainer .circles-container {
+body.page-template-archive-trainer .circles-container,
+body.post-type-archive-trainer .circles-container {
   height: 75%;
   display: -ms-flexbox;
   display: flex;
@@ -1831,10 +1860,12 @@ body.page-template-archive-trainer .circles-container {
   -ms-flex-line-pack: center;
       align-content: center; }
   @media only screen and (min-width: 600px) {
-    body.page-template-archive-trainer .circles-container {
+    body.page-template-archive-trainer .circles-container,
+    body.post-type-archive-trainer .circles-container {
       -ms-flex-flow: nowrap;
           flex-flow: nowrap; } }
-  body.page-template-archive-trainer .circles-container .icon-container {
+  body.page-template-archive-trainer .circles-container .icon-container,
+  body.post-type-archive-trainer .circles-container .icon-container {
     width: 50%;
     height: 40%;
     display: -ms-flexbox;
@@ -1846,9 +1877,11 @@ body.page-template-archive-trainer .circles-container {
     -ms-flex-align: center;
         align-items: center; }
     @media only screen and (min-width: 600px) {
-      body.page-template-archive-trainer .circles-container .icon-container {
+      body.page-template-archive-trainer .circles-container .icon-container,
+      body.post-type-archive-trainer .circles-container .icon-container {
         height: 250px; } }
-    body.page-template-archive-trainer .circles-container .icon-container a {
+    body.page-template-archive-trainer .circles-container .icon-container a,
+    body.post-type-archive-trainer .circles-container .icon-container a {
       height: 100%;
       display: -ms-flexbox;
       display: flex;
@@ -1858,35 +1891,43 @@ body.page-template-archive-trainer .circles-container {
           align-items: center;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly; }
-    body.page-template-archive-trainer .circles-container .icon-container img {
+    body.page-template-archive-trainer .circles-container .icon-container img,
+    body.post-type-archive-trainer .circles-container .icon-container img {
       height: 75%; }
       @media only screen and (min-width: 600px) {
-        body.page-template-archive-trainer .circles-container .icon-container img {
+        body.page-template-archive-trainer .circles-container .icon-container img,
+        body.post-type-archive-trainer .circles-container .icon-container img {
           height: 100%; } }
-    body.page-template-archive-trainer .circles-container .icon-container p {
+    body.page-template-archive-trainer .circles-container .icon-container p,
+    body.post-type-archive-trainer .circles-container .icon-container p {
       margin: 0;
       color: white;
       text-transform: uppercase;
       font-weight: 500;
       font-family: "Oswald"; }
       @media only screen and (min-width: 600px) {
-        body.page-template-archive-trainer .circles-container .icon-container p .span-block {
+        body.page-template-archive-trainer .circles-container .icon-container p .span-block,
+        body.post-type-archive-trainer .circles-container .icon-container p .span-block {
           display: block; } }
 
-body.page-template-archive-trainer h2.header-title, body.page-template-archive-trainer h2.header-title--black {
+body.page-template-archive-trainer h2.header-title, body.page-template-archive-trainer h2.header-title--black,
+body.post-type-archive-trainer h2.header-title, body.post-type-archive-trainer h2.header-title--black {
   color: white;
   font-size: 40px;
   margin: 0 0.5em;
   line-height: 58px; }
   @media only screen and (min-width: 600px) {
-    body.page-template-archive-trainer h2.header-title, body.page-template-archive-trainer h2.header-title--black {
+    body.page-template-archive-trainer h2.header-title, body.page-template-archive-trainer h2.header-title--black,
+    body.post-type-archive-trainer h2.header-title, body.post-type-archive-trainer h2.header-title--black {
       font-size: 8rem;
       line-height: inherit; } }
-  body.page-template-archive-trainer h2.header-title--black {
+  body.page-template-archive-trainer h2.header-title--black,
+  body.post-type-archive-trainer h2.header-title--black {
     color: #000;
     text-align: center; }
 
-body.page-template-archive-trainer .description-container p {
+body.page-template-archive-trainer .description-container p,
+body.post-type-archive-trainer .description-container p {
   background-color: rgba(0, 0, 0, 0.6);
   margin: 0;
   color: white;
@@ -1894,11 +1935,17 @@ body.page-template-archive-trainer .description-container p {
   font-size: 20px;
   font-weight: 300; }
 
-body.page-template-archive-trainer .red-button, body.page-template-archive-trainer .consultation-button, body.page-template-archive-trainer .social-button {
+body.page-template-archive-trainer .red-button, body.page-template-archive-trainer .consultation-button, body.page-template-archive-trainer .social-button,
+body.post-type-archive-trainer .red-button,
+body.post-type-archive-trainer .consultation-button,
+body.post-type-archive-trainer .social-button {
   margin: 1.5rem;
   width: 175px;
   height: 50px; }
-  body.page-template-archive-trainer .red-button a, body.page-template-archive-trainer .consultation-button a, body.page-template-archive-trainer .social-button a {
+  body.page-template-archive-trainer .red-button a, body.page-template-archive-trainer .consultation-button a, body.page-template-archive-trainer .social-button a,
+  body.post-type-archive-trainer .red-button a,
+  body.post-type-archive-trainer .consultation-button a,
+  body.post-type-archive-trainer .social-button a {
     display: block;
     text-align: center;
     color: white;
@@ -1908,38 +1955,47 @@ body.page-template-archive-trainer .red-button, body.page-template-archive-train
     font-weight: 500;
     letter-spacing: 0.75px; }
 
-body.page-template-archive-trainer .our-origin {
+body.page-template-archive-trainer .our-origin,
+body.post-type-archive-trainer .our-origin {
   background: url("../../asset/images/aboutpage_ourorigin.png") no-repeat left;
   background-size: cover;
   text-align: right; }
-  body.page-template-archive-trainer .our-origin .header-container {
+  body.page-template-archive-trainer .our-origin .header-container,
+  body.post-type-archive-trainer .our-origin .header-container {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: end;
         justify-content: flex-end; }
 
-body.page-template-archive-trainer .our-community {
+body.page-template-archive-trainer .our-community,
+body.post-type-archive-trainer .our-community {
   background: url("../../asset/images/aboutpage_ourcommunity.png") no-repeat center;
   background-size: cover;
   border-top: 1px solid white;
   position: relative; }
-  body.page-template-archive-trainer .our-community .red-button, body.page-template-archive-trainer .our-community .consultation-button {
+  body.page-template-archive-trainer .our-community .red-button, body.page-template-archive-trainer .our-community .consultation-button,
+  body.post-type-archive-trainer .our-community .red-button,
+  body.post-type-archive-trainer .our-community .consultation-button {
     margin-top: 1.5rem;
     margin-left: 1.5rem; }
 
-body.page-template-archive-trainer .our-place {
+body.page-template-archive-trainer .our-place,
+body.post-type-archive-trainer .our-place {
   background: url("../../asset/images/aboutpage_ourplace.png") no-repeat 70% 70%;
   background-size: cover;
   border-top: 1px solid white; }
-  body.page-template-archive-trainer .our-place .widget-area {
+  body.page-template-archive-trainer .our-place .widget-area,
+  body.post-type-archive-trainer .our-place .widget-area {
     width: 100%;
     display: -ms-flexbox;
     display: flex; }
 
-body.page-template-archive-trainer .social-button {
+body.page-template-archive-trainer .social-button,
+body.post-type-archive-trainer .social-button {
   margin-top: 15px; }
 
-body.page-template-archive-trainer .white {
+body.page-template-archive-trainer .white,
+body.post-type-archive-trainer .white {
   position: absolute;
   background-color: white;
   color: black;
@@ -1947,15 +2003,22 @@ body.page-template-archive-trainer .white {
   width: 100%;
   bottom: 0;
   font-size: 24px; }
-  body.page-template-archive-trainer .white p {
+  body.page-template-archive-trainer .white p,
+  body.post-type-archive-trainer .white p {
     text-align: center;
     padding: 0;
     margin-top: 30px; }
-  body.page-template-archive-trainer .white .red-button, body.page-template-archive-trainer .white .consultation-button, body.page-template-archive-trainer .white .social-button {
+  body.page-template-archive-trainer .white .red-button, body.page-template-archive-trainer .white .consultation-button, body.page-template-archive-trainer .white .social-button,
+  body.post-type-archive-trainer .white .red-button,
+  body.post-type-archive-trainer .white .consultation-button,
+  body.post-type-archive-trainer .white .social-button {
     text-align: center;
     width: 50%;
     border-width: 3px; }
-    body.page-template-archive-trainer .white .red-button a, body.page-template-archive-trainer .white .consultation-button a, body.page-template-archive-trainer .white .social-button a {
+    body.page-template-archive-trainer .white .red-button a, body.page-template-archive-trainer .white .consultation-button a, body.page-template-archive-trainer .white .social-button a,
+    body.post-type-archive-trainer .white .red-button a,
+    body.post-type-archive-trainer .white .consultation-button a,
+    body.post-type-archive-trainer .white .social-button a {
       color: black;
       font-size: 30px; }
 
@@ -2561,7 +2624,13 @@ body .page-template-video-page {
   .page-template-events .entry-content .flickity-page-dots .dot.is-selected {
     background: white; }
 
-.page-template-events .services-icons, .page-template-events body.page-template-archive-trainer .our-origin, body.page-template-archive-trainer .page-template-events .our-origin, .page-template-events body.page-template-archive-trainer .our-community, body.page-template-archive-trainer .page-template-events .our-community, .page-template-events body.page-template-archive-trainer .our-place, body.page-template-archive-trainer .page-template-events .our-place {
+.page-template-events .services-icons, .page-template-events body.page-template-archive-trainer .our-origin, body.page-template-archive-trainer .page-template-events .our-origin, .page-template-events
+body.post-type-archive-trainer .our-origin,
+body.post-type-archive-trainer .page-template-events .our-origin, .page-template-events body.page-template-archive-trainer .our-community, body.page-template-archive-trainer .page-template-events .our-community, .page-template-events
+body.post-type-archive-trainer .our-community,
+body.post-type-archive-trainer .page-template-events .our-community, .page-template-events body.page-template-archive-trainer .our-place, body.page-template-archive-trainer .page-template-events .our-place, .page-template-events
+body.post-type-archive-trainer .our-place,
+body.post-type-archive-trainer .page-template-events .our-place {
   height: 100vh;
   background-image: url("../../asset/images/eventspage_heroshot.png");
   background-size: cover;

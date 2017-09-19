@@ -56,17 +56,17 @@ get_header(); ?>
 
             <div class='price-box-container'>
               <div class='single-price-box'> 
-                <p>single session</p>
+                <p>single <span class="span-block">session</span></p>
                 <span><?php echo CFS()->get('personal_training_single_session');?></span>
               </div>
 
               <div class='single-price-box price-box-border'>
-                <p>ten sessions</p>
+                <p>ten <span class="span-block">sessions</span></p>
                 <span><?php echo CFS()->get('personal_training_ten_session');?></span>
               </div>
               
               <div class='single-price-box'>
-                <p>thirty sessions</p>
+                <p>thirty <span class="span-block">sessions</span></p>
                 <span><?php echo CFS()->get('personal_training_thirty_session');?></span>
               </div>
             </div>  <!-- end of price box container-->  
@@ -82,17 +82,17 @@ get_header(); ?>
 
             <div class='price-box-container'>
               <div class='single-price-box'> 
-                <p>single session</p>
+                <p>single <span class="span-block">session</span></p>
                 <span><?php echo CFS()->get('group_training_single_session');?></span>
               </div>
 
               <div class='single-price-box price-box-border'>
-                <p>ten sessions</p>
+                <p>ten <span class="span-block">sessions</span></p>
                 <span><?php echo CFS()->get('group_training_ten_session');?></span>
               </div>
               
               <div class='single-price-box'>
-                <p>thirty sessions</p>
+                <p>thirty <span class="span-block">sessions</span></p>
                 <span><?php echo CFS()->get('group_training_thirty_session');?></span>
               </div>
             </div>  <!-- end of price box container-->  
