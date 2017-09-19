@@ -42,7 +42,7 @@ a {
 			box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
 			float: left;
 			position: absolute;
-			top: $base__space-unit;
+			// top: $base__space-unit;
 			left: -999rem;
 			z-index: 99999;
 
@@ -205,11 +205,39 @@ a {
 	}
 }
 
+#menu-menu .sub-menu{
+	background-color: black;
+	top: 48px;
+	right: -60px;
+	width: 240px;
+
+	li{
+		margin-right: 0;
+		a{
+			width: 240px;
+			padding: 0 30px;
+			border-bottom: 2px solid white;			
+		}
+	}
+}
+
+
 //                           KIN LOGOS
+
  
+.site-header{
+	@include Desktop{
+		display: flex;
+	}
+}
+
 
 .kin-athletic-logo{
 	height: 100%;
+
+	@include Desktop{
+		width: 50%;
+	}
 
 	.kin-logo1{
 		height: 100%;
@@ -218,14 +246,17 @@ a {
 		margin-left: 10px;
 
 		@include Desktop{
-			justify-content: flex-start;
-			align-self: flex-start;
-			text-align: left;
-			margin: 0;
+			display: inline;
+			margin-left: 50px;
 		}
 
 		img{
 			height: 35px;
+
+			@include Desktop{
+				height: 100%;
+				width: 100px;
+			}
 		}
 	}
 	
@@ -234,9 +265,11 @@ a {
 	
 		@include Desktop{
 			display: inline;
+			margin-left: 20px;
 
 			img{
-				height: 30px;
+				width: 200px;
+				height: 100%;
 			}
 		}
 	}
