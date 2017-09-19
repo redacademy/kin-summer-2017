@@ -3110,13 +3110,19 @@ body.post-type-archive-trainer .page-template-events .our-place {
     text-align: center;
     margin-top: 50px;
     margin-bottom: 0; }
-  #field_1_22 p {
-    color: white;
-    padding: 30px;
-    margin: 15px 0;
-    background-color: black; }
-  #field_1_22 span {
-    color: #A10000; }
+  #field_1_22 .form-container {
+    background-color: black;
+    margin: 15px 0; }
+    #field_1_22 .form-container p {
+      display: inline-block;
+      color: white;
+      padding: 30px;
+      width: 85%; }
+    #field_1_22 .form-container span {
+      color: #A10000; }
+    #field_1_22 .form-container div {
+      display: inline;
+      color: #A10000; }
   #field_1_22 br {
     display: none; }
 
