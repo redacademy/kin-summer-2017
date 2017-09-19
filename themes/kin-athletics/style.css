@@ -2422,7 +2422,7 @@ body .page-template-video-page {
   background: #000000;
   display: block;
   height: 8.01%;
-  padding: 5px 0 40px 0; }
+  padding: 5px 0 30px 0; }
 
 .page-template-find-us .white.container {
   padding: 5px 0 40px 0; }
@@ -2450,10 +2450,6 @@ body .page-template-video-page {
     font-size: 1.7rem;
     padding-top: 20px;
     padding-bottom: 20px; } }
-
-@media only screen and (min-width: 600px) {
-  .page-template-find-us element.style {
-    min-height: 400px; } }
 
 .page-template-events .entry-content {
   margin: 0; }
