@@ -1465,6 +1465,11 @@ body.post-type-archive-trainer .our-place {
     font-size: 5.3rem; } }
 
 @media only screen and (max-height: 600px) {
+  .entry-content {
+    padding-top: 0.9rem; }
+  .carousel-cell h2 {
+    font-size: 35px;
+    line-height: normal; }
   .services-featured .services-content h4, .services-featured .services-content span {
     font-size: 35px; }
   .services-featured .services-content p {

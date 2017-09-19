@@ -317,6 +317,17 @@
 // Mobiles with small heights
 @media only screen and (max-height: 600px) {
 
+  .entry-content {
+    padding-top: 0.9rem;
+  }
+
+  .carousel-cell {
+    h2 {
+      font-size: 35px;
+      line-height: normal;
+    }
+  }
+
   .services-featured {
 
     .services-content {
