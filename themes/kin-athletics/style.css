@@ -602,7 +602,7 @@ a {
 
 #site-navigation {
   display: none; }
-  @media (min-width: 600px) {
+  @media only screen and (min-width: 600px) {
     #site-navigation {
       display: block; } }
 
@@ -640,14 +640,14 @@ a {
       padding: 0 30px;
       border-bottom: 2px solid white; }
 
-@media (min-width: 600px) {
+@media only screen and (min-width: 600px) {
   .site-header {
     display: -ms-flexbox;
     display: flex; } }
 
 .kin-athletic-logo {
   height: 100%; }
-  @media (min-width: 600px) {
+  @media only screen and (min-width: 600px) {
     .kin-athletic-logo {
       width: 50%; } }
   .kin-athletic-logo .kin-logo1 {
@@ -657,19 +657,19 @@ a {
     -ms-flex-align: center;
         align-items: center;
     margin-left: 10px; }
-    @media (min-width: 600px) {
+    @media only screen and (min-width: 600px) {
       .kin-athletic-logo .kin-logo1 {
         display: inline;
         margin-left: 50px; } }
     .kin-athletic-logo .kin-logo1 img {
       height: 35px; }
-      @media (min-width: 600px) {
+      @media only screen and (min-width: 600px) {
         .kin-athletic-logo .kin-logo1 img {
           height: 100%;
           width: 100px; } }
   .kin-athletic-logo .kin-logo2 {
     display: none; }
-    @media (min-width: 600px) {
+    @media only screen and (min-width: 600px) {
       .kin-athletic-logo .kin-logo2 {
         display: inline;
         margin-left: 20px; }
@@ -1456,6 +1456,18 @@ p {
     font-size: 2.2rem; }
   .page-template-services h2 {
     font-size: 5.3rem; } }
+
+@media only screen and (max-height: 600px) {
+  .services-featured .services-content h4, .services-featured .services-content span {
+    font-size: 35px; }
+  .services-featured .services-content p {
+    font-size: 20px; }
+  .services-featured .services-content a {
+    padding-top: 0;
+    font-size: 20px;
+    line-height: 30px; }
+  .services-featured .services-content .red-button, .services-featured .services-content .consultation-button, .services-featured .services-content .social-button {
+    height: auto; } }
 
 /*--------------------------------------------------------------
 # About
@@ -2740,7 +2752,7 @@ body .page-template-video-page {
     border: none; }
   .page-template-consultations .gform_body {
     padding: 0 20px; }
-    @media (min-width: 600px) {
+    @media only screen and (min-width: 600px) {
       .page-template-consultations .gform_body {
         padding: 0 30%; } }
 
@@ -2771,7 +2783,7 @@ body .page-template-video-page {
   background: white;
   padding: 30px; }
 
-@media (min-width: 600px) {
+@media only screen and (min-width: 600px) {
   #field_1_1 {
     display: -ms-flexbox;
     display: flex;
@@ -2819,7 +2831,7 @@ body .page-template-video-page {
   font-weight: bold;
   box-shadow: none; }
 
-@media (min-width: 600px) {
+@media only screen and (min-width: 600px) {
   #gform_page_1_1 {
     position: relative; }
     #gform_page_1_1 #gform_next_button_1_8 {
@@ -2861,15 +2873,15 @@ body .page-template-video-page {
   font-size: 20px;
   box-shadow: none; }
 
-@media (min-width: 600px) {
+@media only screen and (min-width: 600px) {
   #input_1_2 {
     width: 100%; } }
 
-@media (min-width: 600px) {
+@media only screen and (min-width: 600px) {
   #gform_page_1_2 {
     position: relative; } }
 
-@media (min-width: 600px) {
+@media only screen and (min-width: 600px) {
   #gform_next_button_1_10 {
     top: 170px;
     right: 20px; } }
@@ -2932,11 +2944,11 @@ body .page-template-video-page {
   right: 50%;
   bottom: -65px; }
 
-@media (min-width: 600px) {
+@media only screen and (min-width: 600px) {
   #gform_page_1_3 {
     position: relative; } }
 
-@media (min-width: 600px) {
+@media only screen and (min-width: 600px) {
   #gform_page_1_3 #gform_next_button_1_13 {
     bottom: 50px; } }
 
@@ -2970,11 +2982,11 @@ body .page-template-video-page {
   bottom: 100px;
   transform: translate(-50%, -50%); }
 
-@media (min-width: 600px) {
+@media only screen and (min-width: 600px) {
   #gform_page_1_4 {
     position: relative; } }
 
-@media (min-width: 600px) {
+@media only screen and (min-width: 600px) {
   #gform_page_1_4 #gform_next_button_1_12 {
     bottom: 50px; } }
 
@@ -2994,12 +3006,12 @@ body .page-template-video-page {
   font-size: 20px;
   font-weight: bold;
   box-shadow: none; }
-  @media (min-width: 600px) {
+  @media only screen and (min-width: 600px) {
     #gform_next_button_1_23 {
       top: 265px;
       right: 15px; } }
 
-@media (min-width: 600px) {
+@media only screen and (min-width: 600px) {
   #gform_page_1_5 {
     position: relative; } }
 

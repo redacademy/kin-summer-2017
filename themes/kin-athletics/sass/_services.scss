@@ -315,3 +315,32 @@
     font-size: 5.3rem;
   }
 }
+
+// Mobiles with small heights
+@media only screen and (max-height: 600px) {
+
+  .services-featured {
+
+    .services-content {
+      h4, span {
+        font-size: 35px;
+      }
+
+      p {
+        font-size: 20px;
+      }
+
+      a {
+        padding-top: 0;
+        font-size: 20px;
+        line-height: 30px;
+      }
+
+      .red-button, .social-button {
+        height: auto;
+      }
+
+
+    }
+  }
+}
