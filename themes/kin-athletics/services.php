@@ -57,17 +57,17 @@ get_header(); ?>
             <div class='price-box-container'>
               <div class='single-price-box'> 
                 <p>single session</p>
-                <span>$50</span>
+                <span><?php echo CFS()->get('personal_training_single_session');?></span>
               </div>
 
               <div class='single-price-box price-box-border'>
                 <p>ten sessions</p>
-                <span>$470</span>
+                <span><?php echo CFS()->get('personal_training_ten_session');?></span>
               </div>
               
               <div class='single-price-box'>
                 <p>thirty sessions</p>
-                <span>$1400</span>
+                <span><?php echo CFS()->get('personal_training_thirty_session');?></span>
               </div>
             </div>  <!-- end of price box container-->  
             <p class='training-rates'>**Rates are subject to change for program customizations.</p>       
@@ -83,17 +83,17 @@ get_header(); ?>
             <div class='price-box-container'>
               <div class='single-price-box'> 
                 <p>single session</p>
-                <span>$25</span>
+                <span><?php echo CFS()->get('group_training_single_session');?></span>
               </div>
 
               <div class='single-price-box price-box-border'>
                 <p>ten sessions</p>
-                <span>$235</span>
+                <span><?php echo CFS()->get('group_training_ten_session');?></span>
               </div>
               
               <div class='single-price-box'>
                 <p>thirty sessions</p>
-                <span>$700</span>
+                <span><?php echo CFS()->get('group_training_thirty_session');?></span>
               </div>
             </div>  <!-- end of price box container-->  
             <p class='training-rates'>**Rates are subject to change for program customizations.</p>
