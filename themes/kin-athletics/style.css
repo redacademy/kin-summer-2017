@@ -1982,6 +1982,24 @@ body.single-trainer .default-content {
     position: relative;
     padding-left: 1.3rem; }
 
+@media only screen and (min-width: 600px) {
+  .about-sidebar {
+    width: 45%;
+    position: relative; }
+    .about-sidebar h2.widget-title {
+      font-size: 48px; }
+    .about-sidebar p {
+      font-size: 30px; }
+    .about-sidebar .widget.kin-athletics-info-class .widget-block:last-child {
+      display: none; }
+    .about-sidebar .widget-area .red-button, .about-sidebar .widget-area .consultation-button {
+      height: auto;
+      width: 50%;
+      position: absolute;
+      left: 50%;
+      margin: 0;
+      bottom: 0; } }
+
 body.page-template-archive-trainer .entry-content,
 body.post-type-archive-trainer .entry-content {
   margin: 0 auto; }
@@ -2105,6 +2123,9 @@ body.post-type-archive-trainer .services-icons, body.post-type-archive-trainer .
   body.page-template-archive-trainer .services-icons .header-container, body.page-template-archive-trainer .our-origin .header-container, body.page-template-archive-trainer .our-community .header-container, body.page-template-archive-trainer .our-place .header-container,
   body.post-type-archive-trainer .services-icons .header-container, body.post-type-archive-trainer .our-origin .header-container, body.post-type-archive-trainer .our-community .header-container, body.post-type-archive-trainer .our-place .header-container {
     margin-top: 60px; }
+    body.page-template-archive-trainer .services-icons .header-container .span-block, body.page-template-archive-trainer .our-origin .header-container .span-block, body.page-template-archive-trainer .our-community .header-container .span-block, body.page-template-archive-trainer .our-place .header-container .span-block,
+    body.post-type-archive-trainer .services-icons .header-container .span-block, body.post-type-archive-trainer .our-origin .header-container .span-block, body.post-type-archive-trainer .our-community .header-container .span-block, body.post-type-archive-trainer .our-place .header-container .span-block {
+      diplay: block; }
 
 body.page-template-archive-trainer #origin-icon,
 body.post-type-archive-trainer #origin-icon {
@@ -2143,7 +2164,8 @@ body.post-type-archive-trainer .circles-container {
     @media only screen and (min-width: 600px) {
       body.page-template-archive-trainer .circles-container .icon-container,
       body.post-type-archive-trainer .circles-container .icon-container {
-        height: 250px; } }
+        height: auto;
+        width: 20%; } }
     body.page-template-archive-trainer .circles-container .icon-container a,
     body.post-type-archive-trainer .circles-container .icon-container a {
       height: 100%;
@@ -2200,6 +2222,11 @@ body.post-type-archive-trainer .description-container p {
   font-size: 20px;
   font-weight: 300; }
 
+@media only screen and (min-width: 600px) {
+  body.page-template-archive-trainer .description-container p,
+  body.post-type-archive-trainer .description-container p {
+    font-size: 36px; } }
+
 body.page-template-archive-trainer .red-button, body.page-template-archive-trainer .consultation-button, body.page-template-archive-trainer .social-button,
 body.post-type-archive-trainer .red-button,
 body.post-type-archive-trainer .consultation-button,
@@ -2216,9 +2243,23 @@ body.post-type-archive-trainer .social-button {
     color: white;
     padding-top: 3%;
     font-family: 'Oswald';
-    font-weight: 24px;
+    font-size: 24px;
     font-weight: 500;
     letter-spacing: 0.75px; }
+  @media only screen and (min-width: 600px) {
+    body.page-template-archive-trainer .red-button, body.page-template-archive-trainer .consultation-button, body.page-template-archive-trainer .social-button,
+    body.post-type-archive-trainer .red-button,
+    body.post-type-archive-trainer .consultation-button,
+    body.post-type-archive-trainer .social-button {
+      height: auto;
+      width: 25%; }
+      body.page-template-archive-trainer .red-button a, body.page-template-archive-trainer .consultation-button a, body.page-template-archive-trainer .social-button a,
+      body.post-type-archive-trainer .red-button a,
+      body.post-type-archive-trainer .consultation-button a,
+      body.post-type-archive-trainer .social-button a {
+        font-size: 36px;
+        padding: 0;
+        line-height: initial; } }
 
 body.page-template-archive-trainer .our-origin,
 body.post-type-archive-trainer .our-origin {
@@ -2286,6 +2327,12 @@ body.post-type-archive-trainer .white {
     body.post-type-archive-trainer .white .social-button a {
       color: black;
       font-size: 30px; }
+
+@media only screen and (min-width: 600px) {
+  .header-container h1 .span-block {
+    display: inline; }
+  .circles-container .icon-container p {
+    font-size: 36px; } }
 
 .post-type-archive-event .entry-content,
 .page-template-archive-event .entry-content {

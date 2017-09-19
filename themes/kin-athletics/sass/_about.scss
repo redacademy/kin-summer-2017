@@ -324,3 +324,36 @@ body.single-trainer {
       }
 }
 
+@media only screen and (min-width: 600px) {
+    .about-sidebar {
+        width: 45%;
+        position: relative;
+
+        h2.widget-title {
+            font-size: 48px;
+        }
+
+        p {
+            font-size: 30px;
+        }
+
+        .widget.kin-athletics-info-class {
+            .widget-block:last-child {
+                display: none;
+            }
+        }
+
+        .widget-area {
+
+            .red-button {
+                height: auto;
+                width: 50%;
+                position: absolute;
+                left: 50%;
+                margin: 0;
+                bottom: 0;
+            }
+        }
+    }
+}
+

@@ -22,7 +22,7 @@ get_header(); ?>
 
         <section class='services-icons'>
             <div class="header-container">
-                <h1> At Kin Athletics, <br>we believe in</h1>
+                <h1><span class="span-block">At Kin Athletics,</span> we believe in</h1>
             </div>
           
             <div class="circles-container">
