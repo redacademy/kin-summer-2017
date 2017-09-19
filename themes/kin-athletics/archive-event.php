@@ -99,8 +99,8 @@ get_header(); ?>
                         
                 <div class='events-white-container'>
                     <p>More Feels On Our Services</p>
-                    <div class='social-button'><a href='#'>Facebook</a></div>
-                    <div class='social-button'><a href='#'>Instagram</a></div>
+                    <div class='social-button'><a href='https://www.facebook.com/kinathletics/' target="_blank">Facebook</a></div>
+                    <div class='social-button'><a href='https://www.instagram.com/kinathletics/' target="_blank">Instagram</a></div>
                 </div>
             </section>
 

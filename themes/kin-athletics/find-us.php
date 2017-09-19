@@ -37,7 +37,7 @@ get_header(); ?>
       <div class="black container">
         <h3 class="find-us white-title">Ready to Sweat?</h3>
         <div class="red-button">
-          <a href="<?php echo get_post_permalink()?>">Free Consultation</a>
+          <a href='<?php echo esc_url( home_url( '/consultation/') )?>'>Free Consultation</a>
         </div><!-- .red-button -->
       </div><!-- .black .container -->
 
@@ -45,8 +45,8 @@ get_header(); ?>
       <div class='white container'>
             <h3 class="find-us black-title">Connect to our online community</h3>
               <div class="social-buttons-flex">
-                <div class='social-button'><a href='#'>facebook</a></div>
-                <div class='social-button'><a href='#'>instagram</a></div>
+                <div class='social-button'><a href='https://www.facebook.com/kinathletics/' target="_blank">facebook</a></div>
+                <div class='social-button'><a href='https://www.instagram.com/kinathletics/' target="_blank">instagram</a></div>
             </div>
           </div>
       </div><!-- .black .container -->
