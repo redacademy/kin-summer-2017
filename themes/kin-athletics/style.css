@@ -1190,7 +1190,9 @@ p {
     margin: 0;
     margin-left: 40px;
     max-width: 450px;
-    height: 10%; }
+    height: 14%; }
+    .personal-training .price-box-container span p {
+      font-weight: bold; }
   .services-featured h4 {
     text-align: right;
     font-size: 5.5rem; }
@@ -1511,6 +1513,9 @@ body.page-template-archive-trainer .carousel-cell.trainers {
 body.page-template-archive-trainer .trainers-grid .header-container h2.header-title--black {
   margin: 0 0 1rem;
   width: 100%; }
+  @media only screen and (min-width: 600px) {
+    body.page-template-archive-trainer .trainers-grid .header-container h2.header-title--black {
+      font-size: 8rem; } }
 
 body.page-template-archive-trainer .trainers-grid .trainer-grid-wrapper {
   width: 100%;
@@ -1583,9 +1588,7 @@ body.page-template-archive-trainer .circles-container {
   -ms-flex-line-pack: center;
       align-content: center; }
   @media only screen and (min-width: 600px) {
-    body.page-template-archive-trainer .circles-container .circles-container {
-      display: -ms-flexbox;
-      display: flex;
+    body.page-template-archive-trainer .circles-container {
       -ms-flex-flow: nowrap;
           flex-flow: nowrap; } }
   body.page-template-archive-trainer .circles-container .icon-container {
@@ -1599,6 +1602,9 @@ body.page-template-archive-trainer .circles-container {
         justify-content: center;
     -ms-flex-align: center;
         align-items: center; }
+    @media only screen and (min-width: 600px) {
+      body.page-template-archive-trainer .circles-container .icon-container {
+        height: 250px; } }
     body.page-template-archive-trainer .circles-container .icon-container a {
       height: 100%;
       display: -ms-flexbox;
@@ -1611,6 +1617,9 @@ body.page-template-archive-trainer .circles-container {
           justify-content: space-evenly; }
     body.page-template-archive-trainer .circles-container .icon-container img {
       height: 75%; }
+      @media only screen and (min-width: 600px) {
+        body.page-template-archive-trainer .circles-container .icon-container img {
+          height: 100%; } }
     body.page-template-archive-trainer .circles-container .icon-container p {
       margin: 0;
       color: white;
@@ -1624,8 +1633,8 @@ body.page-template-archive-trainer h2.header-title, body.page-template-archive-t
   margin: 0 0.5em;
   line-height: 58px; }
   @media only screen and (min-width: 600px) {
-    body.page-template-archive-trainer h2.header-title h2.header-title, body.page-template-archive-trainer h2.header-title--black h2.header-title, body.page-template-archive-trainer h2.header-title h2.header-title--black, body.page-template-archive-trainer h2.header-title--black h2.header-title--black {
-      font-size: 70px; } }
+    body.page-template-archive-trainer h2.header-title, body.page-template-archive-trainer h2.header-title--black {
+      font-size: 8rem; } }
   body.page-template-archive-trainer h2.header-title--black {
     color: #000;
     text-align: center; }

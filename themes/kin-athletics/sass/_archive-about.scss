@@ -32,13 +32,14 @@ body.page-template-archive-trainer {
     padding: 0;
   }
 
-  .carousel-cell.trainers {
-    display: flex;
-    flex-flow: row wrap;
-    align-items: center;
-    align-content: center;
-    justify-content: center;
-  }
+    .carousel-cell.trainers {
+      display: flex;
+      flex-flow: row wrap;
+      align-items: center;
+      align-content: center;
+      justify-content: center;
+    }
+
 
   .trainers-grid {
 
@@ -47,6 +48,10 @@ body.page-template-archive-trainer {
       h2.header-title--black {
         margin: 0 0 1rem;
         width: 100%;
+
+        @include desktop {
+          font-size: 8rem;
+        }
       }
     }
 
@@ -123,10 +128,7 @@ body.page-template-archive-trainer {
       align-content: center;
 
       @include desktop {
-        .circles-container {
-          display: flex;
-          flex-flow: nowrap;
-        }
+        flex-flow: nowrap;
       }
   
       .icon-container {
@@ -136,6 +138,10 @@ body.page-template-archive-trainer {
         flex-flow: column nowrap;
         justify-content: center;
         align-items: center;
+
+        @include desktop {
+          height: 250px;
+        }
   
         a {
           height: 100%;
@@ -147,6 +153,10 @@ body.page-template-archive-trainer {
   
         img {
           height: 75%;
+
+          @include desktop {
+            height: 100%;
+          }
         }
   
         p {
@@ -166,9 +176,7 @@ body.page-template-archive-trainer {
     line-height: 58px;
 
     @include desktop {
-      h2.header-title {
-        font-size: 70px;
-      }
+      font-size: 8rem;
     }
 
     &--black {
@@ -216,6 +224,7 @@ body.page-template-archive-trainer {
         display: flex;
         justify-content: flex-end;
     }
+
   }
 
   .our-community {
@@ -240,6 +249,7 @@ body.page-template-archive-trainer {
     .widget-area {
       width: 100%;
       display: flex;
+      
     }
   }
 
