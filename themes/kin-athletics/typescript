@@ -1546,4 +1546,42 @@ Untracked files:
 	[31mtypescript[m
 
 no changes added to commit (use "git add" and/or "git commit -a")
+bash-3.2$ git add -A
+bash-3.2$ git s[Kcommit -m "started styling on about page"
+[master c463204] started styling on about page
+ 5 files changed, 1600 insertions(+), 21 deletions(-)
+ create mode 100644 themes/kin-athletics/typescript
+bash-3.2$ git pull
+Auto-merging themes/kin-athletics/style.css
+[?1049h[?1h=[2;1H▽[6n[2;1H  [1;1H]11;?[1;12r[?12;25h[?12l[?25h[27m[m[H[2J[?25l[12;1H[97m[41mE325: ATTENTION[m
+Found a swap file by the name "/Applications/MAMP/htdocs/kin-athletics/wp-content/.git/.MERGE_MSG.swp"
+[10Cowned by: cuthbert   dated: Thu Sep 14 09:21:31 2017
+[9Cfile name: /Applications/MAMP/htdocs/kin-athletics/wp-content/.git/MERGE_MSG
+[10Cmodified: YES
+[9Cuser name: cuthbert   host name: Matthews-MacBook-Pro.local
+[8Cprocess ID: 8482
+While opening file "/Applications/MAMP/htdocs/kin-athletics/wp-content/.git/MERGE_MSG"
+[13Cdated: Mon Sep 18 20:03:03 2017
+      NEWER than swap file!
+
+[32m-- More --[?12l[?25h[m[12;1H[K[12;1H(1) Another program may be editing the same file.  If this is the case,
+[32m-- More --[m[12;1H[K[12;5Hbe careful not to end up with two different instances of the same
+[32m-- More --[m[12;1H[K[12;5Hfile when making changes.  Quit, or continue with caution.
+[32m-- More --[m[12;1H[K[12;1H(2) An edit session for this file crashed.
+[32m-- More --[m[12;1H[K[12;5HIf this is the case, use ":recover" or "vim -r /Applications/MAMP/htdocs/kin-athletics/wp-content/.git/MERGE_MSG"
+[32m-- More --[m[12;1H[K[12;5Hto recover the changes (see ":help recovery").
+[32m-- More --[m[12;1H[K[12;5HIf you did this already, delete the swap file "/Applications/MAMP/htdocs/kin-athletics/wp-content/.git/.MERGE_MSG.swp"
+[32m-- More --[m[12;1H[K[12;5Hto avoid this message.
+[32m-- More --[m[12;1H[K[12;1H
+[32m-- More --[m[12;1H[K[12;1H[32mSwap file "/Applications/MAMP/htdocs/kin-athletics/wp-content/.git/.MERGE_MSG.swp" already exists![m
+[32m-- More --[m[12;1H[K[12;1H[32m[O]pen Read-Only, (E)dit anyway, (R)ecover, (D)elete it, (Q)uit, (A)bort: [m[12;1H[K[?25l[12;1H"/Applications/MAMP/htdocs/kin-athletics/wp-content/.git/MERGE_MSG" [readonly] 7L, 298C[>c[1;1HMerge branch 'master' of https://github.com/redacademy/kin-summer-2017[2;1H[K[3;1H# Please enter a commit message to explain why this merge is necessary,
+# especially if it merges an updated upstream into a topic branch.
+#[5;2H[K[6;1H# Lines starting with '#' will be ignored, and an empty message aborts[6;71H[K[7;1H# the commit.[7;14H[K[8;1H[94m~                                                                                                                                                                             [9;1H~                                                                                                                                                                             [10;1H~                                                                                                                                                                             [11;1H~                                                                                                                                                                             [1;1H[?12l[?25hP+q436f\P+q6b75\P+q6b64\P+q6b72\P+q6b6c\P+q2332\P+q2334\P+q2569\P+q2a37\P+q6b31\P+q6b32\P+q6b33\P+q6b34\P+q6b35\P+q6b36\P+q6b37\P+q6b38\P+q6b39\P+q6b3b\P+q4631\P+q4632\P+q2531\P+q2638\P+q6b62\P+q6b49\P+q6b44\P+q6b68\P+q4037\P+q6b50\P+q6b4e\P+q4b31\P+q4b33\P+q4b34\P+q4b35\P+q6b42\[?25l[m[12;1HEntering Ex mode.  Type "visual" to go to Normal mode.[12;55H[K[?12l[?25h[12;1H
+:q!
+[?1l>[?1049lerror: There was a problem with the editor 'vi'.
+Not committing merge; use 'git commit' to complete the merge.
+bash-3.2$ ig[K[Kgit pull
+error: You have not concluded your merge (MERGE_HEAD exists).
+hint: Please, commit your changes before merging.
+fatal: Exiting because of unfinished merge.
 bash-3.2$ 

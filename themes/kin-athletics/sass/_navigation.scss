@@ -130,3 +130,38 @@ a {
 		width: 50%;
 	}
 }
+
+
+
+
+
+
+//                              RESPONSIVE MENU
+
+#responsive-menu{
+	text-align: right;
+
+	.responsive-menu-subarrow{
+		display: none!important;
+	}
+}
+
+#responsive-menu a{
+	font-weight: bold;
+	text-transform: uppercase;
+	border-top: 2px solid $color__brand-red!important;	
+	border-bottom: 2px solid $color__brand-red!important;
+	margin-top: 20px;
+}
+
+#responsive-menu-item-120 a{
+	border-top: none!important;
+}
+
+#responsive-menu li li a{
+	font-size: 20px!important;
+	text-transform: capitalize;
+	font-weight: normal;
+	border: none!important;
+	margin-top: 0;
+}
