@@ -890,14 +890,12 @@ object {
 .project-td-cont {
   height: 100vh;
   position: relative;
-  overflow: hidden;
-  width: 600px; }
+  overflow: hidden; }
 
 .who-we-are-cont, .what-we-do-cont {
   height: 100vh;
   overflow: hidden;
-  position: relative;
-  width: 600px; }
+  position: relative; }
 
 .project-td-image-wrapper .project-td-image, .project-td-image-wrapper .who-we-are-image, .project-td-image-wrapper .what-we-do-image, .project-td-image-wrapper .project-td-image, .project-td-image-wrapper .who-we-are-image, .project-td-image-wrapper .what-we-do-image, .front-img-wrapper .project-td-image, .front-img-wrapper .who-we-are-image, .front-img-wrapper .what-we-do-image {
   position: absolute; }
@@ -2359,7 +2357,8 @@ body .page-template-video-page {
       justify-content: center;
   margin-left: 33%;
   margin-top: 6%;
-  bottom: 30px; }
+  bottom: 30px;
+  z-index: 999; }
   @media only screen and (min-width: 600px) {
     .video-button-cont {
       padding: .75% 4%; } }
@@ -2381,7 +2380,8 @@ body .page-template-video-page {
       -ms-flex-pack: center;
           justify-content: center;
       bottom: 70px;
-      margin-left: 40%; } }
+      margin-left: 40%;
+      z-index: 999; } }
 
 .page-template-find-us p {
   margin: .50%; }
