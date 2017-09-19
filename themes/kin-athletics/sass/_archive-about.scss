@@ -3,6 +3,17 @@ body.page-template-archive-trainer {
   .entry-content {
     margin: 0 auto;
 
+    .our-origin {
+      @include desktop {
+        display: flex;
+        justify-content: flex-end;
+
+        .page-section {
+          margin-bottom: 10%;
+        }
+      }
+    }
+
     .header-container {
       display: flex;
   
@@ -177,6 +188,7 @@ body.page-template-archive-trainer {
 
     @include desktop {
       font-size: 8rem;
+      line-height: inherit;
     }
 
     &--black {

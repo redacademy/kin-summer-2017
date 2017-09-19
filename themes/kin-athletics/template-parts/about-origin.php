@@ -3,6 +3,6 @@
         <h2 class="header-title">Our Origin</h2>
     </div>
     <div class="description-container">
-        <p class="item-description"><?php echo CFS()->get( 'about_our_origin' ); ?></p>
+        <?php echo CFS()->get( 'about_our_origin' ); ?>
     </div>
 </div>

@@ -1572,6 +1572,14 @@ body.single-trainer .default-content {
 
 body.page-template-archive-trainer .entry-content {
   margin: 0 auto; }
+  @media only screen and (min-width: 600px) {
+    body.page-template-archive-trainer .entry-content .our-origin {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-pack: end;
+          justify-content: flex-end; }
+      body.page-template-archive-trainer .entry-content .our-origin .page-section {
+        margin-bottom: 10%; } }
   body.page-template-archive-trainer .entry-content .header-container {
     display: -ms-flexbox;
     display: flex; }
@@ -1728,7 +1736,8 @@ body.page-template-archive-trainer h2.header-title, body.page-template-archive-t
   line-height: 58px; }
   @media only screen and (min-width: 600px) {
     body.page-template-archive-trainer h2.header-title, body.page-template-archive-trainer h2.header-title--black {
-      font-size: 8rem; } }
+      font-size: 8rem;
+      line-height: inherit; } }
   body.page-template-archive-trainer h2.header-title--black {
     color: #000;
     text-align: center; }
