@@ -74,7 +74,7 @@ get_header(); ?>
               <div class="events-description>">
               <?php echo CFS()->get('current_event_info', $event[$i]->ID); ?>
               <h3 class='event-date'>happens: <?php echo CFS()->get('current_event_date', $event[$i]->ID); ?></h3>
-              <div class='red-button'><a href='#'>buy tickets</a></div>
+              <div class='red-button'><a href='<?php echo esc_url(str_replace(' ', '-', home_url('/event/'.CFS()->get('past_events_featured')))); ?>'>buy tickets</a></div>
                 <?php endif ?>
               <?php endfor ?>
             </div>
@@ -84,7 +84,7 @@ get_header(); ?>
 
         <div class='events-black-container'>
           <p>but wait,</p>
-          <div class='red-button'><a href='#'>who are we?</a></div>
+          <div class='red-button'><a href='<?php echo esc_url( home_url( '/about/') )?>'>who are we?</a></div>
         </div>
 
         <div class='events-white-container'>
@@ -94,7 +94,7 @@ get_header(); ?>
         
         <div class='events-white-container'>
           <p>join the buzz</p>
-          <div class='social-button'><a href='#'>facebook</a></div>
+          <div class='social-button'><a href='https://www.facebook.com/kinathletics/' target="_blank">facebook</a></div>
         </div>
 
       </div>  <!-- end of entry content-->

@@ -21,25 +21,25 @@ get_header(); ?>
     
       <div class="circles-container">
           <div class="icon-container">
-              <a src="#">
+              <a src="<?php echo esc_url(home_url('/services#personal-training')); ?>">
                   <img src="<?php echo get_template_directory_uri(); ?>/asset/icons/personaltrainingicon.svg"/>
               </a>
               <p><span class="span-block">Personal</span> Training</p>
           </div>
           <div class="icon-container">
-              <a src="#">
+              <a src="<?php echo esc_url(home_url('/services#group-training')); ?>">
                   <img src="<?php echo get_template_directory_uri(); ?>/asset/icons/grouptrainingicon.svg"/>
               </a>
               <p><span class="span-block">Group</span> Training</p>
           </div>
           <div class="icon-container">
-              <a src="#">
+              <a src="<?php echo esc_url(home_url('/services#community-projects')); ?>">
                   <img src="<?php echo get_template_directory_uri(); ?>/asset/icons/communityprojecticon.svg"/>
               </a>
               <p><span class="span-block">Community</span> Projects</p>
           </div>
           <div class="icon-container">
-              <a src="#">
+              <a src='<?php echo esc_url( home_url( '/consultation/') )?>'>
                   <img src="<?php echo get_template_directory_uri(); ?>/asset/icons/freeconsultationicon.svg"/>
               </a>
               <p><span class="span-block">Free</span> Consultation</p>
@@ -56,17 +56,17 @@ get_header(); ?>
 
             <div class='price-box-container'>
               <div class='single-price-box'> 
-                <p>single session</p>
+                <p>single <span class="span-block">session</span></p>
                 <span><?php echo CFS()->get('personal_training_single_session');?></span>
               </div>
 
               <div class='single-price-box price-box-border'>
-                <p>ten sessions</p>
+                <p>ten <span class="span-block">sessions</span></p>
                 <span><?php echo CFS()->get('personal_training_ten_session');?></span>
               </div>
               
               <div class='single-price-box'>
-                <p>thirty sessions</p>
+                <p>thirty <span class="span-block">sessions</span></p>
                 <span><?php echo CFS()->get('personal_training_thirty_session');?></span>
               </div>
             </div>  <!-- end of price box container-->  
@@ -82,17 +82,17 @@ get_header(); ?>
 
             <div class='price-box-container'>
               <div class='single-price-box'> 
-                <p>single session</p>
+                <p>single <span class="span-block">session</span></p>
                 <span><?php echo CFS()->get('group_training_single_session');?></span>
               </div>
 
               <div class='single-price-box price-box-border'>
-                <p>ten sessions</p>
+                <p>ten <span class="span-block">sessions</span></p>
                 <span><?php echo CFS()->get('group_training_ten_session');?></span>
               </div>
               
               <div class='single-price-box'>
-                <p>thirty sessions</p>
+                <p>thirty <span class="span-block">sessions</span></p>
                 <span><?php echo CFS()->get('group_training_thirty_session');?></span>
               </div>
             </div>  <!-- end of price box container-->  
