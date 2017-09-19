@@ -1,40 +1,40 @@
-// (function($) {
-//     var target;
+(function($) {
+    var target;
 
-//     var jump=function(e)
-//     {
-//        if (e){
-//            e.preventDefault();
-//            target = $(this).attr("href");
-//        }else{
-//            target = location.hash;
-//        }
+    var jump=function(e)
+    {
+       if (e){
+           e.preventDefault();
+           target = $(this).attr("href");
+       }else{
+           target = location.hash;
+       }
     
-//        $('html,body').animate(
-//        {
-//            scrollTop: $(target).offset().top
-//        },2000,function()
-//        {
-//            location.hash = target;
-//        });
+       $('html,body').animate(
+       {
+           scrollTop: $(target).offset().top
+       },2000,function()
+       {
+           location.hash = target;
+       });
     
-//     }
+    }
     
-//     $('html, body').hide();
+    $('html, body').hide();
     
-//     $(document).ready(function()
-//     {
-//         $('a[href^=#]').bind("click", jump);
+    $(document).ready(function()
+    {
+        $('a[href^=#]').bind("click", jump);
     
-//         if (location.hash){
-//             setTimeout(function(){
-//                 $('html, body').scrollTop(0).show();
-//                 jump();
-//             }, 0);
-//         }else{
-//             $('html, body').show();
-//         }
-//     });
+        if (location.hash){
+            setTimeout(function(){
+                $('html, body').scrollTop(0).show();
+                jump();
+            }, 0);
+        }else{
+            $('html, body').show();
+        }
+    });
 
-// })( jQuery );
+})( jQuery );
     
