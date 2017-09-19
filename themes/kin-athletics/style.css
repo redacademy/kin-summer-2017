@@ -1106,6 +1106,8 @@ p {
     line-height: 65px;
     margin: 60px 0 20px 0;
     font-size: 45px; }
+  .carousel-cell h3 {
+    margin-left: 1.5rem; }
   .carousel-cell .carousel-cell-info {
     width: 100%;
     background: rgba(0, 0, 0, 0.7);
@@ -1116,7 +1118,7 @@ p {
     margin: 0; }
 
 .personal-training h3, .group-training h3 {
-  margin: 10px 0; }
+  margin: 10px 0 10px 1.5rem; }
 
 .personal-training .price-box-container, .group-training .price-box-container {
   width: 80%;
@@ -1145,7 +1147,8 @@ p {
 
 .training-rates {
   font-size: 14px;
-  text-transform: none; }
+  text-transform: none;
+  margin-left: 1.5rem; }
 
 .personal-training {
   background-image: url(../../asset/images/serv1.jpg); }
@@ -1176,8 +1179,9 @@ p {
     padding: 0; }
   .page-template-services .entry-content .carousel-cell h2 {
     margin: 1.5rem; }
-  .page-template-services .entry-content .carousel-cell p:first-child {
-    background: rgba(0, 0, 0, 0.65); }
+  .page-template-services .entry-content .carousel-cell .service-description {
+    background: rgba(0, 0, 0, 0.65);
+    padding: 1.5rem; }
 
 .page-template-services h1 {
   margin: auto;
