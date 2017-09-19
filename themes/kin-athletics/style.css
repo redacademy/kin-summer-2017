@@ -2335,7 +2335,8 @@ body .page-template-video-page {
 
 .page-template-find-us .find-us-picture-wrapper {
   position: relative;
-  height: 50vh; }
+  height: 50vh;
+  overflow: hidden; }
   .page-template-find-us .find-us-picture-wrapper .find-us-picture {
     z-index: 0;
     filter: grayscale(100%);
@@ -2344,6 +2345,10 @@ body .page-template-video-page {
     left: 50%;
     height: 100%;
     position: absolute; }
+    @media only screen and (min-width: 600px) {
+      .page-template-find-us .find-us-picture-wrapper .find-us-picture {
+        top: 0;
+        height: 100vh; } }
   .page-template-find-us .find-us-picture-wrapper:after {
     height: 100%;
     width: 100%;
