@@ -27,7 +27,7 @@
 
 .services-icons {
   height: 100vh;
-  background: url('../../asset/images/aboutpage_heroshot.png') no-repeat center;
+  background: url('../../asset/images/servicespage_heroshot.png') no-repeat center;
   background-size: cover;
   display: flex;
   flex-flow: column nowrap;
@@ -44,6 +44,7 @@
     display: flex;
     flex-flow: row wrap;
     margin: 0;
+    justify-content: space-around;
 
     .icon-container {
       width: 50%;
@@ -80,7 +81,7 @@
 .services-featured{
   display: block;
   height: 100vh;
-  background-image: url(../../asset/images/serv1.jpg);
+  background-image: url(../../asset/images/servicespage_featuredtrainer.png);
   background-size: cover;
   color: white;
   position: relative;
@@ -270,6 +271,25 @@
     h2 {
       font-size: 35px;
       line-height: normal;
+    }
+  }
+
+  .header-container {
+    margin-top: 1.5rem;
+
+    h1 {
+      font-size: 1rem;
+    }
+  }
+
+  .circles-container {
+
+    .icon-container {
+      width: 40%;
+
+      p {
+        font-size: 14px;
+      }
     }
   }
 

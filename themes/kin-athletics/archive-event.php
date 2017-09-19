@@ -35,9 +35,9 @@ get_header(); ?>
                         $latest_event = get_posts ( $current_args );
                     ?>
 
-                    <h2 class="header-title"><?php echo esc_html( get_the_title($latest_event[1]->ID) ) ;?></h2>
-                    <?php echo CFS()->get('current_event_info', $latest_event[1]->ID); ?>
-                    <h3 class='event-date'>happened: <?php echo CFS()->get('current_event_date', $latest_event[1]->ID); ?></h3>
+                    <h2 class="header-title"><?php echo esc_html( get_the_title($latest_event[0]->ID) ) ;?></h2>
+                    <?php echo CFS()->get('current_event_info', $latest_event[0]->ID); ?>
+                    <h3 class='event-date'>happened: <?php echo CFS()->get('current_event_date', $latest_event[0]->ID); ?></h3>
                 </div>
                 <div class="latest-history-carousel">
                     <div class='carousel-cell cell-image1'>
