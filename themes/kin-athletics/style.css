@@ -1275,8 +1275,8 @@ body.post-type-archive-trainer .our-place {
   display: flex;
   -ms-flex-flow: column nowrap;
       flex-flow: column nowrap;
-  -ms-flex-pack: space-evenly;
-      justify-content: space-evenly; }
+  -ms-flex-pack: distribute;
+      justify-content: space-around; }
 
 #origin-icon {
   margin-right: 50px; }
