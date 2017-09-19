@@ -102,13 +102,15 @@ function kin_athletics_scripts() {
 	
 	wp_enqueue_style( 'font-awesome', 'https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css', array(), '4.6.3');
 
-	wp_enqueue_script('jquery');	
+	wp_enqueue_script('jquery');
 
 	wp_enqueue_script( 'Flickity PACKAGED', 'https://unpkg.com/flickity@2/dist/flickity.pkgd.js', array(), '2.0.9');
 
 	wP_enqueue_script( 'Flickity External', 'https://npmcdn.com/flickity@2/dist/flickity.pkgd.js');
 
-	wp_enqueue_script( 'Flickity', get_template_directory_uri() . '/build/js/flickity.min.js', array(), '20130115', true );	
+	wp_enqueue_script( 'Flickity', get_template_directory_uri() . '/build/js/flickity.min.js', array(), '20130115', true );
+	
+	wp_enqueue_script( 'Main JS', get_template_directory_uri() . '/build/js/main.min.js', array(), '20130115', true );		
 
 	wp_enqueue_script( 'smooth-scroll', get_template_directory_uri() . '/build/js/smooth-scroll.js', array(), '09/12/17', true );	
 

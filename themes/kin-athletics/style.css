@@ -598,6 +598,34 @@ a {
   border: none !important;
   margin-top: 0; }
 
+#site-navigation {
+  display: none; }
+  @media (min-width: 600px) {
+    #site-navigation {
+      display: block; } }
+
+#site-navigation {
+  padding-right: 0;
+  height: 100%; }
+  #site-navigation div {
+    height: 100%; }
+  #site-navigation .menu-menu-container {
+    width: 95%;
+    margin: 0 auto; }
+  #site-navigation #menu-menu {
+    height: 100%;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+        align-items: center;
+    -ms-flex-pack: end;
+        justify-content: flex-end; }
+    #site-navigation #menu-menu li {
+      margin-right: 30px;
+      font-size: 24px;
+      text-transform: uppercase;
+      font-weight: bold; }
+
 /*--------------------------------------------------------------
 # Accessibility
 --------------------------------------------------------------*/
