@@ -1126,7 +1126,7 @@ p {
   margin-bottom: 3px; }
 
 .flickity-prev-next-button {
-  top: 550px;
+  top: 75%;
   width: 100px;
   height: 100px;
   background-color: #A10000;
@@ -1263,7 +1263,7 @@ p {
   margin-right: 50px; }
 
 .circles-container {
-  height: 50%;
+  height: 75%;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-flow: row wrap;
@@ -1291,32 +1291,58 @@ p {
       font-weight: 500;
       font-family: "Oswald";
       padding-top: 5px; }
+      @media only screen and (min-width: 600px) {
+        .circles-container .icon-container p .span-block {
+          display: block; } }
 
 .services-featured {
   display: block;
-  padding-top: 20px;
   height: 100vh;
   background-image: url(../../asset/images/serv1.jpg);
   background-size: cover;
   color: white;
   position: relative; }
+  .services-featured .services-content {
+    overflow: hidden;
+    height: 75%; }
+    .services-featured .services-content:after {
+      height: 75%;
+      width: 100%;
+      content: " ";
+      background: rgba(0, 0, 0, 0.5);
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0; }
   .services-featured h4 {
     margin: 0;
     position: relative;
     text-align: left;
-    font-size: 60px;
+    font-size: 40px;
     text-transform: uppercase;
     padding: 20px 30px 10px 20px;
-    line-height: 73px; }
+    z-index: 1; }
+    .services-featured h4 .span-block {
+      display: block;
+      text-align: left;
+      font-size: 40px;
+      text-transform: uppercase; }
   .services-featured p {
-    font-family: Oswald; }
+    font-family: Oswald;
+    position: relative;
+    z-index: 1; }
   .services-featured .services-button-flex {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
-        flex-wrap: wrap; }
+        flex-wrap: wrap;
+    z-index: 1;
+    position: relative; }
   .services-featured .trainer-name {
-    font-weight: lighter; }
+    font-weight: lighter;
+    font-size: 40px;
+    display: block; }
   .services-featured span {
     font-size: 70px;
     font-weight: lighter; }
@@ -1347,14 +1373,15 @@ p {
       align-content: center;
   background-color: white;
   color: black;
-  height: 35%;
   width: 100%;
   bottom: 0;
-  font-size: 24px; }
+  font-size: 24px;
+  padding: 1.5rem; }
   .page-template-services .white p {
     text-align: center;
     padding: 0;
-    margin-top: 30px; }
+    margin: 0;
+    font-family: "Open Sans Condensed", "Oswald", sans-serif; }
   .page-template-services .white .red-button, .page-template-services .white .consultation-button, .page-template-services .white .social-button {
     text-align: center;
     width: 50%;
