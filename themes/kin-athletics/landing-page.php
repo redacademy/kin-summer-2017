@@ -31,7 +31,9 @@ get_header(); ?>
 
 
       <div class="landing-scroll-section">
-        <p>Jump In</p>
+        <p>Jump In
+        <span class="v">V</span>
+        </p>
       </div>
       
    
