@@ -59,7 +59,10 @@ p .contact { // to match H2
 
   @include desktop {
     flex-wrap: nowrap;
-    min-height: 400px;
+    
+    iframe {
+      min-height: 400px;
+    }
   }
 }
 
