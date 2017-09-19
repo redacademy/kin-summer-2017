@@ -3382,7 +3382,7 @@ body.post-type-archive-trainer .page-template-events .our-place {
   padding-bottom: 40px; }
 
 #gform_next_button_1_23, #edit-comment {
-  bottom: 80px;
+  bottom: 105px;
   right: 40px;
   width: auto;
   font-size: 20px;
@@ -3390,7 +3390,6 @@ body.post-type-archive-trainer .page-template-events .our-place {
   box-shadow: none; }
   @media only screen and (min-width: 600px) {
     #gform_next_button_1_23, #edit-comment {
-      top: 265px;
       right: 25px; } }
 
 @media only screen and (min-width: 600px) {
@@ -3429,7 +3428,7 @@ body.post-type-archive-trainer .page-template-events .our-place {
 #gform_submit_button_1 {
   right: 50%;
   left: 50%;
-  bottom: 650px;
+  bottom: 705px;
   font-size: 30px;
   background-color: #A10000;
   color: white;
@@ -3440,7 +3439,7 @@ body.post-type-archive-trainer .page-template-events .our-place {
   transform: translate(-50%, -50%); }
   @media only screen and (min-width: 600px) {
     #gform_submit_button_1 {
-      bottom: 700px; } }
+      bottom: 715px; } }
 
 #edit-name, #edit-email, #edit-trainer, #edit-action, #edit-comment {
   display: none; }
@@ -3482,7 +3481,7 @@ body.post-type-archive-trainer .page-template-events .our-place {
   right: 50px; }
   @media only screen and (min-width: 600px) {
     #gform_page_1_5 #edit-comment {
-      bottom: 100px;
+      bottom: 110px;
       right: 40px; } }
 
 .social-buttons-flex {
