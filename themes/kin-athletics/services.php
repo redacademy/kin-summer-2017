@@ -115,7 +115,7 @@ get_header(); ?>
         <h4> featured trainer <span class="trainer-name"><?php echo CFS()->get('services_featured_trainer');?></span> </h4>
         <p>ready to sweat?</p>
           <div class="services-button-flex">
-            <div class='social-button'><a href='<?php echo esc_url( home_url( '/trainer/' . strtolower(echo CFS()->get('services_featured_trainer')) ) )?>'>about me</a></div>
+            <div class='social-button'><a href='<?php echo esc_url( home_url( '/trainer/' . strtolower(CFS()->get('services_featured_trainer')) ) )?>'>about me</a></div>
             <div class='red-button'><a href='#'>free consultation</a></div>
           </div>
 

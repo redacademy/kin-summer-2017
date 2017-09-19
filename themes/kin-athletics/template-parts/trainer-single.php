@@ -120,13 +120,13 @@ foreach(CFS()->get( 'trainer_availability' ) as $date) {
     <!-- OTHER LINKS -->
         <div class="other-links">
             <div class="about-our-origin">
-                <a src="#" class="origin-link">Our Origin</a>
+                <a href="<?php echo esc_url(home_url('/about#origin')); ?>" class="origin-link">Our Origin</a>
             </div>
             <div class="about-our-community">
-                <a src="#" class="community-link">Our Community</a>
+                <a href="<?php echo esc_url(home_url('/about#community')); ?>" class="community-link">Our Community</a>
             </div>
             <div class="about-our-place">
-                <a src="#" class="place-link">Our Place</a>
+                <a href="<?php echo esc_url(home_url('/about#place')); ?>" class="place-link">Our Place</a>
             </div>
         </div>
     </div><!-- .default-content -->
