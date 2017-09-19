@@ -11,27 +11,42 @@ body .page-template-video-page {
 }
 }
 .video-container {
-    width: 100vw; 
-    height: 100vh;
+    // width: 100vw; 
+    // height: 100vh;
     position: relative;
+    @media only screen and (max-width: 600px) {
+        background: url(../../asset/video/kin-vid-screenshot.png);
+        position:relative;
+        height:100vh;
+    }
 }
 
 .video {
-    width: 100%; 
-    // height: 100%;  
+    width: 100%;  
     display: flex;  
     align-items: center;
     overflow: hidden;
+    
+}
+.video-width {
+    width:100%;
+    height:100%;
+    @media only screen and (max-width: 600px) {
+        display:none;
+    }
 }
 .landing-video-text-container {
   z-index: 999;
   margin-top:0;
-  position: absolute;
   width:100vw;
+  @media only screen and (min-width: 600px) {
+  position:absolute;
+  }
   @media only screen and (min-width: 600px) {
       &:not(.kin) {
         display:flex;
       }
+      
   }
 
   .kin, .ath, .let, .ics {
