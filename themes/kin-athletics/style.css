@@ -1275,8 +1275,8 @@ body.post-type-archive-trainer .our-place {
   display: flex;
   -ms-flex-flow: column nowrap;
       flex-flow: column nowrap;
-  -ms-flex-pack: distribute;
-      justify-content: space-around; }
+  -ms-flex-pack: space-evenly;
+      justify-content: space-evenly; }
 
 #origin-icon {
   margin-right: 50px; }
@@ -1288,8 +1288,8 @@ body.post-type-archive-trainer .our-place {
   -ms-flex-flow: row wrap;
       flex-flow: row wrap;
   margin: 0;
-  -ms-flex-pack: space-evenly;
-      justify-content: space-evenly; }
+  -ms-flex-pack: distribute;
+      justify-content: space-around; }
   .circles-container .icon-container {
     width: 40%;
     height: auto;
