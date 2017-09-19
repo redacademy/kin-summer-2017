@@ -15,9 +15,11 @@ get_header(); ?>
     </video> 
     <div class="landing-video-text-container">
       <h1 class="kin">kin</h1>
-      <h1 class="ath">ath</h1>
-      <h1 class="let">let</h1>
-      <h1 class="ics">ics</h1>
+      <span class="athletics-line-break">
+        <h1 class="ath">ath</h1>
+        <h1 class="let">let</h1>
+        <h1 class="ics">ics</h1>
+      </span>
     </div>
     <div class="video-button-cont"><a href='<?php echo esc_url( home_url( '/front-page/') )?>'>Explore</a></div>
     

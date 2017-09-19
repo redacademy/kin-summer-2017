@@ -890,14 +890,12 @@ object {
 .project-td-cont {
   height: 100vh;
   position: relative;
-  overflow: hidden;
-  width: 600px; }
+  overflow: hidden; }
 
 .who-we-are-cont, .what-we-do-cont {
   height: 100vh;
   overflow: hidden;
-  position: relative;
-  width: 600px; }
+  position: relative; }
 
 .project-td-image-wrapper .project-td-image, .project-td-image-wrapper .who-we-are-image, .project-td-image-wrapper .what-we-do-image, .project-td-image-wrapper .project-td-image, .project-td-image-wrapper .who-we-are-image, .project-td-image-wrapper .what-we-do-image, .front-img-wrapper .project-td-image, .front-img-wrapper .who-we-are-image, .front-img-wrapper .what-we-do-image {
   position: absolute; }
@@ -989,7 +987,7 @@ p {
       line-height: 1.2; }
       @media only screen and (min-width: 600px) {
         .who-we-are-text .who-button-cont a {
-          font-size: 2.8rem; } }
+          font-size: 2rem; } }
 
 @media only screen and (min-width: 600px) {
   .what-we-do-text {
@@ -1031,7 +1029,7 @@ p {
       line-height: 1.2; }
       @media only screen and (min-width: 600px) {
         .what-we-do-text .what-button-cont a {
-          font-size: 2.8rem; } }
+          font-size: 2rem; } }
 
 .td-button-cont {
   position: absolute;
@@ -1064,7 +1062,7 @@ p {
     line-height: 1.2; }
     @media only screen and (min-width: 600px) {
       .td-button-cont a {
-        font-size: 2.8rem; } }
+        font-size: 2rem; } }
   @media only screen and (min-width: 600px) {
     .td-button-cont {
       margin-left: 60%;
@@ -2354,36 +2352,44 @@ body .page-template-video-page {
 
 .landing-video-text-container {
   z-index: 999;
-  margin-top: 0;
-  width: 100vw; }
+  padding-top: 2.2rem;
+  width: 100vw;
+  height: 100vh; }
   @media only screen and (min-width: 600px) {
     .landing-video-text-container {
       position: absolute; } }
+
+@media only screen and (min-width: 600px) {
+  .athletics-line-break {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+        justify-content: center;
+    padding-top: 4.9rem; } }
+
+.kin, .ath, .let, .ics {
+  font-size: 7.5rem;
+  font-family: "Oswald", sans-serif;
+  background-color: transparent;
+  color: white;
+  text-transform: Uppercase;
+  line-height: 101.5px;
+  margin: 0;
+  letter-spacing: 5px; }
   @media only screen and (min-width: 600px) {
-    .landing-video-text-container:not(.kin) {
-      display: -ms-flexbox;
-      display: flex; } }
-  .landing-video-text-container .kin, .landing-video-text-container .ath, .landing-video-text-container .let, .landing-video-text-container .ics {
-    font-size: 7.5rem;
-    font-family: "Oswald", sans-serif;
-    background-color: transparent;
-    color: white;
-    text-transform: Uppercase;
-    line-height: 101.5px;
-    margin: 0;
-    letter-spacing: 5px; }
-    @media only screen and (min-width: 600px) {
-      .landing-video-text-container .kin, .landing-video-text-container .ath, .landing-video-text-container .let, .landing-video-text-container .ics {
-        font-size: 10rem; } }
+    .kin, .ath, .let, .ics {
+      font-size: 12.5rem;
+      letter-spacing: 10px;
+      line-height: 90px; } }
 
 .landing-video-text-container .kin {
   margin-left: 0; }
   @media only screen and (min-width: 600px) {
     .landing-video-text-container .kin {
+      margin-left: 35%;
       -ms-flex-pack: start;
           justify-content: flex-start;
-      top: 0;
-      width: 100%; } }
+      top: 0; } }
 
 .landing-video-text-container .ath {
   margin-left: 12%; }
@@ -2417,9 +2423,10 @@ body .page-template-video-page {
   display: flex;
   -ms-flex-pack: center;
       justify-content: center;
-  margin-left: 34%;
+  margin-left: 33%;
   margin-top: 6%;
-  bottom: 18px; }
+  bottom: 30px;
+  z-index: 999; }
   @media only screen and (min-width: 600px) {
     .video-button-cont {
       padding: .75% 4%; } }
@@ -2435,24 +2442,28 @@ body .page-template-video-page {
     line-height: 1.2; }
     @media only screen and (min-width: 600px) {
       .video-button-cont a {
-        font-size: 2.8rem; } }
+        font-size: 2rem; } }
   @media only screen and (min-width: 600px) {
     .video-button-cont {
-      -ms-flex-pack: end;
-          justify-content: flex-end; } }
+      -ms-flex-pack: center;
+          justify-content: center;
+      bottom: 70px;
+      margin-left: 40%;
+      z-index: 999; } }
 
 .page-template-find-us p {
   margin: .50%; }
 
-.page-template-find-us .entry-header {
-  position: relative; }
-
-.page-template-find-us .entry-title {
+.page-template-find-us h1.entry-title {
   position: absolute;
   z-index: 1;
-  bottom: 0;
-  left: 0;
-  right: 0; }
+  text-align: center;
+  width: 100%;
+  margin-top: 230px;
+  font-size: 3.7rem; }
+  @media only screen and (min-width: 600px) {
+    .page-template-find-us h1.entry-title {
+      font-size: 7rem; } }
 
 .page-template-find-us p .contact {
   font-size: 1rem;
@@ -2463,31 +2474,12 @@ body .page-template-video-page {
   text-transform: uppercase; }
 
 .page-template-find-us .find-us-picture-wrapper {
-  position: relative;
-  height: 50vh;
-  overflow: hidden; }
+  position: relative; }
   .page-template-find-us .find-us-picture-wrapper .find-us-picture {
     z-index: 0;
     filter: grayscale(100%);
-    transform: translate(-50%, -50%);
-    top: 50%;
-    left: 50%;
-    height: 100%;
-    position: absolute; }
-    @media only screen and (min-width: 600px) {
-      .page-template-find-us .find-us-picture-wrapper .find-us-picture {
-        top: 0;
-        height: 100vh; } }
-  .page-template-find-us .find-us-picture-wrapper:after {
-    height: 100%;
-    width: 100%;
-    content: " ";
-    background: rgba(0, 0, 0, 0.5);
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0; }
+    height: 45vh;
+    max-width: 100%; }
 
 @media only screen and (min-width: 600px) {
   .page-template-find-us .page-template-find-us h1.entry-title {
@@ -2539,7 +2531,7 @@ body .page-template-video-page {
   width: 100%; }
   @media only screen and (min-width: 600px) {
     .page-template-find-us .widget-area {
-      padding-top: 40px; } }
+      padding-top: 60px; } }
 
 .page-template-find-us .kin-athletics-info-class {
   -ms-flex-order: 2;
@@ -2568,7 +2560,7 @@ body .page-template-video-page {
   background: #000000;
   display: block;
   height: 8.01%;
-  padding: 5px 0 40px 0; }
+  padding: 5px 0 30px 0; }
 
 .page-template-find-us .white.container {
   padding: 5px 0 40px 0; }
@@ -2596,10 +2588,6 @@ body .page-template-video-page {
     font-size: 1.7rem;
     padding-top: 20px;
     padding-bottom: 20px; } }
-
-@media only screen and (min-width: 600px) {
-  .page-template-find-us element.style {
-    min-height: 400px; } }
 
 .page-template-events .entry-content {
   margin: 0; }
@@ -3147,3 +3135,19 @@ body.post-type-archive-trainer .page-template-events .our-place {
       margin-bottom: 35px; }
   .site-footer p {
     font-size: 12px; }
+
+.footer-text-container {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column; }
+  @media only screen and (min-width: 600px) {
+    .footer-text-container {
+      -ms-flex-direction: row;
+          flex-direction: row;
+      -ms-flex-pack: center;
+          justify-content: center; } }
+  @media only screen and (min-width: 600px) and (min-width: 600px) {
+    .footer-text-container a {
+      margin: 0 15px;
+      padding-bottom: 30px; } }
