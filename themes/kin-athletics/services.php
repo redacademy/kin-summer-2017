@@ -21,25 +21,25 @@ get_header(); ?>
     
       <div class="circles-container">
           <div class="icon-container">
-              <a src="#">
+              <a src="<?php echo esc_url(home_url('/services#personal-training')); ?>">
                   <img src="<?php echo get_template_directory_uri(); ?>/asset/icons/personaltrainingicon.svg"/>
               </a>
               <p><span class="span-block">Personal</span> Training</p>
           </div>
           <div class="icon-container">
-              <a src="#">
+              <a src="<?php echo esc_url(home_url('/services#group-training')); ?>">
                   <img src="<?php echo get_template_directory_uri(); ?>/asset/icons/grouptrainingicon.svg"/>
               </a>
               <p><span class="span-block">Group</span> Training</p>
           </div>
           <div class="icon-container">
-              <a src="#">
+              <a src="<?php echo esc_url(home_url('/services#community-projects')); ?>">
                   <img src="<?php echo get_template_directory_uri(); ?>/asset/icons/communityprojecticon.svg"/>
               </a>
               <p><span class="span-block">Community</span> Projects</p>
           </div>
           <div class="icon-container">
-              <a src="#">
+              <a src='<?php echo esc_url( home_url( '/consultation/') )?>'>
                   <img src="<?php echo get_template_directory_uri(); ?>/asset/icons/freeconsultationicon.svg"/>
               </a>
               <p><span class="span-block">Free</span> Consultation</p>
