@@ -629,8 +629,16 @@ a {
       text-transform: uppercase;
       font-weight: bold; }
 
+@media (min-width: 600px) {
+  .site-header {
+    display: -ms-flexbox;
+    display: flex; } }
+
 .kin-athletic-logo {
   height: 100%; }
+  @media (min-width: 600px) {
+    .kin-athletic-logo {
+      width: 50%; } }
   .kin-athletic-logo .kin-logo1 {
     height: 100%;
     display: -ms-flexbox;
@@ -640,21 +648,23 @@ a {
     margin-left: 10px; }
     @media (min-width: 600px) {
       .kin-athletic-logo .kin-logo1 {
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-        -ms-flex-item-align: start;
-            align-self: flex-start;
-        text-align: left;
-        margin: 0; } }
+        display: inline;
+        margin-left: 50px; } }
     .kin-athletic-logo .kin-logo1 img {
       height: 35px; }
+      @media (min-width: 600px) {
+        .kin-athletic-logo .kin-logo1 img {
+          height: 100%;
+          width: 100px; } }
   .kin-athletic-logo .kin-logo2 {
     display: none; }
     @media (min-width: 600px) {
       .kin-athletic-logo .kin-logo2 {
-        display: inline; }
+        display: inline;
+        margin-left: 20px; }
         .kin-athletic-logo .kin-logo2 img {
-          height: 30px; } }
+          width: 200px;
+          height: 100%; } }
 
 /*--------------------------------------------------------------
 # Accessibility

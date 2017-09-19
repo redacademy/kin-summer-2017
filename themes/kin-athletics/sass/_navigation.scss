@@ -207,9 +207,19 @@ a {
 
 //                           KIN LOGOS
  
+.site-header{
+	@include Desktop{
+		display: flex;
+	}
+}
+
 
 .kin-athletic-logo{
 	height: 100%;
+
+	@include Desktop{
+		width: 50%;
+	}
 
 	.kin-logo1{
 		height: 100%;
@@ -218,14 +228,17 @@ a {
 		margin-left: 10px;
 
 		@include Desktop{
-			justify-content: flex-start;
-			align-self: flex-start;
-			text-align: left;
-			margin: 0;
+			display: inline;
+			margin-left: 50px;
 		}
 
 		img{
 			height: 35px;
+
+			@include Desktop{
+				height: 100%;
+				width: 100px;
+			}
 		}
 	}
 	
@@ -234,9 +247,11 @@ a {
 	
 		@include Desktop{
 			display: inline;
+			margin-left: 20px;
 
 			img{
-				height: 30px;
+				width: 200px;
+				height: 100%;
 			}
 		}
 	}
