@@ -1172,6 +1172,12 @@ p {
 
 .page-template-services .entry-content {
   margin: 0; }
+  .page-template-services .entry-content .carousel-cell :not(.carousel-cell-info) {
+    padding: 0; }
+  .page-template-services .entry-content .carousel-cell h2 {
+    margin: 1.5rem; }
+  .page-template-services .entry-content .carousel-cell p:first-child {
+    background: rgba(0, 0, 0, 0.65); }
 
 .page-template-services h1 {
   margin: auto;
