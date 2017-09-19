@@ -935,7 +935,7 @@ p {
       line-height: 1.2; }
       @media only screen and (min-width: 600px) {
         .who-we-are-text .who-button-cont a {
-          font-size: 2.8rem; } }
+          font-size: 2rem; } }
 
 @media only screen and (min-width: 600px) {
   .what-we-do-text {
@@ -977,7 +977,7 @@ p {
       line-height: 1.2; }
       @media only screen and (min-width: 600px) {
         .what-we-do-text .what-button-cont a {
-          font-size: 2.8rem; } }
+          font-size: 2rem; } }
 
 .td-button-cont {
   position: absolute;
@@ -1010,7 +1010,7 @@ p {
     line-height: 1.2; }
     @media only screen and (min-width: 600px) {
       .td-button-cont a {
-        font-size: 2.8rem; } }
+        font-size: 2rem; } }
   @media only screen and (min-width: 600px) {
     .td-button-cont {
       margin-left: 60%;
@@ -2185,36 +2185,44 @@ body .page-template-video-page {
 
 .landing-video-text-container {
   z-index: 999;
-  margin-top: 0;
-  width: 100vw; }
+  padding-top: 2.2rem;
+  width: 100vw;
+  height: 100vh; }
   @media only screen and (min-width: 600px) {
     .landing-video-text-container {
       position: absolute; } }
+
+@media only screen and (min-width: 600px) {
+  .athletics-line-break {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+        justify-content: center;
+    padding-top: 4.9rem; } }
+
+.kin, .ath, .let, .ics {
+  font-size: 7.5rem;
+  font-family: "Oswald", sans-serif;
+  background-color: transparent;
+  color: white;
+  text-transform: Uppercase;
+  line-height: 101.5px;
+  margin: 0;
+  letter-spacing: 5px; }
   @media only screen and (min-width: 600px) {
-    .landing-video-text-container:not(.kin) {
-      display: -ms-flexbox;
-      display: flex; } }
-  .landing-video-text-container .kin, .landing-video-text-container .ath, .landing-video-text-container .let, .landing-video-text-container .ics {
-    font-size: 7.5rem;
-    font-family: "Oswald", sans-serif;
-    background-color: transparent;
-    color: white;
-    text-transform: Uppercase;
-    line-height: 101.5px;
-    margin: 0;
-    letter-spacing: 5px; }
-    @media only screen and (min-width: 600px) {
-      .landing-video-text-container .kin, .landing-video-text-container .ath, .landing-video-text-container .let, .landing-video-text-container .ics {
-        font-size: 10rem; } }
+    .kin, .ath, .let, .ics {
+      font-size: 12.5rem;
+      letter-spacing: 10px;
+      line-height: 90px; } }
 
 .landing-video-text-container .kin {
   margin-left: 0; }
   @media only screen and (min-width: 600px) {
     .landing-video-text-container .kin {
+      margin-left: 35%;
       -ms-flex-pack: start;
           justify-content: flex-start;
-      top: 0;
-      width: 100%; } }
+      top: 0; } }
 
 .landing-video-text-container .ath {
   margin-left: 12%; }
@@ -2248,9 +2256,9 @@ body .page-template-video-page {
   display: flex;
   -ms-flex-pack: center;
       justify-content: center;
-  margin-left: 34%;
+  margin-left: 33%;
   margin-top: 6%;
-  bottom: 18px; }
+  bottom: 30px; }
   @media only screen and (min-width: 600px) {
     .video-button-cont {
       padding: .75% 4%; } }
@@ -2266,11 +2274,13 @@ body .page-template-video-page {
     line-height: 1.2; }
     @media only screen and (min-width: 600px) {
       .video-button-cont a {
-        font-size: 2.8rem; } }
+        font-size: 2rem; } }
   @media only screen and (min-width: 600px) {
     .video-button-cont {
-      -ms-flex-pack: end;
-          justify-content: flex-end; } }
+      -ms-flex-pack: center;
+          justify-content: center;
+      bottom: 70px;
+      margin-left: 40%; } }
 
 .page-template-find-us p {
   margin: .50%; }
