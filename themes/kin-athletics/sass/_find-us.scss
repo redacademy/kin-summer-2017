@@ -3,17 +3,10 @@
 }
 
 .page-template-find-us {
-
-  .entry-header {
-    position: relative;
-  }
-
   .entry-title {
     position:absolute;
     z-index:1;
-    bottom: 0;
-    left: 0;
-    right: 0;
+    
   }
 p .contact { // to match H2
   font-size: 1rem;
@@ -25,34 +18,12 @@ p .contact { // to match H2
 }
   .find-us-picture-wrapper {
     position: relative;
-    height: 50vh;
-    overflow: hidden;
 
     .find-us-picture {
-      z-index: 0;
+      z-index: 0; 
+      // height: 300px;
       filter: grayscale(100%);
-      transform: translate(-50%, -50%);
-      top: 50%;
-      left: 50%;
-      height: 100%;
-      position: absolute;
-
-      @include desktop {
-        top: 0;
-        height: 100vh;
-      }
-  }
-
-  &:after {
-    height: 100%;
-    width: 100%;
-    content: " ";
-    background: rgba(0,0,0,0.5);
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
+      
   }
 }
 
