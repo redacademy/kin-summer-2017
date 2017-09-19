@@ -136,7 +136,7 @@ a {
 
 
 
-//                              RESPONSIVE MENU
+//                              RESPONSIVE MENU mobile
 
 #responsive-menu{
 	text-align: right;
@@ -164,4 +164,43 @@ a {
 	font-weight: normal;
 	border: none!important;
 	margin-top: 0;
+}
+
+
+//                            DESKTOP MENU
+
+#site-navigation{
+	display: none;
+
+	@include Desktop{
+		display: block;
+	}
+}
+
+#site-navigation{
+	padding-right: 0;
+	height: 100%;
+
+	div{
+		height: 100%;
+	}
+
+	.menu-menu-container{
+		width: 95%;
+		margin: 0 auto;
+	}
+
+	#menu-menu{
+		height: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: flex-end;
+
+		li{
+			margin-right: 30px;
+			font-size: 24px;
+			text-transform: uppercase;
+			font-weight: bold;
+		}
+	}
 }

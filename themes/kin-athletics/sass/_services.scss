@@ -1,6 +1,22 @@
 .page-template-services{
   .entry-content{
     margin: 0;
+
+    .carousel-cell :not(.carousel-cell-info) {
+      padding: 0;
+    }
+
+    .carousel-cell {
+
+      h2 {
+        margin: 1.5rem;
+      }
+
+      .service-description {
+        background:rgba(0,0,0,0.65);
+        padding: 1.5rem;
+      }
+    }
   }
 
   h1 {
@@ -186,7 +202,11 @@
       margin: 0;
       margin-left: 40px;
       max-width: 450px;
-      height: 10%;
+      height: 14%;
+
+      span p {
+        font-weight: bold;
+        }
       }
     }
 

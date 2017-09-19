@@ -57,17 +57,17 @@ get_header(); ?>
             <div class='price-box-container'>
               <div class='single-price-box'> 
                 <p>single session</p>
-                <span>$50</span>
+                <span><?php echo CFS()->get('personal_training_single_session');?></span>
               </div>
 
               <div class='single-price-box price-box-border'>
                 <p>ten sessions</p>
-                <span>$470</span>
+                <span><?php echo CFS()->get('personal_training_ten_session');?></span>
               </div>
               
               <div class='single-price-box'>
                 <p>thirty sessions</p>
-                <span>$1400</span>
+                <span><?php echo CFS()->get('personal_training_thirty_session');?></span>
               </div>
             </div>  <!-- end of price box container-->  
             <p class='training-rates'>**Rates are subject to change for program customizations.</p>       
@@ -77,23 +77,23 @@ get_header(); ?>
 
           <div class="carousel-cell group-training" id='group-training'>
             <h2>Group training</h2>
-            <?php echo CFS()->get('services_group_training');?>
+            <?php echo CFS()->get('services_group_training', false, array( 'format' => 'raw' ));?>
             <h3>Basic pricing</h3>
 
             <div class='price-box-container'>
               <div class='single-price-box'> 
                 <p>single session</p>
-                <span>$25</span>
+                <span><?php echo CFS()->get('group_training_single_session');?></span>
               </div>
 
               <div class='single-price-box price-box-border'>
                 <p>ten sessions</p>
-                <span>$235</span>
+                <span><?php echo CFS()->get('group_training_ten_session');?></span>
               </div>
               
               <div class='single-price-box'>
                 <p>thirty sessions</p>
-                <span>$700</span>
+                <span><?php echo CFS()->get('group_training_thirty_session');?></span>
               </div>
             </div>  <!-- end of price box container-->  
             <p class='training-rates'>**Rates are subject to change for program customizations.</p>
@@ -112,10 +112,10 @@ get_header(); ?>
         </div>  <!-- end of carousel -->
 
         <section class="services-featured" id='free-consultation'>
-        <h4> featured trainer <span class="trainer-name">allan</span> </h4>
+        <h4> featured trainer <span class="trainer-name"><?php echo CFS()->get('services_featured_trainer');?></span> </h4>
         <p>ready to sweat?</p>
           <div class="services-button-flex">
-            <div class='social-button'><a href='#'>about me</a></div>
+            <div class='social-button'><a href='<?php echo esc_url( home_url( '/trainer/' . strtolower(CFS()->get('services_featured_trainer')) ) )?>'>about me</a></div>
             <div class='red-button'><a href='#'>free consultation</a></div>
           </div>
 

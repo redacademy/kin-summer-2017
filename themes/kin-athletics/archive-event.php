@@ -31,24 +31,23 @@ get_header(); ?>
                 <div class="header-container">
                     <h2 class="header-title un-bold">Latest History:</h2>
                     <?php 
-                        $current_args = array( 'post_type' => 'event', 'order' => 'DESC', 'posts_per_page' => 1, 'orderby' => 'date' );
+                        $current_args = array( 'post_type' => 'event', 'order' => 'DESC', 'posts_per_page' => 2, 'orderby' => 'date' );
                         $latest_event = get_posts ( $current_args );
                     ?>
 
-                    <h2 class="header-title"><?php echo esc_html( get_the_title($latest_event[0]->ID) ) ;?></h2>
-                    <?php echo CFS()->get('current_event_info', $latest_event[0]->ID); ?>
-                    <h3 class='event-date'>happens: <?php echo CFS()->get('current_event_date', $latest_event[0]->ID); ?></h3>
-                    <div class='red-button'><a href='<?php echo site_url()."/event/".$latest_event[0]->post_name ?>'>buy tickets</a></div>
+                    <h2 class="header-title"><?php echo esc_html( get_the_title($latest_event[1]->ID) ) ;?></h2>
+                    <?php echo CFS()->get('current_event_info', $latest_event[1]->ID); ?>
+                    <h3 class='event-date'>happened: <?php echo CFS()->get('current_event_date', $latest_event[1]->ID); ?></h3>
                 </div>
                 <div class="latest-history-carousel">
                     <div class='carousel-cell cell-image1'>
-                        <img src="<?php echo get_template_directory_uri(); ?>/asset/images/pastevents_bootcamp.png"/>
+                        <img src="<?php echo esc_url(get_template_directory_uri()); ?>/asset/images/pastevents_bootcamp.png"/>
                     </div>
                     <div class='carousel-cell cell-image2'>
-                        <img src="<?php echo get_template_directory_uri(); ?>/asset/images/pastevents_bootcamp2.png"/>
+                        <img src="<?php echo esc_url(get_template_directory_uri()); ?>/asset/images/pastevents_bootcamp2.png"/>
                     </div>
                     <div class='carousel-cell cell-image3'>
-                        <img src="<?php echo get_template_directory_uri(); ?>/asset/images/pastevents_bootcamp3.png"/>
+                        <img src="<?php echo esc_url(get_template_directory_uri()); ?>/asset/images/pastevents_bootcamp3.png"/>
                     </div>       
                 </div>  <!-- end of carousel -->
             </section>
@@ -70,12 +69,12 @@ get_header(); ?>
                                 ?>
                                 <div class='past-events-item-container'>
                                     <div class="past-events-info">
-                                        <a href="<?php echo site_url().'/'.$past_events[$j]->post_name; ?>">
+                                        <a href="<?php echo esc_url(site_url().'/'.$past_events[$j]->post_name); ?>">
                                             <p class="past-event-title"><?php echo $past_events[$j]->post_title; ?></p>
                                             <p class="past-event-date"><?php echo get_the_date('M/j Y', $past_events[$j]->ID); ?></p>
                                         </a>
                                     </div>
-                                    <img src="<?php echo get_template_directory_uri(); ?>/asset/icons/plainicon.svg"/>
+                                    <img src="<?php echo esc_url(get_template_directory_uri()); ?>/asset/icons/plainicon.svg"/>
                                 </div> 
                                 <?php   
                                     $j++;
@@ -92,10 +91,10 @@ get_header(); ?>
                 <div class='events-black-container'>
                     <p>On Now - <?php echo CFS()->get('past_events_featured'); ?></p>
                     <div class='red-button'>
-                        <a href='<?php echo $event_ticket_url; ?>'>Buy Tickets</a>
+                        <a href='<?php echo esc_url(str_replace(' ', '-', home_url('/event/'.CFS()->get('past_events_featured')))); ?>'>Buy Tickets</a>
                     </div>
-                    <div class='red-button clear-bg'><a href='<?php echo $event_page_url; ?>'>Tell Me More</a></div>
-                    <img src="<?php echo get_template_directory_uri(); ?>/asset/images/pastevents_onnow.png"/>
+                    <div class='red-button clear-bg'><a href='<?php echo esc_url(str_replace(' ', '-', home_url('/'.CFS()->get('past_events_featured')))); ?>'>Tell Me More</a></div>
+                    <img src="<?php echo esc_html(get_template_directory_uri()); ?>/asset/images/pastevents_onnow.png"/>
                 </div>
                         
                 <div class='events-white-container'>
