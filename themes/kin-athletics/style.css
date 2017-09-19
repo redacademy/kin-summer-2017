@@ -1485,6 +1485,12 @@ body.post-type-archive-trainer .our-place {
   .carousel-cell h2 {
     font-size: 35px;
     line-height: normal; }
+  .header-container h1 {
+    font-size: 1rem; }
+  .circles-container .icon-container {
+    width: 40%; }
+    .circles-container .icon-container p {
+      font-size: 14px; }
   .services-featured .services-content h4, .services-featured .services-content span {
     font-size: 35px; }
   .services-featured .services-content p {
