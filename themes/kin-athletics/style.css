@@ -634,7 +634,7 @@ a {
 
 #menu-menu .sub-menu {
   background-color: black;
-  top: 48px;
+  top: 27px;
   right: -60px;
   width: 240px; }
   #menu-menu .sub-menu li {
@@ -673,7 +673,7 @@ a {
           width: 100px; } }
   .kin-athletic-logo .kin-logo2 {
     display: none; }
-    @media only screen and (min-width: 600px) {
+    @media screen and (min-width: 1130px) {
       .kin-athletic-logo .kin-logo2 {
         display: inline;
         margin-left: 20px; }
@@ -1377,10 +1377,15 @@ body.post-type-archive-trainer .our-place {
   .services-featured .services-button-flex {
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    z-index: 1;
-    position: relative; }
+    -ms-flex-direction: column;
+        flex-direction: column;
+    padding-right: 10px; }
+    @media only screen and (min-width: 600px) {
+      .services-featured .services-button-flex {
+        -ms-flex-direction: row;
+            flex-direction: row;
+        -ms-flex-pack: end;
+            justify-content: flex-end; } }
   .services-featured .trainer-name {
     font-weight: lighter;
     font-size: 40px;
@@ -3291,7 +3296,7 @@ body.post-type-archive-trainer .page-template-events .our-place {
 
 .site-footer {
   background-color: #A10000;
-  height: 330px;
+  height: 250px;
   padding-top: 35px; }
   .site-footer a, .site-footer p {
     color: #FFFFFF;
