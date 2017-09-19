@@ -104,8 +104,8 @@ get_header(); ?>
           <div class="carousel-cell community-projects" id='community-projects'>
             <h2>Community projects</h2>
             <?php echo CFS()->get('services_community_projects');?>
-            <h3>on now - <?php echo CFS()->get('past_events_featured', 34); ?></h3>
-            <div class='red-button'><a href='<?php echo esc_url(str_replace(' ', '-', home_url('/event/'.CFS()->get('past_events_featured')))); ?>'>buy tickets</a></div>
+            <h3>on now - project td</h3>
+            <div class='red-button'><a href='#'>buy tickets</a></div>
             <div class='social-button'><a href='#'>tell me more</a></div>
             <div class='social-button'><a href='#'>past events</a></div>
           </div>  <!-- end of carousel cell community projects -->
@@ -126,9 +126,9 @@ get_header(); ?>
               <div class="social-buttons-flex">
                 <div class='social-button'><a href='https://www.facebook.com/kinathletics/' target="_blank">facebook</a></div>
                 <div class='social-button'><a href='https://www.instagram.com/kinathletics/' target="_blank">instagram</a></div>
+              </div>
             </div>
-          </div>
-        </section>
+          </section>
 
       </div>  <!-- end of entry content-->
     </div>  <!-- end of container-->

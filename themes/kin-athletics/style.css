@@ -1527,13 +1527,9 @@ body.post-type-archive-trainer .our-place {
   display: flex;
   -ms-flex-flow: row wrap;
       flex-flow: row wrap;
-<<<<<<< HEAD
-  margin: 0; }
-=======
   margin: 0;
   -ms-flex-pack: distribute;
       justify-content: space-around; }
->>>>>>> 2a3fe38ec9b671e5e0e5c8354feb3d949cb42fae
   .circles-container .icon-container {
     width: 50%;
     height: 123px;
@@ -1600,10 +1596,15 @@ body.post-type-archive-trainer .our-place {
   .services-featured .services-button-flex {
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    z-index: 1;
-    position: relative; }
+    -ms-flex-direction: column;
+        flex-direction: column;
+    padding-right: 10px; }
+    @media only screen and (min-width: 600px) {
+      .services-featured .services-button-flex {
+        -ms-flex-direction: row;
+            flex-direction: row;
+        -ms-flex-pack: end;
+            justify-content: flex-end; } }
   .services-featured .trainer-name {
     font-weight: lighter;
     font-size: 40px;
@@ -3425,29 +3426,6 @@ body.post-type-archive-trainer .page-template-events .our-place {
   margin-top: 10px;
   transform: translate(-50%, -50%); }
 
-<<<<<<< HEAD
-.social-buttons-flex {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: column;
-      flex-direction: column; }
-  @media only screen and (min-width: 600px) {
-    .social-buttons-flex {
-      -ms-flex-direction: row;
-          flex-direction: row;
-      -ms-flex-pack: center;
-          justify-content: center; } }
-  @media only screen and (min-width: 600px) {
-    .social-buttons-flex .social-button {
-      width: 30%;
-      padding-top: 5px;
-      padding-bottom: 5px;
-      margin: 0 20px;
-      margin-bottom: 50px; } }
-  @media only screen and (min-width: 600px) {
-    .social-buttons-flex .social-button a {
-      font-size: 30px; } }
-=======
 #edit-name, #edit-email, #edit-trainer, #edit-action, #edit-comment {
   display: none; }
 
@@ -3478,11 +3456,32 @@ body.post-type-archive-trainer .page-template-events .our-place {
 @media only screen and (min-width: 600px) {
   #gform_page_1_5 #edit-comment {
     top: 264px; } }
->>>>>>> 2a3fe38ec9b671e5e0e5c8354feb3d949cb42fae
+
+.social-buttons-flex {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column; }
+  @media only screen and (min-width: 600px) {
+    .social-buttons-flex {
+      -ms-flex-direction: row;
+          flex-direction: row;
+      -ms-flex-pack: center;
+          justify-content: center; } }
+  @media only screen and (min-width: 600px) {
+    .social-buttons-flex .social-button {
+      width: 30%;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      margin: 0 20px;
+      margin-bottom: 50px; } }
+  @media only screen and (min-width: 600px) {
+    .social-buttons-flex .social-button a {
+      font-size: 30px; } }
 
 .site-footer {
   background-color: #A10000;
-  height: 330px;
+  height: 250px;
   padding-top: 35px; }
   .site-footer a, .site-footer p {
     color: #FFFFFF;
