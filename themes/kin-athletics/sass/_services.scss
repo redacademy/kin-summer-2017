@@ -44,10 +44,11 @@
     display: flex;
     flex-flow: row wrap;
     margin: 0;
+    justify-content: space-evenly;
 
     .icon-container {
-      width: 50%;
-      height: $icon__base-size;
+      width: 40%;
+      height: 50%;
       display: flex;
       flex-flow: column nowrap;
       justify-content: center;
@@ -55,8 +56,8 @@
       text-align: center;
 
       a, img {
-        height: 100%;
-        width: auto;
+        width: 100%;
+        height: auto;
       }
 
       p {
