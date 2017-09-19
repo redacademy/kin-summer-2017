@@ -209,6 +209,10 @@ body.single-trainer {
                 margin: 0;
                 text-align: center;
                 margin-bottom: 1rem;
+
+                @include desktop {
+                    font-size: 30px;
+                }
             }
 
             &-grid {
@@ -224,6 +228,7 @@ body.single-trainer {
 
                     @include desktop {
                         justify-content: space-around;
+                        width: 20%;
                     }
 
                     .trainer-thumbnail-wrapper {
@@ -234,10 +239,6 @@ body.single-trainer {
                         border: 1.5px solid #A10000;
                         overflow: hidden;
                         position: relative;
-
-                        @include desktop {
-                            width: 15%;
-                        }
 
                         .trainer-thumbnail {
                             max-width: none;
@@ -253,6 +254,10 @@ body.single-trainer {
                         a {
                             text-decoration: none;
                             font-size: 16px;
+
+                            @include desktop {
+                                font-size: 24px;
+                            }
                         }
                     }
                 }
@@ -370,7 +375,7 @@ body.single-trainer {
                     height: 90px;
 
                     li {
-                        width: 10%;
+                        width: 90px;
                     }
                 }
 

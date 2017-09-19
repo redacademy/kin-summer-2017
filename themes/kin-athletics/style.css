@@ -1638,6 +1638,9 @@ body.single-trainer .default-content {
     margin: 0;
     text-align: center;
     margin-bottom: 1rem; }
+    @media only screen and (min-width: 600px) {
+      body.single-trainer .default-content .other-trainers .next-trainer.trainer-sub-titles {
+        font-size: 30px; } }
   body.single-trainer .default-content .other-trainers-grid {
     display: -ms-flexbox;
     display: flex;
@@ -1656,7 +1659,8 @@ body.single-trainer .default-content {
       @media only screen and (min-width: 600px) {
         body.single-trainer .default-content .other-trainers-grid .next-trainer-item-container {
           -ms-flex-pack: distribute;
-              justify-content: space-around; } }
+              justify-content: space-around;
+          width: 20%; } }
       body.single-trainer .default-content .other-trainers-grid .next-trainer-item-container .trainer-thumbnail-wrapper {
         width: 53px;
         height: 53px;
@@ -1665,9 +1669,6 @@ body.single-trainer .default-content {
         border: 1.5px solid #A10000;
         overflow: hidden;
         position: relative; }
-        @media only screen and (min-width: 600px) {
-          body.single-trainer .default-content .other-trainers-grid .next-trainer-item-container .trainer-thumbnail-wrapper {
-            width: 15%; } }
         body.single-trainer .default-content .other-trainers-grid .next-trainer-item-container .trainer-thumbnail-wrapper .trainer-thumbnail {
           max-width: none;
           max-height: 100%;
@@ -1678,6 +1679,9 @@ body.single-trainer .default-content {
       body.single-trainer .default-content .other-trainers-grid .next-trainer-item-container .next-trainer-wrapper a {
         text-decoration: none;
         font-size: 16px; }
+        @media only screen and (min-width: 600px) {
+          body.single-trainer .default-content .other-trainers-grid .next-trainer-item-container .next-trainer-wrapper a {
+            font-size: 24px; } }
   body.single-trainer .default-content .other-links {
     display: -ms-flexbox;
     display: flex;
@@ -1763,7 +1767,7 @@ body.single-trainer .default-content {
     body.single-trainer .default-content .trainer-availability .days-of-week {
       height: 90px; }
       body.single-trainer .default-content .trainer-availability .days-of-week li {
-        width: 10%; }
+        width: 90px; }
     body.single-trainer .default-content .trainer-availability .trainer-sub-titles {
       font-size: 46px; }
   .about-sidebar {
@@ -3308,40 +3312,6 @@ body.post-type-archive-trainer .page-template-events .our-place {
       bottom: 110px;
       right: 40px; } }
 
-<<<<<<< HEAD
-#edit-name, #edit-email, #edit-trainer, #edit-action, #edit-comment {
-  display: none; }
-
-.unhide-edit {
-  display: block !important;
-  z-index: 9999; }
-
-@media only screen and (min-width: 600px) {
-  #gform_page_1_1 #edit-name {
-    bottom: 87px; } }
-
-@media only screen and (min-width: 600px) {
-  #gform_page_1_2 #edit-email {
-    top: 169px; } }
-
-#gform_page_1_3 #edit-trainer {
-  bottom: -45px; }
-  @media only screen and (min-width: 600px) {
-    #gform_page_1_3 #edit-trainer {
-      bottom: 50px; } }
-
-#gform_page_1_4 #edit-action {
-  bottom: 120px; }
-  @media only screen and (min-width: 600px) {
-    #gform_page_1_4 #edit-action {
-      bottom: 50px; } }
-
-@media only screen and (min-width: 600px) {
-  #gform_page_1_5 #edit-comment {
-    top: 264px; } }
-
-=======
->>>>>>> bee4872025b2109cec6b8582b5236aa5dc64961f
 .social-buttons-flex {
   display: -ms-flexbox;
   display: flex;
