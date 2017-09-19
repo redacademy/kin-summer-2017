@@ -18,7 +18,7 @@ get_header(); ?>
     </div>
     <div class="td-button-cont"><a href='<?php echo esc_url( home_url( '/events/') )?>'>Tell Me More</a></div>
 
-    <div class="main-carousel">
+    <div class="front-carousel">
       <div class="carousel-project-td"> <!-- first cell-->
         <div class="project-td-image-wrapper">
           <img class="project-td-image" src="<?php echo CFS()->get( 'front_image' ); ?>">     

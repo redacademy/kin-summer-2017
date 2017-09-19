@@ -5,13 +5,12 @@ body .page-template-video-page {
     .site-header {
         display: none;
     }
-    .site-content{
+    .site-content {
      overflow:hidden;
      height:auto;
-}
+    }
 }
 .video-container {
-    // width: 100vw; 
     height: 100vh;
     position: relative;
     @media only screen and (max-width: 600px) {
@@ -26,7 +25,6 @@ body .page-template-video-page {
     display: flex;  
     align-items: center;
     overflow: hidden;
-    
 }
 .video-width {
     width:100%;
@@ -42,14 +40,13 @@ body .page-template-video-page {
   @media only screen and (min-width: 600px) {
   position:absolute;
   }
-
-  }
+}
 .athletics-line-break {
     @media only screen and (min-width: 600px) {
     display:flex;
     justify-content:center;
     padding-top:4.9rem;
-}
+    }
 }
   .kin, .ath, .let, .ics {
     font-size: 7.5rem;
@@ -69,33 +66,32 @@ body .page-template-video-page {
   }  
 
 .landing-video-text-container {
-.kin {
-    margin-left: 0;
-    @media only screen and (min-width: 600px) {
-    margin-left: 35%;
-    justify-content: flex-start;
-    top:0;
-    // width:100%;
-    }
-}
-.ath {
-    margin-left: 12%;
-    @media only screen and (min-width: 600px) {
+    .kin {
         margin-left: 0;
+        @media only screen and (min-width: 600px) {
+        margin-left: 35%;
+        justify-content: flex-start;
+        top:0;
+        }
     }
-}
-.let {
-    margin-left: 35%;
-    @media only screen and (min-width: 600px) {
-        margin-left: 0;
+    .ath {
+        margin-left: 12%;
+        @media only screen and (min-width: 600px) {
+            margin-left: 0;
+        }
     }
-}
-.ics {
-    margin-left: 58%;
-    @media only screen and (min-width: 600px) {
-        margin-left: 0;
+    .let {
+        margin-left: 35%;
+        @media only screen and (min-width: 600px) {
+            margin-left: 0;
+        }
     }
-}
+    .ics {
+        margin-left: 58%;
+        @media only screen and (min-width: 600px) {
+            margin-left: 0;
+        }
+    }
 }
 .video-button-cont {
     @include front-red-button;
@@ -111,10 +107,5 @@ body .page-template-video-page {
         bottom:70px;
         margin-left: 40%;
         z-index:999;
-
     }
-    
 }
-
-
-
