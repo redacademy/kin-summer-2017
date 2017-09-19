@@ -113,7 +113,12 @@ big {
 		font-size: 1rem;
 		font-weight: 300;
 		line-height: 1.35rem;
-		text-align: center
+		text-align: center;
+
+		@include desktop {
+			padding-top: 20px;
+			font-size: 1.8rem;
+		}
 }
 
 	.red-button {

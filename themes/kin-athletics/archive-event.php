@@ -100,7 +100,7 @@ get_header(); ?>
                 </div>
                         
                 <div class='white container'>
-            <h3 class="find-us black-title">More feels on our events</h3>
+            <h3 class="black-title">More feels on our events</h3>
               <div class="social-buttons-flex">
                 <div class='social-button'><a href='https://www.facebook.com/kinathletics/' target="_blank">facebook</a></div>
                 <div class='social-button'><a href='https://www.instagram.com/kinathletics/' target="_blank">instagram</a></div>
