@@ -1736,7 +1736,7 @@ body.page-template-archive-trainer .trainers-grid .trainer-grid-wrapper {
       -ms-flex-pack: center;
           justify-content: center;
       height: 25%; }
-      body.page-template-archive-trainer .trainers-grid .trainer-grid-wrapper .trainer-item-container .next-trainer-wrapper a {
+      body.page-template-archive-trainer .trainers-grid .trainer-grid-wrapper .trainer-item-container .next-trainer-wrapper p {
         color: black;
         text-decoration: none;
         margin: auto; }

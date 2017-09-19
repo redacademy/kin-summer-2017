@@ -33,22 +33,22 @@ get_header(); ?>
                     <p><span class="span-block">Our</span> Origin</p>
                 </div>
                 <div class="icon-container">
-                    <a href="#">
+                    <a href="<?php echo esc_url(home_url('/about#trainers')); ?>">
                         <img src="<?php echo esc_url(get_template_directory_uri()); ?>/asset/icons/ourtrainericon.svg"/>
                     </a>
                     <p><span class="span-block">Our</span> Trainers</p>
                 </div>
                 <div class="icon-container">
-                    <a href="#">
+                    <a href="<?php echo esc_url(home_url('/about#community'));?>">
                         <img src="<?php echo esc_url(get_template_directory_uri()); ?>/asset/icons/ourcommunityicon.svg"/>
                     </a>
                     <p><span class="span-block">Our</span> Community</p>
                 </div>
                 <div class="icon-container">
-                    <a href="#">
-                        <img src="<?php echo esc_url(get_template_directory_uri()); ?>/asset/icons/freeconsultationicon.svg"/>
+                    <a href="<?php echo esc_url(home_url('/about#place')); ?>">
+                        <img src="<?php echo esc_url(get_template_directory_uri()); ?>/asset/icons/ourplaceicon.svg"/>
                     </a>
-                    <p><span class="span-block">Free</span> Consultation</p>
+                    <p><span class="span-block">Our</span> Place</p>
                 </div>
             </div>
         </section>
@@ -73,11 +73,14 @@ get_header(); ?>
                             ?>
                     
                             <div class='trainer-item-container'>
-                                <div class='trainer-thumbnail-wrapper'>
-                                    <img class='trainer-thumbnail' src="<?php echo CFS()->get( 'trainer_profile_picture', $trainer[$j]->ID ); ?>"/>
-                                </div>
+                                
+                                <a class='trainer-name' href='<?php echo $trainer[$j]->guid ?>'>    
+                                    <div class='trainer-thumbnail-wrapper'>
+                                        <img class='trainer-thumbnail' src="<?php echo CFS()->get( 'trainer_profile_picture', $trainer[$j]->ID ); ?>"/>
+                                    </div>
+                                </a>
                                 <div class='next-trainer-wrapper'>
-                                    <a class='trainer-name' href='<?php echo $trainer[$j]->guid ?>'><?php echo $trainer[$j]->post_title; ?></a>
+                                    <p><?php echo $trainer[$j]->post_name; ?></p>
                                 </div>
                             </div> 
 
