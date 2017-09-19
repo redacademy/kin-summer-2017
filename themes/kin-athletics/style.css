@@ -2077,6 +2077,11 @@ body.post-type-archive-trainer .trainers-grid .trainer-grid-wrapper {
     max-height: 200px;
     position: relative;
     height: 30%; }
+    @media only screen and (min-width: 600px) {
+      body.page-template-archive-trainer .trainers-grid .trainer-grid-wrapper .trainer-item-container,
+      body.post-type-archive-trainer .trainers-grid .trainer-grid-wrapper .trainer-item-container {
+        width: 30%;
+        height: auto; } }
     body.page-template-archive-trainer .trainers-grid .trainer-grid-wrapper .trainer-item-container .trainer-thumbnail-wrapper,
     body.post-type-archive-trainer .trainers-grid .trainer-grid-wrapper .trainer-item-container .trainer-thumbnail-wrapper {
       display: -ms-flexbox;
@@ -2092,10 +2097,19 @@ body.post-type-archive-trainer .trainers-grid .trainer-grid-wrapper {
       width: 70%;
       height: 70%;
       background: #C6CDDF; }
+      @media only screen and (min-width: 600px) {
+        body.page-template-archive-trainer .trainers-grid .trainer-grid-wrapper .trainer-item-container .trainer-thumbnail-wrapper,
+        body.post-type-archive-trainer .trainers-grid .trainer-grid-wrapper .trainer-item-container .trainer-thumbnail-wrapper {
+          width: 50%;
+          height: 75%; } }
       body.page-template-archive-trainer .trainers-grid .trainer-grid-wrapper .trainer-item-container .trainer-thumbnail-wrapper img,
       body.post-type-archive-trainer .trainers-grid .trainer-grid-wrapper .trainer-item-container .trainer-thumbnail-wrapper img {
         height: 100%;
         max-width: none; }
+        @media only screen and (min-width: 600px) {
+          body.page-template-archive-trainer .trainers-grid .trainer-grid-wrapper .trainer-item-container .trainer-thumbnail-wrapper img,
+          body.post-type-archive-trainer .trainers-grid .trainer-grid-wrapper .trainer-item-container .trainer-thumbnail-wrapper img {
+            width: auto; } }
     body.page-template-archive-trainer .trainers-grid .trainer-grid-wrapper .trainer-item-container .next-trainer-wrapper,
     body.post-type-archive-trainer .trainers-grid .trainer-grid-wrapper .trainer-item-container .next-trainer-wrapper {
       display: -ms-flexbox;
