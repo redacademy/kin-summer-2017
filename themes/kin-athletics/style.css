@@ -3386,7 +3386,7 @@ body.post-type-archive-trainer .page-template-events .our-place {
   padding-bottom: 40px; }
 
 #gform_next_button_1_23, #edit-comment {
-  bottom: 105px;
+  bottom: 85px;
   right: 40px;
   width: auto;
   font-size: 20px;
@@ -3394,7 +3394,8 @@ body.post-type-archive-trainer .page-template-events .our-place {
   box-shadow: none; }
   @media only screen and (min-width: 600px) {
     #gform_next_button_1_23, #edit-comment {
-      right: 25px; } }
+      right: 25px;
+      bottom: 110px; } }
 
 @media only screen and (min-width: 600px) {
   #gform_page_1_5 {

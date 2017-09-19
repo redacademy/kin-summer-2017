@@ -405,7 +405,7 @@
 }
 
 #gform_next_button_1_23, #edit-comment{   // next button for comment form
-  bottom: 105px;
+  bottom: 85px;
   right: 40px;
   width: auto;
   font-size: 20px;
@@ -414,6 +414,7 @@
 
   @include Desktop{
     right: 25px;
+    bottom: 110px;
   }
 }
 
