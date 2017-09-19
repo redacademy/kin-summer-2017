@@ -1287,10 +1287,12 @@ body.post-type-archive-trainer .our-place {
   display: flex;
   -ms-flex-flow: row wrap;
       flex-flow: row wrap;
-  margin: 0; }
+  margin: 0;
+  -ms-flex-pack: space-evenly;
+      justify-content: space-evenly; }
   .circles-container .icon-container {
-    width: 50%;
-    height: 123px;
+    width: 40%;
+    height: 50%;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-flow: column nowrap;
@@ -1301,8 +1303,8 @@ body.post-type-archive-trainer .our-place {
         align-items: center;
     text-align: center; }
     .circles-container .icon-container a, .circles-container .icon-container img {
-      height: 100%;
-      width: auto; }
+      width: 100%;
+      height: auto; }
     .circles-container .icon-container p {
       margin: 0;
       color: white;
