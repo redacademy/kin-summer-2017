@@ -1847,6 +1847,9 @@ body.single-trainer .default-content {
     font-family: "Oswald";
     margin-top: 2em;
     padding: 0 1em; }
+    @media only screen and (min-width: 600px) {
+      body.single-trainer .default-content .trainer-consultation a.consultation-button {
+        font-size: 40px; } }
   body.single-trainer .default-content .other-trainers .next-trainer.trainer-sub-titles {
     margin: 0;
     text-align: center;
@@ -1854,8 +1857,8 @@ body.single-trainer .default-content {
   body.single-trainer .default-content .other-trainers-grid {
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-flow: row wrap;
-        flex-flow: row wrap;
+    -ms-flex-flow: row nowrap;
+        flex-flow: row nowrap;
     width: 100%;
     -ms-flex-pack: distribute;
         justify-content: space-around; }
@@ -1866,6 +1869,10 @@ body.single-trainer .default-content {
           flex-flow: column nowrap;
       -ms-flex-align: center;
           align-items: center; }
+      @media only screen and (min-width: 600px) {
+        body.single-trainer .default-content .other-trainers-grid .next-trainer-item-container {
+          -ms-flex-pack: distribute;
+              justify-content: space-around; } }
       body.single-trainer .default-content .other-trainers-grid .next-trainer-item-container .trainer-thumbnail-wrapper {
         width: 53px;
         height: 53px;
@@ -1874,6 +1881,9 @@ body.single-trainer .default-content {
         border: 1.5px solid #A10000;
         overflow: hidden;
         position: relative; }
+        @media only screen and (min-width: 600px) {
+          body.single-trainer .default-content .other-trainers-grid .next-trainer-item-container .trainer-thumbnail-wrapper {
+            width: 15%; } }
         body.single-trainer .default-content .other-trainers-grid .next-trainer-item-container .trainer-thumbnail-wrapper .trainer-thumbnail {
           max-width: none;
           max-height: 100%;
@@ -1898,8 +1908,7 @@ body.single-trainer .default-content {
       font-size: 24px; }
     body.single-trainer .default-content .other-links .about-our-origin,
     body.single-trainer .default-content .other-links .about-our-community {
-      border-bottom: 1.5px solid #A10000;
-      margin-top: 200px; }
+      border-bottom: 1.5px solid #A10000; }
     body.single-trainer .default-content .other-links .about-our-origin,
     body.single-trainer .default-content .other-links .about-our-community,
     body.single-trainer .default-content .other-links .about-our-place {
@@ -1948,6 +1957,31 @@ body.single-trainer .default-content {
     padding-left: 1.3rem; }
 
 @media only screen and (min-width: 600px) {
+  body.single-trainer .default-header {
+    -ms-flex-flow: row;
+        flex-flow: row;
+    height: 50vh; }
+    body.single-trainer .default-header p {
+      font-size: 25px; }
+    body.single-trainer .default-header .trainer-profile-container {
+      width: 50%; }
+    body.single-trainer .default-header .trainer-meta {
+      width: 50%; }
+  body.single-trainer .default-content .trainer-availability {
+    height: 50vh;
+    padding-top: 0;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-flow: column nowrap;
+        flex-flow: column nowrap;
+    -ms-flex-pack: center;
+        justify-content: center; }
+    body.single-trainer .default-content .trainer-availability .days-of-week {
+      height: 90px; }
+      body.single-trainer .default-content .trainer-availability .days-of-week li {
+        width: 10%; }
+    body.single-trainer .default-content .trainer-availability .trainer-sub-titles {
+      font-size: 46px; }
   .about-sidebar {
     width: 45%;
     position: relative; }
