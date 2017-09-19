@@ -798,7 +798,8 @@ object {
   text-align: center;
   width: 54.37%;
   margin: 0 auto;
-  margin-bottom: 16px; }
+  margin-bottom: 16px;
+  box-shadow: 0 2.5px 4px 0 rgba(0, 0, 0, 0.5); }
   .social-button a {
     color: #000000;
     font-family: oswald;
@@ -817,6 +818,7 @@ object {
   border: 2px solid #A10000;
   box-shadow: 0 0.5px 1px 0 rgba(0, 0, 0, 0.5);
   color: #FFFFFF;
+  box-shadow: 0 2.5px 4px 0 rgba(0, 0, 0, 0.5);
   cursor: pointer; }
   .red-button a, .consultation-button a {
     font-size: 24px;
@@ -1305,7 +1307,7 @@ p {
       .circles-container .icon-container p {
         font-size: 1.5rem;
         padding-top: 15px; }
-  h2 {
+  .page-template-services h2 {
     text-align: left;
     font-size: 5.5rem; }
   .personal-training .price-box-container {
@@ -1346,7 +1348,11 @@ p {
         justify-content: center; }
     .social-buttons-flex .social-button {
       margin: 20px;
-      max-width: 450px; }
+      max-width: 25%;
+      padding-bottom: 5px;
+      padding-top: 5px; }
+      .social-buttons-flex .social-button a {
+        font-size: 1.7rem; }
   .page-template-services .white p {
     font-size: 1.7rem;
     font-weight: lighter;
@@ -2257,7 +2263,11 @@ body .page-template-video-page {
     z-index: 0;
     filter: grayscale(100%); }
 
-.page-template-find-us .page-template-find-us .widget-title {
+@media only screen and (min-width: 600px) {
+  .page-template-find-us .page-template-find-us h1.entry-title {
+    font-size: 4rem; } }
+
+.page-template-find-us .page-template-find-us h2.widget-title {
   height: 30px;
   width: 73px;
   font-family: Oswald;
@@ -2266,6 +2276,10 @@ body .page-template-video-page {
   line-height: 30px;
   text-align: center; }
 
+@media only screen and (min-width: 600px) {
+  .page-template-find-us .page-template-find-us h2 {
+    font-size: 2rem; } }
+
 .page-template-find-us .kin-athletics-info {
   display: -ms-flexbox;
   display: flex;
@@ -2273,6 +2287,11 @@ body .page-template-video-page {
       flex-wrap: wrap;
   text-align: center;
   width: 100%; }
+  @media only screen and (min-width: 600px) {
+    .page-template-find-us .kin-athletics-info {
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+      min-height: 400px; } }
 
 .page-template-find-us .page-template-find-us iframe {
   -ms-flex-order: 1;
@@ -2283,11 +2302,17 @@ body .page-template-video-page {
       flex: 2 0 100%;
   max-width: 100%;
   position: relative; }
+  @media only screen and (min-width: 600px) {
+    .page-template-find-us .page-template-find-us iframe {
+      height: 400px; } }
 
 .page-template-find-us .widget-area {
   display: -ms-flexbox;
   display: flex;
   width: 100%; }
+  @media only screen and (min-width: 600px) {
+    .page-template-find-us .widget-area {
+      padding-top: 40px; } }
 
 .page-template-find-us .kin-athletics-info-class {
   -ms-flex-order: 2;
@@ -2316,7 +2341,10 @@ body .page-template-video-page {
   background: #000000;
   display: block;
   height: 8.01%;
-  padding: 5px 0 15px 0; }
+  padding: 5px 0 40px 0; }
+
+.page-template-find-us .white.container {
+  padding: 5px 0 40px 0; }
 
 .page-template-find-us .red-button, .page-template-find-us .consultation-button {
   margin: 0 auto;
@@ -2325,11 +2353,26 @@ body .page-template-video-page {
   width: 70%; }
   @media only screen and (min-width: 600px) {
     .page-template-find-us .red-button, .page-template-find-us .consultation-button {
-      max-width: 50%; } }
+      max-width: 25%;
+      height: 5%;
+      padding-bottom: 10px;
+      padding-top: 10px; } }
+  @media only screen and (min-width: 600px) {
+    .page-template-find-us .red-button a, .page-template-find-us .consultation-button a {
+      font-size: 2rem;
+      vertical-align: center; } }
 
 @media only screen and (min-width: 600px) {
-  .page-template-find-us h3 {
-    font-size: 4rem; } }
+  h3.find-us.white-title {
+    font-size: 4.5rem; }
+  h3.find-us.black-title {
+    font-size: 1.7rem;
+    padding-top: 20px;
+    padding-bottom: 20px; } }
+
+@media only screen and (min-width: 600px) {
+  .page-template-find-us element.style {
+    min-height: 400px; } }
 
 .page-template-events .entry-content {
   margin: 0; }

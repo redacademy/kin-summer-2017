@@ -23,10 +23,17 @@ p .contact { // to match H2
       z-index: 0; 
       // height: 300px;
       filter: grayscale(100%);
+      
   }
 }
 
-.page-template-find-us .widget-title {
+@include desktop {
+  .page-template-find-us h1.entry-title {
+    font-size: 4rem;
+  }
+}
+
+.page-template-find-us h2.widget-title {
     height: 30px;
     width: 73px;
     font-family: Oswald;
@@ -34,6 +41,13 @@ p .contact { // to match H2
     font-weight: 500;
     line-height: 30px;
     text-align: center;
+
+}
+
+@include desktop {
+.page-template-find-us h2 {
+    font-size: 2rem;
+  }
 }
 
 
@@ -42,6 +56,11 @@ p .contact { // to match H2
   flex-wrap: wrap;
   text-align: center;
   width: 100%;
+
+  @include desktop {
+    flex-wrap: nowrap;
+    min-height: 400px;
+  }
 }
 
 .page-template-find-us iframe {
@@ -51,12 +70,22 @@ p .contact { // to match H2
   flex: 2 0 100%;
   max-width: 100%;
   position: relative;
+
+  @include desktop {
+    height: 400px;
+  }
+
 }
 
 .widget-area {
   display: flex;
   width: 100%;
+
+  @include desktop {
+    padding-top: 40px;
+  }
 }
+
 
 .kin-athletics-info-class {
   order:  2;
@@ -84,7 +113,11 @@ p .contact { // to match H2
   background: $color__brand-black;
   display: block;
   height: 8.01%;
-  padding: 5px 0 15px 0;
+  padding: 5px 0 40px 0;
+}
+
+.white.container {
+  padding: 5px 0 40px 0;
 }
 
 .red-button {
@@ -94,14 +127,39 @@ p .contact { // to match H2
   width: 70%;
 
   @include desktop {
-    max-width: 50%;
+    max-width: 25%;
+    height: 5%;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    }
+
+    a {
+      @include desktop {
+        font-size: 2rem;
+        vertical-align: center;
+      }
+    }
   }
-  .red-button a
-  }
+
+  
 }
 
 @include desktop {
-  .page-template-find-us h3 {
-    font-size: 4rem;
+  h3.find-us.white-title {
+    font-size: 4.5rem;
+    }
+
+  h3.find-us.black-title {
+    font-size: 1.7rem;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+
+  }
+
+@include desktop {
+  .page-template-find-us element.style {
+    min-height: 400px;
   }
 }

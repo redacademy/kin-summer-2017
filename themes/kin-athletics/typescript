@@ -1798,4 +1798,2525 @@ Error: Invalid CSS after "  }": expected "}", was ".red-button a"
    ---^
 [39m
 [[90m20:23:38[39m] [36mgulp-notify[39m: [[34mError running notifier[39m] [31mCould not send message: spawn EACCES[39m
-git p
+git pull
+^C
+bash-3.2$ git pull
+Updating 55d18e8..502828e
+error: Your local changes to the following files would be overwritten by merge:
+	themes/kin-athletics/style.css
+Please commit your changes or stash them before you merge.
+Aborting
+bash-3.2$ i[Kgit com[K[K[Kstatus
+On branch master
+Your branch is behind 'origin/master' by 2 commits, and can be fast-forwarded.
+  (use "git pull" to update your local branch)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	[31mmodified:   sass/_find-us.scss[m
+	[31mmodified:   style.css[m
+	[31mmodified:   typescript[m
+
+no changes added to commit (use "git add" and/or "git commit -a")
+bash-3.2$ git add -A
+bash-3.2$ git commit -m "started s[Kdesktop on i[Kfind-us"
+[master a7a96d1] started desktop on find-us
+ 3 files changed, 234 insertions(+), 2 deletions(-)
+bash-3.2$ git pull
+Auto-merging themes/kin-athletics/style.css
+[?1049h[?1h=[2;1H▽[6n[2;1H  [1;1H]11;?[1;12r[?12;25h[?12l[?25h[27m[m[H[2J[?25l[12;1H[97m[41mE325: ATTENTION[m
+Found a swap file by the name "/Applications/MAMP/htdocs/kin-athletics/wp-content/.git/.MERGE_MSG.swp"
+[10Cowned by: cuthbert   dated: Thu Sep 14 09:21:31 2017
+[9Cfile name: /Applications/MAMP/htdocs/kin-athletics/wp-content/.git/MERGE_MSG
+[10Cmodified: YES
+[9Cuser name: cuthbert   host name: Matthews-MacBook-Pro.local
+[8Cprocess ID: 8482
+While opening file "/Applications/MAMP/htdocs/kin-athletics/wp-content/.git/MERGE_MSG"
+[13Cdated: Mon Sep 18 20:25:19 2017
+      NEWER than swap file!
+
+[32m-- More --[?12l[?25h[m[12;1H[K[12;1H(1) Another program may be editing the same file.  If this is the case,
+[32m-- More --[m[12;1H[K[12;5Hbe careful not to end up with two different instances of the same
+[32m-- More --[m[12;1H[K[12;5Hfile when making changes.  Quit, or continue with caution.
+[32m-- More --[m[12;1H[K[12;1H(2) An edit session for this file crashed.
+[32m-- More --[m[12;1H[K[12;5HIf this is the case, use ":recover" or "vim -r /Applications/MAMP/htdocs/kin-athletics/wp-content/.git/MERGE_MSG"
+[32m-- More --[m[12;1H[K[12;5Hto recover the changes (see ":help recovery").
+[32m-- More --[m[12;1H[K[12;5HIf you did this already, delete the swap file "/Applications/MAMP/htdocs/kin-athletics/wp-content/.git/.MERGE_MSG.swp"
+[32m-- More --[m[12;1H[K[12;5Hto avoid this message.
+[32m-- More --[m[12;1H[K[12;1H
+[32m-- More --[m[12;1H[K[12;1H[32mSwap file "/Applications/MAMP/htdocs/kin-athletics/wp-content/.git/.MERGE_MSG.swp" already exists![m
+[32m-- More --[m[12;1H[K[12;1H[32m[O]pen Read-Only, (E)dit anyway, (R)ecover, (D)elete it, (Q)uit, (A)bort: [m[12;1H[K[?25l[12;1H"/Applications/MAMP/htdocs/kin-athletics/wp-content/.git/MERGE_MSG" [readonly] 7L, 298C[>c[1;1HMerge branch 'master' of https://github.com/redacademy/kin-summer-2017[2;1H[K[3;1H# Please enter a commit message to explain why this merge is necessary,
+# especially if it merges an updated upstream into a topic branch.
+#[5;2H[K[6;1H# Lines starting with '#' will be ignored, and an empty message aborts[6;71H[K[7;1H# the commit.[7;14H[K[8;1H[94m~                                                                                                                                                                             [9;1H~                                                                                                                                                                             [10;1H~                                                                                                                                                                             [11;1H~                                                                                                                                                                             [1;1H[?12l[?25hP+q436f\P+q6b75\P+q6b64\P+q6b72\P+q6b6c\P+q2332\P+q2334\P+q2569\P+q2a37\P+q6b31\P+q6b32\P+q6b33\P+q6b34\P+q6b35\P+q6b36\P+q6b37\P+q6b38\P+q6b39\P+q6b3b\P+q4631\P+q4632\P+q2531\P+q2638\P+q6b62\P+q6b49\P+q6b44\P+q6b68\P+q4037\P+q6b50\P+q6b4e\P+q4b31\P+q4b33\P+q4b34\P+q4b35\P+q6b42\[?25l[m[12;1HEntering Ex mode.  Type "visual" to go to Normal mode.[12;55H[K[?12l[?25h[12;1H
+:q!
+[?1l>[?1049lerror: There was a problem with the editor 'vi'.
+Not committing merge; use 'git commit' to complete the merge.
+bash-3.2$ git staus[Ktus[K[K[K[Ktus
+On branch master
+Your branch and 'origin/master' have diverged,
+and have 1 and 2 different commits each, respectively.
+  (use "git pull" to merge the remote branch into yours)
+
+All conflicts fixed but you are still merging.
+  (use "git commit" to conclude merge)
+
+Changes to be committed:
+
+	[32mmodified:   functions.php[m
+	[32mnew file:   js/main.js[m
+	[32mmodified:   sass/_navigation.scss[m
+	[32mmodified:   style.css[m
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	[31mmodified:   typescript[m
+
+bash-3.2$ gulp
+[[90m20:27:02[39m] Using gulpfile [35m/Applications/MAMP/htdocs/kin-athletics/wp-content/themes/kin-athletics/gulpfile.js[39m
+[[90m20:27:02[39m] Starting '[36mwatch[39m'...
+[[90m20:27:02[39m] Finished '[36mwatch[39m' after [35m25 ms[39m
+[[90m20:27:02[39m] Starting '[36mbrowser-sync[39m'...
+[[90m20:27:04[39m] Finished '[36mbrowser-sync[39m' after [35m1.57 s[39m
+[[90m20:27:04[39m] Starting '[36mdefault[39m'...
+[[90m20:27:04[39m] Finished '[36mdefault[39m' after [35m51 μs[39m
+[[34mBrowsersync[39m] Proxying: [36mhttp://localhost:8888[39m
+[[34mBrowsersync[39m] [1mAccess URLs:[22m
+[90m ---------------------------------------------------[39m
+       Local: [35mhttp://localhost:3000/kin-athletics[39m
+    External: [35mhttp://192.168.1.70:3000/kin-athletics[39m
+[90m ---------------------------------------------------[39m
+          UI: [35mhttp://localhost:3001[39m
+ UI External: [35mhttp://192.168.1.70:3001[39m
+[90m ---------------------------------------------------[39m
+[[34mBrowsersync[39m] Watching files...
+[[90m20:30:27[39m] Starting '[36msass[39m'...
+[[90m20:30:27[39m] Finished '[36msass[39m' after [35m25 ms[39m
+[[90m20:30:27[39m] [36mgulp-notify[39m: [[34mGulp[39m] [31mError: sass/_find-us.scss
+Error: Invalid CSS after "  }": expected "}", was ".red-button a"
+        on line 98 of sass/_find-us.scss
+>>   }
+   ---^
+[39m
+[[90m20:30:27[39m] [36mgulp-notify[39m: [[34mError running notifier[39m] [31mCould not send message: spawn EACCES[39m
+[[90m20:30:29[39m] Starting '[36msass[39m'...
+[[90m20:30:29[39m] Finished '[36msass[39m' after [35m4.02 ms[39m
+[[90m20:30:29[39m] [36mgulp-notify[39m: [[34mGulp[39m] [31mError: sass/_find-us.scss
+Error: Invalid CSS after "  }": expected "}", was ".red-button a"
+        on line 98 of sass/_find-us.scss
+>>   }
+   ---^
+[39m
+[[90m20:30:29[39m] [36mgulp-notify[39m: [[34mError running notifier[39m] [31mCould not send message: spawn EACCES[39m
+[[90m20:30:31[39m] Starting '[36msass[39m'...
+[[90m20:30:31[39m] Finished '[36msass[39m' after [35m1.8 ms[39m
+[[90m20:30:31[39m] [36mgulp-notify[39m: [[34mGulp[39m] [31mError: sass/_find-us.scss
+Error: Invalid CSS after "  }": expected "}", was ".red-button a"
+        on line 98 of sass/_find-us.scss
+>>   }
+   ---^
+[39m
+[[90m20:30:31[39m] [36mgulp-notify[39m: [[34mError running notifier[39m] [31mCould not send message: spawn EACCES[39m
+[[90m20:30:35[39m] Starting '[36msass[39m'...
+[[90m20:30:35[39m] Finished '[36msass[39m' after [35m1.3 ms[39m
+[[90m20:30:35[39m] [36mgulp-notify[39m: [[34mGulp[39m] [31mError: sass/_find-us.scss
+Error: Invalid CSS after "  }": expected "}", was ".red-button a"
+        on line 98 of sass/_find-us.scss
+>>   }
+   ---^
+[39m
+[[90m20:30:35[39m] [36mgulp-notify[39m: [[34mError running notifier[39m] [31mCould not send message: spawn EACCES[39m
+[[90m20:30:40[39m] Starting '[36msass[39m'...
+[[90m20:30:40[39m] Finished '[36msass[39m' after [35m3.25 ms[39m
+[[90m20:30:40[39m] [36mgulp-notify[39m: [[34mGulp[39m] [31mError: sass/_find-us.scss
+Error: Invalid CSS after "  }": expected "}", was ".red-button a"
+        on line 98 of sass/_find-us.scss
+>>   }
+   ---^
+[39m
+[[90m20:30:40[39m] [36mgulp-notify[39m: [[34mError running notifier[39m] [31mCould not send message: spawn EACCES[39m
+[[90m20:30:54[39m] Starting '[36msass[39m'...
+[[90m20:30:54[39m] Finished '[36msass[39m' after [35m2.12 ms[39m
+[[90m20:30:54[39m] [36mgulp-notify[39m: [[34mGulp[39m] [31mError: sass/_find-us.scss
+Error: Invalid CSS after "}": expected "}", was ""
+        on line 106 of sass/_find-us.scss
+>> }
+   ^
+[39m
+[[90m20:30:54[39m] [36mgulp-notify[39m: [[34mError running notifier[39m] [31mCould not send message: spawn EACCES[39m
+[[90m20:30:57[39m] Starting '[36msass[39m'...
+[[90m20:30:57[39m] Finished '[36msass[39m' after [35m1.38 ms[39m
+[[90m20:30:57[39m] [36mgulp-notify[39m: [[34mGulp[39m] [31mError: sass/_find-us.scss
+Error: Invalid CSS after "}": expected "}", was ""
+        on line 106 of sass/_find-us.scss
+>> }
+   ^
+[39m
+[[90m20:30:57[39m] [36mgulp-notify[39m: [[34mError running notifier[39m] [31mCould not send message: spawn EACCES[39m
+[[90m20:31:10[39m] Starting '[36msass[39m'...
+[[90m20:31:10[39m] Finished '[36msass[39m' after [35m2.04 ms[39m
+[[34mBrowsersync[39m] [36mFile event [change] : [39m[35mbuild/css/style.min.css[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[90m20:31:52[39m] Starting '[36msass[39m'...
+[[90m20:31:52[39m] Finished '[36msass[39m' after [35m13 ms[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mFile event [change] : [39m[35mbuild/css/style.min.css[39m
+[[90m20:31:54[39m] Starting '[36msass[39m'...
+[[90m20:31:54[39m] Finished '[36msass[39m' after [35m2.46 ms[39m
+[[90m20:31:54[39m] [36mgulp-notify[39m: [[34mGulp[39m] [31mError: sass/_find-us.scss
+Error: Invalid CSS after "@include desktop {": expected "}", was "{"
+        on line 103 of sass/_find-us.scss
+>> @include desktop {
+   ------------------^
+[39m
+[[90m20:31:54[39m] [36mgulp-notify[39m: [[34mError running notifier[39m] [31mCould not send message: spawn EACCES[39m
+[[90m20:32:09[39m] Starting '[36msass[39m'...
+[[90m20:32:09[39m] Finished '[36msass[39m' after [35m2.46 ms[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mFile event [change] : [39m[35mbuild/css/style.min.css[39m
+[[90m20:32:12[39m] Starting '[36msass[39m'...
+[[90m20:32:12[39m] Finished '[36msass[39m' after [35m3.38 ms[39m
+[[34mBrowsersync[39m] [36mFile event [change] : [39m[35mbuild/css/style.min.css[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[90m20:32:17[39m] Starting '[36msass[39m'...
+[[90m20:32:17[39m] Finished '[36msass[39m' after [35m3.36 ms[39m
+[[34mBrowsersync[39m] [36mFile event [change] : [39m[35mbuild/css/style.min.css[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[90m20:32:20[39m] Starting '[36msass[39m'...
+[[90m20:32:20[39m] Finished '[36msass[39m' after [35m4.08 ms[39m
+[[34mBrowsersync[39m] [36mFile event [change] : [39m[35mbuild/css/style.min.css[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[90m20:33:01[39m] Starting '[36msass[39m'...
+[[90m20:33:01[39m] Finished '[36msass[39m' after [35m2.67 ms[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mFile event [change] : [39m[35mbuild/css/style.min.css[39m
+[[90m20:33:10[39m] Starting '[36msass[39m'...
+[[90m20:33:10[39m] Finished '[36msass[39m' after [35m1.71 ms[39m
+[[34mBrowsersync[39m] [36mFile event [change] : [39m[35mbuild/css/style.min.css[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[90m20:34:01[39m] Starting '[36msass[39m'...
+[[90m20:34:01[39m] Finished '[36msass[39m' after [35m2.96 ms[39m
+[[90m20:34:01[39m] [36mgulp-notify[39m: [[34mGulp[39m] [31mError: sass/_find-us.scss
+Error: Invalid CSS after "@include desktop {": expected "}", was "..white-title h3 {"
+        on line 103 of sass/_find-us.scss
+>> @include desktop {
+   ------------------^
+[39m
+[[90m20:34:01[39m] [36mgulp-notify[39m: [[34mError running notifier[39m] [31mCould not send message: spawn EACCES[39m
+[[90m20:34:03[39m] Starting '[36msass[39m'...
+[[90m20:34:03[39m] Finished '[36msass[39m' after [35m1.58 ms[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mFile event [change] : [39m[35mbuild/css/style.min.css[39m
+[[90m20:34:06[39m] Starting '[36msass[39m'...
+[[90m20:34:06[39m] Finished '[36msass[39m' after [35m2.86 ms[39m
+[[34mBrowsersync[39m] [36mFile event [change] : [39m[35mbuild/css/style.min.css[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[90m20:34:08[39m] Starting '[36msass[39m'...
+[[90m20:34:08[39m] Finished '[36msass[39m' after [35m1.4 ms[39m
+[[34mBrowsersync[39m] [36mFile event [change] : [39m[35mbuild/css/style.min.css[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[90m20:35:42[39m] Starting '[36msass[39m'...
+[[90m20:35:42[39m] Finished '[36msass[39m' after [35m3.65 ms[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mFile event [change] : [39m[35mbuild/css/style.min.css[39m
+[[90m20:35:43[39m] Starting '[36msass[39m'...
+[[90m20:35:43[39m] Finished '[36msass[39m' after [35m2.4 ms[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mFile event [change] : [39m[35mbuild/css/style.min.css[39m
+[[90m20:35:45[39m] Starting '[36msass[39m'...
+[[90m20:35:45[39m] Finished '[36msass[39m' after [35m4.09 ms[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mFile event [change] : [39m[35mbuild/css/style.min.css[39m
+[[90m20:35:47[39m] Starting '[36msass[39m'...
+[[90m20:35:47[39m] Finished '[36msass[39m' after [35m1.26 ms[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mFile event [change] : [39m[35mbuild/css/style.min.css[39m
+[[90m20:51:03[39m] Starting '[36msass[39m'...
+[[90m20:51:03[39m] Finished '[36msass[39m' after [35m18 ms[39m
+[[90m20:51:03[39m] [36mgulp-notify[39m: [[34mGulp[39m] [31mError: sass/_find-us.scss
+Error: Invalid CSS after "@include desktop {": expected "}", was "{"
+        on line 103 of sass/_find-us.scss
+>> @include desktop {
+   ------------------^
+[39m
+[[90m20:51:03[39m] [36mgulp-notify[39m: [[34mError running notifier[39m] [31mCould not send message: spawn EACCES[39m
+[[90m20:51:05[39m] Starting '[36msass[39m'...
+[[90m20:51:05[39m] Finished '[36msass[39m' after [35m2.3 ms[39m
+[[90m20:51:05[39m] [36mgulp-notify[39m: [[34mGulp[39m] [31mError: sass/_find-us.scss
+Error: property "h3" must be followed by a ':'
+        on line 104 of sass/_find-us.scss
+>>   h3. {
+   --^
+[39m
+[[90m20:51:05[39m] [36mgulp-notify[39m: [[34mError running notifier[39m] [31mCould not send message: spawn EACCES[39m
+[[90m20:51:07[39m] Starting '[36msass[39m'...
+[[90m20:51:07[39m] Finished '[36msass[39m' after [35m4.39 ms[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mFile event [change] : [39m[35mbuild/css/style.min.css[39m
+[[90m20:51:08[39m] Starting '[36msass[39m'...
+[[90m20:51:08[39m] Finished '[36msass[39m' after [35m2.91 ms[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mFile event [change] : [39m[35mbuild/css/style.min.css[39m
+[[90m20:51:12[39m] Starting '[36msass[39m'...
+[[90m20:51:12[39m] Finished '[36msass[39m' after [35m2.98 ms[39m
+[[90m20:51:12[39m] [36mgulp-notify[39m: [[34mGulp[39m] [31mError: sass/_find-us.scss
+Error: property "h3" must be followed by a ':'
+        on line 104 of sass/_find-us.scss
+>>   h3.find-us. {
+   --^
+[39m
+[[90m20:51:12[39m] [36mgulp-notify[39m: [[34mError running notifier[39m] [31mCould not send message: spawn EACCES[39m
+[[90m20:51:26[39m] Starting '[36msass[39m'...
+[[90m20:51:26[39m] Finished '[36msass[39m' after [35m1.4 ms[39m
+[[34mBrowsersync[39m] [36mFile event [change] : [39m[35mbuild/css/style.min.css[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[90m20:51:27[39m] Starting '[36msass[39m'...
+[[90m20:51:27[39m] Finished '[36msass[39m' after [35m884 μs[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mFile event [change] : [39m[35mbuild/css/style.min.css[39m
+[[90m20:51:46[39m] Starting '[36msass[39m'...
+[[90m20:51:46[39m] Finished '[36msass[39m' after [35m1.11 ms[39m
+[[90m20:51:46[39m] [36mgulp-notify[39m: [[34mGulp[39m] [31mError: sass/_find-us.scss
+Error: Invalid CSS after "  }": expected selector or at-rule, was "}"
+        on line 106 of sass/_find-us.scss
+>>   }
+   ---^
+[39m
+[[90m20:51:46[39m] [36mgulp-notify[39m: [[34mError running notifier[39m] [31mCould not send message: spawn EACCES[39m
+[[90m20:51:59[39m] Starting '[36msass[39m'...
+[[90m20:51:59[39m] Finished '[36msass[39m' after [35m1.15 ms[39m
+[[90m20:51:59[39m] [36mgulp-notify[39m: [[34mGulp[39m] [31mError: sass/_find-us.scss
+Error: Invalid CSS after "}": expected selector or at-rule, was "}"
+        on line 101 of sass/_find-us.scss
+>> }
+   -^
+[39m
+[[90m20:51:59[39m] [36mgulp-notify[39m: [[34mError running notifier[39m] [31mCould not send message: spawn EACCES[39m
+[[90m20:52:02[39m] Starting '[36msass[39m'...
+[[90m20:52:02[39m] Finished '[36msass[39m' after [35m2.02 ms[39m
+[[34mBrowsersync[39m] [36mFile event [change] : [39m[35mbuild/css/style.min.css[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[90m20:52:07[39m] Starting '[36msass[39m'...
+[[90m20:52:07[39m] Finished '[36msass[39m' after [35m2.59 ms[39m
+[[90m20:52:07[39m] [36mgulp-notify[39m: [[34mGulp[39m] [31mError: sass/_find-us.scss
+Error: Invalid CSS after "h3": expected "{", was ""
+        on line 103 of sass/_find-us.scss
+>> h3
+   ^
+[39m
+[[90m20:52:07[39m] [36mgulp-notify[39m: [[34mError running notifier[39m] [31mCould not send message: spawn EACCES[39m
+[[90m20:52:12[39m] Starting '[36msass[39m'...
+[[90m20:52:12[39m] Finished '[36msass[39m' after [35m1.17 ms[39m
+[[90m20:52:12[39m] [36mgulp-notify[39m: [[34mGulp[39m] [31mError: sass/_find-us.scss
+Error: Invalid CSS after "}": expected 1 selector or at-rule, was "h3.find-us."
+        on line 101 of sass/_find-us.scss
+>> }
+   -^
+[39m
+[[90m20:52:12[39m] [36mgulp-notify[39m: [[34mError running notifier[39m] [31mCould not send message: spawn EACCES[39m
+[[90m20:52:25[39m] Starting '[36msass[39m'...
+[[90m20:52:25[39m] Finished '[36msass[39m' after [35m1.38 ms[39m
+[[90m20:52:25[39m] [36mgulp-notify[39m: [[34mGulp[39m] [31mError: sass/_find-us.scss
+Error: Invalid CSS after "...-us.white-title": expected "{", was ""
+        on line 103 of sass/_find-us.scss
+>> h3.find-us.white-title
+   ----------^
+[39m
+[[90m20:52:25[39m] [36mgulp-notify[39m: [[34mError running notifier[39m] [31mCould not send message: spawn EACCES[39m
+[[90m20:52:28[39m] Starting '[36msass[39m'...
+[[90m20:52:28[39m] Finished '[36msass[39m' after [35m1.44 ms[39m
+[[34mBrowsersync[39m] [36mFile event [change] : [39m[35mbuild/css/style.min.css[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[90m20:52:34[39m] Starting '[36msass[39m'...
+[[90m20:52:34[39m] Finished '[36msass[39m' after [35m2.21 ms[39m
+[[90m20:52:34[39m] [36mgulp-notify[39m: [[34mGulp[39m] [31mError: sass/_find-us.scss
+Error: property "f" must be followed by a ':'
+        on line 104 of sass/_find-us.scss
+>>   f
+   --^
+[39m
+[[90m20:52:34[39m] [36mgulp-notify[39m: [[34mError running notifier[39m] [31mCould not send message: spawn EACCES[39m
+[[90m20:52:36[39m] Starting '[36msass[39m'...
+[[90m20:52:36[39m] Finished '[36msass[39m' after [35m1.22 ms[39m
+[[90m20:52:36[39m] [36mgulp-notify[39m: [[34mGulp[39m] [31mError: sass/_find-us.scss
+Error: property "font" must be followed by a ':'
+        on line 104 of sass/_find-us.scss
+>>   font
+   --^
+[39m
+[[90m20:52:36[39m] [36mgulp-notify[39m: [[34mError running notifier[39m] [31mCould not send message: spawn EACCES[39m
+[[90m20:52:38[39m] Starting '[36msass[39m'...
+[[90m20:52:38[39m] Finished '[36msass[39m' after [35m1.41 ms[39m
+[[90m20:52:38[39m] [36mgulp-notify[39m: [[34mGulp[39m] [31mError: sass/_find-us.scss
+Error: Invalid CSS after "  font-size:": expected expression (e.g. 1px, bold), was "}"
+        on line 104 of sass/_find-us.scss
+>>   font-size: 
+   ------------^
+[39m
+[[90m20:52:38[39m] [36mgulp-notify[39m: [[34mError running notifier[39m] [31mCould not send message: spawn EACCES[39m
+[[90m20:52:42[39m] Starting '[36msass[39m'...
+[[90m20:52:42[39m] Finished '[36msass[39m' after [35m1.6 ms[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mFile event [change] : [39m[35mbuild/css/style.min.css[39m
+[[90m20:52:50[39m] Starting '[36msass[39m'...
+[[90m20:52:50[39m] Finished '[36msass[39m' after [35m2.35 ms[39m
+[[34mBrowsersync[39m] [36mFile event [change] : [39m[35mbuild/css/style.min.css[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[90m20:52:57[39m] Starting '[36msass[39m'...
+[[90m20:52:57[39m] Finished '[36msass[39m' after [35m1.39 ms[39m
+[[34mBrowsersync[39m] [36mFile event [change] : [39m[35mbuild/css/style.min.css[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[90m20:52:59[39m] Starting '[36msass[39m'...
+[[90m20:52:59[39m] Finished '[36msass[39m' after [35m3.52 ms[39m
+[[90m20:52:59[39m] [36mgulp-notify[39m: [[34mGulp[39m] [31mError: sass/_find-us.scss
+Error: Invalid CSS after "}": expected "}", was ""
+        on line 106 of sass/_find-us.scss
+>> }
+   ^
+[39m
+[[90m20:52:59[39m] [36mgulp-notify[39m: [[34mError running notifier[39m] [31mCould not send message: spawn EACCES[39m
+[[90m20:53:01[39m] Starting '[36msass[39m'...
+[[90m20:53:01[39m] Finished '[36msass[39m' after [35m6.35 ms[39m
+[[90m20:53:01[39m] [36mgulp-notify[39m: [[34mGulp[39m] [31mError: sass/_find-us.scss
+Error: Invalid CSS after "}": expected "}", was ""
+        on line 106 of sass/_find-us.scss
+>> }
+   -^
+[39m
+[[90m20:53:01[39m] [36mgulp-notify[39m: [[34mError running notifier[39m] [31mCould not send message: spawn EACCES[39m
+[[90m20:53:02[39m] Starting '[36msass[39m'...
+[[90m20:53:02[39m] Finished '[36msass[39m' after [35m1.66 ms[39m
+[[34mBrowsersync[39m] [36mFile event [change] : [39m[35mbuild/css/style.min.css[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[90m20:53:03[39m] Starting '[36msass[39m'...
+[[90m20:53:03[39m] Finished '[36msass[39m' after [35m1.12 ms[39m
+[[34mBrowsersync[39m] [36mFile event [change] : [39m[35mbuild/css/style.min.css[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[90m20:53:25[39m] Starting '[36msass[39m'...
+[[90m20:53:25[39m] Finished '[36msass[39m' after [35m4.75 ms[39m
+[[34mBrowsersync[39m] [36mFile event [change] : [39m[35mbuild/css/style.min.css[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[90m20:53:41[39m] Starting '[36msass[39m'...
+[[90m20:53:41[39m] Finished '[36msass[39m' after [35m1.79 ms[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mFile event [change] : [39m[35mbuild/css/style.min.css[39m
+[[90m20:53:45[39m] Starting '[36msass[39m'...
+[[90m20:53:45[39m] Finished '[36msass[39m' after [35m2.65 ms[39m
+[[34mBrowsersync[39m] [36mFile event [change] : [39m[35mbuild/css/style.min.css[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[90m20:53:47[39m] Starting '[36msass[39m'...
+[[90m20:53:47[39m] Finished '[36msass[39m' after [35m1.79 ms[39m
+[[34mBrowsersync[39m] [36mFile event [change] : [39m[35mbuild/css/style.min.css[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[90m20:53:53[39m] Starting '[36msass[39m'...
+[[90m20:53:53[39m] Finished '[36msass[39m' after [35m2.05 ms[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mFile event [change] : [39m[35mbuild/css/style.min.css[39m
+[[90m20:54:11[39m] Starting '[36msass[39m'...
+[[90m20:54:11[39m] Finished '[36msass[39m' after [35m1.49 ms[39m
+[[34mBrowsersync[39m] [36mFile event [change] : [39m[35mbuild/css/style.min.css[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[90m20:54:13[39m] Starting '[36msass[39m'...
+[[90m20:54:13[39m] Finished '[36msass[39m' after [35m2.05 ms[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mFile event [change] : [39m[35mbuild/css/style.min.css[39m
+[[90m20:54:16[39m] Starting '[36msass[39m'...
+[[90m20:54:16[39m] Finished '[36msass[39m' after [35m909 μs[39m
+[[34mBrowsersync[39m] [36mFile event [change] : [39m[35mbuild/css/style.min.css[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[90m20:54:29[39m] Starting '[36msass[39m'...
+[[90m20:54:29[39m] Finished '[36msass[39m' after [35m2.68 ms[39m
+[[34mBrowsersync[39m] [36mFile event [change] : [39m[35mbuild/css/style.min.css[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[90m20:54:31[39m] Starting '[36msass[39m'...
+[[90m20:54:31[39m] Finished '[36msass[39m' after [35m2 ms[39m
+[[34mBrowsersync[39m] [36mFile event [change] : [39m[35mbuild/css/style.min.css[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[90m20:54:32[39m] Starting '[36msass[39m'...
+[[90m20:54:32[39m] Finished '[36msass[39m' after [35m928 μs[39m
+[[34mBrowsersync[39m] [36mFile event [change] : [39m[35mbuild/css/style.min.css[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[90m20:54:34[39m] Starting '[36msass[39m'...
+[[90m20:54:34[39m] Finished '[36msass[39m' after [35m1.42 ms[39m
+[[34mBrowsersync[39m] [36mFile event [change] : [39m[35mbuild/css/style.min.css[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[90m20:54:42[39m] Starting '[36msass[39m'...
+[[90m20:54:42[39m] Finished '[36msass[39m' after [35m959 μs[39m
+[[34mBrowsersync[39m] [36mFile event [change] : [39m[35mbuild/css/style.min.css[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[90m20:55:48[39m] Starting '[36msass[39m'...
+[[90m20:55:48[39m] Finished '[36msass[39m' after [35m15 ms[39m
+[[34mBrowsersync[39m] [36mFile event [change] : [39m[35mbuild/css/style.min.css[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[90m20:55:50[39m] Starting '[36msass[39m'...
+[[90m20:55:50[39m] Finished '[36msass[39m' after [35m2 ms[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mFile event [change] : [39m[35mbuild/css/style.min.css[39m
+[[90m20:55:54[39m] Starting '[36msass[39m'...
+[[90m20:55:54[39m] Finished '[36msass[39m' after [35m1.6 ms[39m
+[[90m20:55:54[39m] [36mgulp-notify[39m: [[34mGulp[39m] [31mError: sass/_find-us.scss
+Error: Invalid CSS after "    height:": expected expression (e.g. 1px, bold), was "}"
+        on line 98 of sass/_find-us.scss
+>>     height: 
+   -----------^
+[39m
+[[90m20:55:54[39m] [36mgulp-notify[39m: [[34mError running notifier[39m] [31mCould not send message: spawn EACCES[39m
+[[90m20:55:55[39m] Starting '[36msass[39m'...
+[[90m20:55:55[39m] Finished '[36msass[39m' after [35m1.13 ms[39m
+[[34mBrowsersync[39m] [36mFile event [change] : [39m[35mbuild/css/style.min.css[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[90m20:55:58[39m] Starting '[36msass[39m'...
+[[90m20:55:58[39m] Finished '[36msass[39m' after [35m1.3 ms[39m
+[[34mBrowsersync[39m] [36mFile event [change] : [39m[35mbuild/css/style.min.css[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[90m20:56:19[39m] Starting '[36msass[39m'...
+[[90m20:56:19[39m] Finished '[36msass[39m' after [35m2.16 ms[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mFile event [change] : [39m[35mbuild/css/style.min.css[39m
+[[90m20:56:26[39m] Starting '[36msass[39m'...
+[[90m20:56:26[39m] Finished '[36msass[39m' after [35m1.57 ms[39m
+[[90m20:56:26[39m] [36mgulp-notify[39m: [[34mGulp[39m] [31mError: sass/_find-us.scss
+Error: most def after "  @in", was: ""
+        on line 110 of sass/_find-us.scss
+>>   @in
+   --^
+[39m
+[[90m20:56:26[39m] [36mgulp-notify[39m: [[34mError running notifier[39m] [31mCould not send message: spawn EACCES[39m
+[[90m20:56:27[39m] Starting '[36msass[39m'...
+[[90m20:56:27[39m] Finished '[36msass[39m' after [35m1.09 ms[39m
+[[90m20:56:27[39m] [36mgulp-notify[39m: [[34mGulp[39m] [31mError: sass/_find-us.scss
+Error: most def after "  @i", was: ""
+        on line 110 of sass/_find-us.scss
+>>   @i
+   --^
+[39m
+[[90m20:56:27[39m] [36mgulp-notify[39m: [[34mError running notifier[39m] [31mCould not send message: spawn EACCES[39m
+[[90m20:56:30[39m] Starting '[36msass[39m'...
+[[90m20:56:30[39m] Finished '[36msass[39m' after [35m1.11 ms[39m
+[[90m20:56:30[39m] [36mgulp-notify[39m: [[34mGulp[39m] [31mError: sass/_find-us.scss
+Error: most def after "  @includ", was: ""
+        on line 110 of sass/_find-us.scss
+>>   @includ
+   --^
+[39m
+[[90m20:56:30[39m] [36mgulp-notify[39m: [[34mError running notifier[39m] [31mCould not send message: spawn EACCES[39m
+[[90m20:56:34[39m] Starting '[36msass[39m'...
+[[90m20:56:34[39m] Finished '[36msass[39m' after [35m1.73 ms[39m
+[[34mBrowsersync[39m] [36mFile event [change] : [39m[35mbuild/css/style.min.css[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[90m20:56:35[39m] Starting '[36msass[39m'...
+[[90m20:56:35[39m] Finished '[36msass[39m' after [35m2.16 ms[39m
+[[34mBrowsersync[39m] [36mFile event [change] : [39m[35mbuild/css/style.min.css[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[90m20:56:39[39m] Starting '[36msass[39m'...
+[[90m20:56:39[39m] Finished '[36msass[39m' after [35m1.28 ms[39m
+[[90m20:56:39[39m] [36mgulp-notify[39m: [[34mGulp[39m] [31mError: sass/_find-us.scss
+Error: Invalid CSS after "...clude desktop {": expected "}", was ".red-button "
+        on line 110 of sass/_find-us.scss
+>>   @include desktop {
+   --------------------^
+[39m
+[[90m20:56:39[39m] [36mgulp-notify[39m: [[34mError running notifier[39m] [31mCould not send message: spawn EACCES[39m
+[[90m20:56:41[39m] Starting '[36msass[39m'...
+[[90m20:56:41[39m] Finished '[36msass[39m' after [35m1.43 ms[39m
+[[90m20:56:41[39m] [36mgulp-notify[39m: [[34mGulp[39m] [31mError: sass/_find-us.scss
+Error: Invalid CSS after "...clude desktop {": expected "}", was ".red-button s"
+        on line 110 of sass/_find-us.scss
+>>   @include desktop {
+   --------------------^
+[39m
+[[90m20:56:41[39m] [36mgulp-notify[39m: [[34mError running notifier[39m] [31mCould not send message: spawn EACCES[39m
+[[90m20:56:42[39m] Starting '[36msass[39m'...
+[[90m20:56:42[39m] Finished '[36msass[39m' after [35m933 μs[39m
+[[90m20:56:42[39m] [36mgulp-notify[39m: [[34mGulp[39m] [31mError: sass/_find-us.scss
+Error: Invalid CSS after "...clude desktop {": expected "}", was ".red-button soc"
+        on line 110 of sass/_find-us.scss
+>>   @include desktop {
+   --------------------^
+[39m
+[[90m20:56:42[39m] [36mgulp-notify[39m: [[34mError running notifier[39m] [31mCould not send message: spawn EACCES[39m
+[[90m20:56:43[39m] Starting '[36msass[39m'...
+[[90m20:56:43[39m] Finished '[36msass[39m' after [35m2.12 ms[39m
+[[90m20:56:43[39m] [36mgulp-notify[39m: [[34mGulp[39m] [31mError: sass/_find-us.scss
+Error: Invalid CSS after "...clude desktop {": expected "}", was ".red-button so"
+        on line 110 of sass/_find-us.scss
+>>   @include desktop {
+   --------------------^
+[39m
+[[90m20:56:43[39m] [36mgulp-notify[39m: [[34mError running notifier[39m] [31mCould not send message: spawn EACCES[39m
+[[90m20:56:45[39m] Starting '[36msass[39m'...
+[[90m20:56:45[39m] Finished '[36msass[39m' after [35m950 μs[39m
+[[90m20:56:45[39m] [36mgulp-notify[39m: [[34mGulp[39m] [31mError: sass/_find-us.scss
+Error: Invalid CSS after "...clude desktop {": expected "}", was ".red-button s"
+        on line 110 of sass/_find-us.scss
+>>   @include desktop {
+   --------------------^
+[39m
+[[90m20:56:45[39m] [36mgulp-notify[39m: [[34mError running notifier[39m] [31mCould not send message: spawn EACCES[39m
+[[90m20:56:46[39m] Starting '[36msass[39m'...
+[[90m20:56:46[39m] Finished '[36msass[39m' after [35m4.92 ms[39m
+[[90m20:56:46[39m] [36mgulp-notify[39m: [[34mGulp[39m] [31mError: sass/_find-us.scss
+Error: Invalid CSS after "...clude desktop {": expected "}", was ".red-button "
+        on line 110 of sass/_find-us.scss
+>>   @include desktop {
+   --------------------^
+[39m
+[[90m20:56:46[39m] [36mgulp-notify[39m: [[34mError running notifier[39m] [31mCould not send message: spawn EACCES[39m
+[[90m20:57:13[39m] Starting '[36msass[39m'...
+[[90m20:57:13[39m] Finished '[36msass[39m' after [35m6.18 ms[39m
+[[90m20:57:13[39m] [36mgulp-notify[39m: [[34mGulp[39m] [31mError: sass/_find-us.scss
+Error: Invalid CSS after "...clude desktop {": expected "}", was ".red-button soc"
+        on line 110 of sass/_find-us.scss
+>>   @include desktop {
+   --------------------^
+[39m
+[[90m20:57:13[39m] [36mgulp-notify[39m: [[34mError running notifier[39m] [31mCould not send message: spawn EACCES[39m
+[[90m20:57:17[39m] Starting '[36msass[39m'...
+[[90m20:57:17[39m] Finished '[36msass[39m' after [35m1.39 ms[39m
+[[90m20:57:17[39m] [36mgulp-notify[39m: [[34mGulp[39m] [31mError: sass/_find-us.scss
+Error: Invalid CSS after "...clude desktop {": expected "}", was ".red-button social-"
+        on line 110 of sass/_find-us.scss
+>>   @include desktop {
+   --------------------^
+[39m
+[[90m20:57:17[39m] [36mgulp-notify[39m: [[34mError running notifier[39m] [31mCould not send message: spawn EACCES[39m
+[[90m20:57:18[39m] Starting '[36msass[39m'...
+[[90m20:57:18[39m] Finished '[36msass[39m' after [35m1.53 ms[39m
+[[90m20:57:18[39m] [36mgulp-notify[39m: [[34mGulp[39m] [31mError: sass/_find-us.scss
+Error: Invalid CSS after "...clude desktop {": expected "}", was ".red-button social-"
+        on line 110 of sass/_find-us.scss
+>>   @include desktop {
+   --------------------^
+[39m
+[[90m20:57:18[39m] [36mgulp-notify[39m: [[34mError running notifier[39m] [31mCould not send message: spawn EACCES[39m
+[[90m20:57:22[39m] Starting '[36msass[39m'...
+[[90m20:57:22[39m] Finished '[36msass[39m' after [35m1.41 ms[39m
+[[90m20:57:22[39m] [36mgulp-notify[39m: [[34mGulp[39m] [31mError: sass/_find-us.scss
+Error: Invalid CSS after "...clude desktop {": expected "}", was ".red-button .social"
+        on line 110 of sass/_find-us.scss
+>>   @include desktop {
+   --------------------^
+[39m
+[[90m20:57:22[39m] [36mgulp-notify[39m: [[34mError running notifier[39m] [31mCould not send message: spawn EACCES[39m
+[[90m20:57:30[39m] Starting '[36msass[39m'...
+[[90m20:57:30[39m] Finished '[36msass[39m' after [35m4.67 ms[39m
+[[34mBrowsersync[39m] [36mFile event [change] : [39m[35mbuild/css/style.min.css[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[90m20:57:32[39m] Starting '[36msass[39m'...
+[[90m20:57:32[39m] Finished '[36msass[39m' after [35m2.19 ms[39m
+[[90m20:57:32[39m] [36mgulp-notify[39m: [[34mGulp[39m] [31mError: sass/_find-us.scss
+Error: property "fon" must be followed by a ':'
+        on line 112 of sass/_find-us.scss
+>>       fon
+   ------^
+[39m
+[[90m20:57:32[39m] [36mgulp-notify[39m: [[34mError running notifier[39m] [31mCould not send message: spawn EACCES[39m
+[[90m20:57:34[39m] Starting '[36msass[39m'...
+[[90m20:57:34[39m] Finished '[36msass[39m' after [35m2.15 ms[39m
+[[90m20:57:34[39m] [36mgulp-notify[39m: [[34mGulp[39m] [31mError: sass/_find-us.scss
+Error: Invalid CSS after "      font-size:": expected expression (e.g. 1px, bold), was "}"
+        on line 112 of sass/_find-us.scss
+>>       font-size: 
+   ----------------^
+[39m
+[[90m20:57:34[39m] [36mgulp-notify[39m: [[34mError running notifier[39m] [31mCould not send message: spawn EACCES[39m
+[[90m20:57:57[39m] Starting '[36msass[39m'...
+[[90m20:57:57[39m] Finished '[36msass[39m' after [35m1.5 ms[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mFile event [change] : [39m[35mbuild/css/style.min.css[39m
+[[90m20:58:12[39m] Starting '[36msass[39m'...
+[[90m20:58:12[39m] Finished '[36msass[39m' after [35m1.44 ms[39m
+[[90m20:58:12[39m] [36mgulp-notify[39m: [[34mGulp[39m] [31mError: sass/_find-us.scss
+Error: Invalid CSS after "...clude desktop {": expected "}", was ".red-button .so"
+        on line 110 of sass/_find-us.scss
+>>   @include desktop {
+   --------------------^
+[39m
+[[90m20:58:12[39m] [36mgulp-notify[39m: [[34mError running notifier[39m] [31mCould not send message: spawn EACCES[39m
+[[90m21:07:04[39m] Starting '[36msass[39m'...
+[[90m21:07:04[39m] Finished '[36msass[39m' after [35m3.82 ms[39m
+[[90m21:07:04[39m] [36mgulp-notify[39m: [[34mGulp[39m] [31mError: sass/_find-us.scss
+Error: Invalid CSS after "}": expected selector or at-rule, was "}"
+        on line 108 of sass/_find-us.scss
+>> }
+   -^
+[39m
+[[90m21:07:04[39m] [36mgulp-notify[39m: [[34mError running notifier[39m] [31mCould not send message: spawn EACCES[39m
+[[90m21:07:07[39m] Starting '[36msass[39m'...
+[[90m21:07:07[39m] Finished '[36msass[39m' after [35m2.52 ms[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mFile event [change] : [39m[35mbuild/css/style.min.css[39m
+[[90m21:10:03[39m] Starting '[36msass[39m'...
+[[90m21:10:03[39m] Finished '[36msass[39m' after [35m16 ms[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mFile event [change] : [39m[35mbuild/css/style.min.css[39m
+[[90m21:10:05[39m] Starting '[36msass[39m'...
+[[90m21:10:05[39m] Finished '[36msass[39m' after [35m1.81 ms[39m
+[[90m21:10:05[39m] [36mgulp-notify[39m: [[34mGulp[39m] [31mError: sass/_find-us.scss
+Error: Invalid CSS after "...-align: center;": expected "}", was "@"
+        on line 36 of sass/_find-us.scss
+>>     text-align: center;
+   ------------------------^
+[39m
+[[90m21:10:05[39m] [36mgulp-notify[39m: [[34mError running notifier[39m] [31mCould not send message: spawn EACCES[39m
+[[90m21:10:10[39m] Starting '[36msass[39m'...
+[[90m21:10:10[39m] Finished '[36msass[39m' after [35m1.62 ms[39m
+[[34mBrowsersync[39m] [36mFile event [change] : [39m[35mbuild/css/style.min.css[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[90m21:10:12[39m] Starting '[36msass[39m'...
+[[90m21:10:12[39m] Finished '[36msass[39m' after [35m1.67 ms[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mFile event [change] : [39m[35mbuild/css/style.min.css[39m
+[[90m21:10:33[39m] Starting '[36msass[39m'...
+[[90m21:10:33[39m] Finished '[36msass[39m' after [35m1.36 ms[39m
+[[90m21:10:33[39m] [36mgulp-notify[39m: [[34mGulp[39m] [31mError: sass/_find-us.scss
+Error: property "fon" must be followed by a ':'
+        on line 39 of sass/_find-us.scss
+>>       fon
+   ------^
+[39m
+[[90m21:10:33[39m] [36mgulp-notify[39m: [[34mError running notifier[39m] [31mCould not send message: spawn EACCES[39m
+[[90m21:10:35[39m] Starting '[36msass[39m'...
+[[90m21:10:35[39m] Finished '[36msass[39m' after [35m6.48 ms[39m
+[[90m21:10:35[39m] [36mgulp-notify[39m: [[34mGulp[39m] [31mError: sass/_find-us.scss
+Error: Invalid CSS after "      font-size:": expected expression (e.g. 1px, bold), was "}"
+        on line 39 of sass/_find-us.scss
+>>       font-size: 
+   ----------------^
+[39m
+[[90m21:10:35[39m] [36mgulp-notify[39m: [[34mError running notifier[39m] [31mCould not send message: spawn EACCES[39m
+[[90m21:10:40[39m] Starting '[36msass[39m'...
+[[90m21:10:40[39m] Finished '[36msass[39m' after [35m3.32 ms[39m
+[[34mBrowsersync[39m] [36mFile event [change] : [39m[35mbuild/css/style.min.css[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[90m21:10:41[39m] Starting '[36msass[39m'...
+[[90m21:10:41[39m] Finished '[36msass[39m' after [35m1.79 ms[39m
+[[34mBrowsersync[39m] [36mFile event [change] : [39m[35mbuild/css/style.min.css[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[90m21:11:09[39m] Starting '[36msass[39m'...
+[[90m21:11:09[39m] Finished '[36msass[39m' after [35m2.2 ms[39m
+[[34mBrowsersync[39m] [36mFile event [change] : [39m[35mbuild/css/style.min.css[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[90m21:13:07[39m] Starting '[36msass[39m'...
+[[90m21:13:07[39m] Finished '[36msass[39m' after [35m3.8 ms[39m
+[[34mBrowsersync[39m] [36mFile event [change] : [39m[35mbuild/css/style.min.css[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[90m21:13:15[39m] Starting '[36msass[39m'...
+[[90m21:13:15[39m] Finished '[36msass[39m' after [35m2.93 ms[39m
+[[34mBrowsersync[39m] [36mFile event [change] : [39m[35mbuild/css/style.min.css[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[90m21:15:32[39m] Starting '[36msass[39m'...
+[[90m21:15:32[39m] Finished '[36msass[39m' after [35m7.94 ms[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mFile event [change] : [39m[35mbuild/css/style.min.css[39m
+[[90m21:15:37[39m] Starting '[36msass[39m'...
+[[90m21:15:37[39m] Finished '[36msass[39m' after [35m3.43 ms[39m
+[[90m21:15:37[39m] [36mgulp-notify[39m: [[34mGulp[39m] [31mError: sass/_find-us.scss
+Error: property "a" must be followed by a ':'
+        on line 105 of sass/_find-us.scss
+>>     a
+   ----^
+[39m
+[[90m21:15:37[39m] [36mgulp-notify[39m: [[34mError running notifier[39m] [31mCould not send message: spawn EACCES[39m
+[[90m21:15:40[39m] Starting '[36msass[39m'...
+[[90m21:15:40[39m] Finished '[36msass[39m' after [35m1.75 ms[39m
+[[90m21:15:40[39m] [36mgulp-notify[39m: [[34mGulp[39m] [31mError: sass/_find-us.scss
+Error: property "a" must be followed by a ':'
+        on line 105 of sass/_find-us.scss
+>>     a 
+   ----^
+[39m
+[[90m21:15:40[39m] [36mgulp-notify[39m: [[34mError running notifier[39m] [31mCould not send message: spawn EACCES[39m
+[[90m21:15:43[39m] Starting '[36msass[39m'...
+[[90m21:15:43[39m] Finished '[36msass[39m' after [35m3.23 ms[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mFile event [change] : [39m[35mbuild/css/style.min.css[39m
+[[90m21:15:57[39m] Starting '[36msass[39m'...
+[[90m21:15:57[39m] Finished '[36msass[39m' after [35m1.64 ms[39m
+[[90m21:15:57[39m] [36mgulp-notify[39m: [[34mGulp[39m] [31mError: sass/_find-us.scss
+Error: property "fon" must be followed by a ':'
+        on line 107 of sass/_find-us.scss
+>>         fon
+   --------^
+[39m
+[[90m21:15:57[39m] [36mgulp-notify[39m: [[34mError running notifier[39m] [31mCould not send message: spawn EACCES[39m
+[[90m21:15:59[39m] Starting '[36msass[39m'...
+[[90m21:15:59[39m] Finished '[36msass[39m' after [35m3.05 ms[39m
+[[90m21:15:59[39m] [36mgulp-notify[39m: [[34mGulp[39m] [31mError: sass/_find-us.scss
+Error: Invalid CSS after "        font-size:": expected expression (e.g. 1px, bold), was "}"
+        on line 107 of sass/_find-us.scss
+>>         font-size: 
+   ------------------^
+[39m
+[[90m21:15:59[39m] [36mgulp-notify[39m: [[34mError running notifier[39m] [31mCould not send message: spawn EACCES[39m
+[[90m21:16:03[39m] Starting '[36msass[39m'...
+[[90m21:16:03[39m] Finished '[36msass[39m' after [35m1.62 ms[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mFile event [change] : [39m[35mbuild/css/style.min.css[39m
+[[90m21:16:12[39m] Starting '[36msass[39m'...
+[[90m21:16:12[39m] Finished '[36msass[39m' after [35m2.07 ms[39m
+[[34mBrowsersync[39m] [36mFile event [change] : [39m[35mbuild/css/style.min.css[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[90m21:16:24[39m] Starting '[36msass[39m'...
+[[90m21:16:24[39m] Finished '[36msass[39m' after [35m967 μs[39m
+[[34mBrowsersync[39m] [36mFile event [change] : [39m[35mbuild/css/style.min.css[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[90m21:16:52[39m] Starting '[36msass[39m'...
+[[90m21:16:52[39m] Finished '[36msass[39m' after [35m5.4 ms[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mFile event [change] : [39m[35mbuild/css/style.min.css[39m
+[[90m21:16:53[39m] Starting '[36msass[39m'...
+[[90m21:16:53[39m] Finished '[36msass[39m' after [35m3.87 ms[39m
+[[34mBrowsersync[39m] [36mFile event [change] : [39m[35mbuild/css/style.min.css[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[90m21:20:02[39m] Starting '[36msass[39m'...
+[[90m21:20:02[39m] Finished '[36msass[39m' after [35m5.83 ms[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mFile event [change] : [39m[35mbuild/css/style.min.css[39m
+[[90m21:20:04[39m] Starting '[36msass[39m'...
+[[90m21:20:04[39m] Finished '[36msass[39m' after [35m3.21 ms[39m
+[[34mBrowsersync[39m] [36mFile event [change] : [39m[35mbuild/css/style.min.css[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[90m21:20:05[39m] Starting '[36msass[39m'...
+[[90m21:20:05[39m] Finished '[36msass[39m' after [35m2.76 ms[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mFile event [change] : [39m[35mbuild/css/style.min.css[39m
+[[90m21:20:09[39m] Starting '[36msass[39m'...
+[[90m21:20:09[39m] Finished '[36msass[39m' after [35m1.77 ms[39m
+[[90m21:20:09[39m] [36mgulp-notify[39m: [[34mGulp[39m] [31mError: sass/_find-us.scss
+Error: Invalid CSS after "  }": expected "}", was ".find-us"
+        on line 110 of sass/_find-us.scss
+>>   }
+   ---^
+[39m
+[[90m21:20:09[39m] [36mgulp-notify[39m: [[34mError running notifier[39m] [31mCould not send message: spawn EACCES[39m
+[[90m21:20:11[39m] Starting '[36msass[39m'...
+[[90m21:20:11[39m] Finished '[36msass[39m' after [35m3.11 ms[39m
+[[34mBrowsersync[39m] [36mFile event [change] : [39m[35mbuild/css/style.min.css[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[90m21:20:15[39m] Starting '[36msass[39m'...
+[[90m21:20:15[39m] Finished '[36msass[39m' after [35m2.11 ms[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mFile event [change] : [39m[35mbuild/css/style.min.css[39m
+[[90m21:20:29[39m] Starting '[36msass[39m'...
+[[90m21:20:29[39m] Finished '[36msass[39m' after [35m1.05 ms[39m
+[[34mBrowsersync[39m] [36mFile event [change] : [39m[35mbuild/css/style.min.css[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[90m21:28:46[39m] Starting '[36msass[39m'...
+[[90m21:28:46[39m] Finished '[36msass[39m' after [35m18 ms[39m
+[[90m21:28:46[39m] [36mgulp-notify[39m: [[34mGulp[39m] [31mError: sass/_find-us.scss
+Error: no mixin named d
+
+       Backtrace:
+       	sass/_find-us.scss:121
+        on line 121 of sass/_find-us.scss
+>> @include d
+   ---------^
+[39m
+[[90m21:28:46[39m] [36mgulp-notify[39m: [[34mError running notifier[39m] [31mCould not send message: spawn EACCES[39m
+[[90m21:28:50[39m] Starting '[36msass[39m'...
+[[90m21:28:50[39m] Finished '[36msass[39m' after [35m2.22 ms[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mFile event [change] : [39m[35mbuild/css/style.min.css[39m
+[[90m21:28:54[39m] Starting '[36msass[39m'...
+[[90m21:28:54[39m] Finished '[36msass[39m' after [35m3.31 ms[39m
+[[34mBrowsersync[39m] [36mFile event [change] : [39m[35mbuild/css/style.min.css[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[90m21:28:56[39m] Starting '[36msass[39m'...
+[[90m21:28:56[39m] Finished '[36msass[39m' after [35m1.56 ms[39m
+[[90m21:28:56[39m] [36mgulp-notify[39m: [[34mGulp[39m] [31mError: sass/_find-us.scss
+Error: property "find-us-social-buttons" must be followed by a ':'
+        on line 120 of sass/_find-us.scss
+>>   find-us-social-buttons
+   --^
+[39m
+[[90m21:28:56[39m] [36mgulp-notify[39m: [[34mError running notifier[39m] [31mCould not send message: spawn EACCES[39m
+[[90m21:28:58[39m] Starting '[36msass[39m'...
+[[90m21:28:58[39m] Finished '[36msass[39m' after [35m1.14 ms[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mFile event [change] : [39m[35mbuild/css/style.min.css[39m
+[[90m21:29:02[39m] Starting '[36msass[39m'...
+[[90m21:29:02[39m] Finished '[36msass[39m' after [35m2.03 ms[39m
+[[90m21:29:02[39m] [36mgulp-notify[39m: [[34mGulp[39m] [31mError: sass/_find-us.scss
+Error: property "di" must be followed by a ':'
+        on line 121 of sass/_find-us.scss
+>>     di
+   ----^
+[39m
+[[90m21:29:02[39m] [36mgulp-notify[39m: [[34mError running notifier[39m] [31mCould not send message: spawn EACCES[39m
+[[90m21:29:05[39m] Starting '[36msass[39m'...
+[[90m21:29:05[39m] Finished '[36msass[39m' after [35m1.49 ms[39m
+[[34mBrowsersync[39m] [36mFile event [change] : [39m[35mbuild/css/style.min.css[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[90m21:29:12[39m] Starting '[36msass[39m'...
+[[90m21:29:12[39m] Finished '[36msass[39m' after [35m1.24 ms[39m
+[[90m21:29:12[39m] [36mgulp-notify[39m: [[34mGulp[39m] [31mError: sass/_find-us.scss
+Error: property "fle" must be followed by a ':'
+        on line 122 of sass/_find-us.scss
+>>     fle
+   ----^
+[39m
+[[90m21:29:12[39m] [36mgulp-notify[39m: [[34mError running notifier[39m] [31mCould not send message: spawn EACCES[39m
+[[90m21:29:17[39m] Starting '[36msass[39m'...
+[[90m21:29:17[39m] Finished '[36msass[39m' after [35m1.4 ms[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mFile event [change] : [39m[35mbuild/css/style.min.css[39m
+[[90m21:29:26[39m] Starting '[36msass[39m'...
+[[90m21:29:26[39m] Finished '[36msass[39m' after [35m1.87 ms[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mFile event [change] : [39m[35mbuild/css/style.min.css[39m
+[[90m21:30:35[39m] Starting '[36msass[39m'...
+[[90m21:30:35[39m] Finished '[36msass[39m' after [35m3.57 ms[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mFile event [change] : [39m[35mbuild/css/style.min.css[39m
+[[90m21:30:48[39m] Starting '[36msass[39m'...
+[[90m21:30:48[39m] Finished '[36msass[39m' after [35m2.39 ms[39m
+[[90m21:30:48[39m] [36mgulp-notify[39m: [[34mGulp[39m] [31mError: sass/_find-us.scss
+Error: Invalid CSS after "...ustify-content:": expected expression (e.g. 1px, bold), was "}"
+        on line 123 of sass/_find-us.scss
+>>     justify-content: 
+   --------------------^
+[39m
+[[90m21:30:48[39m] [36mgulp-notify[39m: [[34mError running notifier[39m] [31mCould not send message: spawn EACCES[39m
+[[90m21:30:50[39m] Starting '[36msass[39m'...
+[[90m21:30:50[39m] Finished '[36msass[39m' after [35m1.38 ms[39m
+[[34mBrowsersync[39m] [36mFile event [change] : [39m[35mbuild/css/style.min.css[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mFile event [change] : [39m[35mbuild/css/style.min.css[39m
+[[90m21:30:52[39m] Starting '[36msass[39m'...
+[[90m21:30:52[39m] Finished '[36msass[39m' after [35m2.9 ms[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mFile event [change] : [39m[35mbuild/css/style.min.css[39m
+[[90m21:31:05[39m] Starting '[36msass[39m'...
+[[90m21:31:05[39m] Finished '[36msass[39m' after [35m1.81 ms[39m
+[[34mBrowsersync[39m] [36mFile event [change] : [39m[35mbuild/css/style.min.css[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[90m21:31:10[39m] Starting '[36msass[39m'...
+[[90m21:31:10[39m] Finished '[36msass[39m' after [35m1.65 ms[39m
+[[34mBrowsersync[39m] [36mFile event [change] : [39m[35mbuild/css/style.min.css[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[90m21:31:11[39m] Starting '[36msass[39m'...
+[[90m21:31:11[39m] Finished '[36msass[39m' after [35m1.32 ms[39m
+[[90m21:31:11[39m] [36mgulp-notify[39m: [[34mGulp[39m] [31mError: sass/_find-us.scss
+Error: property "j" must be followed by a ':'
+        on line 125 of sass/_find-us.scss
+>>       j
+   ------^
+[39m
+[[90m21:31:11[39m] [36mgulp-notify[39m: [[34mError running notifier[39m] [31mCould not send message: spawn EACCES[39m
+[[90m21:31:17[39m] Starting '[36msass[39m'...
+[[90m21:31:17[39m] Finished '[36msass[39m' after [35m1.15 ms[39m
+[[90m21:31:17[39m] [36mgulp-notify[39m: [[34mGulp[39m] [31mError: sass/_find-us.scss
+Error: property "ma" must be followed by a ':'
+        on line 125 of sass/_find-us.scss
+>>       ma
+   ------^
+[39m
+[[90m21:31:17[39m] [36mgulp-notify[39m: [[34mError running notifier[39m] [31mCould not send message: spawn EACCES[39m
+[[90m21:31:19[39m] Starting '[36msass[39m'...
+[[90m21:31:19[39m] Finished '[36msass[39m' after [35m2.16 ms[39m
+[[90m21:31:19[39m] [36mgulp-notify[39m: [[34mGulp[39m] [31mError: sass/_find-us.scss
+Error: property "max" must be followed by a ':'
+        on line 125 of sass/_find-us.scss
+>>       max
+   ------^
+[39m
+[[90m21:31:19[39m] [36mgulp-notify[39m: [[34mError running notifier[39m] [31mCould not send message: spawn EACCES[39m
+[[90m21:31:20[39m] Starting '[36msass[39m'...
+[[90m21:31:20[39m] Finished '[36msass[39m' after [35m2.59 ms[39m
+[[90m21:31:20[39m] [36mgulp-notify[39m: [[34mGulp[39m] [31mError: sass/_find-us.scss
+Error: Invalid CSS after "      max-width:": expected expression (e.g. 1px, bold), was "}"
+        on line 125 of sass/_find-us.scss
+>>       max-width: 
+   ----------------^
+[39m
+[[90m21:31:20[39m] [36mgulp-notify[39m: [[34mError running notifier[39m] [31mCould not send message: spawn EACCES[39m
+[[90m21:31:24[39m] Starting '[36msass[39m'...
+[[90m21:31:24[39m] Finished '[36msass[39m' after [35m1.57 ms[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mFile event [change] : [39m[35mbuild/css/style.min.css[39m
+[[90m21:31:26[39m] Starting '[36msass[39m'...
+[[90m21:31:26[39m] Finished '[36msass[39m' after [35m3.07 ms[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mFile event [change] : [39m[35mbuild/css/style.min.css[39m
+[[90m21:31:40[39m] Starting '[36msass[39m'...
+[[90m21:31:40[39m] Finished '[36msass[39m' after [35m2.02 ms[39m
+[[34mBrowsersync[39m] [36mFile event [change] : [39m[35mbuild/css/style.min.css[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[90m21:31:42[39m] Starting '[36msass[39m'...
+[[90m21:31:42[39m] Finished '[36msass[39m' after [35m1.68 ms[39m
+[[34mBrowsersync[39m] [36mFile event [change] : [39m[35mbuild/css/style.min.css[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[90m21:32:05[39m] Starting '[36msass[39m'...
+[[90m21:32:05[39m] Finished '[36msass[39m' after [35m1.26 ms[39m
+[[90m21:32:05[39m] [36mgulp-notify[39m: [[34mGulp[39m] [31mError: sass/_find-us.scss
+Error: Invalid CSS after "  }": expected selector or at-rule, was "}"
+        on line 125 of sass/_find-us.scss
+>>   }
+   ---^
+[39m
+[[90m21:32:05[39m] [36mgulp-notify[39m: [[34mError running notifier[39m] [31mCould not send message: spawn EACCES[39m
+[[90m21:32:08[39m] Starting '[36msass[39m'...
+[[90m21:32:08[39m] Finished '[36msass[39m' after [35m1.34 ms[39m
+[[90m21:32:08[39m] [36mgulp-notify[39m: [[34mGulp[39m] [31mError: sass/_find-us.scss
+Error: Invalid CSS after "  }": expected selector or at-rule, was "}"
+        on line 124 of sass/_find-us.scss
+>>   }
+   ---^
+[39m
+[[90m21:32:08[39m] [36mgulp-notify[39m: [[34mError running notifier[39m] [31mCould not send message: spawn EACCES[39m
+[[90m21:32:09[39m] Starting '[36msass[39m'...
+[[90m21:32:09[39m] Finished '[36msass[39m' after [35m2.51 ms[39m
+[[34mBrowsersync[39m] [36mFile event [change] : [39m[35mbuild/css/style.min.css[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[90m21:33:47[39m] Starting '[36msass[39m'...
+[[90m21:33:47[39m] Finished '[36msass[39m' after [35m5.88 ms[39m
+[[90m21:33:47[39m] [36mgulp-notify[39m: [[34mGulp[39m] [31mError: sass/_find-us.scss
+Error: Invalid CSS after "...x-wrap: nowrap;": expected "}", was ".so"
+        on line 122 of sass/_find-us.scss
+>>     flex-wrap: nowrap;
+   -----------------------^
+[39m
+[[90m21:33:47[39m] [36mgulp-notify[39m: [[34mError running notifier[39m] [31mCould not send message: spawn EACCES[39m
+[[90m21:33:51[39m] Starting '[36msass[39m'...
+[[90m21:33:51[39m] Finished '[36msass[39m' after [35m2.52 ms[39m
+[[90m21:33:51[39m] [36mgulp-notify[39m: [[34mGulp[39m] [31mError: sass/_find-us.scss
+Error: Invalid CSS after "...x-wrap: nowrap;": expected "}", was ".social-button "
+        on line 122 of sass/_find-us.scss
+>>     flex-wrap: nowrap;
+   -----------------------^
+[39m
+[[90m21:33:51[39m] [36mgulp-notify[39m: [[34mError running notifier[39m] [31mCould not send message: spawn EACCES[39m
+[[90m21:33:55[39m] Starting '[36msass[39m'...
+[[90m21:33:55[39m] Finished '[36msass[39m' after [35m1.32 ms[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mFile event [change] : [39m[35mbuild/css/style.min.css[39m
+[[90m21:33:58[39m] Starting '[36msass[39m'...
+[[90m21:33:58[39m] Finished '[36msass[39m' after [35m2.33 ms[39m
+[[90m21:33:58[39m] [36mgulp-notify[39m: [[34mGulp[39m] [31mError: sass/_find-us.scss
+Error: property "max" must be followed by a ':'
+        on line 125 of sass/_find-us.scss
+>>       max
+   ------^
+[39m
+[[90m21:33:58[39m] [36mgulp-notify[39m: [[34mError running notifier[39m] [31mCould not send message: spawn EACCES[39m
+[[90m21:34:00[39m] Starting '[36msass[39m'...
+[[90m21:34:00[39m] Finished '[36msass[39m' after [35m1.54 ms[39m
+[[90m21:34:00[39m] [36mgulp-notify[39m: [[34mGulp[39m] [31mError: sass/_find-us.scss
+Error: Invalid CSS after "      max-width:": expected expression (e.g. 1px, bold), was "}"
+        on line 125 of sass/_find-us.scss
+>>       max-width: 
+   ----------------^
+[39m
+[[90m21:34:00[39m] [36mgulp-notify[39m: [[34mError running notifier[39m] [31mCould not send message: spawn EACCES[39m
+[[90m21:34:01[39m] Starting '[36msass[39m'...
+[[90m21:34:01[39m] Finished '[36msass[39m' after [35m1.47 ms[39m
+[[34mBrowsersync[39m] [36mFile event [change] : [39m[35mbuild/css/style.min.css[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[90m21:34:03[39m] Starting '[36msass[39m'...
+[[90m21:34:03[39m] Finished '[36msass[39m' after [35m1.95 ms[39m
+[[34mBrowsersync[39m] [36mFile event [change] : [39m[35mbuild/css/style.min.css[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[90m21:34:15[39m] Starting '[36msass[39m'...
+[[90m21:34:15[39m] Finished '[36msass[39m' after [35m1.33 ms[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mFile event [change] : [39m[35mbuild/css/style.min.css[39m
+[[90m21:40:15[39m] Starting '[36msass[39m'...
+[[90m21:40:15[39m] Finished '[36msass[39m' after [35m4.27 ms[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mFile event [change] : [39m[35mbuild/css/style.min.css[39m
+[[90m21:40:24[39m] Starting '[36msass[39m'...
+[[90m21:40:24[39m] Finished '[36msass[39m' after [35m2.7 ms[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mFile event [change] : [39m[35mbuild/css/style.min.css[39m
+[[90m21:40:36[39m] Starting '[36msass[39m'...
+[[90m21:40:36[39m] Finished '[36msass[39m' after [35m1.73 ms[39m
+[[34mBrowsersync[39m] [36mFile event [change] : [39m[35mbuild/css/style.min.css[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[90m21:40:39[39m] Starting '[36msass[39m'...
+[[90m21:40:39[39m] Finished '[36msass[39m' after [35m1.04 ms[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mFile event [change] : [39m[35mbuild/css/style.min.css[39m
+[[90m21:40:40[39m] Starting '[36msass[39m'...
+[[90m21:40:40[39m] Finished '[36msass[39m' after [35m2.43 ms[39m
+[[90m21:40:41[39m] [36mgulp-notify[39m: [[34mGulp[39m] [31mError: sass/_find-us.scss
+Error: property "al" must be followed by a ':'
+        on line 126 of sass/_find-us.scss
+>>       al
+   ------^
+[39m
+[[90m21:40:41[39m] [36mgulp-notify[39m: [[34mError running notifier[39m] [31mCould not send message: spawn EACCES[39m
+[[90m21:40:43[39m] Starting '[36msass[39m'...
+[[90m21:40:43[39m] Finished '[36msass[39m' after [35m2.03 ms[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mFile event [change] : [39m[35mbuild/css/style.min.css[39m
+[[90m21:40:45[39m] Starting '[36msass[39m'...
+[[90m21:40:45[39m] Finished '[36msass[39m' after [35m3.54 ms[39m
+[[34mBrowsersync[39m] [36mFile event [change] : [39m[35mbuild/css/style.min.css[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[90m21:41:57[39m] Starting '[36msass[39m'...
+[[90m21:41:57[39m] Finished '[36msass[39m' after [35m2.79 ms[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mFile event [change] : [39m[35mbuild/css/style.min.css[39m
+[[90m21:42:01[39m] Starting '[36msass[39m'...
+[[90m21:42:01[39m] Finished '[36msass[39m' after [35m1.81 ms[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mFile event [change] : [39m[35mbuild/css/style.min.css[39m
+[[90m21:50:44[39m] Starting '[36msass[39m'...
+[[90m21:50:44[39m] Finished '[36msass[39m' after [35m13 ms[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mFile event [change] : [39m[35mbuild/css/style.min.css[39m
+[[90m21:50:45[39m] Starting '[36msass[39m'...
+[[90m21:50:45[39m] Finished '[36msass[39m' after [35m2.98 ms[39m
+[[90m21:50:45[39m] [36mgulp-notify[39m: [[34mGulp[39m] [31mError: sass/_media.scss
+Error: Invalid CSS after "...ba(0,0,0,0.5);}": expected 1 selector or at-rule, was "cursor: pointer;"
+        on line 120 of sass/_media.scss
+>> ox-shadow: 0 2.5px 4px 0 rgba(0,0,0,0.5);}
+   ------------------------------------------^
+[39m
+[[90m21:50:46[39m] [36mgulp-notify[39m: [[34mError running notifier[39m] [31mCould not send message: spawn EACCES[39m
+[[90m21:50:48[39m] Starting '[36msass[39m'...
+[[90m21:50:48[39m] Finished '[36msass[39m' after [35m1.09 ms[39m
+[[90m21:50:48[39m] [36mgulp-notify[39m: [[34mGulp[39m] [31mError: sass/_media.scss
+Error: Invalid CSS after "		}": expected selector or at-rule, was "}"
+        on line 110 of sass/_media.scss
+>> 		}
+   ---^
+[39m
+[[90m21:50:48[39m] [36mgulp-notify[39m: [[34mError running notifier[39m] [31mCould not send message: spawn EACCES[39m
+[[90m21:50:55[39m] Starting '[36msass[39m'...
+[[90m21:50:55[39m] Finished '[36msass[39m' after [35m990 μs[39m
+[[90m21:50:55[39m] [36mgulp-notify[39m: [[34mGulp[39m] [31mError: sass/_media.scss
+Error: Invalid CSS after "...ba(0,0,0,0.5);}": expected 1 selector or at-rule, was "cursor: pointer;"
+        on line 121 of sass/_media.scss
+>> ox-shadow: 0 2.5px 4px 0 rgba(0,0,0,0.5);}
+   ------------------------------------------^
+[39m
+[[90m21:50:55[39m] [36mgulp-notify[39m: [[34mError running notifier[39m] [31mCould not send message: spawn EACCES[39m
+[[90m21:50:59[39m] Starting '[36msass[39m'...
+[[90m21:50:59[39m] Finished '[36msass[39m' after [35m2.66 ms[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mFile event [change] : [39m[35mbuild/css/style.min.css[39m
+[[90m21:56:49[39m] Starting '[36msass[39m'...
+[[90m21:56:49[39m] Finished '[36msass[39m' after [35m12 ms[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mFile event [change] : [39m[35mbuild/css/style.min.css[39m
+[[90m21:56:53[39m] Starting '[36msass[39m'...
+[[90m21:56:53[39m] Finished '[36msass[39m' after [35m3.11 ms[39m
+[[34mBrowsersync[39m] [36mFile event [change] : [39m[35mbuild/css/style.min.css[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[90m21:56:55[39m] Starting '[36msass[39m'...
+[[90m21:56:55[39m] Finished '[36msass[39m' after [35m2.24 ms[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mFile event [change] : [39m[35mbuild/css/style.min.css[39m
+[[90m21:56:57[39m] Starting '[36msass[39m'...
+[[90m21:56:57[39m] Finished '[36msass[39m' after [35m1.46 ms[39m
+[[34mBrowsersync[39m] [36mFile event [change] : [39m[35mbuild/css/style.min.css[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mFile event [change] : [39m[35mbuild/css/style.min.css[39m
+[[90m21:57:00[39m] Starting '[36msass[39m'...
+[[90m21:57:00[39m] Finished '[36msass[39m' after [35m2.23 ms[39m
+[[34mBrowsersync[39m] [36mFile event [change] : [39m[35mbuild/css/style.min.css[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[90m21:57:02[39m] Starting '[36msass[39m'...
+[[90m21:57:02[39m] Finished '[36msass[39m' after [35m1.75 ms[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mFile event [change] : [39m[35mbuild/css/style.min.css[39m
+[[90m21:57:04[39m] Starting '[36msass[39m'...
+[[90m21:57:04[39m] Finished '[36msass[39m' after [35m2.78 ms[39m
+[[90m21:57:04[39m] [36mgulp-notify[39m: [[34mGulp[39m] [31mError: sass/_find-us.scss
+Error: property "h3" must be followed by a ':'
+        on line 120 of sass/_find-us.scss
+>>   h3.
+   --^
+[39m
+[[90m21:57:04[39m] [36mgulp-notify[39m: [[34mError running notifier[39m] [31mCould not send message: spawn EACCES[39m
+[[90m21:57:06[39m] Starting '[36msass[39m'...
+[[90m21:57:06[39m] Finished '[36msass[39m' after [35m2.66 ms[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mFile event [change] : [39m[35mbuild/css/style.min.css[39m
+[[90m21:57:10[39m] Starting '[36msass[39m'...
+[[90m21:57:10[39m] Finished '[36msass[39m' after [35m1.65 ms[39m
+[[90m21:57:10[39m] [36mgulp-notify[39m: [[34mGulp[39m] [31mError: sass/_find-us.scss
+Error: property "h3" must be followed by a ':'
+        on line 120 of sass/_find-us.scss
+>>   h3.find-us.
+   --^
+[39m
+[[90m21:57:10[39m] [36mgulp-notify[39m: [[34mError running notifier[39m] [31mCould not send message: spawn EACCES[39m
+[[90m21:57:14[39m] Starting '[36msass[39m'...
+[[90m21:57:14[39m] Finished '[36msass[39m' after [35m1.15 ms[39m
+[[34mBrowsersync[39m] [36mFile event [change] : [39m[35mbuild/css/style.min.css[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[90m21:57:16[39m] Starting '[36msass[39m'...
+[[90m21:57:16[39m] Finished '[36msass[39m' after [35m2.52 ms[39m
+[[90m21:57:16[39m] [36mgulp-notify[39m: [[34mGulp[39m] [31mError: sass/_find-us.scss
+Error: property "fon" must be followed by a ':'
+        on line 121 of sass/_find-us.scss
+>>     fon
+   ----^
+[39m
+[[90m21:57:16[39m] [36mgulp-notify[39m: [[34mError running notifier[39m] [31mCould not send message: spawn EACCES[39m
+[[90m21:57:18[39m] Starting '[36msass[39m'...
+[[90m21:57:18[39m] Finished '[36msass[39m' after [35m1.09 ms[39m
+[[90m21:57:18[39m] [36mgulp-notify[39m: [[34mGulp[39m] [31mError: sass/_find-us.scss
+Error: Invalid CSS after "    font-size:": expected expression (e.g. 1px, bold), was "}"
+        on line 121 of sass/_find-us.scss
+>>     font-size: 
+   --------------^
+[39m
+[[90m21:57:18[39m] [36mgulp-notify[39m: [[34mError running notifier[39m] [31mCould not send message: spawn EACCES[39m
+[[90m21:57:20[39m] Starting '[36msass[39m'...
+[[90m21:57:20[39m] Finished '[36msass[39m' after [35m1.44 ms[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mFile event [change] : [39m[35mbuild/css/style.min.css[39m
+[[90m21:57:25[39m] Starting '[36msass[39m'...
+[[90m21:57:25[39m] Finished '[36msass[39m' after [35m936 μs[39m
+[[34mBrowsersync[39m] [36mFile event [change] : [39m[35mbuild/css/style.min.css[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[90m21:57:40[39m] Starting '[36msass[39m'...
+[[90m21:57:40[39m] Finished '[36msass[39m' after [35m3.2 ms[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mFile event [change] : [39m[35mbuild/css/style.min.css[39m
+[[90m21:57:46[39m] Starting '[36msass[39m'...
+[[90m21:57:46[39m] Finished '[36msass[39m' after [35m3.1 ms[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mFile event [change] : [39m[35mbuild/css/style.min.css[39m
+[[90m21:57:55[39m] Starting '[36msass[39m'...
+[[90m21:57:55[39m] Finished '[36msass[39m' after [35m2.17 ms[39m
+[[90m21:57:55[39m] [36mgulp-notify[39m: [[34mGulp[39m] [31mError: sass/_find-us.scss
+Error: property "pa" must be followed by a ':'
+        on line 122 of sass/_find-us.scss
+>>     pa
+   ----^
+[39m
+[[90m21:57:55[39m] [36mgulp-notify[39m: [[34mError running notifier[39m] [31mCould not send message: spawn EACCES[39m
+[[90m21:57:57[39m] Starting '[36msass[39m'...
+[[90m21:57:57[39m] Finished '[36msass[39m' after [35m1.95 ms[39m
+[[90m21:57:57[39m] [36mgulp-notify[39m: [[34mGulp[39m] [31mError: sass/_find-us.scss
+Error: Invalid CSS after "...padding-bottom:": expected expression (e.g. 1px, bold), was "}"
+        on line 122 of sass/_find-us.scss
+>>     padding-bottom: 
+   -------------------^
+[39m
+[[90m21:57:57[39m] [36mgulp-notify[39m: [[34mError running notifier[39m] [31mCould not send message: spawn EACCES[39m
+[[90m21:58:00[39m] Starting '[36msass[39m'...
+[[90m21:58:00[39m] Finished '[36msass[39m' after [35m1.81 ms[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mFile event [change] : [39m[35mbuild/css/style.min.css[39m
+[[90m21:58:09[39m] Starting '[36msass[39m'...
+[[90m21:58:09[39m] Finished '[36msass[39m' after [35m1.19 ms[39m
+[[90m21:58:09[39m] [36mgulp-notify[39m: [[34mGulp[39m] [31mError: sass/_find-us.scss
+Error: property "psf" must be followed by a ':'
+        on line 122 of sass/_find-us.scss
+>>     psf
+   ----^
+[39m
+[[90m21:58:09[39m] [36mgulp-notify[39m: [[34mError running notifier[39m] [31mCould not send message: spawn EACCES[39m
+[[90m21:58:12[39m] Starting '[36msass[39m'...
+[[90m21:58:12[39m] Finished '[36msass[39m' after [35m1.12 ms[39m
+[[90m21:58:12[39m] [36mgulp-notify[39m: [[34mGulp[39m] [31mError: sass/_find-us.scss
+Error: property "pad" must be followed by a ':'
+        on line 122 of sass/_find-us.scss
+>>     pad
+   ----^
+[39m
+[[90m21:58:12[39m] [36mgulp-notify[39m: [[34mError running notifier[39m] [31mCould not send message: spawn EACCES[39m
+[[90m21:58:15[39m] Starting '[36msass[39m'...
+[[90m21:58:15[39m] Finished '[36msass[39m' after [35m2.85 ms[39m
+[[90m21:58:15[39m] [36mgulp-notify[39m: [[34mGulp[39m] [31mError: sass/_find-us.scss
+Error: Invalid CSS after "    padding-bottom": expected "}", was ": 20px;"
+        on line 123 of sass/_find-us.scss
+>>     padding-bottom: 20px;
+   ----^
+[39m
+[[90m21:58:15[39m] [36mgulp-notify[39m: [[34mError running notifier[39m] [31mCould not send message: spawn EACCES[39m
+[[90m21:58:18[39m] Starting '[36msass[39m'...
+[[90m21:58:18[39m] Finished '[36msass[39m' after [35m1.16 ms[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mFile event [change] : [39m[35mbuild/css/style.min.css[39m
+[[90m21:58:29[39m] Starting '[36msass[39m'...
+[[90m21:58:29[39m] Finished '[36msass[39m' after [35m5.36 ms[39m
+[[90m21:58:29[39m] [36mgulp-notify[39m: [[34mGulp[39m] [31mError: sass/_find-us.scss
+Error: property "pa" must be followed by a ':'
+        on line 103 of sass/_find-us.scss
+>>     pa
+   ----^
+[39m
+[[90m21:58:29[39m] [36mgulp-notify[39m: [[34mError running notifier[39m] [31mCould not send message: spawn EACCES[39m
+[[90m21:58:32[39m] Starting '[36msass[39m'...
+[[90m21:58:32[39m] Finished '[36msass[39m' after [35m1.26 ms[39m
+[[90m21:58:32[39m] [36mgulp-notify[39m: [[34mGulp[39m] [31mError: sass/_find-us.scss
+Error: property "padding-b" must be followed by a ':'
+        on line 103 of sass/_find-us.scss
+>>     padding-b
+   ----^
+[39m
+[[90m21:58:32[39m] [36mgulp-notify[39m: [[34mError running notifier[39m] [31mCould not send message: spawn EACCES[39m
+[[90m21:58:34[39m] Starting '[36msass[39m'...
+[[90m21:58:34[39m] Finished '[36msass[39m' after [35m1.09 ms[39m
+[[90m21:58:34[39m] [36mgulp-notify[39m: [[34mGulp[39m] [31mError: sass/_find-us.scss
+Error: Invalid CSS after "...padding-bottom:": expected expression (e.g. 1px, bold), was "}"
+        on line 103 of sass/_find-us.scss
+>>     padding-bottom: 
+   -------------------^
+[39m
+[[90m21:58:34[39m] [36mgulp-notify[39m: [[34mError running notifier[39m] [31mCould not send message: spawn EACCES[39m
+[[90m21:58:37[39m] Starting '[36msass[39m'...
+[[90m21:58:37[39m] Finished '[36msass[39m' after [35m1.31 ms[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mFile event [change] : [39m[35mbuild/css/style.min.css[39m
+[[90m21:58:55[39m] Starting '[36msass[39m'...
+[[90m21:58:55[39m] Finished '[36msass[39m' after [35m897 μs[39m
+[[90m21:58:55[39m] [36mgulp-notify[39m: [[34mGulp[39m] [31mError: sass/_find-us.scss
+Error: property "ve" must be followed by a ':'
+        on line 109 of sass/_find-us.scss
+>>         ve
+   --------^
+[39m
+[[90m21:58:55[39m] [36mgulp-notify[39m: [[34mError running notifier[39m] [31mCould not send message: spawn EACCES[39m
+[[90m21:58:57[39m] Starting '[36msass[39m'...
+[[90m21:58:57[39m] Finished '[36msass[39m' after [35m1.42 ms[39m
+[[34mBrowsersync[39m] [36mFile event [change] : [39m[35mbuild/css/style.min.css[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[90m21:58:58[39m] Starting '[36msass[39m'...
+[[90m21:58:58[39m] Finished '[36msass[39m' after [35m2.3 ms[39m
+[[34mBrowsersync[39m] [36mFile event [change] : [39m[35mbuild/css/style.min.css[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[90m21:59:00[39m] Starting '[36msass[39m'...
+[[90m21:59:00[39m] Finished '[36msass[39m' after [35m1.73 ms[39m
+[[34mBrowsersync[39m] [36mFile event [change] : [39m[35mbuild/css/style.min.css[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[90m22:07:26[39m] Starting '[36msass[39m'...
+[[90m22:07:26[39m] Finished '[36msass[39m' after [35m9.7 ms[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mFile event [change] : [39m[35mbuild/css/style.min.css[39m
+[[90m22:12:32[39m] Starting '[36msass[39m'...
+[[90m22:12:32[39m] Finished '[36msass[39m' after [35m20 ms[39m
+[[34mBrowsersync[39m] [36mFile event [change] : [39m[35mbuild/css/style.min.css[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[90m22:17:55[39m] Starting '[36msass[39m'...
+[[90m22:17:55[39m] Finished '[36msass[39m' after [35m5.48 ms[39m
+[[90m22:17:55[39m] [36mgulp-notify[39m: [[34mGulp[39m] [31mError: sass/_find-us.scss
+Error: Invalid CSS after "  }": expected selector or at-rule, was "}"
+        on line 134 of sass/_find-us.scss
+>>   }
+   ---^
+[39m
+[[90m22:17:55[39m] [36mgulp-notify[39m: [[34mError running notifier[39m] [31mCould not send message: spawn EACCES[39m
+[[90m22:17:58[39m] Starting '[36msass[39m'...
+[[90m22:17:58[39m] Finished '[36msass[39m' after [35m1.97 ms[39m
+[[90m22:17:58[39m] [36mgulp-notify[39m: [[34mGulp[39m] [31mError: sass/_find-us.scss
+Error: Invalid CSS after "  }": expected selector or at-rule, was "}"
+        on line 133 of sass/_find-us.scss
+>>   }
+   ---^
+[39m
+[[90m22:17:58[39m] [36mgulp-notify[39m: [[34mError running notifier[39m] [31mCould not send message: spawn EACCES[39m
+[[90m22:18:26[39m] Starting '[36msass[39m'...
+[[90m22:18:26[39m] Finished '[36msass[39m' after [35m8.12 ms[39m
+[[90m22:18:26[39m] [36mgulp-notify[39m: [[34mGulp[39m] [31mError: sass/_find-us.scss
+Error: Invalid CSS after "  }": expected selector or at-rule, was "}"
+        on line 133 of sass/_find-us.scss
+>>   }
+   ---^
+[39m
+[[90m22:18:26[39m] [36mgulp-notify[39m: [[34mError running notifier[39m] [31mCould not send message: spawn EACCES[39m
+[[90m22:18:32[39m] Starting '[36msass[39m'...
+[[90m22:18:32[39m] Finished '[36msass[39m' after [35m1.65 ms[39m
+[[90m22:18:32[39m] [36mgulp-notify[39m: [[34mGulp[39m] [31mError: sass/_find-us.scss
+Error: Invalid CSS after "  }": expected selector or at-rule, was "}"
+        on line 133 of sass/_find-us.scss
+>>   }
+   ---^
+[39m
+[[90m22:18:32[39m] [36mgulp-notify[39m: [[34mError running notifier[39m] [31mCould not send message: spawn EACCES[39m
+[[90m22:18:40[39m] Starting '[36msass[39m'...
+[[90m22:18:40[39m] Finished '[36msass[39m' after [35m2.17 ms[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mFile event [change] : [39m[35mbuild/css/style.min.css[39m
+[[90m22:18:51[39m] Starting '[36msass[39m'...
+[[90m22:18:51[39m] Finished '[36msass[39m' after [35m2.29 ms[39m
+[[34mBrowsersync[39m] [36mFile event [change] : [39m[35mbuild/css/style.min.css[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[90m22:19:40[39m] Starting '[36msass[39m'...
+[[90m22:19:40[39m] Finished '[36msass[39m' after [35m3.81 ms[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mFile event [change] : [39m[35mbuild/css/style.min.css[39m
+[[90m22:19:45[39m] Starting '[36msass[39m'...
+[[90m22:19:45[39m] Finished '[36msass[39m' after [35m2.69 ms[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mFile event [change] : [39m[35mbuild/css/style.min.css[39m
+[[90m22:19:51[39m] Starting '[36msass[39m'...
+[[90m22:19:51[39m] Finished '[36msass[39m' after [35m1.62 ms[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mFile event [change] : [39m[35mbuild/css/style.min.css[39m
+[[90m22:19:59[39m] Starting '[36msass[39m'...
+[[90m22:19:59[39m] Finished '[36msass[39m' after [35m951 μs[39m
+[[34mBrowsersync[39m] [36mFile event [change] : [39m[35mbuild/css/style.min.css[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[90m22:21:20[39m] Starting '[36msass[39m'...
+[[90m22:21:20[39m] Finished '[36msass[39m' after [35m3.49 ms[39m
+[[90m22:21:20[39m] [36mgulp-notify[39m: [[34mGulp[39m] [31mError: sass/_services.scss
+Error: style declaration must contain a value
+        on line 237 of sass/_services.scss
+>>       max-width: ;
+   ----------------^
+[39m
+[[90m22:21:20[39m] [36mgulp-notify[39m: [[34mError running notifier[39m] [31mCould not send message: spawn EACCES[39m
+[[90m22:21:23[39m] Starting '[36msass[39m'...
+[[90m22:21:23[39m] Finished '[36msass[39m' after [35m2.24 ms[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mFile event [change] : [39m[35mbuild/css/style.min.css[39m
+[[90m22:23:08[39m] Starting '[36msass[39m'...
+[[90m22:23:08[39m] Finished '[36msass[39m' after [35m7.13 ms[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mFile event [change] : [39m[35mbuild/css/style.min.css[39m
+[[90m22:23:14[39m] Starting '[36msass[39m'...
+[[90m22:23:14[39m] Finished '[36msass[39m' after [35m2.44 ms[39m
+[[34mBrowsersync[39m] [36mFile event [change] : [39m[35mbuild/css/style.min.css[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[90m22:23:16[39m] Starting '[36msass[39m'...
+[[90m22:23:16[39m] Finished '[36msass[39m' after [35m3.31 ms[39m
+[[90m22:23:16[39m] [36mgulp-notify[39m: [[34mGulp[39m] [31mError: sass/_find-us.scss
+Error: property "fle" must be followed by a ':'
+        on line 51 of sass/_find-us.scss
+>>     fle
+   ----^
+[39m
+[[90m22:23:16[39m] [36mgulp-notify[39m: [[34mError running notifier[39m] [31mCould not send message: spawn EACCES[39m
+[[90m22:23:21[39m] Starting '[36msass[39m'...
+[[90m22:23:21[39m] Finished '[36msass[39m' after [35m1.51 ms[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mFile event [change] : [39m[35mbuild/css/style.min.css[39m
+[[90m22:24:08[39m] Starting '[36msass[39m'...
+[[90m22:24:08[39m] Finished '[36msass[39m' after [35m3.27 ms[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mFile event [change] : [39m[35mbuild/css/style.min.css[39m
+[[90m22:24:31[39m] Starting '[36msass[39m'...
+[[90m22:24:31[39m] Finished '[36msass[39m' after [35m1.63 ms[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mFile event [change] : [39m[35mbuild/css/style.min.css[39m
+[[90m22:24:32[39m] Starting '[36msass[39m'...
+[[90m22:24:32[39m] Finished '[36msass[39m' after [35m3.26 ms[39m
+[[34mBrowsersync[39m] [36mFile event [change] : [39m[35mbuild/css/style.min.css[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[90m22:24:34[39m] Starting '[36msass[39m'...
+[[90m22:24:34[39m] Finished '[36msass[39m' after [35m1.42 ms[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mFile event [change] : [39m[35mbuild/css/style.min.css[39m
+[[90m22:24:37[39m] Starting '[36msass[39m'...
+[[90m22:24:37[39m] Finished '[36msass[39m' after [35m3.41 ms[39m
+[[34mBrowsersync[39m] [36mFile event [change] : [39m[35mbuild/css/style.min.css[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[90m22:24:40[39m] Starting '[36msass[39m'...
+[[90m22:24:40[39m] Finished '[36msass[39m' after [35m2.14 ms[39m
+[[90m22:24:40[39m] [36mgulp-notify[39m: [[34mGulp[39m] [31mError: sass/_services.scss
+Error: property "pa" must be followed by a ':'
+        on line 238 of sass/_services.scss
+>>       pa
+   ------^
+[39m
+[[90m22:24:40[39m] [36mgulp-notify[39m: [[34mError running notifier[39m] [31mCould not send message: spawn EACCES[39m
+[[90m22:24:45[39m] Starting '[36msass[39m'...
+[[90m22:24:45[39m] Finished '[36msass[39m' after [35m1.7 ms[39m
+[[90m22:24:45[39m] [36mgulp-notify[39m: [[34mGulp[39m] [31mError: sass/_services.scss
+Error: Invalid CSS after "...padding-bottom:": expected expression (e.g. 1px, bold), was "}"
+        on line 238 of sass/_services.scss
+>>       padding-bottom: 
+   ---------------------^
+[39m
+[[90m22:24:45[39m] [36mgulp-notify[39m: [[34mError running notifier[39m] [31mCould not send message: spawn EACCES[39m
+[[90m22:24:47[39m] Starting '[36msass[39m'...
+[[90m22:24:47[39m] Finished '[36msass[39m' after [35m1.16 ms[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mFile event [change] : [39m[35mbuild/css/style.min.css[39m
+[[90m22:24:55[39m] Starting '[36msass[39m'...
+[[90m22:24:55[39m] Finished '[36msass[39m' after [35m1.59 ms[39m
+[[34mBrowsersync[39m] [36mFile event [change] : [39m[35mbuild/css/style.min.css[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[90m22:25:10[39m] Starting '[36msass[39m'...
+[[90m22:25:10[39m] Finished '[36msass[39m' after [35m2.4 ms[39m
+[[90m22:25:10[39m] [36mgulp-notify[39m: [[34mGulp[39m] [31mError: sass/_services.scss
+Error: property "pad" must be followed by a ':'
+        on line 238 of sass/_services.scss
+>>       pad
+   ------^
+[39m
+[[90m22:25:10[39m] [36mgulp-notify[39m: [[34mError running notifier[39m] [31mCould not send message: spawn EACCES[39m
+[[90m22:25:14[39m] Starting '[36msass[39m'...
+[[90m22:25:14[39m] Finished '[36msass[39m' after [35m1.3 ms[39m
+[[90m22:25:14[39m] [36mgulp-notify[39m: [[34mGulp[39m] [31mError: sass/_services.scss
+Error: Invalid CSS after "...padding-bottom:": expected expression (e.g. 1px, bold), was "}"
+        on line 238 of sass/_services.scss
+>>       padding-bottom: 
+   ---------------------^
+[39m
+[[90m22:25:14[39m] [36mgulp-notify[39m: [[34mError running notifier[39m] [31mCould not send message: spawn EACCES[39m
+[[90m22:25:16[39m] Starting '[36msass[39m'...
+[[90m22:25:16[39m] Finished '[36msass[39m' after [35m1.54 ms[39m
+[[90m22:25:16[39m] [36mgulp-notify[39m: [[34mGulp[39m] [31mError: sass/_services.scss
+Error: property "pad" must be followed by a ':'
+        on line 239 of sass/_services.scss
+>>       pad
+   ------^
+[39m
+[[90m22:25:16[39m] [36mgulp-notify[39m: [[34mError running notifier[39m] [31mCould not send message: spawn EACCES[39m
+[[90m22:25:20[39m] Starting '[36msass[39m'...
+[[90m22:25:20[39m] Finished '[36msass[39m' after [35m2.36 ms[39m
+[[90m22:25:20[39m] [36mgulp-notify[39m: [[34mGulp[39m] [31mError: sass/_services.scss
+Error: Invalid CSS after "      padding-top:": expected expression (e.g. 1px, bold), was "}"
+        on line 239 of sass/_services.scss
+>>       padding-top: 
+   ------------------^
+[39m
+[[90m22:25:20[39m] [36mgulp-notify[39m: [[34mError running notifier[39m] [31mCould not send message: spawn EACCES[39m
+[[90m22:25:22[39m] Starting '[36msass[39m'...
+[[90m22:25:22[39m] Finished '[36msass[39m' after [35m1.38 ms[39m
+[[34mBrowsersync[39m] [36mFile event [change] : [39m[35mbuild/css/style.min.css[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[90m22:25:36[39m] Starting '[36msass[39m'...
+[[90m22:25:36[39m] Finished '[36msass[39m' after [35m5.94 ms[39m
+[[34mBrowsersync[39m] [36mFile event [change] : [39m[35mbuild/css/style.min.css[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[90m22:25:39[39m] Starting '[36msass[39m'...
+[[90m22:25:39[39m] Finished '[36msass[39m' after [35m970 μs[39m
+[[90m22:25:39[39m] [36mgulp-notify[39m: [[34mGulp[39m] [31mError: sass/_services.scss
+Error: Invalid CSS after "      a :": expected expression (e.g. 1px, bold), was "}"
+        on line 241 of sass/_services.scss
+>>       a :
+   ---------^
+[39m
+[[90m22:25:39[39m] [36mgulp-notify[39m: [[34mError running notifier[39m] [31mCould not send message: spawn EACCES[39m
+[[90m22:25:41[39m] Starting '[36msass[39m'...
+[[90m22:25:41[39m] Finished '[36msass[39m' after [35m1.35 ms[39m
+[[90m22:25:41[39m] [36mgulp-notify[39m: [[34mGulp[39m] [31mError: sass/_services.scss
+Error: property "a" must be followed by a ':'
+        on line 241 of sass/_services.scss
+>>       a 
+   ------^
+[39m
+[[90m22:25:41[39m] [36mgulp-notify[39m: [[34mError running notifier[39m] [31mCould not send message: spawn EACCES[39m
+[[90m22:25:42[39m] Starting '[36msass[39m'...
+[[90m22:25:42[39m] Finished '[36msass[39m' after [35m1.16 ms[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mFile event [change] : [39m[35mbuild/css/style.min.css[39m
+[[90m22:25:44[39m] Starting '[36msass[39m'...
+[[90m22:25:44[39m] Finished '[36msass[39m' after [35m1.95 ms[39m
+[[90m22:25:44[39m] [36mgulp-notify[39m: [[34mGulp[39m] [31mError: sass/_services.scss
+Error: property "fon" must be followed by a ':'
+        on line 242 of sass/_services.scss
+>>         fon
+   --------^
+[39m
+[[90m22:25:44[39m] [36mgulp-notify[39m: [[34mError running notifier[39m] [31mCould not send message: spawn EACCES[39m
+[[90m22:25:47[39m] Starting '[36msass[39m'...
+[[90m22:25:47[39m] Finished '[36msass[39m' after [35m1.51 ms[39m
+[[90m22:25:47[39m] [36mgulp-notify[39m: [[34mGulp[39m] [31mError: sass/_services.scss
+Error: Invalid CSS after "        font-size:": expected expression (e.g. 1px, bold), was "}"
+        on line 242 of sass/_services.scss
+>>         font-size: 
+   ------------------^
+[39m
+[[90m22:25:47[39m] [36mgulp-notify[39m: [[34mError running notifier[39m] [31mCould not send message: spawn EACCES[39m
+[[90m22:25:53[39m] Starting '[36msass[39m'...
+[[90m22:25:53[39m] Finished '[36msass[39m' after [35m1.99 ms[39m
+[[34mBrowsersync[39m] [36mFile event [change] : [39m[35mbuild/css/style.min.css[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[90m22:26:04[39m] Starting '[36msass[39m'...
+[[90m22:26:04[39m] Finished '[36msass[39m' after [35m2.01 ms[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mFile event [change] : [39m[35mbuild/css/style.min.css[39m
+[[90m22:26:37[39m] Starting '[36msass[39m'...
+[[90m22:26:37[39m] Finished '[36msass[39m' after [35m2.65 ms[39m
+[[34mBrowsersync[39m] [36mFile event [change] : [39m[35mbuild/css/style.min.css[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[90m22:26:41[39m] Starting '[36msass[39m'...
+[[90m22:26:41[39m] Finished '[36msass[39m' after [35m1.68 ms[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mFile event [change] : [39m[35mbuild/css/style.min.css[39m
+[[90m22:26:43[39m] Starting '[36msass[39m'...
+[[90m22:26:43[39m] Finished '[36msass[39m' after [35m2.34 ms[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mFile event [change] : [39m[35mbuild/css/style.min.css[39m
+[[90m22:26:45[39m] Starting '[36msass[39m'...
+[[90m22:26:45[39m] Finished '[36msass[39m' after [35m3.26 ms[39m
+[[34mBrowsersync[39m] [36mFile event [change] : [39m[35mbuild/css/style.min.css[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mFile event [change] : [39m[35mbuild/css/style.min.css[39m
+[[90m22:26:47[39m] Starting '[36msass[39m'...
+[[90m22:26:47[39m] Finished '[36msass[39m' after [35m2.33 ms[39m
+[[34mBrowsersync[39m] [36mFile event [change] : [39m[35mbuild/css/style.min.css[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[90m22:26:55[39m] Starting '[36msass[39m'...
+[[90m22:26:55[39m] Finished '[36msass[39m' after [35m2.82 ms[39m
+[[90m22:26:55[39m] [36mgulp-notify[39m: [[34mGulp[39m] [31mError: sass/_find-us.scss
+Error: property "p" must be followed by a ':'
+        on line 99 of sass/_find-us.scss
+>>   p
+   --^
+[39m
+[[90m22:26:55[39m] [36mgulp-notify[39m: [[34mError running notifier[39m] [31mCould not send message: spawn EACCES[39m
+[[90m22:26:56[39m] Starting '[36msass[39m'...
+[[90m22:26:56[39m] Finished '[36msass[39m' after [35m1.67 ms[39m
+[[90m22:26:56[39m] [36mgulp-notify[39m: [[34mGulp[39m] [31mError: sass/_find-us.scss
+Error: property "pad" must be followed by a ':'
+        on line 99 of sass/_find-us.scss
+>>   pad
+   --^
+[39m
+[[90m22:26:56[39m] [36mgulp-notify[39m: [[34mError running notifier[39m] [31mCould not send message: spawn EACCES[39m
+[[90m22:27:01[39m] Starting '[36msass[39m'...
+[[90m22:27:01[39m] Finished '[36msass[39m' after [35m1.52 ms[39m
+[[90m22:27:01[39m] [36mgulp-notify[39m: [[34mGulp[39m] [31mError: sass/_find-us.scss
+Error: Invalid CSS after "  padding-bottom:": expected expression (e.g. 1px, bold), was "}"
+        on line 99 of sass/_find-us.scss
+>>   padding-bottom: 
+   -----------------^
+[39m
+[[90m22:27:01[39m] [36mgulp-notify[39m: [[34mError running notifier[39m] [31mCould not send message: spawn EACCES[39m
+[[90m22:27:06[39m] Starting '[36msass[39m'...
+[[90m22:27:06[39m] Finished '[36msass[39m' after [35m1.34 ms[39m
+[[90m22:27:06[39m] [36mgulp-notify[39m: [[34mGulp[39m] [31mError: sass/_find-us.scss
+Error: property "padding" must be followed by a ':'
+        on line 99 of sass/_find-us.scss
+>>   padding
+   --^
+[39m
+[[90m22:27:06[39m] [36mgulp-notify[39m: [[34mError running notifier[39m] [31mCould not send message: spawn EACCES[39m
+[[90m22:27:12[39m] Starting '[36msass[39m'...
+[[90m22:27:12[39m] Finished '[36msass[39m' after [35m1.24 ms[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mFile event [change] : [39m[35mbuild/css/style.min.css[39m
+[[90m22:27:25[39m] Starting '[36msass[39m'...
+[[90m22:27:25[39m] Finished '[36msass[39m' after [35m1.77 ms[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mFile event [change] : [39m[35mbuild/css/style.min.css[39m
+[[90m22:27:29[39m] Starting '[36msass[39m'...
+[[90m22:27:29[39m] Finished '[36msass[39m' after [35m994 μs[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mFile event [change] : [39m[35mbuild/css/style.min.css[39m
+[[90m22:27:45[39m] Starting '[36msass[39m'...
+[[90m22:27:45[39m] Finished '[36msass[39m' after [35m1.95 ms[39m
+[[34mBrowsersync[39m] [36mFile event [change] : [39m[35mbuild/css/style.min.css[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[90m22:30:55[39m] Starting '[36msass[39m'...
+[[90m22:30:55[39m] Finished '[36msass[39m' after [35m6 ms[39m
+[[90m22:30:55[39m] [36mgulp-notify[39m: [[34mGulp[39m] [31mError: sass/_find-us.scss
+Error: property "pad" must be followed by a ':'
+        on line 112 of sass/_find-us.scss
+>>     pad
+   ----^
+[39m
+[[90m22:30:55[39m] [36mgulp-notify[39m: [[34mError running notifier[39m] [31mCould not send message: spawn EACCES[39m
+[[90m22:31:01[39m] Starting '[36msass[39m'...
+[[90m22:31:01[39m] Finished '[36msass[39m' after [35m1.96 ms[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mFile event [change] : [39m[35mbuild/css/style.min.css[39m
+[[90m22:33:59[39m] Starting '[36msass[39m'...
+[[90m22:33:59[39m] Finished '[36msass[39m' after [35m5.47 ms[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mFile event [change] : [39m[35mbuild/css/style.min.css[39m
+[[90m22:34:04[39m] Starting '[36msass[39m'...
+[[90m22:34:04[39m] Finished '[36msass[39m' after [35m2.45 ms[39m
+[[90m22:34:04[39m] [36mgulp-notify[39m: [[34mGulp[39m] [31mError: sass/_find-us.scss
+Error: Invalid CSS after "    height:": expected expression (e.g. 1px, bold), was "}"
+        on line 52 of sass/_find-us.scss
+>>     height: 
+   -----------^
+[39m
+[[90m22:34:04[39m] [36mgulp-notify[39m: [[34mError running notifier[39m] [31mCould not send message: spawn EACCES[39m
+[[90m22:34:09[39m] Starting '[36msass[39m'...
+[[90m22:34:09[39m] Finished '[36msass[39m' after [35m1.63 ms[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mFile event [change] : [39m[35mbuild/css/style.min.css[39m
+[[90m22:34:17[39m] Starting '[36msass[39m'...
+[[90m22:34:17[39m] Finished '[36msass[39m' after [35m1.2 ms[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mFile event [change] : [39m[35mbuild/css/style.min.css[39m
+[[90m22:34:18[39m] Starting '[36msass[39m'...
+[[90m22:34:18[39m] Finished '[36msass[39m' after [35m2.2 ms[39m
+[[34mBrowsersync[39m] [36mFile event [change] : [39m[35mbuild/css/style.min.css[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[90m22:34:27[39m] Starting '[36msass[39m'...
+[[90m22:34:27[39m] Finished '[36msass[39m' after [35m2.03 ms[39m
+[[34mBrowsersync[39m] [36mFile event [change] : [39m[35mbuild/css/style.min.css[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[90m22:36:21[39m] Starting '[36msass[39m'...
+[[90m22:36:21[39m] Finished '[36msass[39m' after [35m7.57 ms[39m
+[[90m22:36:21[39m] [36mgulp-notify[39m: [[34mGulp[39m] [31mError: sass/_find-us.scss
+Error: property "min" must be followed by a ':'
+        on line 52 of sass/_find-us.scss
+>>     min
+   ----^
+[39m
+[[90m22:36:21[39m] [36mgulp-notify[39m: [[34mError running notifier[39m] [31mCould not send message: spawn EACCES[39m
+[[90m22:36:22[39m] Starting '[36msass[39m'...
+[[90m22:36:22[39m] Finished '[36msass[39m' after [35m2.31 ms[39m
+[[90m22:36:22[39m] [36mgulp-notify[39m: [[34mGulp[39m] [31mError: sass/_find-us.scss
+Error: Invalid CSS after "    min-height:": expected expression (e.g. 1px, bold), was "}"
+        on line 52 of sass/_find-us.scss
+>>     min-height: 
+   ---------------^
+[39m
+[[90m22:36:22[39m] [36mgulp-notify[39m: [[34mError running notifier[39m] [31mCould not send message: spawn EACCES[39m
+[[90m22:36:32[39m] Starting '[36msass[39m'...
+[[90m22:36:32[39m] Finished '[36msass[39m' after [35m4.15 ms[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mFile event [change] : [39m[35mbuild/css/style.min.css[39m
+[[90m22:36:33[39m] Starting '[36msass[39m'...
+[[90m22:36:33[39m] Finished '[36msass[39m' after [35m3.02 ms[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mFile event [change] : [39m[35mbuild/css/style.min.css[39m
+[[90m22:36:43[39m] Starting '[36msass[39m'...
+[[90m22:36:43[39m] Finished '[36msass[39m' after [35m1.4 ms[39m
+[[90m22:36:43[39m] [36mgulp-notify[39m: [[34mGulp[39m] [31mError: sass/_find-us.scss
+Error: Invalid CSS after "    min-height:": expected expression (e.g. 1px, bold), was "}"
+        on line 52 of sass/_find-us.scss
+>>     min-height: 
+   ---------------^
+[39m
+[[90m22:36:43[39m] [36mgulp-notify[39m: [[34mError running notifier[39m] [31mCould not send message: spawn EACCES[39m
+[[90m22:36:46[39m] Starting '[36msass[39m'...
+[[90m22:36:46[39m] Finished '[36msass[39m' after [35m1.89 ms[39m
+[[34mBrowsersync[39m] [36mFile event [change] : [39m[35mbuild/css/style.min.css[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[90m22:36:48[39m] Starting '[36msass[39m'...
+[[90m22:36:48[39m] Finished '[36msass[39m' after [35m2.33 ms[39m
+[[34mBrowsersync[39m] [36mFile event [change] : [39m[35mbuild/css/style.min.css[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[90m22:36:54[39m] Starting '[36msass[39m'...
+[[90m22:36:54[39m] Finished '[36msass[39m' after [35m1.17 ms[39m
+[[90m22:36:54[39m] [36mgulp-notify[39m: [[34mGulp[39m] [31mError: sass/_find-us.scss
+Error: Invalid CSS after "    min-height:": expected expression (e.g. 1px, bold), was "}"
+        on line 52 of sass/_find-us.scss
+>>     min-height: 
+   ---------------^
+[39m
+[[90m22:36:54[39m] [36mgulp-notify[39m: [[34mError running notifier[39m] [31mCould not send message: spawn EACCES[39m
+[[90m22:36:57[39m] Starting '[36msass[39m'...
+[[90m22:36:57[39m] Finished '[36msass[39m' after [35m2 ms[39m
+[[34mBrowsersync[39m] [36mFile event [change] : [39m[35mbuild/css/style.min.css[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[90m22:37:06[39m] Starting '[36msass[39m'...
+[[90m22:37:06[39m] Finished '[36msass[39m' after [35m1.13 ms[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mFile event [change] : [39m[35mbuild/css/style.min.css[39m
+[[90m22:37:14[39m] Starting '[36msass[39m'...
+[[90m22:37:14[39m] Finished '[36msass[39m' after [35m1.15 ms[39m
+[[34mBrowsersync[39m] [36mFile event [change] : [39m[35mbuild/css/style.min.css[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[90m22:37:16[39m] Starting '[36msass[39m'...
+[[90m22:37:16[39m] Finished '[36msass[39m' after [35m1.06 ms[39m
+[[34mBrowsersync[39m] [36mFile event [change] : [39m[35mbuild/css/style.min.css[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[90m22:37:34[39m] Starting '[36msass[39m'...
+[[90m22:37:34[39m] Finished '[36msass[39m' after [35m1.74 ms[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mFile event [change] : [39m[35mbuild/css/style.min.css[39m
+[[90m22:37:40[39m] Starting '[36msass[39m'...
+[[90m22:37:40[39m] Finished '[36msass[39m' after [35m2 ms[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mFile event [change] : [39m[35mbuild/css/style.min.css[39m
+[[90m22:37:42[39m] Starting '[36msass[39m'...
+[[90m22:37:42[39m] Finished '[36msass[39m' after [35m2.08 ms[39m
+[[90m22:37:42[39m] [36mgulp-notify[39m: [[34mGulp[39m] [31mError: sass/_find-us.scss
+Error: property "min" must be followed by a ':'
+        on line 65 of sass/_find-us.scss
+>>     min
+   ----^
+[39m
+[[90m22:37:42[39m] [36mgulp-notify[39m: [[34mError running notifier[39m] [31mCould not send message: spawn EACCES[39m
+[[90m22:37:44[39m] Starting '[36msass[39m'...
+[[90m22:37:44[39m] Finished '[36msass[39m' after [35m5.29 ms[39m
+[[90m22:37:44[39m] [36mgulp-notify[39m: [[34mGulp[39m] [31mError: sass/_find-us.scss
+Error: Invalid CSS after "    min-height:": expected expression (e.g. 1px, bold), was "}"
+        on line 65 of sass/_find-us.scss
+>>     min-height: 
+   ---------------^
+[39m
+[[90m22:37:44[39m] [36mgulp-notify[39m: [[34mError running notifier[39m] [31mCould not send message: spawn EACCES[39m
+[[90m22:37:48[39m] Starting '[36msass[39m'...
+[[90m22:37:48[39m] Finished '[36msass[39m' after [35m1.13 ms[39m
+[[34mBrowsersync[39m] [36mFile event [change] : [39m[35mbuild/css/style.min.css[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[90m22:38:47[39m] Starting '[36msass[39m'...
+[[90m22:38:47[39m] Finished '[36msass[39m' after [35m5 ms[39m
+[[90m22:38:47[39m] [36mgulp-notify[39m: [[34mGulp[39m] [31mError: sass/_find-us.scss
+Error: property "m" must be followed by a ':'
+        on line 23 of sass/_find-us.scss
+>>       m
+   ------^
+[39m
+[[90m22:38:47[39m] [36mgulp-notify[39m: [[34mError running notifier[39m] [31mCould not send message: spawn EACCES[39m
+[[90m22:38:50[39m] Starting '[36msass[39m'...
+[[90m22:38:50[39m] Finished '[36msass[39m' after [35m4.2 ms[39m
+[[90m22:38:50[39m] [36mgulp-notify[39m: [[34mGulp[39m] [31mError: sass/_find-us.scss
+Error: property "max" must be followed by a ':'
+        on line 23 of sass/_find-us.scss
+>>       max
+   ------^
+[39m
+[[90m22:38:50[39m] [36mgulp-notify[39m: [[34mError running notifier[39m] [31mCould not send message: spawn EACCES[39m
+[[90m22:38:52[39m] Starting '[36msass[39m'...
+[[90m22:38:52[39m] Finished '[36msass[39m' after [35m1.59 ms[39m
+[[90m22:38:52[39m] [36mgulp-notify[39m: [[34mGulp[39m] [31mError: sass/_find-us.scss
+Error: Invalid CSS after "      max-height:": expected expression (e.g. 1px, bold), was "}"
+        on line 23 of sass/_find-us.scss
+>>       max-height: 
+   -----------------^
+[39m
+[[90m22:38:52[39m] [36mgulp-notify[39m: [[34mError running notifier[39m] [31mCould not send message: spawn EACCES[39m
+[[90m22:39:00[39m] Starting '[36msass[39m'...
+[[90m22:39:00[39m] Finished '[36msass[39m' after [35m1.34 ms[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mFile event [change] : [39m[35mbuild/css/style.min.css[39m
+[[90m22:39:15[39m] Starting '[36msass[39m'...
+[[90m22:39:15[39m] Finished '[36msass[39m' after [35m1.8 ms[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mFile event [change] : [39m[35mbuild/css/style.min.css[39m
+[[90m22:39:26[39m] Starting '[36msass[39m'...
+[[90m22:39:26[39m] Finished '[36msass[39m' after [35m2.39 ms[39m
+[[34mBrowsersync[39m] [36mFile event [change] : [39m[35mbuild/css/style.min.css[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[90m22:39:36[39m] Starting '[36msass[39m'...
+[[90m22:39:36[39m] Finished '[36msass[39m' after [35m1.53 ms[39m
+[[34mBrowsersync[39m] [36mFile event [change] : [39m[35mbuild/css/style.min.css[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[90m22:39:43[39m] Starting '[36msass[39m'...
+[[90m22:39:43[39m] Finished '[36msass[39m' after [35m1.67 ms[39m
+[[34mBrowsersync[39m] [36mFile event [change] : [39m[35mbuild/css/style.min.css[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[90m22:39:56[39m] Starting '[36msass[39m'...
+[[90m22:39:56[39m] Finished '[36msass[39m' after [35m1.04 ms[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mFile event [change] : [39m[35mbuild/css/style.min.css[39m
+[[90m22:40:04[39m] Starting '[36msass[39m'...
+[[90m22:40:04[39m] Finished '[36msass[39m' after [35m1.5 ms[39m
+[[34mBrowsersync[39m] [36mFile event [change] : [39m[35mbuild/css/style.min.css[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[90m22:40:20[39m] Starting '[36msass[39m'...
+[[90m22:40:20[39m] Finished '[36msass[39m' after [35m2 ms[39m
+[[90m22:40:20[39m] [36mgulp-notify[39m: [[34mGulp[39m] [31mError: sass/_find-us.scss
+Error: property "h" must be followed by a ':'
+        on line 28 of sass/_find-us.scss
+>>         h
+   --------^
+[39m
+[[90m22:40:20[39m] [36mgulp-notify[39m: [[34mError running notifier[39m] [31mCould not send message: spawn EACCES[39m
+[[90m22:40:22[39m] Starting '[36msass[39m'...
+[[90m22:40:22[39m] Finished '[36msass[39m' after [35m1.05 ms[39m
+[[90m22:40:22[39m] [36mgulp-notify[39m: [[34mGulp[39m] [31mError: sass/_find-us.scss
+Error: property "h" must be followed by a ':'
+        on line 28 of sass/_find-us.scss
+>>         h'
+   --------^
+[39m
+[[90m22:40:22[39m] [36mgulp-notify[39m: [[34mError running notifier[39m] [31mCould not send message: spawn EACCES[39m
+[[90m22:40:23[39m] Starting '[36msass[39m'...
+[[90m22:40:23[39m] Finished '[36msass[39m' after [35m1.58 ms[39m
+[[90m22:40:23[39m] [36mgulp-notify[39m: [[34mGulp[39m] [31mError: sass/_find-us.scss
+Error: property "h" must be followed by a ':'
+        on line 28 of sass/_find-us.scss
+>>         h
+   --------^
+[39m
+[[90m22:40:23[39m] [36mgulp-notify[39m: [[34mError running notifier[39m] [31mCould not send message: spawn EACCES[39m
+[[90m22:40:25[39m] Starting '[36msass[39m'...
+[[90m22:40:25[39m] Finished '[36msass[39m' after [35m1.11 ms[39m
+[[90m22:40:25[39m] [36mgulp-notify[39m: [[34mGulp[39m] [31mError: sass/_find-us.scss
+Error: Invalid CSS after "        height:": expected expression (e.g. 1px, bold), was "}"
+        on line 28 of sass/_find-us.scss
+>>         height: 
+   ---------------^
+[39m
+[[90m22:40:25[39m] [36mgulp-notify[39m: [[34mError running notifier[39m] [31mCould not send message: spawn EACCES[39m
+[[90m22:40:27[39m] Starting '[36msass[39m'...
+[[90m22:40:27[39m] Finished '[36msass[39m' after [35m1.83 ms[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mFile event [change] : [39m[35mbuild/css/style.min.css[39m
+[[90m22:40:35[39m] Starting '[36msass[39m'...
+[[90m22:40:35[39m] Finished '[36msass[39m' after [35m1.83 ms[39m
+[[34mBrowsersync[39m] [36mFile event [change] : [39m[35mbuild/css/style.min.css[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[90m22:40:42[39m] Starting '[36msass[39m'...
+[[90m22:40:42[39m] Finished '[36msass[39m' after [35m2.06 ms[39m
+[[90m22:40:42[39m] [36mgulp-notify[39m: [[34mGulp[39m] [31mError: sass/_find-us.scss
+Error: style declaration must contain a value
+        on line 28 of sass/_find-us.scss
+>>         height: ;
+   ---------------^
+[39m
+[[90m22:40:42[39m] [36mgulp-notify[39m: [[34mError running notifier[39m] [31mCould not send message: spawn EACCES[39m
+[[90m22:40:44[39m] Starting '[36msass[39m'...
+[[90m22:40:44[39m] Finished '[36msass[39m' after [35m1.34 ms[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mFile event [change] : [39m[35mbuild/css/style.min.css[39m
+[[90m22:40:47[39m] Starting '[36msass[39m'...
+[[90m22:40:47[39m] Finished '[36msass[39m' after [35m4.68 ms[39m
+[[34mBrowsersync[39m] [36mFile event [change] : [39m[35mbuild/css/style.min.css[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[90m22:40:56[39m] Starting '[36msass[39m'...
+[[90m22:40:56[39m] Finished '[36msass[39m' after [35m1.37 ms[39m
+[[34mBrowsersync[39m] [36mFile event [change] : [39m[35mbuild/css/style.min.css[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[90m22:40:57[39m] Starting '[36msass[39m'...
+[[90m22:40:57[39m] Finished '[36msass[39m' after [35m2.33 ms[39m
+[[34mBrowsersync[39m] [36mFile event [change] : [39m[35mbuild/css/style.min.css[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[90m22:41:10[39m] Starting '[36msass[39m'...
+[[90m22:41:10[39m] Finished '[36msass[39m' after [35m3.19 ms[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mFile event [change] : [39m[35mbuild/css/style.min.css[39m
+[[90m22:41:17[39m] Starting '[36msass[39m'...
+[[90m22:41:17[39m] Finished '[36msass[39m' after [35m1.12 ms[39m
+[[90m22:41:17[39m] [36mgulp-notify[39m: [[34mGulp[39m] [31mError: sass/_find-us.scss
+Error: Invalid CSS after "  }": expected selector or at-rule, was "}"
+        on line 128 of sass/_find-us.scss
+>>   }
+   ---^
+[39m
+[[90m22:41:17[39m] [36mgulp-notify[39m: [[34mError running notifier[39m] [31mCould not send message: spawn EACCES[39m
+[[90m22:41:29[39m] Starting '[36msass[39m'...
+[[90m22:41:29[39m] Finished '[36msass[39m' after [35m2.35 ms[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mFile event [change] : [39m[35mbuild/css/style.min.css[39m
+[[90m22:44:21[39m] Starting '[36msass[39m'...
+[[90m22:44:21[39m] Finished '[36msass[39m' after [35m4.54 ms[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mFile event [change] : [39m[35mbuild/css/style.min.css[39m
+[[90m22:44:22[39m] Starting '[36msass[39m'...
+[[90m22:44:22[39m] Finished '[36msass[39m' after [35m2.55 ms[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mFile event [change] : [39m[35mbuild/css/style.min.css[39m
+[[90m22:44:24[39m] Starting '[36msass[39m'...
+[[90m22:44:24[39m] Finished '[36msass[39m' after [35m2.16 ms[39m
+[[34mBrowsersync[39m] [36mFile event [change] : [39m[35mbuild/css/style.min.css[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mFile event [change] : [39m[35mbuild/css/style.min.css[39m
+[[90m22:44:26[39m] Starting '[36msass[39m'...
+[[90m22:44:26[39m] Finished '[36msass[39m' after [35m1.67 ms[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mFile event [change] : [39m[35mbuild/css/style.min.css[39m
+[[90m22:44:35[39m] Starting '[36msass[39m'...
+[[90m22:44:35[39m] Finished '[36msass[39m' after [35m2.07 ms[39m
+[[34mBrowsersync[39m] [36mFile event [change] : [39m[35mbuild/css/style.min.css[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[90m22:44:38[39m] Starting '[36msass[39m'...
+[[90m22:44:38[39m] Finished '[36msass[39m' after [35m2.2 ms[39m
+[[90m22:44:38[39m] [36mgulp-notify[39m: [[34mGulp[39m] [31mError: sass/_find-us.scss
+Error: property "padding" must be followed by a ':'
+        on line 75 of sass/_find-us.scss
+>>     padding
+   ----^
+[39m
+[[90m22:44:38[39m] [36mgulp-notify[39m: [[34mError running notifier[39m] [31mCould not send message: spawn EACCES[39m
+[[90m22:44:40[39m] Starting '[36msass[39m'...
+[[90m22:44:40[39m] Finished '[36msass[39m' after [35m1.2 ms[39m
+[[90m22:44:40[39m] [36mgulp-notify[39m: [[34mGulp[39m] [31mError: sass/_find-us.scss
+Error: Invalid CSS after "    padding-top:": expected expression (e.g. 1px, bold), was "}"
+        on line 75 of sass/_find-us.scss
+>>     padding-top: 
+   ----------------^
+[39m
+[[90m22:44:40[39m] [36mgulp-notify[39m: [[34mError running notifier[39m] [31mCould not send message: spawn EACCES[39m
+[[90m22:44:44[39m] Starting '[36msass[39m'...
+[[90m22:44:44[39m] Finished '[36msass[39m' after [35m2.45 ms[39m
+[[34mBrowsersync[39m] [36mFile event [change] : [39m[35mbuild/css/style.min.css[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[90m22:44:50[39m] Starting '[36msass[39m'...
+[[90m22:44:50[39m] Finished '[36msass[39m' after [35m2.74 ms[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mFile event [change] : [39m[35mbuild/css/style.min.css[39m
+[[90m22:44:54[39m] Starting '[36msass[39m'...
+[[90m22:44:54[39m] Finished '[36msass[39m' after [35m1.14 ms[39m
+[[34mBrowsersync[39m] [36mFile event [change] : [39m[35mbuild/css/style.min.css[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[90m22:44:55[39m] Starting '[36msass[39m'...
+[[90m22:44:55[39m] Finished '[36msass[39m' after [35m2.06 ms[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mFile event [change] : [39m[35mbuild/css/style.min.css[39m
+[[90m22:45:02[39m] Starting '[36msass[39m'...
+[[90m22:45:02[39m] Finished '[36msass[39m' after [35m1.78 ms[39m
+[[34mBrowsersync[39m] [36mFile event [change] : [39m[35mbuild/css/style.min.css[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[90m22:45:22[39m] Starting '[36msass[39m'...
+[[90m22:45:22[39m] Finished '[36msass[39m' after [35m1.08 ms[39m
+[[34mBrowsersync[39m] [36mFile event [change] : [39m[35mbuild/css/style.min.css[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[90m22:47:06[39m] Starting '[36msass[39m'...
+[[90m22:47:06[39m] Finished '[36msass[39m' after [35m2.82 ms[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mFile event [change] : [39m[35mbuild/css/style.min.css[39m
+[[90m22:47:08[39m] Starting '[36msass[39m'...
+[[90m22:47:08[39m] Finished '[36msass[39m' after [35m3.45 ms[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mFile event [change] : [39m[35mbuild/css/style.min.css[39m
+[[90m22:49:02[39m] Starting '[36msass[39m'...
+[[90m22:49:02[39m] Finished '[36msass[39m' after [35m6.5 ms[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mFile event [change] : [39m[35mbuild/css/style.min.css[39m
+[[90m22:49:23[39m] Starting '[36msass[39m'...
+[[90m22:49:23[39m] Finished '[36msass[39m' after [35m7.48 ms[39m
+[[90m22:49:23[39m] [36mgulp-notify[39m: [[34mGulp[39m] [31mError: sass/_find-us.scss
+Error: Invalid CSS after "}": expected "}", was "."
+        on line 39 of sass/_find-us.scss
+>> }
+   -^
+[39m
+[[90m22:49:23[39m] [36mgulp-notify[39m: [[34mError running notifier[39m] [31mCould not send message: spawn EACCES[39m
+[[90m22:49:25[39m] Starting '[36msass[39m'...
+[[90m22:49:25[39m] Finished '[36msass[39m' after [35m1.11 ms[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mFile event [change] : [39m[35mbuild/css/style.min.css[39m
+[[90m22:49:29[39m] Starting '[36msass[39m'...
+[[90m22:49:29[39m] Finished '[36msass[39m' after [35m10 ms[39m
+[[34mBrowsersync[39m] [36mFile event [change] : [39m[35mbuild/css/style.min.css[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[90m22:49:35[39m] Starting '[36msass[39m'...
+[[90m22:49:35[39m] Finished '[36msass[39m' after [35m2.46 ms[39m
+[[34mBrowsersync[39m] [36mFile event [change] : [39m[35mbuild/css/style.min.css[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mFile event [change] : [39m[35mbuild/css/style.min.css[39m
+[[90m22:49:41[39m] Starting '[36msass[39m'...
+[[90m22:49:41[39m] Finished '[36msass[39m' after [35m1.42 ms[39m
+[[34mBrowsersync[39m] [36mFile event [change] : [39m[35mbuild/css/style.min.css[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[90m22:49:43[39m] Starting '[36msass[39m'...
+[[90m22:49:43[39m] Finished '[36msass[39m' after [35m2.36 ms[39m
+[[90m22:49:43[39m] [36mgulp-notify[39m: [[34mGulp[39m] [31mError: sass/_find-us.scss
+Error: Invalid CSS after "  }": expected "}", was ""
+        on line 151 of sass/_find-us.scss
+>>   }
+   ---^
+[39m
+[[90m22:49:43[39m] [36mgulp-notify[39m: [[34mError running notifier[39m] [31mCould not send message: spawn EACCES[39m
+[[90m22:49:45[39m] Starting '[36msass[39m'...
+[[90m22:49:45[39m] Finished '[36msass[39m' after [35m1.66 ms[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mFile event [change] : [39m[35mbuild/css/style.min.css[39m
+[[90m22:49:47[39m] Starting '[36msass[39m'...
+[[90m22:49:47[39m] Finished '[36msass[39m' after [35m1.82 ms[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mFile event [change] : [39m[35mbuild/css/style.min.css[39m
+[[90m22:49:52[39m] Starting '[36msass[39m'...
+[[90m22:49:52[39m] Finished '[36msass[39m' after [35m2.28 ms[39m
+[[90m22:49:52[39m] [36mgulp-notify[39m: [[34mGulp[39m] [31mError: sass/_find-us.scss
+Error: property "fon" must be followed by a ':'
+        on line 43 of sass/_find-us.scss
+>>     fon
+   ----^
+[39m
+[[90m22:49:52[39m] [36mgulp-notify[39m: [[34mError running notifier[39m] [31mCould not send message: spawn EACCES[39m
+[[90m22:49:54[39m] Starting '[36msass[39m'...
+[[90m22:49:54[39m] Finished '[36msass[39m' after [35m1.63 ms[39m
+[[90m22:49:54[39m] [36mgulp-notify[39m: [[34mGulp[39m] [31mError: sass/_find-us.scss
+Error: Invalid CSS after "    font-size:": expected expression (e.g. 1px, bold), was "}"
+        on line 43 of sass/_find-us.scss
+>>     font-size: 
+   --------------^
+[39m
+[[90m22:49:54[39m] [36mgulp-notify[39m: [[34mError running notifier[39m] [31mCould not send message: spawn EACCES[39m
+[[90m22:49:56[39m] Starting '[36msass[39m'...
+[[90m22:49:56[39m] Finished '[36msass[39m' after [35m1.99 ms[39m
+[[34mBrowsersync[39m] [36mFile event [change] : [39m[35mbuild/css/style.min.css[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[90m22:57:42[39m] Starting '[36msass[39m'...
+[[90m22:57:42[39m] Finished '[36msass[39m' after [35m10 ms[39m
+[[90m22:57:42[39m] [36mgulp-notify[39m: [[34mGulp[39m] [31mError: sass/_find-us.scss
+Error: Invalid CSS after "  }": expected 1 selector or at-rule, was "@"
+        on line 152 of sass/_find-us.scss
+>>   }
+   ---^
+[39m
+[[90m22:57:42[39m] [36mgulp-notify[39m: [[34mError running notifier[39m] [31mCould not send message: spawn EACCES[39m
+[[90m22:57:46[39m] Starting '[36msass[39m'...
+[[90m22:57:46[39m] Finished '[36msass[39m' after [35m1.6 ms[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mFile event [change] : [39m[35mbuild/css/style.min.css[39m
+[[90m22:57:48[39m] Starting '[36msass[39m'...
+[[90m22:57:48[39m] Finished '[36msass[39m' after [35m3.57 ms[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mFile event [change] : [39m[35mbuild/css/style.min.css[39m
+[[90m22:57:55[39m] Starting '[36msass[39m'...
+[[90m22:57:55[39m] Finished '[36msass[39m' after [35m7.06 ms[39m
+[[90m22:57:56[39m] [36mgulp-notify[39m: [[34mGulp[39m] [31mError: sass/_find-us.scss
+Error: Invalid CSS after "@include desktop {": expected "}", was ".a"
+        on line 154 of sass/_find-us.scss
+>> @include desktop {
+   ------------------^
+[39m
+[[90m22:57:56[39m] [36mgulp-notify[39m: [[34mError running notifier[39m] [31mCould not send message: spawn EACCES[39m
+[[90m22:57:59[39m] Starting '[36msass[39m'...
+[[90m22:57:59[39m] Finished '[36msass[39m' after [35m1.81 ms[39m
+[[90m22:57:59[39m] [36mgulp-notify[39m: [[34mGulp[39m] [31mError: sass/_find-us.scss
+Error: Invalid CSS after "...clude desktop {": expected "}", was ".page-template-find"
+        on line 154 of sass/_find-us.scss
+>> @include desktop {
+   ------------------^
+[39m
+[[90m22:57:59[39m] [36mgulp-notify[39m: [[34mError running notifier[39m] [31mCould not send message: spawn EACCES[39m
+[[90m22:58:03[39m] Starting '[36msass[39m'...
+[[90m22:58:03[39m] Finished '[36msass[39m' after [35m1.41 ms[39m
+[[90m22:58:03[39m] [36mgulp-notify[39m: [[34mGulp[39m] [31mError: sass/_find-us.scss
+Error: Invalid CSS after "...clude desktop {": expected "}", was ".page-template-find"
+        on line 154 of sass/_find-us.scss
+>> @include desktop {
+   ------------------^
+[39m
+[[90m22:58:03[39m] [36mgulp-notify[39m: [[34mError running notifier[39m] [31mCould not send message: spawn EACCES[39m
+[[90m22:58:07[39m] Starting '[36msass[39m'...
+[[90m22:58:07[39m] Finished '[36msass[39m' after [35m999 μs[39m
+[[90m22:58:07[39m] [36mgulp-notify[39m: [[34mGulp[39m] [31mError: sass/_find-us.scss
+Error: Invalid CSS after "...clude desktop {": expected "}", was ".page-template-find"
+        on line 154 of sass/_find-us.scss
+>> @include desktop {
+   ------------------^
+[39m
+[[90m22:58:07[39m] [36mgulp-notify[39m: [[34mError running notifier[39m] [31mCould not send message: spawn EACCES[39m
+[[90m22:58:13[39m] Starting '[36msass[39m'...
+[[90m22:58:13[39m] Finished '[36msass[39m' after [35m1.31 ms[39m
+[[90m22:58:13[39m] [36mgulp-notify[39m: [[34mGulp[39m] [31mError: sass/_find-us.scss
+Error: property "mi" must be followed by a ':'
+        on line 156 of sass/_find-us.scss
+>>     mi
+   ----^
+[39m
+[[90m22:58:13[39m] [36mgulp-notify[39m: [[34mError running notifier[39m] [31mCould not send message: spawn EACCES[39m
+[[90m22:58:17[39m] Starting '[36msass[39m'...
+[[90m22:58:17[39m] Finished '[36msass[39m' after [35m1.38 ms[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mFile event [change] : [39m[35mbuild/css/style.min.css[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[90m23:02:39[39m] Starting '[36msass[39m'...
+[[90m23:02:39[39m] Finished '[36msass[39m' after [35m23 ms[39m
+[[34mBrowsersync[39m] [36mFile event [change] : [39m[35mbuild/css/style.min.css[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[90m23:02:42[39m] Starting '[36msass[39m'...
+[[90m23:02:42[39m] Finished '[36msass[39m' after [35m3.38 ms[39m
+[[34mBrowsersync[39m] [36mFile event [change] : [39m[35mbuild/css/style.min.css[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[90m23:03:35[39m] Starting '[36msass[39m'...
+[[90m23:03:35[39m] Finished '[36msass[39m' after [35m2.63 ms[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mFile event [change] : [39m[35mbuild/css/style.min.css[39m
+[[90m23:03:38[39m] Starting '[36msass[39m'...
+[[90m23:03:38[39m] Finished '[36msass[39m' after [35m3.14 ms[39m
+[[90m23:03:39[39m] [36mgulp-notify[39m: [[34mGulp[39m] [31mError: sass/_find-us.scss
+Error: Invalid CSS after ".google-maps {": expected "}", was "."
+        on line 60 of sass/_find-us.scss
+>> .google-maps {
+   --------------^
+[39m
+[[90m23:03:39[39m] [36mgulp-notify[39m: [[34mError running notifier[39m] [31mCould not send message: spawn EACCES[39m
+[[90m23:03:40[39m] Starting '[36msass[39m'...
+[[90m23:03:40[39m] Finished '[36msass[39m' after [35m2.47 ms[39m
+[[34mBrowsersync[39m] [36mFile event [change] : [39m[35mbuild/css/style.min.css[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[90m23:03:44[39m] Starting '[36msass[39m'...
+[[90m23:03:44[39m] Finished '[36msass[39m' after [35m5.82 ms[39m
+[[34mBrowsersync[39m] [36mFile event [change] : [39m[35mbuild/css/style.min.css[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[90m23:03:48[39m] Starting '[36msass[39m'...
+[[90m23:03:48[39m] Finished '[36msass[39m' after [35m2.69 ms[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mFile event [change] : [39m[35mbuild/css/style.min.css[39m
+[[90m23:03:50[39m] Starting '[36msass[39m'...
+[[90m23:03:50[39m] Finished '[36msass[39m' after [35m3.12 ms[39m
+[[90m23:03:52[39m] Starting '[36msass[39m'...
+[[90m23:03:52[39m] Finished '[36msass[39m' after [35m1.13 ms[39m
+[[34mBrowsersync[39m] [36mFile event [change] : [39m[35mbuild/css/style.min.css[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[90m23:03:53[39m] Starting '[36msass[39m'...
+[[90m23:03:53[39m] Finished '[36msass[39m' after [35m1.97 ms[39m
+[[90m23:03:53[39m] [36mgulp-notify[39m: [[34mGulp[39m] [31mError: sass/_find-us.scss
+Error: Invalid CSS after "}": expected "}", was ""
+        on line 159 of sass/_find-us.scss
+>> }
+   -^
+[39m
+[[90m23:03:53[39m] [36mgulp-notify[39m: [[34mError running notifier[39m] [31mCould not send message: spawn EACCES[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mFile event [change] : [39m[35mbuild/css/style.min.css[39m
+[[90m23:03:55[39m] Starting '[36msass[39m'...
+[[90m23:03:55[39m] Finished '[36msass[39m' after [35m1.99 ms[39m
+[[34mBrowsersync[39m] [36mFile event [change] : [39m[35mbuild/css/style.min.css[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[90m23:04:02[39m] Starting '[36msass[39m'...
+[[90m23:04:02[39m] Finished '[36msass[39m' after [35m852 μs[39m
+[[34mBrowsersync[39m] [36mFile event [change] : [39m[35mbuild/css/style.min.css[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[90m23:13:39[39m] Starting '[36msass[39m'...
+[[90m23:13:39[39m] Finished '[36msass[39m' after [35m14 ms[39m
+[[90m23:13:39[39m] [36mgulp-notify[39m: [[34mGulp[39m] [31mError: sass/_find-us.scss
+Error: Invalid CSS after "  }": expected selector or at-rule, was "}"
+        on line 133 of sass/_find-us.scss
+>>   }
+   ---^
+[39m
+[[90m23:13:39[39m] [36mgulp-notify[39m: [[34mError running notifier[39m] [31mCould not send message: spawn EACCES[39m
+[[90m23:13:46[39m] Starting '[36msass[39m'...
+[[90m23:13:46[39m] Finished '[36msass[39m' after [35m3.45 ms[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mFile event [change] : [39m[35mbuild/css/style.min.css[39m
+[[90m23:13:48[39m] Starting '[36msass[39m'...
+[[90m23:13:48[39m] Finished '[36msass[39m' after [35m2.65 ms[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mFile event [change] : [39m[35mbuild/css/style.min.css[39m
+[[90m23:13:55[39m] Starting '[36msass[39m'...
+[[90m23:13:55[39m] Finished '[36msass[39m' after [35m2.13 ms[39m
+[[34mBrowsersync[39m] [36mFile event [change] : [39m[35mbuild/css/style.min.css[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[90m23:14:00[39m] Starting '[36msass[39m'...
+[[90m23:14:00[39m] Finished '[36msass[39m' after [35m989 μs[39m
+[[90m23:14:00[39m] [36mgulp-notify[39m: [[34mGulp[39m] [31mError: sass/_find-us.scss
+Error: property "m" must be followed by a ':'
+        on line 71 of sass/_find-us.scss
+>>   m
+   --^
+[39m
+[[90m23:14:00[39m] [36mgulp-notify[39m: [[34mError running notifier[39m] [31mCould not send message: spawn EACCES[39m
+[[90m23:14:02[39m] Starting '[36msass[39m'...
+[[90m23:14:02[39m] Finished '[36msass[39m' after [35m1.01 ms[39m
+[[90m23:14:02[39m] [36mgulp-notify[39m: [[34mGulp[39m] [31mError: sass/_find-us.scss
+Error: property "mapdiv" must be followed by a ':'
+        on line 71 of sass/_find-us.scss
+>>   mapdiv
+   --^
+[39m
+[[90m23:14:02[39m] [36mgulp-notify[39m: [[34mError running notifier[39m] [31mCould not send message: spawn EACCES[39m
+[[90m23:14:21[39m] Starting '[36msass[39m'...
+[[90m23:14:21[39m] Finished '[36msass[39m' after [35m4.3 ms[39m
+[[90m23:14:21[39m] [36mgulp-notify[39m: [[34mGulp[39m] [31mError: sass/_find-us.scss
+Error: property "mapDiv" must be followed by a ':'
+        on line 71 of sass/_find-us.scss
+>>   mapDiv
+   --^
+[39m
+[[90m23:14:21[39m] [36mgulp-notify[39m: [[34mError running notifier[39m] [31mCould not send message: spawn EACCES[39m
+[[90m23:14:23[39m] Starting '[36msass[39m'...
+[[90m23:14:23[39m] Finished '[36msass[39m' after [35m902 μs[39m
+[[34mBrowsersync[39m] [36mFile event [change] : [39m[35mbuild/css/style.min.css[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[90m23:14:27[39m] Starting '[36msass[39m'...
+[[90m23:14:27[39m] Finished '[36msass[39m' after [35m3.44 ms[39m
+[[34mBrowsersync[39m] [36mFile event [change] : [39m[35mbuild/css/style.min.css[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[90m23:14:31[39m] Starting '[36msass[39m'...
+[[90m23:14:32[39m] Finished '[36msass[39m' after [35m6.27 ms[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mFile event [change] : [39m[35mbuild/css/style.min.css[39m
+[[90m23:14:33[39m] Starting '[36msass[39m'...
+[[90m23:14:33[39m] Finished '[36msass[39m' after [35m1.91 ms[39m
+[[90m23:14:33[39m] [36mgulp-notify[39m: [[34mGulp[39m] [31mError: sass/_find-us.scss
+Error: property "mi" must be followed by a ':'
+        on line 72 of sass/_find-us.scss
+>>     mi
+   ----^
+[39m
+[[90m23:14:33[39m] [36mgulp-notify[39m: [[34mError running notifier[39m] [31mCould not send message: spawn EACCES[39m
+[[90m23:14:37[39m] Starting '[36msass[39m'...
+[[90m23:14:37[39m] Finished '[36msass[39m' after [35m1.82 ms[39m
+[[90m23:14:37[39m] [36mgulp-notify[39m: [[34mGulp[39m] [31mError: sass/_find-us.scss
+Error: property "h" must be followed by a ':'
+        on line 72 of sass/_find-us.scss
+>>     h
+   ----^
+[39m
+[[90m23:14:37[39m] [36mgulp-notify[39m: [[34mError running notifier[39m] [31mCould not send message: spawn EACCES[39m
+[[90m23:14:39[39m] Starting '[36msass[39m'...
+[[90m23:14:39[39m] Finished '[36msass[39m' after [35m950 μs[39m
+[[90m23:14:39[39m] [36mgulp-notify[39m: [[34mGulp[39m] [31mError: sass/_find-us.scss
+Error: Invalid CSS after "    height:": expected expression (e.g. 1px, bold), was "}"
+        on line 72 of sass/_find-us.scss
+>>     height: 
+   -----------^
+[39m
+[[90m23:14:39[39m] [36mgulp-notify[39m: [[34mError running notifier[39m] [31mCould not send message: spawn EACCES[39m
+[[90m23:14:41[39m] Starting '[36msass[39m'...
+[[90m23:14:41[39m] Finished '[36msass[39m' after [35m937 μs[39m
+[[34mBrowsersync[39m] [36mFile event [change] : [39m[35mbuild/css/style.min.css[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[90m23:16:44[39m] Starting '[36msass[39m'...
+[[90m23:16:44[39m] Finished '[36msass[39m' after [35m3.32 ms[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mFile event [change] : [39m[35mbuild/css/style.min.css[39m
+[[90m23:16:55[39m] Starting '[36msass[39m'...
+[[90m23:16:55[39m] Finished '[36msass[39m' after [35m6.06 ms[39m
+[[34mBrowsersync[39m] [36mFile event [change] : [39m[35mbuild/css/style.min.css[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[90m23:17:05[39m] Starting '[36msass[39m'...
+[[90m23:17:05[39m] Finished '[36msass[39m' after [35m3.19 ms[39m
+[[34mBrowsersync[39m] [36mFile event [change] : [39m[35mbuild/css/style.min.css[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[90m23:18:18[39m] Starting '[36msass[39m'...
+[[90m23:18:18[39m] Finished '[36msass[39m' after [35m1.82 ms[39m
+[[34mBrowsersync[39m] [36mFile event [change] : [39m[35mbuild/css/style.min.css[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[90m23:18:28[39m] Starting '[36msass[39m'...
+[[90m23:18:28[39m] Finished '[36msass[39m' after [35m3.06 ms[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mFile event [change] : [39m[35mbuild/css/style.min.css[39m
+[[90m23:18:29[39m] Starting '[36msass[39m'...
+[[90m23:18:29[39m] Finished '[36msass[39m' after [35m1.89 ms[39m
+[[34mBrowsersync[39m] [36mFile event [change] : [39m[35mbuild/css/style.min.css[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mFile event [change] : [39m[35mbuild/css/style.min.css[39m
+[[90m23:18:34[39m] Starting '[36msass[39m'...
+[[90m23:18:34[39m] Finished '[36msass[39m' after [35m1.49 ms[39m
+[[34mBrowsersync[39m] [36mFile event [change] : [39m[35mbuild/css/style.min.css[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[90m23:18:35[39m] Starting '[36msass[39m'...
+[[90m23:18:35[39m] Finished '[36msass[39m' after [35m2.7 ms[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mFile event [change] : [39m[35mbuild/css/style.min.css[39m
+[[90m23:18:42[39m] Starting '[36msass[39m'...
+[[90m23:18:42[39m] Finished '[36msass[39m' after [35m2.42 ms[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mFile event [change] : [39m[35mbuild/css/style.min.css[39m
+[[90m23:21:48[39m] Starting '[36msass[39m'...
+[[90m23:21:48[39m] Finished '[36msass[39m' after [35m7.05 ms[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mFile event [change] : [39m[35mbuild/css/style.min.css[39m
+[[90m23:21:52[39m] Starting '[36msass[39m'...
+[[90m23:21:52[39m] Finished '[36msass[39m' after [35m3.91 ms[39m
+[[34mBrowsersync[39m] [36mFile event [change] : [39m[35mbuild/css/style.min.css[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[90m23:22:05[39m] Starting '[36msass[39m'...
+[[90m23:22:05[39m] Finished '[36msass[39m' after [35m2.35 ms[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mFile event [change] : [39m[35mbuild/css/style.min.css[39m
+[[90m23:22:07[39m] Starting '[36msass[39m'...
+[[90m23:22:07[39m] Finished '[36msass[39m' after [35m1.42 ms[39m
+[[90m23:22:07[39m] [36mgulp-notify[39m: [[34mGulp[39m] [31mError: sass/_find-us.scss
+Error: property "pa" must be followed by a ':'
+        on line 31 of sass/_find-us.scss
+>>   pa
+   --^
+[39m
+[[90m23:22:07[39m] [36mgulp-notify[39m: [[34mError running notifier[39m] [31mCould not send message: spawn EACCES[39m
+[[90m23:22:15[39m] Starting '[36msass[39m'...
+[[90m23:22:15[39m] Finished '[36msass[39m' after [35m2.69 ms[39m
+[[90m23:22:15[39m] [36mgulp-notify[39m: [[34mGulp[39m] [31mError: sass/_find-us.scss
+Error: property "fo" must be followed by a ':'
+        on line 32 of sass/_find-us.scss
+>>     fo
+   ----^
+[39m
+[[90m23:22:15[39m] [36mgulp-notify[39m: [[34mError running notifier[39m] [31mCould not send message: spawn EACCES[39m
+[[90m23:22:18[39m] Starting '[36msass[39m'...
+[[90m23:22:18[39m] Finished '[36msass[39m' after [35m2.2 ms[39m
+[[90m23:22:18[39m] [36mgulp-notify[39m: [[34mGulp[39m] [31mError: sass/_find-us.scss
+Error: Invalid CSS after "    font-size:": expected expression (e.g. 1px, bold), was "}"
+        on line 32 of sass/_find-us.scss
+>>     font-size: 
+   --------------^
+[39m
+[[90m23:22:18[39m] [36mgulp-notify[39m: [[34mError running notifier[39m] [31mCould not send message: spawn EACCES[39m
+[[90m23:22:21[39m] Starting '[36msass[39m'...
+[[90m23:22:21[39m] Finished '[36msass[39m' after [35m1.79 ms[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mFile event [change] : [39m[35mbuild/css/style.min.css[39m
+[[90m23:22:41[39m] Starting '[36msass[39m'...
+[[90m23:22:41[39m] Finished '[36msass[39m' after [35m1.41 ms[39m
+[[34mBrowsersync[39m] [36mReloading Browsers...[39m
+[[34mBrowsersync[39m] [36mFile event [change] : [39m[35mbuild/css/style.min.css[39m
+^G  ^C
+bash-3.2$ git status
+On branch master
+Your branch and 'origin/master' have diverged,
+and have 1 and 22 different commits each, respectively.
+  (use "git pull" to merge the remote branch into yours)
+
+All conflicts fixed but you are still merging.
+  (use "git commit" to conclude merge)
+
+Changes to be committed:
+
+	[32mmodified:   functions.php[m
+	[32mnew file:   js/main.js[m
+	[32mmodified:   sass/_navigation.scss[m
+	[32mmodified:   style.css[m
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	[31mmodified:   find-us.php[m
+	[31mmodified:   sass/_find-us.scss[m
+	[31mmodified:   sass/_media.scss[m
+	[31mmodified:   sass/_services.scss[m
+	[31mmodified:   style.css[m
+	[31mmodified:   typescript[m
+
+bash-3.2$ git p[Kcommit -m "wo[K[Kworked on styling for desktop view for find-us"
+[master 352de62] worked on styling for desktop view for find-us
+bash-3.2$ git p[Kstaus[K[Ktus
+On branch master
+Your branch and 'origin/master' have diverged,
+and have 2 and 20 different commits each, respectively.
+  (use "git pull" to merge the remote branch into yours)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	[31mmodified:   find-us.php[m
+	[31mmodified:   sass/_find-us.scss[m
+	[31mmodified:   sass/_media.scss[m
+	[31mmodified:   sass/_services.scss[m
+	[31mmodified:   style.css[m
+	[31mmodified:   typescript[m
+
+no changes added to commit (use "git add" and/or "git commit -a")
+bash-3.2$ git merge origin/mas
