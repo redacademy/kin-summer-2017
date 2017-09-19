@@ -528,7 +528,6 @@ a {
       box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
       float: left;
       position: absolute;
-      top: 1.5rem;
       left: -999rem;
       z-index: 99999; }
       .main-navigation ul ul ul {
@@ -628,6 +627,18 @@ a {
       font-size: 24px;
       text-transform: uppercase;
       font-weight: bold; }
+
+#menu-menu .sub-menu {
+  background-color: black;
+  top: 48px;
+  right: -60px;
+  width: 240px; }
+  #menu-menu .sub-menu li {
+    margin-right: 0; }
+    #menu-menu .sub-menu li a {
+      width: 240px;
+      padding: 0 30px;
+      border-bottom: 2px solid white; }
 
 @media (min-width: 600px) {
   .site-header {
