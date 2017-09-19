@@ -6,6 +6,6 @@
         <p class="item-description"><?php echo CFS()->get( 'about_our_community'); ?></p>
     </div>
     <div class="red-button">
-        <a src="#">Projects</a>
+        <a href="<?php echo esc_url(home_url('/events/')); ?>">Projects</a>
     </div>
 </section>
