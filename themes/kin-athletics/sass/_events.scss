@@ -225,13 +225,6 @@
     text-transform: uppercase;
   }
 
-  .social-button{
-    width: 60%;
-
-    a{
-      font-size: 30px;
-    }
-  }
 }
 }
 
@@ -244,17 +237,6 @@
     flex-direction: row;
     justify-content: flex-end;
 
-    .red-button {
-      @include desktop {
-        order: 1;
-      }
-
-      .social-button.clr-bg {
-        @include desktop {
-          order: 2;
-        }
-      }
-    }
   }
 }
 
