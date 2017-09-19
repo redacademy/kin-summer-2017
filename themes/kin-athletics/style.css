@@ -925,7 +925,7 @@ img {
   margin-left: 9.5%; }
   @media only screen and (min-width: 600px) {
     .project-td-text {
-      margin-top: 15%;
+      bottom: 10rem;
       margin-left: 4%;
       bottom: 25%; } }
   .project-td-text h2 {
@@ -969,10 +969,10 @@ p {
 
 .who-we-are-text {
   text-align: right;
-  margin-top: 15rem; }
+  bottom: 8rem; }
   @media only screen and (min-width: 600px) {
     .who-we-are-text {
-      margin-top: 15rem; } }
+      bottom: 10rem; } }
   .who-we-are-text .who-button-cont {
     color: white;
     text-transform: uppercase;
@@ -1006,10 +1006,10 @@ p {
 
 .what-we-do-text {
   text-align: left;
-  margin-top: 15rem; }
+  bottom: 10rem; }
   @media only screen and (min-width: 600px) {
     .what-we-do-text {
-      margin-top: 15rem;
+      bottom: 10rem;
       bottom: 8rem; }
       .what-we-do-text h2 {
         font-size: 6rem;
@@ -1102,9 +1102,6 @@ p {
   position: absolute;
   bottom: 0;
   width: 100%; }
-  @media only screen and (min-width: 600px) {
-    .landing-scroll-section {
-      margin-top: 10rem; } }
   .landing-scroll-section p, .landing-scroll-section .v {
     color: #A10000;
     text-transform: uppercase;
@@ -1144,8 +1141,9 @@ p {
   display: none; }
 
 .page-template-landing-page .flickity-page-dots {
-  bottom: 120px;
-  color: white; }
+  bottom: 120px; }
+  .page-template-landing-page .flickity-page-dots .dot-is-selected {
+    background-color: white; }
 
 /*--------------------------------------------------------------
 # Page Templates
