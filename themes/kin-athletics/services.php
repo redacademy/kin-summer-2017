@@ -77,7 +77,7 @@ get_header(); ?>
 
           <div class="carousel-cell group-training" id='group-training'>
             <h2>Group training</h2>
-            <?php echo CFS()->get('services_group_training');?>
+            <?php echo CFS()->get('services_group_training', false, array( 'format' => 'raw' ));?>
             <h3>Basic pricing</h3>
 
             <div class='price-box-container'>
