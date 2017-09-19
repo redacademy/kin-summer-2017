@@ -2364,9 +2364,16 @@ body .page-template-video-page {
 .page-template-find-us p {
   margin: .50%; }
 
-.page-template-find-us .entry-title {
+.page-template-find-us h1.entry-title {
   position: absolute;
-  z-index: 1; }
+  z-index: 1;
+  text-align: center;
+  width: 100%;
+  margin-top: 230px;
+  font-size: 3.7rem; }
+  @media only screen and (min-width: 600px) {
+    .page-template-find-us h1.entry-title {
+      font-size: 7rem; } }
 
 .page-template-find-us p .contact {
   font-size: 1rem;
@@ -2380,7 +2387,9 @@ body .page-template-video-page {
   position: relative; }
   .page-template-find-us .find-us-picture-wrapper .find-us-picture {
     z-index: 0;
-    filter: grayscale(100%); }
+    filter: grayscale(100%);
+    height: 45vh;
+    max-width: 100%; }
 
 @media only screen and (min-width: 600px) {
   .page-template-find-us .page-template-find-us h1.entry-title {
@@ -2432,7 +2441,7 @@ body .page-template-video-page {
   width: 100%; }
   @media only screen and (min-width: 600px) {
     .page-template-find-us .widget-area {
-      padding-top: 40px; } }
+      padding-top: 60px; } }
 
 .page-template-find-us .kin-athletics-info-class {
   -ms-flex-order: 2;
@@ -3030,3 +3039,19 @@ body .page-template-video-page {
       margin-bottom: 35px; }
   .site-footer p {
     font-size: 12px; }
+
+.footer-text-container {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column; }
+  @media only screen and (min-width: 600px) {
+    .footer-text-container {
+      -ms-flex-direction: row;
+          flex-direction: row;
+      -ms-flex-pack: center;
+          justify-content: center; } }
+  @media only screen and (min-width: 600px) and (min-width: 600px) {
+    .footer-text-container a {
+      margin: 0 15px;
+      padding-bottom: 30px; } }
