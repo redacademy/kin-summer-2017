@@ -1282,7 +1282,7 @@ body.post-type-archive-trainer .our-place {
   margin-right: 50px; }
 
 .circles-container {
-  height: 75%;
+  height: auto;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-flow: row wrap;
@@ -1292,7 +1292,7 @@ body.post-type-archive-trainer .our-place {
       justify-content: space-evenly; }
   .circles-container .icon-container {
     width: 40%;
-    height: 50%;
+    height: auto;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-flow: column nowrap;
@@ -1301,7 +1301,8 @@ body.post-type-archive-trainer .our-place {
         justify-content: center;
     -ms-flex-align: center;
         align-items: center;
-    text-align: center; }
+    text-align: center;
+    margin-bottom: 1.5rem; }
     .circles-container .icon-container a, .circles-container .icon-container img {
       width: 100%;
       height: auto; }

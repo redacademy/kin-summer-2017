@@ -40,7 +40,7 @@
   }
   
   .circles-container {
-    height: 75%;
+    height: auto;
     display: flex;
     flex-flow: row wrap;
     margin: 0;
@@ -48,12 +48,13 @@
 
     .icon-container {
       width: 40%;
-      height: 50%;
+      height: auto;
       display: flex;
       flex-flow: column nowrap;
       justify-content: center;
       align-items: center;
       text-align: center;
+      margin-bottom: 1.5rem;
 
       a, img {
         width: 100%;
