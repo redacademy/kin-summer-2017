@@ -10,7 +10,7 @@
 
   .entry-content{
     margin: 0;
-    height: 100vh;
+    height: auto;
   }
 
   .gf_page_steps{
@@ -131,7 +131,7 @@
 }
 
 .gform_wrapper .gform_next_button,
-#gform_submit_button_1, #gform_next_button_1_23{
+#gform_submit_button_1, #gform_next_button_1_23, #edit-name{
   position: absolute;
   color: $color__brand-red;
   text-shadow: none;
@@ -144,7 +144,7 @@
   }
 }
 
-#gform_next_button_1_8{   // next button for name form
+#gform_next_button_1_8, #edit-name{   // next button for name form
   top: 483px;
   right: 50px;
   width: auto;
@@ -157,7 +157,7 @@
   @include Desktop{
     position: relative;
 
-    #gform_next_button_1_8{
+    #gform_next_button_1_8, #edit-name{ 
       top: auto;
       bottom: 90px;
       right: 20px;
@@ -200,7 +200,7 @@
 //     see line 63 for chatbox
 //     see line 112 for black chatbox
 
-#gform_next_button_1_10{   // next button for email form
+#gform_next_button_1_10, #edit-email{   // next button for email form
   top: 342px;
   right: 12%;
   width: auto;
@@ -220,7 +220,7 @@
   }
 }
 
-#gform_next_button_1_10{
+#gform_next_button_1_10, #edit-email{
   @include Desktop{
     top: 170px;
     right: 20px;
@@ -297,7 +297,7 @@
 }
 
 #gform_next_button_1_13.gform_next_button.button,
-#gform_next_button_1_12.gform_next_button.button{
+#gform_next_button_1_12.gform_next_button.button, #edit-trainer, #edit-action{
   background-color: $color__brand-red;
   border-radius: 0;
   color: white;
@@ -306,7 +306,7 @@
   box-shadow: none;
 }
 
-#gform_next_button_1_13{                   //  next button
+#gform_next_button_1_13, #edit-trainer{                   //  next button for trainer grid
   transform: translate(-50%, -50%);
   left: 50%;
   right: 50%;
@@ -318,7 +318,7 @@
     position: relative;    
   }
 
-  #gform_next_button_1_13{
+  #gform_next_button_1_13, #edit-trainer{
     @include  Desktop{
       bottom: 50px;
     }
@@ -363,7 +363,7 @@
   width: 60%;
 }
 
-#gform_next_button_1_12{          // next button
+#gform_next_button_1_12, #edit-action{          // next button for actions
   left: 50%;
   bottom: 100px;
   transform: translate(-50%, -50%);
@@ -374,7 +374,7 @@
     position: relative;
   }
 
-  #gform_next_button_1_12{
+  #gform_next_button_1_12, #edit-action{
     @include Desktop{
      bottom: 50px;
     }
@@ -399,9 +399,9 @@
   padding-bottom: 40px;
 }
 
-#gform_next_button_1_23{   // next button for name form
+#gform_next_button_1_23, #edit-comment{   // next button for comment form
   top: 400px;
-  right: 45px;
+  right: 57px;
   width: auto;
   font-size: 20px;
   font-weight: bold;
@@ -409,7 +409,7 @@
 
   @include Desktop{
     top: 265px;
-    right: 15px;
+    right: 25px;
   }
 }
 
@@ -422,36 +422,49 @@
 // end of comment box
 
 
-#gform_confirmation_wrapper_1{
+#gform_confirmation_wrapper_1{                  // CONFIRMATION   PAGE
   margin-top: 60px;
 }
 
 #field_1_22{
   padding: 20px 20px 0 20px;
 
-  .ready-submit{
+  .ready-submit{            // instructions below submit button
     padding: 0;
     background-color: transparent;
     text-align: center;
     margin-top: 50px;
     margin-bottom: 0;
   }
-  
-  p{
-    color: white;
-    padding: 30px;
-    margin: 15px 0;
-    background-color: black;
-  }
 
-  span{
-    color: $color__brand-red;
+  .form-container{
+    background-color: black;  
+    margin: 15px 0;    
+
+    p{
+      display: inline-block;
+      color: white;
+      padding: 30px;
+      width: 85%;
+      word-wrap: normal;
+      word-break:break-all;
+    }
+
+    span{                    // inputed value
+      color: $color__brand-red;
+    }
+  
+    div{                     // edit buttons
+      display: inline;
+      color: $color__brand-red;
+    }
   }
 
   br{
     display: none;
   }
 }
+
 
 #gform_submit_button_1{          // submit button
   right: 50%;
@@ -465,4 +478,47 @@
   padding: 0;
   margin-top: 10px;
   transform: translate(-50%, -50%);
+}
+
+#edit-name, #edit-email, #edit-trainer, #edit-action, #edit-comment{
+  display: none;
+}
+
+.unhide-edit{
+  display: block!important;
+  z-index: 9999;
+}
+
+#gform_page_1_1 #edit-name{
+  @include Desktop{
+    bottom: 87px;
+  }
+}
+
+#gform_page_1_2 #edit-email{
+  @include Desktop{
+    top: 169px;
+  }
+}
+
+#gform_page_1_3 #edit-trainer{
+  bottom: -45px;
+
+  @include Desktop{
+    bottom: 50px;
+  }
+}
+
+#gform_page_1_4 #edit-action{
+  bottom: 120px;
+
+  @include Desktop{
+    bottom: 50px;
+  }
+}
+
+#gform_page_1_5 #edit-comment{
+  @include Desktop{
+    top: 264px;
+  }
 }
