@@ -18,6 +18,6 @@
         </div><!-- .secondary -->
     </div><!-- .about-sidebar -->
     <div class="red-button">
-          <a href="<?php echo get_post_permalink()?>">Find Us</a>
+          <a href="<?php echo esc_url(home_url('/find-us/'));?>">Find Us</a>
     </div><!-- .social-button -->
 </section>

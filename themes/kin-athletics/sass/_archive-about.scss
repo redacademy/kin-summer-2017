@@ -176,6 +176,12 @@ body.page-template-archive-trainer {
           text-transform: uppercase;
           font-weight: 500;
           font-family: $font__h1-header;
+
+          .span-block {
+            @include desktop {
+              display: block;
+            }
+          }
         }
       }
     }

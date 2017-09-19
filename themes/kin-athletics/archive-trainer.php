@@ -27,28 +27,28 @@ get_header(); ?>
           
             <div class="circles-container">
                 <div class="icon-container">
-                    <a src="#">
-                        <img src="<?php echo get_template_directory_uri(); ?>/asset/icons/ouroriginicon.svg"/>
+                    <a href="<?php echo esc_url(home_url('/about#origin')); ?>">
+                        <img src="<?php echo esc_url(get_template_directory_uri()); ?>/asset/icons/ouroriginicon.svg"/>
                     </a>
-                    <p>Our<br>Origin</p>
+                    <p><span class="span-block">Our</span> Origin</p>
                 </div>
                 <div class="icon-container">
-                    <a src="#">
-                        <img src="<?php echo get_template_directory_uri(); ?>/asset/icons/ourtrainericon.svg"/>
+                    <a href="#">
+                        <img src="<?php echo esc_url(get_template_directory_uri()); ?>/asset/icons/ourtrainericon.svg"/>
                     </a>
-                    <p>Our<br>Trainer</p>
+                    <p><span class="span-block">Our</span> Trainers</p>
                 </div>
                 <div class="icon-container">
-                    <a src="#">
-                        <img src="<?php echo get_template_directory_uri(); ?>/asset/icons/ourcommunityicon.svg"/>
+                    <a href="#">
+                        <img src="<?php echo esc_url(get_template_directory_uri()); ?>/asset/icons/ourcommunityicon.svg"/>
                     </a>
-                    <p>Our<br>Community</p>
+                    <p><span class="span-block">Our</span> Community</p>
                 </div>
                 <div class="icon-container">
-                    <a src="#">
-                        <img src="<?php echo get_template_directory_uri(); ?>/asset/icons/freeconsultationicon.svg"/>
+                    <a href="#">
+                        <img src="<?php echo esc_url(get_template_directory_uri()); ?>/asset/icons/freeconsultationicon.svg"/>
                     </a>
-                    <p>Free Consultation</p>
+                    <p><span class="span-block">Free</span> Consultation</p>
                 </div>
             </div>
         </section>

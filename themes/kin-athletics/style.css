@@ -657,6 +657,45 @@ a {
           height: 30px; } }
 
 /*--------------------------------------------------------------
+# Content
+--------------------------------------------------------------*/
+/* Posts and pages */
+.sticky {
+  display: block; }
+
+.updated:not(.published) {
+  display: none; }
+
+.single .byline,
+.group-blog .byline {
+  display: inline; }
+
+.page-content,
+.entry-content,
+.entry-summary {
+  margin: 1.5rem 0 0; }
+
+.page-links {
+  clear: both;
+  margin: 0 0 1.5rem; }
+
+/* Asides */
+.blog .format-aside .entry-title,
+.archive .format-aside .entry-title {
+  display: none; }
+
+/* Comments */
+.comment-content a {
+  word-wrap: break-word; }
+
+.bypostauthor {
+  display: block; }
+
+/* Reusables */
+.display-block {
+  display: block; }
+
+/*--------------------------------------------------------------
 # Accessibility
 --------------------------------------------------------------*/
 /* Text meant only for screen readers. */
@@ -724,41 +763,6 @@ a {
 /* Search widget. */
 .widget_search .search-submit {
   display: none; }
-
-/*--------------------------------------------------------------
-# Content
---------------------------------------------------------------*/
-/* Posts and pages */
-.sticky {
-  display: block; }
-
-.updated:not(.published) {
-  display: none; }
-
-.single .byline,
-.group-blog .byline {
-  display: inline; }
-
-.page-content,
-.entry-content,
-.entry-summary {
-  margin: 1.5rem 0 0; }
-
-.page-links {
-  clear: both;
-  margin: 0 0 1.5rem; }
-
-/* Asides */
-.blog .format-aside .entry-title,
-.archive .format-aside .entry-title {
-  display: none; }
-
-/* Comments */
-.comment-content a {
-  word-wrap: break-word; }
-
-.bypostauthor {
-  display: block; }
 
 /*--------------------------------------------------------------
 # Media
@@ -1804,6 +1808,9 @@ body.page-template-archive-trainer .circles-container {
       text-transform: uppercase;
       font-weight: 500;
       font-family: "Oswald"; }
+      @media only screen and (min-width: 600px) {
+        body.page-template-archive-trainer .circles-container .icon-container p .span-block {
+          display: block; } }
 
 body.page-template-archive-trainer h2.header-title, body.page-template-archive-trainer h2.header-title--black {
   color: white;
@@ -2308,9 +2315,15 @@ body .page-template-video-page {
 .page-template-find-us p {
   margin: .50%; }
 
+.page-template-find-us .entry-header {
+  position: relative; }
+
 .page-template-find-us .entry-title {
   position: absolute;
-  z-index: 1; }
+  z-index: 1;
+  bottom: 0;
+  left: 0;
+  right: 0; }
 
 .page-template-find-us p .contact {
   font-size: 1rem;
@@ -2321,10 +2334,26 @@ body .page-template-video-page {
   text-transform: uppercase; }
 
 .page-template-find-us .find-us-picture-wrapper {
-  position: relative; }
+  position: relative;
+  height: 50vh; }
   .page-template-find-us .find-us-picture-wrapper .find-us-picture {
     z-index: 0;
-    filter: grayscale(100%); }
+    filter: grayscale(100%);
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    height: 100%;
+    position: absolute; }
+  .page-template-find-us .find-us-picture-wrapper:after {
+    height: 100%;
+    width: 100%;
+    content: " ";
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0; }
 
 @media only screen and (min-width: 600px) {
   .page-template-find-us .page-template-find-us h1.entry-title {
