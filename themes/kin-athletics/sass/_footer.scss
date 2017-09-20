@@ -1,7 +1,7 @@
 .site-footer{
   background-color: $color__brand-red;
   height: 250px;
-  padding-top: 35px;
+  padding-top: 1.5rem;
 
   a, p{
     color: $color__brand-white;
@@ -10,10 +10,12 @@
     font-weight: lighter;    
   }
 
-  a {
-    display: block;
-    font-size: 20px;
-    margin-bottom: 10px;
+  .footer-text-container {
+    a {
+      display: block;
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
   }
 
   .footer-social-logo{
@@ -23,7 +25,6 @@
     a {
       font-size: 35px;
       padding: 0 8px;
-      margin-bottom: 35px;
       
     }
   }
