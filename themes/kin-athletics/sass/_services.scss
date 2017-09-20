@@ -221,6 +221,8 @@
   .page-template-services h2 {
     text-align: left;
     font-size: 5.5rem;
+    width:800px;
+    margin-left:3rem;
 
   }
 
@@ -251,7 +253,7 @@
       font-family: Oswald;
       font-weight: normal;
     }
-
+    
     .services-button-flex {
       padding-top: 10px;
       flex-wrap: nowrap;
@@ -273,8 +275,8 @@
 
   }
 
-  .page-template-services h2 {
-    font-size: 5.3rem;
+  .page-template-services .entry-content .carousel-cell .service-description {
+    font-size: 25px;
   }
 }
 
