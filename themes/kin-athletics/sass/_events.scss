@@ -17,7 +17,7 @@
 
         @include desktop {
           h1 {
-            font-size: 3rem;
+            font-size: 4rem;
             font-weight: lighter;
         }
       }
@@ -67,6 +67,10 @@
     align-items: center;
     justify-content: space-evenly;
 
+    @include desktop {
+      flex-flow: row;
+    }
+
     .icon-container {
       width: 50%;
       height: 100%;
@@ -74,6 +78,10 @@
       flex-flow: column nowrap;
       justify-content: center;
       align-items: center;
+
+      @include desktop {
+        width: 33%;
+      }
 
       a {
         height: 100%;
@@ -85,6 +93,13 @@
 
       img {
         height: 75%;
+        width: 100%;
+
+        @include desktop {
+          width: 75%;
+        }
+
+
       }
 
       p {
@@ -95,13 +110,6 @@
         font-family: $font__h1-header;
       }
 
-      @include desktop {
-        .circles-container {
-          display: block;
-          display: flex;
-          flex-wrap: nowrap;
-        }
-      }
     }
   }
 

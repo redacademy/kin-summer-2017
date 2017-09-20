@@ -853,7 +853,6 @@ object {
 .social-button {
   background: transparent;
   border: solid 2px #A10000;
-  height: 2.82%;
   text-align: center;
   width: 54.37%;
   margin: 0 auto;
@@ -2731,7 +2730,7 @@ body .page-template-video-page {
       text-align: center; }
     @media only screen and (min-width: 600px) {
       .page-template-events .entry-content .header-container h1 {
-        font-size: 3rem;
+        font-size: 4rem;
         font-weight: lighter; } }
   .page-template-events .entry-content .flickity-prev-next-button {
     display: none; }
@@ -2776,6 +2775,10 @@ body.post-type-archive-trainer .page-template-events .our-place {
       align-items: center;
   -ms-flex-pack: space-evenly;
       justify-content: space-evenly; }
+  @media only screen and (min-width: 600px) {
+    .page-template-events .circles-container {
+      -ms-flex-flow: row;
+          flex-flow: row; } }
   .page-template-events .circles-container .icon-container {
     width: 50%;
     height: 100%;
@@ -2787,6 +2790,9 @@ body.post-type-archive-trainer .page-template-events .our-place {
         justify-content: center;
     -ms-flex-align: center;
         align-items: center; }
+    @media only screen and (min-width: 600px) {
+      .page-template-events .circles-container .icon-container {
+        width: 33%; } }
     .page-template-events .circles-container .icon-container a {
       height: 100%;
       display: -ms-flexbox;
@@ -2798,20 +2804,17 @@ body.post-type-archive-trainer .page-template-events .our-place {
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly; }
     .page-template-events .circles-container .icon-container img {
-      height: 75%; }
+      height: 75%;
+      width: 100%; }
+      @media only screen and (min-width: 600px) {
+        .page-template-events .circles-container .icon-container img {
+          width: 75%; } }
     .page-template-events .circles-container .icon-container p {
       margin: 0;
       color: white;
       text-transform: uppercase;
       font-weight: 500;
       font-family: "Oswald"; }
-    @media only screen and (min-width: 600px) {
-      .page-template-events .circles-container .icon-container .circles-container {
-        display: block;
-        display: -ms-flexbox;
-        display: flex;
-        -ms-flex-wrap: nowrap;
-            flex-wrap: nowrap; } }
 
 .page-template-events .relative-carousel-container {
   position: relative; }
