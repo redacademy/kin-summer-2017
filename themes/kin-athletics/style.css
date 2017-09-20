@@ -2695,6 +2695,8 @@ body .page-template-video-page {
 
 .page-template-find-us .widget-block {
   margin-bottom: 1.3rem; }
+  .page-template-find-us .widget-block p, .page-template-find-us .widget-block span {
+    color: #000; }
 
 .page-template-find-us .kin-athletics-hours-class {
   -ms-flex-order: 3;
