@@ -122,9 +122,18 @@
                 flex-flow: row wrap;
                 align-items: center;
                 align-content: center;
-              }
+
+                @include desktop {
+                    height: 50vh;
+                    flex-flow: column nowrap;
+                    justify-content: space-evenly;
+                }
+            }
             
-              .past-events-carousel {
+            .past-events-carousel {
+            @include desktop {
+                height: 50vh;
+            }
             
                 .header-container {
                   width: 100%;
@@ -134,6 +143,10 @@
                   h2.header-title--black {
                     width: 100%;
                     font-size: 20px;
+
+                    @include desktop {
+                        font-size: 40px;
+                    }
                   }
                 }
             
@@ -144,6 +157,10 @@
                   height: 75%;
                   justify-content: center;
                   text-align: center;
+
+                  @include desktop {
+                      height: 50%;
+                  }
             
                   .past-events-item-container {
                     width: 40%;
@@ -228,6 +245,9 @@
         position: relative;
         overflow: hidden;
     
+        @include desktop {
+            height: 50vh;
+        }
         p {
             text-transform: uppercase;
             position: relative;
