@@ -7,6 +7,10 @@
 
       h2 {
         margin: 1.5rem;
+
+        @include Desktop{
+          margin-top: 40px;
+        }
       }
 
       .service-description {
@@ -224,7 +228,6 @@
     font-size: 5.5rem;
     width:800px;
     margin-left:3rem;
-
   }
 
   .personal-training {
@@ -233,7 +236,7 @@
       margin: 0;
       margin-left: 40px;
       max-width: 450px;
-      height: 14%;
+      font-size: 32px;
 
       span p {
         font-weight: bold;
@@ -277,7 +280,7 @@
   }
 
   .page-template-services .entry-content .carousel-cell .service-description {
-    font-size: 25px;
+    font-size: 36px;
   }
 }
 
@@ -290,7 +293,7 @@
 
   .carousel-cell {
     h2 {
-      font-size: 35px;
+      font-size: 8rem;
       line-height: normal;
     }
   }
