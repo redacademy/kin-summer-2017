@@ -76,6 +76,12 @@ p .contact { // to match H2
     line-height: 30px;
     text-align: center;
 
+    @include desktop {
+      font-size: 40px;
+      line-height: initial;
+      margin: 1rem 0;
+    }
+
 }
 
 @include desktop {
@@ -117,10 +123,6 @@ p .contact { // to match H2
 .widget-area {
   display: flex;
   width: 100%;
-
-  @include desktop {
-    padding-top: 60px;
-  }
 }
 
 
@@ -131,6 +133,12 @@ p .contact { // to match H2
   position: relative;
   text-align: right;
   padding-right: 2.5%;
+
+  @include desktop {
+    h2 {
+      font-size: 40px;
+    }
+  }
 }
 
 .widget-block {
@@ -138,6 +146,7 @@ p .contact { // to match H2
   
   p, span {
     color: #000;
+    font-size: 25px;
   }
 }
 
@@ -148,6 +157,16 @@ p .contact { // to match H2
   position: relative;
   text-align: left;
   padding-left: 2.5%;
+
+  @include desktop {
+    h2 {
+      font-size: 40px;
+    }
+
+    p {
+      font-size: 25px;
+    }
+  }
 }
 
 .black.container {

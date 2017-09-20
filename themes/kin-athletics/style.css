@@ -2665,6 +2665,11 @@ body .page-template-video-page {
   font-weight: 500;
   line-height: 30px;
   text-align: center; }
+  @media only screen and (min-width: 600px) {
+    .page-template-find-us .page-template-find-us h2.widget-title {
+      font-size: 40px;
+      line-height: initial;
+      margin: 1rem 0; } }
 
 @media only screen and (min-width: 600px) {
   .page-template-find-us .page-template-find-us h2 {
@@ -2701,9 +2706,6 @@ body .page-template-video-page {
   display: -ms-flexbox;
   display: flex;
   width: 100%; }
-  @media only screen and (min-width: 600px) {
-    .page-template-find-us .widget-area {
-      padding-top: 60px; } }
 
 .page-template-find-us .kin-athletics-info-class {
   -ms-flex-order: 2;
@@ -2714,11 +2716,15 @@ body .page-template-video-page {
   position: relative;
   text-align: right;
   padding-right: 2.5%; }
+  @media only screen and (min-width: 600px) {
+    .page-template-find-us .kin-athletics-info-class h2 {
+      font-size: 40px; } }
 
 .page-template-find-us .widget-block {
   margin-bottom: 1.3rem; }
   .page-template-find-us .widget-block p, .page-template-find-us .widget-block span {
-    color: #000; }
+    color: #000;
+    font-size: 25px; }
 
 .page-template-find-us .kin-athletics-hours-class {
   -ms-flex-order: 3;
@@ -2729,6 +2735,11 @@ body .page-template-video-page {
   position: relative;
   text-align: left;
   padding-left: 2.5%; }
+  @media only screen and (min-width: 600px) {
+    .page-template-find-us .kin-athletics-hours-class h2 {
+      font-size: 40px; }
+    .page-template-find-us .kin-athletics-hours-class p {
+      font-size: 25px; } }
 
 .page-template-find-us .black.container {
   background: #000000;
