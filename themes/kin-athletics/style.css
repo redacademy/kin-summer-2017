@@ -2210,7 +2210,8 @@ body.post-type-archive-trainer .white {
       .page-template-archive-event .entry-content .latest-history .header-container h3.event-date {
         display: -ms-flexbox;
         display: flex;
-        margin: 1.5rem; }
+        margin: 0 1.5rem 1.5rem 1.5rem;
+        font-size: 14px; }
         @media only screen and (min-width: 600px) {
           .post-type-archive-event .entry-content .latest-history .header-container h3.event-date,
           .page-template-archive-event .entry-content .latest-history .header-container h3.event-date {
@@ -2220,7 +2221,8 @@ body.post-type-archive-trainer .white {
         .page-template-archive-event .entry-content .latest-history .header-container h3.event-date p {
           background: none;
           margin: 0 0 0 0.5rem;
-          padding: 0; }
+          padding: 0;
+          font-size: 14px; }
     .post-type-archive-event .entry-content .latest-history .latest-history-carousel img,
     .page-template-archive-event .entry-content .latest-history .latest-history-carousel img {
       height: 100%;
