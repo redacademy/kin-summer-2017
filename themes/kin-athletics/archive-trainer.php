@@ -27,25 +27,25 @@ get_header(); ?>
           
             <div class="circles-container">
                 <div class="icon-container">
-                    <a href="<?php echo esc_url(home_url('/about#origin')); ?>">
+                    <a href="#origin">
                         <img src="<?php echo esc_url(get_template_directory_uri()); ?>/asset/icons/ouroriginicon.svg"/>
                     </a>
                     <p><span class="span-block">Our</span> Origin</p>
                 </div>
                 <div class="icon-container">
-                    <a href="<?php echo esc_url(home_url('/about#trainers')); ?>">
+                    <a href="#trainers">
                         <img src="<?php echo esc_url(get_template_directory_uri()); ?>/asset/icons/ourtrainericon.svg"/>
                     </a>
                     <p><span class="span-block">Our</span> Trainers</p>
                 </div>
                 <div class="icon-container">
-                    <a href="<?php echo esc_url(home_url('/about#community'));?>">
+                    <a href="#community">
                         <img src="<?php echo esc_url(get_template_directory_uri()); ?>/asset/icons/ourcommunityicon.svg"/>
                     </a>
                     <p><span class="span-block">Our</span> Community</p>
                 </div>
                 <div class="icon-container">
-                    <a href="<?php echo esc_url(home_url('/about#place')); ?>">
+                    <a href="#place">
                         <img src="<?php echo esc_url(get_template_directory_uri()); ?>/asset/icons/ourplaceicon.svg"/>
                     </a>
                     <p><span class="span-block">Our</span> Place</p>
