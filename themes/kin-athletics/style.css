@@ -908,11 +908,11 @@ object {
       overflow: hidden;
       transform: translate(-36%, 0.1%); } }
 
-img {
+.page-template-landing-page img {
   height: 100vh;
   max-width: none; }
   @media only screen and (min-width: 600px) {
-    img {
+    .page-template-landing-page img {
       width: 100vw;
       height: 100vh; } }
 
