@@ -194,7 +194,12 @@ body.single-trainer {
                 font-family: $font__h1-header;
                 margin-top: 2em;
                 padding: 0 1em;
+
+                @include desktop {
+                    font-size: 40px;
+                }
             }
+
         }
 
 
@@ -204,11 +209,15 @@ body.single-trainer {
                 margin: 0;
                 text-align: center;
                 margin-bottom: 1rem;
+
+                @include desktop {
+                    font-size: 30px;
+                }
             }
 
             &-grid {
                 display: flex;
-                flex-flow: row wrap;
+                flex-flow: row nowrap;
                 width: 100%;
                 justify-content: space-around;
                 
@@ -216,6 +225,11 @@ body.single-trainer {
                     display: flex;
                     flex-flow: column nowrap;
                     align-items: center;
+
+                    @include desktop {
+                        justify-content: space-around;
+                        width: 20%;
+                    }
 
                     .trainer-thumbnail-wrapper {
                         width: 53px;
@@ -240,6 +254,10 @@ body.single-trainer {
                         a {
                             text-decoration: none;
                             font-size: 16px;
+
+                            @include desktop {
+                                font-size: 24px;
+                            }
                         }
                     }
                 }
@@ -262,7 +280,7 @@ body.single-trainer {
             .about-our-origin,
             .about-our-community {
                 border-bottom: 1.5px solid #A10000;
-                margin-top: 200px;
+                // margin-top: 200px;
             }
             .about-our-origin,
             .about-our-community,
@@ -326,6 +344,48 @@ body.single-trainer {
 }
 
 @media only screen and (min-width: 600px) {
+    body.single-trainer {
+
+        .default-header {
+            flex-flow: row;
+            height: 50vh;
+
+            p {
+                font-size: 25px;
+            }
+            
+            .trainer-profile-container {
+                width: 50%;
+            }
+
+            .trainer-meta {
+                width: 50%;
+            }
+        }
+
+        .default-content {
+            .trainer-availability {
+                height: 50vh;
+                padding-top: 0;
+                display: flex;
+                flex-flow: column nowrap;
+                justify-content: center;
+
+                .days-of-week {
+                    height: 90px;
+
+                    li {
+                        width: 90px;
+                    }
+                }
+
+                .trainer-sub-titles {
+                    font-size: 46px;
+                }
+            }
+        }
+    }
+
     .about-sidebar {
         width: 45%;
         position: relative;
