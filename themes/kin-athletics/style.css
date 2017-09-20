@@ -2846,7 +2846,6 @@ body.post-type-archive-trainer .page-template-events .our-place {
       width: 100%;
       color: white;
       background: rgba(0, 0, 0, 0.7);
-      line-height: 27px;
       font-size: 14px;
       padding: 10px 40px; }
     .page-template-events .relative-carousel-container .events-carousel-info .event-date {
@@ -2854,7 +2853,7 @@ body.post-type-archive-trainer .page-template-events .our-place {
     .page-template-events .relative-carousel-container .events-carousel-info h3 {
       display: inline;
       color: white;
-      font-size: 18px;
+      font-size: 14px;
       display: -ms-flexbox;
       display: flex; }
       .page-template-events .relative-carousel-container .events-carousel-info h3 p {
