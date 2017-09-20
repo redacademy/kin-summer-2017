@@ -248,6 +248,7 @@ body.post-type-archive-trainer {
     margin: 1.5rem;
     width: 175px;
     height: 50px;
+    order: 3;
 
     a {
       display: block;
@@ -306,8 +307,8 @@ body.post-type-archive-trainer {
 
     .widget-area {
       width: 100%;
-      display: flex;
-      
+      display: flex; 
+      flex-flow: row wrap;
     }
   }
 

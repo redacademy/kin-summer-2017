@@ -106,8 +106,8 @@ get_header(); ?>
             <?php echo CFS()->get('services_community_projects');?>
             <h3>on now - <?php echo CFS()->get('services_featured_event'); ?></h3>
             <div class='red-button'><a href='<?php echo esc_url(str_replace(' ', '-', home_url('/event/'.CFS()->get('services_featured_event')))); ?>'>buy tickets</a></div>
-            <div class='social-button'><a href='#'>tell me more</a></div>
-            <div class='social-button'><a href='#'>past events</a></div>
+            <div class='social-button'><a href='<?php echo esc_url( home_url( '/events/#on-now-and-services') )?>'>tell me more</a></div>
+            <div class='social-button'><a href='<?php echo esc_url( home_url( '/events/#historical-moments') )?>'>past events</a></div>
           </div>  <!-- end of carousel cell community projects -->
         </div>  <!-- end of carousel -->
 
@@ -117,7 +117,7 @@ get_header(); ?>
             <p>ready to sweat?</p>
             
             <div class="services-button-flex">
-              <div class='red-button'><a href='#'>free consultation</a></div>
+              <div class='red-button'><a href='<?php echo esc_url( home_url( '/consultation/') )?>'>free consultation</a></div>
               <div class='social-button'><a href='<?php echo esc_url( home_url( '/trainer/' . strtolower(CFS()->get('services_featured_trainer')) ) )?>'>about me</a></div>
             </div>
           </div>

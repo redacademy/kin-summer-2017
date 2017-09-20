@@ -96,7 +96,7 @@ foreach(CFS()->get( 'trainer_availability' ) as $date) {
             </div>
             <div class="trainer-consultation">
                 <p class="pump-it trainer-sub-titles">Let's Pump It!</p>
-                <a class="consultation-button">Free Consultation</a>
+                <a class="consultation-button" href='<?php echo esc_url( home_url( '/consultation/') )?>'>Free Consultation</a>
             </div>
         </div>
     <!-- Other Trainers -->
