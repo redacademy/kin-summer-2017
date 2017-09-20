@@ -9,7 +9,7 @@ get_header(); ?>
 
 <div class="front-page-container">
  
-  <section class="project-td-cont">
+  <section class="project-td-cont" id="project-td-id">
 
     <div class="project-td-text">
       <h2>Kin Athletics Presents</h2>
@@ -31,19 +31,19 @@ get_header(); ?>
 
 
       <div class="landing-scroll-section">
-        <p>Jump In
+        <a href="#who-we-are-id"><p>Jump In
         <span class="v">V</span>
-        </p>
+        </p></a>
       </div>
       
    
   </section>
 
-  <section class="who-we-are-cont">
+  <section class="who-we-are-cont" >
     <div class="front-img-wrapper">
       <img class="who-we-are-image" src="<?php echo CFS()->get( 'who_we_are_image' ); ?>">
     </div>
-    <div class="who-we-are-text">
+    <div class="who-we-are-text" id="who-we-are-id">
       <h2>Who We Are</h2>
       <?php echo CFS()->get('who_we_are_text');?>
       <div class="who-button-cont"><a href='<?php echo esc_url( home_url( '/about/') )?>'>Tell Me More</a></div>
@@ -51,7 +51,7 @@ get_header(); ?>
     
   </section>
 
-  <section class="what-we-do-cont">
+  <section class="what-we-do-cont" id="what-we-do-id">
     <div class="front-img-wrapper">
       <img class="what-we-do-image" src="<?php echo CFS()->get( 'what_we_do_image' ); ?>">
     </div>
