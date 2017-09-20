@@ -7,6 +7,10 @@
   .entry-header {
     position: relative;
 
+    @include desktop {
+      height: 50vh;
+    }
+
   }
   h1.entry-title {
     position:absolute;
@@ -19,6 +23,8 @@
 
     @include desktop {
       font-size: 7rem;
+      bottom: 0;
+      line-height: initial;
     }
     
   }
@@ -33,10 +39,25 @@ p .contact { // to match H2
   .find-us-picture-wrapper {
     position: relative;
 
+    @include desktop {
+      overflow: hidden;
+      height: 100%;
+      width: 100%;
+    }
+
     .find-us-picture {
       z-index: 0; 
       filter: grayscale(100%);
       height: 45vh;
+
+      @include desktop {
+        height: auto;
+        width: 100%;
+        max-width: none;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+      }
   }
 }
 
