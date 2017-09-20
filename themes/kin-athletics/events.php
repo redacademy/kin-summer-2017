@@ -89,7 +89,7 @@ get_header(); ?>
 
         <div class='events-white-container'>
           <p>see our history</p>
-          <div class='social-button'><a href='#'>past events</a></div>
+          <div class='social-button'><a href='<?php echo esc_url( home_url( '/events/#historical-moments') )?>'>past events</a></div>
         </div>
         
         <div class='events-white-container'>

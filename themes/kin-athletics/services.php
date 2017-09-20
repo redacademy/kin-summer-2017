@@ -117,7 +117,7 @@ get_header(); ?>
             <p>ready to sweat?</p>
             
             <div class="services-button-flex">
-              <div class='red-button'><a href='#'>free consultation</a></div>
+              <div class='red-button'><a href='<?php echo esc_url( home_url( '/consultation/') )?>'>free consultation</a></div>
               <div class='social-button'><a href='<?php echo esc_url( home_url( '/trainer/' . strtolower(CFS()->get('services_featured_trainer')) ) )?>'>about me</a></div>
             </div>
           </div>
