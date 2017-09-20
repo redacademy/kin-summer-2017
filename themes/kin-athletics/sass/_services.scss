@@ -46,6 +46,14 @@
     margin: 0;
     justify-content: space-around;
 
+    @include desktop {
+      height: auto;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+    }
+
     .icon-container {
       width: 50%;
       height: $icon__base-size;
@@ -61,7 +69,7 @@
 
         @include desktop {
           height: auto;
-          width: 100%;
+          width: 90%;
         }
       }
 
