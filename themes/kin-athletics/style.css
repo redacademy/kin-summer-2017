@@ -2205,7 +2205,8 @@ body.post-type-archive-trainer .white {
       .post-type-archive-event .entry-content .latest-history .header-container p,
       .page-template-archive-event .entry-content .latest-history .header-container p {
         background: rgba(0, 0, 0, 0.65);
-        padding: 1.5rem; }
+        padding: 1.5rem;
+        font-size: 14px; }
       .post-type-archive-event .entry-content .latest-history .header-container h3.event-date,
       .page-template-archive-event .entry-content .latest-history .header-container h3.event-date {
         display: -ms-flexbox;
