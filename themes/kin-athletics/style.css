@@ -853,7 +853,6 @@ object {
 .social-button {
   background: transparent;
   border: solid 2px #A10000;
-  height: 2.82%;
   text-align: center;
   width: 54.37%;
   margin: 0 auto;
@@ -2685,7 +2684,7 @@ body .page-template-video-page {
       text-align: center; }
     @media only screen and (min-width: 600px) {
       .page-template-events .entry-content .header-container h1 {
-        font-size: 3rem;
+        font-size: 4rem;
         font-weight: lighter; } }
   .page-template-events .entry-content .flickity-prev-next-button {
     display: none; }
@@ -2730,6 +2729,10 @@ body.post-type-archive-trainer .page-template-events .our-place {
       align-items: center;
   -ms-flex-pack: space-evenly;
       justify-content: space-evenly; }
+  @media only screen and (min-width: 600px) {
+    .page-template-events .circles-container {
+      -ms-flex-flow: row;
+          flex-flow: row; } }
   .page-template-events .circles-container .icon-container {
     width: 50%;
     height: 100%;
@@ -2741,6 +2744,9 @@ body.post-type-archive-trainer .page-template-events .our-place {
         justify-content: center;
     -ms-flex-align: center;
         align-items: center; }
+    @media only screen and (min-width: 600px) {
+      .page-template-events .circles-container .icon-container {
+        width: 33%; } }
     .page-template-events .circles-container .icon-container a {
       height: 100%;
       display: -ms-flexbox;
@@ -2752,20 +2758,17 @@ body.post-type-archive-trainer .page-template-events .our-place {
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly; }
     .page-template-events .circles-container .icon-container img {
-      height: 75%; }
+      height: 75%;
+      width: 100%; }
+      @media only screen and (min-width: 600px) {
+        .page-template-events .circles-container .icon-container img {
+          width: 75%; } }
     .page-template-events .circles-container .icon-container p {
       margin: 0;
       color: white;
       text-transform: uppercase;
       font-weight: 500;
       font-family: "Oswald"; }
-    @media only screen and (min-width: 600px) {
-      .page-template-events .circles-container .icon-container .circles-container {
-        display: block;
-        display: -ms-flexbox;
-        display: flex;
-        -ms-flex-wrap: nowrap;
-            flex-wrap: nowrap; } }
 
 .page-template-events .relative-carousel-container {
   position: relative; }
@@ -3274,40 +3277,6 @@ body.post-type-archive-trainer .page-template-events .our-place {
       bottom: 110px;
       right: 40px; } }
 
-<<<<<<< HEAD
-#edit-name, #edit-email, #edit-trainer, #edit-action, #edit-comment {
-  display: none; }
-
-.unhide-edit {
-  display: block !important;
-  z-index: 9999; }
-
-@media only screen and (min-width: 600px) {
-  #gform_page_1_1 #edit-name {
-    bottom: 87px; } }
-
-@media only screen and (min-width: 600px) {
-  #gform_page_1_2 #edit-email {
-    top: 169px; } }
-
-#gform_page_1_3 #edit-trainer {
-  bottom: -45px; }
-  @media only screen and (min-width: 600px) {
-    #gform_page_1_3 #edit-trainer {
-      bottom: 50px; } }
-
-#gform_page_1_4 #edit-action {
-  bottom: 120px; }
-  @media only screen and (min-width: 600px) {
-    #gform_page_1_4 #edit-action {
-      bottom: 50px; } }
-
-@media only screen and (min-width: 600px) {
-  #gform_page_1_5 #edit-comment {
-    top: 264px; } }
-
-=======
->>>>>>> bee4872025b2109cec6b8582b5236aa5dc64961f
 .social-buttons-flex {
   display: -ms-flexbox;
   display: flex;
