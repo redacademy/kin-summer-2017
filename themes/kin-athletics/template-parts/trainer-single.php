@@ -30,7 +30,7 @@ foreach(CFS()->get( 'trainer_availability' ) as $date) {
         <div class="trainer-profile-container">
             <?php the_title( '<h1 id="trainer-name" class="entry-title">', '</h1>' ); ?>
             
-            <div class="trainer-profile-wrapper">
+            <div id="trainer-profile-wrapper" class="trainer-profile-wrapper black-overlay">
                 <img class="trainer-profile-picture" src="<?php echo CFS()->get( 'trainer_profile_picture' ); ?>">
             </div>
         </div>
