@@ -4,7 +4,6 @@
         $(this).children('p').first().addClass('service-description');
     });
 
-
     $('#edit0').on('click',function(e){           // form 1
         e.preventDefault();
         $('#gform_page_1_6').toggle();
@@ -43,6 +42,15 @@
         $('#gform_page_1_5').toggle();
         $('#gform_next_button_1_23').hide();
         $('#edit-comment').addClass('unhide-edit');
-    });    
+    });
+    
+    $('#trainer-profile-wrapper').hover(
+        function() {
+            $(this).removeClass('black-overlay');
+    },
+        function() {
+            $(this).addClass( 'black-overlay' );
+        }
+);
 
 })( jQuery );

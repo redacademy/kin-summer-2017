@@ -48,3 +48,17 @@
 .display-block {
 	display: block;
 }
+
+.black-overlay {
+	&:after {
+		height: 100%;
+		width: 100%;
+		content: " ";
+		background: rgba(0,0,0,0.5);
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+	}
+}
