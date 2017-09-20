@@ -2313,6 +2313,18 @@ body.post-type-archive-trainer .white {
           align-items: center;
       -ms-flex-line-pack: center;
           align-content: center; }
+      @media only screen and (min-width: 600px) {
+        .post-type-archive-event .entry-content .historical-moments .carousel-cell.past-events,
+        .page-template-archive-event .entry-content .historical-moments .carousel-cell.past-events {
+          height: 50vh;
+          -ms-flex-flow: column nowrap;
+              flex-flow: column nowrap;
+          -ms-flex-pack: space-evenly;
+              justify-content: space-evenly; } }
+    @media only screen and (min-width: 600px) {
+      .post-type-archive-event .entry-content .historical-moments .past-events-carousel,
+      .page-template-archive-event .entry-content .historical-moments .past-events-carousel {
+        height: 50vh; } }
     .post-type-archive-event .entry-content .historical-moments .past-events-carousel .header-container,
     .page-template-archive-event .entry-content .historical-moments .past-events-carousel .header-container {
       width: 100%;
@@ -2322,6 +2334,10 @@ body.post-type-archive-trainer .white {
       .page-template-archive-event .entry-content .historical-moments .past-events-carousel .header-container h2.header-title--black {
         width: 100%;
         font-size: 20px; }
+        @media only screen and (min-width: 600px) {
+          .post-type-archive-event .entry-content .historical-moments .past-events-carousel .header-container h2.header-title--black,
+          .page-template-archive-event .entry-content .historical-moments .past-events-carousel .header-container h2.header-title--black {
+            font-size: 40px; } }
     .post-type-archive-event .entry-content .historical-moments .past-events-carousel .past-events-grid-wrapper,
     .page-template-archive-event .entry-content .historical-moments .past-events-carousel .past-events-grid-wrapper {
       width: 100%;
@@ -2333,6 +2349,10 @@ body.post-type-archive-trainer .white {
       -ms-flex-pack: center;
           justify-content: center;
       text-align: center; }
+      @media only screen and (min-width: 600px) {
+        .post-type-archive-event .entry-content .historical-moments .past-events-carousel .past-events-grid-wrapper,
+        .page-template-archive-event .entry-content .historical-moments .past-events-carousel .past-events-grid-wrapper {
+          height: 50%; } }
       .post-type-archive-event .entry-content .historical-moments .past-events-carousel .past-events-grid-wrapper .past-events-item-container,
       .page-template-archive-event .entry-content .historical-moments .past-events-carousel .past-events-grid-wrapper .past-events-item-container {
         width: 40%;
@@ -2404,6 +2424,10 @@ body.post-type-archive-trainer .white {
       flex-flow: column nowrap;
   position: relative;
   overflow: hidden; }
+  @media only screen and (min-width: 600px) {
+    .post-type-archive-event .events-black-container,
+    .page-template-archive-event .events-black-container {
+      height: 50vh; } }
   .post-type-archive-event .events-black-container p,
   .page-template-archive-event .events-black-container p {
     text-transform: uppercase;
