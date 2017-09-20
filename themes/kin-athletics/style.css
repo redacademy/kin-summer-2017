@@ -3374,13 +3374,13 @@ body.post-type-archive-trainer .page-template-events .our-place {
 .site-footer {
   background-color: #A10000;
   height: 250px;
-  padding-top: 35px; }
+  padding-top: 1.5rem; }
   .site-footer a, .site-footer p {
     color: #FFFFFF;
     text-transform: uppercase;
     text-align: center;
     font-weight: lighter; }
-  .site-footer a {
+  .site-footer .footer-text-container a {
     display: block;
     font-size: 20px;
     margin-bottom: 10px; }
@@ -3391,8 +3391,7 @@ body.post-type-archive-trainer .page-template-events .our-place {
         justify-content: center; }
     .site-footer .footer-social-logo a {
       font-size: 35px;
-      padding: 0 8px;
-      margin-bottom: 35px; }
+      padding: 0 8px; }
   .site-footer p {
     font-size: 12px; }
 
