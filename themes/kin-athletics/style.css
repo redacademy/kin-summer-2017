@@ -2601,13 +2601,17 @@ body .page-template-video-page {
 .page-template-find-us p {
   margin: .50%; }
 
+.page-template-find-us .entry-header {
+  position: relative; }
+
 .page-template-find-us h1.entry-title {
   position: absolute;
   z-index: 1;
   text-align: center;
   width: 100%;
-  margin-top: 230px;
-  font-size: 3.7rem; }
+  margin: 0;
+  font-size: 3.7rem;
+  bottom: 5%; }
   @media only screen and (min-width: 600px) {
     .page-template-find-us h1.entry-title {
       font-size: 7rem; } }
