@@ -12,7 +12,7 @@
     
        $('html,body').animate(
        {
-           scrollTop: $(target).offset().top
+           scrollTop: $(target).offset().top - 60
        },2000,function()
        {
            location.hash = target;
