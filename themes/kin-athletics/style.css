@@ -1273,6 +1273,9 @@ p {
     background: rgba(0, 0, 0, 0.65);
     padding: 1.5rem;
     text-transform: none; }
+    @media only screen and (min-width: 600px) {
+      .page-template-services .entry-content .carousel-cell .service-description {
+        font-size: 14px; } }
 
 .page-template-services h1 {
   margin: auto;
@@ -2846,7 +2849,7 @@ body.post-type-archive-trainer .page-template-events .our-place {
       color: white;
       background: rgba(0, 0, 0, 0.7);
       line-height: 27px;
-      font-size: 20px;
+      font-size: 14px;
       padding: 10px 40px; }
     .page-template-events .relative-carousel-container .events-carousel-info .event-date {
       padding-left: 40px; }
