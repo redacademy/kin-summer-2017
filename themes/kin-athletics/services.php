@@ -105,9 +105,9 @@ get_header(); ?>
             <h2>Community projects</h2>
             <?php echo CFS()->get('services_community_projects');?>
             <h3>on now - <?php echo CFS()->get('services_featured_event'); ?></h3>
-            <div class='red-button'><a href='<?php echo esc_url(str_replace(' ', '-', home_url('/event/'.CFS()->get('services_featured_event')))); ?>'>buy tickets</a></div>
-            <div class='social-button'><a href='<?php echo esc_url( home_url( '/events/#on-now-and-services') )?>'>tell me more</a></div>
-            <div class='social-button'><a href='<?php echo esc_url( home_url( '/events/#historical-moments') )?>'>past events</a></div>
+              <div class='red-button'><a href='<?php echo esc_url(str_replace(' ', '-', home_url('/event/'.CFS()->get('services_featured_event')))); ?>'>buy tickets</a></div>
+              <div class='social-button'><a href='<?php echo esc_url( home_url( '/events/#on-now-and-services') )?>'>tell me more</a></div>
+              <div class='social-button past-button'><a href='<?php echo esc_url( home_url( '/events/#historical-moments') )?>'>past events</a></div>
           </div>  <!-- end of carousel cell community projects -->
         </div>  <!-- end of carousel -->
 

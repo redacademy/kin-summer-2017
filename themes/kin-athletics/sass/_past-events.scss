@@ -52,6 +52,10 @@
                     background: rgba(0,0,0,0.65);
                     padding: 1.5rem;
                     font-size: 14px;
+
+                    @include desktop{
+                        font-size: 30px;
+                    }
                 }
 
                 h3.event-date {
@@ -142,6 +146,10 @@
                     max-height: 200px;
                     margin: 0.5rem;
                     position: relative;
+
+                    @include desktop{
+                        width: 18%;
+                    }
 
                     img {
                         height: 100%;
@@ -289,6 +297,10 @@
         flex-flow: column nowrap;
         position: relative;
         overflow: hidden;
+
+        @include desktop{
+            height: 450px;
+        }
     
         p {
             text-transform: uppercase;
@@ -303,6 +315,10 @@
             top: 50%;
             left: 25%;
             height: 100%;
+
+            @include desktop{
+                left: 50%;
+            }
         }
     
         .red-button{
@@ -310,6 +326,11 @@
             align-self: flex-end;
             margin: 0 1rem 1rem 0;
             z-index: 1;
+
+            @include desktop{
+                height: 80px;
+                width: 400px;
+            }
     
             a {
                 padding: 0;
@@ -319,6 +340,10 @@
                 width: 100%;
                 transform: translate(-50%, -50%);
                 font-size: 30px;
+
+                @include desktop{
+                    font-size: 70px;
+                }
             }
 
             &.clear-bg {
