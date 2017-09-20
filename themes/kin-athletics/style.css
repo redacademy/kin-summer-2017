@@ -2745,6 +2745,25 @@ body .page-template-video-page {
 
 .page-template-events .entry-content {
   margin: 0; }
+  @media only screen and (min-width: 600px) {
+    .page-template-events .entry-content .events-black-container p {
+      font-size: 40px; }
+    .page-template-events .entry-content .events-black-container .red-button, .page-template-events .entry-content .events-black-container .consultation-button {
+      padding: 1rem 0;
+      height: 55px; }
+      .page-template-events .entry-content .events-black-container .red-button a, .page-template-events .entry-content .events-black-container .consultation-button a {
+        line-height: initial;
+        font-size: 40px; }
+    .page-template-events .entry-content .events-white-container {
+      width: 50%; }
+      .page-template-events .entry-content .events-white-container p {
+        font-size: 40px; }
+      .page-template-events .entry-content .events-white-container .social-button {
+        padding: 1rem 0; }
+      .page-template-events .entry-content .events-white-container a {
+        font-size: 40px; }
+      .page-template-events .entry-content .events-white-container:first-child {
+        border-right: 2px solid black; } }
   .page-template-events .entry-content a {
     text-decoration: none; }
   .page-template-events .entry-content .header-container {
@@ -2827,14 +2846,15 @@ body.post-type-archive-trainer .page-template-events .our-place {
           flex-flow: column nowrap;
       -ms-flex-align: center;
           align-items: center;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly; }
+      -ms-flex-pack: center;
+          justify-content: center; }
     .page-template-events .circles-container .icon-container img {
       height: 75%;
       width: 100%; }
       @media only screen and (min-width: 600px) {
         .page-template-events .circles-container .icon-container img {
-          width: 75%; } }
+          width: 75%;
+          height: auto; } }
     .page-template-events .circles-container .icon-container p {
       margin: 0;
       color: white;
@@ -2853,31 +2873,57 @@ body.post-type-archive-trainer .page-template-events .our-place {
     .page-template-events .relative-carousel-container .events-carousel-info h1 {
       font-size: 40px;
       padding-left: 2.5rem; }
+      @media only screen and (min-width: 600px) {
+        .page-template-events .relative-carousel-container .events-carousel-info h1 {
+          font-size: 6rem;
+          margin: 1.5rem 0; } }
     .page-template-events .relative-carousel-container .events-carousel-info p {
       width: 100%;
       color: white;
       background: rgba(0, 0, 0, 0.7);
       font-size: 14px;
       padding: 10px 40px; }
+      @media only screen and (min-width: 600px) {
+        .page-template-events .relative-carousel-container .events-carousel-info p {
+          font-size: 25px; } }
     .page-template-events .relative-carousel-container .events-carousel-info .event-date {
       padding-left: 40px; }
+      @media only screen and (min-width: 600px) {
+        .page-template-events .relative-carousel-container .events-carousel-info .event-date {
+          font-size: 40px;
+          margin-top: 1.5rem; }
+          .page-template-events .relative-carousel-container .events-carousel-info .event-date p {
+            font-size: 40px; } }
     .page-template-events .relative-carousel-container .events-carousel-info h3 {
       display: inline;
       color: white;
       font-size: 14px;
       display: -ms-flexbox;
       display: flex; }
+      @media only screen and (min-width: 600px) {
+        .page-template-events .relative-carousel-container .events-carousel-info h3 {
+          font-size: 25px; } }
       .page-template-events .relative-carousel-container .events-carousel-info h3 p {
         background: none;
         height: auto;
         padding: 0;
         margin: 0 0 0 0.5em; }
+        @media only screen and (min-width: 600px) {
+          .page-template-events .relative-carousel-container .events-carousel-info h3 p {
+            font-size: 25px; } }
+    .page-template-events .relative-carousel-container .events-carousel-info .events-inner-wrapper {
+      display: -ms-flexbox;
+      display: flex; }
     .page-template-events .relative-carousel-container .events-carousel-info .red-button, .page-template-events .relative-carousel-container .events-carousel-info .consultation-button {
       margin: 20px 0 0 40px;
       height: 40px;
       position: relative;
       width: 50%;
       padding-left: 0; }
+      @media only screen and (min-width: 600px) {
+        .page-template-events .relative-carousel-container .events-carousel-info .red-button, .page-template-events .relative-carousel-container .events-carousel-info .consultation-button {
+          width: 25%;
+          height: 55px; } }
       .page-template-events .relative-carousel-container .events-carousel-info .red-button a, .page-template-events .relative-carousel-container .events-carousel-info .consultation-button a {
         padding: 0;
         position: absolute;
@@ -2885,6 +2931,10 @@ body.post-type-archive-trainer .page-template-events .our-place {
         left: 50%;
         transform: translate(-50%, -50%);
         font-size: 20px; }
+        @media only screen and (min-width: 600px) {
+          .page-template-events .relative-carousel-container .events-carousel-info .red-button a, .page-template-events .relative-carousel-container .events-carousel-info .consultation-button a {
+            font-size: 40px;
+            width: 100%; } }
 
 .page-template-events .events-cell-image1 {
   background-image: url("../../asset/images/eventspage_projecttd.png"); }
@@ -2894,6 +2944,11 @@ body.post-type-archive-trainer .page-template-events .our-place {
 
 .page-template-events .events-cell-image3 {
   background-image: url("../../asset/images/eventspage_projecttd3.png"); }
+
+@media only screen and (min-width: 600px) {
+  .page-template-events .events-white-wrapper {
+    display: -ms-flexbox;
+    display: flex; } }
 
 .page-template-events .events-black-container, .page-template-events .events-white-container {
   text-align: center;

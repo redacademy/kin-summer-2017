@@ -2,6 +2,44 @@
   .entry-content{
     margin: 0;
 
+    @include desktop {
+      .events-black-container {
+        p {
+          font-size: 40px;
+        }
+
+        .red-button {
+          padding: 1rem 0;
+          height: 55px;
+
+          a {
+            line-height: initial;
+            font-size: 40px;
+          }
+        }
+      }
+
+      .events-white-container {
+        width: 50%;
+
+        p {
+          font-size: 40px;
+        }
+
+        .social-button {
+          padding: 1rem 0;
+        }
+  
+        a {
+          font-size: 40px;
+        }
+  
+        &:first-child {
+          border-right: 2px solid black;
+        }
+      }
+    }
+
     a {
       text-decoration: none;
     }
@@ -88,7 +126,7 @@
         display: flex;
         flex-flow: column nowrap;
         align-items: center;
-        justify-content: space-evenly;
+        justify-content: center;
       }
 
       img {
@@ -97,6 +135,7 @@
 
         @include desktop {
           width: 75%;
+          height: auto;
         }
 
 
@@ -127,6 +166,11 @@
     h1 {
       font-size: 40px;
       padding-left: 2.5rem;
+
+      @include desktop {
+        font-size: 6rem;
+        margin: 1.5rem 0;
+      }
     }
 
     p {
@@ -136,10 +180,22 @@
       font-size: 14px;
       padding: 10px 40px;
 
+      @include desktop {
+        font-size: 25px;
+      }
     }
 
     .event-date{
       padding-left: 40px;
+
+      @include desktop {
+        font-size: 40px;
+        margin-top: 1.5rem;
+
+        p {
+          font-size: 40px;
+        }
+      }
     }
 
     h3 { 
@@ -148,12 +204,24 @@
       font-size: 14px;
       display: flex;
 
+      @include desktop {
+        font-size: 25px;
+      }
+
       p {
         background: none;
         height: auto;
         padding: 0;
         margin: 0 0 0 0.5em;
+
+        @include desktop {
+          font-size: 25px;
+        }
       }
+    }
+
+    .events-inner-wrapper {
+      display: flex;
     }
 
     .red-button{
@@ -163,6 +231,11 @@
       width: 50%;
       padding-left: 0;
 
+      @include desktop {
+        width: 25%;
+        height: 55px;
+      }
+
       a {
         padding: 0;
         position: absolute;
@@ -170,6 +243,11 @@
         left: 50%;
         transform: translate(-50%, -50%);
         font-size: 20px;
+
+        @include desktop {
+          font-size: 40px;
+          width: 100%;
+        }
       }
     }
   }
@@ -185,6 +263,12 @@
 
 .events-cell-image3{
   background-image: url('../../asset/images/eventspage_projecttd3.png');
+}
+
+.events-white-wrapper {
+  @include desktop {
+    display: flex;
+  }
 }
 
 .events-black-container, .events-white-container{
