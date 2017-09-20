@@ -1440,7 +1440,9 @@ body.post-type-archive-trainer .our-place {
         padding-top: 15px; }
   .page-template-services h2 {
     text-align: left;
-    font-size: 5.5rem; }
+    font-size: 5.5rem;
+    width: 800px;
+    margin-left: 3rem; }
   .personal-training .price-box-container {
     margin: 0;
     margin-left: 40px;
@@ -1470,8 +1472,8 @@ body.post-type-archive-trainer .our-place {
     font-size: 1.7rem;
     font-weight: lighter;
     font-family: Open Sans Condensed; }
-  .page-template-services h2 {
-    font-size: 5.3rem; } }
+  .page-template-services .entry-content .carousel-cell .service-description {
+    font-size: 25px; } }
 
 @media only screen and (max-height: 600px) {
   .entry-content {

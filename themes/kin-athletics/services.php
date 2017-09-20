@@ -16,7 +16,7 @@ get_header(); ?>
 
       <section class='services-icons'>
       <div class="header-container">
-          <h1> At Kin Athletics, we try our hardest<br>to serve your needs</h1>
+          <h1> At Kin Athletics, we try our hardest<span> to serve your needs</span></h1>
       </div>
     
       <div class="circles-container">
