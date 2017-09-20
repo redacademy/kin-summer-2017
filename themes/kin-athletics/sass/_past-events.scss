@@ -73,6 +73,10 @@
                         margin: 0 0 0 0.5rem;
                         padding: 0;
                         font-size: 14px;
+
+                        @include desktop{
+                            font-size: 2rem;
+                        }
                     }
                 }
             }
