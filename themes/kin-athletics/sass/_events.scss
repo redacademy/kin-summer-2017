@@ -222,6 +222,11 @@
 
     .events-inner-wrapper {
       display: flex;
+      flex-flow: column nowrap;
+
+      @include desktop {
+        flex-flow: row nowrap;
+      }
     }
 
     .red-button{
