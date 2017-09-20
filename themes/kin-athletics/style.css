@@ -2051,7 +2051,9 @@ body.post-type-archive-trainer .consultation-button,
 body.post-type-archive-trainer .social-button {
   margin: 1.5rem;
   width: 175px;
-  height: 50px; }
+  height: 50px;
+  -ms-flex-order: 3;
+      order: 3; }
   body.page-template-archive-trainer .red-button a, body.page-template-archive-trainer .consultation-button a, body.page-template-archive-trainer .social-button a,
   body.post-type-archive-trainer .red-button a,
   body.post-type-archive-trainer .consultation-button a,
@@ -2112,7 +2114,9 @@ body.post-type-archive-trainer .our-place {
   body.post-type-archive-trainer .our-place .widget-area {
     width: 100%;
     display: -ms-flexbox;
-    display: flex; }
+    display: flex;
+    -ms-flex-flow: row wrap;
+        flex-flow: row wrap; }
 
 body.page-template-archive-trainer .social-button,
 body.post-type-archive-trainer .social-button {
