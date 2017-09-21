@@ -50,6 +50,8 @@
 }
 
 .black-overlay {
+	filter: grayscale(100%);
+	
 	&:after {
 		height: 100%;
 		width: 100%;

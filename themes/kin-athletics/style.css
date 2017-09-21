@@ -720,16 +720,18 @@ a {
 .display-block {
   display: block; }
 
-.black-overlay:after {
-  height: 100%;
-  width: 100%;
-  content: " ";
-  background: rgba(0, 0, 0, 0.5);
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0; }
+.black-overlay {
+  filter: grayscale(100%); }
+  .black-overlay:after {
+    height: 100%;
+    width: 100%;
+    content: " ";
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0; }
 
 /*--------------------------------------------------------------
 # Accessibility
@@ -1601,7 +1603,6 @@ body.single-trainer .default-header {
       body.single-trainer .default-header .trainer-profile-container .trainer-profile-wrapper .trainer-profile-picture {
         background: url("../../asset/profiles/super_male.png") no-repeat bottom;
         background-size: cover;
-        filter: grayscale(100%);
         transform: translate(-50%, -50%);
         top: 75%;
         left: 50%;
