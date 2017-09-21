@@ -684,6 +684,15 @@ a {
 /*--------------------------------------------------------------
 # Content
 --------------------------------------------------------------*/
+@media only screen and (min-width: 600px) {
+  #content {
+    margin-top: 60px;
+    padding: 0; } }
+
+@media only screen and (min-width: 600px) {
+  #main .container .entry-content {
+    padding-top: 0; } }
+
 /* Posts and pages */
 .sticky {
   display: block; }
