@@ -1396,12 +1396,15 @@ body.post-type-archive-trainer .our-place {
 
 .services-featured {
   display: block;
-  height: 100vh;
   background-image: url(../../asset/images/servicespage_featuredtrainer.png);
   background-size: cover;
   color: white;
   position: relative;
-  margin-bottom: 251px; }
+  height: 80vh; }
+  @media only screen and (min-width: 600px) {
+    .services-featured {
+      height: 100vh;
+      margin-bottom: 251px; } }
   .services-featured h4 {
     margin: 0;
     position: relative;
@@ -1478,9 +1481,12 @@ body.post-type-archive-trainer .our-place {
   background-color: white;
   color: black;
   width: 100%;
-  bottom: -251px;
   font-size: 24px;
-  padding: 1.5rem; }
+  padding: 1.5rem;
+  bottom: 0; }
+  @media only screen and (min-width: 600px) {
+    .page-template-services .white {
+      bottom: -251px; } }
   .page-template-services .white p {
     text-align: center;
     padding: 0;
