@@ -3583,6 +3583,14 @@ body.post-type-archive-trainer .page-template-events .our-place {
   position: absolute;
   bottom: 0; }
 
+@media only screen and (min-width: 600px) {
+  .page-template-consultations .site-content #gform_page_1_2 {
+    margin-bottom: 69px; } }
+
+#gform_page_1_2 #colophon {
+  position: absolute;
+  bottom: 0; }
+
 .social-buttons-flex {
   display: -ms-flexbox;
   display: flex;

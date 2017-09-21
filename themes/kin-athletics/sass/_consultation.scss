@@ -546,6 +546,13 @@
   bottom: 0;
 }
 
-.page-template-consultations .site-footer{
-  // position: absolute
+.page-template-consultations .site-content #gform_page_1_2{
+  @include Desktop{
+    margin-bottom: 69px;
+  }
+}
+
+#gform_page_1_2 #colophon{
+  position: absolute;
+  bottom: 0;
 }
