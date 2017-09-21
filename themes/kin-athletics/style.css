@@ -1402,16 +1402,6 @@ body.post-type-archive-trainer .our-place {
   .services-featured .services-content {
     overflow: hidden;
     height: 75%; }
-    .services-featured .services-content:after {
-      height: 75%;
-      width: 100%;
-      content: " ";
-      background: rgba(0, 0, 0, 0.5);
-      position: absolute;
-      left: 0;
-      right: 0;
-      top: 0;
-      bottom: 0; }
   .services-featured h4 {
     margin: 0;
     position: relative;
@@ -1434,13 +1424,24 @@ body.post-type-archive-trainer .our-place {
     display: flex;
     -ms-flex-direction: column;
         flex-direction: column;
-    padding-right: 10px; }
+    padding-right: 20px;
+    -ms-flex-align: end;
+        align-items: flex-end; }
     @media only screen and (min-width: 600px) {
       .services-featured .services-button-flex {
         -ms-flex-direction: row;
             flex-direction: row;
         -ms-flex-pack: end;
             justify-content: flex-end; } }
+    .services-featured .services-button-flex .red-button, .services-featured .services-button-flex .consultation-button {
+      text-align: center;
+      width: 70%;
+      margin-bottom: 10px; }
+    .services-featured .services-button-flex .social-button {
+      margin: 0;
+      width: 70%; }
+      .services-featured .services-button-flex .social-button a {
+        color: white; }
   .services-featured .trainer-name {
     font-weight: lighter;
     font-size: 40px;
