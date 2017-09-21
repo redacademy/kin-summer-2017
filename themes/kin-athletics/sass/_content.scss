@@ -1,22 +1,6 @@
 /*--------------------------------------------------------------
 # Content
 --------------------------------------------------------------*/
-#content {
-	@include desktop {
-		margin-top: 60px;
-		padding: 0;
-	}
-}
-
-#main {
-	@include desktop {
-		.container {
-			.entry-content {
-				padding-top: 0;
-			}
-		}
-	}
-}
 
 /* Posts and pages */
 .sticky {
