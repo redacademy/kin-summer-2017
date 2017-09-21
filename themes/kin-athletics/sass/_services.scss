@@ -98,16 +98,17 @@
 
 .services-featured{
   display: block;
-  height: 100vh;
   background-image: url(../../asset/images/servicespage_featuredtrainer.png);
   background-size: cover;
   color: white;
   position: relative;
-  margin-bottom: 251px;
+  height: 80vh;
 
-  .services-content {
-    
-  } 
+  @include Desktop{
+    height: 100vh;  
+    margin-bottom: 251px;
+  }
+ 
 
   h4{
     margin: 0;
@@ -206,9 +207,13 @@
     background-color: white;
     color: black;
     width: 100%;
-    bottom: -251px;
     font-size: 24px;
     padding: 1.5rem;
+    bottom: 0;
+    
+    @include Desktop{
+      bottom: -251px; 
+    }   
 
     p{
       text-align: center;
