@@ -103,10 +103,10 @@
   background-size: cover;
   color: white;
   position: relative;
+  margin-bottom: 251px;
 
   .services-content {
-    overflow: hidden;
-    height: 75%;
+    
   } 
 
   h4{
@@ -119,9 +119,8 @@
     z-index: 1;
 
     .span-block {
-      display: block;
       text-align: left;
-      font-size: 40px;
+      font-size: 5.5rem;
       text-transform: uppercase;
     }
   }
@@ -147,14 +146,37 @@
       text-align: center;
       width: 70%;
       margin-bottom: 10px;
+
+      @include Desktop{
+        height: 51px;
+        margin-bottom: 0;
+        padding-top: 8px;
+        order: 2;
+        width: 35%;
+      }
+
+      a{
+        @include Desktop{
+          font-size: 50px
+        }
+      }
     }
 
     .social-button{
       margin: 0;
       width: 70%;
 
+      @include Desktop{
+        order: 1;
+        width: 35%;
+      }
+
       a{
         color: white;
+
+        @include Desktop{
+          font-size: 50px;
+        }
       }
     }
   }
@@ -162,14 +184,8 @@
 
   .trainer-name {
     font-weight: lighter;
-    font-size: 40px;
     display: block;
 
-  }
-
-  span{
-    font-size: 70px;
-    font-weight: lighter;
   }
 
   p{
@@ -190,7 +206,7 @@
     background-color: white;
     color: black;
     width: 100%;
-    bottom: 0;
+    bottom: -251px;
     font-size: 24px;
     padding: 1.5rem;
 

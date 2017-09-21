@@ -1398,10 +1398,8 @@ body.post-type-archive-trainer .our-place {
   background-image: url(../../asset/images/servicespage_featuredtrainer.png);
   background-size: cover;
   color: white;
-  position: relative; }
-  .services-featured .services-content {
-    overflow: hidden;
-    height: 75%; }
+  position: relative;
+  margin-bottom: 251px; }
   .services-featured h4 {
     margin: 0;
     position: relative;
@@ -1411,9 +1409,8 @@ body.post-type-archive-trainer .our-place {
     padding: 20px 30px 10px 20px;
     z-index: 1; }
     .services-featured h4 .span-block {
-      display: block;
       text-align: left;
-      font-size: 40px;
+      font-size: 5.5rem;
       text-transform: uppercase; }
   .services-featured p {
     font-family: Oswald;
@@ -1437,18 +1434,33 @@ body.post-type-archive-trainer .our-place {
       text-align: center;
       width: 70%;
       margin-bottom: 10px; }
+      @media only screen and (min-width: 600px) {
+        .services-featured .services-button-flex .red-button, .services-featured .services-button-flex .consultation-button {
+          height: 51px;
+          margin-bottom: 0;
+          padding-top: 8px;
+          -ms-flex-order: 2;
+              order: 2;
+          width: 35%; } }
+      @media only screen and (min-width: 600px) {
+        .services-featured .services-button-flex .red-button a, .services-featured .services-button-flex .consultation-button a {
+          font-size: 50px; } }
     .services-featured .services-button-flex .social-button {
       margin: 0;
       width: 70%; }
+      @media only screen and (min-width: 600px) {
+        .services-featured .services-button-flex .social-button {
+          -ms-flex-order: 1;
+              order: 1;
+          width: 35%; } }
       .services-featured .services-button-flex .social-button a {
         color: white; }
+        @media only screen and (min-width: 600px) {
+          .services-featured .services-button-flex .social-button a {
+            font-size: 50px; } }
   .services-featured .trainer-name {
     font-weight: lighter;
-    font-size: 40px;
     display: block; }
-  .services-featured span {
-    font-size: 70px;
-    font-weight: lighter; }
   .services-featured p {
     text-align: right;
     padding-right: 20px;
@@ -1464,7 +1476,7 @@ body.post-type-archive-trainer .our-place {
   background-color: white;
   color: black;
   width: 100%;
-  bottom: 0;
+  bottom: -251px;
   font-size: 24px;
   padding: 1.5rem; }
   .page-template-services .white p {
