@@ -14,7 +14,7 @@ get_header(); ?>
     <div class="project-td-text">
       <h2>Kin Athletics Presents</h2>
       <?php echo CFS()->get('front_heading');?>
-      <div class="td-button-cont"><a href='<?php echo esc_url( home_url( '/events/') )?>'>Tell Me More</a></div>
+      <div class="td-button-cont"><a href='<?php echo esc_url(str_replace(' ', '-', home_url('/'.CFS()->get('past_events_featured', 34)))); ?>'>Tell Me More</a></div>
     </div>
    
 
