@@ -546,9 +546,21 @@
   bottom: 0;
 }
 
+.page-template-consultations .site-content #gform_page_1_1{
+  @include Desktop{
+    margin-bottom: 15px;
+  }
+}
+
 .page-template-consultations .site-content #gform_page_1_2{
   @include Desktop{
-    margin-bottom: 69px;
+    margin-bottom: 127px;
+  }
+}
+
+.page-template-consultations .site-content #gform_page_1_2{
+  @include Desktop{
+    margin-bottom: 127px;
   }
 }
 

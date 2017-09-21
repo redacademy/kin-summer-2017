@@ -3584,8 +3584,16 @@ body.post-type-archive-trainer .page-template-events .our-place {
   bottom: 0; }
 
 @media only screen and (min-width: 600px) {
+  .page-template-consultations .site-content #gform_page_1_1 {
+    margin-bottom: 15px; } }
+
+@media only screen and (min-width: 600px) {
   .page-template-consultations .site-content #gform_page_1_2 {
-    margin-bottom: 69px; } }
+    margin-bottom: 127px; } }
+
+@media only screen and (min-width: 600px) {
+  .page-template-consultations .site-content #gform_page_1_2 {
+    margin-bottom: 127px; } }
 
 #gform_page_1_2 #colophon {
   position: absolute;
