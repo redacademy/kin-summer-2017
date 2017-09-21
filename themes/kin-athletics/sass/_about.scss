@@ -9,6 +9,22 @@
 
 /* ------- Single Trainer ------- */
 body.single-trainer {
+    #content {
+        @include desktop {
+            margin-top: 60px;
+            padding: 0;
+        }
+    }
+    
+    #main {
+        @include desktop {
+            .container {
+                .entry-content {
+                    padding-top: 0;
+                }
+            }
+        }
+    }
 
     .entry-title {
         font-size: 5.5em;
