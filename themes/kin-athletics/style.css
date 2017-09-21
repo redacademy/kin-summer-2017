@@ -1409,7 +1409,7 @@ body.post-type-archive-trainer .our-place {
   background-size: cover;
   color: white;
   position: relative;
-  height: 80vh; }
+  height: 90vh; }
   @media only screen and (min-width: 600px) {
     .services-featured {
       height: 100vh;
@@ -1450,12 +1450,17 @@ body.post-type-archive-trainer .our-place {
       margin-bottom: 10px; }
       @media only screen and (min-width: 600px) {
         .services-featured .services-button-flex .red-button, .services-featured .services-button-flex .consultation-button {
-          height: 51px;
+          height: 80px;
           margin-bottom: 0;
-          padding-top: 8px;
           -ms-flex-order: 2;
               order: 2;
-          width: 35%; } }
+          width: 400px;
+          display: -ms-flexbox;
+          display: flex;
+          -ms-flex-pack: center;
+              justify-content: center;
+          -ms-flex-align: center;
+              align-items: center; } }
       @media only screen and (min-width: 600px) {
         .services-featured .services-button-flex .red-button a, .services-featured .services-button-flex .consultation-button a {
           font-size: 50px; } }
@@ -1466,7 +1471,14 @@ body.post-type-archive-trainer .our-place {
         .services-featured .services-button-flex .social-button {
           -ms-flex-order: 1;
               order: 1;
-          width: 35%; } }
+          width: 400px;
+          height: 80px;
+          display: -ms-flexbox;
+          display: flex;
+          -ms-flex-pack: center;
+              justify-content: center;
+          -ms-flex-align: center;
+              align-items: center; } }
       .services-featured .services-button-flex .social-button a {
         color: white; }
         @media only screen and (min-width: 600px) {
@@ -3571,9 +3583,6 @@ body.post-type-archive-trainer .page-template-events .our-place {
   position: absolute;
   bottom: 0; }
 
-.page-template-consultations .site-footer {
-  position: absolute; }
-
 .social-buttons-flex {
   display: -ms-flexbox;
   display: flex;
@@ -3598,7 +3607,7 @@ body.post-type-archive-trainer .page-template-events .our-place {
 
 .site-footer {
   background-color: #A10000;
-  height: 314px;
+  height: 200px;
   width: 100%;
   bottom: 0;
   padding-top: 1.5rem; }
