@@ -47,9 +47,11 @@
     $('#trainer-profile-wrapper').hover(
         function() {
             $(this).removeClass('black-overlay');
+            $('#trainer-name').css('display', 'none');
     },
         function() {
             $(this).addClass( 'black-overlay' );
+            $('#trainer-name').css('display', 'block');
         }
 );
 
