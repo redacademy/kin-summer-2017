@@ -2746,6 +2746,9 @@ body .page-template-video-page {
       font-size: 12.5rem;
       letter-spacing: 10px;
       line-height: 90px; } }
+  @media only screen and (min-width: 600px) and (max-width: 380px) {
+    .kin, .ath, .let, .ics {
+      font-size: 5rem; } }
 
 .landing-video-text-container .kin {
   margin-left: 0; }
