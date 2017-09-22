@@ -39,11 +39,11 @@ get_header(); ?>
    
   </section>
 
-  <section class="who-we-are-cont" >
+  <section class="who-we-are-cont" id="who-we-are-id">
     <div class="front-img-wrapper">
       <img class="who-we-are-image" src="<?php echo CFS()->get( 'who_we_are_image' ); ?>">
     </div>
-    <div class="who-we-are-text" id="who-we-are-id">
+    <div class="who-we-are-text">
       <h2>Who We Are</h2>
       <?php echo CFS()->get('who_we_are_text');?>
       <div class="who-button-cont"><a href='<?php echo esc_url( home_url( '/about/') )?>'>Tell Me More</a></div>
