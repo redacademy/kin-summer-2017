@@ -30,7 +30,7 @@ foreach(CFS()->get( 'trainer_availability' ) as $date) {
         <div class="trainer-profile-container">
             <?php the_title( '<h1 id="trainer-name" class="entry-title">', '</h1>' ); ?>
             
-            <div class="trainer-profile-wrapper">
+            <div id="trainer-profile-wrapper" class="trainer-profile-wrapper black-overlay">
                 <img class="trainer-profile-picture" src="<?php echo CFS()->get( 'trainer_profile_picture' ); ?>">
             </div>
         </div>
@@ -106,11 +106,13 @@ foreach(CFS()->get( 'trainer_availability' ) as $date) {
                 <?php foreach ( $trainer as $post ) : setup_postdata( $post ); ?>
 
                 <div class="next-trainer-item-container">
-                    <div class="trainer-thumbnail-wrapper">
-                        <img class="trainer-thumbnail" src="<?php echo CFS()->get( 'trainer_profile_picture' ); ?>">
-                    </div><!-- .trainer-thumbnail-wrapper -->
+                    <a href="<?php echo esc_url(get_post_permalink()); ?>">
+                        <div class="trainer-thumbnail-wrapper">
+                            <img class="trainer-thumbnail" src="<?php echo CFS()->get( 'trainer_profile_picture' ); ?>">
+                        </div><!-- .trainer-thumbnail-wrapper -->
+                    </a>
                     <div class="next-trainer-wrapper">
-                        <a class="trainer-name" href="<?php echo get_post_permalink() ?>"><?php the_title(); ?></a>
+                        <p class="trainer-name"><?php the_title(); ?></p>
                     </div><!-- .next-trainer-wrapper -->
                 </div>
 
@@ -120,13 +122,22 @@ foreach(CFS()->get( 'trainer_availability' ) as $date) {
     <!-- OTHER LINKS -->
         <div class="other-links">
             <div class="about-our-origin">
-                <a href="<?php echo esc_url(home_url('/about#origin')); ?>" class="origin-link">Our Origin</a>
+                <a href="<?php echo esc_url(home_url('/about#origin')); ?>" class="origin-link">
+                    <img src="<?php echo esc_url(get_template_directory_uri()); ?>/asset/icons/ouroriginicon.svg"/>    
+                    Our Origin
+                </a>
             </div>
             <div class="about-our-community">
-                <a href="<?php echo esc_url(home_url('/about#community')); ?>" class="community-link">Our Community</a>
+                <a href="<?php echo esc_url(home_url('/about#community')); ?>" class="community-link">
+                    <img src="<?php echo esc_url(get_template_directory_uri()); ?>/asset/icons/ourcommunityicon.svg"/>
+                    Our Community
+                </a>
             </div>
             <div class="about-our-place">
-                <a href="<?php echo esc_url(home_url('/about#place')); ?>" class="place-link">Our Place</a>
+                <a href="<?php echo esc_url(home_url('/about#place')); ?>" class="place-link">
+                    <img src="<?php echo esc_url(get_template_directory_uri()); ?>/asset/icons/ourplaceicon.svg"/>
+                    Our Place
+                </a>
             </div>
         </div>
     </div><!-- .default-content -->

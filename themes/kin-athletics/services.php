@@ -21,25 +21,25 @@ get_header(); ?>
     
       <div class="circles-container">
           <div class="icon-container">
-              <a src="<?php echo esc_url(home_url('/services#personal-training')); ?>">
+              <a href="<?php echo esc_url(home_url('/services#personal-training')); ?>">
                   <img src="<?php echo get_template_directory_uri(); ?>/asset/icons/personaltrainingicon.svg"/>
               </a>
               <p><span class="span-block">Personal</span> Training</p>
           </div>
           <div class="icon-container">
-              <a src="<?php echo esc_url(home_url('/services#group-training')); ?>">
+              <a href="<?php echo esc_url(home_url('/services#group-training')); ?>">
                   <img src="<?php echo get_template_directory_uri(); ?>/asset/icons/grouptrainingicon.svg"/>
               </a>
               <p><span class="span-block">Group</span> Training</p>
           </div>
           <div class="icon-container">
-              <a src="<?php echo esc_url(home_url('/services#community-projects')); ?>">
+              <a href="<?php echo esc_url(home_url('/services#community-projects')); ?>">
                   <img src="<?php echo get_template_directory_uri(); ?>/asset/icons/communityprojecticon.svg"/>
               </a>
               <p><span class="span-block">Community</span> Projects</p>
           </div>
           <div class="icon-container">
-              <a src='<?php echo esc_url( home_url( '/consultation/') )?>'>
+              <a href='<?php echo esc_url( home_url( '/consultation/') )?>'>
                   <img src="<?php echo get_template_directory_uri(); ?>/asset/icons/freeconsultationicon.svg"/>
               </a>
               <p><span class="span-block">Free</span> Consultation</p>
@@ -105,9 +105,9 @@ get_header(); ?>
             <h2>Community projects</h2>
             <?php echo CFS()->get('services_community_projects');?>
             <h3>on now - <?php echo CFS()->get('services_featured_event'); ?></h3>
-            <div class='red-button'><a href='<?php echo esc_url(str_replace(' ', '-', home_url('/event/'.CFS()->get('services_featured_event')))); ?>'>buy tickets</a></div>
-            <div class='social-button'><a href='<?php echo esc_url( home_url( '/events/#on-now-and-services') )?>'>tell me more</a></div>
-            <div class='social-button'><a href='<?php echo esc_url( home_url( '/events/#historical-moments') )?>'>past events</a></div>
+              <div class='red-button'><a href='<?php echo esc_url(str_replace(' ', '-', home_url('/event/'.CFS()->get('services_featured_event')))); ?>'>buy tickets</a></div>
+              <div class='social-button'><a href='<?php echo esc_url(str_replace(' ', '-', home_url('/'.CFS()->get('past_events_featured', 34)))); ?>'>tell me more</a></div>
+              <div class='social-button past-button'><a href='<?php echo esc_url( home_url( '/events/#historical-moments') )?>'>past events</a></div>
           </div>  <!-- end of carousel cell community projects -->
         </div>  <!-- end of carousel -->
 

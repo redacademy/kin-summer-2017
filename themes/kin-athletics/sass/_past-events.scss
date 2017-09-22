@@ -34,12 +34,19 @@
                 width: 100%;
                 font-family: $font__main;
 
-                h2.un-bold {
-                    font-weight: 300;
-                    font-family: Open Sans Condensed;
-
+                h2 {
                     @include desktop {
-                        font-size: 4rem;
+                        line-height: normal;
+                    }
+                
+                    &.un-bold {
+                        font-weight: 300;
+                        font-family: Open Sans Condensed;
+
+                        @include desktop {
+                            font-size: 4rem;
+                            margin-bottom: 0;
+                        }
                     }
                 }
 
@@ -52,6 +59,10 @@
                     background: rgba(0,0,0,0.65);
                     padding: 1.5rem;
                     font-size: 14px;
+
+                    @include desktop{
+                        font-size: 30px;
+                    }
                 }
 
                 h3.event-date {
@@ -69,6 +80,10 @@
                         margin: 0 0 0 0.5rem;
                         padding: 0;
                         font-size: 14px;
+
+                        @include desktop{
+                            font-size: 2rem;
+                        }
                     }
                 }
             }
@@ -114,9 +129,18 @@
                 flex-flow: row wrap;
                 align-items: center;
                 align-content: center;
-              }
+
+                @include desktop {
+                    height: 50vh;
+                    flex-flow: column nowrap;
+                    justify-content: space-evenly;
+                }
+            }
             
-              .past-events-carousel {
+            .past-events-carousel {
+            @include desktop {
+                height: 50vh;
+            }
             
                 .header-container {
                   width: 100%;
@@ -126,6 +150,11 @@
                   h2.header-title--black {
                     width: 100%;
                     font-size: 20px;
+
+                    @include desktop {
+                        font-size: 40px;
+
+                    }
                   }
                 }
             
@@ -136,12 +165,20 @@
                   height: 75%;
                   justify-content: center;
                   text-align: center;
+
+                  @include desktop {
+                      height: 50%;
+                  }
             
                   .past-events-item-container {
                     width: 40%;
                     max-height: 200px;
                     margin: 0.5rem;
                     position: relative;
+
+                    @include desktop{
+                        width: 18%;
+                    }
 
                     img {
                         height: 100%;
@@ -216,6 +253,9 @@
         position: relative;
         overflow: hidden;
     
+        @include desktop {
+            height: 50vh;
+        }
         p {
             text-transform: uppercase;
             position: relative;
@@ -289,6 +329,10 @@
         flex-flow: column nowrap;
         position: relative;
         overflow: hidden;
+
+        @include desktop{
+            height: 450px;
+        }
     
         p {
             text-transform: uppercase;
@@ -303,6 +347,10 @@
             top: 50%;
             left: 25%;
             height: 100%;
+
+            @include desktop{
+                left: 50%;
+            }
         }
     
         .red-button{
@@ -310,6 +358,11 @@
             align-self: flex-end;
             margin: 0 1rem 1rem 0;
             z-index: 1;
+
+            @include desktop{
+                height: 80px;
+                width: 400px;
+            }
     
             a {
                 padding: 0;
@@ -319,6 +372,10 @@
                 width: 100%;
                 transform: translate(-50%, -50%);
                 font-size: 30px;
+
+                @include desktop{
+                    font-size: 70px;
+                }
             }
 
             &.clear-bg {

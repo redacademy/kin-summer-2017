@@ -9,6 +9,22 @@
 
 /* ------- Single Trainer ------- */
 body.single-trainer {
+    #content {
+        @include desktop {
+            margin-top: 60px;
+            padding: 0;
+        }
+    }
+    
+    #main {
+        @include desktop {
+            .container {
+                .entry-content {
+                    padding-top: 0;
+                }
+            }
+        }
+    }
 
     .entry-title {
         font-size: 5.5em;
@@ -43,6 +59,10 @@ body.single-trainer {
             overflow: hidden;
             position: relative;
             border-bottom: $header__title-border-bottom;
+
+            @include desktop {
+                border-bottom: none;
+            }
             
             .trainer-profile-wrapper {
                 position: relative;
@@ -52,13 +72,12 @@ body.single-trainer {
                 .trainer-profile-picture {
                     background: url("../../asset/profiles/super_male.png") no-repeat bottom;
                     background-size: cover;
-                    filter: grayscale(100%);
-                    transform: translate(-50%, -50%);
-                    top: 50%;
+                    transform: translate(-50%,-50%);
+                    top: 75%;
                     left: 50%;
                     position: absolute;
                     max-width: none;
-                    max-height: 100%;
+                    max-height: 150%;
                 }
             }
         }
@@ -205,10 +224,18 @@ body.single-trainer {
 
         .other-trainers {
 
+            @include desktop {
+                height: 50vh;
+                display: flex;
+                flex-flow: column nowrap;
+                justify-content: space-around;
+            }
+
             .next-trainer.trainer-sub-titles {
                 margin: 0;
                 text-align: center;
                 margin-bottom: 1rem;
+                font-family: $font__h1-header;
 
                 @include desktop {
                     font-size: 30px;
@@ -231,6 +258,11 @@ body.single-trainer {
                         width: 20%;
                         max-height: 200px;
                         height: 200px;
+
+                        a {
+                            width: 100%;
+                            height: 100%;
+                        }
                     }
 
                     .trainer-thumbnail-wrapper {
@@ -246,6 +278,7 @@ body.single-trainer {
                             width: 75%;
                             height: 100%;
                             border-radius: 50%;
+                            margin: auto;
                         }
 
                         .trainer-thumbnail {
@@ -263,8 +296,7 @@ body.single-trainer {
                     }
 
                     .next-trainer-wrapper {
-                        a {
-                            text-decoration: none;
+                        p {
                             font-size: 16px;
 
                             @include desktop {
@@ -281,6 +313,16 @@ body.single-trainer {
             flex-flow: column nowrap;
             text-align: center;
 
+            @include desktop {
+                flex-flow: row nowrap;
+                justify-content: center;
+                align-items: center;
+                height: 50vh;
+                background: url('../../asset/images/aboutpage_heroshot.png') no-repeat center top;
+                background-size: cover;
+                border-top: 3px solid white;
+            }
+
             a {
                 color: black;
                 text-transform: uppercase;
@@ -293,12 +335,35 @@ body.single-trainer {
             .about-our-community {
                 border-bottom: 1.5px solid #A10000;
                 // margin-top: 200px;
+
+                @include desktop {
+                    border: none;
+                }
             }
             .about-our-origin,
             .about-our-community,
             .about-our-place {
                 padding: 0.5em 0;
                 cursor: pointer;
+
+                img {
+                    display: none;
+                }
+
+                @include desktop {
+                    width: 25%;
+
+                    a {
+                        color: white;
+                    }
+
+                    img {
+                        width: 75%;
+                        display: block;
+                        margin-bottom: 1.5rem;
+                        margin: 1.5rem auto;
+                    }
+                }
             }
         }
     }

@@ -1,7 +1,9 @@
 .site-footer{
   background-color: $color__brand-red;
-  height: 250px;
-  padding-top: 1.5rem;
+  height: auto;
+  width: 100%;
+  bottom: 0;
+  padding: 1.5rem;
 
   a, p{
     color: $color__brand-white;

@@ -196,27 +196,43 @@ a {
 		align-items: center;
 		justify-content: flex-end;
 
-		li{
+		li {
 			margin-right: 30px;
 			font-size: 24px;
 			text-transform: uppercase;
 			font-weight: bold;
+			
+			@include desktop {
+				height: 100%;
+				display: flex;
+
+				a {
+					margin: auto;
+				}
+			}
 		}
 	}
 }
 
 #menu-menu .sub-menu{
 	background-color: black;
-	top: 27px;
+	top: 60px;
 	right: -60px;
 	width: 240px;
 
-	li{
+	li {
 		margin-right: 0;
-		a{
+
+		a {
 			width: 240px;
 			padding: 0 30px;
 			border-bottom: 2px solid white;			
+		}
+
+		&:last-child {
+			a {
+				border: none;
+			}
 		}
 	}
 }

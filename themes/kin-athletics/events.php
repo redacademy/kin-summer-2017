@@ -31,20 +31,20 @@ get_header(); ?>
           
             <div class="circles-container">
                 <div class="icon-container">
-                    <a href="<?php echo site_url().'/events'; ?>">
-                        <img src="<?php echo get_template_directory_uri(); ?>/asset/icons/ouroriginicon.svg"/>
+                    <a href="<?php echo esc_url(site_url().'/events'); ?>">
+                        <img src="<?php echo get_template_directory_uri(); ?>/asset/icons/pasteventsicon.svg"/>
                         <p>Past Events</p>
                     </a>
                 </div>
                 <div class="icon-container">
-                    <a src="#">
-                        <img src="<?php echo get_template_directory_uri(); ?>/asset/icons/ourtrainericon.svg"/>
-                        <p>On Now - <?php echo CFS()->get('past_events_featured', 162); ?></p>
+                    <a href="<?php echo esc_url(str_replace(' ', '-', home_url('/'.CFS()->get('past_events_featured', 34)))); ?>">
+                        <img src="<?php echo get_template_directory_uri(); ?>/asset/icons/onnowicon.svg"/>
+                        <p>On Now - <?php echo CFS()->get('past_events_featured', 34); ?></p>
                     </a>
                 </div>
                 <div class="icon-container">
-                    <a src="#">
-                        <img src="<?php echo get_template_directory_uri(); ?>/asset/icons/ourcommunityicon.svg"/>
+                    <a href="<?php echo esc_url(str_replace(' ', '-', home_url('/event/'.CFS()->get('past_events_featured', 34)))); ?>">
+                        <img src="<?php echo get_template_directory_uri(); ?>/asset/icons/buyticketsicon.svg"/>
                         <p>Buy Tickets</p>
                     </a>
                 </div>
@@ -73,8 +73,10 @@ get_header(); ?>
             ?>
               <div class="events-description>">
               <?php echo CFS()->get('current_event_info', $event[$i]->ID); ?>
-              <h3 class='event-date'>happens: <?php echo CFS()->get('current_event_date', $event[$i]->ID); ?></h3>
-              <div class='red-button'><a href='<?php echo esc_url(str_replace(' ', '-', home_url('/event/'.CFS()->get('past_events_featured')))); ?>'>buy tickets</a></div>
+                <div class="events-inner-wrapper">
+                  <h3 class='event-date'>happens: <?php echo CFS()->get('current_event_date', $event[$i]->ID); ?></h3>
+                  <div class='red-button'><a href='<?php echo esc_url(str_replace(' ', '-', home_url('/event/'.CFS()->get('past_events_featured', 34)))); ?>'>buy tickets</a></div>
+                </div>  
                 <?php endif ?>
               <?php endfor ?>
             </div>
@@ -86,15 +88,17 @@ get_header(); ?>
           <p>but wait,</p>
           <div class='red-button'><a href='<?php echo esc_url( home_url( '/about/') )?>'>who are we?</a></div>
         </div>
-
-        <div class='events-white-container'>
-          <p>see our history</p>
-          <div class='social-button'><a href='<?php echo esc_url( home_url( '/events/#historical-moments') )?>'>past events</a></div>
-        </div>
         
-        <div class='events-white-container'>
-          <p>join the buzz</p>
-          <div class='social-button'><a href='https://www.facebook.com/kinathletics/' target="_blank">facebook</a></div>
+        <div class="events-white-wrapper">
+          <div class='events-white-container'>
+            <p>see our history</p>
+            <div class='social-button'><a href='<?php echo esc_url( home_url( '/events/#historical-moments') )?>'>past events</a></div>
+          </div>
+          
+          <div class='events-white-container'>
+            <p>join the buzz</p>
+            <div class='social-button'><a href='https://www.facebook.com/kinathletics/' target="_blank">facebook</a></div>
+          </div>
         </div>
 
       </div>  <!-- end of entry content-->
