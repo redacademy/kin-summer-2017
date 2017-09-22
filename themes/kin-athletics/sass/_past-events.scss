@@ -34,12 +34,19 @@
                 width: 100%;
                 font-family: $font__main;
 
-                h2.un-bold {
-                    font-weight: 300;
-                    font-family: Open Sans Condensed;
-
+                h2 {
                     @include desktop {
-                        font-size: 4rem;
+                        line-height: normal;
+                    }
+                
+                    &.un-bold {
+                        font-weight: 300;
+                        font-family: Open Sans Condensed;
+
+                        @include desktop {
+                            font-size: 4rem;
+                            margin-bottom: 0;
+                        }
                     }
                 }
 
@@ -146,6 +153,7 @@
 
                     @include desktop {
                         font-size: 40px;
+
                     }
                   }
                 }

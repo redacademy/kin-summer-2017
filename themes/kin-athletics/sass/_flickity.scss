@@ -61,6 +61,10 @@
 
   h3 {
     margin-left: 1.5rem;
+
+    @include desktop {
+      font-size: 40px;
+    }
   }
 
   .carousel-cell-info{
