@@ -120,8 +120,12 @@
 
     .span-block {
       text-align: left;
-      font-size: 5.5rem;
+      font-size: 2.5rem;
       text-transform: uppercase;
+
+      @include Desktop{
+        font-size: 5.5rem;
+      }
     }
   }
 

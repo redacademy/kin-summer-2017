@@ -14,6 +14,8 @@ function pupulate_posts ( $form ) {
         
         $posts = get_posts( array(
           'post_type' => 'trainer',
+          'orderby' => 'name',
+          'order' => 'ASC',
           'posts_per_page' => -1
         ));
 

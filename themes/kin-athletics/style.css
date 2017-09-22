@@ -1427,8 +1427,11 @@ body.post-type-archive-trainer .our-place {
     z-index: 1; }
     .services-featured h4 .span-block {
       text-align: left;
-      font-size: 5.5rem;
+      font-size: 2.5rem;
       text-transform: uppercase; }
+      @media only screen and (min-width: 600px) {
+        .services-featured h4 .span-block {
+          font-size: 5.5rem; } }
   .services-featured p {
     font-family: Oswald;
     position: relative;
