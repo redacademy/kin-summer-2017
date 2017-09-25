@@ -75,7 +75,7 @@ get_header(); ?>
               <?php echo CFS()->get('current_event_info', $event[$i]->ID); ?>
                 <div class="events-inner-wrapper">
                   <h3 class='event-date'>happens: <?php echo CFS()->get('current_event_date', $event[$i]->ID); ?></h3>
-                  <div class='red-button'><a href='<?php echo esc_url(str_replace(' ', '-', home_url('/event/'.CFS()->get($event[$i]->post_name)))); ?>'>buy tickets</a></div>
+                  <div class='red-button'><a href='<?php echo esc_url(str_replace(' ', '-', home_url('/event/'.the_title()))); ?>'>buy tickets</a></div>
                 </div>  
                 <?php endif ?>
               <?php endfor ?>
