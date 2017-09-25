@@ -1598,7 +1598,6 @@ body.post-type-archive-trainer .our-place {
 /* ------- Single Trainer ------- */
 @media only screen and (min-width: 600px) {
   body.single-trainer #content {
-    margin-top: 60px;
     padding: 0; } }
 
 @media only screen and (min-width: 600px) {
